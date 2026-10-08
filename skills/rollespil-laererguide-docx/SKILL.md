@@ -1,6 +1,6 @@
 ---
 name: rollespil-laererguide-docx
-description: Genererer lærerguider til rollespil med alle obligatoriske sektioner. Brug når brugeren beder om en lærerguide, facilitatorguide eller lærervejledning til et rollespil. Trigger også ved "lærerguide", "facilitering", "debriefing-spørgsmål" eller "hvad gør læreren". Skillen sikrer at ingen obligatoriske sektioner glemmes — især rammen, faseovergange og RAS-debriefing.
+description: "Producerer lærerguiden til et rollespil som Word-dokument med alle obligatoriske sektioner (ramme, faseovergange, injects, RAS-debriefing, forberedelsestjekliste). Brug ved lærerguide, facilitatorguide, lærervejledning, facilitering, debriefing-spørgsmål og når læreren spørger hvad vedkommende skal sige eller gøre undervejs, fx \"hvad siger jeg når vi skifter fase\" eller \"hvordan faciliterer jeg forhandlingen\". Brug ikke til cheatsheets med modelsvar (rollespil-laerermateriale) eller til rollekort."
 allowed-tools:
   - Read
   - Glob
@@ -21,7 +21,7 @@ Denne skill sikrer at alle obligatoriske sektioner kommer med i lærerguiden. Br
 3. Læs `rollespil-designprincipper`-skillen for at sikre debriefing og facilitering følger de 10 principper
 4. Identificér faget og fagets fagbegreber — de skal bruges i debriefing-sektionen
 
-**HÅRD REGEL:** Lærerguiden skrives ALTID efter rollekortene er færdige. Aldrig før.
+Skriv lærerguiden efter, at rollekortene er færdige. Ellers passer faseovergange, tal og krydsreferencer ikke, og guiden skal skrives om.
 
 ---
 

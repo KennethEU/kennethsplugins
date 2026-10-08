@@ -1,6 +1,6 @@
 ---
 name: rollespil-projektregler
-description: Regler og tillæg, der overstyrer eller supplerer rollespilsdesigner-skillene (ritualer, enkelt rollekort-version, beregner-tjek, begrebsbegrænsning). Brug sammen med alle rollespilsskills.
+description: Projektets faste regler, der overstyrer de øvrige rollespilsskills ved uenighed. Ingen ritualsætninger, kun normalversion af rollekort som standard, ingen faste minuttal, ingen tankestreger, begrænsning af faglige begreber, beregner-tjek, fælles kilde til tal og skjult information. Læs altid før rollespilsmaterialer produceres eller ændres, og sammen med alle andre rollespil-skills.
 ---
 
 # Projektregler for rollespil

@@ -1,6 +1,6 @@
 ---
 name: rollespil-laerermateriale
-description: "Genererer lærercheatsheats og lærervejledninger med spørgsmål og modelbesvarelser i Word-format. Brug ALTID denne skill når brugeren beder om et cheatsheet, en facitliste, modelsvar, lærervejledning til gruppeaktiviteter, eller et dokument med spørgsmål og forventede svar. Trigger også ved 'lærersvar', 'facit', 'hvad skal eleverne svare', 'modelsvar', 'cheatsheet' eller 'teacher guide med svar'. Skillen dækker det generiske workflow fra fagligt indhold til printvenligt lærerdokument — uafhængigt af fag."
+description: "Producerer lærercheatsheets med spørgsmål og modelbesvarelser som printvenligt Word-dokument. Brug ved cheatsheet, facitliste, modelsvar, lærersvar, \"facit til gruppeopgaven\", hvad skal eleverne svare, eller teacher guide med svar til gruppeaktiviteter. Fagneutral. Brug ikke til selve lærerguiden til et rollespil (rollespil-laererguide-docx) eller til eksamens- og Bloom-spørgsmål."
 allowed-tools:
   - Read
   - Glob
@@ -28,7 +28,7 @@ Denne skill styrer workflow for at producere lærervejledninger med spørgsmål 
 2. Scan projektmappen for eksisterende elevmaterialer, rollekort eller arbejdsspørgsmål der skal bruges som input
 3. Identificér faget og læringsmålene ud fra konteksten
 
-**HÅRD REGEL:** Spørg IKKE om fag, niveau eller spørgsmål der kan findes i eksisterende materialer.
+Spørg ikke om fag, niveau eller spørgsmål, der kan læses i de eksisterende materialer. Læreren har allerede givet dem, og gentagne spørgsmål koster tid.
 
 ---
 
@@ -55,7 +55,7 @@ Når du skal afklare noget, brug dette mønster:
 > B) Kun de 5 analysespørgsmål (med fagbegreber i fed)
 > C) Analysespørgsmål + 2-3 sammenfatningsspørgsmål
 
-Stil ALDRIG flere spørgsmål i samme besked.
+Stil kun ét spørgsmål ad gangen, så læreren kan svare kort uden at miste tråden.
 
 ---
 

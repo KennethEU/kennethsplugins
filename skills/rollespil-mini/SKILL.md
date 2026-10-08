@@ -1,6 +1,6 @@
 ---
 name: rollespil-mini
-description: Lav en 10-20 minutters miniversion af et rollespil, enten ved at forenkle et eksisterende eller ved at designe en kort version fra bunden. Brug når læreren siger "miniversion", "kort version", "simplificér rollespillet", "forenklet version", "hurtig øvelse", "kan vi lave det kortere", "15 minutter" eller vil have en smagsprøve på et større rollespil.
+description: "Laver en miniversion på 10 til 20 minutter af et rollespil, enten ved at forenkle et eksisterende eller ved at designe en kort version fra bunden. Brug når læreren siger miniversion, kort version, kan det laves kortere, simplificér, forenklet, hurtig øvelse, smagsprøve, \"max 20 min\" eller nævner en bestemt kort tid til noget rollespilsagtigt. Brug ikke til nye fulde rollespil (rollespil-nyt) eller til almindelige gruppearbejdsdagsordener."
 allowed-tools:
   - Read
   - Glob
@@ -14,9 +14,9 @@ Komprimér et rollespil til en selvkørende øvelse på 10 til 20 minutter. Skil
 
 **Fælles regler:** `rollespil-projektregler` gælder og går forud (ingen ritualer, normalversion nok, ingen faste minuttal i elevmaterialer, dansk uden lange tankestreger). Faglig rygrad: `rollespil-designprincipper`. Produktion: `rollespil-rollekort-docx`.
 
-## HÅRD REGEL: Trinvis proces med gates
+## Trinvis proces med gates
 
-Producér ALDRIG Word-dokumenter før Gate 3. Læreren skal godkende designet først.
+Producér ikke Word-dokumenter før Gate 3. Når læreren har godkendt designet først, undgår I en hel produktionsrunde, hvis noget skal ændres.
 
 ## Fase 0: Saml kontekst (automatisk, før alt andet)
 

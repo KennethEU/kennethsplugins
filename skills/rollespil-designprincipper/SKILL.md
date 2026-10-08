@@ -1,6 +1,6 @@
 ---
 name: rollespil-designprincipper
-description: "De 10 universelle designprincipper og 8 rollespilsformater til dansk gymnasieundervisning. Brug ALTID denne skill når du designer et nyt rollespil, brainstormer idéer til simulationer, vælger rollespilsformat, eller rådgiver om rollespilsdesign. Trigger også ved 'rollespil', 'simulation', 'forhandlingsspil', 'lev-et-liv', 'krisehåndtering' eller lignende. Skillen er den faglige rygrad — den styrer HVAD der designes, mens rollespil-rollekort-docx styrer HVORDAN det produceres."
+description: "De 10 designprincipper og 8 formater til rollespil i dansk gymnasieundervisning. Brug når læreren designer eller brainstormer rollespil og simulationer, vælger format (forhandling, krisehåndtering, lev-et-liv, retssag, bestyrelse osv.), eller spørger \"hvad er et godt format hvis eleverne skal ...\". Den styrer HVAD der designes; produktion af filer hører under rollespil-rollekort-docx. Brug ikke til almindeligt gruppearbejde, eksamensopgaver eller quizzer."
 allowed-tools:
   - Read
   - Glob
@@ -101,7 +101,7 @@ Design mindst én rolle hvis position bygger bro. Høj troværdighed, konkrete e
 0 stemmer, stor moralsk autoritet. Stærke personlige argumenter i 1. person. En anden rolle kan "aktivere" wildcarden.
 
 ### Korridorpolitik
-Uformel forhandlingsfase EFTER positioner er kendte, FØR endelig afstemning. 5-10 minutter.
+Uformel forhandlingsfase EFTER positioner er kendte, FØR endelig afstemning. Kort fase, læreren styrer tiden.
 
 ### Teori-tagging
 Navngiv fagbegreber direkte i materialer (stærk-version): [NEO], [REAL], [LIB] osv.

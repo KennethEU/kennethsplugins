@@ -2,7 +2,20 @@
 
 Denne fil indeholder genbrugelig Node.js-kode til docx-generering af rollekort, lærerguider og elevintroduktioner.
 
-**Vigtigt:** Læs altid `/mnt/skills/public/docx/SKILL.md` først — den kan have nyere best practices.
+**Vigtigt:** Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den først. Den kan have nyere best practices.
+
+## Indhold
+
+- Imports og konstanter
+- Hjælpefunktioner
+- Farvet boks (central byggeklods)
+- Rollekort-header
+- Faseguide-tabel
+- Støtteversion-specifikke funktioner
+- Dokument-bygning
+- Lærermateriale / Cheatsheet — Two-table layout
+- Validerings- og preview-workflow
+- Typiske fejl at undgå
 
 ## Imports og konstanter
 
@@ -517,10 +530,10 @@ function qaBlock(num, question, answer, extras = {}, contentWidth) {
 node rollekort.js
 
 # 2. Validér (skal returnere VALID)
-python3 /mnt/skills/public/docx/scripts/office/validate.py output.docx
+python3 /mnt/skills/public/docx/scripts/office/validate.py output.docx   # kun hvis docx-skillen findes
 
 # 3. Konvertér til PDF
-python3 /mnt/skills/public/docx/scripts/office/soffice.py --headless --convert-to pdf output.docx
+soffice --headless --convert-to pdf output.docx
 
 # 4. Preview (generér JPEG-billeder)
 pdftoppm -jpeg -r 200 output.pdf preview
@@ -538,3 +551,13 @@ pdftoppm -jpeg -r 200 output.pdf preview
 2. **Sideoverflow:** Hvert rollekort SKAL passe på præcis 1 A4-side (normal og stærk) eller 2 sider (støtte). Preview ALTID med pdftoppm.
 3. **Encoding:** Sørg for at Node.js-filen er gemt som UTF-8. Test med `node -e "console.log('æøå')"` først.
 4. **Margin-mismatch:** Brug de korrekte margener for dokumenttypen (MH_ROLLE for rollekort, MH_GUIDE for lærerguide, MH_INTRO for elevintro).
+5. **Sidestørrelse:** Sæt altid A4 eksplicit (`11906 x 16838` DXA). Stol ikke på standardværdien.
+6. **Tabelbredder:** Angiv bredden i DXA både på `columnWidths` og på hver celle. Summen skal passe til sidebredden minus margener.
+7. **Baggrundsfarve:** Brug `ShadingType.CLEAR` med `fill`. `SOLID` kan give sort baggrund.
+8. **Linjeskift:** Brug aldrig `\n` i en `TextRun`. Lav et nyt `Paragraph` eller brug `break`.
+9. **Punktlister:** Brug en `numbering`-konfiguration (`LevelFormat.BULLET`), ikke et skrevet `•`.
+10. **Sideskift:** `PageBreak` skal ligge inde i et `Paragraph`.
+11. **Billeder:** `ImageRun` kræver `type` (fx `png`).
+12. **Skillelinjer:** Brug en afsnitskant (border) frem for en tom tabel.
+
+(Punkt 5 til 12 er hentet fra Anthropics docx-skill, github.com/anthropics/skills.)

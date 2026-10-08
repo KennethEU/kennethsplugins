@@ -4,6 +4,16 @@ Det vigtigste fra MASTERGUIDE v3 der IKKE allerede dækkes af de andre skills (r
 
 ---
 
+## Indhold
+
+- Teoretisk fundament
+- Avancerede designmønstre
+- Rollekort-skabelon (felt-struktur)
+- Koalitionsmatematik
+- Evaluering
+- Tidsstyring
+- Tryg ramme (uden ritualer)
+
 ## Teoretisk fundament
 
 ### Kolbs erfaringslæringscyklus
@@ -32,7 +42,7 @@ Design én regelramme (faser, roller, procedurer) der fungerer med flere scenari
 Standard bilag-typer: lovforslag (§), ændringsforslag, partiprogrammer, høringssvar, beslutningsskema, hændelseskort, budgetark, dagsordener, rolleoversigt. Bilag er modulære — læreren vælger hvilke der bruges.
 
 ### Korridorpolitik
-Uformel forhandlingsfase: elever forlader pladser, forhandler frit i lokalet. Placér EFTER positioner er kendte, FØR afstemning. 5-10 min. Aktiverer stille elever.
+Uformel forhandlingsfase: elever forlader pladser, forhandler frit i lokalet. Placér EFTER positioner er kendte, FØR afstemning. Kort fase, læreren styrer tiden. Aktiverer stille elever.
 
 ### Teori-tagging
 Navngiv fagbegreber direkte i materialer. I stærk-version: [NEO], [REAL], [LIB]. I erhvervsøkonomi: "Denne investering er en **diversificering** (Ansoffs matrix)". IKKE i støtte-version (forvirrer).

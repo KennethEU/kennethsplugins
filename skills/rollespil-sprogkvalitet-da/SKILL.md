@@ -1,10 +1,11 @@
 ---
 name: rollespil-sprogkvalitet-da
-description: "Dansk sproglig kvalitetssikring for undervisningsmaterialer. Brug denne skill ved ENHVER produktion af danske dokumenter — rollekort, lærerguider, elevintroduktioner, opgaveformuleringer, quizzer, artikeludklip eller andre materialer til dansk gymnasieundervisning. Trigger ved 'sprogcheck', 'retskrivning', 'korrektur', 'dansk tekst', eller automatisk som sidste trin i materialeproduktion. Skillen fanger de fejl der oftest slipper igennem: sammensatte ord, person-perspektiv, æøå, forkert genus, og fagterm-inkonsistens."
+description: "Dansk sproglig kvalitetssikring af rollespilsmaterialer: rollekort, lærerguider, elevintroduktioner, cheatsheets og tekster i digitale værktøjer. Brug som sidste trin før levering af rollespilsmaterialer, og når læreren beder om sprogcheck, retskrivning eller korrektur af sådanne tekster. Fanger sammensatte ord, person-perspektiv, æøå, genus og fagterm-inkonsistens. Brug ikke til elevopgaver, quizzer, eksamensmateriale eller andre tekster uden for rollespil."
 allowed-tools:
   - Read
   - Glob
   - Grep
+  - Bash
 ---
 
 # Dansk sproglig kvalitetssikring
@@ -102,6 +103,16 @@ Vælg én term og hold fast HELE vejen:
 | "deliberation" / "deliberativ samtale" / "deliberativt demokrati" | Vælg én — og brug den alle steder |
 | "Phillips-kurven" / "Phillipskurven" | Vælg én stavemåde |
 | "stakeholder" / "interessent" | Vælg dansk eller engelsk — ikke begge |
+
+## Kør scriptet først
+
+`scripts/sprogtjek.py` finder de mekaniske fejl deterministisk (tankestreger, ae/oe/aa, delte sammensatte ord, ritualsætninger, `maks.`, `à`, `60 %`, minuttal, blandede fagtermer). Det læser .docx, .md og .html uden ekstra pakker:
+
+```
+python3 "${CLAUDE_SKILL_DIR}/scripts/sprogtjek.py" <fil-eller-mappe>
+```
+
+Når scriptet er kørt og fejlene rettet, gennemgår du selv det, en regel ikke kan afgøre: person-perspektiv, genus, ufuldstændige sætninger og valg af fagterm.
 
 ## Systematisk tjek-rækkefølge
 

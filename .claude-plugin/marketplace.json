@@ -11,7 +11,7 @@
       "name": "rollespilsdesigner",
       "source": "./",
       "description": "Design af rollespil og simuleringer til dansk gymnasieundervisning (STX): rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring.",
-      "version": "1.4.0"
+      "version": "1.5.2"
     }
   ]
 }

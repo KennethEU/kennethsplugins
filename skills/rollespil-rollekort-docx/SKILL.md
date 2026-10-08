@@ -1,6 +1,6 @@
 ---
 name: rollespil-rollekort-docx
-description: "Genererer professionelle Word-dokumenter (.docx) med rollekort, lærerguider og elevintroduktioner til rollespil i dansk gymnasieundervisning. Brug ALTID denne skill når du skal producere rollekort, livskort, beslutningskort eller lærerguider som Word-filer. Trigger også når brugeren nævner 'rollekort', 'lærerguide', 'elevintroduktion', 'print materialer', 'Word-dokument' eller 'docx' i forbindelse med rollespil eller simulationer. Skillen dækker Node.js docx-generering, farvepalet, margener, hjælpefunktioner og differentierede rollekort i tre niveauer (stærk/normal/støtte)."
+description: "Producerer rollekort, livskort, beslutningskort og elevintroduktioner til rollespil som printklare Word-dokumenter (.docx) med Node.js. Brug når læreren siger rollekort, elevintroduktion, \"til printeren\", print, word eller docx i forbindelse med rollespil eller simulation. Normalversionen er standard; støtte og stærk laves kun efter ønske. Brug ikke til lærerguider (rollespil-laererguide-docx), cheatsheets (rollespil-laerermateriale) eller dokumenter uden for rollespil."
 allowed-tools:
   - Read
   - Glob
@@ -19,9 +19,9 @@ Denne skill styrer *hvordan* du genererer Word-dokumenter til rollespil. Den fag
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
 2. Scan projektmappen for eksisterende rollespilsmaterialer (indhold, roller, dilemmaer)
 3. Læs `rollespil-designprincipper`-skillen — rollekortene SKAL overholde de 10 principper
-4. Læs `references/docx-skill.md` for den nyeste version af docx-produktionen
+4. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning
 
-**HÅRD REGEL:** Hav rollekortenes indhold 100% klar FØR du begynder at kode. Skriv ALDRIG kode og indhold samtidig.
+Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten først bagefter i scriptet, giver det dobbeltarbejde og tekstfejl i de genererede filer.
 
 ---
 
@@ -30,7 +30,7 @@ Denne skill styrer *hvordan* du genererer Word-dokumenter til rollespil. Den fag
 ### Før du koder
 
 1. Læs `rollespil-designprincipper`-skillen (den skal allerede være trigget) for at sikre at rollekortene overholder de 10 principper
-2. Læs `references/docx-skill.md` for den nyeste version af Anthropics docx-skill (den opdateres løbende)
+2. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning (den opdateres løbende)
 3. Hav rollekortenes indhold klar FØR du begynder at kode — skriv aldrig kode og indhold samtidig
 
 ### Generering
@@ -38,13 +38,12 @@ Denne skill styrer *hvordan* du genererer Word-dokumenter til rollespil. Den fag
 1. Installér pakken: `npm install docx` (v9.5.1+)
 2. Byg scriptet med konstanter og hjælpefunktioner fra `references/template-kode.md`
 3. Generér .docx-filen
-4. Validér: `python3 /mnt/skills/public/docx/scripts/office/validate.py output.docx`
-5. Preview: Konvertér til PDF med `python3 /mnt/skills/public/docx/scripts/office/soffice.py`, derefter `pdftoppm -jpeg -r 200` og `view` på billederne
+4. Validér: hvis docx-skillen findes, kør `python3 /mnt/skills/public/docx/scripts/office/validate.py output.docx`. Ellers åbn filen igen med `python-docx` eller konvertér den i trin 5, og stop ved fejl.
+5. Preview: Konvertér til PDF med `soffice --headless --convert-to pdf output.docx`, derefter `pdftoppm -jpeg -r 200` og se billederne
 6. Kør konsistenstjek (se `rollespil-konsistenstjek`-skillen)
 
 ### Vigtigt
 
-- Læs ALTID `/mnt/skills/public/docx/SKILL.md` først — den har den autoritative guide til docx-generering og kan være nyere end denne skills references
 - Brug `references/template-kode.md` som udgangspunkt for genbrugelig kode
 - Tilpas aldrig margener eller farvepalet uden god grund — standarderne er testet
 
