@@ -10,26 +10,26 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 
 ## Kommandoer
 
-Skrives med plugin-navnet foran, fx `/bloom:`. Skillene er navngivet efter det, de gør:
+Hver skill hedder gruppen først og så det, den gør (`rollespil-`, `bloom-`, `blooket-`), så de står samlet i menuen. Skriv `/rollespil`, `/bloom` eller `/blooket` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
 
 | Kommando | Hvad den gør |
 |----------|--------------|
-| `/rollespilsdesigner:nyt-rollespil` | Designer et nyt rollespil sammen med dig |
-| `/rollespilsdesigner:miniversion` | Kort version (10 til 20 minutter) af et rollespil |
-| `/rollespilsdesigner:rollekort` | Rollekort og elevintroduktion som Word-filer |
-| `/rollespilsdesigner:laererguide` | Lærerguide med faseovergange og debriefing |
-| `/rollespilsdesigner:cheatsheet` | Cheatsheet med modelsvar |
-| `/rollespilsdesigner:konsistenstjek` | Kvalitetssikring før print |
-| `/rollespilsdesigner:sprogtjek` | Sprogcheck af materialerne |
-| `/rollespilsdesigner:digitale-tillaeg` | AI-rådgiver, facit-beregner og andre digitale dele |
-| `/bloom:spoergsmaal-til-tekst` | Komplet sæt arbejdsspørgsmål til en tekst, to versioner og taxonomy table |
-| `/bloom:lektiespoergsmaal` | 3 lektiespørgsmål på Huske/Forstå |
-| `/bloom:skabe-opgaver` | 8 til 12 kreative skabe-spørgsmål |
-| `/bloom:vurder-spoergsmaal` | Vurdering og forbedring af eksisterende spørgsmål |
-| `/bloom:planlaeg-time` | Tre-faset time med spørgsmål og arbejdsformer |
-| `/blooket:lav-quiz` | Blooket-quiz som CSV-fil |
+| `/rollespilsdesigner:rollespil-nyt` | Designer et nyt rollespil sammen med dig |
+| `/rollespilsdesigner:rollespil-miniversion` | Kort version (10 til 20 minutter) af et rollespil |
+| `/rollespilsdesigner:rollespil-rollekort` | Rollekort og elevintroduktion som Word-filer |
+| `/rollespilsdesigner:rollespil-laererguide` | Lærerguide med faseovergange og debriefing |
+| `/rollespilsdesigner:rollespil-cheatsheet` | Cheatsheet med modelsvar |
+| `/rollespilsdesigner:rollespil-konsistenstjek` | Kvalitetssikring før print |
+| `/rollespilsdesigner:rollespil-sprogtjek` | Sprogcheck af materialerne |
+| `/rollespilsdesigner:rollespil-digitale-tillaeg` | AI-rådgiver, facit-beregner og andre digitale dele |
+| `/bloom:bloom-spoergsmaal-til-tekst` | Komplet sæt arbejdsspørgsmål til en tekst, to versioner og taxonomy table |
+| `/bloom:bloom-lektiespoergsmaal` | 3 lektiespørgsmål på Huske/Forstå |
+| `/bloom:bloom-skabe-opgaver` | 8 til 12 kreative skabe-spørgsmål |
+| `/bloom:bloom-vurder-spoergsmaal` | Vurdering og forbedring af eksisterende spørgsmål |
+| `/bloom:bloom-planlaeg-time` | Tre-faset time med spørgsmål og arbejdsformer |
+| `/blooket:blooket-lav-quiz` | Blooket-quiz som CSV-fil |
 
-`designprincipper` og `projektregler` (rollespil), `spoergsmaalsregler` (Bloom) og `quizformat` (Blooket) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
+`rollespil-designprincipper` og `rollespil-projektregler` (rollespil), `bloom-spoergsmaalsregler` (Bloom) og `blooket-quizformat` (Blooket) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
 
 ## Installation
 
@@ -67,6 +67,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 - `blooket` bruger scriptet `generate_csv.py`, som tjekker spørgsmålene og skriver Blooket-filen. Test det med `python3 plugins/blooket/tests/test_generate_csv.py`.
 
 ## Changelog
+
+### navngivning 1.7.0 og 1.2.0 (oktober 2026)
+- Alle skills har fået gruppenavnet foran (`rollespil-`, `bloom-`, `blooket-`), fordi Cowork kun viser skillens navn i kommandomenuen og ikke plugin-navnet. Skriver du `/bloom`, `/blooket` eller `/rollespil`, står hver gruppe nu samlet.
 
 ### rollespilsdesigner 1.6.0 (oktober 2026)
 - Skillene er omdøbt til sigende kommandonavne uden `rollespil-` foran (se plugin-READMEen for gammelt og nyt navn).
