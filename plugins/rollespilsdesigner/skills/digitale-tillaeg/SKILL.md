@@ -1,19 +1,19 @@
 ---
-name: rollespil-digitale-tillaeg
+name: digitale-tillaeg
 description: "Designregler og teknisk reference til digitale tilføjelser til et rollespil: AI-rådgiver pr. rolle, facit-beregner, lærershow, virksomhedswebside, video og billedprompter. Brug når et rollespil skal have digitale værktøjer, efter at papirmaterialerne er godkendt. Bygger på erfaringerne fra Fjord Outdoor. Brug ikke til rollespil uden digitale dele eller til almindelige websider og apps."
 ---
 
 # Digitale tilføjelser til rollespil
 
-**Projektregler:** `rollespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
+**Projektregler:** `projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
 Denne skill kommer EFTER rollespillets design og papirmaterialer er færdige (rollekort, elevintroduktion, bilag). Den styrer, hvordan de digitale dele bygges, så de passer sammen og ikke afslører noget, eleverne ikke må se.
 
 **Teknisk reference:** Før du bygger noget, læs `references/teknik.md`. Den indeholder det tekniske mønster, som er afprøvet i Fjord Outdoor: filstruktur og fælles datasæt, kryptering og koder, proxy til modelkald, prompt-opbygning, session og spørgsmålstæller, rollekortparser, responsivt design, billeder og video, test med Playwright og sikkerhed. Spar tid ved at genbruge mønstrene i stedet for at opfinde dem igen.
 
-**Rækkefølge:** (1) Fælles datasæt og skjult-information-liste. (2) Webside og medier. (3) AI-rådgiver. (4) Facit-beregner. (5) Lærershow. (6) Test. (7) Kør `rollespil-konsistenstjek`, som også dækker digitale dele og beregner-tjek.
+**Rækkefølge:** (1) Fælles datasæt og skjult-information-liste. (2) Webside og medier. (3) AI-rådgiver. (4) Facit-beregner. (5) Lærershow. (6) Test. (7) Kør `konsistenstjek`, som også dækker digitale dele og beregner-tjek.
 
-**Relaterede skills:** `rollespil-designprincipper` (hvad må eleverne vide, hvornår), `rollespil-projektregler` (beregner-tjek, begrænsningsregel, fælles kilde), `rollespil-konsistenstjek` (kvalitetssikring), `rollespil-sprogkvalitet-da` (alle tekster i værktøjerne).
+**Relaterede skills:** `designprincipper` (hvad må eleverne vide, hvornår), `projektregler` (beregner-tjek, begrænsningsregel, fælles kilde), `konsistenstjek` (kvalitetssikring), `sprogtjek` (alle tekster i værktøjerne).
 
 ## Grundregler
 

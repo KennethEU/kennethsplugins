@@ -1,6 +1,6 @@
 ---
-name: rollespil-laerermateriale
-description: "Producerer lærercheatsheets med spørgsmål og modelbesvarelser som printvenligt Word-dokument. Brug ved cheatsheet, facitliste, modelsvar, lærersvar, \"facit til gruppeopgaven\", hvad skal eleverne svare, eller teacher guide med svar til gruppeaktiviteter. Fagneutral. Brug ikke til selve lærerguiden til et rollespil (rollespil-laererguide-docx) eller til eksamens- og Bloom-spørgsmål."
+name: cheatsheet
+description: "Producerer lærercheatsheets med spørgsmål og modelbesvarelser som printvenligt Word-dokument. Brug ved cheatsheet, facitliste, modelsvar, lærersvar, \"facit til gruppeopgaven\", hvad skal eleverne svare, eller teacher guide med svar til gruppeaktiviteter. Fagneutral. Brug ikke til selve lærerguiden til et rollespil (laererguide) eller til eksamens- og Bloom-spørgsmål."
 allowed-tools:
   - Read
   - Glob
@@ -11,7 +11,7 @@ allowed-tools:
 
 # Lærermateriale — Cheatsheet og modelbesvarelser
 
-**Projektregler:** `rollespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
+**Projektregler:** `projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
 Denne skill styrer workflow for at producere lærervejledninger med spørgsmål og modelbesvarelser. Den er fag-agnostisk og bruges til samfundsfag, erhvervsøkonomi, mediefag og andre fag.
 
@@ -79,7 +79,7 @@ For hvert spørgsmål, skriv:
 
 ### Fase 3: Producér Word-dokument
 
-Brug `rollespil-rollekort-docx`-skillens farvepalet og hjælpefunktioner.
+Brug `rollekort`-skillens farvepalet og hjælpefunktioner.
 
 **Standard layout: Two-table format**
 
@@ -116,7 +116,7 @@ For rollespils-debriefing følger layoutet RAS-modellen:
 - [ ] Er fagbegreber markeret med fed?
 - [ ] Er svarene realistiske — dvs. noget en gymnasieelev faktisk kan formulere?
 - [ ] Er der konsistens med de faglige slides/tekster eleverne har læst?
-- [ ] Er sproget korrekt dansk? (brug `rollespil-sprogkvalitet-da` hvis tilgængelig)
+- [ ] Er sproget korrekt dansk? (brug `sprogtjek` hvis tilgængelig)
 
 ## Vigtige principper
 

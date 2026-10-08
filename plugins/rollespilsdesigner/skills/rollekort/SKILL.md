@@ -1,6 +1,6 @@
 ---
-name: rollespil-rollekort-docx
-description: "Producerer rollekort, livskort, beslutningskort og elevintroduktioner til rollespil som printklare Word-dokumenter (.docx) med Node.js. Brug når læreren siger rollekort, elevintroduktion, \"til printeren\", print, word eller docx i forbindelse med rollespil eller simulation. Normalversionen er standard; støtte og stærk laves kun efter ønske. Brug ikke til lærerguider (rollespil-laererguide-docx), cheatsheets (rollespil-laerermateriale) eller dokumenter uden for rollespil."
+name: rollekort
+description: "Producerer rollekort, livskort, beslutningskort og elevintroduktioner til rollespil som printklare Word-dokumenter (.docx) med Node.js. Brug når læreren siger rollekort, elevintroduktion, \"til printeren\", print, word eller docx i forbindelse med rollespil eller simulation. Normalversionen er standard; støtte og stærk laves kun efter ønske. Brug ikke til lærerguider (laererguide), cheatsheets (cheatsheet) eller dokumenter uden for rollespil."
 allowed-tools:
   - Read
   - Glob
@@ -10,15 +10,15 @@ allowed-tools:
 
 # Rollekort & Lærerguide — Docx-generering
 
-**Projektregler:** `rollespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
+**Projektregler:** `projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
-Denne skill styrer *hvordan* du genererer Word-dokumenter til rollespil. Den faglige designviden (hvilke roller, dilemmaer, formater) styres af `rollespil-designprincipper`-skillen med dens reference-filer.
+Denne skill styrer *hvordan* du genererer Word-dokumenter til rollespil. Den faglige designviden (hvilke roller, dilemmaer, formater) styres af `designprincipper`-skillen med dens reference-filer.
 
 ## Fase 0: Saml kontekst (automatisk — FØR alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
 2. Scan projektmappen for eksisterende rollespilsmaterialer (indhold, roller, dilemmaer)
-3. Læs `rollespil-designprincipper`-skillen — rollekortene SKAL overholde de 10 principper
+3. Læs `designprincipper`-skillen — rollekortene SKAL overholde de 10 principper
 4. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning
 
 Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten først bagefter i scriptet, giver det dobbeltarbejde og tekstfejl i de genererede filer.
@@ -29,7 +29,7 @@ Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten fø
 
 ### Før du koder
 
-1. Læs `rollespil-designprincipper`-skillen (den skal allerede være trigget) for at sikre at rollekortene overholder de 10 principper
+1. Læs `designprincipper`-skillen (den skal allerede være trigget) for at sikre at rollekortene overholder de 10 principper
 2. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning (den opdateres løbende)
 3. Hav rollekortenes indhold klar FØR du begynder at kode — skriv aldrig kode og indhold samtidig
 
@@ -40,7 +40,7 @@ Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten fø
 3. Generér .docx-filen
 4. Validér: hvis docx-skillen findes, kør `python3 /mnt/skills/public/docx/scripts/office/validate.py output.docx`. Ellers åbn filen igen med `python-docx` eller konvertér den i trin 5, og stop ved fejl.
 5. Preview: Konvertér til PDF med `soffice --headless --convert-to pdf output.docx`, derefter `pdftoppm -jpeg -r 200` og se billederne
-6. Kør konsistenstjek (se `rollespil-konsistenstjek`-skillen)
+6. Kør konsistenstjek (se `konsistenstjek`-skillen)
 
 ### Vigtigt
 
@@ -171,5 +171,5 @@ Afslut ALTID med én af:
 
 - **DONE** — Alle rollekort (normalversionen, og støtte/stærk hvis det er ønsket) genereret som .docx og klar til print
 - **DONE_WITH_CONCERNS** — Rollekort leveret, men med forbehold (fx: en ønsket støtteversion mangler, eller farvepalet er tilpasset uden godkendelse)
-- **BLOCKED** — Kan ikke generere rollekort (fx: rollernes indhold er ikke defineret, rollespil-designprincipper-skill ikke tilgængelig)
+- **BLOCKED** — Kan ikke generere rollekort (fx: rollernes indhold er ikke defineret, designprincipper-skill ikke tilgængelig)
 - **NEEDS_CONTEXT** — Mangler information (fx: "Hvor mange roller skal der være? Skal der laves differentierede versioner?")

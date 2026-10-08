@@ -1,5 +1,5 @@
 ---
-name: rollespil-konsistenstjek
+name: konsistenstjek
 description: "Kvalitetssikrer færdige rollespilsmaterialer før de bruges i undervisningen: krydsreferencer, stemmematematik, person-perspektiv, sprog, balance, facilitering, beregner og digitale dele. Brug efter produktion og altid før levering, og når læreren spørger \"passer det hele sammen\", \"er det klar til print\", \"tjek lige alt\", kvalitetssikring eller konsistenstjek af et rollespil. Brug ikke til eksamenscases eller andre materialer uden for rollespil."
 allowed-tools:
   - Read
@@ -10,7 +10,7 @@ allowed-tools:
 
 # Konsistenstjek for Rollespilsmaterialer
 
-**Projektregler:** `rollespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
+**Projektregler:** `projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
 Kør dette tjek EFTER at alle materialer er genereret, MEN FØR levering til brugeren. Rapporten præsenteres som en samlet liste med ✅ (bestået) eller ❌ (fejl) for hvert punkt.
 
@@ -19,7 +19,7 @@ Kør dette tjek EFTER at alle materialer er genereret, MEN FØR levering til bru
 Kør det deterministiske sprogtjek på alle leverede filer (.docx, .md, .html), før du læser noget selv. Det finder tankestreger, ASCII-erstatninger for æøå, delte sammensatte ord, ritualsætninger, `maks.`, `à`, `60 %` og minuttal:
 
 ```
-python3 "${CLAUDE_SKILL_DIR}/../rollespil-sprogkvalitet-da/scripts/sprogtjek.py" <materialemappe>
+python3 "${CLAUDE_SKILL_DIR}/../sprogtjek/scripts/sprogtjek.py" <materialemappe>
 ```
 
 Fejl (FEJL) skal rettes. Advarsler vurderes. Punkt 4 nedenfor dækker kun det, scriptet ikke kan afgøre.
@@ -116,7 +116,7 @@ For hvert rollekort, verificér:
 
 ## 8. Beregner- og digitaltjek (kun hvis der er penge, grænser, tilfældighed eller digitale dele)
 
-Kilder: `rollespil-projektregler` (beregner-tjek) og `rollespil-digitale-tillaeg` (tjekliste og teknisk reference).
+Kilder: `projektregler` (beregner-tjek) og `digitale-tillaeg` (tjekliste og teknisk reference).
 
 - [ ] Pilot- og fuldgrænser står ens i elevintro, bilag, casekort, facit og show?
 - [ ] Reserveformlen er den samme overalt?
@@ -179,5 +179,5 @@ Afslut ALTID med én af:
 
 - **DONE** — Alle relevante tjek bestået, materialer er klar til print
 - **DONE_WITH_CONCERNS** — Tjek gennemført, men med fund der bør adresseres (fx: mindre sprogfejl, svag balancering)
-- **BLOCKED** — Kritiske fejl fundet der SKAL rettes før brug (fx: stemmematematik fejler, krydsreferencer er forkerte). Angiv præcist hvilke fejl der skal rettes, og foreslå at køre `rollespil-rollekort-docx` eller `rollespil-laererguide-docx` igen med rettelserne.
+- **BLOCKED** — Kritiske fejl fundet der SKAL rettes før brug (fx: stemmematematik fejler, krydsreferencer er forkerte). Angiv præcist hvilke fejl der skal rettes, og foreslå at køre `rollekort` eller `laererguide` igen med rettelserne.
 - **NEEDS_CONTEXT** — Materialer er ufuldstændige (fx: lærerguide mangler, kun nogle rollekort er genereret). Angiv hvad der mangler før tjekket kan gennemføres.

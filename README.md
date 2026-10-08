@@ -14,6 +14,14 @@ Skrives med plugin-navnet foran, fx `/bloom:`. Skillene er navngivet efter det, 
 
 | Kommando | Hvad den gør |
 |----------|--------------|
+| `/rollespilsdesigner:nyt-rollespil` | Designer et nyt rollespil sammen med dig |
+| `/rollespilsdesigner:miniversion` | Kort version (10 til 20 minutter) af et rollespil |
+| `/rollespilsdesigner:rollekort` | Rollekort og elevintroduktion som Word-filer |
+| `/rollespilsdesigner:laererguide` | Lærerguide med faseovergange og debriefing |
+| `/rollespilsdesigner:cheatsheet` | Cheatsheet med modelsvar |
+| `/rollespilsdesigner:konsistenstjek` | Kvalitetssikring før print |
+| `/rollespilsdesigner:sprogtjek` | Sprogcheck af materialerne |
+| `/rollespilsdesigner:digitale-tillaeg` | AI-rådgiver, facit-beregner og andre digitale dele |
 | `/bloom:spoergsmaal-til-tekst` | Komplet sæt arbejdsspørgsmål til en tekst, to versioner og taxonomy table |
 | `/bloom:lektiespoergsmaal` | 3 lektiespørgsmål på Huske/Forstå |
 | `/bloom:skabe-opgaver` | 8 til 12 kreative skabe-spørgsmål |
@@ -21,7 +29,7 @@ Skrives med plugin-navnet foran, fx `/bloom:`. Skillene er navngivet efter det, 
 | `/bloom:planlaeg-time` | Tre-faset time med spørgsmål og arbejdsformer |
 | `/blooket:lav-quiz` | Blooket-quiz som CSV-fil |
 
-`spoergsmaalsregler` (Bloom) og `quizformat` (Blooket) er baggrundsregler, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
+`designprincipper` og `projektregler` (rollespil), `spoergsmaalsregler` (Bloom) og `quizformat` (Blooket) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
 
 ## Installation
 
@@ -59,6 +67,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 - `blooket` bruger scriptet `generate_csv.py`, som tjekker spørgsmålene og skriver Blooket-filen. Test det med `python3 plugins/blooket/tests/test_generate_csv.py`.
 
 ## Changelog
+
+### rollespilsdesigner 1.6.0 (oktober 2026)
+- Skillene er omdøbt til sigende kommandonavne uden `rollespil-` foran (se plugin-READMEen for gammelt og nyt navn).
 
 ### bloom og blooket 1.1.0 (oktober 2026)
 - Skillene er omdøbt, så kommandoerne forklarer sig selv uden at gentage plugin-navnet: `bloom-bloom` er nu `spoergsmaal-til-tekst`, `bloom-lektie` er `lektiespoergsmaal`, `bloom-skabe` er `skabe-opgaver`, `bloom-vurder` er `vurder-spoergsmaal`, `bloom-klasseflow` er `planlaeg-time`, `bloom-arbejdsspoergsmaal` er `spoergsmaalsregler`, `blooket` er `lav-quiz` og `blooket-quiz` er `quizformat`.

@@ -1,6 +1,6 @@
 ---
-name: rollespil-mini
-description: "Laver en miniversion på 10 til 20 minutter af et rollespil, enten ved at forenkle et eksisterende eller ved at designe en kort version fra bunden. Brug når læreren siger miniversion, kort version, kan det laves kortere, simplificér, forenklet, hurtig øvelse, smagsprøve, \"max 20 min\" eller nævner en bestemt kort tid til noget rollespilsagtigt. Brug ikke til nye fulde rollespil (rollespil-nyt) eller til almindelige gruppearbejdsdagsordener."
+name: miniversion
+description: "Laver en miniversion på 10 til 20 minutter af et rollespil, enten ved at forenkle et eksisterende eller ved at designe en kort version fra bunden. Brug når læreren siger miniversion, kort version, kan det laves kortere, simplificér, forenklet, hurtig øvelse, smagsprøve, \"max 20 min\" eller nævner en bestemt kort tid til noget rollespilsagtigt. Brug ikke til nye fulde rollespil (nyt-rollespil) eller til almindelige gruppearbejdsdagsordener."
 allowed-tools:
   - Read
   - Glob
@@ -12,7 +12,7 @@ allowed-tools:
 
 Komprimér et rollespil til en selvkørende øvelse på 10 til 20 minutter. Skillen indeholder både forløbet med godkendelsespunkter (gates) og metoden til at forenkle.
 
-**Fælles regler:** `rollespil-projektregler` gælder og går forud (ingen ritualer, normalversion nok, ingen faste minuttal i elevmaterialer, dansk uden lange tankestreger). Faglig rygrad: `rollespil-designprincipper`. Produktion: `rollespil-rollekort-docx`.
+**Fælles regler:** `projektregler` gælder og går forud (ingen ritualer, normalversion nok, ingen faste minuttal i elevmaterialer, dansk uden lange tankestreger). Faglig rygrad: `designprincipper`. Produktion: `rollekort`.
 
 ## Trinvis proces med gates
 
@@ -22,7 +22,7 @@ Producér ikke Word-dokumenter før Gate 3. Når læreren har godkendt designet 
 
 1. Læs CLAUDE.md for lærerens fag og hold, hvis den findes.
 2. Scan projektmappen for eksisterende rollespilsmaterialer (rollekort, lærerguider).
-3. Læs `rollespil-designprincipper`, så de 10 principper overholdes i miniversionen.
+3. Læs `designprincipper`, så de 10 principper overholdes i miniversionen.
 
 Spørg IKKE om det originale rollespil, hvis materialet allerede findes i mappen.
 
@@ -68,7 +68,7 @@ Ethvert rollespil har ÉN central spænding. Eksempler: Fattigdomskommission: "E
 - **Triangel (3 roller), 10 til 15 min.:** A stærk for, B stærk imod, C kompromis eller wildcard.
 - **Pentagon (5 roller), 15 til 20 min.:** A og B modpoler, C kompromis, D ekspert med data, E berørt part eller wildcard.
 - Bevar den skarpeste konfliktakse, mindst én rolle med moralsk autoritet og mindst én med faglig tyngde. Drop roller, der kun tilføjer nuance.
-- Er der mange begreber i det store spil, så følg begrænsningsreglen i `rollespil-projektregler` og skær modeller væk, som eleverne ikke kan påvirke i en kort øvelse.
+- Er der mange begreber i det store spil, så følg begrænsningsreglen i `projektregler` og skær modeller væk, som eleverne ikke kan påvirke i en kort øvelse.
 
 ### Mini-rollekort
 Navn og titel, stemmer, MÅL (1 sætning), 2 argumenter, 1 dilemma. Ingen faseguide, værdier eller udvidet baggrund. Højst en halv A4-side, læsbart på 2 minutter. Kun normalversion, medmindre læreren beder om andet.
@@ -98,12 +98,12 @@ Re-ground: "Vi er ved Gate 3 (produktion). Designet er godkendt, nu laver jeg ma
 rollekort → sprogtjek → konsistenstjek → levér
 ```
 
-1. `rollespil-rollekort-docx`: ét samlet Word-dokument med case, rollekort og evt. lærer-debriefing.
-2. `rollespil-sprogkvalitet-da` på det producerede materiale.
-3. `rollespil-konsistenstjek` som endelig kvalitetssikring.
+1. `rollekort`: ét samlet Word-dokument med case, rollekort og evt. lærer-debriefing.
+2. `sprogtjek` på det producerede materiale.
+3. `konsistenstjek` som endelig kvalitetssikring.
 4. Levér filerne.
 
-Skal miniversionen have digitale dele (fx en AI-rådgiver), så brug `rollespil-digitale-tillaeg`. Hold dem små.
+Skal miniversionen have digitale dele (fx en AI-rådgiver), så brug `digitale-tillaeg`. Hold dem små.
 
 ## Gå tilbage
 

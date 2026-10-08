@@ -1,6 +1,6 @@
 # Masterguide — Kompakt reference
 
-Det vigtigste fra MASTERGUIDE v3 der IKKE allerede dækkes af de andre skills (rollespil-designprincipper, rollespil-konsistenstjek, rollespil-laererguide-docx). Læs denne fil for teori-begrundelser, skabelon-struktur, avancerede designmønstre og evaluering.
+Det vigtigste fra MASTERGUIDE v3 der IKKE allerede dækkes af de andre skills (designprincipper, konsistenstjek, laererguide). Læs denne fil for teori-begrundelser, skabelon-struktur, avancerede designmønstre og evaluering.
 
 ---
 

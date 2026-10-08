@@ -65,6 +65,7 @@ def check(path: Path):
     findings = []
     text = read_text(path)
     for n, line in enumerate(text.splitlines(), 1):
+        line = re.sub(r"`[^`]*`", lambda m: " " * len(m.group(0)), line)  # kode og filnavne i backticks er ikke prosa
         for pattern, hint, level in RULES:
             for m in re.finditer(pattern, line, flags=re.I if level == "F" and "ASCII" in hint else 0):
                 findings.append((level, n, m.group(0), hint))

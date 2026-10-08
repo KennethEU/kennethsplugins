@@ -1,5 +1,5 @@
 ---
-name: rollespil-sprogkvalitet-da
+name: sprogtjek
 description: "Dansk sproglig kvalitetssikring af rollespilsmaterialer: rollekort, lærerguider, elevintroduktioner, cheatsheets og tekster i digitale værktøjer. Brug som sidste trin før levering af rollespilsmaterialer, og når læreren beder om sprogcheck, retskrivning eller korrektur af sådanne tekster. Fanger sammensatte ord, person-perspektiv, æøå, genus og fagterm-inkonsistens. Brug ikke til elevopgaver, quizzer, eksamensmateriale eller andre tekster uden for rollespil."
 allowed-tools:
   - Read
@@ -10,7 +10,7 @@ allowed-tools:
 
 # Dansk sproglig kvalitetssikring
 
-**Projektregler:** `rollespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
+**Projektregler:** `projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
 Denne skill er en systematisk tjekliste for danske undervisningsmaterialer. Kør den som sidste trin FØR levering.
 

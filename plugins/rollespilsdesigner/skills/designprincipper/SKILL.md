@@ -1,6 +1,6 @@
 ---
-name: rollespil-designprincipper
-description: "De 10 designprincipper og 8 formater til rollespil i dansk gymnasieundervisning. Brug når læreren designer eller brainstormer rollespil og simulationer, vælger format (forhandling, krisehåndtering, lev-et-liv, retssag, bestyrelse osv.), eller spørger \"hvad er et godt format hvis eleverne skal ...\". Den styrer HVAD der designes; produktion af filer hører under rollespil-rollekort-docx. Brug ikke til almindeligt gruppearbejde, eksamensopgaver eller quizzer."
+name: designprincipper
+description: "De 10 designprincipper og 8 formater til rollespil i dansk gymnasieundervisning. Brug når læreren designer eller brainstormer rollespil og simulationer, vælger format (forhandling, krisehåndtering, lev-et-liv, retssag, bestyrelse osv.), eller spørger \"hvad er et godt format hvis eleverne skal ...\". Den styrer HVAD der designes; produktion af filer hører under rollekort. Brug ikke til almindeligt gruppearbejde, eksamensopgaver eller quizzer."
 allowed-tools:
   - Read
   - Glob
@@ -9,9 +9,9 @@ allowed-tools:
 
 # Designprincipper for Rollespil i Gymnasieundervisning
 
-**Næste skills:** produktion i `rollespil-rollekort-docx`, `rollespil-laererguide-docx` og `rollespil-laerermateriale`; digitale værktøjer i `rollespil-digitale-tillaeg`; kort version i `rollespil-mini`; kvalitetssikring i `rollespil-konsistenstjek`.
+**Næste skills:** produktion i `rollekort`, `laererguide` og `cheatsheet`; digitale værktøjer i `digitale-tillaeg`; kort version i `miniversion`; kvalitetssikring i `konsistenstjek`.
 
-**Projektregler:** `rollespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
+**Projektregler:** `projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
 Denne skill er den faglige rygrad i pluginet. Den indeholder principper, formater og designmønstre. Til uddybning, læs reference-filerne:
 

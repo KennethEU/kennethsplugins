@@ -1,4 +1,4 @@
-# Template-kode: Genbrugelige funktioner til rollespil-rollekort-docx
+# Template-kode: Genbrugelige funktioner til rollekort
 
 Denne fil indeholder genbrugelig Node.js-kode til docx-generering af rollekort, lærerguider og elevintroduktioner.
 
@@ -544,7 +544,7 @@ pdftoppm -jpeg -r 200 output.pdf preview
 
 ## Typiske fejl at undgå
 
-**Sproglige fejl:** Se `rollespil-sprogkvalitet-da`-skillen for komplet dansk retskrivningstjek (æøå, sammensatte ord, genus, person-perspektiv, fagterm-konsistens).
+**Sproglige fejl:** Se `sprogtjek`-skillen for komplet dansk retskrivningstjek (æøå, sammensatte ord, genus, person-perspektiv, fagterm-konsistens).
 
 **Tekniske fejl:**
 1. **Dobbelt-tekst fra sed:** Undgå at bruge sed til teksterstatning i docx-scripts — det skaber fejl. Skriv altid korrekt tekst direkte i JavaScript-strengen.

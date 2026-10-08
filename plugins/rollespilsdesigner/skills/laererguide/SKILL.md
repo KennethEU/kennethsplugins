@@ -1,6 +1,6 @@
 ---
-name: rollespil-laererguide-docx
-description: "Producerer lærerguiden til et rollespil som Word-dokument med alle obligatoriske sektioner (ramme, faseovergange, injects, RAS-debriefing, forberedelsestjekliste). Brug ved lærerguide, facilitatorguide, lærervejledning, facilitering, debriefing-spørgsmål og når læreren spørger hvad vedkommende skal sige eller gøre undervejs, fx \"hvad siger jeg når vi skifter fase\" eller \"hvordan faciliterer jeg forhandlingen\". Brug ikke til cheatsheets med modelsvar (rollespil-laerermateriale) eller til rollekort."
+name: laererguide
+description: "Producerer lærerguiden til et rollespil som Word-dokument med alle obligatoriske sektioner (ramme, faseovergange, injects, RAS-debriefing, forberedelsestjekliste). Brug ved lærerguide, facilitatorguide, lærervejledning, facilitering, debriefing-spørgsmål og når læreren spørger hvad vedkommende skal sige eller gøre undervejs, fx \"hvad siger jeg når vi skifter fase\" eller \"hvordan faciliterer jeg forhandlingen\". Brug ikke til cheatsheets med modelsvar (cheatsheet) eller til rollekort."
 allowed-tools:
   - Read
   - Glob
@@ -10,15 +10,15 @@ allowed-tools:
 
 # Lærerguide-generering
 
-**Projektregler:** `rollespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
+**Projektregler:** `projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
-Denne skill sikrer at alle obligatoriske sektioner kommer med i lærerguiden. Brug `rollespil-rollekort-docx`-skillen for selve docx-produktionen.
+Denne skill sikrer at alle obligatoriske sektioner kommer med i lærerguiden. Brug `rollekort`-skillen for selve docx-produktionen.
 
 ## Fase 0: Saml kontekst (automatisk — FØR alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
 2. Scan projektmappen for eksisterende rollekort og rollespilsdesign — lærerguiden SKAL matche rollekortene
-3. Læs `rollespil-designprincipper`-skillen for at sikre debriefing og facilitering følger de 10 principper
+3. Læs `designprincipper`-skillen for at sikre debriefing og facilitering følger de 10 principper
 4. Identificér faget og fagets fagbegreber — de skal bruges i debriefing-sektionen
 
 Skriv lærerguiden efter, at rollekortene er færdige. Ellers passer faseovergange, tal og krydsreferencer ikke, og guiden skal skrives om.
@@ -139,5 +139,5 @@ Afslut ALTID med én af:
 
 - **DONE** — Lærerguide genereret med alle 12 obligatoriske sektioner
 - **DONE_WITH_CONCERNS** — Guide leveret, men med mangler (fx: inject drama-kort mangler fordi scenariet er for kort, eller debriefing er generisk)
-- **BLOCKED** — Kan ikke generere guide (fx: rollekort er ikke færdige endnu, rollespil-designprincipper-skill ikke tilgængelig)
+- **BLOCKED** — Kan ikke generere guide (fx: rollekort er ikke færdige endnu, designprincipper-skill ikke tilgængelig)
 - **NEEDS_CONTEXT** — Mangler information (fx: "Hvor lang tid har du til rollespillet?")

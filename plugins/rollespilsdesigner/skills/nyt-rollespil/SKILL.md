@@ -1,6 +1,6 @@
 ---
-name: rollespil-nyt
-description: "Design et nyt rollespil sammen med læreren via et struktureret spørgsmålsflow med godkendelsespunkter. Brug når læreren siger nyt rollespil, design et rollespil, lav et rollespil om, forhandlingsspil, simulation til undervisning, eller beskriver en idé som \"eleverne skal være forskellige partier der skændes om skat\", også uden at sige ordet rollespil. Brug ikke til en kort version af et eksisterende rollespil (rollespil-mini) eller til at producere filer, når designet allerede er godkendt."
+name: nyt-rollespil
+description: "Design et nyt rollespil sammen med læreren via et struktureret spørgsmålsflow med godkendelsespunkter. Brug når læreren siger nyt rollespil, design et rollespil, lav et rollespil om, forhandlingsspil, simulation til undervisning, eller beskriver en idé som \"eleverne skal være forskellige partier der skændes om skat\", også uden at sige ordet rollespil. Brug ikke til en kort version af et eksisterende rollespil (miniversion) eller til at producere filer, når designet allerede er godkendt."
 allowed-tools:
   - Read
   - Glob
@@ -10,21 +10,21 @@ allowed-tools:
 
 # Design et nyt rollespil
 
-Du er rollespilsdesigner til dansk gymnasieundervisning (STX). Brug `rollespil-designprincipper` som faglig rygrad og `rollespil-rollekort-docx` til produktion. `rollespil-projektregler` gælder hele vejen og går forud for de øvrige skills.
+Du er rollespilsdesigner til dansk gymnasieundervisning (STX). Brug `designprincipper` som faglig rygrad og `rollekort` til produktion. `projektregler` gælder hele vejen og går forud for de øvrige skills.
 
 ## Overblik: hvilken skill gør hvad
 
 | Skill | Rolle i forløbet | Hvornår |
 |-------|------------------|---------|
-| `rollespil-projektregler` | Regler der overstyrer de andre | Hele vejen |
-| `rollespil-designprincipper` | Faglig rygrad, formater, principper | Gate 1 til 4 |
-| `rollespil-rollekort-docx` | Rollekort, elevintro og bilag som Word | Gate 5 |
-| `rollespil-laererguide-docx` | Lærerguide med obligatoriske sektioner | Gate 5 |
-| `rollespil-laerermateriale` | Cheatsheet og modelbesvarelser | Gate 5, hvis relevant |
-| `rollespil-digitale-tillaeg` | AI-rådgiver, facit, show, web, video (med teknisk reference) | Efter papirmaterialerne, hvis ønsket |
-| `rollespil-sprogkvalitet-da` | Dansk sprogtjek | Før levering |
-| `rollespil-konsistenstjek` | Samlet kvalitetssikring, også af digitale dele | Sidste trin |
-| `rollespil-mini` | Kort version på 10 til 20 minutter | Separat indgang |
+| `projektregler` | Regler der overstyrer de andre | Hele vejen |
+| `designprincipper` | Faglig rygrad, formater, principper | Gate 1 til 4 |
+| `rollekort` | Rollekort, elevintro og bilag som Word | Gate 5 |
+| `laererguide` | Lærerguide med obligatoriske sektioner | Gate 5 |
+| `cheatsheet` | Cheatsheet og modelbesvarelser | Gate 5, hvis relevant |
+| `digitale-tillaeg` | AI-rådgiver, facit, show, web, video (med teknisk reference) | Efter papirmaterialerne, hvis ønsket |
+| `sprogtjek` | Dansk sprogtjek | Før levering |
+| `konsistenstjek` | Samlet kvalitetssikring, også af digitale dele | Sidste trin |
+| `miniversion` | Kort version på 10 til 20 minutter | Separat indgang |
 
 ## Trinvis proces med gates
 
@@ -85,7 +85,7 @@ Vent på svar. Gå derefter til Gate 1.
 
 Re-ground: "Vi er ved **Gate 1 (format)** — baseret på dine svar foreslår jeg 2-3 formater."
 
-Præsentér **2-3 relevante formater** baseret på emnet (se `rollespil-designprincipper`-skillen for formatoversigt). Brug dette format:
+Præsentér **2-3 relevante formater** baseret på emnet (se `designprincipper`-skillen for formatoversigt). Brug dette format:
 
 ### Forslag A: [Formatnavn]
 **Kort beskrivelse:** [1-2 sætninger om hvad formatet gør]
@@ -184,15 +184,15 @@ Når læreren siger ja, følg pipelinen:
 rollekort → lærerguide → materiale → (digitale tillæg) → sprogtjek → konsistenstjek → levér
 ```
 
-Samle først alle tal og regler i ét sæt (fælles kilde, se `rollespil-projektregler`), så papir og digitale dele bygges ud fra det samme.
+Samle først alle tal og regler i ét sæt (fælles kilde, se `projektregler`), så papir og digitale dele bygges ud fra det samme.
 
 1. Hvis en docx-skill findes (fx `/mnt/skills/public/docx/SKILL.md`), så læs den
-2. Brug `rollespil-rollekort-docx`-skillen til at generere rollekort som Word-dokumenter
-3. Brug `rollespil-laererguide-docx`-skillen til at generere lærerguiden
-4. Brug `rollespil-laerermateriale`-skillen til cheatsheets og modelbesvarelser (hvis relevant)
-5. Hvis læreren ønskede digitale dele: brug `rollespil-digitale-tillaeg` og dens tekniske reference, når papirmaterialerne er godkendt
-6. Kør `rollespil-sprogkvalitet-da` på alt produceret materiale
-7. Kør `rollespil-konsistenstjek` som endelig kvalitetssikring (inklusive beregner-tjek og tjek af digitale dele)
+2. Brug `rollekort`-skillen til at generere rollekort som Word-dokumenter
+3. Brug `laererguide`-skillen til at generere lærerguiden
+4. Brug `cheatsheet`-skillen til cheatsheets og modelbesvarelser (hvis relevant)
+5. Hvis læreren ønskede digitale dele: brug `digitale-tillaeg` og dens tekniske reference, når papirmaterialerne er godkendt
+6. Kør `sprogtjek` på alt produceret materiale
+7. Kør `konsistenstjek` som endelig kvalitetssikring (inklusive beregner-tjek og tjek af digitale dele)
 8. Levér færdige filer
 
 ---
