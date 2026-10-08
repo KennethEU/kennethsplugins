@@ -1,6 +1,6 @@
 ---
 name: rollespil-rollekort-docx
-description: "Producerer rollekort, livskort, beslutningskort og elevintroduktioner til rollespil som printklare Word-dokumenter (.docx) med Node.js. Brug når brugeren nævner rollekort, elevintroduktion, print eller docx i forbindelse med rollespil eller simulation. Normalversionen er standard; støtte og stærk laves kun efter ønske. Dækker farvepalet, margener og hjælpefunktioner. Lærerguider hører under rollespil-laererguide-docx og cheatsheets under rollespil-laerermateriale."
+description: "Producerer rollekort, livskort, beslutningskort og elevintroduktioner til rollespil som printklare Word-dokumenter (.docx) med Node.js. Brug når læreren siger rollekort, elevintroduktion, \"til printeren\", print, word eller docx i forbindelse med rollespil eller simulation. Normalversionen er standard; støtte og stærk laves kun efter ønske. Brug ikke til lærerguider (rollespil-laererguide-docx), cheatsheets (rollespil-laerermateriale) eller dokumenter uden for rollespil."
 allowed-tools:
   - Read
   - Glob
@@ -21,7 +21,7 @@ Denne skill styrer *hvordan* du genererer Word-dokumenter til rollespil. Den fag
 3. Læs `rollespil-designprincipper`-skillen — rollekortene SKAL overholde de 10 principper
 4. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning
 
-**HÅRD REGEL:** Hav rollekortenes indhold 100% klar FØR du begynder at kode. Skriv ALDRIG kode og indhold samtidig.
+Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten først bagefter i scriptet, giver det dobbeltarbejde og tekstfejl i de genererede filer.
 
 ---
 

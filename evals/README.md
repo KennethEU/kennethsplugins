@@ -2,7 +2,11 @@
 
 ## Automatiske triggertests (denne mappe)
 
-15 cases i `trigger-*`. Hver sender en realistisk besked og tjekker, om den rigtige skill bliver valgt (`tool_used: Skill`). `trigger-ingen-rollespil` er en negativ test: en Blooket-forespørgsel må ikke udløse nogen rollespilsskill.
+27 cases i `trigger-*`. Hver sender en besked og tjekker, om den rigtige skill bliver valgt (`tool_used: Skill`).
+
+- `trigger-<emne>-N`: almindelige formuleringer (14 cases).
+- `trigger-rodet-N`: rodede, korte formuleringer, som de skrives i travlhed (7 cases).
+- `trigger-nej-*` og `trigger-ingen-rollespil`: nære negativer, der deler ord med rollespil men hører til andre skills, fx dagsorden, eksamen, Bloom, videomanuskript og korrektur af elevsvar. Ingen rollespilsskill må udløses (6 cases).
 
 Kør fra pluginets rodmappe:
 
@@ -10,9 +14,9 @@ Kør fra pluginets rodmappe:
 claude plugin eval . --ablation none -j 6
 ```
 
-Koster ca. 3 $ for hele suiten. Rapporten ligger i `evals/results/` (ignoreres af git). Kør den igen efter hver ændring af en `description`.
+Koster ca. 5 $ for hele suiten. Rapporten ligger i `evals/results/` (ignoreres af git). Kør den igen efter hver ændring af en `description`.
 
-Sidst kørt oktober 2026: alle 15 består efter indsnævring af `rollespil-sprogkvalitet-da`.
+Sidst kørt oktober 2026: alle 27 består. Før beskrivelserne blev gjort skarpere, udløste rodede formuleringer om faseskift ikke lærerguiden.
 
 ## Tests, du selv skal køre i Cowork
 

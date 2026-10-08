@@ -1,6 +1,6 @@
 ---
 name: rollespil-digitale-tillaeg
-description: Brug når et rollespil skal have digitale tilføjelser eller værktøjer: AI-rådgiver pr. rolle, facit-beregner, lærershow, virksomhedswebside, kodesider, video eller billedprompter. Indeholder både designregler og en teknisk reference (arkitektur, kryptering, proxy, session, responsivt design, test). Bygger på erfaringerne fra Fjord Outdoor.
+description: "Designregler og teknisk reference til digitale tilføjelser til et rollespil: AI-rådgiver pr. rolle, facit-beregner, lærershow, virksomhedswebside, video og billedprompter. Brug når et rollespil skal have digitale værktøjer, efter at papirmaterialerne er godkendt. Bygger på erfaringerne fra Fjord Outdoor. Brug ikke til rollespil uden digitale dele eller til almindelige websider og apps."
 ---
 
 # Digitale tilføjelser til rollespil

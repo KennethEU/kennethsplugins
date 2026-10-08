@@ -551,3 +551,13 @@ pdftoppm -jpeg -r 200 output.pdf preview
 2. **Sideoverflow:** Hvert rollekort SKAL passe på præcis 1 A4-side (normal og stærk) eller 2 sider (støtte). Preview ALTID med pdftoppm.
 3. **Encoding:** Sørg for at Node.js-filen er gemt som UTF-8. Test med `node -e "console.log('æøå')"` først.
 4. **Margin-mismatch:** Brug de korrekte margener for dokumenttypen (MH_ROLLE for rollekort, MH_GUIDE for lærerguide, MH_INTRO for elevintro).
+5. **Sidestørrelse:** Sæt altid A4 eksplicit (`11906 x 16838` DXA). Stol ikke på standardværdien.
+6. **Tabelbredder:** Angiv bredden i DXA både på `columnWidths` og på hver celle. Summen skal passe til sidebredden minus margener.
+7. **Baggrundsfarve:** Brug `ShadingType.CLEAR` med `fill`. `SOLID` kan give sort baggrund.
+8. **Linjeskift:** Brug aldrig `\n` i en `TextRun`. Lav et nyt `Paragraph` eller brug `break`.
+9. **Punktlister:** Brug en `numbering`-konfiguration (`LevelFormat.BULLET`), ikke et skrevet `•`.
+10. **Sideskift:** `PageBreak` skal ligge inde i et `Paragraph`.
+11. **Billeder:** `ImageRun` kræver `type` (fx `png`).
+12. **Skillelinjer:** Brug en afsnitskant (border) frem for en tom tabel.
+
+(Punkt 5 til 12 er hentet fra Anthropics docx-skill, github.com/anthropics/skills.)

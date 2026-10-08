@@ -1,6 +1,6 @@
 ---
 name: rollespil-sprogkvalitet-da
-description: "Dansk sproglig kvalitetssikring af rollespilsmaterialer: rollekort, lærerguider, elevintroduktioner, cheatsheets og tekster i digitale værktøjer. Brug som sidste trin før levering af rollespilsmaterialer, og når brugeren beder om sprogcheck, retskrivning eller korrektur af sådanne tekster. Fanger sammensatte ord, person-perspektiv, æøå, genus og fagterm-inkonsistens. Bruges ikke til quizzer, eksamensmateriale eller andre materialer uden for rollespil."
+description: "Dansk sproglig kvalitetssikring af rollespilsmaterialer: rollekort, lærerguider, elevintroduktioner, cheatsheets og tekster i digitale værktøjer. Brug som sidste trin før levering af rollespilsmaterialer, og når læreren beder om sprogcheck, retskrivning eller korrektur af sådanne tekster. Fanger sammensatte ord, person-perspektiv, æøå, genus og fagterm-inkonsistens. Brug ikke til elevopgaver, quizzer, eksamensmateriale eller andre tekster uden for rollespil."
 allowed-tools:
   - Read
   - Glob

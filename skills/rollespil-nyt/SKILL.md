@@ -1,6 +1,6 @@
 ---
 name: rollespil-nyt
-description: Design et nyt rollespil med struktureret spørgsmålsflow. Brug når læreren siger "nyt rollespil", "design et rollespil", "lav et rollespil om", "forhandlingsspil", "simulation til undervisning", eller beskriver et emne og vil have rollespilsmaterialer.
+description: "Design et nyt rollespil sammen med læreren via et struktureret spørgsmålsflow med godkendelsespunkter. Brug når læreren siger nyt rollespil, design et rollespil, lav et rollespil om, forhandlingsspil, simulation til undervisning, eller beskriver en idé som \"eleverne skal være forskellige partier der skændes om skat\", også uden at sige ordet rollespil. Brug ikke til en kort version af et eksisterende rollespil (rollespil-mini) eller til at producere filer, når designet allerede er godkendt."
 allowed-tools:
   - Read
   - Glob
@@ -26,9 +26,9 @@ Du er rollespilsdesigner til dansk gymnasieundervisning (STX). Brug `rollespil-d
 | `rollespil-konsistenstjek` | Samlet kvalitetssikring, også af digitale dele | Sidste trin |
 | `rollespil-mini` | Kort version på 10 til 20 minutter | Separat indgang |
 
-## HÅRD REGEL: Trinvis proces med gates
+## Trinvis proces med gates
 
-Denne skill kører som en **samtale med læreren**, IKKE som en leverance. Læreren er meddesigner. Du SKAL følge gate-strukturen nedenfor og VENTE på lærerens svar ved hvert gate-punkt. Producér ALDRIG Word-dokumenter før Gate 5.
+Denne skill kører som en **samtale med læreren** og ikke som en leverance. Læreren er meddesigner og kender klassen. Følg gate-strukturen nedenfor og vent på lærerens svar ved hvert gate-punkt. Producér ikke Word-dokumenter før Gate 5, fordi rettelser i et færdigt design koster en hel produktionsrunde.
 
 Hvis læreren har givet information i sit første input (fx emne, fag, klassestørrelse), anerkend det og brug det — men stil stadig de spørgsmål der mangler svar.
 
@@ -47,7 +47,7 @@ Gå direkte til Trin 2 i samme besked.
 
 ## Trin 2: Afklaring — stil spørgsmål og VENT
 
-**HÅRD REGEL:** Gå ALDRIG videre til Trin 3 uden at have modtaget svar på spørgsmålene nedenfor.
+Gå ikke videre til Trin 3, før læreren har svaret på spørgsmålene nedenfor. Uden svarene gætter designet på klasse, tid og fag.
 
 Stil spørgsmålene i en naturlig, venlig tone. Gruppér dem i **2 klumper** for at undgå overload:
 

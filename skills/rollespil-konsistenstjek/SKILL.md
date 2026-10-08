@@ -1,6 +1,6 @@
 ---
 name: rollespil-konsistenstjek
-description: "Kører kvalitetssikring på rollespilsmaterialer før de bruges i undervisningen. Brug denne skill efter generering af rollekort, lærerguider og elevintroduktioner — og altid før endelig levering til brugeren. Trigger ved 'tjek', 'kvalitetssikring', 'konsistenstjek', 'klar til print', 'er det færdigt' eller lignende. Skillen tjekker krydsreferencer, stemmematematik, person-perspektiv, sprog, balance og differentiering."
+description: "Kvalitetssikrer færdige rollespilsmaterialer før de bruges i undervisningen: krydsreferencer, stemmematematik, person-perspektiv, sprog, balance, facilitering, beregner og digitale dele. Brug efter produktion og altid før levering, og når læreren spørger \"passer det hele sammen\", \"er det klar til print\", \"tjek lige alt\", kvalitetssikring eller konsistenstjek af et rollespil. Brug ikke til eksamenscases eller andre materialer uden for rollespil."
 allowed-tools:
   - Read
   - Glob
@@ -129,6 +129,26 @@ Kilder: `rollespil-projektregler` (beregner-tjek) og `rollespil-digitale-tillaeg
 - [ ] Digitale dele er testet på computer og mobil (ingen vandret scroll, ingen konsolfejl)?
 - [ ] Backup findes i arkivmappen?
 
+## 9. Læsertest med frisk læser
+
+Formål: finde det, forfatteren ikke selv kan se. Du kender hele rollespillet; eleven kender kun to dokumenter.
+
+1. Vælg elevintroduktionen og ét rollekort (helst den mest komplekse rolle).
+2. Start en frisk læser uden forhistorie: en underagent, hvis du kan, ellers beder du læreren åbne en ny samtale. Giv læseren kun de to dokumenter og denne opgave: "Du er elev i 2.g og har fået disse to papirer. Svar kun ud fra dem."
+3. Stil læseren disse spørgsmål:
+   - Hvad er dit mål, og hvad er du uenig med de andre om?
+   - Hvad må du holde tilbage, og hvad må du ikke sige?
+   - Hvem taler du med først, og hvad siger du?
+   - Hvad gør du, hvis du er i tvivl midt i spillet?
+   - Hvilke ord eller tal forstår du ikke?
+   - Hvad tror du, de andre roller vil?
+4. Vurdér svarene:
+   - [ ] Læseren kan svare på de første fem spørgsmål korrekt. Hvis ikke, er det uklart i materialet.
+   - [ ] Læseren kan ikke redegøre sikkert for de andre rollers skjulte information. Kan den, er der en lækage.
+   - [ ] Intet af det, læseren ikke forstår, er et fagbegreb, eleverne ikke har mødt.
+
+Brug punktet, når rollekort og elevintroduktion er færdige. Det er ikke relevant ved miniversioner uden elevintroduktion.
+
 ## Rapportformat
 
 Præsentér resultatet som:
@@ -144,8 +164,9 @@ KONSISTENSTJEK: [Rollespilnavn]
 6. DIFFERENTIERING: ✅ / ❌ [detaljer]
 7. FACILITERING: ✅ / ❌ [detaljer]
 8. BEREGNER OG DIGITALE DELE: ✅ / ❌ / ikke relevant [detaljer]
+9. LÆSERTEST: ✅ / ❌ / ikke relevant [detaljer]
 
-SAMLET: X af 7 (eller 8) bestået
+SAMLET: X af 7 til 9 bestået (punkt 8 og 9 kun hvis relevante)
 KRITISKE FEJL: [liste over fejl der SKAL rettes]
 ANBEFALINGER: [liste over forbedringer der KAN rettes]
 ```

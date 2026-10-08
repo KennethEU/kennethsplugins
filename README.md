@@ -103,6 +103,13 @@ I Claude: tilføj en markedsplads med adressen `KennethEU/rollespilsdesigner`, o
 
 ## Changelog
 
+### v1.5.2 (oktober 2026)
+- Alle beskrivelser har fået konkrete, rodede triggervendinger og en "Brug ikke til"-del (inspireret af Anthropics skill-creator). Lærerguiden udløses nu også af "hvad siger jeg når vi skifter fase"
+- 12 nye triggertests (rodede formuleringer og nære negativer), i alt 27
+- Nyt punkt 9 i `rollespil-konsistenstjek`: læsertest med en frisk læser, der kun får elevintroduktion og ét rollekort
+- HÅRD REGEL-formuleringer er erstattet af regler med begrundelse
+- Otte docx-fælder fra Anthropics docx-skill i `template-kode.md`
+
 ### v1.5.1 (oktober 2026)
 - 15 triggertests i `evals/` (`claude plugin eval .`). De afslørede, at `rollespil-sprogkvalitet-da` blev udløst af en Blooket-forespørgsel. Beskrivelsen er indsnævret til rollespilsmaterialer
 - Scriptstier bruger `${CLAUDE_SKILL_DIR}`
