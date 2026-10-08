@@ -1,5 +1,5 @@
 ---
 type: tool_used
 tool: Skill
-input_match: '"skill"\s*:\s*"(?:[\w-]+:)?(?:spoergsmaal-til-tekst|spoergsmaalsregler|lektiespoergsmaal)"'
+input_match: '"skill"\s*:\s*"(?:[\w-]+:)?(?:bloom-spoergsmaal-til-tekst|bloom-spoergsmaalsregler|bloom-lektiespoergsmaal)"'
 ---

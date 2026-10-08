@@ -1,7 +1,7 @@
 """Test af generate_csv.py. Kør: python3 plugins/blooket/tests/test_generate_csv.py"""
 import csv, io, json, os, subprocess, sys, tempfile
 
-SCRIPT = os.path.join(os.path.dirname(__file__), "..", "skills", "quizformat", "references", "generate_csv.py")
+SCRIPT = os.path.join(os.path.dirname(__file__), "..", "skills", "blooket-quizformat", "references", "generate_csv.py")
 
 
 def run(questions):

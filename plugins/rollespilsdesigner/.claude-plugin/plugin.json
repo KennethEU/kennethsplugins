@@ -1,7 +1,7 @@
 {
   "name": "rollespilsdesigner",
   "description": "Design af rollespil og simuleringer til dansk gymnasieundervisning (STX). Genererer rollekort (normalversion som standard), lærerguider og elevintroduktioner som professionelle Word-dokumenter. Bygger på evidensbaseret pædagogik med 10 designprincipper, 8 rollespilsformater og struktureret debriefing.",
-  "version": "1.6.0",
+  "version": "1.7.0",
   "author": {
     "name": "Kenneth / Marselisborg Gymnasium"
   }

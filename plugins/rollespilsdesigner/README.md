@@ -18,19 +18,19 @@ rollespilsdesigner/
 ├── .claude-plugin/plugin.json
 ├── README.md
 └── skills/
-    ├── nyt-rollespil/       ← Start nyt rollespilsdesign
-    ├── miniversion/         ← Miniversion (forløb og metode samlet)
-    ├── designprincipper/    ← Faglig rygrad: 10 principper + 8 formater
-    ├── rollekort/           ← Docx-produktion: farver, margener, layout
+    ├── rollespil-nyt/              ← Start nyt rollespilsdesign
+    ├── rollespil-miniversion/      ← Miniversion (forløb og metode samlet)
+    ├── rollespil-designprincipper/ ← Faglig rygrad: 10 principper + 8 formater
+    ├── rollespil-rollekort/        ← Docx-produktion: farver, margener, layout
     │   └── references/template-kode.md
-    ├── laererguide/         ← Lærerguide: 12 obligatoriske sektioner + RAS
-    ├── cheatsheet/          ← Cheatsheets: spørgsmål + modelbesvarelser
-    ├── sprogtjek/           ← Dansk retskrivning + QA-tjekliste
+    ├── rollespil-laererguide/      ← Lærerguide: 12 obligatoriske sektioner + RAS
+    ├── rollespil-cheatsheet/       ← Cheatsheets: spørgsmål + modelbesvarelser
+    ├── rollespil-sprogtjek/        ← Dansk retskrivning + QA-tjekliste
     │   └── scripts/sprogtjek.py
-    ├── projektregler/       ← Ingen ritualer, normalversion nok, beregner-tjek
-    ├── digitale-tillaeg/    ← Digitale værktøjer: designregler
+    ├── rollespil-projektregler/    ← Ingen ritualer, normalversion nok, beregner-tjek
+    ├── rollespil-digitale-tillaeg/ ← Digitale værktøjer: designregler
     │   └── references/teknik.md
-    └── konsistenstjek/      ← Kvalitetssikring af materialer
+    └── rollespil-konsistenstjek/   ← Kvalitetssikring af materialer
 ```
 
 I `evals/` ligger automatiske triggertests (`claude plugin eval plugins/rollespilsdesigner`) og en plan for de tests, der skal køres i Cowork. Se `evals/README.md`.
@@ -39,36 +39,36 @@ I `evals/` ligger automatiske triggertests (`claude plugin eval plugins/rollespi
 
 Skillsene kører i en fast rækkefølge — du behøver kun starte med en command, resten sker automatisk.
 
-**Fuldt rollespil** (`/rollespilsdesigner:nyt-rollespil`):
+**Fuldt rollespil** (`/rollespilsdesigner:rollespil-nyt`):
 ```
-nyt-rollespil → design → rollekort → lærerguide → materiale → (digitale tillæg) → sprogtjek → konsistenstjek → levér
+rollespil-nyt → design → rollekort → lærerguide → materiale → (digitale tillæg) → sprogtjek → konsistenstjek → levér
 ```
 
-`projektregler` gælder hele vejen og overstyrer de øvrige skills.
+`rollespil-projektregler` gælder hele vejen og overstyrer de øvrige skills.
 
-**Hvem kender hvem:** `nyt-rollespil` har en oversigtstabel over alle skills. Alle produktionsskills peger på projektreglerne, og `digitale-tillaeg` peger på designprincipper, projektregler og konsistenstjek, som også har et tjek af beregner og digitale dele.
+**Hvem kender hvem:** `rollespil-nyt` har en oversigtstabel over alle skills. Alle produktionsskills peger på projektreglerne, og `rollespil-digitale-tillaeg` peger på designprincipper, projektregler og konsistenstjek, som også har et tjek af beregner og digitale dele.
 
-**Miniversion** (`/rollespilsdesigner:miniversion`):
+**Miniversion** (`/rollespilsdesigner:rollespil-miniversion`):
 ```
 miniversion → rollekort → sprogtjek → konsistenstjek → levér
 ```
 
 ## Skills
 
-Kommandoerne skrives med plugin-navnet foran, fx `/rollespilsdesigner:rollekort`.
+Kommandoerne skrives med plugin-navnet foran, fx `/rollespilsdesigner:rollespil-rollekort`.
 
 | Skill | Type | Trigger |
 |-------|------|---------|
-| `nyt-rollespil` | Indgang | "nyt rollespil", "design et rollespil" |
-| `miniversion` | Indgang | "miniversion", "kort version", "simplificér", "kan vi lave det kortere" |
-| `designprincipper` | Auto | Design-beslutninger, format-valg, brainstorming |
-| `rollekort` | Auto | Docx-generering af rollekort og materialer |
-| `laererguide` | Auto | Produktion af lærerguider |
-| `cheatsheet` | Auto | Cheatsheats, modelbesvarelser, facitlister |
-| `sprogtjek` | Auto | Sprogcheck, korrektur, dansk tekst |
-| `projektregler` | Auto | Regler der overstyrer de øvrige skills (ritualer, versioner) |
-| `digitale-tillaeg` | Auto | AI-rådgiver, facit-beregner, lærershow, webside, video |
-| `konsistenstjek` | Auto | Kvalitetssikring, "er det færdigt", "klar til print" |
+| `rollespil-nyt` | Indgang | "nyt rollespil", "design et rollespil" |
+| `rollespil-miniversion` | Indgang | "miniversion", "kort version", "simplificér", "kan vi lave det kortere" |
+| `rollespil-designprincipper` | Auto | Design-beslutninger, format-valg, brainstorming |
+| `rollespil-rollekort` | Auto | Docx-generering af rollekort og materialer |
+| `rollespil-laererguide` | Auto | Produktion af lærerguider |
+| `rollespil-cheatsheet` | Auto | Cheatsheats, modelbesvarelser, facitlister |
+| `rollespil-sprogtjek` | Auto | Sprogcheck, korrektur, dansk tekst |
+| `rollespil-projektregler` | Auto | Regler der overstyrer de øvrige skills (ritualer, versioner) |
+| `rollespil-digitale-tillaeg` | Auto | AI-rådgiver, facit-beregner, lærershow, webside, video |
+| `rollespil-konsistenstjek` | Auto | Kvalitetssikring, "er det færdigt", "klar til print" |
 
 ## Anbefalet mappestruktur (Cowork)
 
@@ -104,6 +104,9 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 - **Claude.ai** — skills kan uploades individuelt via Settings > Skills
 
 ## Changelog
+
+### v1.7.0 (oktober 2026)
+- Skillene har fået gruppenavnet `rollespil-` foran det beskrivende navn, så de står samlet i kommandomenuen i Cowork, hvor plugin-navnet ikke vises: `rollespil-nyt`, `rollespil-miniversion`, `rollespil-rollekort`, `rollespil-laererguide`, `rollespil-cheatsheet`, `rollespil-sprogtjek`, `rollespil-konsistenstjek`, `rollespil-digitale-tillaeg`, `rollespil-designprincipper` og `rollespil-projektregler`.
 
 ### v1.6.0 (oktober 2026)
 - Skillene er omdøbt, så kommandoerne ikke gentager `rollespil` og forklarer sig selv, fx `/rollespilsdesigner:nyt-rollespil` og `/rollespilsdesigner:miniversion`. Gamle navn og nyt: `rollespil-nyt` er `nyt-rollespil`, `rollespil-mini` er `miniversion`, `rollespil-designprincipper` er `designprincipper`, `rollespil-rollekort-docx` er `rollekort`, `rollespil-laererguide-docx` er `laererguide`, `rollespil-laerermateriale` er `cheatsheet`, `rollespil-sprogkvalitet-da` er `sprogtjek`, `rollespil-konsistenstjek` er `konsistenstjek`, `rollespil-projektregler` er `projektregler` og `rollespil-digitale-tillaeg` er `digitale-tillaeg`.
