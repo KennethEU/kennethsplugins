@@ -1,6 +1,6 @@
 ---
-name: bloom-arbejdsspoergsmaal
-description: "Regler og referencer til Bloom-skillene: Blooms reviderede taksonomi, forbudte formuleringer og verber, taxonomy table og kvalitetstjek af arbejdsspørgsmål til fagtekster i STX. Læses af bloom-bloom, bloom-lektie, bloom-skabe, bloom-vurder og bloom-klasseflow. Brug direkte, når læreren spørger, hvordan spørgsmål til en tekst bør formuleres, eller når ingen af de andre bloom-skills passer. Brug ikke til quizzer (blooket), mundtlige eksamensspørgsmål med bilag eller gruppearbejdsdagsordener."
+name: spoergsmaalsregler
+description: "Regler og referencer til Bloom-skillene: Blooms reviderede taksonomi, forbudte formuleringer og verber, taxonomy table og kvalitetstjek af arbejdsspørgsmål til fagtekster i STX. Læses af spoergsmaal-til-tekst, lektiespoergsmaal, skabe-opgaver, vurder-spoergsmaal og planlaeg-time. Brug direkte, når læreren spørger, hvordan spørgsmål til en tekst bør formuleres, eller når ingen af de andre bloom-skills passer. Brug ikke til quizzer (pluginet blooket), mundtlige eksamensspørgsmål med bilag eller gruppearbejdsdagsordener."
 user-invocable: false
 allowed-tools:
   - Read
@@ -62,11 +62,11 @@ Hver slags opgave har sin egen skill. De læser alle denne skill for reglerne.
 
 | Opgave | Skill | Leverance |
 |--------|-------|-----------|
-| Komplet sæt til en tekst | `bloom-bloom` | To versioner og taxonomy table |
-| Lektiespørgsmål | `bloom-lektie` | 3 spørgsmål på Huske/Forstå med Bloom-tag |
-| Kreative opgaver (niveau 6) | `bloom-skabe` | 8 til 12 skabe-spørgsmål i kategorier |
-| Vurdering af eksisterende spørgsmål | `bloom-vurder` | Vurdering, forbedret sæt og anbefalinger |
-| Planlægning af en time | `bloom-klasseflow` | Tre faser med spørgsmål, tid og arbejdsform |
+| Komplet sæt til en tekst | `spoergsmaal-til-tekst` | To versioner og taxonomy table |
+| Lektiespørgsmål | `lektiespoergsmaal` | 3 spørgsmål på Huske/Forstå med Bloom-tag |
+| Kreative opgaver (niveau 6) | `skabe-opgaver` | 8 til 12 skabe-spørgsmål i kategorier |
+| Vurdering af eksisterende spørgsmål | `vurder-spoergsmaal` | Vurdering, forbedret sæt og anbefalinger |
+| Planlægning af en time | `planlaeg-time` | Tre faser med spørgsmål, tid og arbejdsform |
 
 Passer ingen af dem, så brug reglerne nedenfor direkte.
 

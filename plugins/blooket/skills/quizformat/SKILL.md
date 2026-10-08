@@ -1,6 +1,6 @@
 ---
-name: blooket-quiz
-description: "Formatregler og CSV-generator til Blooket-quizzer: svarmuligheder, tidsgrænser, placering af korrekte svar og Blookets importformat. Læses af skillen blooket. Brug direkte, når læreren vil rette en eksisterende Blooket-CSV, tilføje spørgsmål eller har problemer med import. Brug ikke til arbejdsspørgsmål efter Bloom eller til andre quizplatforme."
+name: quizformat
+description: "Formatregler og CSV-generator til Blooket-quizzer: svarmuligheder, tidsgrænser, placering af korrekte svar og Blookets importformat. Læses af skillen lav-quiz. Brug direkte, når læreren vil rette en eksisterende Blooket-CSV, tilføje spørgsmål eller har problemer med import. Brug ikke til arbejdsspørgsmål efter Bloom eller til andre quizplatforme."
 user-invocable: false
 allowed-tools:
   - Read

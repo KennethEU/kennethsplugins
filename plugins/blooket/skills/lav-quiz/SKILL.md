@@ -1,5 +1,5 @@
 ---
-name: blooket
+name: lav-quiz
 description: "Laver en Blooket-quiz som importklar CSV-fil ud fra undervisningsmateriale, med bekræftelse af begreber og eksempelspørgsmål undervejs. Brug når læreren siger \"lav en Blooket\", \"quiz til Blooket\", \"multiple choice til import\", \"quizspørgsmål som csv\", eller uploader materiale og vil have en quiz. Brug ikke til arbejdsspørgsmål efter Bloom (bloom), eksamensspørgsmål eller almindelige opgavespørgsmål uden quiz."
 argument-hint: "[emne eller materiale]"
 allowed-tools:
@@ -11,7 +11,7 @@ allowed-tools:
 
 # Blooket-quiz
 
-Lav en Blooket-quiz. Følg formatet i skillen `blooket-quiz`, fordi Blooket afviser filer, der afviger fra importskabelonen.
+Lav en Blooket-quiz. Følg formatet i skillen `quizformat`, fordi Blooket afviser filer, der afviger fra importskabelonen.
 
 **Input:** $ARGUMENTS
 
@@ -49,7 +49,7 @@ Spørg: "Passer stilen? Skal spørgsmålene være mere/mindre detaljerede?"
 ### Generér og levér
 
 3. Formulér alle spørgsmål med 2-4 svarmuligheder. Randomisér placeringen af det korrekte svar. Bland viden-, forståelses- og anvendelsesspørgsmål.
-4. Skriv spørgsmålene som JSON og generér den importklare CSV-fil med `${CLAUDE_SKILL_DIR}/../blooket-quiz/references/generate_csv.py` (se formatet i `blooket-quiz`). Ret fejl og skæv placering, hvis scriptet melder dem.
+4. Skriv spørgsmålene som JSON og generér den importklare CSV-fil med `${CLAUDE_SKILL_DIR}/../quizformat/references/generate_csv.py` (se formatet i `quizformat`). Ret fejl og skæv placering, hvis scriptet melder dem.
 5. Gem filen og levér den til brugeren.
 
 Svar på dansk.

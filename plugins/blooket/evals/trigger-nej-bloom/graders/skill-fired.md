@@ -1,7 +1,7 @@
 ---
 type: tool_used
 tool: Skill
-input_match: '"skill"\s*:\s*"(?:[\w-]+:)?(?:blooket[\w-]*)"'
+input_match: '"skill"\s*:\s*"(?:[\w-]+:)?(?:lav-quiz|quizformat)"'
 min: 0
 max: 0
 ---

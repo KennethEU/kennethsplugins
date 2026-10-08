@@ -1,6 +1,6 @@
 ---
-name: bloom-vurder
-description: "Vurderer og forbedrer eksisterende arbejdsspørgsmål mod Bloom-kriterier: niveau, forbudte formuleringer, besvarlighed og balance. Brug når læreren siger \"vurdér mine spørgsmål\", \"er disse spørgsmål gode nok\", \"tjek spørgsmålene\", \"forbedr spørgsmålene\", eller indsætter spørgsmål, der skal kvalitetssikres. Brug ikke til at lave nye spørgsmål fra bunden (bloom-bloom) eller til at rette elevbesvarelser."
+name: vurder-spoergsmaal
+description: "Vurderer og forbedrer eksisterende arbejdsspørgsmål mod Bloom-kriterier: niveau, forbudte formuleringer, besvarlighed og balance. Brug når læreren siger \"vurdér mine spørgsmål\", \"er disse spørgsmål gode nok\", \"tjek spørgsmålene\", \"forbedr spørgsmålene\", eller indsætter spørgsmål, der skal kvalitetssikres. Brug ikke til at lave nye spørgsmål fra bunden (spoergsmaal-til-tekst) eller til at rette elevbesvarelser."
 argument-hint: "[spørgsmål der skal vurderes]"
 allowed-tools:
   - Read
@@ -22,7 +22,7 @@ Giv mig eksisterende spørgsmål (dine egne eller kollegers) samt teksten de er 
 
 ## Trin
 
-1. **Læs tjeklisten** `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/references/forbudte-formuleringer.md` for vurderingsskemaet.
+1. **Læs tjeklisten** `${CLAUDE_SKILL_DIR}/../spoergsmaalsregler/references/forbudte-formuleringer.md` for vurderingsskemaet.
 
 ### Gate: Bekræft fokus — VENT på svar
 

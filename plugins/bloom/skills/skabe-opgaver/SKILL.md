@@ -1,6 +1,6 @@
 ---
-name: bloom-skabe
-description: "Laver 8 til 12 kreative skabe-spørgsmål (Bloom niveau 6) til en fagtekst: design, planlægning, generering, produktion og integration. Brug når læreren siger \"skabe-spørgsmål\", \"kreative opgaver\", \"niveau 6\", \"projektopgaver\", \"eleverne skal producere noget\". Brug ikke til et komplet sæt på alle niveauer (bloom-bloom) eller til lektiespørgsmål (bloom-lektie)."
+name: skabe-opgaver
+description: "Laver 8 til 12 kreative skabe-spørgsmål (Bloom niveau 6) til en fagtekst: design, planlægning, generering, produktion og integration. Brug når læreren siger \"skabe-spørgsmål\", \"kreative opgaver\", \"niveau 6\", \"projektopgaver\", \"eleverne skal producere noget\". Brug ikke til et komplet sæt på alle niveauer (spoergsmaal-til-tekst) eller til lektiespørgsmål (lektiespoergsmaal)."
 argument-hint: "[fagtekst eller emne]"
 allowed-tools:
   - Read
@@ -21,8 +21,8 @@ Generér dedikerede kreative spørgsmål der kræver at eleverne designer, planl
 
 ## Trin
 
-1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/SKILL.md`.
-2. **Læs Skabe-verberne** i `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/references/bloom-verber.md` (Niveau 6-sektionen).
+1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../spoergsmaalsregler/SKILL.md`.
+2. **Læs Skabe-verberne** i `${CLAUDE_SKILL_DIR}/../spoergsmaalsregler/references/bloom-verber.md` (Niveau 6-sektionen).
 3. **Identificér kreativt potentiale** i teksten: hvad kan redesignes, planlægges, genereres?
 
 ### Gate: Bekræft fokus — VENT på OK

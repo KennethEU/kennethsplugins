@@ -1,6 +1,6 @@
 ---
-name: bloom-bloom
-description: "Laver et komplet sæt arbejdsspørgsmål til en fagtekst efter Blooms taksonomi, i to versioner (taksonomisk progression og tekstnær struktur) med taxonomy table. Brug når læreren siger \"lav arbejdsspørgsmål\", \"spørgsmål til denne tekst\", \"Bloom-spørgsmål\", \"analyser teksten med Bloom\", eller uploader en fagtekst og vil have spørgsmål. Brug ikke til kun lektiespørgsmål (bloom-lektie), kun skabe-spørgsmål (bloom-skabe), vurdering af eksisterende spørgsmål (bloom-vurder), timeplanlægning (bloom-klasseflow), quizzer (blooket) eller eksamensspørgsmål med bilag."
+name: spoergsmaal-til-tekst
+description: "Laver et komplet sæt arbejdsspørgsmål til en fagtekst efter Blooms taksonomi, i to versioner (taksonomisk progression og tekstnær struktur) med taxonomy table. Brug når læreren siger \"lav arbejdsspørgsmål\", \"spørgsmål til denne tekst\", \"Bloom-spørgsmål\", \"analyser teksten med Bloom\", eller uploader en fagtekst og vil have spørgsmål. Brug ikke til kun lektiespørgsmål (lektiespoergsmaal), kun skabe-spørgsmål (skabe-opgaver), vurdering af eksisterende spørgsmål (vurder-spoergsmaal), timeplanlægning (planlaeg-time), quizzer (pluginet blooket) eller eksamensspørgsmål med bilag."
 argument-hint: "[fagtekst eller emne]"
 allowed-tools:
   - Read
@@ -19,7 +19,7 @@ Generér et komplet sæt arbejdsspørgsmål baseret på Bloom's Reviderede Takso
 
 ## Trin
 
-1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/SKILL.md` og forstå reglerne.
+1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../spoergsmaalsregler/SKILL.md` og forstå reglerne.
 2. **Analysér teksten** stille: hovedemne, fagbegreber, afsnitsstruktur, teksttype.
 
 ### Gate 1: Bekræft analyse (vent på svar)
@@ -44,10 +44,10 @@ Spørg: "Passer det med dit fokus? Er der begreber du vil prioritere — eller n
 
 ### Gate 2: Generér og præsentér
 
-3. **Generér Version 1** med spørgsmål på alle 6 niveauer. Læs `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/references/bloom-verber.md` for korrekte verber.
+3. **Generér Version 1** med spørgsmål på alle 6 niveauer. Læs `${CLAUDE_SKILL_DIR}/../spoergsmaalsregler/references/bloom-verber.md` for korrekte verber.
 4. **Generér Version 2** der følger tekstens kronologi med Bloom-niveau i parentes.
-5. **Kvalitetstjek** mod reglerne: ét spørgsmål ad gangen, ingen forbudte verber, besvarligt fra teksten. Læs `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/references/forbudte-formuleringer.md` ved tvivl.
-6. **Taxonomy Table** — læs `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/references/taxonomy-table-template.md` og udfyld med antal + kommentar.
+5. **Kvalitetstjek** mod reglerne: ét spørgsmål ad gangen, ingen forbudte verber, besvarligt fra teksten. Læs `${CLAUDE_SKILL_DIR}/../spoergsmaalsregler/references/forbudte-formuleringer.md` ved tvivl.
+6. **Taxonomy Table** — læs `${CLAUDE_SKILL_DIR}/../spoergsmaalsregler/references/taxonomy-table-template.md` og udfyld med antal + kommentar.
 
 Præsentér begge versioner + taxonomy table. Afslut med:
 

@@ -1,7 +1,7 @@
 {
   "name": "blooket",
   "description": "Laver Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale, med bekræftelse af begreber og spørgsmål undervejs.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": {
     "name": "Kenneth / Marselisborg Gymnasium"
   }

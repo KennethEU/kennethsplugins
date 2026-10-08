@@ -1,6 +1,6 @@
 ---
-name: bloom-klasseflow
-description: "Planlægger en tre-faset time med lektietjek, arbejdsspørgsmål i par eller grupper og afsluttende diskussion, med Bloom-progression og arbejdsformer. Brug når læreren siger \"planlæg en time\", \"klasseflow\", \"lektionsstruktur\", \"tre faser\", \"hvad skal vi lave i timen\" ud fra en fagtekst. Brug ikke til rollespil, gruppearbejdsdagsordener eller et sæt spørgsmål uden timeplan (bloom-bloom)."
+name: planlaeg-time
+description: "Planlægger en tre-faset time med lektietjek, arbejdsspørgsmål i par eller grupper og afsluttende diskussion, med Bloom-progression og arbejdsformer. Brug når læreren siger \"planlæg en time\", \"klasseflow\", \"lektionsstruktur\", \"tre faser\", \"hvad skal vi lave i timen\" ud fra en fagtekst. Brug ikke til rollespil, gruppearbejdsdagsordener eller et sæt spørgsmål uden timeplan (spoergsmaal-til-tekst)."
 argument-hint: "[fagtekst, emne eller tidsramme]"
 allowed-tools:
   - Read
@@ -21,7 +21,7 @@ Planlæg en hel undervisningstime med lektietjek, gruppearbejde og afsluttende d
 
 ## Trin
 
-1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/SKILL.md`.
+1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../spoergsmaalsregler/SKILL.md`.
 
 ### Gate 1: Afklar kontekst — VENT på svar
 

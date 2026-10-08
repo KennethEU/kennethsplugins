@@ -1,6 +1,6 @@
 ---
-name: bloom-lektie
-description: "Laver 3 overkommelige lektiespørgsmål på Huske/Forstå-niveau til en fagtekst, så eleverne kan forberede sig hjemme og læreren kan lave et lektietjek. Brug når læreren siger \"lektiespørgsmål\", \"lektietjek\", \"hvad skal de forberede\", \"lav lige 3 nemme spørgsmål til i morgen\". Brug ikke til et fuldt sæt arbejdsspørgsmål (bloom-bloom), åbne diskussionsspørgsmål eller quizzer (blooket)."
+name: lektiespoergsmaal
+description: "Laver 3 overkommelige lektiespørgsmål på Huske/Forstå-niveau til en fagtekst, så eleverne kan forberede sig hjemme og læreren kan lave et lektietjek. Brug når læreren siger \"lektiespørgsmål\", \"lektietjek\", \"hvad skal de forberede\", \"lav lige 3 nemme spørgsmål til i morgen\". Brug ikke til et fuldt sæt arbejdsspørgsmål (spoergsmaal-til-tekst), åbne diskussionsspørgsmål eller quizzer (pluginet blooket)."
 argument-hint: "[fagtekst eller emne]"
 allowed-tools:
   - Read
@@ -22,7 +22,7 @@ Giv mig en tekst og eventuelt ønsket antal (default: 3). Jeg laver spørgsmål 
 
 ## Trin
 
-1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/SKILL.md` for spørgsmålsregler.
+1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../spoergsmaalsregler/SKILL.md` for spørgsmålsregler.
 2. **Identificér kernestof:** Hvad skal eleven mindst have forstået for at kunne følge timen?
 
 ### Gate: Bekræft kernestof — VENT på OK
