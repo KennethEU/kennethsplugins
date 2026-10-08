@@ -1,5 +1,5 @@
 ---
 type: tool_used
 tool: Skill
-input_match: '"skill"\s*:\s*"(?:[\w-]+:)?rollespil-laererguide-docx"'
+input_match: '"skill"\s*:\s*"(?:[\w-]+:)?laererguide"'
 ---

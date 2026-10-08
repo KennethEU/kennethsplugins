@@ -11,19 +11,19 @@
       "name": "rollespilsdesigner",
       "source": "./plugins/rollespilsdesigner",
       "description": "Design af rollespil og simuleringer til dansk gymnasieundervisning (STX): rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring.",
-      "version": "1.5.2"
+      "version": "1.6.0"
     },
     {
       "name": "bloom",
       "source": "./plugins/bloom",
       "description": "Arbejdsspørgsmål til fagtekster efter Blooms reviderede taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time.",
-      "version": "1.0.0"
+      "version": "1.1.0"
     },
     {
       "name": "blooket",
       "source": "./plugins/blooket",
       "description": "Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale.",
-      "version": "1.0.0"
+      "version": "1.1.0"
     }
   ]
 }

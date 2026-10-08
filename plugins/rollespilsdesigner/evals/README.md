@@ -22,8 +22,8 @@ Sidst kørt oktober 2026: alle 27 består. Før beskrivelserne blev gjort skarpe
 
 Brug rigtige opgaver og noter, hvad der går skævt.
 
-1. **Nyt rollespil.** `/rollespil-nyt` med et emne fra din egen undervisning. Gennemfør hele flowet. Tjek: stiller den spørgsmålene i rækkefølge, stopper den ved godkendelsespunkter, ender den med konsistenstjek?
-2. **Miniversion.** `/rollespil-mini` på et eksisterende rollespil (fx Fjord Outdoor).
+1. **Nyt rollespil.** `/nyt-rollespil` med et emne fra din egen undervisning. Gennemfør hele flowet. Tjek: stiller den spørgsmålene i rækkefølge, stopper den ved godkendelsespunkter, ender den med konsistenstjek?
+2. **Miniversion.** `/miniversion` på et eksisterende rollespil (fx Fjord Outdoor).
 3. **Konsistenstjek af færdigt materiale.** Peg på en mappe med færdige filer. Tjek, at `sprogtjek.py` bliver kørt, og at rapporten har punkt 0 til 8.
 4. **Samme som test 1 på Haiku, Sonnet og Opus.** Springer en billigere model faser eller projektregler over?
 5. **Installation.** Upload pluginet som zip eller tilføj marketplace'en `KennethEU/kennethsplugins`. Alle 10 skills skal dukke op, og docx-generering og `sprogtjek.py` skal virke.

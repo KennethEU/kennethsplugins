@@ -1,5 +1,5 @@
 ---
 type: tool_used
 tool: Skill
-input_match: '"skill"\s*:\s*"(?:[\w-]+:)?(?:bloom-skabe)"'
+input_match: '"skill"\s*:\s*"(?:[\w-]+:)?(?:skabe-opgaver)"'
 ---
