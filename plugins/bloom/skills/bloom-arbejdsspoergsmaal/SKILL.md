@@ -1,16 +1,11 @@
 ---
 name: bloom-arbejdsspoergsmaal
-description: "Generér pædagogisk veldesignede arbejdsspørgsmål til fagtekster baseret på Bloom's Reviderede Taksonomi. Bruges ALTID når brugeren beder om arbejdsspørgsmål, lektiespørgsmål, undervisningsspørgsmål, Bloom-spørgsmål, taksonomiske spørgsmål, eller vil have spørgsmål til en tekst. Bruges også når brugeren vil have spørgsmål vurderet, forbedret eller kvalitetstjekket — eller beder om skabe-opgaver, klasseopgaver eller eksamensrelevante spørgsmål til STX. Trigger ved enhver opgave der involverer at lave spørgsmål til undervisningsmateriale, uanset fag (samfundsfag, mediefag, religion, erhvervsøkonomi, filosofi)."
+description: "Regler og referencer til Bloom-skillene: Blooms reviderede taksonomi, forbudte formuleringer og verber, taxonomy table og kvalitetstjek af arbejdsspørgsmål til fagtekster i STX. Læses af bloom-bloom, bloom-lektie, bloom-skabe, bloom-vurder og bloom-klasseflow. Brug direkte, når læreren spørger, hvordan spørgsmål til en tekst bør formuleres, eller når ingen af de andre bloom-skills passer. Brug ikke til quizzer (blooket), mundtlige eksamensspørgsmål med bilag eller gruppearbejdsdagsordener."
 user-invocable: false
 allowed-tools:
   - Read
   - Glob
   - Grep
-  - mcp__undervisning__hent_fag
-  - mcp__undervisning__hent_faglige_maal
-  - mcp__undervisning__hent_hold
-  - mcp__undervisning__hent_forloeb
-  - mcp__undervisning__hent_modul_detaljer
 ---
 
 # Bloom Arbejdsspørgsmål
@@ -27,10 +22,10 @@ Du er en erfaren dansk gymnasielærer med speciale i didaktisk design. Du laver 
 
 1. Læs CLAUDE.md for at forstå lærerens fag, hold og arbejdsgange
 2. Identificér faget ud fra teksten eller brugerens besked
-3. Hvis et fagligt emne er nævnt, tjek om der findes relevante faglige mål via MCP (`hent_faglige_maal`) — brug dem til at tilpasse spørgsmålene
-4. Scan projektmappen for relevante reference-filer (`references/bloom-verber.md`, `references/forbudte-formuleringer.md`, `references/taxonomy-table-template.md`)
+3. Hvis læreren har lagt faglige mål, forløbsbeskrivelser eller lignende i projektmappen, så læs dem og brug dem til at tilpasse spørgsmålene
+4. Læs reference-filerne efter behov: `references/bloom-verber.md`, `references/forbudte-formuleringer.md` og `references/taxonomy-table-template.md` (i denne skills mappe)
 
-**HÅRD REGEL:** Spørg IKKE læreren om fag eller niveau hvis det kan slås op.
+Spørg ikke læreren om fag eller niveau, hvis det kan læses af teksten eller projektmappen. Læreren har allerede givet oplysningen, og gentagne spørgsmål koster tid.
 
 ---
 
@@ -57,36 +52,23 @@ Når du skal afklare noget med læreren, brug dette mønster:
 > B) Kun lektiespørgsmål (3 stk., Huske/Forstå)
 > C) Klasseflow (lektietjek + gruppearbejde + diskussion)
 
-Stil ALDRIG flere spørgsmål i samme besked.
+Stil kun ét spørgsmål ad gangen, så læreren kan svare kort uden at miste tråden.
 
 ---
 
-## Modes
+## Hvilken skill hører til hvad
 
-Denne skill har fem modes. Afgør hvilken der passer baseret på brugerens besked:
+Hver slags opgave har sin egen skill. De læser alle denne skill for reglerne.
 
-### MODE 1: Fuld Bloom-kørsel (`/bloom`)
-**Trigger:** Brugeren giver en tekst og beder om arbejdsspørgsmål, eller beder bare om "Bloom-spørgsmål".
-**Output:** Begge versioner + taxonomy table (se Fuld output-struktur nedenfor).
+| Opgave | Skill | Leverance |
+|--------|-------|-----------|
+| Komplet sæt til en tekst | `bloom-bloom` | To versioner og taxonomy table |
+| Lektiespørgsmål | `bloom-lektie` | 3 spørgsmål på Huske/Forstå med Bloom-tag |
+| Kreative opgaver (niveau 6) | `bloom-skabe` | 8 til 12 skabe-spørgsmål i kategorier |
+| Vurdering af eksisterende spørgsmål | `bloom-vurder` | Vurdering, forbedret sæt og anbefalinger |
+| Planlægning af en time | `bloom-klasseflow` | Tre faser med spørgsmål, tid og arbejdsform |
 
-### MODE 2: Lektiespørgsmål (`/lektie`)
-**Trigger:** Brugeren beder om lektiespørgsmål, "3 spørgsmål til lektien", eller nævner at det skal være overkommeligt.
-**Output:** 3 centrale spørgsmål på Huske/Forstå-niveau med Bloom-tag. Kort og besvarlige.
-
-### MODE 3: Skabe-fokus (`/skabe`)
-**Trigger:** Brugeren beder specifikt om niveau 6-spørgsmål, kreative opgaver, eller skabe-spørgsmål.
-**Output:** 8-15 skabe-spørgsmål i kategorier (Generere, Planlægge, Producere). Læs `references/bloom-verber.md` for Skabe-verberne.
-
-### MODE 4: Vurdering (`/vurder`)
-**Trigger:** Brugeren præsenterer eksisterende spørgsmål og beder om vurdering, kvalitetstjek eller forbedring.
-**Output:** Systematisk vurdering af hvert spørgsmål + forbedrede versioner. Læs `references/forbudte-formuleringer.md` for tjeklisten.
-
-### MODE 5: Klasseflow (`/klasseflow`)
-**Trigger:** Brugeren beder om at planlægge en time, nævner tre-faset flow, eller vil have lektietjek + arbejdsspørgsmål + diskussion.
-**Output:** Tre faser med timing:
-- **Fase 1 — Lektietjek** (5-7 min): 3 spørgsmål på Huske/Forstå
-- **Fase 2 — Arbejdsspørgsmål** (15-20 min): 3-4 spørgsmål på Anvende/Analysere til par/grupper
-- **Fase 3 — Afsluttende diskussion** (5-10 min): 1 åbent spørgsmål på Evaluere/Skabe
+Passer ingen af dem, så brug reglerne nedenfor direkte.
 
 ---
 
@@ -116,11 +98,12 @@ Denne skill har fem modes. Afgør hvilken der passer baseret på brugerens beske
 
 1. **Ét spørgsmål ad gangen.** Aldrig "og"-konstruktioner der blander flere spørgsmål.
 2. **Konkrete spørgeord.** Brug "hvordan", "hvorfor", "hvilke", "hvad", "hvornår".
-3. **Forbudte formuleringer.** ALDRIG brug "analysér", "diskutér", "redegør for", "reflektér over", "perspektivér". → Se komplet liste i `references/forbudte-formuleringer.md`
+3. **Forbudte formuleringer.** Brug ikke "analysér", "diskutér", "redegør for", "reflektér over" eller "perspektivér". De er for åbne til at være besvarlige og giver svar uden fokus. → Se komplet liste i `references/forbudte-formuleringer.md`
 4. **Besvarlige ud fra teksten.** Medmindre eksplicit angivet, skal svaret kunne findes eller konstrueres fra tekstens information.
 5. **Bloom-specifikke verber.** Brug verberne fra det kognitive niveau du sigter efter. → Se `references/bloom-verber.md`
 6. **Ingen ja/nej-spørgsmål** uden krav om begrundelse.
 7. **Elevnært sprog.** Klart, entydigt, uden unødigt akademisk kompleksitet.
+8. **Ingen lange tankestreger** (—) i spørgsmålene. Brug komma, kolon, punktum eller parentes.
 
 ---
 
@@ -194,7 +177,7 @@ Designet til elever der kan arbejde mere selvstændigt:
 
 ## Fuld output-struktur (Mode 1)
 
-Når du laver en fuld Bloom-kørsel, producér ALTID i denne rækkefølge:
+Når du laver en fuld Bloom-kørsel, så producér i denne rækkefølge, fordi tabellen til sidst bygger på de to versioner:
 
 ### VERSION 1: TAKSONOMISK PROGRESSION
 
@@ -246,7 +229,7 @@ Skriv derefter en **kommentar på balance** der adresserer:
 
 ## Kvalitetstjek (kør altid efter generering)
 
-Gennemgå alle spørgsmål og præsentér resultatet som tabel:
+Kør dette tjek efter hver generering. Gennemgå alle spørgsmål og præsentér resultatet som tabel:
 
 | Tjek | Status | Detalje |
 |------|--------|---------|
@@ -331,7 +314,7 @@ Relater til danske eksempler hvor relevant: danske partier, kommunalpolitik, akt
 
 ## Completion Status
 
-Afslut ALTID med én af:
+Afslut med én af:
 
 - **DONE** — Spørgsmål genereret, kvalitetstjekket og klar til brug
 - **DONE_WITH_CONCERNS** — Spørgsmål genereret, men med faglige forbehold (fx: teksten understøtter kun 4 af 6 Bloom-niveauer, eller fagbegreber var vanskelige at integrere)

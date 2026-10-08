@@ -41,7 +41,7 @@ For hvert spørgsmål, bestem:
 ### Typiske mønstre (hvad der er normalt)
 
 **Teoretiske tekster** (ideologier, integrationsteorier, vælgeradfærdsteorier):
-- Konceptuel viden dominerer (60-80%)
+- Konceptuel viden dominerer (60-80 %)
 - Faktuel viden koncentreret på Huske-niveau
 - Procedural og metakognitiv sparsom — notér dette som forventeligt
 

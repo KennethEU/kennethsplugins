@@ -1,6 +1,6 @@
 ---
 name: bloom-vurder
-description: Kvalitetstjek og forbedr eksisterende arbejdsspørgsmål mod Bloom-kriterier. Brug når læreren siger "vurdér mine spørgsmål", "er disse spørgsmål gode nok", "tjek spørgsmålene", "forbedr spørgsmålene", eller har eksisterende spørgsmål der skal kvalitetssikres mod Blooms taksonomi.
+description: "Vurderer og forbedrer eksisterende arbejdsspørgsmål mod Bloom-kriterier: niveau, forbudte formuleringer, besvarlighed og balance. Brug når læreren siger \"vurdér mine spørgsmål\", \"er disse spørgsmål gode nok\", \"tjek spørgsmålene\", \"forbedr spørgsmålene\", eller indsætter spørgsmål, der skal kvalitetssikres. Brug ikke til at lave nye spørgsmål fra bunden (bloom-bloom) eller til at rette elevbesvarelser."
 argument-hint: "[spørgsmål der skal vurderes]"
 allowed-tools:
   - Read

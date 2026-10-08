@@ -5,6 +5,15 @@ Brug denne fil når du skal formulere spørgsmål og vil sikre at verbet matcher
 
 ---
 
+## Indhold
+
+- NIVEAU 1: HUSKE (Remember)
+- NIVEAU 2: FORSTÅ (Understand)
+- NIVEAU 3: ANVENDE (Apply)
+- NIVEAU 4: ANALYSERE (Analyze)
+- NIVEAU 5: EVALUERE (Evaluate)
+- NIVEAU 6: SKABE (Create)
+
 ## NIVEAU 1: HUSKE (Remember)
 
 Genkende og hente information fra langtidshukommelsen.

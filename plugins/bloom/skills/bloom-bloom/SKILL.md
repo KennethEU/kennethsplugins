@@ -1,6 +1,6 @@
 ---
 name: bloom-bloom
-description: Fuld Bloom-kørsel med to versioner og taxonomy table. Brug når læreren siger "lav arbejdsspørgsmål", "Bloom-spørgsmål", "spørgsmål til denne tekst", "analyser teksten med Bloom", eller uploader en fagtekst og vil have et komplet sæt spørgsmål på alle taksonomiske niveauer.
+description: "Laver et komplet sæt arbejdsspørgsmål til en fagtekst efter Blooms taksonomi, i to versioner (taksonomisk progression og tekstnær struktur) med taxonomy table. Brug når læreren siger \"lav arbejdsspørgsmål\", \"spørgsmål til denne tekst\", \"Bloom-spørgsmål\", \"analyser teksten med Bloom\", eller uploader en fagtekst og vil have spørgsmål. Brug ikke til kun lektiespørgsmål (bloom-lektie), kun skabe-spørgsmål (bloom-skabe), vurdering af eksisterende spørgsmål (bloom-vurder), timeplanlægning (bloom-klasseflow), quizzer (blooket) eller eksamensspørgsmål med bilag."
 argument-hint: "[fagtekst eller emne]"
 allowed-tools:
   - Read
@@ -13,8 +13,8 @@ Generér et komplet sæt arbejdsspørgsmål baseret på Bloom's Reviderede Takso
 
 ## Leverancer
 
-1. **Version 1 — Taksonomisk progression:** Spørgsmål organiseret efter de 6 Bloom-niveauer (Huske → Skabe) plus 2-3 brede hovedspørgsmål.
-2. **Version 2 — Tekstnær struktur:** Spørgsmål organiseret efter tekstens afsnit med overordnede, uddybende og detaljespørgsmål.
+1. **Version 1: Taksonomisk progression:** Spørgsmål organiseret efter de 6 Bloom-niveauer (Huske → Skabe) plus 2-3 brede hovedspørgsmål.
+2. **Version 2: Tekstnær struktur:** Spørgsmål organiseret efter tekstens afsnit med overordnede, uddybende og detaljespørgsmål.
 3. **Taxonomy Table:** Oversigt over spørgsmålsfordelingen med balance-kommentar og anbefalinger til klasserum.
 
 ## Trin
@@ -22,7 +22,9 @@ Generér et komplet sæt arbejdsspørgsmål baseret på Bloom's Reviderede Takso
 1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/SKILL.md` og forstå reglerne.
 2. **Analysér teksten** stille: hovedemne, fagbegreber, afsnitsstruktur, teksttype.
 
-### Gate 1: Bekræft analyse — VENT på OK
+### Gate 1: Bekræft analyse (vent på svar)
+
+Læreren kender klassen og tekstens rolle i forløbet. En rettelse her er billigere end et helt sæt spørgsmål, der skal laves om.
 
 Re-ground: "Vi er ved **Gate 1** — jeg har analyseret teksten. Her er hvad jeg fandt."
 

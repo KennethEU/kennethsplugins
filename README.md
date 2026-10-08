@@ -39,12 +39,14 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Bemærkninger
 
-- `bloom-arbejdsspoergsmaal` og `blooket-quiz` kan bruge en MCP-forbindelse til en undervisningsdatabase (`mcp__undervisning__...`), hvis den er tilsluttet. Uden den virker skillene stadig, men de henter ikke fag, hold og forløb.
-- Skillene i `bloom` og `blooket` er flyttet hertil fra pluginet `uv`. Har du begge installeret, ligger skillene to steder og kan udløses af hinanden. Fjern dem fra `uv`, når du har afprøvet de nye.
+- Skillene i `bloom` og `blooket` er flyttet hertil fra pluginet `uv`. Har du begge installeret, ligger skillene to steder og kan udløse hinanden. Fjern dem fra `uv`, når du har afprøvet de nye.
+- Pluginsene bruger ingen MCP-forbindelser. De tidligere kald til en undervisningsdatabase er fjernet.
+- `blooket` bruger scriptet `generate_csv.py`, som tjekker spørgsmålene og skriver Blooket-filen. Test det med `python3 plugins/blooket/tests/test_generate_csv.py`.
 
 ## Changelog
 
 ### oktober 2026
 - Repository og marketplace omdøbt til `kennethsplugins`.
 - Rollespilsdesigneren er flyttet til `plugins/rollespilsdesigner`.
-- Nye plugins `bloom` og `blooket` (flyttet fra `uv`, nu med stier via `${CLAUDE_SKILL_DIR}` og triggertests).
+- Nye plugins `bloom` og `blooket` (flyttet fra `uv`) og gennemgået efter samme principper som rollespilsdesigneren: skarpere beskrivelser med "Brug ikke til", MCP-kald fjernet, stier via `${CLAUDE_SKILL_DIR}`, begrundelser i stedet for HÅRD REGEL, indholdsfortegnelse i store referencer, 17 triggertests og test af CSV-scriptet.
+- `generate_csv.py` læser nu en JSON-fil, stopper ved regelbrud og advarer, hvis det korrekte svar ligger skævt fordelt.

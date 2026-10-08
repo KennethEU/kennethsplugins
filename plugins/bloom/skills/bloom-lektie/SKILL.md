@@ -1,6 +1,6 @@
 ---
 name: bloom-lektie
-description: Lav 3 overkommelige lektiespørgsmål på Huske/Forstå-niveau. Brug når læreren siger "lektiespørgsmål", "lektietjek", "hvad skal de forberede", "lav spørgsmål til lektien", eller vil have enkle spørgsmål eleverne kan forberede hjemme.
+description: "Laver 3 overkommelige lektiespørgsmål på Huske/Forstå-niveau til en fagtekst, så eleverne kan forberede sig hjemme og læreren kan lave et lektietjek. Brug når læreren siger \"lektiespørgsmål\", \"lektietjek\", \"hvad skal de forberede\", \"lav lige 3 nemme spørgsmål til i morgen\". Brug ikke til et fuldt sæt arbejdsspørgsmål (bloom-bloom), åbne diskussionsspørgsmål eller quizzer (blooket)."
 argument-hint: "[fagtekst eller emne]"
 allowed-tools:
   - Read
@@ -23,7 +23,7 @@ Giv mig en tekst og eventuelt ønsket antal (default: 3). Jeg laver spørgsmål 
 ## Trin
 
 1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../bloom-arbejdsspoergsmaal/SKILL.md` for spørgsmålsregler.
-2. **Identificér kernestof:** Hvad SKAL eleven have forstået?
+2. **Identificér kernestof:** Hvad skal eleven mindst have forstået for at kunne følge timen?
 
 ### Gate: Bekræft kernestof — VENT på OK
 
@@ -42,13 +42,13 @@ Giv en anbefaling: "Jeg anbefaler at vi fokuserer på [X, Y, Z] fordi det er de 
 ## Eksempel output
 
 **1. Hvad er de fire friheder i EU's indre marked?**
-*(Huske — faktuel viden)*
+*(Huske, faktuel viden)*
 
 **2. Hvorfor var afskaffelsen af de tekniske handelshindringer særligt vigtig for et fungerende indre marked?**
-*(Forstå — konceptuel viden)*
+*(Forstå, konceptuel viden)*
 
-**3. Hvilke fordele og ulemper nævner teksten ved arbejdskraftens frie bevægelighed?**
-*(Forstå — faktuel viden)*
+**3. Hvilken fordel ved arbejdskraftens frie bevægelighed fremhæver teksten mest?**
+*(Forstå, faktuel viden)*
 
 ---
 

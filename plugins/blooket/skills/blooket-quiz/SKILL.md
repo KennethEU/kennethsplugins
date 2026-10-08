@@ -1,30 +1,25 @@
 ---
 name: blooket-quiz
-description: Generér Blooket-quizzer som importklar CSV-fil fra undervisningsmateriale. Brug denne skill når brugeren nævner "Blooket", "quiz", "quizspørgsmål", "multiple choice til Blooket", eller beder om at lave spørgsmål der skal importeres i Blooket. Brug den også når brugeren uploader materiale (billeder, tekst, slides, PDF) og vil have lavet quizspørgsmål ud fra det. Trigges af alt der involverer Blooket — også redigering af eksisterende quizzer, tilføjelse af spørgsmål, eller ændring af format.
+description: "Formatregler og CSV-generator til Blooket-quizzer: svarmuligheder, tidsgrænser, placering af korrekte svar og Blookets importformat. Læses af skillen blooket. Brug direkte, når læreren vil rette en eksisterende Blooket-CSV, tilføje spørgsmål eller har problemer med import. Brug ikke til arbejdsspørgsmål efter Bloom eller til andre quizplatforme."
 user-invocable: false
 allowed-tools:
   - Read
   - Glob
   - Bash
   - Write
-  - mcp__undervisning__hent_fag
-  - mcp__undervisning__hent_forloeb
-  - mcp__undervisning__hent_moduler
-  - mcp__undervisning__hent_modul_detaljer
-  - mcp__undervisning__hent_modul_aktiviteter
 ---
 
 # Blooket Quiz Generator
 
 Generér quizspørgsmål fra undervisningsmateriale og levér dem som CSV-fil klar til import i Blooket.
 
-## Fase 0: Saml kontekst (automatisk — FØR alt andet)
+## Fase 0: Saml kontekst (før alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
 2. Hvis et emne er nævnt, tjek om der findes relevante materialer i projektmappen (Glob for PDF, tekst, slides)
-3. Hvis brugeren nævner et modul eller forløb, hent det via MCP for at forstå konteksten
+3. Hvis brugeren nævner et modul eller forløb og har lagt beskrivelsen i projektmappen, så læs den
 
-**HÅRD REGEL:** Spørg IKKE læreren om fag eller niveau hvis det kan slås op.
+Spørg ikke læreren om fag eller niveau, hvis det kan læses af materialet. Læreren har allerede givet oplysningen, og gentagne spørgsmål koster tid.
 
 ---
 
@@ -50,7 +45,7 @@ Når du skal afklare noget, brug dette mønster:
 > B) Kun segmentering (10 spørgsmål, fokuseret)
 > C) Kun branding (10 spørgsmål, fokuseret)
 
-Stil ALDRIG flere spørgsmål i samme besked.
+Stil kun ét spørgsmål ad gangen, så læreren kan svare kort uden at miste tråden.
 
 ---
 
@@ -84,54 +79,40 @@ Hvert spørgsmål har 2-4 svarmuligheder (4 er standard). Følg disse regler:
 
 ### 3. Generér CSV-filen
 
-Kopiér `${CLAUDE_SKILL_DIR}/references/generate_csv.py` til arbejdsmappen og kør det med din spørgsmålsliste. Scriptet tager en Python-liste af dicts og producerer en komplet Blooket-importfil.
+Skriv spørgsmålene som en JSON-fil og kør scriptet på den. Scriptet tjekker reglerne (2 til 4 svar, korrekt svarnummer findes, tid højst 300 sekunder, ingen semikolon eller linjeskift i teksten), advarer, hvis det korrekte svar ligger skævt fordelt, og skriver den komplette Blooket-importfil.
 
-**Format for spørgsmål:**
+**Format for spørgsmål** (filen `spoergsmaal.json`):
 
-```python
-questions = [
-    {
-        "text": "Hvad er BNP?",
-        "answers": ["Bruttonationalprodukt", "Bruttonettopriser", "Bankernes nationalplan", "Budgettets nettopris"],
-        "correct": "1",
-        "time": 20
-    },
-    {
-        "text": "Hvad er 2+2?",
-        "answers": ["3", "4", "5"],  # 2-4 svar er OK
-        "correct": "2",
-        "time": 20
-    },
-    {
-        "text": "Hvilke er nordiske lande?",
-        "answers": ["Danmark", "Tyskland", "Norge", "Frankrig"],
-        "correct": "1,3",  # flere korrekte svar
-        "time": 20
-    }
+```json
+[
+  {"text": "Hvad er BNP?",
+   "answers": ["Bruttonationalprodukt", "Bruttonettopriser", "Bankernes nationalplan", "Budgettets nettopris"],
+   "correct": "1", "time": 20},
+  {"text": "Hvilke af disse er nordiske lande?",
+   "answers": ["Danmark", "Tyskland", "Norge", "Frankrig"],
+   "correct": "1,3", "time": 20}
 ]
 ```
 
-Kør scriptet sådan:
+`answers` har 2 til 4 svar, `correct` er svarnumre (flere adskilles med komma), og `time` er sekunder (valgfri). Kør scriptet sådan:
 
 ```bash
-cp "${CLAUDE_SKILL_DIR}/references/generate_csv.py" .
-# Tilpas questions-listen i scriptet eller indsæt den i bunden
-python generate_csv.py
+python "${CLAUDE_SKILL_DIR}/references/generate_csv.py" spoergsmaal.json Blooket_Emne.csv
 ```
+
+Ved FEJL retter du spørgsmålene og kører igen. Ved ADVARSEL om skæv placering blander du svarene.
 
 Scriptet producerer en fil der matcher Blookets officielle template 1:1, inkl. headers, padding-kolonner, tomme rækker, BOM og Windows-linjeskift.
 
 ### 4. Levér filen
 
-Gem i `/mnt/user-data/outputs/` eller den mappe vi arbejder i med beskrivende navn: `Blooket_[Emne].csv`
+Gem i den mappe, vi arbejder i (eller `/mnt/user-data/outputs/`, hvis den findes), med beskrivende navn: `Blooket_[Emne].csv`. Hvis værktøjet `present_files` findes, så brug det til at levere filen. Giv en kort opsummering (emner, antal spørgsmål).
 
-Brug `present_files`. Giv en kort opsummering (emner, antal spørgsmål).
-
-## Fejl der IKKE må ske
+## Fejl, der ødelægger importen (scriptet sørger for dem)
 
 - Tabulator som separator → Skal være semikolon
 - Manglende padding-kolonner → Alle rækker skal have 26 kolonner (8 brugte + 18 padding)
-- Korrekt svar altid på position 1 → Randomisér
+- Korrekt svar altid på position 1 → Bland placeringen (scriptet advarer)
 - Manglende BOM → Start med `\ufeff`
 - Unix-linjeskift → Brug `\r\n`
 
@@ -139,7 +120,7 @@ Brug `present_files`. Giv en kort opsummering (emner, antal spørgsmål).
 
 ## Completion Status
 
-Afslut ALTID med én af:
+Afslut med én af:
 
 - **DONE** — Quiz genereret, CSV-fil leveret og importklar
 - **DONE_WITH_CONCERNS** — Quiz leveret, men med forbehold (fx: kun viden-spørgsmål pga. materiale, eller færre end 10 spørgsmål)

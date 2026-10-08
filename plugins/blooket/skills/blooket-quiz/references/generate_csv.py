@@ -2,14 +2,64 @@
 Blooket CSV Generator
 
 Genererer en CSV-fil i Blookets officielle importformat.
-Tilpas questions-listen nedenfor og kør scriptet.
+
+Brug:
+    python generate_csv.py spoergsmaal.json [output.csv]
+
+spoergsmaal.json er en liste af objekter med text, answers (2-4), correct
+(fx "1" eller "1,3") og time (sekunder, valgfri, standard 20).
+Scriptet stopper med en tydelig fejl, hvis et spørgsmål bryder reglerne,
+og skriver en advarsel, hvis de korrekte svar ligger skævt fordelt.
 
 Output: Blooket-importklar CSV med semikolon-separator, UTF-8 BOM,
 Windows-linjeskift, 26 kolonner pr. række, og alle nødvendige headers.
 """
 
+import json
 import sys
-import os
+from collections import Counter
+
+
+def validate(questions):
+    """Returnér (fejl, advarsler) som lister af tekster."""
+    errors, warnings = [], []
+    if not questions:
+        errors.append("Ingen spørgsmål.")
+    if len(questions) > 100:
+        errors.append(f"{len(questions)} spørgsmål, men Blookets skabelon har plads til 100.")
+    first_correct = []
+    for i, q in enumerate(questions, 1):
+        text = str(q.get("text", "")).strip()
+        answers = [str(a).strip() for a in q.get("answers", [])]
+        if not text:
+            errors.append(f"Spørgsmål {i}: mangler tekst.")
+        if not 2 <= len(answers) <= 4:
+            errors.append(f"Spørgsmål {i}: har {len(answers)} svarmuligheder, skal have 2 til 4.")
+        if any(not a for a in answers):
+            errors.append(f"Spørgsmål {i}: et svar er tomt.")
+        for field in [text] + answers:
+            if ";" in field or "\n" in field:
+                errors.append(f"Spørgsmål {i}: semikolon og linjeskift i tekst ødelægger CSV-formatet.")
+                break
+        try:
+            nums = [int(x) for x in str(q.get("correct", "1")).split(",")]
+        except ValueError:
+            nums = []
+            errors.append(f"Spørgsmål {i}: 'correct' skal være tal som \"2\" eller \"1,3\".")
+        if nums and (min(nums) < 1 or max(nums) > len(answers)):
+            errors.append(f"Spørgsmål {i}: korrekt svar {q.get('correct')} findes ikke, der er {len(answers)} svar.")
+        if len(set(nums)) != len(nums):
+            errors.append(f"Spørgsmål {i}: samme svarnummer angivet flere gange.")
+        if nums:
+            first_correct.append(nums[0])
+        t = q.get("time", 20)
+        if not isinstance(t, int) or not 1 <= t <= 300:
+            errors.append(f"Spørgsmål {i}: tid skal være et helt tal mellem 1 og 300 sekunder.")
+    if len(first_correct) >= 8:
+        pos, n = Counter(first_correct).most_common(1)[0]
+        if n / len(first_correct) > 0.5:
+            warnings.append(f"Det korrekte svar står på plads {pos} i {n} af {len(first_correct)} spørgsmål. Bland placeringen.")
+    return errors, warnings
 
 
 def generate_blooket_csv(questions, output_path):
@@ -85,24 +135,17 @@ def generate_blooket_csv(questions, output_path):
     print(f"Genereret: {output_path} ({len(questions)} spørgsmål)")
 
 
-# === TILPAS SPØRGSMÅL HER ===
-
 if __name__ == "__main__":
-    # Eksempel — erstat med dine egne spørgsmål
-    questions = [
-        {
-            "text": "Hvad er 2 + 2?",
-            "answers": ["4", "3", "1", "Fire"],
-            "correct": "1,4",
-            "time": 20,
-        },
-        {
-            "text": "Hvad er 3 + 3?",
-            "answers": ["3", "6"],
-            "correct": "2",
-            "time": 15,
-        },
-    ]
-
-    output = sys.argv[1] if len(sys.argv) > 1 else "blooket_output.csv"
+    if len(sys.argv) < 2:
+        sys.exit(__doc__)
+    with open(sys.argv[1], encoding="utf-8") as f:
+        questions = json.load(f)
+    errors, warnings = validate(questions)
+    for w in warnings:
+        print("ADVARSEL:", w)
+    if errors:
+        for e in errors:
+            print("FEJL:", e)
+        sys.exit(1)
+    output = sys.argv[2] if len(sys.argv) > 2 else "blooket_output.csv"
     generate_blooket_csv(questions, output)

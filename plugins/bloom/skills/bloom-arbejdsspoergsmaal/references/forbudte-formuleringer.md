@@ -4,6 +4,14 @@ Brug denne fil som tjekliste ved generering og vurdering af spørgsmål.
 
 ---
 
+## Indhold
+
+- FORBUDTE VERBER OG UDTRYK
+- FORBUDTE KONSTRUKTIONER
+- TYPISKE FEJL VED SPØRGSMÅLSFORMULERING
+- VURDERINGSSKEMA (til Mode 4)
+- GODKENDTE SPØRGSMÅLSSTARTERE
+
 ## FORBUDTE VERBER OG UDTRYK
 
 Disse akademiske direktiver må ALDRIG bruges i spørgsmålsformuleringer:

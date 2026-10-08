@@ -1,6 +1,6 @@
 ---
 name: bloom-skabe
-description: Generér 8-12 kreative niveau 6-spørgsmål (design, planlæg, producér). Brug når læreren siger "skabe-spørgsmål", "kreative opgaver", "niveau 6", "projektopgaver", "eleverne skal producere noget", eller vil have spørgsmål der kræver at eleverne designer, planlægger eller skaber noget nyt.
+description: "Laver 8 til 12 kreative skabe-spørgsmål (Bloom niveau 6) til en fagtekst: design, planlægning, generering, produktion og integration. Brug når læreren siger \"skabe-spørgsmål\", \"kreative opgaver\", \"niveau 6\", \"projektopgaver\", \"eleverne skal producere noget\". Brug ikke til et komplet sæt på alle niveauer (bloom-bloom) eller til lektiespørgsmål (bloom-lektie)."
 argument-hint: "[fagtekst eller emne]"
 allowed-tools:
   - Read

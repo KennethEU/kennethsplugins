@@ -1,6 +1,6 @@
 ---
 name: blooket
-description: Generér en Blooket-quiz fra undervisningsmateriale som importklar CSV-fil. Brug når læreren siger "lav en Blooket", "quiz til Blooket", "multiple choice", "quizspørgsmål", eller uploader materiale og vil have det omdannet til en importklar Blooket-quiz.
+description: "Laver en Blooket-quiz som importklar CSV-fil ud fra undervisningsmateriale, med bekræftelse af begreber og eksempelspørgsmål undervejs. Brug når læreren siger \"lav en Blooket\", \"quiz til Blooket\", \"multiple choice til import\", \"quizspørgsmål som csv\", eller uploader materiale og vil have en quiz. Brug ikke til arbejdsspørgsmål efter Bloom (bloom), eksamensspørgsmål eller almindelige opgavespørgsmål uden quiz."
 argument-hint: "[emne eller materiale]"
 allowed-tools:
   - Read
@@ -11,7 +11,7 @@ allowed-tools:
 
 # Blooket-quiz
 
-Lav en Blooket-quiz. Brug din `blooket-quiz` skill til at følge det korrekte format.
+Lav en Blooket-quiz. Følg formatet i skillen `blooket-quiz`, fordi Blooket afviser filer, der afviger fra importskabelonen.
 
 **Input:** $ARGUMENTS
 
@@ -20,7 +20,7 @@ Lav en Blooket-quiz. Brug din `blooket-quiz` skill til at følge det korrekte fo
 1. Hvis brugeren har uploadet materiale (billeder, PDF, tekst, slides), læs det og identificér de centrale begreber, fakta og sammenhænge.
 2. Hvis brugeren kun har angivet et emne, brug din faglige viden til at formulere spørgsmål.
 
-### Gate 1: Bekræft begreber — VENT på OK
+### Gate 1: Bekræft begreber (vent på svar)
 
 Re-ground: "Jeg har læst materialet og fundet de centrale begreber. Her er hvad jeg vil teste i quizzen."
 
@@ -36,7 +36,7 @@ Giv en anbefaling: "Jeg anbefaler [X] spørgsmål på [niveau] fordi [begrundels
 
 **VENT** på svar.
 
-### Gate 2: Preview — VENT på OK
+### Gate 2: Preview (vent på svar)
 
 Re-ground: "Vi er ved **Gate 2** — her er et par eksempelspørgsmål så du kan vurdere stil og sværhedsgrad."
 
@@ -49,7 +49,7 @@ Spørg: "Passer stilen? Skal spørgsmålene være mere/mindre detaljerede?"
 ### Generér og levér
 
 3. Formulér alle spørgsmål med 2-4 svarmuligheder. Randomisér placeringen af det korrekte svar. Bland viden-, forståelses- og anvendelsesspørgsmål.
-4. Generér en Blooket-importklar CSV-fil ved at bruge `${CLAUDE_SKILL_DIR}/../blooket-quiz/references/generate_csv.py`.
+4. Skriv spørgsmålene som JSON og generér den importklare CSV-fil med `${CLAUDE_SKILL_DIR}/../blooket-quiz/references/generate_csv.py` (se formatet i `blooket-quiz`). Ret fejl og skæv placering, hvis scriptet melder dem.
 5. Gem filen og levér den til brugeren.
 
 Svar på dansk.
