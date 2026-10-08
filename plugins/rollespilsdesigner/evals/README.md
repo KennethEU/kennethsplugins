@@ -8,10 +8,10 @@
 - `trigger-rodet-N`: rodede, korte formuleringer, som de skrives i travlhed (7 cases).
 - `trigger-nej-*` og `trigger-ingen-rollespil`: nære negativer, der deler ord med rollespil men hører til andre skills, fx dagsorden, eksamen, Bloom, videomanuskript og korrektur af elevsvar. Ingen rollespilsskill må udløses (6 cases).
 
-Kør fra pluginets rodmappe:
+Kør fra repositoryets rod:
 
 ```
-claude plugin eval . --ablation none -j 6
+claude plugin eval plugins/rollespilsdesigner --ablation none -j 6
 ```
 
 Koster ca. 5 $ for hele suiten. Rapporten ligger i `evals/results/` (ignoreres af git). Kør den igen efter hver ændring af en `description`.

@@ -1,0 +1,8 @@
+{
+  "name": "bloom",
+  "description": "Arbejdsspørgsmål til fagtekster i dansk gymnasieundervisning ud fra Blooms reviderede taksonomi: fuldt sæt med taxonomy table, lektiespørgsmål, skabe-spørgsmål, vurdering af eksisterende spørgsmål og planlægning af en tre-faset time.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kenneth / Marselisborg Gymnasium"
+  }
+}
