@@ -93,7 +93,7 @@ Brug "du" til læreren.
 
 ## Installation
 
-I Claude: tilføj en markedsplads med adressen `KennethEU/rollespilsdesigner`, og installér pluginet `rollespilsdesigner`. Alternativt kan zip-filen med pluginets indhold uploades direkte.
+I Claude: tilføj en markedsplads med adressen `KennethEU/kennethsplugins`, og installér pluginet `rollespilsdesigner` (installationsnavn `rollespilsdesigner@kennethsplugins`). Alternativt kan zip-filen med pluginets indhold uploades direkte.
 
 ## Kompatibilitet
 

@@ -26,5 +26,5 @@ Brug rigtige opgaver og noter, hvad der går skævt.
 2. **Miniversion.** `/rollespil-mini` på et eksisterende rollespil (fx Fjord Outdoor).
 3. **Konsistenstjek af færdigt materiale.** Peg på en mappe med færdige filer. Tjek, at `sprogtjek.py` bliver kørt, og at rapporten har punkt 0 til 8.
 4. **Samme som test 1 på Haiku, Sonnet og Opus.** Springer en billigere model faser eller projektregler over?
-5. **Installation.** Upload pluginet som zip eller tilføj marketplace'en `KennethEU/rollespilsdesigner`. Alle 10 skills skal dukke op, og docx-generering og `sprogtjek.py` skal virke.
+5. **Installation.** Upload pluginet som zip eller tilføj marketplace'en `KennethEU/kennethsplugins`. Alle 10 skills skal dukke op, og docx-generering og `sprogtjek.py` skal virke.
 6. **Efter nogle ugers brug.** Kør `/skill-doctor` og se, hvilke skills der aldrig udløses, og hvad pluginet koster pr. session.
