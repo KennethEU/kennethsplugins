@@ -103,6 +103,9 @@ I Claude: tilføj en markedsplads med adressen `KennethEU/kennethsplugins`, og i
 
 ## Changelog
 
+### Marketplace omdøbt (oktober 2026)
+- Repository og marketplace hedder nu `kennethsplugins` (før `rollespilsdesigner` og `rollespilsdesigner-marketplace`). Selve pluginet er uændret og hedder stadig `rollespilsdesigner`, så skillenavnene er de samme. Tilføj marketplace'en igen med `KennethEU/kennethsplugins`.
+
 ### v1.5.2 (oktober 2026)
 - Alle beskrivelser har fået konkrete, rodede triggervendinger og en "Brug ikke til"-del (inspireret af Anthropics skill-creator). Lærerguiden udløses nu også af "hvad siger jeg når vi skifter fase"
 - 12 nye triggertests (rodede formuleringer og nære negativer), i alt 27
