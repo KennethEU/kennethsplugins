@@ -1,6 +1,6 @@
 ---
 name: rollespil-rollekort-docx
-description: "Genererer professionelle Word-dokumenter (.docx) med rollekort, lærerguider og elevintroduktioner til rollespil i dansk gymnasieundervisning. Brug ALTID denne skill når du skal producere rollekort, livskort, beslutningskort eller lærerguider som Word-filer. Trigger også når brugeren nævner 'rollekort', 'lærerguide', 'elevintroduktion', 'print materialer', 'Word-dokument' eller 'docx' i forbindelse med rollespil eller simulationer. Skillen dækker Node.js docx-generering, farvepalet, margener, hjælpefunktioner og differentierede rollekort i tre niveauer (stærk/normal/støtte)."
+description: "Producerer rollekort, livskort, beslutningskort og elevintroduktioner til rollespil som printklare Word-dokumenter (.docx) med Node.js. Brug når brugeren nævner rollekort, elevintroduktion, print eller docx i forbindelse med rollespil eller simulation. Normalversionen er standard; støtte og stærk laves kun efter ønske. Dækker farvepalet, margener og hjælpefunktioner. Lærerguider hører under rollespil-laererguide-docx og cheatsheets under rollespil-laerermateriale."
 allowed-tools:
   - Read
   - Glob
@@ -19,7 +19,7 @@ Denne skill styrer *hvordan* du genererer Word-dokumenter til rollespil. Den fag
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
 2. Scan projektmappen for eksisterende rollespilsmaterialer (indhold, roller, dilemmaer)
 3. Læs `rollespil-designprincipper`-skillen — rollekortene SKAL overholde de 10 principper
-4. Læs `references/docx-skill.md` for den nyeste version af docx-produktionen
+4. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning
 
 **HÅRD REGEL:** Hav rollekortenes indhold 100% klar FØR du begynder at kode. Skriv ALDRIG kode og indhold samtidig.
 
@@ -30,7 +30,7 @@ Denne skill styrer *hvordan* du genererer Word-dokumenter til rollespil. Den fag
 ### Før du koder
 
 1. Læs `rollespil-designprincipper`-skillen (den skal allerede være trigget) for at sikre at rollekortene overholder de 10 principper
-2. Læs `references/docx-skill.md` for den nyeste version af Anthropics docx-skill (den opdateres løbende)
+2. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning (den opdateres løbende)
 3. Hav rollekortenes indhold klar FØR du begynder at kode — skriv aldrig kode og indhold samtidig
 
 ### Generering

@@ -26,6 +26,7 @@ rollespilsdesigner/
     ├── rollespil-laererguide-docx/SKILL.md           ← Lærerguide: 12 obligatoriske sektioner + RAS
     ├── rollespil-laerermateriale/SKILL.md            ← Cheatsheats: spørgsmål + modelbesvarelser
     ├── rollespil-sprogkvalitet-da/SKILL.md           ← Dansk retskrivning + QA-tjekliste
+    │   └── scripts/sprogtjek.py            ← Deterministisk sprogtjek (docx, md, html)
     ├── rollespil-projektregler/SKILL.md    ← Projektregler: ingen ritualer, normalversion nok, beregner-tjek
     ├── rollespil-digitale-tillaeg/SKILL.md ← Digitale værktøjer: designregler
     │   └── references/teknik.md            ← Teknisk reference: arkitektur, proxy, session, test
@@ -99,6 +100,11 @@ I Claude: tilføj en markedsplads med adressen `KennethEU/rollespilsdesigner`, o
 - **Claude.ai** — skills kan uploades individuelt via Settings > Skills
 
 ## Changelog
+
+### v1.5.0 (oktober 2026)
+- Nyt script `rollespil-sprogkvalitet-da/scripts/sprogtjek.py`: finder tankestreger, ae/oe/aa, delte sammensatte ord, ritualsætninger, `maks.`, `à`, `60 %` og minuttal i .docx, .md og .html. `rollespil-konsistenstjek` (nyt punkt 0) og sprogskillen kører det først
+- Rettet brudt henvisning til `references/docx-skill.md` i `rollespil-rollekort-docx`
+- Skarpere `description` på rollekort-docx, laererguide-docx, laerermateriale og projektregler, så de ikke overlapper og udløses rigtigt
 
 ### v1.4.0 (oktober 2026)
 - `rollespil-mini` og `rollespil-simplificering` slået sammen til én skill

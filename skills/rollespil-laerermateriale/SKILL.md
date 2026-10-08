@@ -1,6 +1,6 @@
 ---
 name: rollespil-laerermateriale
-description: "Genererer lærercheatsheats og lærervejledninger med spørgsmål og modelbesvarelser i Word-format. Brug ALTID denne skill når brugeren beder om et cheatsheet, en facitliste, modelsvar, lærervejledning til gruppeaktiviteter, eller et dokument med spørgsmål og forventede svar. Trigger også ved 'lærersvar', 'facit', 'hvad skal eleverne svare', 'modelsvar', 'cheatsheet' eller 'teacher guide med svar'. Skillen dækker det generiske workflow fra fagligt indhold til printvenligt lærerdokument — uafhængigt af fag."
+description: "Producerer lærercheatsheets med spørgsmål og modelbesvarelser som printvenligt Word-dokument. Brug ved cheatsheet, facitliste, modelsvar, lærersvar, hvad skal eleverne svare eller teacher guide med svar til gruppeaktiviteter. Fagneutral. Selve lærerguiden til et rollespil (ramme, faser, debriefing) hører under rollespil-laererguide-docx."
 allowed-tools:
   - Read
   - Glob

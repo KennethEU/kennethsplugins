@@ -5,6 +5,7 @@ allowed-tools:
   - Read
   - Glob
   - Grep
+  - Bash
 ---
 
 # Konsistenstjek for Rollespilsmaterialer
@@ -12,6 +13,16 @@ allowed-tools:
 **Projektregler:** `rollespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
 Kør dette tjek EFTER at alle materialer er genereret, MEN FØR levering til brugeren. Rapporten præsenteres som en samlet liste med ✅ (bestået) eller ❌ (fejl) for hvert punkt.
+
+## 0. Kør scriptet først
+
+Kør det deterministiske sprogtjek på alle leverede filer (.docx, .md, .html), før du læser noget selv. Det finder tankestreger, ASCII-erstatninger for æøå, delte sammensatte ord, ritualsætninger, `maks.`, `à`, `60 %` og minuttal:
+
+```
+python3 <plugin>/skills/rollespil-sprogkvalitet-da/scripts/sprogtjek.py <materialemappe>
+```
+
+Fejl (FEJL) skal rettes. Advarsler vurderes. Punkt 4 nedenfor dækker kun det, scriptet ikke kan afgøre.
 
 ## 1. Krydsreference-tjek
 

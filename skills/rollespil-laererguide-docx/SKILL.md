@@ -1,6 +1,6 @@
 ---
 name: rollespil-laererguide-docx
-description: Genererer lærerguider til rollespil med alle obligatoriske sektioner. Brug når brugeren beder om en lærerguide, facilitatorguide eller lærervejledning til et rollespil. Trigger også ved "lærerguide", "facilitering", "debriefing-spørgsmål" eller "hvad gør læreren". Skillen sikrer at ingen obligatoriske sektioner glemmes — især rammen, faseovergange og RAS-debriefing.
+description: Producerer lærerguiden til et rollespil som Word-dokument med alle obligatoriske sektioner (ramme, faseovergange, injects, RAS-debriefing, forberedelsestjekliste). Brug ved lærerguide, facilitatorguide, lærervejledning, facilitering eller debriefing-spørgsmål til et rollespil. Cheatsheets med modelsvar til gruppeaktiviteter hører under rollespil-laerermateriale.
 allowed-tools:
   - Read
   - Glob
