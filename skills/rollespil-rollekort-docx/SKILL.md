@@ -38,13 +38,12 @@ Denne skill styrer *hvordan* du genererer Word-dokumenter til rollespil. Den fag
 1. Installér pakken: `npm install docx` (v9.5.1+)
 2. Byg scriptet med konstanter og hjælpefunktioner fra `references/template-kode.md`
 3. Generér .docx-filen
-4. Validér: `python3 /mnt/skills/public/docx/scripts/office/validate.py output.docx`
-5. Preview: Konvertér til PDF med `python3 /mnt/skills/public/docx/scripts/office/soffice.py`, derefter `pdftoppm -jpeg -r 200` og `view` på billederne
+4. Validér: hvis docx-skillen findes, kør `python3 /mnt/skills/public/docx/scripts/office/validate.py output.docx`. Ellers åbn filen igen med `python-docx` eller konvertér den i trin 5, og stop ved fejl.
+5. Preview: Konvertér til PDF med `soffice --headless --convert-to pdf output.docx`, derefter `pdftoppm -jpeg -r 200` og se billederne
 6. Kør konsistenstjek (se `rollespil-konsistenstjek`-skillen)
 
 ### Vigtigt
 
-- Læs ALTID `/mnt/skills/public/docx/SKILL.md` først — den har den autoritative guide til docx-generering og kan være nyere end denne skills references
 - Brug `references/template-kode.md` som udgangspunkt for genbrugelig kode
 - Tilpas aldrig margener eller farvepalet uden god grund — standarderne er testet
 

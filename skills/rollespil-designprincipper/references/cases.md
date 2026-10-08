@@ -4,6 +4,26 @@ Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert 
 
 ---
 
+## Indhold
+
+- SAMFUNDSFAG (7 cases)
+  - S1: Kommunalt budget
+  - S2: Klimaforhandling (COP)
+  - S3: Valgkampagne & Mediestrategi
+  - S4: Grundlovsændring / Folkeafstemning
+  - S5: Integrationspolitik
+  - S6: EU-lovgivning (Landbrugsstøtte / AI-regulering)
+  - S7: Retspolitik — Strafferamme
+- ERHVERVSØKONOMI (7 cases)
+  - E1: Virksomhedsetablering & Finansiering
+  - E2: Prisfastsættelse & Markedsføring
+  - E3: Stakeholder Management (CSR-dilemma)
+  - E4: Forhandling — Lønforhandling / Leverandøraftale
+  - E5: Markedssimulation — Oligopol
+  - E6: Budget & Cash Flow Management
+  - E7: International Expansion — Market Entry
+- Brug af cases
+
 ## SAMFUNDSFAG (7 cases)
 
 ### S1: Kommunalt budget

@@ -19,7 +19,7 @@ Kør dette tjek EFTER at alle materialer er genereret, MEN FØR levering til bru
 Kør det deterministiske sprogtjek på alle leverede filer (.docx, .md, .html), før du læser noget selv. Det finder tankestreger, ASCII-erstatninger for æøå, delte sammensatte ord, ritualsætninger, `maks.`, `à`, `60 %` og minuttal:
 
 ```
-python3 <plugin>/skills/rollespil-sprogkvalitet-da/scripts/sprogtjek.py <materialemappe>
+python3 "${CLAUDE_SKILL_DIR}/../rollespil-sprogkvalitet-da/scripts/sprogtjek.py" <materialemappe>
 ```
 
 Fejl (FEJL) skal rettes. Advarsler vurderes. Punkt 4 nedenfor dækker kun det, scriptet ikke kan afgøre.

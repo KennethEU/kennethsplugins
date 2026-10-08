@@ -186,7 +186,7 @@ rollekort → lærerguide → materiale → (digitale tillæg) → sprogtjek →
 
 Samle først alle tal og regler i ét sæt (fælles kilde, se `rollespil-projektregler`), så papir og digitale dele bygges ud fra det samme.
 
-1. Læs `/mnt/skills/public/docx/SKILL.md` (eller Cowork-equivalent)
+1. Hvis en docx-skill findes (fx `/mnt/skills/public/docx/SKILL.md`), så læs den
 2. Brug `rollespil-rollekort-docx`-skillen til at generere rollekort som Word-dokumenter
 3. Brug `rollespil-laererguide-docx`-skillen til at generere lærerguiden
 4. Brug `rollespil-laerermateriale`-skillen til cheatsheets og modelbesvarelser (hvis relevant)

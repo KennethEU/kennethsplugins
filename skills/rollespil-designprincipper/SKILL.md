@@ -101,7 +101,7 @@ Design mindst én rolle hvis position bygger bro. Høj troværdighed, konkrete e
 0 stemmer, stor moralsk autoritet. Stærke personlige argumenter i 1. person. En anden rolle kan "aktivere" wildcarden.
 
 ### Korridorpolitik
-Uformel forhandlingsfase EFTER positioner er kendte, FØR endelig afstemning. 5-10 minutter.
+Uformel forhandlingsfase EFTER positioner er kendte, FØR endelig afstemning. Kort fase, læreren styrer tiden.
 
 ### Teori-tagging
 Navngiv fagbegreber direkte i materialer (stærk-version): [NEO], [REAL], [LIB] osv.

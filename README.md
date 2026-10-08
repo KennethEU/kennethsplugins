@@ -33,6 +33,8 @@ rollespilsdesigner/
     └── rollespil-konsistenstjek/SKILL.md             ← 7-punkts kvalitetssikring af materialer
 ```
 
+I `evals/` ligger automatiske triggertests (`claude plugin eval .`) og en plan for de tests, der skal køres i Cowork. Se `evals/README.md`.
+
 ## Pipeline
 
 Skillsene kører i en fast rækkefølge — du behøver kun starte med en command, resten sker automatisk.
@@ -100,6 +102,13 @@ I Claude: tilføj en markedsplads med adressen `KennethEU/rollespilsdesigner`, o
 - **Claude.ai** — skills kan uploades individuelt via Settings > Skills
 
 ## Changelog
+
+### v1.5.1 (oktober 2026)
+- 15 triggertests i `evals/` (`claude plugin eval .`). De afslørede, at `rollespil-sprogkvalitet-da` blev udløst af en Blooket-forespørgsel. Beskrivelsen er indsnævret til rollespilsmaterialer
+- Scriptstier bruger `${CLAUDE_SKILL_DIR}`
+- Indholdsfortegnelse i de tre store reference-filer
+- Docx-trin i `rollespil-rollekort-docx` og `rollespil-nyt` virker nu også uden Anthropics docx-skill (`/mnt/skills/public/docx`)
+- Faste minuttal ("5-10 min.") i designprincipper fjernet, så de følger projektreglerne
 
 ### v1.5.0 (oktober 2026)
 - Nyt script `rollespil-sprogkvalitet-da/scripts/sprogtjek.py`: finder tankestreger, ae/oe/aa, delte sammensatte ord, ritualsætninger, `maks.`, `à`, `60 %` og minuttal i .docx, .md og .html. `rollespil-konsistenstjek` (nyt punkt 0) og sprogskillen kører det først
