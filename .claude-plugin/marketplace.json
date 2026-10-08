@@ -1,0 +1,17 @@
+{
+  "name": "rollespilsdesigner-marketplace",
+  "owner": {
+    "name": "Kenneth"
+  },
+  "metadata": {
+    "description": "Plugin til design af rollespil i dansk gymnasieundervisning"
+  },
+  "plugins": [
+    {
+      "name": "rollespilsdesigner",
+      "source": "./",
+      "description": "Design af rollespil og simuleringer til dansk gymnasieundervisning (STX): rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring.",
+      "version": "1.4.0"
+    }
+  ]
+}

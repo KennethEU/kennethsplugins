@@ -88,6 +88,10 @@ Brug aldrig faste minuttal i materialer — læreren styrer tempoet.
 Brug "du" til læreren.
 ```
 
+## Installation
+
+I Claude: tilføj en markedsplads med adressen `KennethEU/rollespilsdesigner`, og installér pluginet `rollespilsdesigner`. Alternativt kan zip-filen med pluginets indhold uploades direkte.
+
 ## Kompatibilitet
 
 - **Claude Cowork** (primært) — fuld funktionalitet med filsystem-adgang
