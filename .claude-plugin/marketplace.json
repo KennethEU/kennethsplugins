@@ -4,14 +4,14 @@
     "name": "Kenneth"
   },
   "metadata": {
-    "description": "Plugins til dansk gymnasieundervisning (STX): rollespil, Bloom-spørgsmål og Blooket-quizzer"
+    "description": "Plugins til dansk gymnasieundervisning (STX): casespil, Bloom-spørgsmål og Blooket-quizzer"
   },
   "plugins": [
     {
-      "name": "rollespilsdesigner",
-      "source": "./plugins/rollespilsdesigner",
-      "description": "Design af rollespil og simuleringer til dansk gymnasieundervisning (STX): rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring.",
-      "version": "1.9.0"
+      "name": "casespilsdesigner",
+      "source": "./plugins/casespilsdesigner",
+      "description": "Design af casespil (også kaldet rollespil) og simuleringer til dansk gymnasieundervisning (STX): rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring.",
+      "version": "2.0.0"
     },
     {
       "name": "bloom",
