@@ -146,7 +146,17 @@ function play() {
 ```
 
 - **Tilgængelighed (anbefalet, ikke med i Fjord Outdoor):** gør tidslinjen til `role="slider"` med `aria-valuemin`, `aria-valuemax` og `aria-valuenow`, så den kan bruges med tastatur og skærmlæser. Flyt fokus ind i popup'en ved åbning og tilbage til knappen, der åbnede den, ved lukning.
-- **Baggrundsvideo på forsiden:** sæt den på pause, når popup'en åbner, og start den igen ved lukning (undtagen ved `prefers-reduced-motion`). Fjord Outdoor satte den på pause og glemte at starte den igen.
+- **Baggrundsvideo på forsiden:** sæt den på pause, når popup'en åbner, så to videoer og lyde ikke kører samtidig, og start den igen, uanset hvordan popup'en lukkes (kryds, Escape, klik på baggrunden eller Tilbage-knappen). Den første udgave i Fjord Outdoor glemte genstarten, og videoen stod frosset, til siden blev genindlæst. Læg derfor genstarten i den ene funktion, som alle lukkeveje kalder, og spring den over ved `prefers-reduced-motion`:
+
+```javascript
+// i den fælles lukkefunktion
+if (!reduce && v) {
+  try {
+    var p = v.play();
+    if (p && p.catch) p.catch(function () {});   // afvist afspilning må ikke give fejl
+  } catch (err) {}
+}
+```
 - **Referér til elementer via variabler.** Dele af Fjord Outdoors deep link-kode brugte `mSplash` uden at have erklæret den. Det virkede kun, fordi browsere gør elementers id til globale navne. Det er skrøbeligt.
 
 ## 12. Voiceover med ElevenLabs
