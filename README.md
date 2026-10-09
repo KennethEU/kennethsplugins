@@ -4,24 +4,24 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 
 | Plugin | Hvad det gør | Skills |
 |--------|--------------|--------|
-| [`rollespilsdesigner`](plugins/rollespilsdesigner/README.md) | Design af rollespil og simuleringer: rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring | 10 |
+| [`casespilsdesigner`](plugins/casespilsdesigner/README.md) | Design af casespil (rollespil og simuleringer): rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring | 10 |
 | [`bloom`](plugins/bloom) | Arbejdsspørgsmål til fagtekster efter Blooms taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time | 6 |
 | [`blooket`](plugins/blooket) | Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale | 2 |
 
 ## Kommandoer
 
-Hver skill hedder gruppen først og så det, den gør (`rollespil-`, `bloom-`, `blooket-`), så de står samlet i menuen. Skriv `/rollespil`, `/bloom` eller `/blooket` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
+Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `blooket-`), så de står samlet i menuen. Skriv `/casespil`, `/bloom` eller `/blooket` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
 
 | Kommando | Hvad den gør |
 |----------|--------------|
-| `/rollespilsdesigner:rollespil-nyt` | Designer et nyt rollespil sammen med dig |
-| `/rollespilsdesigner:rollespil-miniversion` | Kort version (10 til 20 minutter) af et rollespil |
-| `/rollespilsdesigner:rollespil-rollekort` | Rollekort og elevintroduktion som Word-filer |
-| `/rollespilsdesigner:rollespil-laererguide` | Lærerguide med faseovergange og debriefing |
-| `/rollespilsdesigner:rollespil-cheatsheet` | Cheatsheet med modelsvar |
-| `/rollespilsdesigner:rollespil-konsistenstjek` | Kvalitetssikring før print |
-| `/rollespilsdesigner:rollespil-sprogtjek` | Sprogcheck af materialerne |
-| `/rollespilsdesigner:rollespil-digitale-tillaeg` | AI-rådgiver, facit-beregner og andre digitale dele |
+| `/casespilsdesigner:casespil-nyt` | Designer et nyt rollespil sammen med dig |
+| `/casespilsdesigner:casespil-miniversion` | Kort version (10 til 20 minutter) af et rollespil |
+| `/casespilsdesigner:casespil-rollekort` | Rollekort og elevintroduktion som Word-filer |
+| `/casespilsdesigner:casespil-laererguide` | Lærerguide med faseovergange og debriefing |
+| `/casespilsdesigner:casespil-cheatsheet` | Cheatsheet med modelsvar |
+| `/casespilsdesigner:casespil-konsistenstjek` | Kvalitetssikring før print |
+| `/casespilsdesigner:casespil-sprogtjek` | Sprogcheck af materialerne |
+| `/casespilsdesigner:casespil-digitale-tillaeg` | AI-rådgiver, facit-beregner og andre digitale dele |
 | `/bloom:bloom-spoergsmaal-til-tekst` | Komplet sæt arbejdsspørgsmål til en tekst, to versioner og taxonomy table |
 | `/bloom:bloom-lektiespoergsmaal` | 3 lektiespørgsmål på Huske/Forstå |
 | `/bloom:bloom-skabe-opgaver` | 8 til 12 kreative skabe-spørgsmål |
@@ -29,7 +29,7 @@ Hver skill hedder gruppen først og så det, den gør (`rollespil-`, `bloom-`, `
 | `/bloom:bloom-planlaeg-time` | Tre-faset time med spørgsmål og arbejdsformer |
 | `/blooket:blooket-lav-quiz` | Blooket-quiz som CSV-fil |
 
-`rollespil-designprincipper` og `rollespil-projektregler` (rollespil), `bloom-spoergsmaalsregler` (Bloom) og `blooket-quizformat` (Blooket) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
+`casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom) og `blooket-quizformat` (Blooket) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
 
 ## Installation
 
@@ -38,7 +38,7 @@ Hver skill hedder gruppen først og så det, den gør (`rollespil-`, `bloom-`, `
 **Claude Code:**
 ```
 claude plugin marketplace add KennethEU/kennethsplugins
-claude plugin install rollespilsdesigner@kennethsplugins
+claude plugin install casespilsdesigner@kennethsplugins
 claude plugin install bloom@kennethsplugins
 claude plugin install blooket@kennethsplugins
 ```
@@ -49,7 +49,7 @@ claude plugin install blooket@kennethsplugins
 kennethsplugins/
 ├── .claude-plugin/marketplace.json     ← kataloget over plugins
 └── plugins/
-    ├── rollespilsdesigner/             ← hvert plugin har sin egen mappe
+    ├── casespilsdesigner/              ← hvert plugin har sin egen mappe
     │   ├── .claude-plugin/plugin.json
     │   └── skills/...
     ├── bloom/
@@ -67,6 +67,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 - `blooket` bruger scriptet `generate_csv.py`, som tjekker spørgsmålene og skriver Blooket-filen. Test det med `python3 plugins/blooket/tests/test_generate_csv.py`.
 
 ## Changelog
+
+### casespilsdesigner 2.0.0 (oktober 2026)
+- Pluginet `rollespilsdesigner` er omdøbt til `casespilsdesigner`, og alle dets skills har skiftet gruppenavn fra `rollespil-` til `casespil-`. Mappen er flyttet til `plugins/casespilsdesigner`. Installér igen med `claude plugin install casespilsdesigner@kennethsplugins`. Se plugin-READMEen for de nye skillenavne.
 
 ### navngivning 1.7.0 og 1.2.0 (oktober 2026)
 - Alle skills har fået gruppenavnet foran (`rollespil-`, `bloom-`, `blooket-`), fordi Cowork kun viser skillens navn i kommandomenuen og ikke plugin-navnet. Skriver du `/bloom`, `/blooket` eller `/rollespil`, står hver gruppe nu samlet.
