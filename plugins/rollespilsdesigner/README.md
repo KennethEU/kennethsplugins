@@ -7,7 +7,7 @@ Et Cowork-plugin til design af rollespil og simuleringer i dansk gymnasieundervi
 - **Designer rollespil** baseret på fagligt emne, elevgruppe og praktisk ramme
 - **Genererer Word-dokumenter** med rollekort (normalversion som standard, støtte/stærk efter ønske), lærerguider, elevintroduktioner og cheatsheats
 - **Laver miniversioner** (10-20 min) af eksisterende rollespil eller fra bunden
-- **Bygger digitale værktøjer** (AI-rådgiver, facit-beregner, lærershow, webside, video) ud fra en teknisk reference med afprøvede mønstre
+- **Bygger digitale værktøjer** (AI-rådgiver, facit-beregner, lærershow, webside, spilintro med voiceover, video) ud fra en teknisk reference med afprøvede mønstre
 - **Kører kvalitetssikring** — konsistenstjek + dansk sprogcheck — før levering
 - **Understøtter 8 formater:** Forhandling, krisehåndtering, lev-et-liv, konsekvens-kredsløb, retssag, bestyrelse, parlamentarisk lovproces, interaktiv virksomhedssimulation
 
@@ -67,7 +67,7 @@ Kommandoerne skrives med plugin-navnet foran, fx `/rollespilsdesigner:rollespil-
 | `rollespil-cheatsheet` | Auto | Cheatsheats, modelbesvarelser, facitlister |
 | `rollespil-sprogtjek` | Auto | Sprogcheck, korrektur, dansk tekst |
 | `rollespil-projektregler` | Auto | Regler der overstyrer de øvrige skills (ritualer, versioner) |
-| `rollespil-digitale-tillaeg` | Auto | AI-rådgiver, facit-beregner, lærershow, webside, video |
+| `rollespil-digitale-tillaeg` | Auto | AI-rådgiver, facit-beregner, lærershow, webside, spilintro, video |
 | `rollespil-konsistenstjek` | Auto | Kvalitetssikring, "er det færdigt", "klar til print" |
 
 ## Anbefalet mappestruktur (Cowork)
@@ -104,6 +104,12 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 - **Claude.ai** — skills kan uploades individuelt via Settings > Skills
 
 ## Changelog
+
+### v1.8.0 (oktober 2026)
+- `rollespil-digitale-tillaeg` har fået fem nye områder fra Fjord Outdoor: spilintro (popup og selvstændig side, synkroniseret lyd, scener og undertekster), voiceover med ElevenLabs (stemningsmærker, pauser, længde), grafisk stil uden generisk AI-look og med kontrastregler, mobil- og Safari-fejl (usynlig modal, menulukning, Tilbage-knap, layout) og arkitektur for popup mod selvstændig side
+- Kontrasttal i skillen er regnet efter: marineblå mærke med hvid tekst er 12,9 til 1 og skovgrøn 7,5 til 1, mens rav med marineblå tekst er 4,4 til 1 og derfor kun godkendt til stor tekst
+- Tilbage-knappen lukker nu popup'en: mønstret med `pushState` er afprøvet i Chromium, fordi en `popstate`-lytter alene ikke virker, når linket åbner popup'en med `preventDefault()`
+- Ny triggertest `trigger-intro-1`
 
 ### v1.7.0 (oktober 2026)
 - Skillene har fået gruppenavnet `rollespil-` foran det beskrivende navn, så de står samlet i kommandomenuen i Cowork, hvor plugin-navnet ikke vises: `rollespil-nyt`, `rollespil-miniversion`, `rollespil-rollekort`, `rollespil-laererguide`, `rollespil-cheatsheet`, `rollespil-sprogtjek`, `rollespil-konsistenstjek`, `rollespil-digitale-tillaeg`, `rollespil-designprincipper` og `rollespil-projektregler`.
