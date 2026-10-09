@@ -30,6 +30,7 @@ For hvert rollekort, verificér:
 - [ ] Nævner kort A noget om kort B → stemmer det med kort B's faktiske indhold?
 - [ ] Refererer dilemmaer til positioner der faktisk findes på de nævnte kort?
 - [ ] Er krydsreferencer symmetriske? (Hvis A har dilemma om B, har B perspektiv på A?)
+- [ ] Har spilfaserne samme navne, numre og rækkefølge i elevintroduktion, rollekortenes faseguide, lærerguide og, hvis de findes, webside og rådgiver? Intro og Debriefing må stå som før- og eftertrin uden fasenummer, men er ikke rådgiverfaser.
 
 **Typisk fejl:** Rollekort A siger "Professor Andersen foreslår 60 % af median" — men professor Andersens kort siger 50 %.
 
@@ -122,12 +123,20 @@ Kilder: `rollespil-projektregler` (beregner-tjek) og `rollespil-digitale-tillaeg
 - [ ] Reserveformlen er den samme overalt?
 - [ ] Straffen for ikke at forsvare et kerneprodukt er med i beregneren?
 - [ ] Beregnerens og showets parametre er identiske?
-- [ ] Resultatet kan ikke læses ud af elevmaterialer, webside eller casekort?
+- [ ] Resultatet kan ikke læses ud af elevmaterialer, webside, rollespilsside eller casekort?
 - [ ] Skjult information står ikke på offentlige sider eller i fælles billedtekster?
+- [ ] Ingen BCG- eller Ansoff-svar og ingen beskrivelser af rollernes holdninger på offentlige sider (rollespilssiden viser roller kun med titel, stemmetal og særlig beføjelse)?
+- [ ] Roller, titler, stemmetal, beløb og regler på rollespilssiden er sammenholdt med rollekort og bilag (intet opfundet), og reglerne om stemmer, veto, standardplan, særlige beslutninger og reserve er med?
+- [ ] Spilfaserne har samme navne og numre overalt, og rådgiver og webside viser kun spilfaserne?
+- [ ] Rollekoderne på kortene matcher hasherne i rådgiveren, og koderne på kort og i lærervinduet er ens?
+- [ ] Rådgiverens fejlbesked og rollespilssidens tekst skriver kun "fra dit kort", hvis koden står på kortet?
+- [ ] Spilintroens scenetekster og voiceover er tjekket mod bilagene (ingen overdrivelser eller modsigelser; voiceover kan ikke rettes uden ny indtaling)?
+- [ ] Forsiden har ét menupunkt og en hero-knap til rollespilssiden, intet link til rådgiveren og ingen popup, og gamle `#intro`-links sendes videre?
+- [ ] Ingen død kode efter oprydning, og forsiden ser ens ud før og efter?
 - [ ] Rådgiverens rollekortoverskrifter svarer til de faste overskrifter?
 - [ ] Websiden viser virksomheden før investeringen og er mærket som fiktiv?
 - [ ] Digitale dele er testet på computer og mobil (ingen vandret scroll, ingen konsolfejl)?
-- [ ] Backup findes i arkivmappen?
+- [ ] Backup findes i arkivmappen, også for små rettelser?
 
 ## 9. Læsertest med frisk læser
 

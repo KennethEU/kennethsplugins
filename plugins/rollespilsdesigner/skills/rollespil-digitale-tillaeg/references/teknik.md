@@ -4,14 +4,19 @@ Samlet fra Fjord Outdoor (AI-rådgiver, webside, facit, show, spilintro). Brug d
 
 ## 1. Grundarkitektur
 
-- **Én HTML-fil pr. værktøj** (rådgiver, facit, show, webside). Ingen byggetrin, ingen pakkehåndtering. Stil og script ligger i filen. Billeder og video ligger i en mappe ved siden af.
-- **Ét datasæt som kilde.** Saml roller, tal, parametre og tekster i ét sæt (fx en JSON-fil eller et objekt øverst). Lav helst et lille script, der indsætter dataene i rådgiver, facit og show, i stedet for at kopiere tal i hånden. Det fjerner den hyppigste fejltype: tal, der er rettet det ene sted men ikke de andre.
+- **Én HTML-fil pr. værktøj** (rådgiver, facit, show, webside, rollespilsside, afspiller). Ingen byggetrin, ingen pakkehåndtering. Stil og script ligger i filen. Billeder og video ligger i en mappe ved siden af.
+- **Ét datasæt som kilde.** Saml roller, tal, parametre og tekster i ét sæt (fx en JSON-fil eller et objekt øverst). Rollespilssidens roller, stemmetal, beløb og regler hører også med. Lav helst et lille script, der indsætter dataene i rådgiver, facit, show og rollespilsside, i stedet for at kopiere tal i hånden. Det fjerner den hyppigste fejltype: tal, der er rettet det ene sted men ikke de andre.
+- **Én afspiller, én fil.** Samme afspiller og samme undertekster ligger aldrig i flere filer (afsnit 11).
 - **Parametre øverst.** Alt, der kan justeres (grænser, priser, sandsynligheder, antal spørgsmål, tidsgrænse), står som navngivne konstanter i toppen af scriptet (fx `CFG`, `TOTAL_QUESTIONS`, `SESSION_TTL_MS`). Ingen magiske tal midt i koden.
 - **Ingen faste afhængigheder til internettet** ud over selve modelkaldet. Skrifttyper og ikoner lægges i filen eller i mappen.
 
 ## 2. Roller, koder og kryptering
 
-- Hver rolle har en **egen adgangskode**. Gem kun en hash af koden (SHA-256) i siden, ikke koden selv.
+- Hver rolle har en **egen 4-cifret adgangskode**. Gem kun en hash af koden (SHA-256) i siden, ikke koden selv.
+- **Koden står på rollekortet**, på forsiden i topbjælkens undertitel, fx `Fjord Outdoors bestyrelse | Leder mødet | Rådgiverkode: 2481`. Den står ikke under en overskrift eller i en ny sektion, fordi rådgiverens parser læser kortets faste overskrifter (afsnit 5).
+- **Ærlig begrænsning:** en 4-cifret kode har kun 10 000 muligheder. Hashen skjuler koden for den, der læser siden, men en målrettet elev kan afprøve dem alle. Vil man have en hård grænse, tælles forkerte forsøg på serveren (afsnit 3).
+- **Kodetjek:** koden på hvert kort, hashen i rådgiveren og koden i lærervinduet skal høre sammen. Lav et lille script, der hasher koderne fra kortene og sammenligner med hasherne i siden, hver gang kort eller rådgiver er ændret.
+- **Tekster om koden:** rådgiverens fejlbesked og rollespilssidens tekst må kun skrive "fra dit kort", hvis koden faktisk står på kortet.
 - Rollekortets indhold kan gemmes krypteret pr. rolle og dekrypteres i browseren, når koden er indtastet. Det stopper nysgerrige blikke i kildekoden og i udviklerværktøjer, men **ikke en målrettet elev**. Sig det til læreren, og lad aldrig hemmeligheder ligge her, som ikke må kendes.
 - `crypto.subtle` virker kun på sikre adresser (https og localhost), ikke når siden åbnes som lokal fil. Brug derfor en lille indbygget SHA-256 og en simpel strømkryptering (hash af nøgle plus tæller), så det virker begge steder.
 - Lærervinduet viser **kun rollekoderne**. Ingen log, ingen nøgle, ingen faseføring.
@@ -36,6 +41,7 @@ Samlet fra Fjord Outdoor (AI-rådgiver, webside, facit, show, spilintro). Brug d
 ## 5. Rollekort og casekort i siden
 
 - Rollekortets **overskrifter er en grænseflade**: rådgiveren og kortvisningen læser dem. Fast sæt: MÅL, BAGGRUND, HOLDNING, VÆRDIER, ARGUMENTER, DILEMMAER, SKJULT INFORMATION, SÆRLIG BEFØJELSE, TIP, evt. projekt og løfte. Ændres de, skal parseren ændres.
+- **Rådgiverens faser:** faselisten indeholder kun de spilfaser, hvor eleverne agerer og har brug for sparring (Fjord Outdoor: Forberedelse, Pitches, Korridorforhandlinger, Bestyrelsesmødet). Introduktion og debriefing er ikke rådgiverfaser. Navne og numre er de samme som på rollekort og i lærerguide.
 - **Én komponent til kortet**, brugt både som fane på computer (fra ca. 900 px) og som foldbare bokse på mobil. Casekortet i egen fane ved siden af rollekortet.
 - Design: ét kort uden ramme i ramme, ingen overflødige etiketter (fx "Bagsiden"), farver og skrift som resten af spillet.
 - Tabeller på mobil: korte overskrifter, enheder i en note under tabellen, bløde orddelinger (`&shy;`) i lange ord.
@@ -64,14 +70,14 @@ Samlet fra Fjord Outdoor (AI-rådgiver, webside, facit, show, spilintro). Brug d
 
 ## 9. Arbejdsgang og test
 
-1. **Backup først:** kopiér filen til `_arkiv/<fil>_foer_<ændring>.html` før hver ændring. Slet aldrig.
+1. **Backup først:** kopiér filen til `_arkiv/<fil>_foer_<ændring>.html` før hver ændring. Slet aldrig. Det gælder også ved gennemgang og små rettelser.
 2. **Ændr i små trin**, ét emne ad gangen (pitch-fane, tæller, mobil), og test mellem trinene.
 3. **Syntakscheck:** åbn siden eller kør `node --check` på det udtrukne script. En manglende anførselstegn i en skabelonstreng stoppede hele siden én gang.
 4. **Automatisk test med Playwright** (eller tilsvarende): åbn siden i 1300, 390 og 320 px, tjek konsolfejl, vandret scroll, indtast en rollekode, skift rolle og kontrollér at tælleren er uændret, tag skærmbilleder og **se dem**.
 5. **Test den nyeste fil.** Åbn med en ny fanebladsadresse eller hård genindlæsning, så en gammel version i cachen ikke narrer.
-6. **Test på en rigtig telefon, helst en iPhone.** Playwright med Chromium og en lille skærm efterligner ikke Safari. De fejl, der gjorde Fjord Outdoor frossen på mobilen (afsnit 14), blev opdaget på telefonen. Tjek: åbn og luk popup'en tre gange, tryk på alle menulinks, tryk Tilbage med popup'en åben, og afspil introen med lyden på.
-7. **Gennemlæs som elev:** er der noget på en offentlig side, som røber skjult information eller resultatet af valgene?
-8. **Efter ændringer:** tjek tal på tværs (bilag, casekort, facit, show) og ryd op i rester (overskrifter, debriefingsspørgsmål), når en del er fjernet.
+6. **Test på en rigtig telefon, helst en iPhone.** Playwright med Chromium og en lille skærm efterligner ikke Safari. De fejl, der gjorde Fjord Outdoor frossen på mobilen (afsnit 14), blev opdaget på telefonen. Tjek: tryk på alle menulinks, åbn og luk eventuelle overlays tre gange, tryk Tilbage med et overlay åbent, og afspil introen med lyden på.
+7. **Gennemlæs som elev:** er der noget på en offentlig side (også rollespilssiden), som røber skjult information, modelsvar eller resultatet af valgene?
+8. **Efter ændringer:** tjek tal og roller på tværs (bilag, casekort, facit, show, rollespilsside) og ryd op i rester (overskrifter, debriefingsspørgsmål, død kode og styling), når en del er fjernet. Tag skærmbilleder af siden før og efter oprydning og sammenlign dem.
 
 ## 10. Sikkerhed og ansvar
 
@@ -84,7 +90,9 @@ Samlet fra Fjord Outdoor (AI-rådgiver, webside, facit, show, spilintro). Brug d
 
 Introen er en afspiller, ikke en video. Scener, undertekster og lyd styres af ét tal: tiden. Det gør den let at rette (ret en tekst, ikke en filmfil) og lader læreren hoppe rundt.
 
-**Filer:** `intro.html` (selvstændig side), en popup i `index.html` (afsnit 14 A til C), `voiceover.mp3` og billeder i `billeder/`. Popup og side er to udgaver af samme afspiller. I Fjord Outdoor ligger scener, CSS og script to steder; popup'ens klasser har præfikset `m-` og dens id'er hedder fx `mSc1`, så de ikke støder ind i sidens egne. En kopi driver fra originalen, og tal og tekster i introen er en del af den fælles kilde (SKILL.md, grundregel 1). Brug derfor en fælles `intro-data.js` med `SCENES` og `SUBTITLES` (et almindeligt `<script src>` virker også fra en lokal mappe), og ret altid begge sider, når en scenetekst ændres.
+**Filer:** `rollespil.html` (hubben, afsnit 15) med afspilleren indlejret, afspillerfilen `intro.html` (kan også bruges alene til storskærm og som direkte link), `voiceover.mp3` og billeder i `billeder/`. Afspilleren og underteksterne bor i den ene fil. Hubben indlejrer den, fx `<iframe src="intro.html?embed=1" title="Spilintro" allow="fullscreen" allowfullscreen>`, og `?embed=1` skjuler sidehoved og tilbagelink, så kun afspilleren vises. Så findes der ét sæt scener og undertekster, som ikke kan drive fra hinanden (afprøvet i Chromium: parameteren læses i den indlejrede side, og et klik inde i den virker).
+
+I Fjord Outdoor lå afspilleren to steder, i en popup på forsiden og i `intro.html`, med klasser med præfikset `m-` og id'er som `mSc1`, så de ikke stødte ind i sidens egne. Det gav en kopi, der kunne drive, og popup'en er fjernet. Skal afspilleren af en grund bygges ind i flere sider, så læg `SCENES` og `SUBTITLES` i en fælles `intro-data.js` (et almindeligt `<script src>` virker også fra en lokal mappe). Tal og tekster i introen er en del af den fælles kilde (SKILL.md, grundregel 1).
 
 **Lyden er mester.** Når lyden spiller, hentes tiden fra `audio.currentTime`; ellers fra et ur (`requestAnimationFrame`). Så glider tekst og stemme aldrig fra hinanden.
 
@@ -122,7 +130,8 @@ function updateState(t) {
 - **Kun aktive scener er synlige** (`.scene.active`). Scener overlapper ikke, og overgangen er en blød fade (ca. 0,6 sek.) på selve scenen, ikke på de enkelte kort inde i den (se afsnit 14 D).
 - **Tider findes sådan:** generér lyden først, find sætningernes tider, og sæt derefter scenegrænserne ved en naturlig pause. ElevenLabs kan give tidsstempler sammen med lyden (tjek den aktuelle dokumentation); ellers aflyttes filen, og tiderne justeres i hånden. Rettes teksten og lyden laves om, skal tiderne laves om.
 - **Afspilleren:** `seek(t)` kalder `updateState(t)` og sætter `audio.currentTime`. Knapperne -10 og +10 kalder `seek(currentTime - 10)` og `seek(currentTime + 10)`. Tidslinjen er et klik (og gerne træk) på et spor, der omregnes til sekunder. Parameteren `?t=42` hopper til et tidspunkt, hvilket er nyttigt til test og skærmbilleder.
-- **Tastatur, kun mens popup'en er åben:** mellemrum eller K afspiller og pauser, venstre og højre pil giver -10 og +10, F er fuld skærm, Escape lukker.
+- **Tastatur, når afspilleren har fokus:** mellemrum eller K afspiller og pauser, venstre og højre pil giver -10 og +10, F er fuld skærm.
+- **Fuld skærm i en indlejret afspiller:** iframe'en skal have `allow="fullscreen"`. Fuld skærm virker ikke overalt, især ikke for andet end video på iPhone, så vis kun knappen, hvis `document.fullscreenEnabled` er sandt. Fuld skærm i en iframe er ikke afprøvet på telefon.
 - **Lyd og iPhone (anbefalet mønster, ikke afprøvet på iPhone i Fjord Outdoor):** Safari på iOS ignorerer `preload`, og `canplaythrough` udløses typisk først efter afspilning er startet. Fjord Outdoor satte `hasVoiceAudio = true` først på det event, og hvis det aldrig kommer, springer koden `audio.play()` over, så introen kører uden stemme. Gør i stedet sådan, og test på en iPhone:
 
 ```javascript
@@ -145,8 +154,8 @@ function play() {
 }
 ```
 
-- **Tilgængelighed (anbefalet, ikke med i Fjord Outdoor):** gør tidslinjen til `role="slider"` med `aria-valuemin`, `aria-valuemax` og `aria-valuenow`, så den kan bruges med tastatur og skærmlæser. Flyt fokus ind i popup'en ved åbning og tilbage til knappen, der åbnede den, ved lukning.
-- **Baggrundsvideo på forsiden:** sæt den på pause, når popup'en åbner, så to videoer og lyde ikke kører samtidig, og start den igen, uanset hvordan popup'en lukkes (kryds, Escape, klik på baggrunden eller Tilbage-knappen). Den første udgave i Fjord Outdoor glemte genstarten, og videoen stod frosset, til siden blev genindlæst. Læg derfor genstarten i den ene funktion, som alle lukkeveje kalder, og spring den over ved `prefers-reduced-motion`:
+- **Tilgængelighed (anbefalet, ikke med i Fjord Outdoor):** gør tidslinjen til `role="slider"` med `aria-valuemin`, `aria-valuemax` og `aria-valuenow`, så den kan bruges med tastatur og skærmlæser. Bruger siden et overlay, flyttes fokus ind i det ved åbning og tilbage til knappen, der åbnede det, ved lukning.
+- **Baggrundsvideo og overlays:** hvis en side med baggrundsvideo åbner et fuldskærmsoverlay med lyd eller video, sættes baggrundsvideoen på pause, så to videoer og lyde ikke kører samtidig, og den startes igen, uanset hvordan overlayet lukkes (kryds, Escape, klik på baggrunden eller Tilbage-knappen). Ligger introen på egen side, er der ingen baggrundsvideo at passe på. Den første udgave i Fjord Outdoor, hvor introen lå i en popup på forsiden, glemte genstarten, og videoen stod frosset, til siden blev genindlæst. Læg derfor genstarten i den ene funktion, som alle lukkeveje kalder, og spring den over ved `prefers-reduced-motion`:
 
 ```javascript
 // i den fælles lukkefunktion
@@ -161,6 +170,7 @@ if (!reduce && v) {
 
 ## 12. Voiceover med ElevenLabs
 
+- **Tjek manuskriptet mod bilagene, før stemmen indtales.** Voiceover kan ikke rettes uden en ny indtaling, og underteksterne bliver stående som facit. Scenetekster og voiceover må ikke modsige bilagenes regler eller dramatisere ud over dem. Gennemgå hver sætning mod bilag og rollekort. I Fjord Outdoor var disse formuleringer for kraftige eller forkerte: "fuld satsning for overhovedet at virke", "halve løsninger er spildte penge", "overtager markedet", "med det samme", "nuværende succeser" (kun nogle af produkterne var kerneprodukter, i Fjord Outdoor P1 til P3) og "hvert eneste fravalg koster dyrt". Bilagenes regel var mere nuanceret: en pilotgrænse giver en chance, en fuldgrænse en større chance, og et kerneprodukt uden pilotbeløb mister yderligere markedsandel. Skriv, hvad reglerne siger, i stedet for at forstærke dem.
 - **Skriv til øret.** Korte sætninger, ét budskab ad gangen, tal som ord ("Ti millioner kroner", ikke "10 mio. kr."), ingen tankestreger, parenteser eller forkortelser. Den samme tekst bliver til undertekster, så skriv den, som den skal stå på skærmen.
 - **Længde:** 60 til 90 sekunder. Fjord Outdoor: 211 ord på 84 sekunder, altså ca. 150 ord i minuttet med pauser. Planlæg ca. 200 til 220 ord, og skær ned frem for at skrue op for tempoet.
 - **Opdel i 4 til 5 scener** efter fortællingens bue: situationen, magtkampen, dilemmaet, faserne, finalen. Hver scene får sin egen stemning.
@@ -215,7 +225,7 @@ function contrast(a, b) {
 
 ## 14. Mobil-optimering og WebKit-fejlretning
 
-Disse fejl fik Fjord Outdoors forside til at virke frossen på telefonen. Ingen af dem viser sig tydeligt på en computer.
+Disse fejl fik Fjord Outdoors forside til at virke frossen på telefonen. Ingen af dem viser sig tydeligt på en computer. Mønstrene gælder enhver mobilmenu og ethvert fuldskærmslag. Fjord Outdoors intro lå oprindeligt i en popup på forsiden og ligger nu på en egen side (afsnit 15), men menuen og eventuelle andre overlays bruger stadig A til C.
 
 ### A. Den usynlige modal-fælde
 
@@ -311,3 +321,28 @@ Afprøvet i Chromium (mobilvindue): Tilbage lukker popup'en uden at forlade side
 - **Hold animationerne lette.** Fuldskærmsbilleder med langsom zoom (`transform: scale` over 12 sek.) og filtre (`brightness`, `blur`) er dyre på mobil. Brug højst ét filter pr. lag, og undgå `backdrop-filter` på lag, der ligger oven på video.
 - **Højde på iPhone:** `max-height: 100vh` regner Safaris adresselinje med og kan skubbe afspillerens knapper ud af skærmen. Skriv `max-height: 100vh; max-height: 100dvh;` (den sidste vinder, hvor den findes).
 - **Tekststørrelse:** se afsnit 6. Minimum 12 px i scenerne og 13 px til undertekster.
+
+## 15. Rollespilssiden (hub)
+
+Hubben er den ene side, eleverne åbner for at forstå spillet. Den er offentlig og følger derfor de samme regler som websiden (SKILL.md, grundregel 2).
+
+- **Fil:** `rollespil.html` ved siden af `index.html`. Én fil med stil og script indeni, billeder i `billeder/`.
+- **Opbygning oppefra og ned:** (1) sidehoved med logo og ét link tilbage til virksomhedens forside, ingen sektionsmenu, så der heller ikke er brug for en hamburgermenu; (2) kort introtekst; (3) den indlejrede spilintro (afsnit 11); (4) knap til AI-rådgiveren; (5) spilfaserne, hvor eleverne handler; (6) roller og regler.
+- **Forsiden:** ét menupunkt, fx "Rollespillet", i menuens almindelige farve og ikke i accentfarven, og en knap i heroen til hubben. Intet link til rådgiveren og ingen popup. Fjern menupunkter og footerlinks, der peger på rådgiveren.
+- **Gamle links:** kode i forsiden sender `#intro` og `?intro=1` videre til hubben. Brug `location.replace`, så Tilbage-knappen ikke havner i en løkke.
+
+```html
+<script>
+  // øverst på forsiden, før indholdet: gamle intro-links sendes videre til rollespilssiden
+  if (location.hash === '#intro' || new URLSearchParams(location.search).get('intro') === '1') {
+    location.replace('rollespil.html');
+  }
+</script>
+```
+
+  Afprøvet i Chromium: `index.html#intro` og `index.html?intro=1` ender på `rollespil.html`, forsiden uden hash vises uændret, og Tilbage efter omdirigeringen går til den side, eleven kom fra.
+- **Data fra kilden:** roller (titel, stemmetal, særlig beføjelse), beløb og regler hentes fra datasættet, rollekortene og bilagene. Opfind ikke roller, titler eller tal. Sammenhold siden med rollekortene hver gang noget er ændret.
+- **Aldrig på hubben:** modelplaceringer (fx BCG-felter som "malkeko", "stjerne", "spørgsmålstegn"), strategimodel ved projekterne (fx Ansoff), beskrivelser af rollernes holdninger og alt andet, eleverne selv skal finde ud af. Roller vises kun med titel, stemmetal og særlig beføjelse.
+- **Regler, der skal med:** stemmeregel og antal stemmer der kræves, veto, standardplan hvis der ikke findes flertal, særlige beslutninger (Fjord Outdoor: fritidstøjet) og at det ubrugte er reserve. Brug bilagenes formuleringer.
+- **Faser:** kun spilfaserne, med samme navne og numre som på rollekort og i lærerguide.
+- **Oprydning, når et format udgår:** fjern HTML, CSS og script helt (søg efter rest-id'er og klasser, fx `intro-modal` og `openIntro`), og sammenlign skærmbilleder af forsiden ved ca. 1300, 390 og 320 px før og efter. Forsiden skal se ens ud, bortset fra det, der med vilje er ændret.

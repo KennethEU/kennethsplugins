@@ -105,6 +105,15 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v1.9.0 (oktober 2026)
+- `rollespil-digitale-tillaeg`: popup på forsiden er erstattet af en selvstændig rollespilsside (hub) med indlejret spilintro, knap til AI-rådgiveren, spilfaser samt roller og regler. Forsiden har kun ét menupunkt og en hero-knap, intet link til rådgiveren, og gamle `#intro`-links sendes videre. Afspilleren bor i én fil, og død kode fjernes, når et format udgår
+- Hubben er offentlig: ingen BCG- eller Ansoff-svar og ingen beskrivelser af rollernes holdninger. Roller, stemmetal og beløb hentes fra rollekort og bilag og opfindes ikke
+- Spilfaserne har samme navne og numre overalt; rådgiver og webside viser kun faser, hvor eleverne agerer. Ny regel i `rollespil-rollekort` og nyt punkt i `rollespil-konsistenstjek`
+- Rådgiverkode (4 cifre) trykkes i rollekortets topbjælke-undertitel, og kodetjek er tilføjet i konsistenstjekket
+- Voiceover og scenetekster tjekkes mod bilagene, før stemmen indtales
+- `rollespil-projektregler`: offentlige sider afslører ikke svar, og backup gælder også ved gennemgang og små rettelser
+- Omdirigering af gamle intro-links er afprøvet i Chromium
+
 ### v1.8.0 (oktober 2026)
 - `rollespil-digitale-tillaeg` har fået fem nye områder fra Fjord Outdoor: spilintro (popup og selvstændig side, synkroniseret lyd, scener og undertekster), voiceover med ElevenLabs (stemningsmærker, pauser, længde), grafisk stil uden generisk AI-look og med kontrastregler, mobil- og Safari-fejl (usynlig modal, menulukning, Tilbage-knap, layout) og arkitektur for popup mod selvstændig side
 - Kontrasttal i skillen er regnet efter: marineblå mærke med hvid tekst er 12,9 til 1 og skovgrøn 7,5 til 1, mens rav med marineblå tekst er 4,4 til 1 og derfor kun godkendt til stor tekst

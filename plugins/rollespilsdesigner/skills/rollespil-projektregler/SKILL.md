@@ -1,6 +1,6 @@
 ---
 name: rollespil-projektregler
-description: Projektets faste regler, der overstyrer de øvrige rollespilsskills ved uenighed. Ingen ritualsætninger, kun normalversion af rollekort som standard, ingen faste minuttal, ingen tankestreger, begrænsning af faglige begreber, beregner-tjek, fælles kilde til tal og skjult information. Læs altid før rollespilsmaterialer produceres eller ændres, og sammen med alle andre rollespil-skills.
+description: Projektets faste regler, der overstyrer de øvrige rollespilsskills ved uenighed. Ingen ritualsætninger, kun normalversion af rollekort som standard, ingen faste minuttal, ingen tankestreger, begrænsning af faglige begreber, beregner-tjek, fælles kilde til tal og skjult information, offentlige sider uden modelsvar og backup også ved små rettelser. Læs altid før rollespilsmaterialer produceres eller ændres, og sammen med alle andre rollespil-skills.
 ---
 
 # Projektregler for rollespil
@@ -21,10 +21,11 @@ Disse regler går forud for de generelle rollespilsskills, hvor de er uenige.
 3. **Fælles kilde.** Hold tal og regler i ét sæt, og kopiér derfra til bilag, rådgiverens casekort, facit og show.
 4. **Skjult information:** hvert rollekort med skjult info skal kunne bruges uden at kræve, at eleven siger noget usandt. Regel til eleverne: man må holde noget tilbage, men ikke sige noget usandt.
 5. **Rådgiver og rollekort:** rollekortenes overskrifter er faste, fordi en AI-rådgiver læser dem. Ændres de, skal rådgiveren tilpasses.
+6. **Offentlige sider afslører ikke svar.** Webside, rollespilsside (hub), casekort og introfilm viser aldrig det, eleverne selv skal finde ud af: modelsvar (fx BCG-placering og Ansoff-strategi ved projekterne) og beskrivelser af rollernes holdninger. Roller vises kun med titel, antal stemmer og særlig beføjelse. Roller, titler, stemmetal og beløb hentes fra rollekort og bilag og opfindes aldrig (i Fjord Outdoor var seks bestyrelsesroller opfundet og passede ikke til kortene). Siderne gengiver de regler, der gør spillet forståeligt: stemmeregel, veto, hvad der sker uden flertal, særlige beslutninger og hvad der sker med det ubrugte.
 
 ## Tillæg til produktion
 
-1. **Backup før ændring** i en arkivmappe med sigende navn. Slet aldrig.
+1. **Backup før ændring** i en arkivmappe med sigende navn. Slet aldrig. Det gælder også ved gennemgang og små rettelser, ikke kun ved nybyggeri.
 2. **Test** af digitale dele på computer og mobil, med billede, før det kaldes færdigt.
-3. **Delt materiale:** hvad der må ligge offentligt (webside, casekort) bestemmes ud fra rollekortenes skjulte information.
+3. **Delt materiale:** hvad der må ligge offentligt (webside, rollespilsside, casekort, intro) bestemmes ud fra rollekortenes skjulte information og af reglen om modelsvar under Tillæg til design, punkt 6.
 4. **Når en del skæres væk**, ryd også op i resttekster (debriefingsspørgsmål, "hvorfor"-lister, overskrifter).

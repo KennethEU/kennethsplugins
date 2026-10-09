@@ -91,7 +91,7 @@ Elevintroduktion (medium margener):
 ### Normal (1 A4-side)
 
 Standardversion for hovedparten af klassen. Indeholder:
-- Farvet header med navn, titel, organisation, stemmer + evt. beføjelse
+- Farvet header med navn, titel, organisation, stemmer + evt. beføjelse og evt. rådgiverkode (se Rådgiverkode)
 - MÅL (1-2 sætninger)
 - BAGGRUND (2. person: "Du er...")
 - HOLDNING (rollens faglige position)
@@ -100,7 +100,7 @@ Standardversion for hovedparten af klassen. Indeholder:
 - DILEMMAER (3 stk., 2. person: "Skal du...?", med krydsreferencer til andre roller)
 - SÆRLIG BEFØJELSE (hvis relevant)
 - TIP (2. person imperativ)
-- FASEGUIDE-TABEL (2 kolonner, farvet header, INGEN minuttal)
+- FASEGUIDE-TABEL (2 kolonner, farvet header, INGEN minuttal). Spilfaserne har samme navne, numre og rækkefølge som i elevintroduktion og lærerguide og, hvis de findes, webside og rådgiver. Intro og Debriefing må stå som før- og eftertrin uden fasenummer
 
 ### Støtte (2 A4-sider, kun hvis ønsket)
 
@@ -134,6 +134,15 @@ Slankere version:
 | Skjult info | 2. person | "Du ved at budgettet..." |
 
 Bland ALDRIG perspektiver inden for samme felt.
+
+---
+
+## Rådgiverkode (kun hvis spillet har en AI-rådgiver)
+
+- Hver rolle har en 4-cifret kode. Den trykkes på forsiden af rollekortet i topbjælkens undertitel, fx "Fjord Outdoors bestyrelse | Leder mødet | Rådgiverkode: 2481".
+- Koden står **ikke** under en overskrift og er ikke en ny sektion. Rådgiveren læser kortets faste overskrifter, så sektionerne ændres ikke (se `rollespil-digitale-tillaeg`).
+- Koderne kommer fra rådgiverens kodeliste. Rollekortene laves ofte, før rådgiveren findes: tilføj koden, når rådgiveren er bygget, og generér kortene igen. Koden på kortet, i lærervinduet og (som hash) i rådgiveren skal være den samme.
+- Koden står kun på sin egen rolles kort, aldrig i elevintroduktion eller fælles bilag. Rådgiverens fejlbesked og webtekster må kun skrive "fra dit kort", hvis koden står der.
 
 ---
 
