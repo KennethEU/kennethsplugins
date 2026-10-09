@@ -1,6 +1,6 @@
 ---
 name: casespil-konsistenstjek
-description: "Kvalitetssikrer færdige rollespilsmaterialer før de bruges i undervisningen: krydsreferencer, stemmematematik, person-perspektiv, sprog, balance, facilitering, beregner og digitale dele. Brug efter produktion og altid før levering, og når læreren spørger \"passer det hele sammen\", \"er det klar til print\", \"tjek lige alt\", kvalitetssikring eller konsistenstjek af et rollespil. Brug ikke til eksamenscases eller andre materialer uden for rollespil."
+description: "Kvalitetssikrer færdige casespilsmaterialer (også rollespilsmaterialer) før de bruges i undervisningen: krydsreferencer, stemmematematik, person-perspektiv, sprog, balance, facilitering, beregner og digitale dele. Brug efter produktion og altid før levering, og når læreren spørger \"passer det hele sammen\", \"er det klar til print\", \"tjek lige alt\", kvalitetssikring eller konsistenstjek af et casespil eller rollespil. Brug ikke til eksamenscases eller andre materialer uden for casespil og rollespil."
 allowed-tools:
   - Read
   - Glob
@@ -8,7 +8,7 @@ allowed-tools:
   - Bash
 ---
 
-# Konsistenstjek for Rollespilsmaterialer
+# Konsistenstjek for Casespilsmaterialer
 
 **Projektregler:** `casespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
@@ -74,7 +74,7 @@ For hvert rollekort, verificér:
 
 ## 6. Differentierings-tjek
 
-**Normalversionen er altid nok.** Mange rollespil laves bevidst med kun én simpel rollekort-version, og nogle gange med en AI-rådgiver som støtte til de svage elever. Mangler støtte- og stærkversion, er det IKKE en fejl. Skriv i rapporten "✅ Kun normalversion (bevidst valg)". Tjek støtte- og stærkversion kun, hvis de findes.
+**Normalversionen er altid nok.** Mange casespil laves bevidst med kun én simpel rollekort-version, og nogle gange med en AI-rådgiver som støtte til de svage elever. Mangler støtte- og stærkversion, er det IKKE en fejl. Skriv i rapporten "✅ Kun normalversion (bevidst valg)". Tjek støtte- og stærkversion kun, hvis de findes.
 
 ### Normal-version (tjek altid):
 - [ ] Passer på 1 A4-side?
@@ -123,15 +123,15 @@ Kilder: `casespil-projektregler` (beregner-tjek) og `casespil-digitale-tillaeg` 
 - [ ] Reserveformlen er den samme overalt?
 - [ ] Straffen for ikke at forsvare et kerneprodukt er med i beregneren?
 - [ ] Beregnerens og showets parametre er identiske?
-- [ ] Resultatet kan ikke læses ud af elevmaterialer, webside, rollespilsside eller casekort?
+- [ ] Resultatet kan ikke læses ud af elevmaterialer, webside, casespilsside eller casekort?
 - [ ] Skjult information står ikke på offentlige sider eller i fælles billedtekster?
-- [ ] Ingen BCG- eller Ansoff-svar og ingen beskrivelser af rollernes holdninger på offentlige sider (rollespilssiden viser roller kun med titel, stemmetal og særlig beføjelse)?
-- [ ] Roller, titler, stemmetal, beløb og regler på rollespilssiden er sammenholdt med rollekort og bilag (intet opfundet), og reglerne om stemmer, veto, standardplan, særlige beslutninger og reserve er med?
+- [ ] Ingen BCG- eller Ansoff-svar og ingen beskrivelser af rollernes holdninger på offentlige sider (casespilssiden viser roller kun med titel, stemmetal og særlig beføjelse)?
+- [ ] Roller, titler, stemmetal, beløb og regler på casespilssiden er sammenholdt med rollekort og bilag (intet opfundet), og reglerne om stemmer, veto, standardplan, særlige beslutninger og reserve er med?
 - [ ] Spilfaserne har samme navne og numre overalt, og rådgiver og webside viser kun spilfaserne?
 - [ ] Rollekoderne på kortene matcher hasherne i rådgiveren, og koderne på kort og i lærervinduet er ens?
-- [ ] Rådgiverens fejlbesked og rollespilssidens tekst skriver kun "fra dit kort", hvis koden står på kortet?
+- [ ] Rådgiverens fejlbesked og casespilssidens tekst skriver kun "fra dit kort", hvis koden står på kortet?
 - [ ] Spilintroens scenetekster og voiceover er tjekket mod bilagene (ingen overdrivelser eller modsigelser; voiceover kan ikke rettes uden ny indtaling)?
-- [ ] Forsiden har ét menupunkt og en hero-knap til rollespilssiden, intet link til rådgiveren og ingen popup, og gamle `#intro`-links sendes videre?
+- [ ] Forsiden har ét menupunkt og en hero-knap til casespilssiden, intet link til rådgiveren og ingen popup, og gamle `#intro`-links sendes videre?
 - [ ] Ingen død kode efter oprydning, og forsiden ser ens ud før og efter?
 - [ ] Rådgiverens rollekortoverskrifter svarer til de faste overskrifter?
 - [ ] Websiden viser virksomheden før investeringen og er mærket som fiktiv?
@@ -140,7 +140,7 @@ Kilder: `casespil-projektregler` (beregner-tjek) og `casespil-digitale-tillaeg` 
 
 ## 9. Læsertest med frisk læser
 
-Formål: finde det, forfatteren ikke selv kan se. Du kender hele rollespillet; eleven kender kun to dokumenter.
+Formål: finde det, forfatteren ikke selv kan se. Du kender hele casespillet; eleven kender kun to dokumenter.
 
 1. Vælg elevintroduktionen og ét rollekort (helst den mest komplekse rolle).
 2. Start en frisk læser uden forhistorie: en underagent, hvis du kan, ellers beder du læreren åbne en ny samtale. Giv læseren kun de to dokumenter og denne opgave: "Du er elev i 2.g og har fået disse to papirer. Svar kun ud fra dem."
@@ -163,7 +163,7 @@ Brug punktet, når rollekort og elevintroduktion er færdige. Det er ikke releva
 Præsentér resultatet som:
 
 ```
-KONSISTENSTJEK: [Rollespilnavn]
+KONSISTENSTJEK: [Casespilnavn]
 
 1. KRYDSREFERENCER: ✅ / ❌ [detaljer]
 2. STEMMEMATEMATIK: ✅ / ❌ [detaljer]

@@ -4,7 +4,7 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 
 | Plugin | Hvad det gør | Skills |
 |--------|--------------|--------|
-| [`casespilsdesigner`](plugins/casespilsdesigner/README.md) | Design af casespil (rollespil og simuleringer): rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring | 10 |
+| [`casespilsdesigner`](plugins/casespilsdesigner/README.md) | Design af casespil (også kaldet rollespil) og simuleringer: rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring | 10 |
 | [`bloom`](plugins/bloom) | Arbejdsspørgsmål til fagtekster efter Blooms taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time | 6 |
 | [`blooket`](plugins/blooket) | Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale | 2 |
 
@@ -14,8 +14,8 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 
 | Kommando | Hvad den gør |
 |----------|--------------|
-| `/casespilsdesigner:casespil-nyt` | Designer et nyt rollespil sammen med dig |
-| `/casespilsdesigner:casespil-miniversion` | Kort version (10 til 20 minutter) af et rollespil |
+| `/casespilsdesigner:casespil-nyt` | Designer et nyt casespil sammen med dig |
+| `/casespilsdesigner:casespil-miniversion` | Kort version (10 til 20 minutter) af et casespil |
 | `/casespilsdesigner:casespil-rollekort` | Rollekort og elevintroduktion som Word-filer |
 | `/casespilsdesigner:casespil-laererguide` | Lærerguide med faseovergange og debriefing |
 | `/casespilsdesigner:casespil-cheatsheet` | Cheatsheet med modelsvar |
@@ -69,7 +69,7 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 ## Changelog
 
 ### casespilsdesigner 2.0.0 (oktober 2026)
-- Pluginet `rollespilsdesigner` er omdøbt til `casespilsdesigner`, og alle dets skills har skiftet gruppenavn fra `rollespil-` til `casespil-`. Mappen er flyttet til `plugins/casespilsdesigner`. Installér igen med `claude plugin install casespilsdesigner@kennethsplugins`. Se plugin-READMEen for de nye skillenavne.
+- Pluginet `rollespilsdesigner` er omdøbt til `casespilsdesigner`, og alle dets skills har skiftet gruppenavn fra `rollespil-` til `casespil-`. Sproget er nu casespil, og rollespil virker stadig som søgeord. Mappen er flyttet til `plugins/casespilsdesigner`. Installér igen med `claude plugin install casespilsdesigner@kennethsplugins`. Se plugin-READMEen for de nye skillenavne.
 
 ### navngivning 1.7.0 og 1.2.0 (oktober 2026)
 - Alle skills har fået gruppenavnet foran (`rollespil-`, `bloom-`, `blooket-`), fordi Cowork kun viser skillens navn i kommandomenuen og ikke plugin-navnet. Skriver du `/bloom`, `/blooket` eller `/rollespil`, står hver gruppe nu samlet.

@@ -1,11 +1,11 @@
-# Tekniske principper og mønstre til digitale rollespilsværktøjer
+# Tekniske principper og mønstre til digitale casespilsværktøjer
 
 Samlet fra Fjord Outdoor (AI-rådgiver, webside, facit, show, spilintro). Brug det som udgangspunkt, så hvert nyt værktøj ikke skal opfindes forfra. Alt er skrevet til enkeltstående HTML-sider, som en lærer kan lægge på en almindelig webhost eller åbne direkte fra en mappe.
 
 ## 1. Grundarkitektur
 
-- **Én HTML-fil pr. værktøj** (rådgiver, facit, show, webside, rollespilsside, afspiller). Ingen byggetrin, ingen pakkehåndtering. Stil og script ligger i filen. Billeder og video ligger i en mappe ved siden af.
-- **Ét datasæt som kilde.** Saml roller, tal, parametre og tekster i ét sæt (fx en JSON-fil eller et objekt øverst). Rollespilssidens roller, stemmetal, beløb og regler hører også med. Lav helst et lille script, der indsætter dataene i rådgiver, facit, show og rollespilsside, i stedet for at kopiere tal i hånden. Det fjerner den hyppigste fejltype: tal, der er rettet det ene sted men ikke de andre.
+- **Én HTML-fil pr. værktøj** (rådgiver, facit, show, webside, casespilsside, afspiller). Ingen byggetrin, ingen pakkehåndtering. Stil og script ligger i filen. Billeder og video ligger i en mappe ved siden af.
+- **Ét datasæt som kilde.** Saml roller, tal, parametre og tekster i ét sæt (fx en JSON-fil eller et objekt øverst). Casespilssidens roller, stemmetal, beløb og regler hører også med. Lav helst et lille script, der indsætter dataene i rådgiver, facit, show og casespilsside, i stedet for at kopiere tal i hånden. Det fjerner den hyppigste fejltype: tal, der er rettet det ene sted men ikke de andre.
 - **Én afspiller, én fil.** Samme afspiller og samme undertekster ligger aldrig i flere filer (afsnit 11).
 - **Parametre øverst.** Alt, der kan justeres (grænser, priser, sandsynligheder, antal spørgsmål, tidsgrænse), står som navngivne konstanter i toppen af scriptet (fx `CFG`, `TOTAL_QUESTIONS`, `SESSION_TTL_MS`). Ingen magiske tal midt i koden.
 - **Ingen faste afhængigheder til internettet** ud over selve modelkaldet. Skrifttyper og ikoner lægges i filen eller i mappen.
@@ -16,7 +16,7 @@ Samlet fra Fjord Outdoor (AI-rådgiver, webside, facit, show, spilintro). Brug d
 - **Koden står på rollekortet**, på forsiden i topbjælkens undertitel, fx `Fjord Outdoors bestyrelse | Leder mødet | Rådgiverkode: 2481`. Den står ikke under en overskrift eller i en ny sektion, fordi rådgiverens parser læser kortets faste overskrifter (afsnit 5).
 - **Ærlig begrænsning:** en 4-cifret kode har kun 10 000 muligheder. Hashen skjuler koden for den, der læser siden, men en målrettet elev kan afprøve dem alle. Vil man have en hård grænse, tælles forkerte forsøg på serveren (afsnit 3).
 - **Kodetjek:** koden på hvert kort, hashen i rådgiveren og koden i lærervinduet skal høre sammen. Lav et lille script, der hasher koderne fra kortene og sammenligner med hasherne i siden, hver gang kort eller rådgiver er ændret.
-- **Tekster om koden:** rådgiverens fejlbesked og rollespilssidens tekst må kun skrive "fra dit kort", hvis koden faktisk står på kortet.
+- **Tekster om koden:** rådgiverens fejlbesked og casespilssidens tekst må kun skrive "fra dit kort", hvis koden faktisk står på kortet.
 - Rollekortets indhold kan gemmes krypteret pr. rolle og dekrypteres i browseren, når koden er indtastet. Det stopper nysgerrige blikke i kildekoden og i udviklerværktøjer, men **ikke en målrettet elev**. Sig det til læreren, og lad aldrig hemmeligheder ligge her, som ikke må kendes.
 - `crypto.subtle` virker kun på sikre adresser (https og localhost), ikke når siden åbnes som lokal fil. Brug derfor en lille indbygget SHA-256 og en simpel strømkryptering (hash af nøgle plus tæller), så det virker begge steder.
 - Lærervinduet viser **kun rollekoderne**. Ingen log, ingen nøgle, ingen faseføring.
@@ -76,8 +76,8 @@ Samlet fra Fjord Outdoor (AI-rådgiver, webside, facit, show, spilintro). Brug d
 4. **Automatisk test med Playwright** (eller tilsvarende): åbn siden i 1300, 390 og 320 px, tjek konsolfejl, vandret scroll, indtast en rollekode, skift rolle og kontrollér at tælleren er uændret, tag skærmbilleder og **se dem**.
 5. **Test den nyeste fil.** Åbn med en ny fanebladsadresse eller hård genindlæsning, så en gammel version i cachen ikke narrer.
 6. **Test på en rigtig telefon, helst en iPhone.** Playwright med Chromium og en lille skærm efterligner ikke Safari. De fejl, der gjorde Fjord Outdoor frossen på mobilen (afsnit 14), blev opdaget på telefonen. Tjek: tryk på alle menulinks, åbn og luk eventuelle overlays tre gange, tryk Tilbage med et overlay åbent, og afspil introen med lyden på.
-7. **Gennemlæs som elev:** er der noget på en offentlig side (også rollespilssiden), som røber skjult information, modelsvar eller resultatet af valgene?
-8. **Efter ændringer:** tjek tal og roller på tværs (bilag, casekort, facit, show, rollespilsside) og ryd op i rester (overskrifter, debriefingsspørgsmål, død kode og styling), når en del er fjernet. Tag skærmbilleder af siden før og efter oprydning og sammenlign dem.
+7. **Gennemlæs som elev:** er der noget på en offentlig side (også casespilssiden), som røber skjult information, modelsvar eller resultatet af valgene?
+8. **Efter ændringer:** tjek tal og roller på tværs (bilag, casekort, facit, show, casespilsside) og ryd op i rester (overskrifter, debriefingsspørgsmål, død kode og styling), når en del er fjernet. Tag skærmbilleder af siden før og efter oprydning og sammenlign dem.
 
 ## 10. Sikkerhed og ansvar
 
@@ -90,7 +90,7 @@ Samlet fra Fjord Outdoor (AI-rådgiver, webside, facit, show, spilintro). Brug d
 
 Introen er en afspiller, ikke en video. Scener, undertekster og lyd styres af ét tal: tiden. Det gør den let at rette (ret en tekst, ikke en filmfil) og lader læreren hoppe rundt.
 
-**Filer:** `rollespil.html` (hubben, afsnit 15) med afspilleren indlejret, afspillerfilen `intro.html` (kan også bruges alene til storskærm og som direkte link), `voiceover.mp3` og billeder i `billeder/`. Afspilleren og underteksterne bor i den ene fil. Hubben indlejrer den, fx `<iframe src="intro.html?embed=1" title="Spilintro" allow="fullscreen" allowfullscreen>`, og `?embed=1` skjuler sidehoved og tilbagelink, så kun afspilleren vises. Så findes der ét sæt scener og undertekster, som ikke kan drive fra hinanden (afprøvet i Chromium: parameteren læses i den indlejrede side, og et klik inde i den virker).
+**Filer:** `casespil.html` (hubben, afsnit 15) med afspilleren indlejret, afspillerfilen `intro.html` (kan også bruges alene til storskærm og som direkte link), `voiceover.mp3` og billeder i `billeder/`. Afspilleren og underteksterne bor i den ene fil. Hubben indlejrer den, fx `<iframe src="intro.html?embed=1" title="Spilintro" allow="fullscreen" allowfullscreen>`, og `?embed=1` skjuler sidehoved og tilbagelink, så kun afspilleren vises. Så findes der ét sæt scener og undertekster, som ikke kan drive fra hinanden (afprøvet i Chromium: parameteren læses i den indlejrede side, og et klik inde i den virker).
 
 I Fjord Outdoor lå afspilleren to steder, i en popup på forsiden og i `intro.html`, med klasser med præfikset `m-` og id'er som `mSc1`, så de ikke stødte ind i sidens egne. Det gav en kopi, der kunne drive, og popup'en er fjernet. Skal afspilleren af en grund bygges ind i flere sider, så læg `SCENES` og `SUBTITLES` i en fælles `intro-data.js` (et almindeligt `<script src>` virker også fra en lokal mappe). Tal og tekster i introen er en del af den fælles kilde (SKILL.md, grundregel 1).
 
@@ -322,25 +322,25 @@ Afprøvet i Chromium (mobilvindue): Tilbage lukker popup'en uden at forlade side
 - **Højde på iPhone:** `max-height: 100vh` regner Safaris adresselinje med og kan skubbe afspillerens knapper ud af skærmen. Skriv `max-height: 100vh; max-height: 100dvh;` (den sidste vinder, hvor den findes).
 - **Tekststørrelse:** se afsnit 6. Minimum 12 px i scenerne og 13 px til undertekster.
 
-## 15. Rollespilssiden (hub)
+## 15. Casespilssiden (hub)
 
 Hubben er den ene side, eleverne åbner for at forstå spillet. Den er offentlig og følger derfor de samme regler som websiden (SKILL.md, grundregel 2).
 
-- **Fil:** `rollespil.html` ved siden af `index.html`. Én fil med stil og script indeni, billeder i `billeder/`.
+- **Fil:** `casespil.html` ved siden af `index.html`. Én fil med stil og script indeni, billeder i `billeder/`.
 - **Opbygning oppefra og ned:** (1) sidehoved med logo og ét link tilbage til virksomhedens forside, ingen sektionsmenu, så der heller ikke er brug for en hamburgermenu; (2) kort introtekst; (3) den indlejrede spilintro (afsnit 11); (4) knap til AI-rådgiveren; (5) spilfaserne, hvor eleverne handler; (6) roller og regler.
-- **Forsiden:** ét menupunkt, fx "Rollespillet", i menuens almindelige farve og ikke i accentfarven, og en knap i heroen til hubben. Intet link til rådgiveren og ingen popup. Fjern menupunkter og footerlinks, der peger på rådgiveren.
+- **Forsiden:** ét menupunkt, fx "Casespillet", i menuens almindelige farve og ikke i accentfarven, og en knap i heroen til hubben. Intet link til rådgiveren og ingen popup. Fjern menupunkter og footerlinks, der peger på rådgiveren.
 - **Gamle links:** kode i forsiden sender `#intro` og `?intro=1` videre til hubben. Brug `location.replace`, så Tilbage-knappen ikke havner i en løkke.
 
 ```html
 <script>
-  // øverst på forsiden, før indholdet: gamle intro-links sendes videre til rollespilssiden
+  // øverst på forsiden, før indholdet: gamle intro-links sendes videre til casespilssiden
   if (location.hash === '#intro' || new URLSearchParams(location.search).get('intro') === '1') {
-    location.replace('rollespil.html');
+    location.replace('casespil.html');
   }
 </script>
 ```
 
-  Afprøvet i Chromium: `index.html#intro` og `index.html?intro=1` ender på `rollespil.html`, forsiden uden hash vises uændret, og Tilbage efter omdirigeringen går til den side, eleven kom fra.
+  Afprøvet i Chromium: `index.html#intro` og `index.html?intro=1` ender på `casespil.html`, forsiden uden hash vises uændret, og Tilbage efter omdirigeringen går til den side, eleven kom fra.
 - **Data fra kilden:** roller (titel, stemmetal, særlig beføjelse), beløb og regler hentes fra datasættet, rollekortene og bilagene. Opfind ikke roller, titler eller tal. Sammenhold siden med rollekortene hver gang noget er ændret.
 - **Aldrig på hubben:** modelplaceringer (fx BCG-felter som "malkeko", "stjerne", "spørgsmålstegn"), strategimodel ved projekterne (fx Ansoff), beskrivelser af rollernes holdninger og alt andet, eleverne selv skal finde ud af. Roller vises kun med titel, stemmetal og særlig beføjelse.
 - **Regler, der skal med:** stemmeregel og antal stemmer der kræves, veto, standardplan hvis der ikke findes flertal, særlige beslutninger (Fjord Outdoor: fritidstøjet) og at det ubrugte er reserve. Brug bilagenes formuleringer.

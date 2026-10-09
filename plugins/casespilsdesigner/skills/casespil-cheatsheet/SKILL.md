@@ -1,6 +1,6 @@
 ---
 name: casespil-cheatsheet
-description: "Producerer lærercheatsheets med spørgsmål og modelbesvarelser som printvenligt Word-dokument. Brug ved cheatsheet, facitliste, modelsvar, lærersvar, \"facit til gruppeopgaven\", hvad skal eleverne svare, eller teacher guide med svar til gruppeaktiviteter. Fagneutral. Brug ikke til selve lærerguiden til et rollespil (casespil-laererguide) eller til eksamens- og Bloom-spørgsmål."
+description: "Producerer lærercheatsheets med spørgsmål og modelbesvarelser som printvenligt Word-dokument. Brug ved cheatsheet, facitliste, modelsvar, lærersvar, \"facit til gruppeopgaven\", hvad skal eleverne svare, eller teacher guide med svar til gruppeaktiviteter. Fagneutral og til både casespil og rollespil. Brug ikke til selve lærerguiden til et casespil eller rollespil (casespil-laererguide) eller til eksamens- og Bloom-spørgsmål."
 allowed-tools:
   - Read
   - Glob
@@ -17,7 +17,7 @@ Denne skill styrer workflow for at producere lærervejledninger med spørgsmål 
 
 ## Hvornår bruges denne skill?
 
-- Læreren har lavet gruppeaktiviteter, rollespil eller øvelser med spørgsmål
+- Læreren har lavet gruppeaktiviteter, casespil eller øvelser med spørgsmål
 - Læreren vil have et dokument med spørgsmål + forventede/modelbesvarelser
 - Læreren vil have et debriefing-cheatsheet til at facilitere opsamling
 - Læreren vil have en facitliste til en quiz eller arbejdsark
@@ -42,9 +42,9 @@ Når du skal afklare noget, brug dette mønster:
 4. **Muligheder:** A) ... B) ... C) ...
 
 **Eksempel:**
-> Jeg laver et cheatsheet til debriefingen af dit EU-rollespil.
+> Jeg laver et cheatsheet til debriefingen af dit EU-casespil.
 >
-> Rollespillet har 12 spørgsmål fordelt på RAS-faserne. Skal
+> Casespillet har 12 spørgsmål fordelt på RAS-faserne. Skal
 > cheatsheettet dække alle 12, eller kun de 5 analysespørgsmål
 > der kræver fagbegreber?
 >
@@ -66,7 +66,7 @@ Stil kun ét spørgsmål ad gangen, så læreren kan svare kort uden at miste tr
 Hvad har Fase 0 fundet? Saml overblikket:
 - Opgaveformulering / arbejdsspørgsmål (fundet i projektmappen eller givet af læreren)
 - Fagligt indhold (tekster, slides, bilag eleverne har arbejdet med)
-- Rollekort / aktivitetsbeskrivelser (hvis det er til et rollespil)
+- Rollekort / aktivitetsbeskrivelser (hvis det er til et casespil)
 - Læringsmål (identificeret i Fase 0 eller givet af læreren)
 
 ### Fase 2: Skriv modelbesvarelser
@@ -105,7 +105,7 @@ Hvert spørgsmål-svar-par er en tabel med to rækker:
 
 **Alternativt layout: Debriefing-flow**
 
-For rollespils-debriefing følger layoutet RAS-modellen:
+For casespils-debriefing følger layoutet RAS-modellen:
 - Sektion R: Reaktionsspørgsmål (ingen modelsvar — kun faciliterings-noter)
 - Sektion A: Analysespørgsmål med modelsvar og fagbegreber
 - Sektion S: Sammenfatningsspørgsmål med teori-kobling

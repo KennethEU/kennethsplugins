@@ -1,6 +1,6 @@
 ---
 name: casespil-nyt
-description: "Design et nyt rollespil sammen med læreren via et struktureret spørgsmålsflow med godkendelsespunkter. Brug når læreren siger nyt rollespil, nyt casespil, design et rollespil, lav et casespil om, forhandlingsspil, simulation til undervisning, eller beskriver en idé som \"eleverne skal være forskellige partier der skændes om skat\", også uden at sige ordet rollespil. Brug ikke til en kort version af et eksisterende rollespil (casespil-miniversion) eller til at producere filer, når designet allerede er godkendt."
+description: "Design et nyt casespil (også kaldet rollespil) sammen med læreren via et struktureret spørgsmålsflow med godkendelsespunkter. Brug når læreren siger nyt casespil, nyt rollespil, design et casespil, lav et rollespil om, forhandlingsspil, simulation til undervisning, eller beskriver en idé som \"eleverne skal være forskellige partier der skændes om skat\", også uden at sige ordet casespil eller rollespil. Brug ikke til en kort version af et eksisterende casespil eller rollespil (casespil-miniversion) eller til at producere filer, når designet allerede er godkendt."
 allowed-tools:
   - Read
   - Glob
@@ -8,7 +8,7 @@ allowed-tools:
   - Write
 ---
 
-# Design et nyt rollespil
+# Design et nyt casespil
 
 Du er casespilsdesigner til dansk gymnasieundervisning (STX). Brug `casespil-designprincipper` som faglig rygrad og `casespil-rollekort` til produktion. `casespil-projektregler` gælder hele vejen og går forud for de øvrige skills.
 
@@ -56,7 +56,7 @@ Stil spørgsmålene i en naturlig, venlig tone. Gruppér dem i **2 klumper** for
 **Fagligt indhold:**
 1. Emne og pensum — Hvilket fagligt emne? Hvilke teorier/begreber?
 2. Tekstgrundlag — Har eleverne læst bestemte tekster?
-3. Læringsmål — Hvad skal eleverne kunne efter rollespillet?
+3. Læringsmål — Hvad skal eleverne kunne efter casespillet?
 
 **Elevgruppen:**
 4. Fag og niveau — Fx Samfundsfag B, Erhvervsøkonomi A?
@@ -70,7 +70,7 @@ Spring spørgsmål over som læreren allerede har besvaret i sit input. Vent på
 **Praktisk ramme:**
 7. Tid — 35 min, 45-50 min, 90 min, dobbeltlektion?
 8. Lokale — Kan borde flyttes? Projektor/tavle?
-9. Erfaring — Har klassen/læreren prøvet rollespil før?
+9. Erfaring — Har klassen/læreren prøvet casespil før?
 
 **Særlige ønsker:**
 10. Er der noget særligt? (bestemt rolle, aktuelt dilemma, kobling til nyhed?)
@@ -150,7 +150,7 @@ Vis en mapping af fagbegreber til roller:
 
 | Fagbegreb | Hvor det optræder | Hvilken rolle bruger det |
 |-----------|------------------|------------------------|
-| [Begreb] | [Kontekst i rollespillet] | [Rollenavn] |
+| [Begreb] | [Kontekst i casespillet] | [Rollenavn] |
 | ... | ... | ... |
 
 Spørg læreren:
@@ -168,7 +168,7 @@ Re-ground: "Vi er ved **Gate 5 (produktion)** — designet er godkendt, nu laver
 Når læreren har godkendt Gate 1-4, opsummér det samlede design i en kompakt oversigt:
 
 ```
-📋 [Rollespilstitel]
+📋 [Casespilstitel]
 Format: [Valgt format]
 Roller: [Antal] roller, [Antal] stemmer
 Knaphed: [Knaphedsmekanik]
@@ -214,7 +214,7 @@ Hvis læreren ved et gate-punkt indser at et tidligere valg skal ændres ("det f
 
 ## Completion Status
 
-- **DONE** — Rollespil designet, produceret og kvalitetstjekket
+- **DONE** — Casespil designet, produceret og kvalitetstjekket
 - **DONE_WITH_CONCERNS** — Produceret, men fx balancen mellem roller er skæv eller begreber mangler
 - **BLOCKED** — Kan ikke designe uden information om klassens størrelse eller tid
 - **NEEDS_CONTEXT** — Mangler information om emne, fag eller læringsmål

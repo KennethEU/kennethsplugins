@@ -6,7 +6,7 @@
 
 - `trigger-<emne>-N`: almindelige formuleringer (14 cases).
 - `trigger-rodet-N`: rodede, korte formuleringer, som de skrives i travlhed (7 cases).
-- `trigger-nej-*` og `trigger-ingen-rollespil`: nære negativer, der deler ord med rollespil men hører til andre skills, fx dagsorden, eksamen, Bloom, videomanuskript og korrektur af elevsvar. Ingen rollespilsskill må udløses (6 cases).
+- `trigger-nej-*` og `trigger-ingen-rollespil`: nære negativer, der deler ord med casespil men hører til andre skills, fx dagsorden, eksamen, Bloom, videomanuskript og korrektur af elevsvar. Ingen casespilsskill må udløses (6 cases).
 
 Kør fra repositoryets rod:
 
@@ -22,8 +22,8 @@ Sidst kørt oktober 2026: alle 27 består. Før beskrivelserne blev gjort skarpe
 
 Brug rigtige opgaver og noter, hvad der går skævt.
 
-1. **Nyt rollespil.** `/casespil-nyt` med et emne fra din egen undervisning. Gennemfør hele flowet. Tjek: stiller den spørgsmålene i rækkefølge, stopper den ved godkendelsespunkter, ender den med konsistenstjek?
-2. **Miniversion.** `/casespilsdesigner:casespil-miniversion` på et eksisterende rollespil (fx Fjord Outdoor).
+1. **Nyt casespil.** `/casespil-nyt` med et emne fra din egen undervisning. Gennemfør hele flowet. Tjek: stiller den spørgsmålene i rækkefølge, stopper den ved godkendelsespunkter, ender den med konsistenstjek?
+2. **Miniversion.** `/casespilsdesigner:casespil-miniversion` på et eksisterende casespil (fx Fjord Outdoor).
 3. **Konsistenstjek af færdigt materiale.** Peg på en mappe med færdige filer. Tjek, at `sprogtjek.py` bliver kørt, og at rapporten har punkt 0 til 8.
 4. **Samme som test 1 på Haiku, Sonnet og Opus.** Springer en billigere model faser eller projektregler over?
 5. **Installation.** Upload pluginet som zip eller tilføj marketplace'en `KennethEU/kennethsplugins`. Alle 10 skills skal dukke op, og docx-generering og `sprogtjek.py` skal virke.

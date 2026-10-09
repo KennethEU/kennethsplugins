@@ -17,7 +17,7 @@ Det vigtigste fra MASTERGUIDE v3 der IKKE allerede dækkes af de andre skills (d
 ## Teoretisk fundament
 
 ### Kolbs erfaringslæringscyklus
-Konkret erfaring → reflekterende observation → abstrakt begrebsdannelse → aktiv eksperimentering. **Implikation:** Rollespil UDEN debriefing giver ikke dyb læring. Erfaring + refleksion = transfer.
+Konkret erfaring → reflekterende observation → abstrakt begrebsdannelse → aktiv eksperimentering. **Implikation:** Casespil UDEN debriefing giver ikke dyb læring. Erfaring + refleksion = transfer.
 
 ### Deliberativ demokrati-pædagogik (Englund/Habermas)
 Tre kriterier: (1) forskellige synspunkter konfronteres, (2) tolerance for den konkrete anden, (3) kollektiv viljedannelse. **Implikation:** Design modsatte interesser, kræv konsensussøgen, ikke bare "vinder".
@@ -26,7 +26,7 @@ Tre kriterier: (1) forskellige synspunkter konfronteres, (2) tolerance for den k
 Effektiv når: struktureret scaffolding, progressiv kompleksitet, løbende feedback, struktureret debriefing. **Fidelity-paradoks:** Høj realisme ≠ bedre læring. Prioritér pædagogisk realisme over faktisk realisme.
 
 ### Perspektivtagning (Tien et al., 2025)
-Immersivt rollespil øger kognitiv empati, affektiv empati og perspektiv-fleksibilitet. **Implikation:** Elever skal AGERE rollen, ikke bare diskutere den. Brug empati-mapping FØR rollespil.
+Immersivt casespil øger kognitiv empati, affektiv empati og perspektiv-fleksibilitet. **Implikation:** Elever skal AGERE rollen, ikke bare diskutere den. Brug empati-mapping FØR casespil.
 
 ### Sociale dilemmaer
 Ikke-kooperation er fristende individuelt men skadelig kollektivt. Kooperation fremmes af: kommunikation, gensidig observation, gentagne interaktioner, synlige konsekvenser. **Implikation:** Byg disse faktorer ind i designet.
@@ -51,7 +51,7 @@ Navngiv fagbegreber direkte i materialer. I stærk-version: [NEO], [REAL], [LIB]
 Forbered 2-3 indgreb: nye data (energi daler), budgetpres (konsensus for hurtigt), eksternt deadline (manglende urgency). Brug HØJST ét. Kobl til specifik rolles skjult info.
 
 ### Empati-mapping
-Før rollespil — tegn figur på tavlen: Hvad SER/HØRER/TÆNKER/FØLER/SIGER/GØR rollen? Bygger identifikation og reducerer "det er bare et spil"-distance.
+Før casespil — tegn figur på tavlen: Hvad SER/HØRER/TÆNKER/FØLER/SIGER/GØR rollen? Bygger identifikation og reducerer "det er bare et spil"-distance.
 
 ---
 
@@ -106,7 +106,7 @@ Design stemmetallene så:
 ### Quiz (1 uge efter)
 Test: husker de strukturen? forstår de magt? kan de definere begreber? kan de overføre til virkelighed?
 
-### Observation (under rollespil)
+### Observation (under casespil)
 Noter: hvem dominerede, hvem var stille, hvilke argumenter vandt, hvad skabte deadlock, hvad overraskede.
 
 ### Iterativ forbedring
@@ -128,4 +128,4 @@ Læreren italesætter selv rammen. Materialerne indeholder ingen indramningssæt
 
 ---
 
-*Fuld masterguide (MASTERGUIDE_Rollespil_Samfundsfag_Erhvervsoekonomi_v3.md) kan lægges i arbejdsmappen for dybere reference, men er ikke påkrævet — dette plugin er selvstændigt.*
+*Fuld masterguide (MASTERGUIDE_Casespil_Samfundsfag_Erhvervsoekonomi_v3.md) kan lægges i arbejdsmappen for dybere reference, men er ikke påkrævet — dette plugin er selvstændigt.*

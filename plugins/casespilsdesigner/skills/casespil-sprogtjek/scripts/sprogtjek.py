@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Deterministisk sprogtjek af rollespilsmaterialer (kun standardbiblioteket).
+"""Deterministisk sprogtjek af casespilsmaterialer (kun standardbiblioteket).
 
 Brug:
     python3 sprogtjek.py <fil-eller-mappe> [<fil-eller-mappe> ...]

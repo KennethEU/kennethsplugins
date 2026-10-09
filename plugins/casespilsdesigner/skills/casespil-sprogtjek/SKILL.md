@@ -1,6 +1,6 @@
 ---
 name: casespil-sprogtjek
-description: "Dansk sproglig kvalitetssikring af rollespilsmaterialer: rollekort, lærerguider, elevintroduktioner, cheatsheets og tekster i digitale værktøjer. Brug som sidste trin før levering af rollespilsmaterialer, og når læreren beder om sprogcheck, retskrivning eller korrektur af sådanne tekster. Fanger sammensatte ord, person-perspektiv, æøå, genus og fagterm-inkonsistens. Brug ikke til elevopgaver, quizzer, eksamensmateriale eller andre tekster uden for rollespil."
+description: "Dansk sproglig kvalitetssikring af casespilsmaterialer (også rollespilsmaterialer): rollekort, lærerguider, elevintroduktioner, cheatsheets og tekster i digitale værktøjer. Brug som sidste trin før levering af casespilsmaterialer, og når læreren beder om sprogcheck, retskrivning eller korrektur af sådanne tekster. Fanger sammensatte ord, person-perspektiv, æøå, genus og fagterm-inkonsistens. Brug ikke til elevopgaver, quizzer, eksamensmateriale eller andre tekster uden for casespil og rollespil."
 allowed-tools:
   - Read
   - Glob

@@ -1,6 +1,6 @@
 ---
 name: bloom-planlaeg-time
-description: "Planlægger en tre-faset time med lektietjek, arbejdsspørgsmål i par eller grupper og afsluttende diskussion, med Bloom-progression og arbejdsformer. Brug når læreren siger \"planlæg en time\", \"klasseflow\", \"lektionsstruktur\", \"tre faser\", \"hvad skal vi lave i timen\" ud fra en fagtekst. Brug ikke til rollespil, gruppearbejdsdagsordener eller et sæt spørgsmål uden timeplan (bloom-spoergsmaal-til-tekst)."
+description: "Planlægger en tre-faset time med lektietjek, arbejdsspørgsmål i par eller grupper og afsluttende diskussion, med Bloom-progression og arbejdsformer. Brug når læreren siger \"planlæg en time\", \"klasseflow\", \"lektionsstruktur\", \"tre faser\", \"hvad skal vi lave i timen\" ud fra en fagtekst. Brug ikke til casespil eller rollespil, gruppearbejdsdagsordener eller et sæt spørgsmål uden timeplan (bloom-spoergsmaal-til-tekst)."
 argument-hint: "[fagtekst, emne eller tidsramme]"
 allowed-tools:
   - Read

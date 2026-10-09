@@ -1,6 +1,6 @@
 ---
 name: casespil-miniversion
-description: "Laver en miniversion på 10 til 20 minutter af et rollespil, enten ved at forenkle et eksisterende eller ved at designe en kort version fra bunden. Brug når læreren siger miniversion, kort version, kan det laves kortere, simplificér, forenklet, hurtig øvelse, smagsprøve, \"max 20 min\" eller nævner en bestemt kort tid til noget rollespilsagtigt. Brug ikke til nye fulde rollespil (casespil-nyt) eller til almindelige gruppearbejdsdagsordener."
+description: "Laver en miniversion på 10 til 20 minutter af et casespil eller rollespil, enten ved at forenkle et eksisterende eller ved at designe en kort version fra bunden. Brug når læreren siger miniversion, kort version, kan det laves kortere, simplificér, forenklet, hurtig øvelse, smagsprøve, \"max 20 min\" eller nævner en bestemt kort tid til noget casespilsagtigt. Brug ikke til nye fulde casespil eller rollespil (casespil-nyt) eller til almindelige gruppearbejdsdagsordener."
 allowed-tools:
   - Read
   - Glob
@@ -8,9 +8,9 @@ allowed-tools:
   - Write
 ---
 
-# Miniversion af et rollespil
+# Miniversion af et casespil
 
-Komprimér et rollespil til en selvkørende øvelse på 10 til 20 minutter. Skillen indeholder både forløbet med godkendelsespunkter (gates) og metoden til at forenkle.
+Komprimér et casespil til en selvkørende øvelse på 10 til 20 minutter. Skillen indeholder både forløbet med godkendelsespunkter (gates) og metoden til at forenkle.
 
 **Fælles regler:** `casespil-projektregler` gælder og går forud (ingen ritualer, normalversion nok, ingen faste minuttal i elevmaterialer, dansk uden lange tankestreger). Faglig rygrad: `casespil-designprincipper`. Produktion: `casespil-rollekort`.
 
@@ -21,21 +21,21 @@ Producér ikke Word-dokumenter før Gate 3. Når læreren har godkendt designet 
 ## Fase 0: Saml kontekst (automatisk, før alt andet)
 
 1. Læs CLAUDE.md for lærerens fag og hold, hvis den findes.
-2. Scan projektmappen for eksisterende rollespilsmaterialer (rollekort, lærerguider).
+2. Scan projektmappen for eksisterende casespilsmaterialer (rollekort, lærerguider).
 3. Læs `casespil-designprincipper`, så de 10 principper overholdes i miniversionen.
 
-Spørg IKKE om det originale rollespil, hvis materialet allerede findes i mappen.
+Spørg IKKE om det originale casespil, hvis materialet allerede findes i mappen.
 
 ## Trin 1: Hvad er udgangspunktet?
 
-- Findes der et rollespil i samtalen eller mappen, eller har brugeren uploadet materiale?
+- Findes der et casespil i samtalen eller mappen, eller har brugeren uploadet materiale?
 - Eller skal en miniversion designes fra bunden?
 
-Hvis der ikke er noget udgangspunkt, spørg: "Vil du forenkle et eksisterende rollespil, eller skal vi designe en miniversion fra bunden?"
+Hvis der ikke er noget udgangspunkt, spørg: "Vil du forenkle et eksisterende casespil, eller skal vi designe en miniversion fra bunden?"
 
 ## Gate 1: Afklaring, VENT på svar
 
-Re-ground: "Vi laver en miniversion af [rollespillet/emnet]. Jeg har et par spørgsmål."
+Re-ground: "Vi laver en miniversion af [casespillet/emnet]. Jeg har et par spørgsmål."
 
 Stil højst 3 til 4 spørgsmål (spring over det besvarede):
 1. Hvor mange elever?
@@ -62,7 +62,7 @@ Giv en anbefaling (triangel eller pentagon) med begrundelse. Spørg: "Passer des
 ## Metode til at forenkle
 
 ### Kernekonflikt
-Ethvert rollespil har ÉN central spænding. Eksempler: Fattigdomskommission: "Er Lone fattig?" (målemetoder giver modsatrettede svar). EU-reformkonference: "Mere integration eller mere suverænitet?" Budgetforhandling: "Hvem får mest af de knappe ressourcer?" Makrokrise: "Ekspansiv eller kontraktiv politik, og hvem betaler?" Kan du ikke formulere den i ét spørgsmål, er rollespillet ikke klar til at blive forenklet.
+Ethvert casespil har ÉN central spænding. Eksempler: Fattigdomskommission: "Er Lone fattig?" (målemetoder giver modsatrettede svar). EU-reformkonference: "Mere integration eller mere suverænitet?" Budgetforhandling: "Hvem får mest af de knappe ressourcer?" Makrokrise: "Ekspansiv eller kontraktiv politik, og hvem betaler?" Kan du ikke formulere den i ét spørgsmål, er casespillet ikke klar til at blive forenklet.
 
 ### Roller
 - **Triangel (3 roller), 10 til 15 min.:** A stærk for, B stærk imod, C kompromis eller wildcard.
@@ -88,7 +88,7 @@ Navn og titel, stemmer, MÅL (1 sætning), 2 argumenter, 1 dilemma. Ingen fasegu
 - [ ] Kan det køres uden 5 minutters forklaring fra læreren?
 - [ ] Er der mindst ét overraskende element (skjult information, moralsk dilemma)?
 
-Miniversionen er ikke bare "færre roller", men en skarpere struktur. Den bør kunne fungere som appetitvækker til det fulde rollespil.
+Miniversionen er ikke bare "færre roller", men en skarpere struktur. Den bør kunne fungere som appetitvækker til det fulde casespil.
 
 ## Gate 3: Produktion, først NU laves dokumenter
 
@@ -113,7 +113,7 @@ Indser læreren ved Gate 2, at udgangspunktet eller afklaringen skal ændres, s�
 
 - **DONE:** Miniversion produceret, kvalitetstjekket og leveret
 - **DONE_WITH_CONCERNS:** Leveret, men fx kernekonflikten er forsimplet eller en vigtig rolle er droppet
-- **BLOCKED:** Kan ikke finde det originale rollespil eller har ingen klar kernekonflikt
+- **BLOCKED:** Kan ikke finde det originale casespil eller har ingen klar kernekonflikt
 - **NEEDS_CONTEXT:** Mangler klassestørrelse eller tidsramme
 
 $ARGUMENTS

@@ -1,6 +1,6 @@
-# Case-katalog: 14 afprøvede rollespilscases
+# Case-katalog: 14 afprøvede casespilscases
 
-Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert case. Brug som udgangspunkt når du designer nye rollespil — tilpas roller og ressourcer til den konkrete klasse.
+Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert case. Brug som udgangspunkt når du designer nye casespil — tilpas roller og ressourcer til den konkrete klasse.
 
 ---
 

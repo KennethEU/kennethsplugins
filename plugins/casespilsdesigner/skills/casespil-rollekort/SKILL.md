@@ -1,6 +1,6 @@
 ---
 name: casespil-rollekort
-description: "Producerer rollekort, livskort, beslutningskort og elevintroduktioner til rollespil som printklare Word-dokumenter (.docx) med Node.js. Brug når læreren siger rollekort, elevintroduktion, \"til printeren\", print, word eller docx i forbindelse med rollespil eller simulation. Normalversionen er standard; støtte og stærk laves kun efter ønske. Brug ikke til lærerguider (casespil-laererguide), cheatsheets (casespil-cheatsheet) eller dokumenter uden for rollespil."
+description: "Producerer rollekort, livskort, beslutningskort og elevintroduktioner til casespil (også kaldet rollespil) som printklare Word-dokumenter (.docx) med Node.js. Brug når læreren siger rollekort, elevintroduktion, \"til printeren\", print, word eller docx i forbindelse med casespil, rollespil eller simulation. Normalversionen er standard; støtte og stærk laves kun efter ønske. Brug ikke til lærerguider (casespil-laererguide), cheatsheets (casespil-cheatsheet) eller dokumenter uden for casespil og rollespil."
 allowed-tools:
   - Read
   - Glob
@@ -12,12 +12,12 @@ allowed-tools:
 
 **Projektregler:** `casespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
-Denne skill styrer *hvordan* du genererer Word-dokumenter til rollespil. Den faglige designviden (hvilke roller, dilemmaer, formater) styres af `casespil-designprincipper`-skillen med dens reference-filer.
+Denne skill styrer *hvordan* du genererer Word-dokumenter til casespil. Den faglige designviden (hvilke roller, dilemmaer, formater) styres af `casespil-designprincipper`-skillen med dens reference-filer.
 
 ## Fase 0: Saml kontekst (automatisk — FØR alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
-2. Scan projektmappen for eksisterende rollespilsmaterialer (indhold, roller, dilemmaer)
+2. Scan projektmappen for eksisterende casespilsmaterialer (indhold, roller, dilemmaer)
 3. Læs `casespil-designprincipper`-skillen — rollekortene SKAL overholde de 10 principper
 4. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning
 
@@ -170,7 +170,7 @@ Se `references/template-kode.md` for komplet genbrugelig kodebase med:
 - Støtteversion-specifikke funktioner (alliancetabel, nødhjælpsboks, forhandlingsboks, ordliste)
 - Lærerguide-specifikke funktioner
 
-Kopiér aldrig hele template-koden blindt — tilpas altid til det specifikke rollespils behov.
+Kopiér aldrig hele template-koden blindt — tilpas altid til det specifikke casespils behov.
 
 ---
 

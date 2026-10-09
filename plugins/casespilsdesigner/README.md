@@ -1,12 +1,12 @@
 # Casespilsdesigner
 
-Et Cowork-plugin til design af rollespil og simuleringer i dansk gymnasieundervisning (STX). Bygger på evidensbaseret pædagogik med 10 designprincipper, 8 rollespilsformater og struktureret debriefing.
+Et Cowork-plugin til design af casespil (også kaldet rollespil) og simuleringer i dansk gymnasieundervisning (STX). Bygger på evidensbaseret pædagogik med 10 designprincipper, 8 casespilsformater og struktureret debriefing.
 
 ## Hvad pluginet gør
 
-- **Designer rollespil** baseret på fagligt emne, elevgruppe og praktisk ramme
+- **Designer casespil** baseret på fagligt emne, elevgruppe og praktisk ramme
 - **Genererer Word-dokumenter** med rollekort (normalversion som standard, støtte/stærk efter ønske), lærerguider, elevintroduktioner og cheatsheats
-- **Laver miniversioner** (10-20 min) af eksisterende rollespil eller fra bunden
+- **Laver miniversioner** (10-20 min) af eksisterende casespil eller fra bunden
 - **Bygger digitale værktøjer** (AI-rådgiver, facit-beregner, lærershow, webside, spilintro med voiceover, video) ud fra en teknisk reference med afprøvede mønstre
 - **Kører kvalitetssikring** — konsistenstjek + dansk sprogcheck — før levering
 - **Understøtter 8 formater:** Forhandling, krisehåndtering, lev-et-liv, konsekvens-kredsløb, retssag, bestyrelse, parlamentarisk lovproces, interaktiv virksomhedssimulation
@@ -18,7 +18,7 @@ casespilsdesigner/
 ├── .claude-plugin/plugin.json
 ├── README.md
 └── skills/
-    ├── casespil-nyt/              ← Start nyt rollespilsdesign
+    ├── casespil-nyt/              ← Start nyt casespilsdesign
     ├── casespil-miniversion/      ← Miniversion (forløb og metode samlet)
     ├── casespil-designprincipper/ ← Faglig rygrad: 10 principper + 8 formater
     ├── casespil-rollekort/        ← Docx-produktion: farver, margener, layout
@@ -39,7 +39,7 @@ I `evals/` ligger automatiske triggertests (`claude plugin eval plugins/casespil
 
 Skillsene kører i en fast rækkefølge — du behøver kun starte med en command, resten sker automatisk.
 
-**Fuldt rollespil** (`/casespilsdesigner:casespil-nyt`):
+**Fuldt casespil** (`/casespilsdesigner:casespil-nyt`):
 ```
 casespil-nyt → design → rollekort → lærerguide → materiale → (digitale tillæg) → sprogtjek → konsistenstjek → levér
 ```
@@ -59,7 +59,7 @@ Kommandoerne skrives med plugin-navnet foran, fx `/casespilsdesigner:casespil-ro
 
 | Skill | Type | Trigger |
 |-------|------|---------|
-| `casespil-nyt` | Indgang | "nyt rollespil", "design et rollespil" |
+| `casespil-nyt` | Indgang | "nyt casespil", "design et casespil" |
 | `casespil-miniversion` | Indgang | "miniversion", "kort version", "simplificér", "kan vi lave det kortere" |
 | `casespil-designprincipper` | Auto | Design-beslutninger, format-valg, brainstorming |
 | `casespil-rollekort` | Auto | Docx-generering af rollekort og materialer |
@@ -73,7 +73,7 @@ Kommandoerne skrives med plugin-navnet foran, fx `/casespilsdesigner:casespil-ro
 ## Anbefalet mappestruktur (Cowork)
 
 ```
-min-rollespilsmappe/
+min-casespilsmappe/
 ├── materialer/
 │   ├── eu-reformkonference/
 │   ├── fattigdomskommission/
@@ -107,7 +107,7 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ### v2.0.0 (oktober 2026)
 - Pluginet og alle skills hedder nu `casespil` i stedet for `rollespil`. Pluginet `rollespilsdesigner` er blevet til `casespilsdesigner` (installationsnavn `casespilsdesigner@kennethsplugins`), og skillene har skiftet gruppenavn fra `rollespil-` til `casespil-`: `casespil-nyt`, `casespil-miniversion`, `casespil-rollekort`, `casespil-laererguide`, `casespil-cheatsheet`, `casespil-sprogtjek`, `casespil-konsistenstjek`, `casespil-digitale-tillaeg`, `casespil-designprincipper` og `casespil-projektregler`. Skriv `/casespil` i Cowork for at se hele gruppen
-- Indholdet er uændret. Ordet rollespil står stadig i den løbende tekst og i beskrivelserne, så det virker som søgeord, og `casespil` er tilføjet som søgeord i `casespil-nyt`
+- Sproget i alle skills, README og materialer er nu casespil (fx casespilsside, `casespil.html` og menupunktet "Casespillet"). Ordet rollespil står kun som accepteret synonym i skillenes beskrivelser, så det stadig udløser dem, og i en ny ordvalgsregel i `casespil-projektregler`. Indholdet er ellers uændret
 - Gamle navne står uændret i de ældre changelog-poster nedenfor
 - Installationen skal gøres om: fjern `rollespilsdesigner` og tilføj `casespilsdesigner`
 

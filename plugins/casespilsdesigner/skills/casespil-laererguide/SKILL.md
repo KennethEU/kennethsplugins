@@ -1,6 +1,6 @@
 ---
 name: casespil-laererguide
-description: "Producerer lærerguiden til et rollespil som Word-dokument med alle obligatoriske sektioner (ramme, faseovergange, injects, RAS-debriefing, forberedelsestjekliste). Brug ved lærerguide, facilitatorguide, lærervejledning, facilitering, debriefing-spørgsmål og når læreren spørger hvad vedkommende skal sige eller gøre undervejs, fx \"hvad siger jeg når vi skifter fase\" eller \"hvordan faciliterer jeg forhandlingen\". Brug ikke til cheatsheets med modelsvar (casespil-cheatsheet) eller til rollekort."
+description: "Producerer lærerguiden til et casespil (også kaldet rollespil) som Word-dokument med alle obligatoriske sektioner (ramme, faseovergange, injects, RAS-debriefing, forberedelsestjekliste). Brug ved lærerguide, facilitatorguide, lærervejledning, facilitering, debriefing-spørgsmål og når læreren spørger hvad vedkommende skal sige eller gøre undervejs, fx \"hvad siger jeg når vi skifter fase\" eller \"hvordan faciliterer jeg forhandlingen\". Brug ikke til cheatsheets med modelsvar (casespil-cheatsheet) eller til rollekort."
 allowed-tools:
   - Read
   - Glob
@@ -17,7 +17,7 @@ Denne skill sikrer at alle obligatoriske sektioner kommer med i lærerguiden. Br
 ## Fase 0: Saml kontekst (automatisk — FØR alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
-2. Scan projektmappen for eksisterende rollekort og rollespilsdesign — lærerguiden SKAL matche rollekortene
+2. Scan projektmappen for eksisterende rollekort og casespilsdesign — lærerguiden SKAL matche rollekortene
 3. Læs `casespil-designprincipper`-skillen for at sikre debriefing og facilitering følger de 10 principper
 4. Identificér faget og fagets fagbegreber — de skal bruges i debriefing-sektionen
 
@@ -124,12 +124,12 @@ Konkrete sætninger med **fed** og *kursiv* til HVER overgang:
 | For personligt | Elev virker ked | Stop, adressér, genopbyg |
 
 ### 12. Variationer
-Beskriv mindst 2 variationer af rollespillet:
+Beskriv mindst 2 variationer af casespillet:
 - **Kort version:** Hvilke faser/roller kan skæres væk og stadig bevare kernekonflikt?
 - **Lang version:** Hvad kan tilføjes for at uddybe (ekstra runder, flere roller, bilag)?
-- **Alternativt scenarie:** Kan samme rollespilsstruktur bruges med et andet emne i faget?
+- **Alternativt scenarie:** Kan samme casespilsstruktur bruges med et andet emne i faget?
 
-Variationerne hjælper læreren med at tilpasse rollespillet til forskellige holdstørrelser og tidsrammer.
+Variationerne hjælper læreren med at tilpasse casespillet til forskellige holdstørrelser og tidsrammer.
 
 ---
 
@@ -140,4 +140,4 @@ Afslut ALTID med én af:
 - **DONE** — Lærerguide genereret med alle 12 obligatoriske sektioner
 - **DONE_WITH_CONCERNS** — Guide leveret, men med mangler (fx: inject drama-kort mangler fordi scenariet er for kort, eller debriefing er generisk)
 - **BLOCKED** — Kan ikke generere guide (fx: rollekort er ikke færdige endnu, designprincipper-skill ikke tilgængelig)
-- **NEEDS_CONTEXT** — Mangler information (fx: "Hvor lang tid har du til rollespillet?")
+- **NEEDS_CONTEXT** — Mangler information (fx: "Hvor lang tid har du til casespillet?")

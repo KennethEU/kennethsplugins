@@ -1,13 +1,13 @@
 ---
 name: casespil-designprincipper
-description: "De 10 designprincipper og 8 formater til rollespil i dansk gymnasieundervisning. Brug når læreren designer eller brainstormer rollespil og simulationer, vælger format (forhandling, krisehåndtering, lev-et-liv, retssag, bestyrelse osv.), eller spørger \"hvad er et godt format hvis eleverne skal ...\". Den styrer HVAD der designes; produktion af filer hører under rollekort. Brug ikke til almindeligt gruppearbejde, eksamensopgaver eller quizzer."
+description: "De 10 designprincipper og 8 formater til casespil (også kaldet rollespil) i dansk gymnasieundervisning. Brug når læreren designer eller brainstormer casespil, rollespil og simulationer, vælger format (forhandling, krisehåndtering, lev-et-liv, retssag, bestyrelse osv.), eller spørger \"hvad er et godt format hvis eleverne skal ...\". Den styrer HVAD der designes; produktion af filer hører under rollekort. Brug ikke til almindeligt gruppearbejde, eksamensopgaver eller quizzer."
 allowed-tools:
   - Read
   - Glob
   - Grep
 ---
 
-# Designprincipper for Rollespil i Gymnasieundervisning
+# Designprincipper for Casespil i Gymnasieundervisning
 
 **Næste skills:** produktion i `casespil-rollekort`, `casespil-laererguide` og `casespil-cheatsheet`; digitale værktøjer i `casespil-digitale-tillaeg`; kort version i `casespil-miniversion`; kvalitetssikring i `casespil-konsistenstjek`.
 
@@ -20,7 +20,7 @@ Denne skill er den faglige rygrad i pluginet. Den indeholder principper, formate
 
 ## De 10 universelle designprincipper
 
-Disse gælder for ALLE rollespil uanset emne eller format:
+Disse gælder for ALLE casespil uanset emne eller format:
 
 | # | Princip | Kerneregel | Tjek-spørgsmål |
 |---|---------|-----------|----------------|
@@ -35,7 +35,7 @@ Disse gælder for ALLE rollespil uanset emne eller format:
 | 9 | **Krydsreferencer** | Dilemmaer nævner andre roller eksplicit | Refererer hvert rollekort til mindst 2-3 andre? |
 | 10 | **Differentieret materiale** | Normalversionen er standard. Støtte- og stærkversion laves kun, hvis læreren ønsker det. Støtte kan også være en AI-rådgiver, som de svage elever kan spørge | Er der støtte til de elever, der har brug for det, uanset om det er en støttekort-version eller en rådgiver? |
 
-## Rollespilsformater
+## Casespilsformater
 
 ### A: Forhandling & Afstemning
 Interessegrupper forhandler om fælles beslutning → formel afstemning.
@@ -108,7 +108,7 @@ Navngiv fagbegreber direkte i materialer (stærk-version): [NEO], [REAL], [LIB] 
 
 ## Pointsystemer
 
-ALDRIG i deliberative rollespil (Format A, E, G). Fjerner fokus fra argumentation. Talbaserede konsekvenser (budget, likviditet) er OK i Format C, D, H — men aldrig som leaderboard.
+ALDRIG i deliberative casespil (Format A, E, G). Fjerner fokus fra argumentation. Talbaserede konsekvenser (budget, likviditet) er OK i Format C, D, H — men aldrig som leaderboard.
 
 ## Debriefing: RAS-modellen
 
@@ -122,12 +122,12 @@ Eksplicit overgangssætning mellem A og S: "OK — nu har vi analyseret hvad der
 
 ## Reference-filer
 
-Når du designer et nyt rollespil:
+Når du designer et nyt casespil:
 
 1. **Læs `references/cases.md`** — find et lignende case og brug det som udgangspunkt for roller, stemmematematik og fagbegreber
 2. **Læs `references/masterguide-kompakt.md`** — for teori-begrundelser (Kolb, Englund), avancerede designmønstre (modulært scenarie-design, bilag-system), koalitionsmatematik, evaluering og rollekort-skabelon
 
-Pluginet er selvstændigt. Den fulde masterguide (MASTERGUIDE_Rollespil_Samfundsfag_Erhvervsoekonomi_v3.md) kan lægges i arbejdsmappen som ekstra reference, men er ikke påkrævet.
+Pluginet er selvstændigt. Den fulde masterguide (MASTERGUIDE_Casespil_Samfundsfag_Erhvervsoekonomi_v3.md) kan lægges i arbejdsmappen som ekstra reference, men er ikke påkrævet.
 
 ---
 
@@ -135,7 +135,7 @@ Pluginet er selvstændigt. Den fulde masterguide (MASTERGUIDE_Rollespil_Samfunds
 
 Afslut ALTID med én af:
 
-- **DONE** — Rollespil designet med roller, konflikt, stemmematematik og format valgt
+- **DONE** — Casespil designet med roller, konflikt, stemmematematik og format valgt
 - **DONE_WITH_CONCERNS** — Design leveret, men med forbehold (fx: kun ét dilemma pr. rolle, eller balancen er skæv)
-- **BLOCKED** — Kan ikke designe rollespil (fx: emnet har ingen naturlig konflikt, eller faget egner sig ikke til formatet)
+- **BLOCKED** — Kan ikke designe casespil (fx: emnet har ingen naturlig konflikt, eller faget egner sig ikke til formatet)
 - **NEEDS_CONTEXT** — Mangler information (fx: "Hvor mange elever er der?" eller "Hvilket fagligt emne?")
