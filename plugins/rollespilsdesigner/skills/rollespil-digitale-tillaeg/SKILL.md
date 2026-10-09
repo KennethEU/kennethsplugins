@@ -1,6 +1,6 @@
 ---
 name: rollespil-digitale-tillaeg
-description: "Designregler og teknisk reference til digitale tilføjelser til et rollespil: AI-rådgiver pr. rolle, facit-beregner, lærershow, virksomhedswebside, video og billedprompter. Brug når et rollespil skal have digitale værktøjer, efter at papirmaterialerne er godkendt. Bygger på erfaringerne fra Fjord Outdoor. Brug ikke til rollespil uden digitale dele eller til almindelige websider og apps."
+description: "Designregler og teknisk reference til digitale tilføjelser til et rollespil: AI-rådgiver pr. rolle, facit-beregner, lærershow, virksomhedswebside, spilintro (animation med voiceover og undertekster), video og billedprompter. Brug når et rollespil skal have digitale værktøjer, efter at papirmaterialerne er godkendt. Bygger på erfaringerne fra Fjord Outdoor. Brug ikke til rollespil uden digitale dele eller til almindelige websider og apps."
 ---
 
 # Digitale tilføjelser til rollespil
@@ -9,18 +9,18 @@ description: "Designregler og teknisk reference til digitale tilføjelser til et
 
 Denne skill kommer EFTER rollespillets design og papirmaterialer er færdige (rollekort, elevintroduktion, bilag). Den styrer, hvordan de digitale dele bygges, så de passer sammen og ikke afslører noget, eleverne ikke må se.
 
-**Teknisk reference:** Før du bygger noget, læs `references/teknik.md`. Den indeholder det tekniske mønster, som er afprøvet i Fjord Outdoor: filstruktur og fælles datasæt, kryptering og koder, proxy til modelkald, prompt-opbygning, session og spørgsmålstæller, rollekortparser, responsivt design, billeder og video, test med Playwright og sikkerhed. Spar tid ved at genbruge mønstrene i stedet for at opfinde dem igen.
+**Teknisk reference:** Før du bygger noget, læs `references/teknik.md`. Den indeholder det tekniske mønster, som er afprøvet i Fjord Outdoor: filstruktur og fælles datasæt, kryptering og koder, proxy til modelkald, prompt-opbygning, session og spørgsmålstæller, rollekortparser, responsivt design, billeder og video, spilintroens opbygning og synkronisering, voiceover, grafisk stil og kontrast, mobil og Safari, test med Playwright og sikkerhed. Spar tid ved at genbruge mønstrene i stedet for at opfinde dem igen.
 
-**Rækkefølge:** (1) Fælles datasæt og skjult-information-liste. (2) Webside og medier. (3) AI-rådgiver. (4) Facit-beregner. (5) Lærershow. (6) Test. (7) Kør `rollespil-konsistenstjek`, som også dækker digitale dele og beregner-tjek.
+**Rækkefølge:** (1) Fælles datasæt og skjult-information-liste. (2) Webside og medier. (3) Spilintro (efter websiden, fordi den bruger websidens billeder og stil). (4) AI-rådgiver. (5) Facit-beregner. (6) Lærershow. (7) Test, også på en rigtig telefon. (8) Kør `rollespil-konsistenstjek`, som også dækker digitale dele og beregner-tjek.
 
 **Relaterede skills:** `rollespil-designprincipper` (hvad må eleverne vide, hvornår), `rollespil-projektregler` (beregner-tjek, begrænsningsregel, fælles kilde), `rollespil-konsistenstjek` (kvalitetssikring), `rollespil-sprogtjek` (alle tekster i værktøjerne).
 
 ## Grundregler
 
-1. **Én kilde til tallene.** Alle tal (markedsdata, grænser, sandsynligheder, straf, budget) står i ét sæt og kopieres derfra til: bilag, casekort i rådgiveren, facit-beregneren og showet. Efter hver ændring tjekkes alle fire steder.
-2. **Skjult information bliver skjult.** Det, der kun står på ét rollekort, og resultatet af valgene (hvad pengene gav) må ikke stå i noget, der er offentligt eller fælles: websiden, casekortet, showets scener før afsløringen, billedtekster.
+1. **Én kilde til tallene.** Alle tal (markedsdata, grænser, sandsynligheder, straf, budget, antal stemmer og flertalskrav) står i ét sæt og kopieres derfra til: bilag, casekort i rådgiveren, facit-beregneren, showet og spilintroen. Efter hver ændring tjekkes alle fem steder.
+2. **Skjult information bliver skjult.** Det, der kun står på ét rollekort, og resultatet af valgene (hvad pengene gav) må ikke stå i noget, der er offentligt eller fælles: websiden, casekortet, spilintroen, showets scener før afsløringen, billedtekster.
 3. **Backup før hver ændring.** Gem den gamle fil i en arkivmappe med et sigende navn (fx `_arkiv/..._foer_<ændring>.html`). Slet aldrig.
-4. **Test før du siger det er færdigt.** Åbn siden i en browser, tjek computer (ca. 1300 px) og mobil (ca. 390 px og 320 px), ingen vandret scroll, ingen JavaScript-fejl. Se billedet, ikke kun koden.
+4. **Test før du siger det er færdigt.** Åbn siden i en browser, tjek computer (ca. 1300 px) og mobil (ca. 390 px og 320 px), ingen vandret scroll, ingen JavaScript-fejl. Se billedet, ikke kun koden. Safari på iPhone opfører sig anderledes end Chrome: bed læreren åbne siden på en rigtig telefon, før den kaldes færdig (se afsnit 14 i `references/teknik.md`).
 5. **Sproget følger materialerne.** Dansk, ingen tankestreger, ingen faste minuttal, ingen ritualer som "I spiller en rolle".
 
 ## AI-rådgiver pr. rolle
@@ -58,11 +58,36 @@ Formål: eleven kan stille op til 10 spørgsmål om sin egen rolle, sit kort og 
 - Video: hold den kort (ca. 10 sek.), lad tekst på siden fade ud, når videoens slutlogo kommer, så de ikke ligger oven på hinanden.
 - Prompter til videomodeller: skriv dem på engelsk, med dansk lokalitet og dansk udtale af replikker, én person der går igen (billede vedhæftes), logo placeret som ønsket.
 
+## Spilintro og animation (multimedie)
+
+Formål: sætte eleverne i stemning på 60 til 90 sekunder (Fjord Outdoor: 84). Introen etablerer den brændende platform (fx 10 mio. kr. på spil), de to lejre (fx bestyrelse mod projektteams), spillets faser og afgørelsens time. Længere introer mister opmærksomheden. Teknik, kode og voiceover står i `references/teknik.md` (afsnit 11 og 12).
+
+- **Dramaturgi i 4 til 5 scener:** situationen, magtkampen, dilemmaet, faserne, finalen. Én idé pr. scene, så tekst, billede og stemme følges ad.
+- **To formater leveres altid sammen:**
+  1. **Popup på virksomhedens forside** (`index.html`). Åbnes fra en knap i heroen ("Se intro til spillet"), et link i topmenuen lige efter "Spørg din rådgiver" og et link i footeren. Adressen `index.html#intro` åbner popup'en direkte.
+  2. **Selvstændig side** (`intro.html`): ren afspiller i fuld bredde med et link tilbage til forsiden. Bruges af læreren på storskærm og som direkte link i Aula eller Lectio.
+- **Indhold følger projektreglerne:** ingen ritualord eller pædagogiske metakommentarer (fx "flipped classroom" eller "lektie"), ingen faste minuttal, og faserne har samme navne og rækkefølge som i lærerguiden og elevintroduktionen (Fjord Outdoor: Forberedelse, Pitches, Korridorforhandlinger, Bestyrelsesmødet). Tal og regler (antal stemmer, flertalskrav) hentes fra den fælles kilde. Introen er offentlig: den må forklare spillets regler, men aldrig skjult information eller resultater.
+- **Afspilleren er enkel:** afspil og pause, en tidslinje man kan trykke på, to knapper på -10 og +10 sekunder, undertekster der kan slås til og fra (CC), fuld skærm, mellemrum og piletaster. Ingen fremskridtsprikker oven på billedet og ingen knapper til næste eller forrige scene, fordi de forvirrer mere, end de hjælper.
+- **Startskærm med knap:** lyd kan ikke starte af sig selv i en browser, så introen åbner med en titel og en tydelig "Start introduktion".
+- **Altid brugbar uden lyd:** mangler lydfilen, kører scener og undertekster videre på et ur, så siden aldrig står tom.
+
+## Grafisk stil: anti-AI og kontrast
+
+Digitale dele skal ligne virksomhedens egen verden og ikke et generisk AI-dashboard. Detaljer og kode står i `references/teknik.md` (afsnit 13).
+
+- **Undgå:** neonfarver, gradient-bokse, uigennemskuelige KPI-felter og kort med tyk farvet kant i venstre side som fast kendetegn.
+- **Brug:** redaktionel, rolig typografi (Source Serif 4 til introens scenetitler og indledende tekst, Source Sans 3 til overskrifter, data og knapper). Hvide kort med 1 px kant (`#DDD5C4`) og afdæmpet skygge, oven på dæmpede fotobaggrunde.
+- **Billeder skal passe til branchen og kunne ses.** Et bestyrelseslokale for en outdoorvirksomhed har træ, råt lys, overtøj og kaffekopper, ikke glasskærme og kold tech-stemning. Er billedet gemt bag et næsten dækkende farvelag, er valget spildt arbejde.
+- **Kontrast er en regel, ikke en smagssag.** Rolle- og statusmærker (badges) har fast, mættet baggrund og eksplicit tekstfarve. Brug aldrig en CSS-variabel uden at tjekke, at den findes, og regn kontrasten efter i stedet for at antage den. Mål: mindst 4,5 til 1 (AA), og 7 til 1 (AAA) på små mærker, hvor det kan lade sig gøre.
+
 ## Tjekliste før levering
 
-- [ ] Tal ens i bilag, casekort, facit og show
-- [ ] Ingen skjult information eller facit på offentlige sider
+- [ ] Tal ens i bilag, casekort, facit, show og spilintro
+- [ ] Ingen skjult information eller facit på offentlige sider (spilintroen inkluderet)
 - [ ] Alle filer har backup i arkivmappen
 - [ ] Computer og mobil set, ingen vandret scroll, ingen JavaScript-fejl
 - [ ] Rådgiverens kode, rollekoder og lærervindue testet
+- [ ] Spilintro: popup og selvstændig side viser det samme, faserne matcher spillet, lyden virker, og undertekster følger stemmen
+- [ ] Mobil: popup'en lukker helt (ingen frossen side), menulinks virker, Tilbage-knappen lukker popup'en, set på en rigtig telefon
+- [ ] Kontrast tjekket på alle mærker, og ingen CSS-variabel er brugt uden at være defineret
 - [ ] Sprog: dansk, ingen tankestreger, ingen faste minuttal
