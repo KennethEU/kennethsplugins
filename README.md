@@ -68,6 +68,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.1.0 (oktober 2026)
+- `casespil-digitale-tillaeg` er udvidet med erfaringerne fra Kommunalbudget: budgetværktøj, resultatkoder, sammenligning, krypteret lærerpakke, rådgiver uden forslagsknapper og med fanelayout på mobil, samt automatiserede tests. Se plugin-READMEen.
+
 ### casespilsdesigner 2.0.0 (oktober 2026)
 - Pluginet `rollespilsdesigner` er omdøbt til `casespilsdesigner`, og alle dets skills har skiftet gruppenavn fra `rollespil-` til `casespil-`. Sproget er nu casespil, og rollespil virker stadig som søgeord. Mappen er flyttet til `plugins/casespilsdesigner`. Installér igen med `claude plugin install casespilsdesigner@kennethsplugins`. Se plugin-READMEen for de nye skillenavne.
 
