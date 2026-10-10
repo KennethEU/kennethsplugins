@@ -105,9 +105,18 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.3.0 (oktober 2026)
+- Ny adgangsstandard for lærere: ingen særskilt dokumentside med kodefelt (`laerer.html` er udfaset og sender straks videre til `laerer-assistent.html`), og al lærerindhold inklusive download af Word- og PDF-materialer ligger i ét lærercockpit
+- Materialer som base64-ZIP i `bundle.files` i den krypterede `laererdata.js` (PBKDF2 og AES-256-GCM), dekrypteret i hukommelsen og hentet med ét klik. Ingen rå .docx eller .pdf på gættelige stier
+- Personlige magic links og koder pr. skolemail, gyldige i 7 dage, med udløbsdatoen i mailen, en venlig udløbsbesked med formular til nyt link og øjeblikkelig mail til forhåndsgodkendte adresser og gymnasiedomæner via API. Ingen permanente fælles koder
+- `references/teknik.md` har nyt afsnit 25 (flow, datamodel, mailtekst, endepunktsskitse, driftskrav og seks tests) og omskrevet afsnit 20. Afsnit 25 er et design, og endepunktsskitsen er kun kørt mod SQLite i hukommelsen
+- Ærligt om casespil.dk (b987dfe): downloaden er samlet, men mailen indeholder stadig en fast kode pr. spil i kildekoden uden udløb, så de 7 dage endnu ikke kan håndhæves
+- Eksempelkoderne i skillen er ændret til opdigtede værdier
+- Ny triggertest `trigger-adgang-1`
+
 ### v2.2.1 (oktober 2026)
 - Lærer-cockpittet er opdateret efter den hærdede udgave på casespil.dk og kontrolleret mod den: `masterHash` og SHA-256-tjek er væk (koden verificeres kun ved AES-GCM-dekrypteringen), gruppeplanens elever summerer til N for alle elevtal fra 4 til 60, Fjords projektteams viser det faktiske spænd, prompten bygges dynamisk af `faser`, `begreber` og `roller`, og skrivefeltet ligger inden for skærmen ved 800 px i begge spil
-- Kravet til lærerkoden er skærpet: et spilpræfiks og mindst 12 tilfældige tegn (fx `KB-60cad259a836`)
+- Kravet til lærerkoden er skærpet: et spilpræfiks og mindst 12 tilfældige tegn (fx `AB-3f9c0e7d21b8`)
 - Ny cockpit-test i `references/teknik.md` (bygger sit eget låste bundt, 18 kontroller bestået mod begge spil) og en gruppeplan, der viser både elever på roller (altid N) og kort at printe
 - Ærligt om det, der stadig er åbent: motoren indeholder stadig spilspecifikke konstanter og ligger i tre kopier, og 23 af 57 elevtal har et bord med en stemmende rolle uden kort (Klima)
 

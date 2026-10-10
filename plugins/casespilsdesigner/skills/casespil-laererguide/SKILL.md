@@ -53,6 +53,7 @@ Tabel med: Rolle | Organisation | Stemmer | Særlig beføjelse
 
 ### 5. Forberedelse (lærer)
 Tjekliste med:
+- [ ] Hent materialerne i lærercockpittet med dit personlige adgangslink (gyldigt i 7 dage fra mailens afsendelse; er det udløbet, bestiller du et nyt på siden med samme mailadresse). Videresend ikke linket, og læg ikke materialerne på en fælles side eleverne kan se
 - [ ] Print elevintroduktion (1 pr. elev)
 - [ ] Print rollekort (de versioner, der er lavet). Tæl dem ud fra gruppeplanen: ét kort pr. elev på rollen plus ét til hvert bord, hvor rollen er slået sammen med en anden
 - [ ] Vælg form og skriv tallene: papir (alt på papir), hybrid (kort på papir, værktøjer digitalt) eller digital (kort og bilag på skærm). Angiv, hvad der ikke må ligge hos eleverne (fx fortrolige bilag og lærersæt)

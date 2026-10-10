@@ -9,7 +9,7 @@ Samlet fra to afprøvede spil: Fjord Outdoor (erhvervsøkonomi: AI-rådgiver, we
 - **Én afspiller, én fil.** Samme afspiller og samme undertekster ligger aldrig i flere filer (afsnit 11).
 - **Parametre øverst.** Alt, der kan justeres (grænser, priser, sandsynligheder, antal spørgsmål, tidsgrænse), står som navngivne konstanter i toppen af scriptet (fx `CFG`, `TOTAL_QUESTIONS`, `SESSION_TTL_MS`). Ingen magiske tal midt i koden.
 - **Få afhængigheder til internettet:** selve modelkaldet og skrifttyperne (begge spil henter Source Sans 3 og Source Serif 4 fra Google Fonts). Siden skal se ordentlig ud med systemskrifttyper, hvis fonten ikke kan hentes, og ikoner lægges i filen eller i mappen.
-- **Faste sidenavne på tværs af spil** gør det nemt at finde rundt og at skrive tests: `index.html` (præsentation), `casespil.html` (casespilssiden), `raadgiver.html`, `budget.html`, `laerer.html`, `sammenligning.html`, `intro.html`.
+- **Faste sidenavne på tværs af spil** gør det nemt at finde rundt og at skrive tests: `index.html` (præsentation), `casespil.html` (casespilssiden), `raadgiver.html`, `budget.html`, `laerer-assistent.html`, `sammenligning.html`, `intro.html`. Der er ingen særskilt dokumentside til læreren; materialerne hentes i `laerer-assistent.html`. En evt. `laerer.html` er kun en viderestilling.
 
 ## 2. Roller, koder og kryptering
 
@@ -619,12 +619,14 @@ Læreren sammenligner bordenes beslutninger side om side i debriefingen, og klas
 
 ## 20. Krypteret lærerpakke
 
-Lærerens materialer (rollekort, bilag, lærerguide, cheatsheet som .docx) ligger i en ZIP, der er krypteret ind i en script-fil, og låses op på en side til læreren.
+Lærerens materialer (rollekort, bilag, lærerguide, cheatsheet som .docx og .pdf) ligger i en ZIP, der er krypteret ind i spillets script-fil og låses op i lærercockpittet (afsnit 24). Der er ingen separat dokumentside.
 
-- **Format:** `lærerpakke.js` er `window.TEACHER_LOCK = {salt, iv, data}` (samme låseformat som rollerne). Nyttelasten er `{files: <ZIP som base64>}`. I Kommunalbudget er ZIP'en omkring 140 KB.
-- **Siden:** et kodefelt (`type="password"`), en knap, og efter oplåsning en download-knap, der gør base64 om til en ZIP og henter den. Fejl giver en venlig besked ("Koden kunne ikke åbne pakken. Kontrollér lærerkoden og brug HTTPS eller localhost").
-- **Hvad det beskytter mod:** elever, der klikker rundt på sitet. Filen kan hentes af alle, og koden kan gættes offline, så **lærerkoden skal være lang og tilfældig** (mindst 12 tegn), ikke 4 cifre. Med PBKDF2 på 100 000 runder koster hvert gæt ca. 50 ms, og det er ubrugeligt mod en lang kode.
-- **Byg pakken med et script**, ikke i hånden: (1) generér .docx-filerne, (2) pak dem i en ZIP, (3) base64, (4) lås med lærerkoden, (5) skriv `lærerpakke.js`. Kør scriptet efter hver ændring i materialerne, og kør siden og testene bagefter. Giv hver elev kun sin egen rolles kort; del ikke den samlede pakke.
+- **Format:** nyttelasten i `laererdata.js` er `{ ..., files: <ZIP som base64> }` og låses med samme format som rollerne, `{salt, iv, data}`. I Kommunalbudget er ZIP'en omkring 140 KB. Ligger pakken i en selvstændig `lærerpakke.js` (`window.TEACHER_LOCK`), gælder det samme format.
+- **Download:** efter oplåsning kalder cockpittet `LaererMotor.downloadMaterials(filnavn)`, som gør base64 om til en `Blob`, henter den som ZIP og frigiver objekt-URL'en igen. Knappen vises kun, når `hasMaterials()` er sand. Fejl giver en venlig besked ("Materialepakken er ikke tilgængelig. Lås cockpittet op først.").
+- **Ingen rå filer.** Hverken .docx, .pdf eller ZIP ligger som almindelige filer på sitet. Tjek det med en gennemgang af den mappe, der publiceres (`find . -name "*.docx" -o -name "*.pdf" -o -name "*.zip"`) og med en test, der forsøger at hente de kendte filnavne og forventer 404.
+- **Gamle referencer.** En evt. `laerer.html` er en viderestilling, der bevarer parametre og hash: `<meta http-equiv="refresh" content="0; url=laerer-assistent.html">` og `location.replace("laerer-assistent.html" + location.search + location.hash)`. Test, at `laerer.html?kode=...` ender i cockpittet med parameteren intakt.
+- **Hvad det beskytter mod:** elever, der klikker rundt på sitet. Filen kan hentes af alle, og koden kan gættes offline, så **koden, der låser bundtet, skal være lang og tilfældig** (mindst 12 tilfældige tegn), ikke 4 cifre. Med PBKDF2 på 100 000 runder koster hvert gæt ca. 50 ms, og det er ubrugeligt mod en lang kode. Hvordan lærerne får adgang, står i afsnit 25.
+- **Byg pakken med et script**, ikke i hånden: (1) generér .docx- og .pdf-filerne, (2) pak dem i en ZIP, (3) base64, (4) lås med bundtets kode, (5) skriv `laererdata.js`. Kør scriptet efter hver ændring i materialerne, og kør siden og testene bagefter. Giv hver elev kun sin egen rolles kort; del ikke den samlede pakke.
 
 Låsegeneratoren nedenfor (gem den som `laas.cjs`) laver låse, som Kommunalbudgets egen `decrypt` kan åbne (afprøvet), og den samme funktion kan bruges til rollerne:
 
@@ -728,7 +730,7 @@ Browsertesten kræver en lokal server (Web Crypto virker kun på `localhost` og 
 const { chromium } = require('playwright');
 const CONFIG = {
   base: 'http://127.0.0.1:8766/kommunebudget/',
-  pages: ['', 'casespil.html', 'raadgiver.html', 'budget.html', 'laerer.html', 'sammenligning.html', 'intro.html'],
+  pages: ['', 'casespil.html', 'raadgiver.html', 'budget.html', 'laerer-assistent.html', 'sammenligning.html', 'intro.html'],
   widths: [1300, 390, 320],
   roleIds: ['familier', 'aeldre', 'unge', 'erhverv', 'klima'],
   plan: { skole: 40, pleje: 50, sfo: 10 },           // skal summe til højst puljen
@@ -839,7 +841,7 @@ Lærerens eget arbejdsbord bag lærerkoden. Det er afprøvet i to spil (Kommunal
 
 - Alt fortroligt (lærerguide, facit, rollekort med hemmelige kompromiser, rollekoder) ligger kun i det krypterede bundt og dekrypteres i hukommelsen. Intet af det står i klartekst i siden.
 - **Kontrollér koden ved dekrypteringen, ikke med en hurtig hash.** Kravet er: ingen `masterHash`, intet SHA-256-tjek i JavaScript. Koden verificeres udelukkende under selve dekrypteringen med Web Crypto: PBKDF2 (100 000 runder, SHA-256) og AES-256-GCM. En forkert kode fejler af sig selv på AES-GCM's autentificeringstag. Første udgave gemte en `masterHash` (SHA-256 af lærerkoden) og sammenlignede, før den dekrypterede. Målt: ca. 16 000 SHA-256-forsøg i sekundet mod ca. 20 PBKDF2-forsøg i sekundet, altså ca. 800 gange hurtigere, og specialværktøj er mange størrelsesordener hurtigere end en browser. Hashen var derfor en genvej til at gætte lærerkoden uden om nøgleudledningen. Den er fjernet i den nyeste casespil.dk, og det er afprøvet, at en forkert kode afvises af dekrypteringen, og at motoren ikke længere indeholder `masterHash` eller `digest('SHA-256')`.
-- Lærerkoden er lang og tilfældig: et spilpræfiks og mindst 12 tilfældige tegn, fx `KB-60cad259a836` eller `FO-8f92b1c4e730` (12 hex-tegn er 48 bit, så 2 i 48. potens forsøg à ca. 50 ms er ikke gennemførligt). Aldrig et ord, et årstal eller 4 cifre. Gem den højst i `sessionStorage` (den forsvinder, når fanen lukkes), og slet den ved "Lås". På en fælles computer bør læreren låse, før vedkommende forlader computeren.
+- Lærerkoden er lang og tilfældig: et spilpræfiks og mindst 12 tilfældige tegn, fx `AB-3f9c0e7d21b8` eller `CD-7e41a9b05c26` (12 hex-tegn er 48 bit, så 2 i 48. potens forsøg à ca. 50 ms er ikke gennemførligt). Aldrig et ord, et årstal eller 4 cifre. Gem den højst i `sessionStorage` (den forsvinder, når fanen lukkes), og slet den ved "Lås". På en fælles computer bør læreren låse, før vedkommende forlader computeren.
 - Proxyens `appId` er ikke en lås (alle kan læse den), så cockpittet og elevernes rådgiver kan ikke skelnes af proxyen. Dagsloft og herkomstbegrænsning på proxyen (afsnit 3) er det, der beskytter.
 
 Oplåsning og streaming (afprøvet med rigtig og forkert kode og med datablokke, der brydes midt i en linje, inklusive tænketokens, der aldrig må vises):
@@ -1028,7 +1030,7 @@ const assert = require('assert'), K = require(process.argv[2] + '/laerer-kerne.j
 // så den rigtige lærerkode aldrig bruges. Kør (siden serveres på localhost): node test_cockpit.cjs <mappen med laas.cjs>
 const { chromium } = require('playwright'), { lock } = require(process.argv[2] + '/laas.cjs');
 const CONFIG = {
-  base: 'http://127.0.0.1:8774/', code: 'KB-60cad259a836',
+  base: 'http://127.0.0.1:8774/', code: 'AB-3f9c0e7d21b8',
   games: { kommunebudget: { type: 'tables' }, fjord: { type: 'board_and_teams', boardRoles: [] } },
   roles: [['familier', 3], ['aeldre', 3], ['unge', 2], ['erhverv', 2], ['klima', 2]]
 };
@@ -1078,3 +1080,71 @@ const check = (ok, text) => { console.log((ok ? 'OK    ' : 'FEJL  ') + text); if
 - **Højre kolonne (fanerne):** Lærerguide (foldbare sektioner, den første åben), Cheatsheet (spørgsmål med modelsvar, faglig begrundelse og typisk elevfejl), Roller og hemmeligheder, og Rollekoder (en tabel til at dele ud eller skrive på kortene).
 - **Mobil:** de tre kolonner bliver faner. Layoutlåsen og fælderne i afsnit 16 gælder også her (og blev først fundet i cockpittet, da en lang lærerguide skubbede skrivefeltet ud).
 - Indsæt tekst fra bundtet med `escapeHtml` eller `textContent`. Markdown i chatten laves først efter, at teksten er escapet.
+
+## 25. Lærernes adgang: personlig e-mail, magic link og 7 dages udløb
+
+Dette afsnit er standarden for, hvordan lærere får adgang til cockpittet og materialerne. Det er en designbeskrivelse med skitseret serverlogik. Endepunktsskitsen er kørt mod SQLite i hukommelsen (udsted, åbn, ugyldigt token, forfalsket udløb), men mail, rate limiting og godkendelse er ikke afprøvet her, så kør testene nederst på din egen løsning, før den tages i brug.
+
+**Hvorfor ikke en fast kode.** En fast kode i en mail eller i kildekoden lever videre: den videresendes til en kollega, ender hos en elev eller stadig virker hos en klasse tre år senere. Den bundtnøgle, der låser `laererdata.js`, er derfor aldrig det, lærerne får. De får en personlig, kortlivet adgang, som serveren veksler til nøglen.
+
+**Flow:**
+
+1. Læreren skriver sin skolemail i formularen i cockpittet (eller på kodeskærmen) og sender den med et `fetch` (AJAX) til `api/laereradgang`. Ingen sidegenindlæsning.
+2. Serveren validerer adressen, rate-limiter og slår op: er adressen forhåndsgodkendt, eller hører domænet til en godkendt skole?
+3. **Kendt:** serveren laver en tilfældig engangskode, gemmer kun dens hash sammen med mailadresse, spil og `expires_at` (nu plus 7 dage), og sender mailen straks. Svaret til siden er "sendt", uanset om adressen var kendt eller ej (så svaret ikke afslører, hvem der er godkendt).
+4. **Ukendt:** serveren gemmer en anmodning og underretter administratoren, som godkender med ét klik. Godkendelsen sender læreren det friske link.
+5. Mailen indeholder et magic link `…/laerer-assistent.html?kode=<personlig kode>`. Cockpittet læser parameteren, fjerner den straks fra adresselinjen med `history.replaceState`, og kalder `api/laereradgang` med `action: "aabn"` og koden.
+6. Serveren sammenligner hashen, tjekker `expires_at` og mailadressen og svarer med enten bundtets nøgle (med `Cache-Control: no-store`) eller en statuskode (`udloebet`, `ugyldig`). Nøglen bruges straks til `unlock()` (afsnit 24) og gemmes højst i `sessionStorage`.
+7. Er linket udløbet, viser cockpittet den venlige besked og formularen med mailadressen udfyldt (serveren kan sende adressen med tilbage, hvis den kendes), så et nyt link kan bestilles med ét klik.
+
+**Datamodel (SQLite eller tilsvarende):**
+
+- `approved_emails (email unique, name)` og `approved_domains (domain unique, school_name)` til forhåndsgodkendelse. Domæner sammenlignes med små bogstaver.
+- `access_tokens (id, email, game_id, token_hash, expires_at, created_at, used_at)`. `token_hash` er SHA-256 af en tilfældig værdi på mindst 128 bit (`random_bytes(16)` eller mere i PHP, `crypto.randomBytes` i Node). Her er hash i orden, fordi værdien er helt tilfældig og lang og kan kun slås op, ikke gættes. Det er en anden situation end en lærerkode, som en person har fundet på.
+- `requests (email, name, school, game_id, status)` for ukendte adresser og `send_log (email, ip_address, sent_at)` til rate limiting (fx højst 5 pr. IP på 10 minutter, og et loft pr. adresse).
+- Slet udløbne rækker løbende.
+
+**Mailtekst.** Mailen er i spillets visuelle stil, nævner spillets navn og indeholder altid udløbsdatoen som en rigtig dato, regnet ud på serveren:
+
+> Dette adgangslink er gyldigt i 7 dage (indtil DD-MM-YYYY). Herefter skal du blot bestille et nyt link på siden.
+
+Mailen indeholder ingen anden kode end den personlige. Den indeholder ikke bundtets nøgle. Linket bør ikke sendes videre; skriv det.
+
+**Skitse af endepunktet (PHP, forkortet):**
+
+```php
+// api/laereradgang.php (skitse). Forbered statements, svar altid som JSON, og brug aldrig mailadressen i et svar til en ukendt.
+function udsted_link(PDO $db, string $email, string $spil): array {
+    $raa = bin2hex(random_bytes(16));                          // 128 bit, vises kun i mailen
+    $udloeb = (new DateTimeImmutable('+7 days'));
+    $db->prepare('INSERT INTO access_tokens (email, game_id, token_hash, expires_at) VALUES (?,?,?,?)')
+       ->execute([$email, $spil, hash('sha256', $raa), $udloeb->format('Y-m-d H:i:s')]);
+    return [$raa, $udloeb->format('d-m-Y')];                   // datoen skal stå i mailen
+}
+function aabn(PDO $db, string $raa, string $spil, string $bundtNoegle): array {
+    $st = $db->prepare('SELECT email, expires_at FROM access_tokens WHERE token_hash = ? AND game_id = ?');
+    $st->execute([hash('sha256', $raa), $spil]);
+    $r = $st->fetch();
+    if (!$r) return ['status' => 'ugyldig'];
+    if (strtotime($r['expires_at']) < time()) return ['status' => 'udloebet', 'email' => $r['email']];
+    return ['status' => 'ok', 'noegle' => $bundtNoegle];       // bundtNoegle ligger i en miljøvariabel eller en fil uden for webroden
+}
+```
+
+**Status i casespil.dk (commit b987dfe).** Materialedownload er samlet i cockpittet, `laerer.html` er en viderestilling, `bundle.files` bærer ZIP'en, og forhåndsgodkendte mails og domæner får deres mail straks via `api/laereradgang.php`. Standarden ovenfor er endnu ikke nået på tre punkter: (1) mailen indeholder en fast kode pr. spil, som står i kildekoden (`get_games_catalog()`) og dermed i versionshistorikken, uden udløb, og Fjords kode er et ord med årstal; (2) der er ingen `access_tokens`, så de 7 dage kan ikke håndhæves; (3) administratorens standardadgangskode genereres af kildekoden. Håndhævelse kræver, at serveren veksler det personlige token til bundtnøglen som beskrevet, og at bundtet låses med en ny, tilfældig nøgle, der kun ligger uden for repoet.
+
+**Krav til driften:**
+
+- Bundtnøglen, administratorens adgangskode og SMTP-oplysninger ligger uden for det, der serveres, og ikke i versionshistorikken. Ingen standardadgangskode i kildekoden: ved første kørsel genereres en tilfældig, som vises én gang, eller den læses fra miljøet.
+- Datamappen er lukket for web (`Require all denied`), og databasefilen ligger ikke i webroden, hvis hosten tillader det.
+- Mails sendes med afsenderdomænets SPF og DKIM, og administratoren har en testmail og et afsendelseslog, så man kan se, om en lærer fik sin mail.
+- Spillets egen mail (andre sprog, andet navn) bruger spillets navn fra datasættet, ikke en fast tekst.
+
+**Tests, der skal bestå:**
+
+1. Et kendt domæne får en mail med det samme, og mailen indeholder en udløbsdato 7 dage frem i formatet DD-MM-YYYY.
+2. En ukendt adresse får samme svar som en kendt, og administratoren får besked.
+3. Et friskt link åbner cockpittet; samme link efter forfalsket tid (sæt `expires_at` til i går) giver `udloebet`, den venlige besked og en formular med adressen udfyldt.
+4. Et gættet eller ændret token giver `ugyldig`, og 6 hurtige anmodninger fra samme IP giver svar 429.
+5. Linket står ikke længere i adresselinjen efter indlæsning, og nøglen ligger ikke i klartekst i HTML, JavaScript eller versionshistorik (`grep` i den publicerede mappe og `git log -S` på nøglen).
+6. `laerer.html?kode=…` ender i cockpittet, og ingen .docx, .pdf eller .zip kan hentes på en gæt-sti.

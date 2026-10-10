@@ -68,6 +68,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.3.0 (oktober 2026)
+- Ny adgangsstandard for lærere i `casespil-digitale-tillaeg`, `casespil-projektregler` og `casespil-laererguide`: al lærerindhold og download af Word- og PDF-materialer i ét cockpit (ingen separat `laerer.html`), materialer krypteret i `bundle.files`, og personlige magic links pr. skolemail, gyldige i 7 dage, med udløbsdato i mailen og venlig udløbsbesked. Se plugin-READMEen.
+
 ### casespilsdesigner 2.2.1 (oktober 2026)
 - Lærer-cockpittet i `casespil-digitale-tillaeg` er opdateret efter den hærdede udgave på casespil.dk: ingen hurtig hash, gruppeplan der summerer til N, lærerkode med præfiks og 12 tilfældige tegn, dynamisk prompt og en cockpit-test. Se plugin-READMEen.
 
