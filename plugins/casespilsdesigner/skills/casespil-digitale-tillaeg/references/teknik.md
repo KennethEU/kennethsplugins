@@ -622,10 +622,10 @@ Læreren sammenligner bordenes beslutninger side om side i debriefingen, og klas
 Lærerens materialer (rollekort, bilag, lærerguide, cheatsheet som .docx og .pdf) ligger i en ZIP, der er krypteret ind i spillets script-fil og låses op i lærercockpittet (afsnit 24). Der er ingen separat dokumentside.
 
 - **Format:** nyttelasten i `laererdata.js` er `{ ..., files: <ZIP som base64> }` og låses med samme format som rollerne, `{salt, iv, data}`. I Kommunalbudget er ZIP'en omkring 140 KB. Ligger pakken i en selvstændig `lærerpakke.js` (`window.TEACHER_LOCK`), gælder det samme format.
-- **Download:** efter oplåsning kalder cockpittet `LaererMotor.downloadMaterials(filnavn)`, som gør base64 om til en `Blob`, henter den som ZIP og frigiver objekt-URL'en igen. Knappen vises kun, når `hasMaterials()` er sand. Fejl giver en venlig besked ("Materialepakken er ikke tilgængelig. Lås cockpittet op først.").
+- **Download:** der er ingen offentlig downloadside og ingen statisk nøgle. Efter oplåsning kalder cockpittet `LaererMotor.downloadMaterials(filnavn)`, som gør base64 om til en `Blob`, henter den som ZIP og frigiver objekt-URL'en igen. Knappen vises kun, når `hasMaterials()` er sand. Fejl giver en venlig besked ("Materialepakken er ikke tilgængelig. Lås cockpittet op først.").
 - **Ingen rå filer.** Hverken .docx, .pdf eller ZIP ligger som almindelige filer på sitet. Tjek det med en gennemgang af den mappe, der publiceres (`find . -name "*.docx" -o -name "*.pdf" -o -name "*.zip"`) og med en test, der forsøger at hente de kendte filnavne og forventer 404.
 - **Gamle referencer.** En evt. `laerer.html` er en viderestilling, der bevarer parametre og hash: `<meta http-equiv="refresh" content="0; url=laerer-assistent.html">` og `location.replace("laerer-assistent.html" + location.search + location.hash)`. Test, at `laerer.html?kode=...` ender i cockpittet med parameteren intakt.
-- **Hvad det beskytter mod:** elever, der klikker rundt på sitet. Filen kan hentes af alle, og koden kan gættes offline, så **koden, der låser bundtet, skal være lang og tilfældig** (mindst 12 tilfældige tegn), ikke 4 cifre. Med PBKDF2 på 100 000 runder koster hvert gæt ca. 50 ms, og det er ubrugeligt mod en lang kode. Hvordan lærerne får adgang, står i afsnit 25.
+- **Hvad det beskytter mod:** elever, der klikker rundt på sitet. Filen kan hentes af alle, og koden kan gættes offline, så **koden, der låser bundtet, skal være lang og tilfældig** (mindst 12 tilfældige tegn), ikke 4 cifre. Med PBKDF2 på 100 000 runder koster hvert gæt ca. 50 ms, og det er ubrugeligt mod en lang kode. Nøglen ligger i `data/keys.php` eller miljøvariabler uden for git og leveres kun af serveren til et gyldigt token. Hvordan lærerne får adgang, står i afsnit 25.
 - **Byg pakken med et script**, ikke i hånden: (1) generér .docx- og .pdf-filerne, (2) pak dem i en ZIP, (3) base64, (4) lås med bundtets kode, (5) skriv `laererdata.js`. Kør scriptet efter hver ændring i materialerne, og kør siden og testene bagefter. Giv hver elev kun sin egen rolles kort; del ikke den samlede pakke.
 
 Låsegeneratoren nedenfor (gem den som `laas.cjs`) laver låse, som Kommunalbudgets egen `decrypt` kan åbne (afprøvet), og den samme funktion kan bruges til rollerne:
@@ -831,9 +831,9 @@ Flere spil kan bo på samme domæne og findes via et fælles katalog.
 
 ## 24. Lærerens cockpit (lærer-assistent)
 
-Lærerens eget arbejdsbord bag lærerkoden. Det er afprøvet i to spil (Kommunalbudget og Fjord Outdoor), og afsnittet beskriver både, hvad der virker, og de fælder, der blev fundet ved gennemgang af første udgave.
+Lærerens eget arbejdsbord bag et personligt adgangslink (afsnit 25). Det er afprøvet i to spil (Kommunalbudget og Fjord Outdoor), og afsnittet beskriver både, hvad der virker, og de fælder, der blev fundet ved gennemgang af første udgave.
 
-**Filer:** `laerer-assistent.html` (siden), `laerer-motor.js` (den fælles motor) og `laererdata.js` (det krypterede databundt, genereret af et script). Siden indlæser `window.TEACHER_CONFIG = { gameId, gameTitle, proxyUrl, proxyToken, bundle: { salt, iv, data } }`. Proxyens adresse og token kommer altså fra spillets datasæt og ikke fra motoren. Der er ingen `masterHash` og intet SHA-256-tjek i koden (det blev fundet og fjernet efter første udgave, se nedenfor).
+**Filer:** `laerer-assistent.html` (siden), `laerer-motor.js` (den fælles motor) og `laererdata.js` (det krypterede databundt, genereret af et script). Siden indlæser `window.TEACHER_CONFIG = { gameId, gameTitle, proxyUrl, proxyToken, bundle: { salt, iv, data } }`. Proxyens adresse og token kommer altså fra spillets datasæt og ikke fra motoren. Motoren ligger kun i roden af sitet; spillets cockpit indlæser den med `<script src="../laerer-motor.js">`, og der må aldrig ligge kopier i spilmapperne. Der er ingen `masterHash` og intet SHA-256-tjek i koden (det blev fundet og fjernet efter første udgave, se nedenfor).
 
 **Databundtets indhold (efter dekryptering):** `gameId`, `titel`, `fag`, `grupperegler`, `faser` (`nr`, `navn`, `handling`, `rad`), `begreber` (`begreb`, `forklaring`), `roller` (`id`, `titel`, `stemmer`, `kode`, `maal`, `skjult`, `dilemmaer`, evt. `front` og `back`), `guide` (en liste af `{ titel, afsnit: [...] }`) og `cheatsheet` (en liste af `{ spoergsmaal, modelsvar, faglig_begrundelse, typisk_fejl }`). Bundtet bygges af samme script som lærerpakken (afsnit 20), så det altid svarer til rollekortene. Prompten bygges af `faser`, `begreber` og `roller` i bundtet, så fasenavne og begreber kun står ét sted.
 
@@ -841,7 +841,7 @@ Lærerens eget arbejdsbord bag lærerkoden. Det er afprøvet i to spil (Kommunal
 
 - Alt fortroligt (lærerguide, facit, rollekort med hemmelige kompromiser, rollekoder) ligger kun i det krypterede bundt og dekrypteres i hukommelsen. Intet af det står i klartekst i siden.
 - **Kontrollér koden ved dekrypteringen, ikke med en hurtig hash.** Kravet er: ingen `masterHash`, intet SHA-256-tjek i JavaScript. Koden verificeres udelukkende under selve dekrypteringen med Web Crypto: PBKDF2 (100 000 runder, SHA-256) og AES-256-GCM. En forkert kode fejler af sig selv på AES-GCM's autentificeringstag. Første udgave gemte en `masterHash` (SHA-256 af lærerkoden) og sammenlignede, før den dekrypterede. Målt: ca. 16 000 SHA-256-forsøg i sekundet mod ca. 20 PBKDF2-forsøg i sekundet, altså ca. 800 gange hurtigere, og specialværktøj er mange størrelsesordener hurtigere end en browser. Hashen var derfor en genvej til at gætte lærerkoden uden om nøgleudledningen. Den er fjernet i den nyeste casespil.dk, og det er afprøvet, at en forkert kode afvises af dekrypteringen, og at motoren ikke længere indeholder `masterHash` eller `digest('SHA-256')`.
-- Lærerkoden er lang og tilfældig: et spilpræfiks og mindst 12 tilfældige tegn, fx `AB-3f9c0e7d21b8` eller `CD-7e41a9b05c26` (12 hex-tegn er 48 bit, så 2 i 48. potens forsøg à ca. 50 ms er ikke gennemførligt). Aldrig et ord, et årstal eller 4 cifre. Gem den højst i `sessionStorage` (den forsvinder, når fanen lukkes), og slet den ved "Lås". På en fælles computer bør læreren låse, før vedkommende forlader computeren.
+- Bundtets nøgle er lang og tilfældig (mindst 12 tilfældige tegn, fx et præfiks og 24 hex-tegn) og indtastes aldrig af en lærer. Den ligger i `data/keys.php` (lukket for web, i `.gitignore`) eller i miljøvariabler og leveres kun af serveren til et gyldigt token (afsnit 25). Gem den højst i `sessionStorage` (den forsvinder, når fanen lukkes), og slet den ved "Lås". På en fælles computer bør læreren låse, før vedkommende forlader computeren. Cockpittet har ingen lokal dekrypteringsfallback.
 - Proxyens `appId` er ikke en lås (alle kan læse den), så cockpittet og elevernes rådgiver kan ikke skelnes af proxyen. Dagsloft og herkomstbegrænsning på proxyen (afsnit 3) er det, der beskytter.
 
 Oplåsning og streaming (afprøvet med rigtig og forkert kode og med datablokke, der brydes midt i en linje, inklusive tænketokens, der aldrig må vises):
@@ -900,13 +900,14 @@ Oplåsning og streaming (afprøvet med rigtig og forkert kode og med datablokke,
 })(typeof window === 'undefined' ? globalThis : window);
 ```
 
-**Motoren er fælles, data er spillets egne.** Kravet er, at motoren (`laerer-motor.js`) er fælles på tværs af spil og ikke indeholder hårdkodede fasenavne eller spilkonstanter: auth, dekryptering, beregnere, markdown til chatten og proxykaldet ligger i motoren, og alt, der handler om det enkelte spil, ligger i datasættet. Status i den nyeste casespil.dk, målt:
+**Motoren er fælles, data er spillets egne.** Standarden er, at motoren (`laerer-motor.js`) er 100 % agnostisk og datadrevet, og at der findes én kopi i roden af sitet:
 
-- **Rettet:** `buildSystemPrompt()` bygger nu sine faser, begreber og roller dynamisk af bundtet (`data.faser`, `data.begreber`, `data.roller`) og indeholder reglerne om ingen faste minuttal, ingen rituelle fraser og ingen lange tankestreger. Første udgave havde fasenavne i prompten ("Forberedelse i interessegrupper", "Forhandling i udvalget", "Afstemning"), som afveg fra datasættets, og det brød reglen om samme faser overalt. Proxyens adresse og token modtages som `config.proxyUrl` og `config.proxyToken`.
-- **Stadig åbent:** motoren indeholder stadig spilspecifikke ting: projektnavnene `P1 (Regntøj ...)` til `P5`, `boardSize = 6`, `12 stemmer` og `7 ja-stemmer` i tekster, forgreninger på `gameId === 'kommunebudget'` og `'fjord'` i printlisten (med tekster som "Tilst-scenariet", "18 initiativer" og "Fjord_Outdoor_Facit.html"), og en reservekonstant for Fjords proxy og token (`fjord2026`), hvis `config` mangler dem. Det skal flyttes til `grupperegler` og til printlistens data, og motoren skal fejle tydeligt i stedet for at falde tilbage til et andet spils proxy.
-- **Stadig åbent:** motoren ligger i tre byte-identiske kopier (roden, `fjord/` og `kommunebudget/`). Hav én kopi og henvis til den (`../laerer-motor.js`). Findes kopier alligevel, skal en test sammenligne dem.
+- Auth, dekryptering, beregnere, markdown til chatten, printlister og proxykaldet ligger i motoren. Alt, der handler om det enkelte spil (spilnavn, initiativlister, projektteams, stemmetal, faser, roller, begreber, printtekster og grupperegler), leveres i bundtet via `window.TEACHER_CONFIG` og dekrypteres.
+- `buildSystemPrompt()` bygger sine faser, begreber og roller dynamisk af bundtet (`data.faser`, `data.begreber`, `data.roller`) og indeholder reglerne om ingen faste minuttal, ingen rituelle fraser og ingen lange tankestreger. Proxyens adresse og token modtages som `config.proxyUrl` og `config.proxyToken`, og motoren fejler tydeligt, hvis de mangler, i stedet for at falde tilbage til et andet spils proxy.
+- Der ligger ingen kopier i `fjord/` eller `kommunebudget/`. Tilføj en test, der fejler, hvis en `laerer-motor.js` findes i en spilmappe, og en, der søger i motoren efter spilnavne og kendte konstanter (fx en liste af forbudte ord taget fra spillenes data).
+- Første udgave havde fasenavne i prompten, spilkonstanter (projektnavne, bordstørrelse, stemmetal, `gameId`-forgreninger) og en reservekonstant til et andet spils proxy, og motoren lå i tre byte-identiske kopier. Alt det er flyttet til data og samlet i én kopi i casespil.dk (dd294e8).
 
-**Gruppe- og holdberegner.** Den er en ren funktion, som returnerer en plan. Visningen og printlisten bygger begge på planen, og printtallene er en projektion af planen og ikke en separat formel. Kravet er en gyldig fordeling for alle elevtal fra 4 til 60 og summen af elever på roller lig med antal elever uden undtagelse. Første udgave beregnede printlisten med `ceil(n/5)` og `floor(n/5)` og satte én elev på hver af fem roller, også ved et bord med fire elever: pladserne summerede ikke ved 23 af 57 elevtal, og rollekortene stemte hverken med elevtallet eller planen ved 34 af 57. I den nyeste casespil.dk er summen af elever på roller lig med N for alle 57 elevtal, og printlisten summerer til N (målt). Fjords projektteams viser nu det faktiske spænd, "4 til 5 pr. team" ved 30 elever. Koden nedenfor er datadrevet, har invarianter, og er testet for 4 til 80 elever (647 borde):
+**Gruppe- og holdberegner.** Den er en ren funktion, som returnerer en plan. Visningen og printlisten bygger begge på planen, og printtallene er en projektion af planen og ikke en separat formel. Kravet er en gyldig fordeling for alle elevtal fra 4 til 60 og summen af elever på roller lig med antal elever uden undtagelse. Første udgave beregnede printlisten med `ceil(n/5)` og `floor(n/5)` og satte én elev på hver af fem roller, også ved et bord med fire elever: pladserne summerede ikke ved 23 af 57 elevtal, og rollekortene stemte hverken med elevtallet eller planen ved 34 af 57. Standarden er nu: Σ elever = N for alle elevtal fra 4 til 60, og antal rollekort er `max(elever, 1)` for hver stemmende rolle. Fjords projektteams viser nu det faktiske spænd, "4 til 5 pr. team" ved 30 elever. Koden nedenfor er datadrevet, har invarianter, og er testet for 4 til 80 elever (647 borde):
 
 ```javascript
 // gruppeplan.js: ren funktion uden DOM. Én plan bruges til visning, til printtal og til tests.
@@ -938,9 +939,8 @@ Oplåsning og streaming (afprøvet med rigtig og forkert kode og med datablokke,
   function studentsOnRoles(tables) {
     return tables.reduce((a, t) => a + t.seats.reduce((x, s) => x + s.students, 0), 0);
   }
-  // 2. Rollekort at printe pr. rolle: ét kort pr. elev på rollen, og ét kort til hvert bord, hvor rollen er slået sammen med
-  //    en anden og stadig stemmer. En rolle uden elev, der stadig stemmer, SKAL have et kort. Ellers er summen kun lig med N,
-  //    fordi kortet er udeladt.
+  // 2. Rollekort at printe pr. rolle: max(elever, 1) pr. bord. En stemmende rolle uden egen elev (delt af en nabo) SKAL have
+  //    et kort, ellers er summen kun lig med N, fordi kortet er udeladt, og bordets stemmer er ikke repræsenteret.
   function cardCounts(tables) {
     const out = {};
     for (const t of tables) for (const s of t.seats) out[s.id] = (out[s.id] || 0) + Math.max(1, s.students);
@@ -964,7 +964,292 @@ Oplåsning og streaming (afprøvet med rigtig og forkert kode og med datablokke,
 ```
 
 - **Regler i data (eksempel):** `{ targetSize: 5, merge: [['klima', 'unge'], ['erhverv', 'aeldre']], double: ['familier', 'aeldre'] }` for borde, og `{ boardSize: 6, minStudents: 11, teams: [...], restOrder: ['p2', 'p3', 'p5', 'p1', 'p4'] }` for bestyrelse og teams. `restOrder` skal være den samme som lærerguidens differentieringsregel, ellers siger guide og cockpit to forskellige ting.
-- **Et åbent designvalg: en rolle uden elev.** I den nyeste casespil.dk får roller ved et bord med færre end fem elever 0 elever, og printlisten tæller kun elever, så summen af rollekort er N. Men rollen stemmer stadig (budgetværktøjet kræver, at alle fem roller svarer), og den har ikke noget kort. Målt: 23 af 57 elevtal har mindst ét bord, hvor Klima ikke har en elev og dermed ikke et kort, og ved fire elever råder bordet kun over 10 af 12 stemmer med kort. Vælg og beskriv det i lærerguiden: enten slås rollen sammen med en anden, og så printes et kort til den (kort = elever plus roller uden egen elev, `cardCounts` nedenfor), eller rollen udgår af afstemningen, og flertallet regnes om. Planen skal vise begge tal: elever på roller (altid N) og kort at printe.
+- **Beslutning: en rolle uden elev får stadig et kort.** Ved et bord med under 5 elever tildeles eleverne 1 pr. rolle efter prioritet (rækkefølgen er `merge`-listen i reglerne). De roller, der ikke får en elev, deles af en naborolle (`mergedInto`), men modtager altid et fysisk rollekort: kort = `max(elever, 1)` for stemmende roller. Så er alle bordets stemmer repræsenteret i forhandlingen og afstemningen (ved 4 elever 12 af 12 stemmer i stedet for 10), og Σ elever = N gælder stadig. Planen viser begge tal: elever på roller (altid N) og kort at printe. Beslutningen står også i lærerguiden (sektion 4) og i rollekortenes printregler.
+- **Printlisten** bygges af planen og af formen (papir, hybrid, digital). Skriv ikke faste intervaller i teksten, men udled dem af planen (første udgave skrev "2 til 4 pr. team" ved 30 elever, hvor det er 4 til 5; nu udledes spændet af planen).
+- Under minimumsantallet vises en advarsel og et råd om en miniversion (`casespil-miniversion`), ikke en plan.
+
+Testen (gem gruppeplanen som `gruppeplan.js` og testen som `gruppeplan_test.cjs`, og kør `node gruppeplan_test.cjs .`, hver gang reglerne eller rollerne ændres):
+
+```javascript
+const assert = require('assert'), G = require(process.argv[2] + '/gruppeplan.js');
+const roles = [['familier', 3], ['aeldre', 3], ['unge', 2], ['erhverv', 2], ['klima', 2]].map(([id, stemmer]) => ({ id, titel: id, stemmer }));
+const rules = { merge: [['klima', 'unge'], ['erhverv', 'aeldre']], double: ['familier', 'aeldre'] };
+let tablesSeen = 0, merged = 0;
+for (let n = 4; n <= 80; n++) {
+  const tables = G.planTables(n, roles, rules);
+  assert.strictEqual(tables.reduce((a, t) => a + t.size, 0), n, 'bordene summer ikke til ' + n);
+  for (const t of tables) {
+    tablesSeen++;
+    assert.strictEqual(t.seats.reduce((a, s) => a + s.students, 0), t.size, 'pladser != elever, n=' + n);
+    t.seats.forEach(s => { assert(s.students >= 0 && (s.students > 0 || s.mergedInto)); if (s.mergedInto) { merged++; assert(t.seats.find(x => x.id === s.mergedInto).students > 0); } });
+    assert(Math.abs(t.size - tables[0].size) <= 1, 'ujævne borde');
+  }
+  assert.strictEqual(G.studentsOnRoles(tables), n, 'elever på roller != ' + n);                 // invariant: summen er altid N
+  const cards = G.cardCounts(tables), total = Object.values(cards).reduce((a, b) => a + b, 0);
+  const doubles = tables.reduce((a, t) => a + t.seats.reduce((x, s) => x + Math.max(0, s.students - 1), 0), 0);
+  assert.strictEqual(total, tables.length * roles.length + doubles, 'kortantal følger ikke planen, n=' + n);
+  const noStudent = tables.reduce((a, t) => a + t.seats.filter(s => s.students === 0).length, 0);
+  assert.strictEqual(total, n + noStudent, 'kort = elever + roller uden egen elev, n=' + n);   // hver stemmende rolle har sit kort
+}
+assert.throws(() => G.planTables(2, roles, rules));
+assert.strictEqual(G.planTables(3, roles, rules)[0].seats.filter(s => s.mergedInto).length, 2);
+const fr = { boardSize: 6, minStudents: 11, teams: ['p1', 'p2', 'p3', 'p4', 'p5'].map(id => ({ id, navn: id })), restOrder: ['p2', 'p3', 'p5', 'p1', 'p4'] };
+for (let n = 11; n <= 80; n++) { const p = G.planBoardAndTeams(n, fr); assert.strictEqual(p.board + p.teams.reduce((a, t) => a + t.students, 0), n); assert(p.teams.every(t => t.students >= 1)); }
+assert(G.planBoardAndTeams(10, fr).warning);
+console.log('gruppeplan: bord-plan holder for 4 til 80 elever (' + tablesSeen + ' borde, ' + merged + ' sammenlagte roller), og bestyrelse + teams holder for 11 til 80');
+```
+
+Oplåsning og streaming testes sådan (gem koden ovenfor som `laerer-kerne.js` og kræver låsegeneratoren `laas.cjs` fra afsnit 20; kør `node laerer_test.cjs .`):
+
+```javascript
+const assert = require('assert'), K = require(process.argv[2] + '/laerer-kerne.js'), { lock } = require(process.argv[2] + '/laas.cjs');
+(async () => {
+  const pack = await lock('lang-tilfaeldig-kode-71', { titel: 'Test', roller: [1, 2] });
+  assert.deepStrictEqual((await K.unlock(' lang-tilfaeldig-kode-71 ', pack)).roller, [1, 2]);
+  await assert.rejects(() => K.unlock('forkert', pack), /Forkert lærerkode/);
+  // SSE med tænketokens, og med datablokke der brydes midt i en linje
+  const ev = o => 'data: ' + JSON.stringify({ candidates: [{ content: { parts: o } }] }) + '\n\n';
+  const sse = ev([{ thought: true, text: 'INTERN TANKE' }, { text: 'Hej ' }]) + ev([{ text: 'læreren' }]) + ev([{ thought: true, text: 'mere tanke' }]) + 'data: [DONE]\n\n';
+  const bytes = new TextEncoder().encode(sse);
+  for (const cut of [7, 31, 64, 99]) {
+    const body = new ReadableStream({ start(c) { c.enqueue(bytes.slice(0, cut)); c.enqueue(bytes.slice(cut)); c.close(); } });
+    const res = new Response(body, { headers: { 'content-type': 'text/event-stream' } });
+    const seen = []; const full = await K.readReply(res, t => seen.push(t));
+    assert.strictEqual(full, 'Hej læreren'); assert(!full.includes('TANKE') && !full.includes('tanke'));
+  }
+  const json = new Response(JSON.stringify({ candidates: [{ content: { parts: [{ thought: true, text: 'x' }, { text: 'JSON-svar' }] } }] }), { headers: { 'content-type': 'application/json' } });
+  assert.strictEqual(await K.readReply(json), 'JSON-svar');
+  console.log('laerer-kerne: oplåsning (rigtig/forkert kode) og streaming (4 brudte stykker + JSON, tænketokens filtreret) består');
+})().catch(e => { console.error(e); process.exit(1); });
+```
+
+**Layoutlås og oplåsning i cockpittet.** Kravet er, at skrivefeltet (`.composer` og `#chatInput`) aldrig skubbes ud af skærmen af en lang lærerguide i sidepanelet. `body.in-workspace`, `#cockpitView` og `.dshell` har en ubrudt flex-kæde (`height: 100vh; overflow: hidden; display: flex; flex-direction: column;` med `min-height: 0`), og chatten og panelets indhold ruller hver for sig (`overflow-y: auto`, fx på `.chat-scroll` og `.panel-content`). Ved 800 px skærmhøjde skal skrivefeltets bund ligge på højst 800 px uden at hele vinduet ruller (afsnit 16). Målt i den nyeste casespil.dk med en meget lang lærerguide: Kommunalbudget 762 af 800 px og Fjord 764 af 800 px, uden lodret scroll (Fjord lå 1824 px nede i første udgave). Testen nedenfor bygger sit eget låste bundt med en opdigtet nøgle og mocker adgangs-API'et (`page.route`), så en rigtig nøgle eller et rigtigt token aldrig bruges. Den tjekker, at et udløbet, ugyldigt eller utilgængeligt token ikke åbner cockpittet, at det ikke hjælper at taste bundtets nøgle i feltet (ingen lokal omvej), at et frisk token åbner og straks fjernes fra adresselinjen, og layoutet ved fire bredder. Den består mod begge spil i casespil.dk (dd294e8, 30 kontroller):
+
+```javascript
+// test_cockpit.cjs: lærerens cockpit i en rigtig browser med mock af adgangs-API'et. Testen bygger sit eget låste bundt
+// med sin egen nøgle, så en rigtig nøgle eller et rigtigt token aldrig bruges.
+// Kør (siden serveres på localhost): node test_cockpit.cjs <mappen med laas.cjs>
+const { chromium } = require('playwright'), { lock } = require(process.argv[2] + '/laas.cjs');
+const CONFIG = {
+  base: 'http://127.0.0.1:8774/', key: 'AB-3f9c0e7d21b8',               // bundtets (opdigtede) nøgle
+  token: 'a1b2c3d4e5f60718293a4b5c6d7e8f90',                            // 32 hex-tegn = 128 bit
+  games: { kommunebudget: { type: 'tables' }, fjord: { type: 'board_and_teams', boardRoles: [] } },
+  roles: [['familier', 3], ['aeldre', 3], ['unge', 2], ['erhverv', 2], ['klima', 2]]
+};
+let failed = 0;
+const check = (ok, text) => { console.log((ok ? 'OK    ' : 'FEJL  ') + text); if (!ok) failed++; };
+
+(async () => {
+  const roller = CONFIG.roles.map(([id, stemmer], i) => ({ id, titel: id, stemmer, kode: String(1000 + i), maal: 'Mål', skjult: 'Hemmeligt kompromis. '.repeat(30), dilemmaer: 'D' }));
+  const browser = await chromium.launch();
+  for (const [game, regler] of Object.entries(CONFIG.games)) {
+    const data = { gameId: game, titel: 'Test', fag: 'F', grupperegler: regler, roller,
+      faser: [{ nr: 1, navn: 'Fase A', handling: 'h', rad: 'r' }], begreber: [{ begreb: 'B', forklaring: 'f' }],
+      guide: Array.from({ length: 40 }, (_, i) => ({ titel: 'Sektion ' + i, afsnit: ['Lang tekst. '.repeat(80)] })),
+      cheatsheet: Array.from({ length: 12 }, (_, i) => ({ spoergsmaal: 'Spørgsmål ' + i, modelsvar: 'Modelsvar. '.repeat(60) })) };
+    const config = 'window.TEACHER_CONFIG=' + JSON.stringify({ gameId: game, gameTitle: 'T', bundle: await lock(CONFIG.key, data) }) + ';';
+    // API-svar pr. scenarie: serveren er den eneste, der kan levere nøglen
+    const api = { friskt: { success: true, key: CONFIG.key, expires_at: '2099-01-01 00:00:00' }, udloebet: { success: false, expired: true, error: 'udløbet' }, ugyldigt: { success: false, error: 'ugyldigt' } };
+    const open = async (w, h, scenarie, query) => {
+      const ctx = await browser.newContext({ viewport: { width: w, height: h }, isMobile: w < 500, hasTouch: w < 500 }), page = await ctx.newPage(), errors = [], calls = [];
+      page.on('pageerror', e => errors.push(e.message));
+      await page.route('**/laererdata.js', r => r.fulfill({ body: config, contentType: 'application/javascript' }));
+      await page.route('**/api/laereradgang.php', r => { calls.push(JSON.parse(r.request().postData() || '{}')); r.fulfill({ body: JSON.stringify(api[scenarie]), contentType: 'application/json' }); });
+      await page.goto(`${CONFIG.base}${game}/laerer-assistent.html${query || ''}`);
+      await page.waitForTimeout(1500);
+      return { ctx, page, errors, calls };
+    };
+    const hidden = page => page.evaluate(() => document.getElementById('cockpitView').hidden);
+    // 1. Udløbet, ugyldigt og netværksfejl åbner ikke, og en kendt nøgle kan ikke bruges som omvej
+    for (const sc of ['udloebet', 'ugyldigt']) {
+      const { ctx, page } = await open(1300, 800, sc, '?token=' + CONFIG.token);
+      check(await hidden(page), `${game}: ${sc} token åbner ikke cockpittet`);
+      await page.fill('#teacherCodeInput', CONFIG.key); await page.click('#authForm button'); await page.waitForTimeout(1200);
+      check(await hidden(page), `${game}: ${sc}: at taste bundtets nøgle åbner stadig ikke (ingen lokal omvej)`);
+      await ctx.close();
+    }
+    { const ctx = await browser.newContext(), page = await ctx.newPage();
+      await page.route('**/laererdata.js', r => r.fulfill({ body: config, contentType: 'application/javascript' }));
+      await page.route('**/api/laereradgang.php', r => r.abort());
+      await page.goto(`${CONFIG.base}${game}/laerer-assistent.html?token=${CONFIG.token}`); await page.waitForTimeout(1500);
+      check(await hidden(page), `${game}: netværksfejl åbner ikke cockpittet (ingen offline-fallback)`); await ctx.close(); }
+    // 2. Frisk token: åbner, serveren kaldes med tokenet, og tokenet er væk fra adresselinjen
+    for (const [w, h] of [[1300, 800], [1100, 700], [390, 800], [320, 800]]) {
+      const { ctx, page, errors, calls } = await open(w, h, 'friskt', '?token=' + CONFIG.token);
+      const m = await page.evaluate(() => { const r = document.getElementById('btnSend').getBoundingClientRect(); return {
+        open: !document.getElementById('cockpitView').hidden, search: location.search, bottom: Math.round(r.bottom), shown: r.height > 0, vh: innerHeight,
+        vscroll: document.documentElement.scrollHeight - innerHeight, hscroll: document.documentElement.scrollWidth - innerWidth }; });
+      check(m.open && !errors.length, `${game} ${w}px: frisk token åbner, ${errors.length} JavaScript-fejl`);
+      if (w === 1300) {
+        check(m.search === '', `${game}: tokenet er fjernet fra adresselinjen`);
+        check(calls.length >= 1 && calls.every(c => c.action === 'verify' && c.token === CONFIG.token), `${game}: kun verify med tokenet blev sendt`);
+      }
+      if (w >= 900) check(m.shown && m.bottom <= m.vh && m.vscroll <= 0, `${game} ${w}x${h}: skrivefeltets bund ${m.bottom}px af ${m.vh}px, lodret scroll ${m.vscroll}px`);
+      else check(m.hscroll <= 0, `${game} ${w}px: vandret scroll ${m.hscroll}px`);
+      await ctx.close();
+    }
+  }
+  await browser.close();
+  console.log(failed ? `\n${failed} fejl` : '\nAlt bestået'); process.exit(failed ? 1 : 0);
+})();
+```
+
+Kør `node --check` på alle scripts, og se skærmbillederne af de vigtigste sider, ikke kun tallene. Vent på konkrete elementer og tilstande (`waitForSelector`), ikke på faste pauser.
+
+## 22. Kildemappe og distributionsmappe
+
+Når siderne genereres fra skabeloner og data, er der to mapper: en kildemappe og den distribuerede mappe, som ligger på webstedet. (Afsnittet bygger på oplysninger fra spiludviklingen. Kildemapperne til Kommunalbudget var ikke tilgængelige, da afsnittet blev skrevet.)
+
+- **Typisk kildemappe:** `data/` med spillets data (fx `spil.json`, `laerer.json`), `produktion/` med skabeloner og generatorer (`webskabeloner/`) og `kvalitet/` med tests og en rapport over seneste kørsel.
+- **Redigér ét sted.** Ret skabelonerne i kildemappen, og generér ud. Rettes en side kun i den distribuerede mappe, overskriver den næste generering rettelsen. Rettes den distribuerede side direkte (fx for at teste), porteres rettelsen til skabelonen samme dag.
+- **Efter hver ændring:** generér, kør testene, og læs rapporten. Kontrollér med en `diff`, at den distribuerede mappe svarer til det, generatoren producerer.
+- **Backup før ændring** gælder også her (grundregel 3).
+
+## 23. Katalog og mappestruktur på tværs af spil
+
+Flere spil kan bo på samme domæne og findes via et fælles katalog.
+
+- **Én mappe pr. spil** (`fjord/`, `kommunebudget/`), hver med de faste sidenavne fra afsnit 1. Billeder og lyd ligger i spillets egen mappe.
+- **`cases.json` i roden** beskriver hvert spil: `mappe`, `titel`, `fag`, `fag_noegle`, `niveau`, `begreber`, `tekst`, `billede` og `status` (`klar` eller `kommer`). Katalogsiden bygger kortene ud fra filen, filtrerer efter fag (via `#fag` i adressen, så et filter kan deles som link) og linker til `mappe/`.
+- Et nyt spil tilføjes ved at oprette mappen og en post i `cases.json`. Ingen kode skal ændres.
+- Kataloget er et sted, hvor `loading="lazy"` er rimeligt, fordi billederne er mange og står under skærmbunden (afsnit 7).
+
+## 24. Lærerens cockpit (lærer-assistent)
+
+Lærerens eget arbejdsbord bag lærerkoden. Det er afprøvet i to spil (Kommunalbudget og Fjord Outdoor), og afsnittet beskriver både, hvad der virker, og de fælder, der blev fundet ved gennemgang af første udgave.
+
+**Filer:** `laerer-assistent.html` (siden), `laerer-motor.js` (den fælles motor) og `laererdata.js` (det krypterede databundt, genereret af et script). Siden indlæser `window.TEACHER_CONFIG = { gameId, gameTitle, proxyUrl, proxyToken, bundle: { salt, iv, data } }`. Proxyens adresse og token kommer altså fra spillets datasæt og ikke fra motoren. Motoren ligger kun i roden af sitet; spillets cockpit indlæser den med `<script src="../laerer-motor.js">`, og der må aldrig ligge kopier i spilmapperne. Der er ingen `masterHash` og intet SHA-256-tjek i koden (det blev fundet og fjernet efter første udgave, se nedenfor).
+
+**Databundtets indhold (efter dekryptering):** `gameId`, `titel`, `fag`, `grupperegler`, `faser` (`nr`, `navn`, `handling`, `rad`), `begreber` (`begreb`, `forklaring`), `roller` (`id`, `titel`, `stemmer`, `kode`, `maal`, `skjult`, `dilemmaer`, evt. `front` og `back`), `guide` (en liste af `{ titel, afsnit: [...] }`) og `cheatsheet` (en liste af `{ spoergsmaal, modelsvar, faglig_begrundelse, typisk_fejl }`). Bundtet bygges af samme script som lærerpakken (afsnit 20), så det altid svarer til rollekortene. Prompten bygges af `faser`, `begreber` og `roller` i bundtet, så fasenavne og begreber kun står ét sted.
+
+**Sikkerhed:**
+
+- Alt fortroligt (lærerguide, facit, rollekort med hemmelige kompromiser, rollekoder) ligger kun i det krypterede bundt og dekrypteres i hukommelsen. Intet af det står i klartekst i siden.
+- **Kontrollér koden ved dekrypteringen, ikke med en hurtig hash.** Kravet er: ingen `masterHash`, intet SHA-256-tjek i JavaScript. Koden verificeres udelukkende under selve dekrypteringen med Web Crypto: PBKDF2 (100 000 runder, SHA-256) og AES-256-GCM. En forkert kode fejler af sig selv på AES-GCM's autentificeringstag. Første udgave gemte en `masterHash` (SHA-256 af lærerkoden) og sammenlignede, før den dekrypterede. Målt: ca. 16 000 SHA-256-forsøg i sekundet mod ca. 20 PBKDF2-forsøg i sekundet, altså ca. 800 gange hurtigere, og specialværktøj er mange størrelsesordener hurtigere end en browser. Hashen var derfor en genvej til at gætte lærerkoden uden om nøgleudledningen. Den er fjernet i den nyeste casespil.dk, og det er afprøvet, at en forkert kode afvises af dekrypteringen, og at motoren ikke længere indeholder `masterHash` eller `digest('SHA-256')`.
+- Bundtets nøgle er lang og tilfældig (mindst 12 tilfældige tegn, fx et præfiks og 24 hex-tegn) og indtastes aldrig af en lærer. Den ligger i `data/keys.php` (lukket for web, i `.gitignore`) eller i miljøvariabler og leveres kun af serveren til et gyldigt token (afsnit 25). Gem den højst i `sessionStorage` (den forsvinder, når fanen lukkes), og slet den ved "Lås". På en fælles computer bør læreren låse, før vedkommende forlader computeren. Cockpittet har ingen lokal dekrypteringsfallback.
+- Proxyens `appId` er ikke en lås (alle kan læse den), så cockpittet og elevernes rådgiver kan ikke skelnes af proxyen. Dagsloft og herkomstbegrænsning på proxyen (afsnit 3) er det, der beskytter.
+
+Oplåsning og streaming (afprøvet med rigtig og forkert kode og med datablokke, der brydes midt i en linje, inklusive tænketokens, der aldrig må vises):
+
+```javascript
+// laerer-kerne.js: oplåsning og streaming til lærer-assistenten (Node 18+ og browser)
+(function (g) {
+  const b64 = s => Uint8Array.from(atob(s), c => c.charCodeAt(0));
+
+  // Oplåsning: den eneste kontrol er, at AES-GCM kan dekryptere. Gem IKKE en hurtig hash af koden til et "tjek først".
+  // En hash kan afprøves ca. 800 gange hurtigere end PBKDF2, så den ville omgå hele nøgleudledningen.
+  async function unlock(code, pack) {
+    if (!g.crypto || !g.crypto.subtle) throw Error('Åbn siden via HTTPS eller localhost.');
+    const base = await g.crypto.subtle.importKey('raw', new TextEncoder().encode(code.trim()), 'PBKDF2', false, ['deriveKey']);
+    const key = await g.crypto.subtle.deriveKey({ name: 'PBKDF2', salt: b64(pack.salt), iterations: 100000, hash: 'SHA-256' },
+      base, { name: 'AES-GCM', length: 256 }, false, ['decrypt']);
+    try {
+      const plain = await g.crypto.subtle.decrypt({ name: 'AES-GCM', iv: b64(pack.iv) }, key, b64(pack.data));
+      return JSON.parse(new TextDecoder().decode(plain));      // data lever kun i hukommelsen
+    } catch (e) {
+      throw Error('Forkert lærerkode.');                        // forkert nøgle giver altid en fejl fra AES-GCM
+    }
+  }
+
+  // Tekst fra ét svarstykke: tænketokens (p.thought) må aldrig vises
+  function textOf(v) {
+    return ((v.candidates && v.candidates[0] && v.candidates[0].content && v.candidates[0].content.parts) || [])
+      .filter(p => !p.thought && p.text).map(p => p.text).join('');
+  }
+
+  // Læser et svar fra proxyen, både som SSE-strøm (text/event-stream) og som almindelig JSON
+  async function readReply(res, onChunk) {
+    if (!(res.headers.get('content-type') || '').includes('event-stream')) {
+      const text = textOf(await res.json()); onChunk && onChunk(text); return text;
+    }
+    const reader = res.body.getReader(), decoder = new TextDecoder();
+    let buffer = '', full = '';
+    for (;;) {
+      const { value, done } = await reader.read();
+      buffer += decoder.decode(value || new Uint8Array(), { stream: !done });
+      const lines = buffer.split('\n');
+      buffer = lines.pop();                                     // en halv linje venter på næste stykke
+      if (done && buffer) { lines.push(buffer); buffer = ''; }
+      for (const line of lines) {
+        if (!line.trim().startsWith('data:')) continue;
+        const raw = line.trim().slice(5).trim();
+        if (!raw || raw === '[DONE]') continue;
+        try { const piece = textOf(JSON.parse(raw)); if (piece) { full += piece; onChunk && onChunk(full); } } catch (e) { /* ufuldstændig linje */ }
+      }
+      if (done) break;
+    }
+    return full;
+  }
+  g.LaererKerne = { unlock, readReply, textOf };
+  if (typeof module !== 'undefined') module.exports = g.LaererKerne;
+})(typeof window === 'undefined' ? globalThis : window);
+```
+
+**Motoren er fælles, data er spillets egne.** Standarden er, at motoren (`laerer-motor.js`) er 100 % agnostisk og datadrevet, og at der findes én kopi i roden af sitet:
+
+- Auth, dekryptering, beregnere, markdown til chatten, printlister og proxykaldet ligger i motoren. Alt, der handler om det enkelte spil (spilnavn, initiativlister, projektteams, stemmetal, faser, roller, begreber, printtekster og grupperegler), leveres i bundtet via `window.TEACHER_CONFIG` og dekrypteres.
+- `buildSystemPrompt()` bygger sine faser, begreber og roller dynamisk af bundtet (`data.faser`, `data.begreber`, `data.roller`) og indeholder reglerne om ingen faste minuttal, ingen rituelle fraser og ingen lange tankestreger. Proxyens adresse og token modtages som `config.proxyUrl` og `config.proxyToken`, og motoren fejler tydeligt, hvis de mangler, i stedet for at falde tilbage til et andet spils proxy.
+- Der ligger ingen kopier i `fjord/` eller `kommunebudget/`. Tilføj en test, der fejler, hvis en `laerer-motor.js` findes i en spilmappe, og en, der søger i motoren efter spilnavne og kendte konstanter (fx en liste af forbudte ord taget fra spillenes data).
+- Første udgave havde fasenavne i prompten, spilkonstanter (projektnavne, bordstørrelse, stemmetal, `gameId`-forgreninger) og en reservekonstant til et andet spils proxy, og motoren lå i tre byte-identiske kopier. Alt det er flyttet til data og samlet i én kopi i casespil.dk (dd294e8).
+
+**Gruppe- og holdberegner.** Den er en ren funktion, som returnerer en plan. Visningen og printlisten bygger begge på planen, og printtallene er en projektion af planen og ikke en separat formel. Kravet er en gyldig fordeling for alle elevtal fra 4 til 60 og summen af elever på roller lig med antal elever uden undtagelse. Første udgave beregnede printlisten med `ceil(n/5)` og `floor(n/5)` og satte én elev på hver af fem roller, også ved et bord med fire elever: pladserne summerede ikke ved 23 af 57 elevtal, og rollekortene stemte hverken med elevtallet eller planen ved 34 af 57. Standarden er nu: Σ elever = N for alle elevtal fra 4 til 60, og antal rollekort er `max(elever, 1)` for hver stemmende rolle. Fjords projektteams viser nu det faktiske spænd, "4 til 5 pr. team" ved 30 elever. Koden nedenfor er datadrevet, har invarianter, og er testet for 4 til 80 elever (647 borde):
+
+```javascript
+// gruppeplan.js: ren funktion uden DOM. Én plan bruges til visning, til printtal og til tests.
+(function (g) {
+  // Type 1: borde, hvor hvert bord har alle roller (Kommunalbudget).
+  // rules: { targetSize, merge: [[rolle, ind i rolle], ...], double: [rolle, ...] }
+  function planTables(n, roles, rules) {
+    n = Math.floor(n);
+    const k = roles.length, target = rules.targetSize || k;
+    if (!(n >= k - rules.merge.length)) throw Error('Mindst ' + (k - rules.merge.length) + ' elever kræves.');
+    const count = Math.max(1, Math.round(n / target)), tables = [];
+    for (let t = 0; t < count; t++) {
+      const size = Math.floor(n / count) + (t < n % count ? 1 : 0);
+      const seats = roles.map(r => ({ id: r.id, titel: r.titel, stemmer: r.stemmer, students: 1, mergedInto: null }));
+      let free = size - k;                                   // negativ: for få elever, positiv: for mange
+      for (const [from, into] of rules.merge) {              // slå roller sammen, til der er elever nok
+        if (free >= 0) break;
+        const s = seats.find(x => x.id === from);
+        s.students = 0; s.mergedInto = into; free++;
+      }
+      for (let i = 0; free > 0; i++, free--) seats.find(x => x.id === rules.double[i % rules.double.length]).students++;
+      if (free !== 0) throw Error('Bordet kan ikke fordeles: ' + size + ' elever.');
+      tables.push({ nr: t + 1, size, seats });
+    }
+    return tables;
+  }
+  // To forskellige tal, som begge skal kunne forklares:
+  // 1. Elever på roller: summen skal altid være lig med antal elever (planens invariant).
+  function studentsOnRoles(tables) {
+    return tables.reduce((a, t) => a + t.seats.reduce((x, s) => x + s.students, 0), 0);
+  }
+  // 2. Rollekort at printe pr. rolle: max(elever, 1) pr. bord. En stemmende rolle uden egen elev (delt af en nabo) SKAL have
+  //    et kort, ellers er summen kun lig med N, fordi kortet er udeladt, og bordets stemmer er ikke repræsenteret.
+  function cardCounts(tables) {
+    const out = {};
+    for (const t of tables) for (const s of t.seats) out[s.id] = (out[s.id] || 0) + Math.max(1, s.students);
+    return out;
+  }
+
+  // Type 2: én bestyrelse og flere projektteams (Fjord Outdoor).
+  // rules: { boardSize, minStudents, teams: [{ id, navn }], restOrder: [id, ...] }
+  function planBoardAndTeams(n, rules) {
+    n = Math.floor(n);
+    if (n < rules.minStudents) return { warning: 'For få elever (' + n + '). Kør en miniversion.', minStudents: rules.minStudents };
+    const rest = n - rules.boardSize, base = Math.floor(rest / rules.teams.length);
+    const teams = rules.teams.map(t => ({ id: t.id, navn: t.navn, students: base }));
+    let extra = rest % rules.teams.length;
+    for (const id of rules.restOrder) if (extra > 0) { teams.find(t => t.id === id).students++; extra--; }
+    return { board: rules.boardSize, teams };
+  }
+  g.Gruppeplan = { planTables, studentsOnRoles, cardCounts, planBoardAndTeams };
+  if (typeof module !== 'undefined') module.exports = g.Gruppeplan;
+})(typeof window === 'undefined' ? globalThis : window);
+```
+
+- **Regler i data (eksempel):** `{ targetSize: 5, merge: [['klima', 'unge'], ['erhverv', 'aeldre']], double: ['familier', 'aeldre'] }` for borde, og `{ boardSize: 6, minStudents: 11, teams: [...], restOrder: ['p2', 'p3', 'p5', 'p1', 'p4'] }` for bestyrelse og teams. `restOrder` skal være den samme som lærerguidens differentieringsregel, ellers siger guide og cockpit to forskellige ting.
+- **Beslutning: en rolle uden elev får stadig et kort.** Ved et bord med under 5 elever tildeles eleverne 1 pr. rolle efter prioritet (rækkefølgen er `merge`-listen i reglerne). De roller, der ikke får en elev, deles af en naborolle (`mergedInto`), men modtager altid et fysisk rollekort: kort = `max(elever, 1)` for stemmende roller. Så er alle bordets stemmer repræsenteret i forhandlingen og afstemningen (ved 4 elever 12 af 12 stemmer i stedet for 10), og Σ elever = N gælder stadig. Planen viser begge tal: elever på roller (altid N) og kort at printe. Beslutningen står også i lærerguiden (sektion 4) og i rollekortenes printregler.
 - **Printlisten** bygges af planen og af formen (papir, hybrid, digital). Skriv ikke faste intervaller i teksten, men udled dem af planen (første udgave skrev "2 til 4 pr. team" ved 30 elever, hvor det er 4 til 5; nu udledes spændet af planen).
 - Under minimumsantallet vises en advarsel og et råd om en miniversion (`casespil-miniversion`), ikke en plan.
 
@@ -1081,78 +1366,82 @@ const check = (ok, text) => { console.log((ok ? 'OK    ' : 'FEJL  ') + text); if
 - **Mobil:** de tre kolonner bliver faner. Layoutlåsen og fælderne i afsnit 16 gælder også her (og blev først fundet i cockpittet, da en lang lærerguide skubbede skrivefeltet ud).
 - Indsæt tekst fra bundtet med `escapeHtml` eller `textContent`. Markdown i chatten laves først efter, at teksten er escapet.
 
-## 25. Lærernes adgang: personlig e-mail, magic link og 7 dages udløb
+## 25. Lærernes adgang: personligt 1-klik link med 128-bit token og 7 dages udløb
 
-Dette afsnit er standarden for, hvordan lærere får adgang til cockpittet og materialerne. Det er en designbeskrivelse med skitseret serverlogik. Endepunktsskitsen er kørt mod SQLite i hukommelsen (udsted, åbn, ugyldigt token, forfalsket udløb), men mail, rate limiting og godkendelse er ikke afprøvet her, så kør testene nederst på din egen løsning, før den tages i brug.
+Standarden for, hvordan lærere får adgang til cockpittet og materialerne. Den er implementeret i casespil.dk (commit dd294e8), og de fælder, der blev fundet i den første udgave, står nederst, fordi de er lette at gentage.
 
-**Hvorfor ikke en fast kode.** En fast kode i en mail eller i kildekoden lever videre: den videresendes til en kollega, ender hos en elev eller stadig virker hos en klasse tre år senere. Den bundtnøgle, der låser `laererdata.js`, er derfor aldrig det, lærerne får. De får en personlig, kortlivet adgang, som serveren veksler til nøglen.
+**Principper:**
+
+- Læreradgang sker udelukkende via lærer-assistenten (`laerer-assistent.html`) med et personligt 1-klik link: `…/laerer-assistent.html?token=<32 hex-tegn>` (128 bit, `bin2hex(random_bytes(16))`).
+- Linket hører til lærerens skolemail og er gyldigt i 7 dage. Der findes ingen korte koder (fx `L-XXXXXX`) som selvstændig adgang, ingen offentlig `laerer.html` downloadside og ingen statisk masternøgle til materialerne. Dokumenter hentes kun inde fra cockpittet med `motor.downloadMaterials()`.
+- Dekrypteringsnøglerne ligger i `data/keys.php` eller miljøvariabler uden for git. Serveren veksler et gyldigt token til nøglen. Et felt, hvor læreren kan indsætte linket eller tokenet, er i orden, hvis værdien kun sendes til `verify` (og et helt indsat link skæres ned til tokenet). Cockpittet har intet felt eller kode, der dekrypterer med noget indtastet, og ingen lokal dekrypteringsfallback.
 
 **Flow:**
 
-1. Læreren skriver sin skolemail i formularen i cockpittet (eller på kodeskærmen) og sender den med et `fetch` (AJAX) til `api/laereradgang`. Ingen sidegenindlæsning.
-2. Serveren validerer adressen, rate-limiter og slår op: er adressen forhåndsgodkendt, eller hører domænet til en godkendt skole?
-3. **Kendt:** serveren laver en tilfældig engangskode, gemmer kun dens hash sammen med mailadresse, spil og `expires_at` (nu plus 7 dage), og sender mailen straks. Svaret til siden er "sendt", uanset om adressen var kendt eller ej (så svaret ikke afslører, hvem der er godkendt).
-4. **Ukendt:** serveren gemmer en anmodning og underretter administratoren, som godkender med ét klik. Godkendelsen sender læreren det friske link.
-5. Mailen indeholder et magic link `…/laerer-assistent.html?kode=<personlig kode>`. Cockpittet læser parameteren, fjerner den straks fra adresselinjen med `history.replaceState`, og kalder `api/laereradgang` med `action: "aabn"` og koden.
-6. Serveren sammenligner hashen, tjekker `expires_at` og mailadressen og svarer med enten bundtets nøgle (med `Cache-Control: no-store`) eller en statuskode (`udloebet`, `ugyldig`). Nøglen bruges straks til `unlock()` (afsnit 24) og gemmes højst i `sessionStorage`.
-7. Er linket udløbet, viser cockpittet den venlige besked og formularen med mailadressen udfyldt (serveren kan sende adressen med tilbage, hvis den kendes), så et nyt link kan bestilles med ét klik.
+1. Læreren skriver sin skolemail i formularen i cockpittet, som sender den med `fetch` (AJAX) til `api/laereradgang.php` (`action: "request"`). Ingen sidegenindlæsning.
+2. Serveren validerer adressen, rate-limiter og slår op: er adressen forhåndsgodkendt, eller hører domænet til en godkendt skole? Er den det, sendes mailen straks. Ellers gemmes en anmodning, og administratoren underrettes.
+3. **Svaret er altid det samme** uanset udfaldet (`success: true`, `status: "received"` og en tekst som "Hvis din skolemail er godkendt, har vi sendt dit personlige 7-dages adgangslink til din indbakke. Hvis din skole endnu ikke er forhåndsgodkendt, behandles anmodningen hurtigst muligt."). Så kan ingen udtrække godkendte adresser, og svaret afslører heller ikke, at grænsen på 3 mails i timen er nået.
+4. Mailen indeholder linket med tokenet og standardteksten:
+
+   > Dette adgangslink er gyldigt i 7 dage (indtil DD-MM-YYYY). Herefter skal du blot bestille et nyt link på siden.
+
+   Datoen er den faktiske udløbsdato, regnet ud på serveren, i formatet DD-MM-YYYY. Mailen indeholder ingen anden kode og ikke bundtets nøgle.
+5. Cockpittet læser `?token=`, kalder straks `history.replaceState(null, '', location.pathname)` og sender tokenet til `api/laereradgang.php` med `action: "verify"`.
+6. Serveren slår hashen op, tjekker `expires_at` og svarer med `{ success: true, key, expires_at }` (`Cache-Control: no-store`), `{ expired: true }` eller en fejl. Kun ved `success` bruges nøglen straks til `unlock()` (afsnit 24).
+7. **Alt andet stopper eksekveringen med det samme:** udløbet, ugyldigt, 429 eller netværksfejl viser en besked og afslutter med `return`. Ved udløb vises den venlige besked og formularen til at bestille et nyt link til samme adresse. Der prøves aldrig at dekryptere lokalt med noget indtastet. Sessionen gemmer også udløbstidspunktet, så en genindlæsning efter udløb låser cockpittet igen (`tryAutoUnlock`).
+
+**Rate limiting (påkrævet, pr. IP og pr. modtager):**
+
+| Handling | Grænse |
+|---|---|
+| `verify` | højst 10 pr. 10 minutter, heraf højst 5 fejlede; derefter 429 |
+| `request` (bestil link) | højst 5 pr. 10 minutter pr. IP; derefter 429 |
+| Mail til samme modtager | højst 3 pr. time (og ingen ny mail inden for et par minutter); tælles stille, så svaret forbliver ens |
+
+Gem forsøgene i en tabel `rate_limits (ip_address, action, is_failed, created_at)`, og slet gamle rækker løbende.
 
 **Datamodel (SQLite eller tilsvarende):**
 
-- `approved_emails (email unique, name)` og `approved_domains (domain unique, school_name)` til forhåndsgodkendelse. Domæner sammenlignes med små bogstaver.
-- `access_tokens (id, email, game_id, token_hash, expires_at, created_at, used_at)`. `token_hash` er SHA-256 af en tilfældig værdi på mindst 128 bit (`random_bytes(16)` eller mere i PHP, `crypto.randomBytes` i Node). Her er hash i orden, fordi værdien er helt tilfældig og lang og kan kun slås op, ikke gættes. Det er en anden situation end en lærerkode, som en person har fundet på.
-- `requests (email, name, school, game_id, status)` for ukendte adresser og `send_log (email, ip_address, sent_at)` til rate limiting (fx højst 5 pr. IP på 10 minutter, og et loft pr. adresse).
-- Slet udløbne rækker løbende.
+- `approved_emails (email unique, name)` og `approved_domains (domain unique, school_name)`. Domæner sammenlignes med små bogstaver.
+- `access_tokens (id, email, game_id, token_hash unique, expires_at, created_at)`. `token_hash` er SHA-256 af tokenet. En hash er i orden her, fordi tokenet er helt tilfældigt og 128 bit, så det kun kan slås op og ikke gættes (det er en anden situation end en kode, en person har fundet på). Slet udløbne rækker løbende.
+- `requests (email, name, school, game_id, status)`, `send_log (email, ip_address, sent_at)` og `rate_limits`.
 
-**Mailtekst.** Mailen er i spillets visuelle stil, nævner spillets navn og indeholder altid udløbsdatoen som en rigtig dato, regnet ud på serveren:
+**Nøgler og hemmeligheder:**
 
-> Dette adgangslink er gyldigt i 7 dage (indtil DD-MM-YYYY). Herefter skal du blot bestille et nyt link på siden.
+- Hent nøglerne fra miljøvariabler først og dernæst fra `data/keys.php`. Filen starter med `if (!defined('CASESPIL_SECURE_ACCESS')) { http_response_code(403); exit; }`, ligger i `.gitignore` (`data/*.php`, `data/*.json`, `data/*.sqlite`) og beskyttes af `data/.htaccess` (`Require all denied`). Genereres nøgler første gang, skal de bygges ind i bundterne med samme script (afsnit 20), og de gamle nøgler regnes som brændt, hvis de nogensinde har stået i git.
+- Administratorens adgangskode genereres tilfældigt første gang eller læses fra miljøet. Ingen standardadgangskode i kode. SMTP-oplysninger og `settings.json` ligger uden for git.
+- Udskift nøglerne, og byg bundtet på ny, ved semesterskifte eller mistanke om lækage. Udløbet af et link begrænser, hvor længe det kan hentes og deles, men tilbagekalder ikke data, som en lærer allerede har åbnet.
 
-Mailen indeholder ingen anden kode end den personlige. Den indeholder ikke bundtets nøgle. Linket bør ikke sendes videre; skriv det.
-
-**Skitse af endepunktet (PHP, forkortet):**
+**Skitse af serverlogik (PHP, forkortet; kørt mod SQLite i hukommelsen):**
 
 ```php
-// api/laereradgang.php (skitse). Forbered statements, svar altid som JSON, og brug aldrig mailadressen i et svar til en ukendt.
 function udsted_link(PDO $db, string $email, string $spil): array {
-    $raa = bin2hex(random_bytes(16));                          // 128 bit, vises kun i mailen
-    $udloeb = (new DateTimeImmutable('+7 days'));
+    $raa = bin2hex(random_bytes(16));                          // 128 bit = 32 hex-tegn, vises kun i mailen
+    $udloeb = new DateTimeImmutable('+7 days');
     $db->prepare('INSERT INTO access_tokens (email, game_id, token_hash, expires_at) VALUES (?,?,?,?)')
        ->execute([$email, $spil, hash('sha256', $raa), $udloeb->format('Y-m-d H:i:s')]);
     return [$raa, $udloeb->format('d-m-Y')];                   // datoen skal stå i mailen
 }
 function aabn(PDO $db, string $raa, string $spil, string $bundtNoegle): array {
-    $st = $db->prepare('SELECT email, expires_at FROM access_tokens WHERE token_hash = ? AND game_id = ?');
-    $st->execute([hash('sha256', $raa), $spil]);
+    if (!preg_match('/^[0-9a-f]{32}$/', $raa)) return ['status' => 'ugyldig'];   // kun tokenet er adgang
+    $st = $db->prepare('SELECT email, expires_at FROM access_tokens WHERE token_hash = ?');
+    $st->execute([hash('sha256', $raa)]);
     $r = $st->fetch();
     if (!$r) return ['status' => 'ugyldig'];
-    if (strtotime($r['expires_at']) < time()) return ['status' => 'udloebet', 'email' => $r['email']];
-    return ['status' => 'ok', 'noegle' => $bundtNoegle];       // bundtNoegle ligger i en miljøvariabel eller en fil uden for webroden
+    if (strtotime($r['expires_at']) < time()) return ['status' => 'udloebet'];
+    return ['status' => 'ok', 'noegle' => $bundtNoegle];       // fra miljø eller data/keys.php
 }
 ```
 
-**Status i casespil.dk (commit 457fa0e) og fælderne deri.** Tokentabel, 7 dages udløb, serverside `verify`, udløbsbesked med mailadressen udfyldt og mail med udløbstidspunkt er nu på plads, og det virker som beskrevet. Ved gennemgang og en kørsel af koden lokalt (PHP og SQLite) viste fem ting sig, som standarden derfor kræver:
-
-1. **Den korte kode er den svageste adgang.** Ud over det lange token udsteder koden en kort kode (`L-` og 6 hex-tegn, 24 bit), som verify-endepunktet accepterer alene og slår op på tværs af alle lærere. Endepunktet har ingen rate limiting (kørt: 300 gæt i træk fik 300 svar uden 429), så en angriber kan prøve sig frem, og hvert ramt gæt giver bundtets nøgle. Brug kun det lange token som adgang. Skal der være en kort kode, så kun sammen med mailadressen, med mindst 64 bit, og med et loft pr. IP og pr. adresse på selve `verify`.
-2. **Nøglen er den samme for alle og står i kildekoden.** Serveren returnerer en fælles `master_key`, som står i `get_games_catalog()` og dermed i versionshistorikken (Fjords er et ord med årstal). Udløbet styrer kun, hvem der kan hente nøglen, ikke hvor længe nøglen virker. Hold nøglen uden for repoet (miljø eller fil uden for webroden), brug en tilfældig nøgle, og udskift den og byg bundtet på ny, når et semester slutter eller ved mistanke om lækage.
-3. **Klienten må ikke have en lokal omvej.** Cockpittet prøver serveren, men falder tilbage til at låse op lokalt med det indtastede, "hvis masternøgle eller offline", også når serveren har svaret `udloebet` på en tidligere, eller netværket fejler. Så omgår den, der kender en nøgle, hele udløbet. Svarer serveren ugyldig, udløbet eller en fejl, vises beskeden, og der låses ikke op lokalt. Offline-brug skal være et bevidst valg, ikke et fald tilbage.
-4. **Tokens gemmes som hash.** Tabellen gemmer token og kort kode i klartekst, så en læst database giver gyldig adgang. Gem SHA-256 af tokenet (afsnittets skitse) og slet udløbne rækker løbende.
-5. **Linket bliver stående i adresselinjen.** Cockpittet fjerner ikke `?token=` efter indlæsning. Kald `history.replaceState` straks, så linket ikke ligger i historik, skærmbilleder og `Referer`.
-
-Mindre afvigelser: mailen skriver "indtil 17.10.2026 kl. 16:46" og ikke den faste tekst med DD-MM-YYYY; svaret skelner mellem "sendt" og "afventer godkendelse", så et gæt kan afsløre, om en adresse er godkendt (det kan være et bevidst valg, men så skal det være et valg); udløbssvaret sender mailadressen tilbage til den, der har en udløbet kode (send den kun, når brugeren selv har tastet den); og der er ingen grænse pr. mailadresse, så en lærers indbakke kan oversvømmes. Administratorens standardadgangskode genereres stadig af kildekoden.
-
-**Krav til driften:**
-
-- Bundtnøglen, administratorens adgangskode og SMTP-oplysninger ligger uden for det, der serveres, og ikke i versionshistorikken. Ingen standardadgangskode i kildekoden: ved første kørsel genereres en tilfældig, som vises én gang, eller den læses fra miljøet.
-- Datamappen er lukket for web (`Require all denied`), og databasefilen ligger ikke i webroden, hvis hosten tillader det.
-- Mails sendes med afsenderdomænets SPF og DKIM, og administratoren har en testmail og et afsendelseslog, så man kan se, om en lærer fik sin mail.
-- Spillets egen mail (andre sprog, andet navn) bruger spillets navn fra datasættet, ikke en fast tekst.
-
 **Tests, der skal bestå:**
 
-1. Et kendt domæne får en mail med det samme, og mailen indeholder en udløbsdato 7 dage frem i formatet DD-MM-YYYY.
-2. En ukendt adresse får samme svar som en kendt, og administratoren får besked.
-3. Et friskt link åbner cockpittet; samme link efter forfalsket tid (sæt `expires_at` til i går) giver `udloebet`, den venlige besked og en formular med adressen udfyldt.
-4. Et gættet eller ændret token giver `ugyldig`, og 6 hurtige anmodninger fra samme IP giver svar 429.
-5. Linket står ikke længere i adresselinjen efter indlæsning, og nøglen ligger ikke i klartekst i HTML, JavaScript eller versionshistorik (`grep` i den publicerede mappe og `git log -S` på nøglen).
-6. `laerer.html?kode=…` ender i cockpittet, og ingen .docx, .pdf eller .zip kan hentes på en gæt-sti.
+1. Et kendt domæne får en mail med det samme, og mailen indeholder standardteksten med en udløbsdato 7 dage frem i formatet DD-MM-YYYY.
+2. En ukendt og en kendt adresse får præcis samme svar (samme JSON og samme statuskode).
+3. Et friskt link åbner cockpittet. Samme link med `expires_at` sat til i går viser den venlige besked og formularen, åbner ikke cockpittet, og det hjælper ikke at taste en kendt nøgle (`test_cockpit.cjs` ovenfor).
+4. Et gættet eller ændret token giver afvisning. En kort kode (`L-XXXXXX`) giver aldrig adgang. Gentagne fejlede `verify` fra samme IP giver 429 (kørt mod casespil.dk lokalt: 4 fejl, derefter 429).
+5. Efter indlæsning står kun stien i adresselinjen (`location.search` er tom).
+6. `git grep` og `git log -S` efter kendte nøgler og adgangskoder giver ingen fund, og `data/keys.php` er ikke sporet af git.
+7. `laerer.html` (hvis den findes) viderestiller kun til cockpittet. Ingen .docx, .pdf eller .zip kan hentes på en gæt-sti.
+8. Der findes kun én `laerer-motor.js` (i roden), og den indeholder ingen spilnavne.
+
+**Fælder fra første udgave (rettet i casespil.dk dd294e8):** en kort kode på 24 bit, der alene gav nøglen uden rate limiting (300 gæt i træk fik 300 svar); en fælles nøgle i kildekoden og versionshistorikken; en lokal omvej i klienten, der omgik udløbet; tokens i klartekst i databasen; tokenet i adresselinjen; en standardadgangskode til administratoren i kode; mailtekst med klokkeslæt i stedet for den faste tekst med DD-MM-YYYY; og svar, der skelnede mellem godkendt og ikke godkendt.

@@ -11,7 +11,7 @@
       "name": "casespilsdesigner",
       "source": "./plugins/casespilsdesigner",
       "description": "Design af casespil (også kaldet rollespil) og simuleringer til dansk gymnasieundervisning (STX): rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring.",
-      "version": "2.3.1"
+      "version": "2.4.0"
     },
     {
       "name": "bloom",

@@ -68,6 +68,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.4.0 (oktober 2026)
+- Skills opdateret efter sikkerhedsrevisionen på casespil.dk: personlige 1-klik links med 128-bit token og 7 dages udløb, ingen korte koder eller lokal fallback, nøgler uden for git, én agnostisk motor i roden og kort = `max(elever, 1)` ved små borde. Se plugin-READMEen.
+
 ### casespilsdesigner 2.3.1 (oktober 2026)
 - Adgangsstandarden for lærere er skærpet efter gennemgang af den nye implementering på casespil.dk: kun det lange token er adgang, tokens hashes, `verify` har rate limiting, ingen lokal omvej og ingen nøgle i kildekoden. Se plugin-READMEen.
 
