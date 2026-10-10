@@ -105,6 +105,12 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.1.0 (oktober 2026)
+- `casespil-digitale-tillaeg` er udvidet med erfaringerne fra Kommunalbudget (samfundsfag), så skillen dækker både erhvervsøkonomiske og samfundsfaglige casespil: valg af spiltype, pædagogiske principper for de digitale værktøjer, rådgiver uden forslagsknapper, startkrav som forberedelse og ikke som lås, fase- og kompromisregler, rådgiverens fanelayout på mobil, budget- og beslutningsværktøj, resultatkoder med kontrolsum, sammenligning på storskærm, krypteret lærerpakke, designsystem efter emne, billeder og forside, automatiserede tests og katalog på tværs af spil
+- `references/teknik.md` har fået afsnit 16 til 23 og opdaterede afsnit 1 til 7, 9 og 13. Kode til budgetlogik, resultatkode, låsegenerator, logiktest og browsertest er afprøvet mod Kommunalbudgets egen kode
+- Ærlig note om kodernes styrke: i Kommunalbudget kan alle fem 4-cifrede rollekoder slås op på under et sekund. Skillen beskriver, hvornår det er nok, og hvad der skal til, hvis skjult information skal tåle en målrettet elev
+- Ny triggertest `trigger-budget-1`
+
 ### v2.0.0 (oktober 2026)
 - Pluginet og alle skills hedder nu `casespil` i stedet for `rollespil`. Pluginet `rollespilsdesigner` er blevet til `casespilsdesigner` (installationsnavn `casespilsdesigner@kennethsplugins`), og skillene har skiftet gruppenavn fra `rollespil-` til `casespil-`: `casespil-nyt`, `casespil-miniversion`, `casespil-rollekort`, `casespil-laererguide`, `casespil-cheatsheet`, `casespil-sprogtjek`, `casespil-konsistenstjek`, `casespil-digitale-tillaeg`, `casespil-designprincipper` og `casespil-projektregler`. Skriv `/casespil` i Cowork for at se hele gruppen
 - Sproget i alle skills, README og materialer er nu casespil (fx casespilsside, `casespil.html` og menupunktet "Casespillet"). Ordet rollespil står kun som accepteret synonym i skillenes beskrivelser, så det stadig udløser dem, og i en ny ordvalgsregel i `casespil-projektregler`. Indholdet er ellers uændret
