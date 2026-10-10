@@ -105,6 +105,14 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.2.0 (oktober 2026)
+- `casespil-digitale-tillaeg` har fået et nyt afsnit om lærerens cockpit (lærer-assistent): krypteret databundt, kontrol af lærerkoden ved selve dekrypteringen, én fælles motor med spillets fakta i datasættet, gruppe- og holdberegner for to spiltyper, printliste for papir, hybrid og digital, AI-sparring med streaming, der filtrerer tænketokens, og hurtigopslag. `references/teknik.md` har nyt afsnit 24 med afprøvet kode og tests
+- Layoutregler: arbejdsbordet låses også, når der ligger en blok uden flex imellem (klassen `in-workspace`, `grid-template-rows: minmax(0, 1fr)`), gitter bruger `minmax(min(100%, 310px), 1fr)`, og vandrette menuer får `overflow-x: auto` (alt afprøvet ved 320 px)
+- `casespil-projektregler`: AI-assistenter følger sprogreglerne og henter data fra datasættet, fælles kode har ingen spilspecifikke fakta, beregnere har én plan og invarianter, fortroligt lærermateriale ligger krypteret, og layout testes med langt indhold
+- `casespil-laererguide`: regler for skæve elevtal, printtal for tre former og guiden som datakilde
+- Fund ved gennemgang af første udgave af cockpittet (rettes i spillene): gruppeplan og printtal passede ikke sammen ved mange elevtal, `masterHash` gav en hurtig genvej til at gætte lærerkoden, fasenavnene i prompten afveg fra datasættet, og Fjords cockpit havde ingen layoutlås
+- Ny triggertest `trigger-cockpit-1`
+
 ### v2.1.0 (oktober 2026)
 - `casespil-digitale-tillaeg` er udvidet med erfaringerne fra Kommunalbudget (samfundsfag), så skillen dækker både erhvervsøkonomiske og samfundsfaglige casespil: valg af spiltype, pædagogiske principper for de digitale værktøjer, rådgiver uden forslagsknapper, startkrav som forberedelse og ikke som lås, fase- og kompromisregler, rådgiverens fanelayout på mobil, budget- og beslutningsværktøj, resultatkoder med kontrolsum, sammenligning på storskærm, krypteret lærerpakke, designsystem efter emne, billeder og forside, automatiserede tests og katalog på tværs af spil
 - `references/teknik.md` har fået afsnit 16 til 23 og opdaterede afsnit 1 til 7, 9 og 13. Kode til budgetlogik, resultatkode, låsegenerator, logiktest og browsertest er afprøvet mod Kommunalbudgets egen kode

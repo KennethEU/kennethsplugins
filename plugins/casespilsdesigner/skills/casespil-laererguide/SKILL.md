@@ -14,6 +14,8 @@ allowed-tools:
 
 Denne skill sikrer at alle obligatoriske sektioner kommer med i lærerguiden. Brug `casespil-rollekort`-skillen for selve docx-produktionen.
 
+**Guiden er også en datakilde.** Lærerguiden vises i lærer-assistenten (`casespil-digitale-tillaeg`) som sektioner med titel og korte afsnit. Hold derfor sektionstitlerne faste (de 12 herunder), skriv ét afsnit pr. tanke, giv indhold, der står i en tabel, også en tekstversion, og skriv fasenavne og numre præcis som i casespillets datasæt og i rådgiverne.
+
 ## Fase 0: Saml kontekst (automatisk — FØR alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
@@ -44,10 +46,16 @@ Læreren italesætter selv rammen, så guiden indeholder INGEN indramningssætni
 ### 4. Roller og stemmefordeling
 Tabel med: Rolle | Organisation | Stemmer | Særlig beføjelse
 
+**Fordeling ved forskellige elevtal.** Skriv reglen for skæve elevtal ned, så læreren ikke skal finde på den undervejs, og så lærer-assistentens gruppeberegner siger det samme som guiden (én kilde):
+- Borde med ens roller: antal elever pr. bord, hvilke roller der dubleres, når bordet er større end antallet af roller (to elever deler kortet og afgiver ét fælles svar uden at ændre stemmetallet), og hvilke roller der slås sammen, når bordet er mindre
+- Bestyrelse og projektteams: bestyrelsens størrelse og i hvilken rækkefølge projektteamene får de ekstra elever, når resten ikke går op (differentieringsreglen)
+- Mindste elevtal: under det anbefales en miniversion (`casespil-miniversion`) i stedet for en plan
+
 ### 5. Forberedelse (lærer)
 Tjekliste med:
 - [ ] Print elevintroduktion (1 pr. elev)
-- [ ] Print rollekort (de versioner, der er lavet)
+- [ ] Print rollekort (de versioner, der er lavet). Tæl dem ud fra gruppeplanen: ét kort pr. elev på rollen plus ét til hvert bord, hvor rollen er slået sammen med en anden
+- [ ] Vælg form og skriv tallene: papir (alt på papir), hybrid (kort på papir, værktøjer digitalt) eller digital (kort og bilag på skærm). Angiv, hvad der ikke må ligge hos eleverne (fx fortrolige bilag og lærersæt)
 - [ ] Stil lokalet op
 - [ ] Test evt. digitalt værktøj
 - [ ] Elevintroduktion uddeles FØR rollekort
@@ -64,6 +72,8 @@ Tjekliste med:
 | Fase 2 — R3 | Forslag + afstemning | Hold styr |
 | Fase 3 | Debriefing (RAS) | Facilitator |
 | Afslutning | Exit-ticket | Uddel |
+
+Fasenavne og numre tages fra casespillets datasæt og står ens i guiden, elevintroduktionen, rollekortene og rådgiverne.
 
 ### 7. Faseovergangssignaler
 Konkrete sætninger med **fed** og *kursiv* til HVER overgang:
@@ -122,6 +132,7 @@ Konkrete sætninger med **fed** og *kursiv* til HVER overgang:
 | Én gruppe dominerer | Andre er passive | Justér stemmevægte |
 | Deadlock | Ingen kan blive enige | Kompromisrolle, sænk flertal |
 | For personligt | Elev virker ked | Stop, adressér, genopbyg |
+| Skæve elevtal | Nogle borde har færre elever end roller, eller en rolle har to elever | Følg fordelingsreglen i sektion 4: dublér de store roller, eller slå beslægtede roller sammen |
 
 ### 12. Variationer
 Beskriv mindst 2 variationer af casespillet:
