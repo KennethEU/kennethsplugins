@@ -389,6 +389,29 @@ Rådgiveren er et arbejdsbord, ikke en chatboks med et kort ved siden af. Alt el
 - **Kompakt header:** rolletitel i serif (ca. 17 px), badge og fasevælger (lille, ca. 28 px høj, uden label) på én til to linjer, og hjælpeteksten under. Chathistorikken får resten af højden. Hold hjælpetekst og badge på mindst 12 px.
 - **Sekundære handlinger bliver diskrete.** "Skift rolle" bruges sjældent under en lektion og må ikke fylde i toppen. På computer ligger den i skinnen, og på mobil som et lille understreget tekstlink i bunden ved skrivefeltet (Kommunalbudget: klassen `.subtle-link`).
 
+**Lås arbejdsbordet til skærmens højde på computer (over 900 px).** Det er en klassisk CSS-fælde at give et tre-kolonnet arbejdsbord kun `min-height: calc(100vh - ...)`. Uden en fast højde bliver gitterets række lige så høj som den højeste kolonne, så et langt rollekort i højre kolonne strækker hele arbejdsbordet. Så skubbes alt, der står nederst, ned: spørgsmålstælleren i venstre kolonne (den har `margin-top: auto`) og skrivefeltet i midten havner langt under skærmkanten. Målt med et rollekort på 60 afsnit ved 1300 gange 800 px: arbejdsbordet blev 4589 px højt, skrivefeltet lå 4595 px nede, og siden fik 4046 px sidescroll. Med låsen nedenfor var arbejdsbordet 665 px, skrivefeltet lå i 735 px, der var ingen sidescroll, og højre panel rullede selv.
+
+```css
+:root { --chrome: 135px; }   /* højden af sidehoved og navigation over arbejdsbordet: mål den, gæt den ikke */
+.dshell { display: grid; grid-template-columns: 230px minmax(0, 1fr) 360px; grid-template-areas: "rail conv panel"; }
+@media (min-width: 901px) {
+  .dshell {
+    height: calc(100vh - var(--chrome));      /* fast højde, ikke kun min-height */
+    max-height: calc(100vh - var(--chrome));
+    min-height: 0;
+    overflow: hidden;                          /* intet strækker containeren */
+  }
+  .rail, .conv, .panel2 { height: 100%; min-height: 0; }   /* min-height: 0 lader flex- og gitterbørn skrumpe */
+  .rail  { overflow-y: auto; }                 /* skinnen ruller selv, hvis den bliver for høj */
+  .conv  { overflow: hidden; }                 /* tråden i midten ruller selv: .thread { flex: 1; overflow-y: auto; } */
+  .panel2 { overflow: hidden; }                /* panelets krop ruller selv: .pbody { overflow-y: auto; } */
+}
+```
+
+- **Tre regler, der hører sammen:** (1) arbejdsbordet har fast `height` og `max-height` mod viewporten og `overflow: hidden`; (2) hver kolonne har `height: 100%` og `min-height: 0`; (3) det, der kan vokse (tråden, panelets krop, skinnen), har sit eget `overflow-y: auto`. Mangler én af dem, glider layoutet.
+- **Mål sidehovedets højde i stedet for at gætte den.** I Kommunalbudget er tallet `88px + 47px` skrevet direkte ind i CSS. Brug en variabel, og kontrollér den i testen (afsnit 21), så et nyt sidehoved ikke stille ødelægger låsen.
+- **På mobil gælder låsen ikke.** Under 900 px stables kolonnerne (se ovenfor), og siden må gerne rulle. Derfor står reglerne i en `min-width: 901px`-forespørgsel.
+
 **Rollekortet i siden (højre panel eller fanen Rollekort):**
 
 - Header med tag ("Interessegruppe"), titel og "N stemmer · Rådgiverkode: 2481".
@@ -613,7 +636,7 @@ Et testsæt, der kan køres igen efter hver ændring, fanger de fejl, man ellers
 1. **Layout og fejl:** ingen vandret scroll ved ca. 1300, 390 og 320 px på alle sider, og ingen JavaScript-fejl i konsollen.
 2. **Adgangskoder:** en forkert kode afvises, og en rigtig kode åbner kun sin egen rolle. Prøv også rolleskift og kontrollér, at spørgsmålstælleren er uændret.
 3. **Rådgiverens prompt:** prompten indeholder kun den valgte rolles kort og det fælles casekort, ikke andres skjulte information. Test det ved at opfange kaldet til proxyen (`page.route`) og læse systemprompten, ikke ved at gætte.
-4. **Rådgiverens grænseflade:** ingen forslagsknapper, åbningsbesked med spørgsmål, faser kun med elevfaser, og på mobil fire faner på mindst 44 px, sticky.
+4. **Rådgiverens grænseflade:** ingen forslagsknapper, åbningsbesked med spørgsmål, faser kun med elevfaser, på mobil fire faner på mindst 44 px, sticky, og på computer et meget langt rollekort, der ikke skubber skrivefeltet eller tælleren ud af skærmen (afsnit 16).
 5. **Budgetværktøjet:** overforbrug, reserve, delvis bevilling, afslut kun når alle har svaret, og at en ændring nulstiller afstemning og kode.
 6. **Resultatkoden:** roundtrip (encode og decode giver samme plan), kontrolsummen afviser manipulation, og koden indeholder ikke startkrav eller tekst.
 7. **Opsamlingen:** flere koder, en manipuleret kode afvises, og tabellen vises.
@@ -678,7 +701,7 @@ assert(Math.max(...C.initiativer.map(i => i.pris)) <= 63, 'pris over 63: udvid A
 console.log('test_logik: alt bestået (' + wins + ' vindende koalitioner, ' + tried + ' manipulerede koder afvist)');
 ```
 
-Browsertesten kræver en lokal server (Web Crypto virker kun på `localhost` og https) og Playwright. Skabelonen er afprøvet mod Kommunalbudget (30 kontroller bestået). Tilpas `CONFIG` til jeres spil, og udvid med rådgivertesten (punkt 2 til 4), når I kender rollekoderne:
+Browsertesten kræver en lokal server (Web Crypto virker kun på `localhost` og https) og Playwright. Skabelonen er afprøvet mod Kommunalbudget (31 kontroller bestået). Layoutkontrollen er også afprøvet mod den gamle CSS, hvor den fejler som forventet. Tilpas `CONFIG` til jeres spil, og udvid med rådgivertesten (punkt 2 til 4), når I kender rollekoderne:
 
 ```javascript
 // test_browser.cjs: helt flow i Chromium. Kør efter at siden er serveret (HTTPS eller localhost), fx:
@@ -743,6 +766,22 @@ const check = (ok, text) => { console.log((ok ? 'OK    ' : 'FEJL  ') + text); if
   const heights = await adv.evaluate(() => [...document.querySelectorAll('.mobile-tab-btn')].map(b => Math.round(b.getBoundingClientRect().height)));
   check(heights.length === CONFIG.mobileTabs && heights.every(h => h >= 44), 'mobilfaner: ' + heights.join(', ') + ' px');
   check((await adv.evaluate(() => getComputedStyle(document.getElementById('mobileTabs')).position)) === 'sticky', 'fanelinjen er sticky');
+  // 5. Computerlayout: et meget langt rollekort må ikke skubbe skrivefeltet eller tælleren ud af skærmen
+  const desk = await browser.newContext({ viewport: { width: 1300, height: 800 } }), dp = await desk.newPage();
+  await dp.goto(CONFIG.base + 'raadgiver.html');
+  await dp.evaluate(() => {
+    document.getElementById('setupView').hidden = true; document.getElementById('workspace').hidden = false;
+    document.getElementById('roleCard').innerHTML = Array.from({ length: 60 }, (_, i) => '<p>Afsnit ' + i + ': et langt rollekort med mange argumenter og dilemmaer.</p>').join('');
+  });
+  await dp.waitForTimeout(150);
+  const lay = await dp.evaluate(() => ({
+    vh: innerHeight, ask: Math.round(document.getElementById('ask').getBoundingClientRect().bottom),
+    meter: Math.round(document.getElementById('meterDots').getBoundingClientRect().bottom),
+    pageScroll: document.documentElement.scrollHeight - innerHeight,
+    panelScrolls: (b => b.scrollHeight > b.clientHeight)(document.querySelector('.pbody'))
+  }));
+  check(lay.ask <= lay.vh && lay.meter <= lay.vh && lay.pageScroll <= 0 && lay.panelScrolls,
+    `langt rollekort: skrivefelt ${lay.ask}px og tæller ${lay.meter}px af ${lay.vh}px, sidescroll ${lay.pageScroll}px, panelet ruller selv: ${lay.panelScrolls}`);
   await browser.close();
   console.log(failed ? `\n${failed} fejl` : '\nAlt bestået');
   process.exit(failed ? 1 : 0);

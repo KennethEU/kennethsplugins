@@ -109,6 +109,7 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 - `casespil-digitale-tillaeg` er udvidet med erfaringerne fra Kommunalbudget (samfundsfag), så skillen dækker både erhvervsøkonomiske og samfundsfaglige casespil: valg af spiltype, pædagogiske principper for de digitale værktøjer, rådgiver uden forslagsknapper, startkrav som forberedelse og ikke som lås, fase- og kompromisregler, rådgiverens fanelayout på mobil, budget- og beslutningsværktøj, resultatkoder med kontrolsum, sammenligning på storskærm, krypteret lærerpakke, designsystem efter emne, billeder og forside, automatiserede tests og katalog på tværs af spil
 - `references/teknik.md` har fået afsnit 16 til 23 og opdaterede afsnit 1 til 7, 9 og 13. Kode til budgetlogik, resultatkode, låsegenerator, logiktest og browsertest er afprøvet mod Kommunalbudgets egen kode
 - Ærlig note om kodernes styrke: i Kommunalbudget kan alle fem 4-cifrede rollekoder slås op på under et sekund. Skillen beskriver, hvornår det er nok, og hvad der skal til, hvis skjult information skal tåle en målrettet elev
+- Lektie om layout: et tre-kolonnet arbejdsbord skal låses til skærmens højde (fast `height`, `overflow: hidden`, `min-height: 0` og intern scroll), ellers skubber et langt rollekort skrivefeltet og tælleren ud af skærmen. Fejlen er gengivet og testet, og testskabelonen har en kontrol for den
 - Ny triggertest `trigger-budget-1`
 
 ### v2.0.0 (oktober 2026)
