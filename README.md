@@ -68,6 +68,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.3.1 (oktober 2026)
+- Adgangsstandarden for lærere er skærpet efter gennemgang af den nye implementering på casespil.dk: kun det lange token er adgang, tokens hashes, `verify` har rate limiting, ingen lokal omvej og ingen nøgle i kildekoden. Se plugin-READMEen.
+
 ### casespilsdesigner 2.3.0 (oktober 2026)
 - Ny adgangsstandard for lærere i `casespil-digitale-tillaeg`, `casespil-projektregler` og `casespil-laererguide`: al lærerindhold og download af Word- og PDF-materialer i ét cockpit (ingen separat `laerer.html`), materialer krypteret i `bundle.files`, og personlige magic links pr. skolemail, gyldige i 7 dage, med udløbsdato i mailen og venlig udløbsbesked. Se plugin-READMEen.
 

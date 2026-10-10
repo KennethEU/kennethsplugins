@@ -105,6 +105,10 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.3.1 (oktober 2026)
+- Afsnit 25 i `references/teknik.md` er opdateret efter casespil.dk (457fa0e), hvor tokentabel, 7 dages udløb og serverside verifikation nu er implementeret og fungerer. Ved en lokal kørsel af koden fandt gennemgangen fem fælder, som standarden nu kræver rettet: en kort kode på 24 bit uden rate limiting giver nøglen, nøglen er den samme for alle og står i kildekoden, klienten har en lokal omvej, der omgår udløbet, tokens gemmes i klartekst, og linket bliver stående i adresselinjen
+- Tilsvarende punkter i `casespil-digitale-tillaeg` (adgangsafsnit og tjekliste) og `casespil-projektregler`
+
 ### v2.3.0 (oktober 2026)
 - Ny adgangsstandard for lærere: ingen særskilt dokumentside med kodefelt (`laerer.html` er udfaset og sender straks videre til `laerer-assistent.html`), og al lærerindhold inklusive download af Word- og PDF-materialer ligger i ét lærercockpit
 - Materialer som base64-ZIP i `bundle.files` i den krypterede `laererdata.js` (PBKDF2 og AES-256-GCM), dekrypteret i hukommelsen og hentet med ét klik. Ingen rå .docx eller .pdf på gættelige stier
