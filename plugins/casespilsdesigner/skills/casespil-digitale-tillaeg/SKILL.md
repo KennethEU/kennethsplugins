@@ -1,6 +1,6 @@
 ---
 name: casespil-digitale-tillaeg
-description: "Designregler og teknisk reference til digitale tilføjelser til et casespil (også kaldet rollespil): AI-rådgiver pr. rolle, budget- og beslutningsværktøj med resultatkoder, sammenligning på storskærm og krypteret lærerpakke, facit-beregner, lærershow, forside og casespilsside (hub) med indlejret spilintro (animation med voiceover og undertekster), video og billedprompter. Brug når et casespil eller rollespil skal have digitale værktøjer, efter at papirmaterialerne er godkendt. Bygger på Fjord Outdoor (erhvervsøkonomi) og Kommunalbudget (samfundsfag). Brug ikke til casespil eller rollespil uden digitale dele eller til almindelige websider og apps."
+description: "Designregler og teknisk reference til digitale tilføjelser til et casespil (også kaldet rollespil): AI-rådgiver pr. rolle, budget- og beslutningsværktøj med resultatkoder, sammenligning på storskærm, krypteret lærerpakke, lærer-assistent (cockpit med gruppeberegner, printliste og AI-sparring), facit-beregner, lærershow, forside og casespilsside (hub) med indlejret spilintro (animation med voiceover og undertekster), video og billedprompter. Brug når et casespil eller rollespil skal have digitale værktøjer, efter at papirmaterialerne er godkendt. Bygger på Fjord Outdoor (erhvervsøkonomi) og Kommunalbudget (samfundsfag). Brug ikke til casespil eller rollespil uden digitale dele eller til almindelige websider og apps."
 ---
 
 # Digitale tilføjelser til casespil
@@ -20,10 +20,10 @@ Fjord Outdoor (erhvervsøkonomi) og Kommunalbudget (samfundsfag) er to forskelli
 | Forside | Virksomhedens webside som den er før investeringen | Spillets egen forside med roller og stemmetal, spillets faser og den faglige ramme for læreren |
 | Elevværktøjer | AI-rådgiver, pitch-fane | AI-rådgiver, budgetværktøj, resultatkode |
 | Beslutning | Bestyrelsen vælger, læreren indtaster beløb i facit-beregneren | Bordene fører selv planen i budgetværktøjet og afleverer en resultatkode |
-| Lærerværktøjer | Facit-beregner (tilfældighed), lærershow | Sammenligning af bordene på storskærm, krypteret lærerpakke |
+| Lærerværktøjer | Facit-beregner (tilfældighed), lærershow, lærer-assistent | Sammenligning af bordene på storskærm, krypteret lærerpakke, lærer-assistent |
 | Stil | Virksomhedens verden (outdoor, fjord, rå materialer) | Fagets verden (offentlig forvaltning, redaktionel stil) |
 
-**Rækkefølge:** (1) Fælles datasæt og skjult-information-liste. (2) Forside og medier. (3) Casespilsside (hub) og spilintro (efter forsiden, fordi de bruger dens billeder og stil). (4) AI-rådgiver. (5) Budgetværktøj, resultatkode og sammenligning, eller facit-beregner og lærershow, alt efter spiltype. (6) Lærerpakke. (7) Automatiserede tests og test på en rigtig telefon. (8) Kør `casespil-konsistenstjek`, som også dækker digitale dele og beregner-tjek.
+**Rækkefølge:** (1) Fælles datasæt og skjult-information-liste. (2) Forside og medier. (3) Casespilsside (hub) og spilintro (efter forsiden, fordi de bruger dens billeder og stil). (4) AI-rådgiver. (5) Budgetværktøj, resultatkode og sammenligning, eller facit-beregner og lærershow, alt efter spiltype. (6) Lærerpakke og lærer-assistent. (7) Automatiserede tests og test på en rigtig telefon. (8) Kør `casespil-konsistenstjek`, som også dækker digitale dele og beregner-tjek.
 
 **Relaterede skills:** `casespil-designprincipper` (hvad må eleverne vide, hvornår), `casespil-projektregler` (beregner-tjek, begrænsningsregel, fælles kilde), `casespil-konsistenstjek` (kvalitetssikring), `casespil-sprogtjek` (alle tekster i værktøjerne).
 
@@ -98,6 +98,22 @@ Bruges, når resultatet afhænger af tilfældighed eller skjulte parametre (Fjor
 - Det beskytter mod elever, der bare klikker rundt på sitet, ikke mod en elev, der målrettet henter filen og gætter koden offline. Brug en lang, tilfældig lærerkode (ikke 4 cifre), og del den kun med kolleger.
 - Pakken bygges af et script, ikke i hånden (`references/teknik.md`, afsnit 20). Efter hver ændring i materialerne bygges pakken og siden på ny.
 
+## Lærer-assistent og cockpit
+
+Læreren får sit eget arbejdsbord bag lærerkoden (fx `laerer-assistent.html`): øjeblikkelig planlægningshjælp, en gruppe- og printberegner, sokratisk sparring undervejs og hurtigopslag. Kode, datamodel og tests står i `references/teknik.md` (afsnit 24).
+
+- **Layout:** på computer tre kolonner (værktøjer, sparring, opslag) låst til skærmens højde som rådgiveren; på mobil faner. Bruges samme designsystem som resten af spillet.
+- **Fortroligt materiale ligger krypteret.** Lærerguide, cheatsheet med facit, alle rollekort med hemmelige kompromiser og rollekoderne ligger i ét krypteret databundt (`laererdata.js`), der dekrypteres i browserens hukommelse, når lærerkoden indtastes (Web Crypto: PBKDF2 og AES-GCM). Elever kan ikke læse facit og hemmeligheder i klartekst via udviklerværktøjer.
+- **Kontrollér koden ved selve dekrypteringen.** Gem ikke en hurtig hash af lærerkoden til et "tjek først": en SHA-256-hash kan afprøves ca. 800 gange hurtigere end nøgleudledningen (målt) og omgår derfor dens beskyttelse. Lærerkoden skal være lang og tilfældig, ellers kan en elev gætte den offline. Koden gemmes højst i sessionen og slettes ved "Lås".
+- **Én motor, spilspecifik data.** Auth, dataafkodning, beregnere og proxykald ligger i én fælles motor (`laerer-motor.js`), og spillets egne fakta (fasenavne, roller, stemmer, grupperegler, projekter) står i spillets datasæt, ikke i motoren. Motoren findes i én kopi, som alle spil henviser til. Fjord Outdoors og Kommunalbudgets motor er tre identiske kopier med spilspecifikke konstanter, og det er den vej, man ikke skal gå.
+- **Gruppe- og holdberegner.** Beregneren tager antal elever og giver en plan, som både visning og printliste bygger på. Den skal understøtte to spiltyper:
+  1. **Borde med ens roller** (Kommunalbudget): borde á 5 elever. Ved skæve elevtal dubleres de største velfærdsroller (to elever om samme kort uden at ændre stemmetallet), og er bordet for lille, slås beslægtede roller sammen (fx Unge og Klima).
+  2. **Bestyrelse og projektteams** (Fjord Outdoor): fast bestyrelse (6 elever) og resten fordelt på de 5 projektteams, hvor bestemte teams får de ekstra elever først, jf. lærerguidens differentieringsregel. Under 11 elever vises en advarsel og et råd om en miniversion.
+- **Print- og materialeliste for tre former:** papir, hybrid og digital. Tallene (elevintro, rollekort pr. rolle, bilag, afstemningsskemaer, lærersæt) udledes af gruppeplanen og ikke af en separat formel: ét kort pr. elev på rollen, plus et kort til hvert bord, hvor rollen er slået sammen med en anden. Printtal og plan, der ikke passer, giver for få kort ved skæve elevtal (målt i første udgave: 34 af 57 elevtal fra 4 til 60).
+- **AI-sparring for læreren.** Rådgiveren kender alle spildata, hemmeligheder og RAS-debriefing og giver konkrete replikker, læreren kan sige ved bordene. Den følger de faste regler: ingen faste minuttal, ingen rituelle fraser, ingen lange tankestreger. Fasenavne, roller og tal hentes fra datasættet. Prompten bruger `systemInstruction: { parts: [{ text }] }` og `maxOutputTokens: 2500`, og ved streaming (`text/event-stream` fra Gemini via proxyen) filtrerer læseren tænketokens fra: `parts.filter(p => !p.thought && p.text).map(p => p.text).join('')`.
+- **Hurtigopslag:** faner med lærerguide (foldbare sektioner), cheatsheet og facit, roller og hemmeligheder, og en tabel over alle rollekoder til eleverne. Lærerens hurtigspørgsmål (knapper med færdige prompter) er fine; reglen om ingen forslagsknapper gælder elevernes rådgiver.
+- **Lærerguidens struktur er en grænseflade.** Cockpittet læser lærerguiden som sektioner med titel og korte afsnit, så sektionerne i `casespil-laererguide` har faste titler, og ét afsnit rummer én tanke.
+
 ## Forside og medier
 
 Forsiden bærer meget mere end en titel og en knap. Den skal give læreren og eleverne det samlede overblik, før de åbner spillet.
@@ -157,10 +173,13 @@ Digitale dele skal ligne spillets egen verden og ikke et generisk AI-dashboard. 
 - [ ] Rådgiveren åbner med et åbent spørgsmål, har ingen forslagsknapper, og tælleren overlever rolleskift
 - [ ] Startkrav låser hverken forhandling eller budgetværktøj
 - [ ] Mobil rådgiver: fire faner på mindst 44 px, kompakt header, "Skift rolle" som diskret link nederst
-- [ ] Computer: arbejdsbordet er låst til skærmens højde, og et meget langt rollekort skubber hverken skrivefeltet eller tælleren ud af skærmen
+- [ ] Computer: arbejdsbordet er låst til skærmens højde, og et meget langt rollekort (eller en lang lærerguide i cockpittet) skubber hverken skrivefeltet eller tælleren ud af skærmen
+- [ ] 320 px: ingen vandret scroll. Gitter bruger `minmax(min(100%, 310px), 1fr)`, og vandrette menuer har `overflow-x: auto` eller foldes
 - [ ] Budgetværktøj: overforbrug og reserve vises, ændring nulstiller afstemning og kode, og resultatkoden består roundtrip og afviser manipulation
 - [ ] Resultatkoden indeholder hverken startkrav eller tekster, og sammenligningen viser flere borde side om side
 - [ ] Lærerpakken er bygget på ny efter sidste ændring i materialerne, og lærerkoden er lang og tilfældig
+- [ ] Lærer-assistent: dekryptering kontrolleres af AES-GCM (ingen gemt hurtig hash), motoren findes i én kopi uden spilspecifikke konstanter, og fasenavne og tal i prompten kommer fra datasættet
+- [ ] Gruppeberegner og printliste bygger på samme plan, og antal elever, pladser og kort passer for alle elevtal i testen
 - [ ] Spilintro: afspilleren findes i én fil, den indlejrede version og en evt. `intro.html` viser det samme, lyden virker, og undertekster følger stemmen
 - [ ] Video og stemme er tjekket mod bilagene, før stemmen blev indtalt
 - [ ] Forsiden har de rigtige menupunkter og en hero-knap til casespilssiden, intet link til rådgiveren og ingen popup, og gamle `#intro`-links sendes videre

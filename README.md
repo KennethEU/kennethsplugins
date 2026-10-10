@@ -68,6 +68,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.2.0 (oktober 2026)
+- Lærerens cockpit (lærer-assistent) i `casespil-digitale-tillaeg`, nye regler i `casespil-projektregler`, og fordeling ved skæve elevtal i `casespil-laererguide`. Se plugin-READMEen.
+
 ### casespilsdesigner 2.1.0 (oktober 2026)
 - `casespil-digitale-tillaeg` er udvidet med erfaringerne fra Kommunalbudget: budgetværktøj, resultatkoder, sammenligning, krypteret lærerpakke, rådgiver uden forslagsknapper og med fanelayout på mobil, samt automatiserede tests. Se plugin-READMEen.
 
