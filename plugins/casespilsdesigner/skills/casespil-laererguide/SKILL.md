@@ -47,13 +47,13 @@ Læreren italesætter selv rammen, så guiden indeholder INGEN indramningssætni
 Tabel med: Rolle | Organisation | Stemmer | Særlig beføjelse
 
 **Fordeling ved forskellige elevtal.** Skriv reglen for skæve elevtal ned, så læreren ikke skal finde på den undervejs, og så lærer-assistentens gruppeberegner siger det samme som guiden (én kilde):
-- Borde med ens roller: antal elever pr. bord, hvilke roller der dubleres, når bordet er større end antallet af roller (to elever deler kortet og afgiver ét fælles svar uden at ændre stemmetallet), og hvilke roller der slås sammen, når bordet er mindre
+- Borde med ens roller: antal elever pr. bord (summen af elever på roller er altid klassens elevtal, også ved 4 til 60 elever), hvilke roller der dubleres, når bordet er større end antallet af roller (to elever deler kortet og afgiver ét fælles svar uden at ændre stemmetallet), og hvad der sker ved små borde under 5 elever: eleverne tildeles én rolle hver efter en fast prioritet (skriv rækkefølgen), de ubesatte roller deles af en naborolle, og de får alligevel et fysisk rollekort, så alle bordets stemmer er repræsenteret i forhandlingen og afstemningen (kort = `max(elever, 1)` for stemmende roller)
 - Bestyrelse og projektteams: bestyrelsens størrelse og i hvilken rækkefølge projektteamene får de ekstra elever, når resten ikke går op (differentieringsreglen)
 - Mindste elevtal: under det anbefales en miniversion (`casespil-miniversion`) i stedet for en plan
 
 ### 5. Forberedelse (lærer)
 Tjekliste med:
-- [ ] Hent materialerne i lærercockpittet med dit personlige adgangslink (gyldigt i 7 dage fra mailens afsendelse; er det udløbet, bestiller du et nyt på siden med samme mailadresse). Videresend ikke linket, og læg ikke materialerne på en fælles side eleverne kan se
+- [ ] Åbn lærer-assistenten med dit personlige adgangslink fra din skolemail (et 1-klik link, gyldigt i 7 dage, indtil datoen i mailen). Er det udløbet, bestiller du et nyt på siden med samme mailadresse. Hent materialerne som ZIP inde i cockpittet. Videresend ikke linket, og læg ikke materialerne på en fælles side, eleverne kan se
 - [ ] Print elevintroduktion (1 pr. elev)
 - [ ] Print rollekort (de versioner, der er lavet). Tæl dem ud fra gruppeplanen: ét kort pr. elev på rollen plus ét til hvert bord, hvor rollen er slået sammen med en anden
 - [ ] Vælg form og skriv tallene: papir (alt på papir), hybrid (kort på papir, værktøjer digitalt) eller digital (kort og bilag på skærm). Angiv, hvad der ikke må ligge hos eleverne (fx fortrolige bilag og lærersæt)
@@ -133,7 +133,7 @@ Konkrete sætninger med **fed** og *kursiv* til HVER overgang:
 | Én gruppe dominerer | Andre er passive | Justér stemmevægte |
 | Deadlock | Ingen kan blive enige | Kompromisrolle, sænk flertal |
 | For personligt | Elev virker ked | Stop, adressér, genopbyg |
-| Skæve elevtal | Nogle borde har færre elever end roller, eller en rolle har to elever | Følg fordelingsreglen i sektion 4: dublér de store roller, eller slå beslægtede roller sammen |
+| Skæve elevtal | Nogle borde har færre elever end roller, eller en rolle har to elever | Følg fordelingsreglen i sektion 4: dublér de store roller, og ved små borde får eleverne én rolle hver efter prioritet, mens ubesatte roller deles af en nabo og har deres eget kort |
 
 ### 12. Variationer
 Beskriv mindst 2 variationer af casespillet:

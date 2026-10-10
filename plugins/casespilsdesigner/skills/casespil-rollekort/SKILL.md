@@ -160,6 +160,17 @@ Alternativt, hvis brugeren foretrækker: Alle rollekort i ét dokument med page 
 
 ---
 
+## Gruppeplanlægning og printliste
+
+Antallet af rollekort at printe følger gruppeplanen og ikke et løst overslag. Gruppeplan og printliste bygges af samme plan (se `casespil-digitale-tillaeg` og lærer-assistenten), og tallene stemmer for alle elevtal fra 4 til 60.
+
+- **Summen af elever på roller er altid klassens elevtal (Σ elever = N).** Intet bord må have flere pladser end elever, og ingen elev står uden rolle.
+- **Stemmende roller har altid et fysisk kort:** antal kort pr. rolle og bord er `max(elever, 1)`. Det betyder, at antal kort kan være højere end antal elever.
+- **Små borde (under 5 elever) ved bordbaserede spil** (fx Kommunebudget): eleverne tildeles 1 pr. rolle efter en fast prioritet. De roller, der ikke får en elev, deles af en naborolle, men de modtager alligevel et rollekort, så alle bordets stemmer er repræsenteret i forhandlingen og afstemningen.
+- **Større borde:** de største roller dubleres (to elever deler ét kort og afgiver ét fælles svar uden at ændre stemmetallet). Der printes ét kort pr. elev på en delt rolle, så de kan læse hver sit.
+- **Printlisten viser begge tal:** elever på roller (N) og rollekort at printe. Den skriver aldrig faste intervaller, men udleder dem af planen.
+- Et kort kan ende hos en elev, der også har sin egen rolle (rollen uden egen elev deles af en nabo), eller deles af to elever. Skriv derfor kortets tekst og skjulte information, så den kan bruges af en elev med to hatte, uden at ændre rollens stemmer.
+
 ## Template-kode
 
 Se `references/template-kode.md` for komplet genbrugelig kodebase med:

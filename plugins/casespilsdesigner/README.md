@@ -105,6 +105,12 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.4.0 (oktober 2026)
+- Skills opdateret efter arkitektur- og sikkerhedsrevisionen på casespil.dk (dd294e8): læreradgang kun via lærer-assistenten med et personligt 1-klik link (`?token=` med 128 bit, 7 dage, standardtekst med DD-MM-YYYY), ingen korte koder, ingen `laerer.html` downloadside eller statiske masternøgler, ingen lokal dekrypteringsfallback, `history.replaceState`, nøgler i `data/keys.php` eller miljøet uden for git, ensartede svar og rate limiting (10 verify, 5 anmodninger, 3 mails i timen)
+- Fælles motor: én `laerer-motor.js` i roden, aldrig kopier i spilmapper, 100 % agnostisk og datadrevet via `window.TEACHER_CONFIG`
+- Små borde: Σ elever = N og kort = `max(elever, 1)` for stemmende roller. Roller uden elev deles af en naborolle og får alligevel et fysisk rollekort. Det tidligere åbne designvalg er afgjort
+- Opdateret i `casespil-projektregler`, `casespil-digitale-tillaeg` (SKILL.md og `references/teknik.md`, afsnit 20, 24 og 25), `casespil-rollekort` (nyt afsnit om gruppeplanlægning og printliste) og `casespil-laererguide` (adgangsflow og små borde)
+
 ### v2.3.1 (oktober 2026)
 - Afsnit 25 i `references/teknik.md` er opdateret efter casespil.dk (457fa0e), hvor tokentabel, 7 dages udløb og serverside verifikation nu er implementeret og fungerer. Ved en lokal kørsel af koden fandt gennemgangen fem fælder, som standarden nu kræver rettet: en kort kode på 24 bit uden rate limiting giver nøglen, nøglen er den samme for alle og står i kildekoden, klienten har en lokal omvej, der omgår udløbet, tokens gemmes i klartekst, og linket bliver stående i adresselinjen
 - Tilsvarende punkter i `casespil-digitale-tillaeg` (adgangsafsnit og tjekliste) og `casespil-projektregler`
