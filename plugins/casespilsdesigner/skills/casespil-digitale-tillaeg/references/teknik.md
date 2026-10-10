@@ -60,7 +60,7 @@ Samlet fra to afprøvede spil: Fjord Outdoor (erhvervsøkonomi: AI-rådgiver, we
 - Knapper og miniaturer i et gitter med `repeat(auto-fit, minmax(104px, 1fr))` og tekst, der må ombrydes. Faste bredder giver afklippede knapper (set på pitch-fanen).
 - Test altid ved ca. 1300, 390 og 320 px bredde. Vandret scroll findes ved at sammenligne `document.documentElement.scrollWidth` med `window.innerWidth`.
 - Alt-tekster beskriver det konkrete motiv og er forskellige fra billede til billede. Tæller og statuslinjer skal kunne læses på en lille skærm uden at løbe ud over kanten.
-- Kontrast og skriftstørrelse: mindst 16 px brødtekst, knapper der kan ramme med en tommelfinger. Regler for kontrast på mærker står i afsnit 13. Tekst inde i spilintroens scener er skærmgrafik og må være mindre end sidens brødtekst, men aldrig under 12 px (undertekster mindst 13 px). I rådgiverens chat og kort (et værktøj, ikke en artikel) er brødtekst mindst 14 px og sekundær tekst mindst 12 px. Kommunalbudget bruger 10 til 11,5 px til mærker og hjælpetekster på mobil, og det er for småt.
+- Kontrast og skriftstørrelse: mindst 16 px brødtekst, knapper der kan ramme med en tommelfinger. Regler for kontrast på mærker står i afsnit 13. Tekst inde i spilintroens scener er skærmgrafik og må være mindre end sidens brødtekst, men aldrig under 12 px (undertekster mindst 13 px). I rådgiverens chat og kort (et værktøj, ikke en artikel) er brødtekst mindst 14 px og sekundær tekst mindst 12 px. Kommunalbudget bruger mindst 12 px til mærker og hjælpetekster på mobil (første udgave brugte 10 til 11,5 px, og det var for småt).
 
 ## 7. Billeder og video
 
@@ -384,7 +384,7 @@ Rådgiveren er et arbejdsbord, ikke en chatboks med et kort ved siden af. Alt el
 
 **Mobil (højst 900 px): faner i stedet for kolonner.**
 
-- Skinnen skjules. Øverst kommer en fast fanelinje (`position: sticky; top: 0`) med fire faner: Rådgiver, Rollekort, Startkrav, Casekort. Fire lige store kolonner, hver mindst 44 px høj, tekst 13 px fed, aktiv fane med hvid baggrund, 3 px understregning i accentfarven og kraftigere skrift. Faneknapperne følger sidens farver og skrift. Hold 44 px også på de smalleste skærme (Kommunalbudget lader dem krympe til 40 px under 360 px, og det bør rettes).
+- Skinnen skjules. Øverst kommer en fast fanelinje (`position: sticky; top: 0`) med fire faner: Rådgiver, Rollekort, Startkrav, Casekort. Fire lige store kolonner, hver mindst 44 px høj, tekst 13 px fed, aktiv fane med hvid baggrund, 3 px understregning i accentfarven og kraftigere skrift. Faneknapperne følger sidens farver og skrift. Hold 44 px også på de smalleste skærme (under 360 px kan teksten krympe til 12 px, men ikke knappen).
 - Containeren har et attribut (`data-active-view="chat"` eller `"kort"`, `"krav"`, `"case"`), og CSS viser enten chatten eller informationspanelet. Panelets egne faner skjules på mobil, fordi topfanerne styrer. Så skifter eleven på et tryk mellem sparring og faktatjek uden at scrolle eller åbne en modal.
 - **Kompakt header:** rolletitel i serif (ca. 17 px), badge og fasevælger (lille, ca. 28 px høj, uden label) på én til to linjer, og hjælpeteksten under. Chathistorikken får resten af højden. Hold hjælpetekst og badge på mindst 12 px.
 - **Sekundære handlinger bliver diskrete.** "Skift rolle" bruges sjældent under en lektion og må ikke fylde i toppen. På computer ligger den i skinnen, og på mobil som et lille understreget tekstlink i bunden ved skrivefeltet (Kommunalbudget: klassen `.subtle-link`).
@@ -486,7 +486,7 @@ Elevernes eget værktøj til at føre en fælles plan. Det er adskilt fra lærer
 - **Fælles initiativer tælles kun én gang** (fx flere busser og billigere billetter er to forskellige, fælles initiativer). Skriv det i initiativets beskrivelse og i reglerne.
 - **Afstemning pr. rolle** (ja, nej, blankt). Blankt tæller ikke som ja. Alle roller skal svare. Flertallet beregnes af rollernes vægte (`yes >= flertal`).
 - **Ændring låser op igen.** Enhver ændring af et beløb sætter `finalized = false`, nulstiller afstemningen (også i felterne) og skjuler resultatkoden. Det forhindrer en kode, der ikke svarer til planen.
-- **Uden flertal ved afslutningen:** ingen nye bevillinger, hele puljen er reserve. Skriv resultatet som en fuld sætning, og pas på dobbelt punktum, når et beløb formateres med "kr." (Kommunalbudget viser "kr.." i resultatlinjen).
+- **Uden flertal ved afslutningen:** ingen nye bevillinger, hele puljen er reserve. Skriv resultatet som en fuld sætning, og pas på dobbelt punktum, når et beløb formateres med "kr." og står sidst i en sætning (Kommunalbudgets første udgave viste "kr..").
 - **Gem, hent og udskriv.** Tilstanden gemmes i browseren under en versioneret nøgle (`kommunalbudget-plan-v1`) og tjekkes med `normalize` ved indlæsning. Udkast kan hentes som fil og åbnes igen (højst 200 KB, samme `normalize`). "Ny plan" beder om bekræftelse. Et print-stylesheet skjuler menu og knapper.
 - **Gem aldrig tekst, der kan lække.** Tilstanden indeholder bordets navn, beløb og stemmer, ikke startkrav.
 
