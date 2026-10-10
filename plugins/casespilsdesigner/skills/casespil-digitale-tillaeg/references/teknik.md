@@ -659,7 +659,7 @@ Et testsæt, der kan køres igen efter hver ændring, fanger de fejl, man ellers
 6. **Resultatkoden:** roundtrip (encode og decode giver samme plan), kontrolsummen afviser manipulation, og koden indeholder ikke startkrav eller tekst.
 7. **Opsamlingen:** flere koder, en manipuleret kode afvises, og tabellen vises.
 8. **Spillets matematik:** vægtene summer til totalen, ingen to roller kan vinde alene, der findes flere vindende koalitioner, og alle priser kan rummes i koden.
-9. **Lærerens cockpit:** gruppeplanen og printtallene hænger sammen for alle elevtal (afsnit 24), prompten henter fasenavne og tal fra datasættet, en forkert lærerkode afvises af dekrypteringen, og et meget langt opslag skubber ikke skrivefeltet ud af skærmen.
+9. **Lærerens cockpit:** gruppeplanen og printtallene hænger sammen for alle elevtal (afsnit 24), prompten henter fasenavne og tal fra datasættet, en forkert lærerkode afvises af dekrypteringen, og et meget langt opslag skubber ikke skrivefeltet ud af skærmen (ved 800 px skærmhøjde ligger skrivefeltets bund på højst 800 px, uden at vinduet ruller; skabelon i afsnit 24).
 
 Logikken kan testes uden browser (hurtig og stabil). Skabelonen nedenfor er afprøvet mod Kommunalbudget og mod den læsbare udgave i afsnit 17 og 18:
 
@@ -831,15 +831,15 @@ Flere spil kan bo på samme domæne og findes via et fælles katalog.
 
 Lærerens eget arbejdsbord bag lærerkoden. Det er afprøvet i to spil (Kommunalbudget og Fjord Outdoor), og afsnittet beskriver både, hvad der virker, og de fælder, der blev fundet ved gennemgang af første udgave.
 
-**Filer:** `laerer-assistent.html` (siden), `laerer-motor.js` (den fælles motor) og `laererdata.js` (det krypterede databundt, genereret af et script). Siden indlæser `window.TEACHER_CONFIG = { gameId, gameTitle, bundle: { salt, iv, data } }`. I første udgave stod der også en `masterHash`, som ikke skal med (se nedenfor).
+**Filer:** `laerer-assistent.html` (siden), `laerer-motor.js` (den fælles motor) og `laererdata.js` (det krypterede databundt, genereret af et script). Siden indlæser `window.TEACHER_CONFIG = { gameId, gameTitle, proxyUrl, proxyToken, bundle: { salt, iv, data } }`. Proxyens adresse og token kommer altså fra spillets datasæt og ikke fra motoren. Der er ingen `masterHash` og intet SHA-256-tjek i koden (det blev fundet og fjernet efter første udgave, se nedenfor).
 
-**Databundtets indhold (efter dekryptering):** `gameId`, `titel`, `fag`, `grupperegler`, `roller` (`id`, `titel`, `stemmer`, `kode`, `maal`, `skjult`, `dilemmaer`), `guide` (en liste af `{ titel, afsnit: [...] }`) og `cheatsheet` (en liste af `{ spoergsmaal, modelsvar, faglig_begrundelse, typisk_fejl }`). Bundtet bygges af samme script som lærerpakken (afsnit 20), så det altid svarer til rollekortene. Spillets fasenavne, regler og tal hentes fra det offentlige datasæt (afsnit 17), ikke fra bundtet og ikke fra motoren.
+**Databundtets indhold (efter dekryptering):** `gameId`, `titel`, `fag`, `grupperegler`, `faser` (`nr`, `navn`, `handling`, `rad`), `begreber` (`begreb`, `forklaring`), `roller` (`id`, `titel`, `stemmer`, `kode`, `maal`, `skjult`, `dilemmaer`, evt. `front` og `back`), `guide` (en liste af `{ titel, afsnit: [...] }`) og `cheatsheet` (en liste af `{ spoergsmaal, modelsvar, faglig_begrundelse, typisk_fejl }`). Bundtet bygges af samme script som lærerpakken (afsnit 20), så det altid svarer til rollekortene. Prompten bygges af `faser`, `begreber` og `roller` i bundtet, så fasenavne og begreber kun står ét sted.
 
 **Sikkerhed:**
 
 - Alt fortroligt (lærerguide, facit, rollekort med hemmelige kompromiser, rollekoder) ligger kun i det krypterede bundt og dekrypteres i hukommelsen. Intet af det står i klartekst i siden.
-- **Kontrollér koden ved dekrypteringen, ikke med en hurtig hash.** Første udgave gemte `masterHash` (SHA-256 af lærerkoden) og sammenlignede, før den dekrypterede. Målt: ca. 16 000 SHA-256-forsøg i sekundet mod ca. 20 PBKDF2-forsøg i sekundet, altså ca. 800 gange hurtigere, og specialværktøj er mange størrelsesordener hurtigere end en browser. Hashen er derfor en genvej til at gætte lærerkoden uden om nøgleudledningen. AES-GCM afviser en forkert nøgle af sig selv.
-- Lærerkoden er lang og tilfældig. Gem den højst i `sessionStorage` (den forsvinder, når fanen lukkes), og slet den ved "Lås". På en fælles computer bør læreren låse, før vedkommende forlader computeren.
+- **Kontrollér koden ved dekrypteringen, ikke med en hurtig hash.** Kravet er: ingen `masterHash`, intet SHA-256-tjek i JavaScript. Koden verificeres udelukkende under selve dekrypteringen med Web Crypto: PBKDF2 (100 000 runder, SHA-256) og AES-256-GCM. En forkert kode fejler af sig selv på AES-GCM's autentificeringstag. Første udgave gemte en `masterHash` (SHA-256 af lærerkoden) og sammenlignede, før den dekrypterede. Målt: ca. 16 000 SHA-256-forsøg i sekundet mod ca. 20 PBKDF2-forsøg i sekundet, altså ca. 800 gange hurtigere, og specialværktøj er mange størrelsesordener hurtigere end en browser. Hashen var derfor en genvej til at gætte lærerkoden uden om nøgleudledningen. Den er fjernet i den nyeste casespil.dk, og det er afprøvet, at en forkert kode afvises af dekrypteringen, og at motoren ikke længere indeholder `masterHash` eller `digest('SHA-256')`.
+- Lærerkoden er lang og tilfældig: et spilpræfiks og mindst 12 tilfældige tegn, fx `KB-60cad259a836` eller `FO-8f92b1c4e730` (12 hex-tegn er 48 bit, så 2 i 48. potens forsøg à ca. 50 ms er ikke gennemførligt). Aldrig et ord, et årstal eller 4 cifre. Gem den højst i `sessionStorage` (den forsvinder, når fanen lukkes), og slet den ved "Lås". På en fælles computer bør læreren låse, før vedkommende forlader computeren.
 - Proxyens `appId` er ikke en lås (alle kan læse den), så cockpittet og elevernes rådgiver kan ikke skelnes af proxyen. Dagsloft og herkomstbegrænsning på proxyen (afsnit 3) er det, der beskytter.
 
 Oplåsning og streaming (afprøvet med rigtig og forkert kode og med datablokke, der brydes midt i en linje, inklusive tænketokens, der aldrig må vises):
@@ -898,12 +898,13 @@ Oplåsning og streaming (afprøvet med rigtig og forkert kode og med datablokke,
 })(typeof window === 'undefined' ? globalThis : window);
 ```
 
-**Motoren er fælles, data er spillets egne.** Motoren indeholder auth, dekryptering, beregnere, markdown til chatten og proxykaldet. Den indeholder ingen rolle-id'er, projektnavne, antal eller fasenavne. I første udgave stod fx `'familier'`, `'aeldre'`, `P1 til P5`, `boardSize = 6`, `minForFull = 11` og hele fasebeskrivelsen i selve motoren, og motoren lå i tre identiske kopier (roden, `fjord/` og `kommunebudget/`). Det er den vej, man ikke skal gå:
+**Motoren er fælles, data er spillets egne.** Kravet er, at motoren (`laerer-motor.js`) er fælles på tværs af spil og ikke indeholder hårdkodede fasenavne eller spilkonstanter: auth, dekryptering, beregnere, markdown til chatten og proxykaldet ligger i motoren, og alt, der handler om det enkelte spil, ligger i datasættet. Status i den nyeste casespil.dk, målt:
 
-- Læg reglerne i `grupperegler` i spillets datasæt (se koden nedenfor), og lad prompten bygge sine fasenavne, roller og tal af datasættet. Første udgave havde fasenavne i prompten ("Forberedelse i interessegrupper", "Forhandling i udvalget", "Afstemning"), som afveg fra datasættets ("Interessegrupper", "Byrådsforhandling", "Beslutning og afstemning"), og det bryder reglen om samme faser overalt.
-- Hav én kopi af motoren og henvis til den (`../laerer-motor.js`). Findes kopier alligevel, skal en test sammenligne dem.
+- **Rettet:** `buildSystemPrompt()` bygger nu sine faser, begreber og roller dynamisk af bundtet (`data.faser`, `data.begreber`, `data.roller`) og indeholder reglerne om ingen faste minuttal, ingen rituelle fraser og ingen lange tankestreger. Første udgave havde fasenavne i prompten ("Forberedelse i interessegrupper", "Forhandling i udvalget", "Afstemning"), som afveg fra datasættets, og det brød reglen om samme faser overalt. Proxyens adresse og token modtages som `config.proxyUrl` og `config.proxyToken`.
+- **Stadig åbent:** motoren indeholder stadig spilspecifikke ting: projektnavnene `P1 (Regntøj ...)` til `P5`, `boardSize = 6`, `12 stemmer` og `7 ja-stemmer` i tekster, forgreninger på `gameId === 'kommunebudget'` og `'fjord'` i printlisten (med tekster som "Tilst-scenariet", "18 initiativer" og "Fjord_Outdoor_Facit.html"), og en reservekonstant for Fjords proxy og token (`fjord2026`), hvis `config` mangler dem. Det skal flyttes til `grupperegler` og til printlistens data, og motoren skal fejle tydeligt i stedet for at falde tilbage til et andet spils proxy.
+- **Stadig åbent:** motoren ligger i tre byte-identiske kopier (roden, `fjord/` og `kommunebudget/`). Hav én kopi og henvis til den (`../laerer-motor.js`). Findes kopier alligevel, skal en test sammenligne dem.
 
-**Gruppe- og holdberegner.** Den er en ren funktion, som returnerer en plan. Visningen og printlisten bygger begge på planen. I første udgave beregnede printlisten rollekortene med en separat formel (`ceil(n/5)` og `floor(n/5)`), og gruppeplanen satte én elev på hver af de fem roller, også ved et bord med fire elever. Målt: pladserne summerede ikke til antal elever ved 23 af 57 elevtal (fra 4 til 60), og antal rollekort stemte hverken med elevtallet eller med planen ved 34 af 57. Koden nedenfor er datadrevet, har invarianter, og er testet for 4 til 80 elever (647 borde):
+**Gruppe- og holdberegner.** Den er en ren funktion, som returnerer en plan. Visningen og printlisten bygger begge på planen, og printtallene er en projektion af planen og ikke en separat formel. Kravet er en gyldig fordeling for alle elevtal fra 4 til 60 og summen af elever på roller lig med antal elever uden undtagelse. Første udgave beregnede printlisten med `ceil(n/5)` og `floor(n/5)` og satte én elev på hver af fem roller, også ved et bord med fire elever: pladserne summerede ikke ved 23 af 57 elevtal, og rollekortene stemte hverken med elevtallet eller planen ved 34 af 57. I den nyeste casespil.dk er summen af elever på roller lig med N for alle 57 elevtal, og printlisten summerer til N (målt). Fjords projektteams viser nu det faktiske spænd, "4 til 5 pr. team" ved 30 elever. Koden nedenfor er datadrevet, har invarianter, og er testet for 4 til 80 elever (647 borde):
 
 ```javascript
 // gruppeplan.js: ren funktion uden DOM. Én plan bruges til visning, til printtal og til tests.
@@ -930,7 +931,14 @@ Oplåsning og streaming (afprøvet med rigtig og forkert kode og med datablokke,
     }
     return tables;
   }
-  // Rollekort pr. rolle: ét kort pr. elev på rollen, og ét kort til det bord, hvor rollen er slået sammen med en anden.
+  // To forskellige tal, som begge skal kunne forklares:
+  // 1. Elever på roller: summen skal altid være lig med antal elever (planens invariant).
+  function studentsOnRoles(tables) {
+    return tables.reduce((a, t) => a + t.seats.reduce((x, s) => x + s.students, 0), 0);
+  }
+  // 2. Rollekort at printe pr. rolle: ét kort pr. elev på rollen, og ét kort til hvert bord, hvor rollen er slået sammen med
+  //    en anden og stadig stemmer. En rolle uden elev, der stadig stemmer, SKAL have et kort. Ellers er summen kun lig med N,
+  //    fordi kortet er udeladt.
   function cardCounts(tables) {
     const out = {};
     for (const t of tables) for (const s of t.seats) out[s.id] = (out[s.id] || 0) + Math.max(1, s.students);
@@ -948,14 +956,14 @@ Oplåsning og streaming (afprøvet med rigtig og forkert kode og med datablokke,
     for (const id of rules.restOrder) if (extra > 0) { teams.find(t => t.id === id).students++; extra--; }
     return { board: rules.boardSize, teams };
   }
-  g.Gruppeplan = { planTables, cardCounts, planBoardAndTeams };
+  g.Gruppeplan = { planTables, studentsOnRoles, cardCounts, planBoardAndTeams };
   if (typeof module !== 'undefined') module.exports = g.Gruppeplan;
 })(typeof window === 'undefined' ? globalThis : window);
 ```
 
 - **Regler i data (eksempel):** `{ targetSize: 5, merge: [['klima', 'unge'], ['erhverv', 'aeldre']], double: ['familier', 'aeldre'] }` for borde, og `{ boardSize: 6, minStudents: 11, teams: [...], restOrder: ['p2', 'p3', 'p5', 'p1', 'p4'] }` for bestyrelse og teams. `restOrder` skal være den samme som lærerguidens differentieringsregel, ellers siger guide og cockpit to forskellige ting.
-- **Rollekort pr. rolle** er antal borde plus dubleringer (`cardCounts`). Det er ikke det samme som antal elever, når roller er slået sammen.
-- **Printlisten** bygges af planen og af formen (papir, hybrid, digital). Skriv ikke faste intervaller som "2 til 4 pr. team" i teksten, men udled dem af planen (første udgave skrev "2 til 4 pr. team" ved 30 elever, hvor der er 4 til 5).
+- **Et åbent designvalg: en rolle uden elev.** I den nyeste casespil.dk får roller ved et bord med færre end fem elever 0 elever, og printlisten tæller kun elever, så summen af rollekort er N. Men rollen stemmer stadig (budgetværktøjet kræver, at alle fem roller svarer), og den har ikke noget kort. Målt: 23 af 57 elevtal har mindst ét bord, hvor Klima ikke har en elev og dermed ikke et kort, og ved fire elever råder bordet kun over 10 af 12 stemmer med kort. Vælg og beskriv det i lærerguiden: enten slås rollen sammen med en anden, og så printes et kort til den (kort = elever plus roller uden egen elev, `cardCounts` nedenfor), eller rollen udgår af afstemningen, og flertallet regnes om. Planen skal vise begge tal: elever på roller (altid N) og kort at printe.
+- **Printlisten** bygges af planen og af formen (papir, hybrid, digital). Skriv ikke faste intervaller i teksten, men udled dem af planen (første udgave skrev "2 til 4 pr. team" ved 30 elever, hvor det er 4 til 5; nu udledes spændet af planen).
 - Under minimumsantallet vises en advarsel og et råd om en miniversion (`casespil-miniversion`), ikke en plan.
 
 Testen (gem gruppeplanen som `gruppeplan.js` og testen som `gruppeplan_test.cjs`, og kør `node gruppeplan_test.cjs .`, hver gang reglerne eller rollerne ændres):
@@ -974,9 +982,12 @@ for (let n = 4; n <= 80; n++) {
     t.seats.forEach(s => { assert(s.students >= 0 && (s.students > 0 || s.mergedInto)); if (s.mergedInto) { merged++; assert(t.seats.find(x => x.id === s.mergedInto).students > 0); } });
     assert(Math.abs(t.size - tables[0].size) <= 1, 'ujævne borde');
   }
+  assert.strictEqual(G.studentsOnRoles(tables), n, 'elever på roller != ' + n);                 // invariant: summen er altid N
   const cards = G.cardCounts(tables), total = Object.values(cards).reduce((a, b) => a + b, 0);
   const doubles = tables.reduce((a, t) => a + t.seats.reduce((x, s) => x + Math.max(0, s.students - 1), 0), 0);
   assert.strictEqual(total, tables.length * roles.length + doubles, 'kortantal følger ikke planen, n=' + n);
+  const noStudent = tables.reduce((a, t) => a + t.seats.filter(s => s.students === 0).length, 0);
+  assert.strictEqual(total, n + noStudent, 'kort = elever + roller uden egen elev, n=' + n);   // hver stemmende rolle har sit kort
 }
 assert.throws(() => G.planTables(2, roles, rules));
 assert.strictEqual(G.planTables(3, roles, rules)[0].seats.filter(s => s.mergedInto).length, 2);
@@ -1010,7 +1021,55 @@ const assert = require('assert'), K = require(process.argv[2] + '/laerer-kerne.j
 })().catch(e => { console.error(e); process.exit(1); });
 ```
 
-**AI-sparring.** Systemprompten kommer fra datasættet og indeholder: rollen som kollegial sparringspartner, spillets ramme (pulje, vægte, flertal, faser, den faglige model), alle roller med skjult information, og de faste regler: fejlfrit dansk i en direkte tone, ingen rituelle fraser, ingen faste minuttal (tempoet styres af tegn på flow og milepæle), ingen lange tankestreger, og konkrete formuleringer læreren kan sige ved bordene. Svarkrav: fokuserede svar, punktopstilling hvor det hjælper, og hvad læreren kan gøre her og nu. Indstillinger: temperatur ca. 0,5 og `maxOutputTokens: 2500`, historik på de seneste ca. 8 beskeder. Giv kaldet tidsgrænse og genforsøg som i elevernes rådgiver (afsnit 3), og vis en dansk fejlbesked i stedet for proxyens rå fejltekst.
+**Layoutlås og oplåsning i cockpittet.** Kravet er, at skrivefeltet (`.composer` og `#chatInput`) aldrig skubbes ud af skærmen af en lang lærerguide i sidepanelet. `body.in-workspace`, `#cockpitView` og `.dshell` har en ubrudt flex-kæde (`height: 100vh; overflow: hidden; display: flex; flex-direction: column;` med `min-height: 0`), og chatten og panelets indhold ruller hver for sig (`overflow-y: auto`, fx på `.chat-scroll` og `.panel-content`). Ved 800 px skærmhøjde skal skrivefeltets bund ligge på højst 800 px uden at hele vinduet ruller (afsnit 16). Målt i den nyeste casespil.dk med en meget lang lærerguide: Kommunalbudget 762 af 800 px og Fjord 764 af 800 px, uden lodret scroll (Fjord lå 1824 px nede i første udgave). Testen nedenfor bygger sit eget låste bundt, så den rigtige lærerkode aldrig bruges, og den består mod begge spil (18 kontroller):
+
+```javascript
+// test_cockpit.cjs: lærerens cockpit i en rigtig browser. Testen bygger sit eget låste bundt med sin egen kode,
+// så den rigtige lærerkode aldrig bruges. Kør (siden serveres på localhost): node test_cockpit.cjs <mappen med laas.cjs>
+const { chromium } = require('playwright'), { lock } = require(process.argv[2] + '/laas.cjs');
+const CONFIG = {
+  base: 'http://127.0.0.1:8774/', code: 'KB-60cad259a836',
+  games: { kommunebudget: { type: 'tables' }, fjord: { type: 'board_and_teams', boardRoles: [] } },
+  roles: [['familier', 3], ['aeldre', 3], ['unge', 2], ['erhverv', 2], ['klima', 2]]
+};
+let failed = 0;
+const check = (ok, text) => { console.log((ok ? 'OK    ' : 'FEJL  ') + text); if (!ok) failed++; };
+
+(async () => {
+  const roller = CONFIG.roles.map(([id, stemmer], i) => ({ id, titel: id, stemmer, kode: String(1000 + i), maal: 'Mål', skjult: 'Hemmeligt kompromis. '.repeat(30), dilemmaer: 'D' }));
+  const browser = await chromium.launch();
+  for (const [game, regler] of Object.entries(CONFIG.games)) {
+    // Et ekstremt langt indhold i opslagene: det må ikke skubbe skrivefeltet ud af skærmen
+    const data = { gameId: game, titel: 'Test', fag: 'F', grupperegler: regler, roller,
+      faser: [{ nr: 1, navn: 'Fase A', handling: 'h', rad: 'r' }], begreber: [{ begreb: 'B', forklaring: 'f' }],
+      guide: Array.from({ length: 40 }, (_, i) => ({ titel: 'Sektion ' + i, afsnit: ['Lang tekst. '.repeat(80)] })),
+      cheatsheet: Array.from({ length: 12 }, (_, i) => ({ spoergsmaal: 'Spørgsmål ' + i, modelsvar: 'Modelsvar. '.repeat(60) })) };
+    const config = 'window.TEACHER_CONFIG=' + JSON.stringify({ gameId: game, gameTitle: 'T', bundle: await lock(CONFIG.code, data) }) + ';';
+    for (const [w, h] of [[1300, 800], [1100, 700], [390, 800], [320, 800]]) {
+      const ctx = await browser.newContext({ viewport: { width: w, height: h }, isMobile: w < 500, hasTouch: w < 500 }), page = await ctx.newPage(), errors = [];
+      page.on('pageerror', e => errors.push(e.message));
+      await page.route('**/laererdata.js', r => r.fulfill({ body: config, contentType: 'application/javascript' }));
+      await page.goto(`${CONFIG.base}${game}/laerer-assistent.html`);
+      if (w === 1300) {                                             // forkert kode afvises af AES-GCM, rigtig kode åbner
+        await page.fill('#teacherCodeInput', 'forkert-kode-123'); await page.click('#authForm button'); await page.waitForTimeout(1200);
+        check(await page.evaluate(() => document.getElementById('cockpitView').hidden), `${game}: forkert kode åbner ikke cockpittet`);
+      }
+      await page.fill('#teacherCodeInput', CONFIG.code); await page.click('#authForm button'); await page.waitForTimeout(1500);
+      const m = await page.evaluate(() => { const r = document.getElementById('btnSend').getBoundingClientRect(); return {
+        open: !document.getElementById('cockpitView').hidden, bottom: Math.round(r.bottom), shown: r.height > 0, vh: innerHeight,
+        vscroll: document.documentElement.scrollHeight - innerHeight, hscroll: document.documentElement.scrollWidth - innerWidth }; });
+      check(m.open && !errors.length, `${game} ${w}px: rigtig kode åbner, ${errors.length} JavaScript-fejl`);
+      if (w >= 900) check(m.shown && m.bottom <= m.vh && m.vscroll <= 0, `${game} ${w}x${h}: skrivefeltets bund ${m.bottom}px af ${m.vh}px, lodret scroll ${m.vscroll}px`);
+      else check(m.hscroll <= 0, `${game} ${w}px: vandret scroll ${m.hscroll}px`);
+      await ctx.close();
+    }
+  }
+  await browser.close();
+  console.log(failed ? `\n${failed} fejl` : '\nAlt bestået'); process.exit(failed ? 1 : 0);
+})();
+```
+
+**AI-sparring.** Systemprompten kommer fra datasættet og indeholder: rollen som kollegial sparringspartner, spillets ramme (pulje, vægte, flertal, faser, den faglige model), alle roller med skjult information, og de faste regler: fejlfrit dansk i en direkte tone, ingen rituelle fraser, ingen faste minuttal (tempoet styres af tegn på flow og milepæle), ingen lange tankestreger, og konkrete formuleringer læreren kan sige ved bordene. Svarkrav: fokuserede svar, punktopstilling hvor det hjælper, og hvad læreren kan gøre her og nu. Indstillinger: temperatur ca. 0,5 og `maxOutputTokens: 2500`, historik på de seneste ca. 8 beskeder. Giv kaldet tidsgrænse og genforsøg som i elevernes rådgiver (afsnit 3), og vis en dansk fejlbesked i stedet for proxyens rå fejltekst. Prompten bruger `systemInstruction: { parts: [{ text: systemPrompt }] }` og `maxOutputTokens: 2500`. Ved SSE-streaming (`text/event-stream`) fra Gemini via proxyen filtrerer læseren interne tænketokens fra med `(candidates[0].content.parts || []).filter(p => !p.thought && p.text).map(p => p.text).join('')` (koden i `laerer-kerne.js` ovenfor). Sparringen kender alle spildata, hemmeligheder, dilemmaer, modelsvar og RAS-debriefing.
 
 **Siden:**
 

@@ -105,6 +105,12 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.2.1 (oktober 2026)
+- Lærer-cockpittet er opdateret efter den hærdede udgave på casespil.dk og kontrolleret mod den: `masterHash` og SHA-256-tjek er væk (koden verificeres kun ved AES-GCM-dekrypteringen), gruppeplanens elever summerer til N for alle elevtal fra 4 til 60, Fjords projektteams viser det faktiske spænd, prompten bygges dynamisk af `faser`, `begreber` og `roller`, og skrivefeltet ligger inden for skærmen ved 800 px i begge spil
+- Kravet til lærerkoden er skærpet: et spilpræfiks og mindst 12 tilfældige tegn (fx `KB-60cad259a836`)
+- Ny cockpit-test i `references/teknik.md` (bygger sit eget låste bundt, 18 kontroller bestået mod begge spil) og en gruppeplan, der viser både elever på roller (altid N) og kort at printe
+- Ærligt om det, der stadig er åbent: motoren indeholder stadig spilspecifikke konstanter og ligger i tre kopier, og 23 af 57 elevtal har et bord med en stemmende rolle uden kort (Klima)
+
 ### v2.2.0 (oktober 2026)
 - `casespil-digitale-tillaeg` har fået et nyt afsnit om lærerens cockpit (lærer-assistent): krypteret databundt, kontrol af lærerkoden ved selve dekrypteringen, én fælles motor med spillets fakta i datasættet, gruppe- og holdberegner for to spiltyper, printliste for papir, hybrid og digital, AI-sparring med streaming, der filtrerer tænketokens, og hurtigopslag. `references/teknik.md` har nyt afsnit 24 med afprøvet kode og tests
 - Layoutregler: arbejdsbordet låses også, når der ligger en blok uden flex imellem (klassen `in-workspace`, `grid-template-rows: minmax(0, 1fr)`), gitter bruger `minmax(min(100%, 310px), 1fr)`, og vandrette menuer får `overflow-x: auto` (alt afprøvet ved 320 px)

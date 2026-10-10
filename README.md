@@ -68,6 +68,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.2.1 (oktober 2026)
+- Lærer-cockpittet i `casespil-digitale-tillaeg` er opdateret efter den hærdede udgave på casespil.dk: ingen hurtig hash, gruppeplan der summerer til N, lærerkode med præfiks og 12 tilfældige tegn, dynamisk prompt og en cockpit-test. Se plugin-READMEen.
+
 ### casespilsdesigner 2.2.0 (oktober 2026)
 - Lærerens cockpit (lærer-assistent) i `casespil-digitale-tillaeg`, nye regler i `casespil-projektregler`, og fordeling ved skæve elevtal i `casespil-laererguide`. Se plugin-READMEen.
 
