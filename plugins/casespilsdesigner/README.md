@@ -105,6 +105,10 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.4.1 (oktober 2026)
+- Nye regler efter gennemgang af, hvad `fjord2026` bruges til i casespil.dk: nøglen ligger aldrig sammen med det, den låser, et offentligt id (proxyens `appId`) er ikke en kode og kaldes `APP_ID`, hjemmelavet kryptering og SHA-256-tjek er ingen lås, og gamle lærerkataloger og lærer-pinkoder fjernes fra elevsiderne, når cockpittet overtager
+- Opdateret i `casespil-projektregler` (tillæg 12 til 14), `casespil-digitale-tillaeg` (sikkerhedsafsnit og tjekliste) og `references/teknik.md`
+
 ### v2.4.0 (oktober 2026)
 - Skills opdateret efter arkitektur- og sikkerhedsrevisionen på casespil.dk (dd294e8): læreradgang kun via lærer-assistenten med et personligt 1-klik link (`?token=` med 128 bit, 7 dage, standardtekst med DD-MM-YYYY), ingen korte koder, ingen `laerer.html` downloadside eller statiske masternøgler, ingen lokal dekrypteringsfallback, `history.replaceState`, nøgler i `data/keys.php` eller miljøet uden for git, ensartede svar og rate limiting (10 verify, 5 anmodninger, 3 mails i timen)
 - Fælles motor: én `laerer-motor.js` i roden, aldrig kopier i spilmapper, 100 % agnostisk og datadrevet via `window.TEACHER_CONFIG`

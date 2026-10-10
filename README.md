@@ -68,6 +68,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.4.1 (oktober 2026)
+- Regler om nøgler og offentlige id'er: nøglen ligger aldrig sammen med det, den låser, `appId` er ikke en kode, ingen hjemmelavet kryptering, og gamle lærerkataloger ryddes. Se plugin-READMEen.
+
 ### casespilsdesigner 2.4.0 (oktober 2026)
 - Skills opdateret efter sikkerhedsrevisionen på casespil.dk: personlige 1-klik links med 128-bit token og 7 dages udløb, ingen korte koder eller lokal fallback, nøgler uden for git, én agnostisk motor i roden og kort = `max(elever, 1)` ved små borde. Se plugin-READMEen.
 
