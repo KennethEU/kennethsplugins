@@ -46,10 +46,24 @@ Dansk sammensætter ord UDEN mellemrum. Hyppige fejl:
 | "arbejds løshed" | "arbejdsløshed" |
 | "velfærds stat" | "velfærdsstat" |
 | "forhandlings runde" | "forhandlingsrunde" |
+| "lærer-assistent" | "lærerassistent" |
+| "lærer-sparring" | "lærersparring" |
+| "gymnasielærer-sparringspartner" | "gymnasielærer og sparringspartner" |
 
-**Regel:** Hvis to substantiver danner ét begreb, skrives de som ét ord.
+**Regel:** Hvis to substantiver danner ét begreb, skrives de som ét ord uden mellemrum og UDEN bindestreg.
 
-### 3. Person-perspektiv i rollekort
+### 3. Dansk sætningskapitalisering (ingen engelsk Title Case)
+
+I overskrifter, knapper, labels og menupunkter skrives kun startbogstavet med stort på dansk:
+
+| Forkert (Title Case) | Korrekt (Dansk) |
+|----------------------|-----------------|
+| "Grupper & Byrådsborde" | "Grupper og byrådsborde" |
+| "Klassens Rollekoder" | "Klassens rollekoder" |
+| "Printklare Materialer" | "Printklare materialer" |
+| "Hent Alle Word-Materialer" | "Hent alle Word-materialer" |
+
+### 4. Person-perspektiv i rollekort
 
 | Felt | Skal være | Eksempel |
 |------|-----------|----------|
