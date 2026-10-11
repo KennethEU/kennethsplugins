@@ -125,10 +125,11 @@ Læreren får sit eget arbejdsbord bag et personligt adgangslink (`laerer-assist
 
 ## Lærernes adgang: personligt 1-klik link med udløb
 
-Læreradgang sker udelukkende via lærer-assistenten (`laerer-assistent.html`) med et personligt 1-klik adgangslink. Flow, serverdel og tests står i `references/teknik.md` (afsnit 25).
+Læreradgang sker udelukkende via den centrale lærerside (`undervisere.html`) med et personligt 1-klik adgangslink. Flow, serverdel og tests står i `references/teknik.md` (afsnit 25).
 
-- **Token i linket.** Linket er `laerer-assistent.html?token=<32 hex-tegn>`, et 128-bit kryptografisk tilfældigt token (`random_bytes(16)`). Der findes ingen korte koder (fx `L-XXXXXX`) som selvstændig adgang, og `verify` accepterer kun tokenet. Tokens gemmes som hash.
+- **Token i linket.** Linket er `undervisere.html?token=<32 hex-tegn>`, et 128-bit kryptografisk tilfældigt token (`random_bytes(16)`). Der findes ingen korte koder (fx `L-XXXXXX`) som selvstændig adgang, og `verify` accepterer kun tokenet. Tokens gemmes som hash.
 - **Knyttet til skolemailen og gyldigt i 7 dage.** Hvert link udstedes til én modtager og udløber automatisk 7 dage efter afsendelse. Det forhindrer, at elever eller senere klasser genbruger en kode. Udløbet tjekkes på serveren.
+- **Mailen indeholder ingen casespil:** E-mailen linker udelukkende til den samlede Lærerside (`undervisere.html?token=...`) med en tydelig knap og indeholder IKKE lister over eller direkte links til de enkelte casespil. Når læreren åbner Lærersiden, er vedkommende logget ind og kan vælge spil og åbne cockpits derfra.
 - **Standardtekst i mailen:** "Dette adgangslink er gyldigt i 7 dage (indtil DD-MM-YYYY). Herefter skal du blot bestille et nyt link på siden." Datoen er den faktiske udløbsdato.
 - **Udløbet link giver en venlig besked** i cockpittet med en formular til at bestille et nyt link til samme mailadresse.
 - **Kendte skolemails får linket straks.** Forhåndsgodkendte adresser og godkendte gymnasiedomæner får deres friske link med det samme via AJAX/API. Ukendte adresser bliver en anmodning, som en administrator godkender.
