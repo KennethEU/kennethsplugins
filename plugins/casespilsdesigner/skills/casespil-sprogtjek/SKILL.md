@@ -50,7 +50,7 @@ Dansk sammensætter ord UDEN mellemrum. Hyppige fejl:
 | "lærer-sparring" | "lærersparring" |
 | "gymnasielærer-sparringspartner" | "gymnasielærer og sparringspartner" |
 
-**Regel:** Hvis to substantiver danner ét begreb, skrives de som ét ord uden mellemrum og UDEN bindestreg.
+**Regel:** Hvis to substantiver danner ét begreb, skrives de som ét ord uden mellemrum og UDEN bindestreg. Det gælder hele familien: lærercockpit, lærerassistent, lærersparring, lærermotor, lærerpinkode, lærerdebriefing, elevpakke, rollekort, bordberegner. Bindestreg bruges kun ved forkortelser og tal (AI-rådgiver, 1-klik link, SHA-256-tjek) og i ASCII-filnavne (`laerer-motor.js`).
 
 ### 3. Dansk sætningskapitalisering (ingen engelsk Title Case)
 

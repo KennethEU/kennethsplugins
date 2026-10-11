@@ -168,7 +168,7 @@ Regler for de to elevpakker:
 
 ## Gruppeplanlægning og printliste
 
-Antallet af rollekort at printe følger gruppeplanen og ikke et løst overslag. Gruppeplan og printliste bygges af samme plan (se `casespil-digitale-tillaeg` og lærer-assistenten), og tallene stemmer for alle elevtal fra 4 til 60.
+Antallet af rollekort at printe følger gruppeplanen og ikke et løst overslag. Gruppeplan og printliste bygges af samme plan (se `casespil-digitale-tillaeg` og lærerassistenten), og tallene stemmer for alle elevtal fra 4 til 60.
 
 - **Summen af elever på roller er altid klassens elevtal (Σ elever = N).** Intet bord må have flere pladser end elever, og ingen elev står uden rolle.
 - **Stemmende roller har altid et fysisk kort:** antal kort pr. rolle og bord er `max(elever, 1)`. Det betyder, at antal kort kan være højere end antal elever.

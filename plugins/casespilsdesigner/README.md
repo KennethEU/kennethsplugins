@@ -105,6 +105,13 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.5.1 (oktober 2026)
+- Rettelse af en fejl fra tidligere versioner: `casespil-digitale-tillaeg/references/teknik.md` blev ved en fejl i 2.4.1 overskrevet med indholdet af SKILL.md (213 linjer i stedet for ca. 1180), og i 2.4.0 blev en del af den duplikeret. Filen er genopbygget fra den sidste rene version (afsnit 1 til 25 står nu præcis én gang), og indholdet fra 2.4.0, 2.4.1 og 2.5.0 er genindført
+- Cockpittet efter de nyeste ændringer i casespil.dk: to kolonner (ca. 65 % værktøjer og opslag, 35 % sparring), fladt hierarki uden rammer i rammer, ingen låsebjælke, printvejledning uden afkrydsningsfelter med integreret download og en omskifter mellem Uden AI og Med AI-rådgiver, forslagsknapper der indsætter og ikke sender, kompakt hvidt skrivefelt (38 px) med kort placeholder og "Ryd samtale" som ghost-knap
+- Gruppeberegneren fordeler ekstra elever jævnt: en tæller løber på tværs af bordene, og ved små borde skifter den ubesatte rolle fra bord til bord. Koden og testen i `references/teknik.md` er skrevet om og kørt for 4 til 80 elever
+- Retskrivning: sammensatte ord uden bindestreg (lærerassistent, lærersparring) er rettet i alle skills, og sprogtjekket nævner hele ordfamilien
+- Proxyen i casespil.dk mangler stadig dagsloft eller rate limit, og kald uden `Origin` slipper forbi herkomstkontrollen: tilføjet som regel
+
 ### v2.5.0 (oktober 2026)
 - To adskilte elevpakker som standard: `Elevpakke_[Spil]_Uden_AI.docx` (intro, bilag, rollekort og beslutningsskema uden koder eller AI-henvisninger, til skærmfrie lektioner) og `Elevpakke_[Spil]_Med_AI.docx` (samme indhold med "Rådgiverkode: XXXX" på rollekortene). De hedder "Uden AI" og "Med AI-rådgiver", ikke "analog" og "digital", og ligger altid som to separate Word-filer
 - Rollekort er dobbeltsidet A4: forsiden har topbanner, nøgletalsbjælke med tre felter, mål, baggrund, holdning, initiativkrav, nummererede argumenter, dilemmaer og en "Fortroligt notat"-boks, og bagsiden har fagbegreber, faseguide og forhandlingsnoter med notelinjer

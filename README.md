@@ -68,6 +68,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.5.1 (oktober 2026)
+- Gendannet `references/teknik.md` efter en fejl i tidligere versioner, cockpit i to kolonner, jævn fordeling af ekstra elever (ny gruppeplan med test), retskrivning uden bindestreg og regler for proxyens dagsloft. Se plugin-READMEen.
+
 ### casespilsdesigner 2.5.0 (oktober 2026)
 - To adskilte elevpakker (Uden AI og Med AI-rådgiver), dobbeltsidede rollekort (forside og bagside) og én samlet lærerpakke. Se plugin-READMEen.
 

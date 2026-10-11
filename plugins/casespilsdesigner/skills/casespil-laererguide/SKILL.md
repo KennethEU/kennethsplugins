@@ -14,7 +14,7 @@ allowed-tools:
 
 Denne skill sikrer at alle obligatoriske sektioner kommer med i lærerguiden. Brug `casespil-rollekort`-skillen for selve docx-produktionen.
 
-**Guiden er også en datakilde.** Lærerguiden vises i lærer-assistenten (`casespil-digitale-tillaeg`) som sektioner med titel og korte afsnit. Hold derfor sektionstitlerne faste (de 12 herunder), skriv ét afsnit pr. tanke, giv indhold, der står i en tabel, også en tekstversion, og skriv fasenavne og numre præcis som i casespillets datasæt og i rådgiverne.
+**Guiden er også en datakilde.** Lærerguiden vises i lærerassistenten (`casespil-digitale-tillaeg`) som sektioner med titel og korte afsnit. Hold derfor sektionstitlerne faste (de 12 herunder), skriv ét afsnit pr. tanke, giv indhold, der står i en tabel, også en tekstversion, og skriv fasenavne og numre præcis som i casespillets datasæt og i rådgiverne.
 
 ## Fase 0: Saml kontekst (automatisk — FØR alt andet)
 
@@ -46,14 +46,14 @@ Læreren italesætter selv rammen, så guiden indeholder INGEN indramningssætni
 ### 4. Roller og stemmefordeling
 Tabel med: Rolle | Organisation | Stemmer | Særlig beføjelse
 
-**Fordeling ved forskellige elevtal.** Skriv reglen for skæve elevtal ned, så læreren ikke skal finde på den undervejs, og så lærer-assistentens gruppeberegner siger det samme som guiden (én kilde):
+**Fordeling ved forskellige elevtal.** Skriv reglen for skæve elevtal ned, så læreren ikke skal finde på den undervejs, og så lærerassistentens gruppeberegner siger det samme som guiden (én kilde):
 - Borde med ens roller: antal elever pr. bord (summen af elever på roller er altid klassens elevtal, også ved 4 til 60 elever), hvilke roller der dubleres, når bordet er større end antallet af roller (to elever deler kortet og afgiver ét fælles svar uden at ændre stemmetallet), og hvad der sker ved små borde under 5 elever: eleverne tildeles én rolle hver efter en fast prioritet (skriv rækkefølgen), de ubesatte roller deles af en naborolle, og de får alligevel et fysisk rollekort, så alle bordets stemmer er repræsenteret i forhandlingen og afstemningen (kort = `max(elever, 1)` for stemmende roller)
 - Bestyrelse og projektteams: bestyrelsens størrelse og i hvilken rækkefølge projektteamene får de ekstra elever, når resten ikke går op (differentieringsreglen)
 - Mindste elevtal: under det anbefales en miniversion (`casespil-miniversion`) i stedet for en plan
 
 ### 5. Forberedelse (lærer)
 Tjekliste med:
-- [ ] Åbn lærer-assistenten med dit personlige adgangslink fra din skolemail (et 1-klik link, gyldigt i 7 dage, indtil datoen i mailen). Er det udløbet, bestiller du et nyt på siden med samme mailadresse. Hent materialerne som ZIP inde i cockpittet. Videresend ikke linket, og læg ikke materialerne på en fælles side, eleverne kan se
+- [ ] Åbn lærerassistenten med dit personlige adgangslink fra din skolemail (et 1-klik link, gyldigt i 7 dage, indtil datoen i mailen). Er det udløbet, bestiller du et nyt på siden med samme mailadresse. Hent materialerne som ZIP inde i cockpittet. Videresend ikke linket, og læg ikke materialerne på en fælles side, eleverne kan se
 - [ ] Print kun denne ene lærerpakke til eget brug: `Laererpakke_[Spil]_Samlet.docx` (lærerguide og cheatsheet i ét hæfte)
 - [ ] Print elevintroduktion (1 pr. elev)
 - [ ] Print rollekort (de versioner, der er lavet). Tæl dem ud fra gruppeplanen: ét kort pr. elev på rollen plus ét til hvert bord, hvor rollen er slået sammen med en anden

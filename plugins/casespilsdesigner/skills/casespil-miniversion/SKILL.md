@@ -98,7 +98,7 @@ Re-ground: "Vi er ved Gate 3 (produktion). Designet er godkendt, nu laver jeg ma
 rollekort → sprogtjek → konsistenstjek → levér
 ```
 
-1. `casespil-rollekort`: ét samlet Word-dokument med case, rollekort og evt. lærer-debriefing.
+1. `casespil-rollekort`: ét samlet Word-dokument med case, rollekort og evt. lærerdebriefing.
 2. `casespil-sprogtjek` på det producerede materiale.
 3. `casespil-konsistenstjek` som endelig kvalitetssikring.
 4. Levér filerne.
