@@ -106,7 +106,7 @@ For hvert rollekort, verificér:
 
 - [ ] Har konkrete overgangssætninger til HVER faseovergang?
 - [ ] Har tegn-på-godt/dårligt-flow for forhandlingsfasen?
-- [ ] Har kort afsnit om ramme og tryghed, uden ritualsætninger som "I spiller en rolle"?
+- [ ] Ingen rituelle sætninger som "I spiller en rolle" eller "træd ud af rollen", og ingen belærende afsnit om 'tryghed'/'psykologisk tryghed'?
 - [ ] Har RAS-debriefing med formålsbeskrivelse for hvert trin?
 - [ ] Har eksplicit overgangssætning mellem A og S?
 - [ ] Har inject drama-kort (mindst 2)?
