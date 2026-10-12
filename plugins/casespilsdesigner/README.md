@@ -105,6 +105,19 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.6.0 (oktober 2026)
+- Opdateret efter 171 nye commits i casespil.dk (11. til 12. oktober). Rettet: materialerne ligger i en separat krypteret `materialer.json`, som hentes ved klik (ikke `bundle.files`), `proxyToken` hedder `appId`, Lærersiden (`undervisere.html`) er adgangsvejen med single sign-on, rate limits (kun ukendte tokens tæller som fejl, 15 anmodninger pr. 10 minutter), proxyens grænser (modelliste, kun tekst, ratebegrænsning pr. IP, 8192 tokens), historik på 12 beskeder, og antal borde er `Math.floor(n / 5)`
+- Beslutninger: ærlig status ved anmodninger (`sent` og `pending`) er et bevidst valg, nøgler gemmes i `localStorage` med altid et gyldigt udløb, og mailen linker til Lærersiden
+- Gruppeplanen er skrevet om og kørt for 4 til 80 elever (`Math.floor`, alle roller ved hvert bord ved fem elever eller flere, ekstra elever roterer). Cockpit-testen er rettet til, at feltet til at taste en nøgle ikke findes
+- Nyt afsnit 26 i `references/teknik.md` og korte regler i `casespil-projektregler` (20 til 24) om tal fra én kilde, delt cockpitkode, robuste AI-klienter, privatlivsside, admin, tilgængelighed, Safari og tests
+
+### v2.5.1 (oktober 2026)
+- Rettelse af en fejl fra tidligere versioner: `casespil-digitale-tillaeg/references/teknik.md` blev ved en fejl i 2.4.1 overskrevet med indholdet af SKILL.md (213 linjer i stedet for ca. 1180), og i 2.4.0 blev en del af den duplikeret. Filen er genopbygget fra den sidste rene version (afsnit 1 til 25 står nu præcis én gang), og indholdet fra 2.4.0, 2.4.1 og 2.5.0 er genindført
+- Cockpittet efter de nyeste ændringer i casespil.dk: to kolonner (ca. 65 % værktøjer og opslag, 35 % sparring), fladt hierarki uden rammer i rammer, ingen låsebjælke, printvejledning uden afkrydsningsfelter med integreret download og en omskifter mellem Uden AI og Med AI-rådgiver, forslagsknapper der indsætter og ikke sender, kompakt hvidt skrivefelt (38 px) med kort placeholder og "Ryd samtale" som ghost-knap
+- Gruppeberegneren fordeler ekstra elever jævnt: en tæller løber på tværs af bordene, og ved små borde skifter den ubesatte rolle fra bord til bord. Koden og testen i `references/teknik.md` er skrevet om og kørt for 4 til 80 elever
+- Retskrivning: sammensatte ord uden bindestreg (lærerassistent, lærersparring) er rettet i alle skills, og sprogtjekket nævner hele ordfamilien
+- Proxyen i casespil.dk mangler stadig dagsloft eller rate limit, og kald uden `Origin` slipper forbi herkomstkontrollen: tilføjet som regel
+
 ### v2.5.0 (oktober 2026)
 - To adskilte elevpakker som standard: `Elevpakke_[Spil]_Uden_AI.docx` (intro, bilag, rollekort og beslutningsskema uden koder eller AI-henvisninger, til skærmfrie lektioner) og `Elevpakke_[Spil]_Med_AI.docx` (samme indhold med "Rådgiverkode: XXXX" på rollekortene). De hedder "Uden AI" og "Med AI-rådgiver", ikke "analog" og "digital", og ligger altid som to separate Word-filer
 - Rollekort er dobbeltsidet A4: forsiden har topbanner, nøgletalsbjælke med tre felter, mål, baggrund, holdning, initiativkrav, nummererede argumenter, dilemmaer og en "Fortroligt notat"-boks, og bagsiden har fagbegreber, faseguide og forhandlingsnoter med notelinjer
