@@ -68,6 +68,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.6.0 (oktober 2026)
+- Opdateret efter 171 nye commits i casespil.dk: `materialer.json`, Lærersiden med single sign-on, rate limits og proxy, `Math.floor` til borde og nyt afsnit 26 om drift, privatliv og robusthed. Se plugin-READMEen.
+
 ### casespilsdesigner 2.5.1 (oktober 2026)
 - Gendannet `references/teknik.md` efter en fejl i tidligere versioner, cockpit i to kolonner, jævn fordeling af ekstra elever (ny gruppeplan med test), retskrivning uden bindestreg og regler for proxyens dagsloft. Se plugin-READMEen.
 

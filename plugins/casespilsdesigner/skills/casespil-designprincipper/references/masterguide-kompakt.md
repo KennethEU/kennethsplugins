@@ -1,4 +1,4 @@
-# Masterguide — Kompakt reference
+# Masterguide, Kompakt reference
 
 Det vigtigste fra MASTERGUIDE v3 der IKKE allerede dækkes af de andre skills (designprincipper, konsistenstjek, laererguide). Læs denne fil for teori-begrundelser, skabelon-struktur, avancerede designmønstre og evaluering.
 
@@ -39,7 +39,7 @@ Ikke-kooperation er fristende individuelt men skadelig kollektivt. Kooperation f
 Design én regelramme (faser, roller, procedurer) der fungerer med flere scenarier. Læreren vælger scenarie, mekanikken er identisk. Fordel: én regelramme at lære, mange emner at udforske.
 
 ### Bilag-system
-Standard bilag-typer: lovforslag (§), ændringsforslag, partiprogrammer, høringssvar, beslutningsskema, hændelseskort, budgetark, dagsordener, rolleoversigt. Bilag er modulære — læreren vælger hvilke der bruges.
+Standard bilag-typer: lovforslag (§), ændringsforslag, partiprogrammer, høringssvar, beslutningsskema, hændelseskort, budgetark, dagsordener, rolleoversigt. Bilag er modulære, læreren vælger hvilke der bruges.
 
 ### Korridorpolitik
 Uformel forhandlingsfase: elever forlader pladser, forhandler frit i lokalet. Placér EFTER positioner er kendte, FØR afstemning. Kort fase, læreren styrer tiden. Aktiverer stille elever.
@@ -51,7 +51,7 @@ Navngiv fagbegreber direkte i materialer. I stærk-version: [NEO], [REAL], [LIB]
 Forbered 2-3 indgreb: nye data (energi daler), budgetpres (konsensus for hurtigt), eksternt deadline (manglende urgency). Brug HØJST ét. Kobl til specifik rolles skjult info.
 
 ### Empati-mapping
-Før casespil — tegn figur på tavlen: Hvad SER/HØRER/TÆNKER/FØLER/SIGER/GØR rollen? Bygger identifikation og reducerer "det er bare et spil"-distance.
+Før casespil, tegn figur på tavlen: Hvad SER/HØRER/TÆNKER/FØLER/SIGER/GØR rollen? Bygger identifikation og reducerer "det er bare et spil"-distance.
 
 ---
 
@@ -59,16 +59,16 @@ Før casespil — tegn figur på tavlen: Hvad SER/HØRER/TÆNKER/FØLER/SIGER/G�
 
 | Felt | Person | Indhold |
 |------|--------|---------|
-| Header | — | Navn, titel, org, stemmer, evt. beføjelse |
-| Mål | — | 1-2 sætninger |
+| Header |, | Navn, titel, org, stemmer, evt. beføjelse |
+| Mål |, | 1-2 sætninger |
 | Baggrund | 2. person | 3-4 sætninger der tegner perspektivet |
-| Holdning | — | Faglig position, evt. nummererede underpunkter |
-| Værdier | — | 2 stk. med kort forklaring |
+| Holdning |, | Faglig position, evt. nummererede underpunkter |
+| Værdier |, | 2 stk. med kort forklaring |
 | Argumenter | 1. person | 3 stk., stærkeste først, kan referere til andre roller |
 | Dilemmaer | 2. person | 3 stk. med krydsreferencer, evt. SKJULT info |
-| Beføjelse | — | Fx "Vetoret — én gang" |
+| Beføjelse |, | Fx "Vetoret, én gang" |
 | Tip | 2. person imperativ | Strategisk råd |
-| Faseguide | — | Tabel: fase → handling (INGEN minuttal) |
+| Faseguide |, | Tabel: fase → handling (INGEN minuttal) |
 
 ### Støtte-version tilføjer (kun hvis ønsket):
 "Sig f.eks." til hvert argument, alliancetabel (Hvem?/Hvorfor?/Sig dette), ordliste (3-4 begreber), nødhjælpsboks (gul), forhandlingssætninger (grøn), udvidet faseguide
@@ -128,4 +128,4 @@ Læreren italesætter selv rammen. Materialerne indeholder ingen indramningssæt
 
 ---
 
-*Fuld masterguide (MASTERGUIDE_Casespil_Samfundsfag_Erhvervsoekonomi_v3.md) kan lægges i arbejdsmappen for dybere reference, men er ikke påkrævet — dette plugin er selvstændigt.*
+*Fuld masterguide (MASTERGUIDE_Casespil_Samfundsfag_Erhvervsoekonomi_v3.md) kan lægges i arbejdsmappen for dybere reference, men er ikke påkrævet, dette plugin er selvstændigt.*

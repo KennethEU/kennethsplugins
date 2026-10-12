@@ -16,12 +16,12 @@ Denne skill sikrer at alle obligatoriske sektioner kommer med i lærerguiden. Br
 
 **Guiden er også en datakilde.** Lærerguiden vises i lærerassistenten (`casespil-digitale-tillaeg`) som sektioner med titel og korte afsnit. Hold derfor sektionstitlerne faste (de 12 herunder), skriv ét afsnit pr. tanke, giv indhold, der står i en tabel, også en tekstversion, og skriv fasenavne og numre præcis som i casespillets datasæt og i rådgiverne.
 
-## Fase 0: Saml kontekst (automatisk — FØR alt andet)
+## Fase 0: Saml kontekst (automatisk, FØR alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
-2. Scan projektmappen for eksisterende rollekort og casespilsdesign — lærerguiden SKAL matche rollekortene
+2. Scan projektmappen for eksisterende rollekort og casespilsdesign, lærerguiden SKAL matche rollekortene
 3. Læs `casespil-designprincipper`-skillen for at sikre debriefing og facilitering følger de 10 principper
-4. Identificér faget og fagets fagbegreber — de skal bruges i debriefing-sektionen
+4. Identificér faget og fagets fagbegreber, de skal bruges i debriefing-sektionen
 
 Skriv lærerguiden efter, at rollekortene er færdige. Ellers passer faseovergange, tal og krydsreferencer ikke, og guiden skal skrives om.
 
@@ -33,17 +33,13 @@ Skriv lærerguiden efter, at rollekortene er færdige. Ellers passer faseovergan
 - Fag, niveau, varighed, klassestørrelse
 - Læringsmål (konkrete, målbare)
 
-### 2. Ramme og tryghed (kort, uden ritualer)
-Læreren italesætter selv rammen, så guiden indeholder INGEN indramningssætninger (ikke "I spiller en rolle", "I er nu jer selv igen", "time-out" eller lignende). Skriv kun de praktiske valg:
-- Observatørrolle-mulighed for utrygge elever
-- Hvad læreren holder øje med (personangreb, en elev der trækker sig)
-- Hvad der evalueres: argumenter og valg, ikke personer
-
-### 3. Differentiering
+### 2. Differentiering (inkl. observatøropgave)
 - Normalversionen er standard. Hvis der også findes støtte- og/eller stærkversion: tabel over versionerne, råd til diskret uddeling og "bland versioner INDEN FOR gruppen, giv aldrig alle støttekort til én gruppe"
 - Hvis der kun er en normalversion: skriv det kort som et bevidst valg. Nævn evt., at en AI-rådgiver pr. rolle kan være støtte til de svageste elever
+- Observatørrolle som differentiering: en elev kan få en analytisk observatøropgave med fokus på argumenter, alliancer og stemmer ved et bord og bidrage til opsamlingen
+- Undgå belærende afsnit om "tryghed" eller "psykologisk tryghed", danske gymnasielærere kender udmærket deres klasserum og behøver ikke amerikanske formaninger om respektfuld tone eller personangreb
 
-### 4. Roller og stemmefordeling
+### 3. Roller og stemmefordeling
 Tabel med: Rolle | Organisation | Stemmer | Særlig beføjelse
 
 **Fordeling ved forskellige elevtal.** Skriv reglen for skæve elevtal ned, så læreren ikke skal finde på den undervejs, og så lærerassistentens gruppeberegner siger det samme som guiden (én kilde):
@@ -51,7 +47,7 @@ Tabel med: Rolle | Organisation | Stemmer | Særlig beføjelse
 - Bestyrelse og projektteams: bestyrelsens størrelse og i hvilken rækkefølge projektteamene får de ekstra elever, når resten ikke går op (differentieringsreglen)
 - Mindste elevtal: under det anbefales en miniversion (`casespil-miniversion`) i stedet for en plan
 
-### 5. Forberedelse (lærer)
+### 4. Forberedelse (lærer)
 Tjekliste med:
 - [ ] Åbn lærerassistenten med dit personlige adgangslink fra din skolemail (et 1-klik link, gyldigt i 7 dage, indtil datoen i mailen). Er det udløbet, bestiller du et nyt på siden med samme mailadresse. Hent materialerne som ZIP inde i cockpittet. Videresend ikke linket, og læg ikke materialerne på en fælles side, eleverne kan se
 - [ ] Print kun denne ene lærerpakke til eget brug: `Laererpakke_[Spil]_Samlet.docx` (lærerguide og cheatsheet i ét hæfte)
@@ -62,29 +58,29 @@ Tjekliste med:
 - [ ] Test evt. digitalt værktøj
 - [ ] Elevintroduktion uddeles FØR rollekort
 
-### 6. Tidsplan (UDEN minuttal)
-"Du styrer selv tempoet — skemaet viser rækkefølge og relativ vægtning."
+### 5. Tidsplan (UDEN minuttal)
+"Du styrer selv tempoet, skemaet viser rækkefølge og relativ vægtning."
 
 | Fase | Aktivitet | Lærers rolle |
 |------|-----------|-------------|
 | Intro | Præsentér scenarie | Facilitator |
 | Fase 1 | Forberedelse | Cirkulér |
-| Fase 2 — R1 | Åbningsstatements | Tidstager |
-| Fase 2 — R2 | Fri forhandling | Observér |
-| Fase 2 — R3 | Forslag + afstemning | Hold styr |
+| Fase 2, R1 | Åbningsstatements | Tidstager |
+| Fase 2, R2 | Fri forhandling | Observér |
+| Fase 2, R3 | Forslag + afstemning | Hold styr |
 | Fase 3 | Debriefing (RAS) | Facilitator |
 | Afslutning | Exit-ticket | Uddel |
 
 Fasenavne og numre tages fra casespillets datasæt og står ens i guiden, elevintroduktionen, rollekortene og rådgiverne.
 
-### 7. Faseovergangssignaler
+### 6. Faseovergangssignaler
 Konkrete sætninger med **fed** og *kursiv* til HVER overgang:
 - Intro → Fase 1: "I har nu fået jeres rollekort..."
 - Fase 1 → Fase 2: "Forberedelsen er slut. Nu går vi ind i [scenarienavn]..."
 - Runde → Runde: "[Ordstyrer], forhandlingstiden er udløbet..."
 - Fase 2 → Fase 3: "Forhandlingen er slut. Nu går vi i gang med debriefingen..."
 
-### 8. Faciliterings-indikatorer
+### 7. Faciliterings-indikatorer
 
 **Godt flow (lad det være!):**
 - Elever taler højlydt i karakter
@@ -101,14 +97,14 @@ Konkrete sætninger med **fed** og *kursiv* til HVER overgang:
 - Stil åbne spørgsmål
 - Aktivér stille grupper direkte
 
-### 9. Inject drama (2-3 stk., brug HØJST ét)
+### 8. Inject drama (2-3 stk., brug HØJST ét)
 | Type | Indhold | Hvornår |
 |------|---------|---------|
 | Nye data | "Ny rapport viser..." | Energien daler |
 | Budgetpres | "Beregninger viser at..." | Konsensus for hurtigt |
 | Eksternt deadline | "EU/regeringen kræver at..." | Manglende urgency |
 
-### 10. Debriefing (RAS-modellen)
+### 9. Debriefing (RAS-modellen)
 
 **R = Reaktion** (kort, formål: lade følelser komme ud)
 - "Hvordan føltes det at spille jeres rolle?"
@@ -120,23 +116,23 @@ Konkrete sætninger med **fed** og *kursiv* til HVER overgang:
 - Magt, alliancer, argumentation
 - Skriv nøgleord på tavlen
 
-**Overgangssætning:** "OK — nu har vi analyseret hvad der skete. Men hvad med den virkelige verden?"
+**Overgangssætning:** "OK, nu har vi analyseret hvad der skete. Men hvad med den virkelige verden?"
 
 **S = Sammenfatning** (medium, formål: transfer til virkelighed)
 - Teori-kobling: "Hvordan relaterer dette til [begreb]?"
 - Virkelighedstransfer: "Hvor ser I denne dynamik i virkeligheden?"
 - Meta-læring: "I har nu OPLEVET på egen krop at..."
 
-### 11. Typiske problemer og løsninger
+### 10. Typiske problemer og løsninger
 | Problem | Tegn | Løsning |
 |---------|------|---------|
 | Elever forstår ikke reglerne | Spørger konstant | Bedre intro, visuel guide |
 | Én gruppe dominerer | Andre er passive | Justér stemmevægte |
 | Deadlock | Ingen kan blive enige | Kompromisrolle, sænk flertal |
 | For personligt | Elev virker ked | Stop, adressér, genopbyg |
-| Skæve elevtal | Nogle borde har færre elever end roller, eller en rolle har to elever | Følg fordelingsreglen i sektion 4: dublér de store roller, og ved små borde får eleverne én rolle hver efter prioritet, mens ubesatte roller deles af en nabo og har deres eget kort |
+| Skæve elevtal | Nogle borde har færre elever end roller, eller en rolle har to elever | Følg fordelingsreglen i sektion 3: dublér de store roller, og ved små borde får eleverne én rolle hver efter prioritet, mens ubesatte roller deles af en nabo og har deres eget kort |
 
-### 12. Variationer
+### 11. Variationer
 Beskriv mindst 2 variationer af casespillet:
 - **Kort version:** Hvilke faser/roller kan skæres væk og stadig bevare kernekonflikt?
 - **Lang version:** Hvad kan tilføjes for at uddybe (ekstra runder, flere roller, bilag)?
@@ -150,7 +146,7 @@ Variationerne hjælper læreren med at tilpasse casespillet til forskellige hold
 
 Afslut ALTID med én af:
 
-- **DONE** — Lærerguide genereret med alle 12 obligatoriske sektioner
-- **DONE_WITH_CONCERNS** — Guide leveret, men med mangler (fx: inject drama-kort mangler fordi scenariet er for kort, eller debriefing er generisk)
-- **BLOCKED** — Kan ikke generere guide (fx: rollekort er ikke færdige endnu, designprincipper-skill ikke tilgængelig)
-- **NEEDS_CONTEXT** — Mangler information (fx: "Hvor lang tid har du til casespillet?")
+- **DONE**, Lærerguide genereret med alle 12 obligatoriske sektioner
+- **DONE_WITH_CONCERNS**, Guide leveret, men med mangler (fx: inject drama-kort mangler fordi scenariet er for kort, eller debriefing er generisk)
+- **BLOCKED**, Kan ikke generere guide (fx: rollekort er ikke færdige endnu, designprincipper-skill ikke tilgængelig)
+- **NEEDS_CONTEXT**, Mangler information (fx: "Hvor lang tid har du til casespillet?")

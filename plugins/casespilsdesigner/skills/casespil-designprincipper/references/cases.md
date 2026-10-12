@@ -1,6 +1,6 @@
 # Case-katalog: 14 afprøvede casespilscases
 
-Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert case. Brug som udgangspunkt når du designer nye casespil — tilpas roller og ressourcer til den konkrete klasse.
+Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert case. Brug som udgangspunkt når du designer nye casespil, tilpas roller og ressourcer til den konkrete klasse.
 
 ---
 
@@ -13,15 +13,15 @@ Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert 
   - S4: Grundlovsændring / Folkeafstemning
   - S5: Integrationspolitik
   - S6: EU-lovgivning (Landbrugsstøtte / AI-regulering)
-  - S7: Retspolitik — Strafferamme
+  - S7: Retspolitik, Strafferamme
 - ERHVERVSØKONOMI (7 cases)
   - E1: Virksomhedsetablering & Finansiering
   - E2: Prisfastsættelse & Markedsføring
   - E3: Stakeholder Management (CSR-dilemma)
-  - E4: Forhandling — Lønforhandling / Leverandøraftale
-  - E5: Markedssimulation — Oligopol
+  - E4: Forhandling, Lønforhandling / Leverandøraftale
+  - E5: Markedssimulation, Oligopol
   - E6: Budget & Cash Flow Management
-  - E7: International Expansion — Market Entry
+  - E7: International Expansion, Market Entry
 - Brug af cases
 
 ## SAMFUNDSFAG (7 cases)
@@ -66,7 +66,7 @@ Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert 
 **Mekanik:** Kommissionen fremlægger → Parlamentet hører → Ministerråd (kvalificeret flertal)
 **Fagbegreber:** Subsidiaritet, fællesskabsmetoden, CAP, veto vs. flertal
 
-### S7: Retspolitik — Strafferamme
+### S7: Retspolitik, Strafferamme
 **Format:** E+A (retssag + forhandling) | **Knaphed:** Retfærdighed, taletid
 **Roller:** "Law & order"-parti, rehabiliterings-fokus, ofre, dømte/indsatte, kriminalforsorg
 **Scenarier (vælg ét):** Voldtægtsstraf, bandepakker, ungdomskriminalitet, alternative straffe
@@ -94,14 +94,14 @@ Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert 
 **3 valg:** Minimum (følg lokal lov/risiko: boykot), Audit (kræv forbedring/+15%/lavere profit), Exit (europæisk produktion/+50%/mist konkurrenceevne)
 **Fagbegreber:** CSR, stakeholder vs. shareholder primacy, Triple Bottom Line
 
-### E4: Forhandling — Lønforhandling / Leverandøraftale
+### E4: Forhandling, Lønforhandling / Leverandøraftale
 **Format:** Parvis forhandling | **Knaphed:** ZOPA (45-50 kr.)
 **Scenarie A:** Medarbejder (vil +10%, BATNA: jobtilbud +8%) vs. Chef (budget maks. +5%, BATNA: ny ansættelse)
 **Scenarie B:** Køber (maks. 50 kr.) vs. sælger (min. 45 kr.)
 **Informationsasymmetri:** Medarbejder kender ikke budget; chef kender ikke jobtilbud
 **Fagbegreber:** BATNA, ZOPA, distributive vs. integrative bargaining
 
-### E5: Markedssimulation — Oligopol
+### E5: Markedssimulation, Oligopol
 **Format:** D (konsekvens-kredsløb) | **Knaphed:** 10.000 kunder (fast), profit
 **Roller:** 3-4 virksomheder, homogent produkt
 **Mekanik (5 runder):** Vælg pris (hemmeligt) → afslør → markedsandele (billigst: 50%, næst: 30%, dyr: 20%) → profit = andel × (pris − omkostning)
@@ -114,7 +114,7 @@ Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert 
 **Data:** Restaurant, omsætning 400K/md, kreditkunder betaler 60 dage forsinket → faktisk likviditet 200K, udgifter 380K. Konto: 400K i dag → tør om 2 mdr.
 **Fagbegreber:** Cash flow vs. profit, working capital, likviditet, factoring, break-even
 
-### E7: International Expansion — Market Entry
+### E7: International Expansion, Market Entry
 **Format:** F (bestyrelse) | **Knaphed:** Kapital, ledelseskapacitet
 **Roller:** CEO (risiko), Sales & Marketing (potentiale), Operations (logistik), Finance (kapital) + Market Intelligence + Risk Assessment
 **3 markeder:** Tyskland (80M, høj konkurrence, lav risiko), Kina (1,4B, medium konkurrence, høj risiko), USA (330M, meget høj konkurrence, medium risiko)

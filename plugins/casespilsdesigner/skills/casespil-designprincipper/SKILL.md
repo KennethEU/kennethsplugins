@@ -15,8 +15,8 @@ allowed-tools:
 
 Denne skill er den faglige rygrad i pluginet. Den indeholder principper, formater og designmønstre. Til uddybning, læs reference-filerne:
 
-- **`references/cases.md`** — 14 afprøvede cases med roller, stemmer, knaphed og fagbegreber
-- **`references/masterguide-kompakt.md`** — Teori (Kolb, Englund), skabeloner, koalitionsmatematik, evaluering, avancerede designmønstre
+- **`references/cases.md`**, 14 afprøvede cases med roller, stemmer, knaphed og fagbegreber
+- **`references/masterguide-kompakt.md`**, Teori (Kolb, Englund), skabeloner, koalitionsmatematik, evaluering, avancerede designmønstre
 
 ## De 10 universelle designprincipper
 
@@ -108,7 +108,7 @@ Navngiv fagbegreber direkte i materialer (stærk-version): [NEO], [REAL], [LIB] 
 
 ## Pointsystemer
 
-ALDRIG i deliberative casespil (Format A, E, G). Fjerner fokus fra argumentation. Talbaserede konsekvenser (budget, likviditet) er OK i Format C, D, H — men aldrig som leaderboard.
+ALDRIG i deliberative casespil (Format A, E, G). Fjerner fokus fra argumentation. Talbaserede konsekvenser (budget, likviditet) er OK i Format C, D, H, men aldrig som leaderboard.
 
 ## Debriefing: RAS-modellen
 
@@ -118,14 +118,14 @@ ALDRIG i deliberative casespil (Format A, E, G). Fjerner fokus fra argumentation
 | A = Analyse | Koble oplevelse til fagbegreber | Lang | Kernen. "Hvorfor"-spørgsmål |
 | S = Sammenfatning | Overføre til virkelighed | Medium | Teori + eksamensrelevans |
 
-Eksplicit overgangssætning mellem A og S: "OK — nu har vi analyseret hvad der skete. Men hvad med den virkelige verden?"
+Eksplicit overgangssætning mellem A og S: "OK, nu har vi analyseret hvad der skete. Men hvad med den virkelige verden?"
 
 ## Reference-filer
 
 Når du designer et nyt casespil:
 
-1. **Læs `references/cases.md`** — find et lignende case og brug det som udgangspunkt for roller, stemmematematik og fagbegreber
-2. **Læs `references/masterguide-kompakt.md`** — for teori-begrundelser (Kolb, Englund), avancerede designmønstre (modulært scenarie-design, bilag-system), koalitionsmatematik, evaluering og rollekort-skabelon
+1. **Læs `references/cases.md`**, find et lignende case og brug det som udgangspunkt for roller, stemmematematik og fagbegreber
+2. **Læs `references/masterguide-kompakt.md`**, for teori-begrundelser (Kolb, Englund), avancerede designmønstre (modulært scenarie-design, bilag-system), koalitionsmatematik, evaluering og rollekort-skabelon
 
 Pluginet er selvstændigt. Den fulde masterguide (MASTERGUIDE_Casespil_Samfundsfag_Erhvervsoekonomi_v3.md) kan lægges i arbejdsmappen som ekstra reference, men er ikke påkrævet.
 
@@ -135,7 +135,7 @@ Pluginet er selvstændigt. Den fulde masterguide (MASTERGUIDE_Casespil_Samfundsf
 
 Afslut ALTID med én af:
 
-- **DONE** — Casespil designet med roller, konflikt, stemmematematik og format valgt
-- **DONE_WITH_CONCERNS** — Design leveret, men med forbehold (fx: kun ét dilemma pr. rolle, eller balancen er skæv)
-- **BLOCKED** — Kan ikke designe casespil (fx: emnet har ingen naturlig konflikt, eller faget egner sig ikke til formatet)
-- **NEEDS_CONTEXT** — Mangler information (fx: "Hvor mange elever er der?" eller "Hvilket fagligt emne?")
+- **DONE**, Casespil designet med roller, konflikt, stemmematematik og format valgt
+- **DONE_WITH_CONCERNS**, Design leveret, men med forbehold (fx: kun ét dilemma pr. rolle, eller balancen er skæv)
+- **BLOCKED**, Kan ikke designe casespil (fx: emnet har ingen naturlig konflikt, eller faget egner sig ikke til formatet)
+- **NEEDS_CONTEXT**, Mangler information (fx: "Hvor mange elever er der?" eller "Hvilket fagligt emne?")

@@ -8,17 +8,17 @@ allowed-tools:
   - Write
 ---
 
-# Rollekort & Lærerguide — Docx-generering
+# Rollekort & Lærerguide, Docx-generering
 
 **Projektregler:** `casespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
 Denne skill styrer *hvordan* du genererer Word-dokumenter til casespil. Den faglige designviden (hvilke roller, dilemmaer, formater) styres af `casespil-designprincipper`-skillen med dens reference-filer.
 
-## Fase 0: Saml kontekst (automatisk — FØR alt andet)
+## Fase 0: Saml kontekst (automatisk, FØR alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
 2. Scan projektmappen for eksisterende casespilsmaterialer (indhold, roller, dilemmaer)
-3. Læs `casespil-designprincipper`-skillen — rollekortene SKAL overholde de 10 principper
+3. Læs `casespil-designprincipper`-skillen, rollekortene SKAL overholde de 10 principper
 4. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning
 
 Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten først bagefter i scriptet, giver det dobbeltarbejde og tekstfejl i de genererede filer.
@@ -31,7 +31,7 @@ Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten fø
 
 1. Læs `casespil-designprincipper`-skillen (den skal allerede være trigget) for at sikre at rollekortene overholder de 10 principper
 2. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning (den opdateres løbende)
-3. Hav rollekortenes indhold klar FØR du begynder at kode — skriv aldrig kode og indhold samtidig
+3. Hav rollekortenes indhold klar FØR du begynder at kode, skriv aldrig kode og indhold samtidig
 
 ### Generering
 
@@ -45,7 +45,7 @@ Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten fø
 ### Vigtigt
 
 - Brug `references/template-kode.md` som udgangspunkt for genbrugelig kode
-- Tilpas aldrig margener eller farvepalet uden god grund — standarderne er testet
+- Tilpas aldrig margener eller farvepalet uden god grund, standarderne er testet
 
 ---
 
@@ -187,7 +187,7 @@ Se `references/template-kode.md` for komplet genbrugelig kodebase med:
 - Støtteversion-specifikke funktioner (alliancetabel, nødhjælpsboks, forhandlingsboks, ordliste)
 - Lærerguide-specifikke funktioner
 
-Kopiér aldrig hele template-koden blindt — tilpas altid til det specifikke casespils behov.
+Kopiér aldrig hele template-koden blindt, tilpas altid til det specifikke casespils behov.
 
 ---
 
@@ -195,7 +195,7 @@ Kopiér aldrig hele template-koden blindt — tilpas altid til det specifikke ca
 
 Afslut ALTID med én af:
 
-- **DONE** — Alle rollekort (normalversionen, og støtte/stærk hvis det er ønsket) genereret som .docx og klar til print
-- **DONE_WITH_CONCERNS** — Rollekort leveret, men med forbehold (fx: en ønsket støtteversion mangler, eller farvepalet er tilpasset uden godkendelse)
-- **BLOCKED** — Kan ikke generere rollekort (fx: rollernes indhold er ikke defineret, designprincipper-skill ikke tilgængelig)
-- **NEEDS_CONTEXT** — Mangler information (fx: "Hvor mange roller skal der være? Skal der laves differentierede versioner?")
+- **DONE**, Alle rollekort (normalversionen, og støtte/stærk hvis det er ønsket) genereret som .docx og klar til print
+- **DONE_WITH_CONCERNS**, Rollekort leveret, men med forbehold (fx: en ønsket støtteversion mangler, eller farvepalet er tilpasset uden godkendelse)
+- **BLOCKED**, Kan ikke generere rollekort (fx: rollernes indhold er ikke defineret, designprincipper-skill ikke tilgængelig)
+- **NEEDS_CONTEXT**, Mangler information (fx: "Hvor mange roller skal der være? Skal der laves differentierede versioner?")
