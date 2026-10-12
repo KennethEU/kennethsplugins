@@ -32,7 +32,7 @@ For hvert rollekort, verificér:
 - [ ] Er krydsreferencer symmetriske? (Hvis A har dilemma om B, har B perspektiv på A?)
 - [ ] Har spilfaserne samme navne, numre og rækkefølge i elevintroduktion, rollekortenes faseguide, lærerguide og, hvis de findes, webside og rådgiver? Intro og Debriefing må stå som før- og eftertrin uden fasenummer, men er ikke rådgiverfaser.
 
-**Typisk fejl:** Rollekort A siger "Professor Andersen foreslår 60 % af median", men professor Andersens kort siger 50 %.
+**Typisk fejl:** Rollekort A siger "Professor Andersen foreslår 60 % af median" — men professor Andersens kort siger 50 %.
 
 ## 2. Stemmematematik-tjek
 
@@ -70,7 +70,7 @@ For hvert rollekort, verificér:
 - [ ] Har ALLE roller mindst ét ægte dilemma?
 - [ ] Er der mindst én rolle med kompromis/brobygger-position?
 - [ ] Er der mindst én rolle med uformel magt (wildcard/moralsk autoritet)?
-- [ ] Er ingen rolle "oplagt vinder", alle har trade-offs?
+- [ ] Er ingen rolle "oplagt vinder" — alle har trade-offs?
 
 ## 6. Differentierings-tjek
 
@@ -186,7 +186,7 @@ ANBEFALINGER: [liste over forbedringer der KAN rettes]
 
 Afslut ALTID med én af:
 
-- **DONE**, Alle relevante tjek bestået, materialer er klar til print
-- **DONE_WITH_CONCERNS**, Tjek gennemført, men med fund der bør adresseres (fx: mindre sprogfejl, svag balancering)
-- **BLOCKED**, Kritiske fejl fundet der SKAL rettes før brug (fx: stemmematematik fejler, krydsreferencer er forkerte). Angiv præcist hvilke fejl der skal rettes, og foreslå at køre `casespil-rollekort` eller `casespil-laererguide` igen med rettelserne.
-- **NEEDS_CONTEXT**, Materialer er ufuldstændige (fx: lærerguide mangler, kun nogle rollekort er genereret). Angiv hvad der mangler før tjekket kan gennemføres.
+- **DONE** — Alle relevante tjek bestået, materialer er klar til print
+- **DONE_WITH_CONCERNS** — Tjek gennemført, men med fund der bør adresseres (fx: mindre sprogfejl, svag balancering)
+- **BLOCKED** — Kritiske fejl fundet der SKAL rettes før brug (fx: stemmematematik fejler, krydsreferencer er forkerte). Angiv præcist hvilke fejl der skal rettes, og foreslå at køre `casespil-rollekort` eller `casespil-laererguide` igen med rettelserne.
+- **NEEDS_CONTEXT** — Materialer er ufuldstændige (fx: lærerguide mangler, kun nogle rollekort er genereret). Angiv hvad der mangler før tjekket kan gennemføres.

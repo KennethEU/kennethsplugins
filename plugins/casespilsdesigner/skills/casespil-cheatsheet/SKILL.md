@@ -9,7 +9,7 @@ allowed-tools:
   - Write
 ---
 
-# Lærermateriale, Cheatsheet og modelbesvarelser
+# Lærermateriale — Cheatsheet og modelbesvarelser
 
 **Projektregler:** `casespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
@@ -22,7 +22,7 @@ Denne skill styrer workflow for at producere lærervejledninger med spørgsmål 
 - Læreren vil have et debriefing-cheatsheet til at facilitere opsamling
 - Læreren vil have en facitliste til en quiz eller arbejdsark
 
-## Fase 0: Saml kontekst (automatisk, FØR alt andet)
+## Fase 0: Saml kontekst (automatisk — FØR alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag, hold og arbejdsgange
 2. Scan projektmappen for eksisterende elevmaterialer, rollekort eller arbejdsspørgsmål der skal bruges som input
@@ -48,7 +48,7 @@ Når du skal afklare noget, brug dette mønster:
 > cheatsheettet dække alle 12, eller kun de 5 analysespørgsmål
 > der kræver fagbegreber?
 >
-> ANBEFALING: Vælg B, kun analysespørgsmålene. R- og S-spørgsmål
+> ANBEFALING: Vælg B — kun analysespørgsmålene. R- og S-spørgsmål
 > er åbne og har ikke faste modelsvar, så de fylder bare.
 >
 > A) Alle 12 spørgsmål med modelsvar
@@ -72,10 +72,10 @@ Hvad har Fase 0 fundet? Saml overblikket:
 ### Fase 2: Skriv modelbesvarelser
 
 For hvert spørgsmål, skriv:
-1. **Kernesvar**, det centrale svar læreren forventer (2-4 sætninger)
-2. **Fagbegreber**, hvilke termer SKAL eleverne bruge? Markér med fed.
-3. **Uddybning**, yderligere pointer stærke elever kan nævne
-4. **Typiske fejl**, hvad siger elever ofte forkert? (valgfrit, men værdifuldt)
+1. **Kernesvar** — det centrale svar læreren forventer (2-4 sætninger)
+2. **Fagbegreber** — hvilke termer SKAL eleverne bruge? Markér med fed.
+3. **Uddybning** — yderligere pointer stærke elever kan nævne
+4. **Typiske fejl** — hvad siger elever ofte forkert? (valgfrit, men værdifuldt)
 
 ### Fase 3: Producér Word-dokument
 
@@ -100,13 +100,13 @@ Hvert spørgsmål-svar-par er en tabel med to rækker:
 
 **Header på dokumentet:**
 - Titel: "LÆRERVEJLEDNING: [Aktivitetsnavn]"
-- Undertitel: "Spørgsmål og modelbesvarelser, KUN TIL LÆREREN"
+- Undertitel: "Spørgsmål og modelbesvarelser — KUN TIL LÆREREN"
 - Fag, niveau, forløb
 
 **Alternativt layout: Debriefing-flow**
 
 For casespils-debriefing følger layoutet RAS-modellen:
-- Sektion R: Reaktionsspørgsmål (ingen modelsvar, kun faciliterings-noter)
+- Sektion R: Reaktionsspørgsmål (ingen modelsvar — kun faciliterings-noter)
 - Sektion A: Analysespørgsmål med modelsvar og fagbegreber
 - Sektion S: Sammenfatningsspørgsmål med teori-kobling
 
@@ -114,13 +114,13 @@ For casespils-debriefing følger layoutet RAS-modellen:
 
 - [ ] Er ALLE spørgsmål fra elevmaterialet dækket?
 - [ ] Er fagbegreber markeret med fed?
-- [ ] Er svarene realistiske, dvs. noget en gymnasieelev faktisk kan formulere?
+- [ ] Er svarene realistiske — dvs. noget en gymnasieelev faktisk kan formulere?
 - [ ] Er der konsistens med de faglige slides/tekster eleverne har læst?
 - [ ] Er sproget korrekt dansk? (brug `casespil-sprogtjek` hvis tilgængelig)
 
 ## Vigtige principper
 
-**Modelbesvarelser er ikke perfekte svar.** De er det læreren bruger som rettesnor. Skriv dem på det niveau en stærk elev ville formulere, ikke som en akademisk afhandling.
+**Modelbesvarelser er ikke perfekte svar.** De er det læreren bruger som rettesnor. Skriv dem på det niveau en stærk elev ville formulere — ikke som en akademisk afhandling.
 
 **Fagbegreber er nøglen.** Hele pointen med cheatsheettet er at læreren hurtigt kan se: "Nævnte eleven X-begrebet? Ja/nej." Markér derfor altid de centrale fagbegreber med fed.
 
@@ -134,7 +134,7 @@ For casespils-debriefing følger layoutet RAS-modellen:
 
 Afslut ALTID med én af:
 
-- **DONE**, Lærermateriale genereret med spørgsmål, modelbesvarelser og fagbegreber markeret
-- **DONE_WITH_CONCERNS**, Materiale leveret, men med forbehold (fx: nogle spørgsmål mangler modelbesvarelser, eller fagbegreber var uklare)
-- **BLOCKED**, Kan ikke generere materiale (fx: ingen spørgsmål eller fagligt indhold at arbejde ud fra)
-- **NEEDS_CONTEXT**, Mangler information (fx: "Hvilke spørgsmål skal der laves modelsvar til?")
+- **DONE** — Lærermateriale genereret med spørgsmål, modelbesvarelser og fagbegreber markeret
+- **DONE_WITH_CONCERNS** — Materiale leveret, men med forbehold (fx: nogle spørgsmål mangler modelbesvarelser, eller fagbegreber var uklare)
+- **BLOCKED** — Kan ikke generere materiale (fx: ingen spørgsmål eller fagligt indhold at arbejde ud fra)
+- **NEEDS_CONTEXT** — Mangler information (fx: "Hvilke spørgsmål skal der laves modelsvar til?")

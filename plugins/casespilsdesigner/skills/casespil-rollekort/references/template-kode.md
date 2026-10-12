@@ -13,7 +13,7 @@ Denne fil indeholder genbrugelig Node.js-kode til docx-generering af rollekort, 
 - Faseguide-tabel
 - Støtteversion-specifikke funktioner
 - Dokument-bygning
-- Lærermateriale / Cheatsheet, Two-table layout
+- Lærermateriale / Cheatsheet — Two-table layout
 - Elevpakke i to varianter og samlet lærerpakke (dobbeltsidede rollekort, afprøvet)
 - Validerings- og preview-workflow
 - Typiske fejl at undgå
@@ -31,7 +31,7 @@ const fs = require('fs');
 // ── Sideopsætning (DXA-enheder) ──
 const PAGE_W = 11906, PAGE_H = 16838; // A4
 
-// Kompakte margener (rollekort, 1 side pr. kort)
+// Kompakte margener (rollekort — 1 side pr. kort)
 const MH_ROLLE = 1008, MV_ROLLE = 640;
 // Standard margener (lærerguide)
 const MH_GUIDE = 1440, MV_GUIDE = 1008;
@@ -129,7 +129,7 @@ function numberedItem(num, text, opts = {}) {
 ## Farvet boks (central byggeklods)
 
 ```javascript
-// Farvet baggrundsboks, bruges til info, advarsler, nødhjælp
+// Farvet baggrundsboks — bruges til info, advarsler, nødhjælp
 function colorBox(children, fill = LIGHT, contentWidth) {
   const w = contentWidth || (PAGE_W - 2 * MH_ROLLE);
   return new Table({
@@ -172,7 +172,7 @@ function roleHeader(name, title, org, stemmer, befoejelse, contentWidth) {
   const w = contentWidth || (PAGE_W - 2 * MH_ROLLE);
   const runs = [
     new TextRun({ text: name, font: "Arial", size: pt(14), bold: true, color: WHITE }),
-    new TextRun({ text: `\n${title}, ${org}`, font: "Arial", size: pt(10), color: WHITE }),
+    new TextRun({ text: `\n${title} — ${org}`, font: "Arial", size: pt(10), color: WHITE }),
     new TextRun({ text: `\nStemmer: ${stemmer}`, font: "Arial", size: pt(10), bold: true, color: WHITE })
   ];
   if (befoejelse) {
@@ -431,7 +431,7 @@ async function saveAndValidate(buffer, filename) {
 }
 ```
 
-## Lærermateriale / Cheatsheet, Two-table layout
+## Lærermateriale / Cheatsheet — Two-table layout
 
 ```javascript
 // Spørgsmål-svar-par som farvet tabel
@@ -682,7 +682,7 @@ pdftoppm -jpeg -r 200 output.pdf preview
 **Sproglige fejl:** Se `casespil-sprogtjek`-skillen for komplet dansk retskrivningstjek (æøå, sammensatte ord, genus, person-perspektiv, fagterm-konsistens).
 
 **Tekniske fejl:**
-1. **Dobbelt-tekst fra sed:** Undgå at bruge sed til teksterstatning i docx-scripts, det skaber fejl. Skriv altid korrekt tekst direkte i JavaScript-strengen.
+1. **Dobbelt-tekst fra sed:** Undgå at bruge sed til teksterstatning i docx-scripts — det skaber fejl. Skriv altid korrekt tekst direkte i JavaScript-strengen.
 2. **Sideoverflow:** Hvert normalt rollekort SKAL passe på præcis 2 A4-sider (forside og bagside). Støtte kan fylde mere, og stærk må være 1 side, hvis læreren har bedt om det. Preview ALTID med pdftoppm, og tæl siderne med `pdfinfo`.
 3. **Encoding:** Sørg for at Node.js-filen er gemt som UTF-8. Test med `node -e "console.log('æøå')"` først.
 4. **Margin-mismatch:** Brug de korrekte margener for dokumenttypen (MH_ROLLE for rollekort, MH_GUIDE for lærerguide, MH_INTRO for elevintro).

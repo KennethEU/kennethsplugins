@@ -16,12 +16,12 @@ Denne skill sikrer at alle obligatoriske sektioner kommer med i lærerguiden. Br
 
 **Guiden er også en datakilde.** Lærerguiden vises i lærerassistenten (`casespil-digitale-tillaeg`) som sektioner med titel og korte afsnit. Hold derfor sektionstitlerne faste (de 12 herunder), skriv ét afsnit pr. tanke, giv indhold, der står i en tabel, også en tekstversion, og skriv fasenavne og numre præcis som i casespillets datasæt og i rådgiverne.
 
-## Fase 0: Saml kontekst (automatisk, FØR alt andet)
+## Fase 0: Saml kontekst (automatisk — FØR alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
-2. Scan projektmappen for eksisterende rollekort og casespilsdesign, lærerguiden SKAL matche rollekortene
+2. Scan projektmappen for eksisterende rollekort og casespilsdesign — lærerguiden SKAL matche rollekortene
 3. Læs `casespil-designprincipper`-skillen for at sikre debriefing og facilitering følger de 10 principper
-4. Identificér faget og fagets fagbegreber, de skal bruges i debriefing-sektionen
+4. Identificér faget og fagets fagbegreber — de skal bruges i debriefing-sektionen
 
 Skriv lærerguiden efter, at rollekortene er færdige. Ellers passer faseovergange, tal og krydsreferencer ikke, og guiden skal skrives om.
 
@@ -37,7 +37,7 @@ Skriv lærerguiden efter, at rollekortene er færdige. Ellers passer faseovergan
 - Normalversionen er standard. Hvis der også findes støtte- og/eller stærkversion: tabel over versionerne, råd til diskret uddeling og "bland versioner INDEN FOR gruppen, giv aldrig alle støttekort til én gruppe"
 - Hvis der kun er en normalversion: skriv det kort som et bevidst valg. Nævn evt., at en AI-rådgiver pr. rolle kan være støtte til de svageste elever
 - Observatørrolle som differentiering: en elev kan få en analytisk observatøropgave med fokus på argumenter, alliancer og stemmer ved et bord og bidrage til opsamlingen
-- Undgå belærende afsnit om "tryghed" eller "psykologisk tryghed", danske gymnasielærere kender udmærket deres klasserum og behøver ikke amerikanske formaninger om respektfuld tone eller personangreb
+- Undgå belærende afsnit om "tryghed" eller "psykologisk tryghed" — danske gymnasielærere kender udmærket deres klasserum og behøver ikke amerikanske formaninger om respektfuld tone eller personangreb
 
 ### 3. Roller og stemmefordeling
 Tabel med: Rolle | Organisation | Stemmer | Særlig beføjelse
@@ -59,15 +59,15 @@ Tjekliste med:
 - [ ] Elevintroduktion uddeles FØR rollekort
 
 ### 5. Tidsplan (UDEN minuttal)
-"Du styrer selv tempoet, skemaet viser rækkefølge og relativ vægtning."
+"Du styrer selv tempoet — skemaet viser rækkefølge og relativ vægtning."
 
 | Fase | Aktivitet | Lærers rolle |
 |------|-----------|-------------|
 | Intro | Præsentér scenarie | Facilitator |
 | Fase 1 | Forberedelse | Cirkulér |
-| Fase 2, R1 | Åbningsstatements | Tidstager |
-| Fase 2, R2 | Fri forhandling | Observér |
-| Fase 2, R3 | Forslag + afstemning | Hold styr |
+| Fase 2 — R1 | Åbningsstatements | Tidstager |
+| Fase 2 — R2 | Fri forhandling | Observér |
+| Fase 2 — R3 | Forslag + afstemning | Hold styr |
 | Fase 3 | Debriefing (RAS) | Facilitator |
 | Afslutning | Exit-ticket | Uddel |
 
@@ -116,7 +116,7 @@ Konkrete sætninger med **fed** og *kursiv* til HVER overgang:
 - Magt, alliancer, argumentation
 - Skriv nøgleord på tavlen
 
-**Overgangssætning:** "OK, nu har vi analyseret hvad der skete. Men hvad med den virkelige verden?"
+**Overgangssætning:** "OK — nu har vi analyseret hvad der skete. Men hvad med den virkelige verden?"
 
 **S = Sammenfatning** (medium, formål: transfer til virkelighed)
 - Teori-kobling: "Hvordan relaterer dette til [begreb]?"
@@ -146,7 +146,7 @@ Variationerne hjælper læreren med at tilpasse casespillet til forskellige hold
 
 Afslut ALTID med én af:
 
-- **DONE**, Lærerguide genereret med alle 12 obligatoriske sektioner
-- **DONE_WITH_CONCERNS**, Guide leveret, men med mangler (fx: inject drama-kort mangler fordi scenariet er for kort, eller debriefing er generisk)
-- **BLOCKED**, Kan ikke generere guide (fx: rollekort er ikke færdige endnu, designprincipper-skill ikke tilgængelig)
-- **NEEDS_CONTEXT**, Mangler information (fx: "Hvor lang tid har du til casespillet?")
+- **DONE** — Lærerguide genereret med alle 12 obligatoriske sektioner
+- **DONE_WITH_CONCERNS** — Guide leveret, men med mangler (fx: inject drama-kort mangler fordi scenariet er for kort, eller debriefing er generisk)
+- **BLOCKED** — Kan ikke generere guide (fx: rollekort er ikke færdige endnu, designprincipper-skill ikke tilgængelig)
+- **NEEDS_CONTEXT** — Mangler information (fx: "Hvor lang tid har du til casespillet?")
