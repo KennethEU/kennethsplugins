@@ -526,7 +526,7 @@ function qaBlock(num, question, answer, extras = {}, contentWidth) {
 
 ## Elevpakke i to varianter og samlet lærerpakke
 
-Koden nedenfor er afprøvet: den bygger `Elevpakke_[Spil]_Uden_AI.docx`, `Elevpakke_[Spil]_Med_AI.docx` og `Laererpakke_[Spil]_Samlet.docx` af samme data, og kontrollen bekræfter, at Uden AI ikke indeholder koder eller AI-ord, at Med AI har præcis én kode pr. rolle, at indholdet ellers er ens, og at hvert rollekort fylder præcis 2 sider (forside og bagside). Den erstatter `roleHeader` og de enkeltsidede kort ovenfor som standard. Notelinjerne er en tabel med faste rækker, fordi tomme afsnit med bundkant smelter sammen til én linje.
+Koden nedenfor er afprøvet: den bygger `Elevpakke_[Spil]_Uden_AI.docx`, `Elevpakke_[Spil]_Med_AI.docx` og `Laererpakke_[Spil]_Samlet.docx` af samme data, og kontrollen bekræfter, at Uden AI ikke indeholder koder eller AI-ord, at Med AI har præcis én kode pr. rolle, at indholdet ellers er ens (teksten sammenholdt efter fjernelse af koderne), at hvert rollekort fylder præcis 2 sider, og at rollekortene starter på en ulige side, så dobbeltsidet print af hele filen parrer forside og bagside rigtigt. Er forstykket ulige, indsættes en blank side automatisk, og sideintervallerne skrives til `sideintervaller.json` til printvejledningen. (Wordens afsnitstype "ulige side" ignoreres af LibreOffice, så koden måler sidetallene på en PDF og indsætter selv den blanke side.) Den erstatter `roleHeader` og de enkeltsidede kort ovenfor som standard. Notelinjerne er en tabel med faste rækker, fordi tomme afsnit med bundkant smelter sammen til én linje.
 
 Datastrukturen (JSON) pr. rolle: `navn`, `titel`, `org`, `befoejelse`, `kode`, `kpi` (3 felter med `label` og `value`), `maal`, `baggrund`, `holdning`, `vaerdier`, `krav`, `argumenter`, `dilemmaer`, `skjult`, `begreber` (`begreb`, `forklaring`), `faser` (`fase`, `handling`). Pr. spil: `spil`, `intro`, `bilag` (`titel`, `tekst`), `roller`, `beslutning`, `guide` (`titel`, `afsnit`) og `cheatsheet` (`spoergsmaal`, `modelsvar`, `faglig_begrundelse`, `typisk_fejl`). Guide og cheatsheet har samme form som i lærerassistentens bundt, så der er én kilde.
 
@@ -589,20 +589,46 @@ function roleBack(r) {
     heading('Dine forhandlingsnoter'), noteLines(r.noteLinjer || 16)];
 }
 
-// Hele elevpakken: Intro + Bilag + Rollekort (forside, bagside) + Beslutningsskema, i ÉN fil
-function elevpakkeBoern(d, medAI) {
-  const out = [para(d.spil, { size: 20, bold: true, color: PRIMARY, after: 80 }), heading('Introduktion'), ...d.intro.map(t => para(t, { after: 70 })), pageBreak()];
-  for (const b of d.bilag) out.push(heading(b.titel), ...b.tekst.map(t => para(t, { after: 60 })));
-  out.push(pageBreak());
-  for (const r of d.roller) out.push(...roleFront(r, medAI), pageBreak(), ...roleBack(r), pageBreak());
-  out.push(heading('Beslutningsskema'), ...d.beslutning.map(t => para(t, { after: 70 })), noteLines(8));
-  return out;
+// Hele elevpakken i ÉN fil, i tre afsnit: forstykket (intro og bilag), rollekortene og beslutningsskemaet.
+// Ved dobbeltsidet print af hele filen skal hvert rollekorts forside ligge på en ULIGE side, ellers parres kortene forkert
+// (bagsiden af ét kort ender på samme ark som forsiden af næste). Har forstykket ulige sidetal, indsættes derfor én blank side (pad).
+function elevpakkeAfsnit(d, medAI, pad) {
+  const forstykke = [para(d.spil, { size: 20, bold: true, color: PRIMARY, after: 80 }), heading('Introduktion'), ...d.intro.map(t => para(t, { after: 70 })), pageBreak()];
+  for (const b of d.bilag) forstykke.push(heading(b.titel), ...b.tekst.map(t => para(t, { after: 60 })));
+  if (pad) forstykke.push(pageBreak(), para('Denne side er tom med vilje, så rollekortene starter på en ulige side ved dobbeltsidet print.', { size: 8, color: '999999' }));
+  const kort = [];
+  d.roller.forEach((r, i) => { kort.push(...roleFront(r, medAI), pageBreak(), ...roleBack(r)); if (i < d.roller.length - 1) kort.push(pageBreak()); });
+  const skema = [heading('Beslutningsskema'), ...d.beslutning.map(t => para(t, { after: 70 })), noteLines(8)];
+  return { forstykke, kort, skema };
 }
-async function build(d, medAI, fil) {
+async function build(d, medAI, fil, pad = false) {
   const bullet = { reference: 'bul', levels: [{ level: 0, format: LevelFormat.BULLET, text: '•', alignment: AlignmentType.LEFT, style: { paragraph: { indent: { left: 360, hanging: 240 } } } }] };
+  const side = { page: { size: { width: PAGE_W, height: PAGE_H }, margin: { top: MH, bottom: MH, left: MV, right: MV } } };
+  const { forstykke, kort, skema } = elevpakkeAfsnit(d, medAI, pad);
   const doc = new Document({ numbering: { config: [bullet] }, styles: { default: { document: { run: { font: 'Arial', size: pt(9) } } } },
-    sections: [{ properties: { page: { size: { width: PAGE_W, height: PAGE_H }, margin: { top: MH, bottom: MH, left: MV, right: MV } } }, children: elevpakkeBoern(d, medAI) }] });
+    sections: [{ properties: side, children: forstykke }, { properties: side, children: kort }, { properties: side, children: skema }] });
   fs.writeFileSync(fil, await Packer.toBuffer(doc));
+}
+
+// Sidetal måles på en PDF (LibreOffice og pdftotext): første side med det første rollekorts banner og første nøgletal-felt.
+function sidetal(d, fil) {
+  const { execSync } = require('child_process'), path = require('path');
+  execSync(`soffice --headless --convert-to pdf --outdir "${path.dirname(fil)}" "${fil}" >/dev/null 2>&1`);
+  const pdf = fil.replace(/\.docx$/, '.pdf');
+  const total = +execSync(`pdfinfo "${pdf}"`, { encoding: 'utf8' }).match(/Pages:\s+(\d+)/)[1];
+  const r0 = d.roller[0], tekst = p => execSync(`pdftotext -f ${p} -l ${p} "${pdf}" -`, { encoding: 'utf8' });
+  let start = 0;
+  for (let p = 1; p <= total && !start; p++) { const t = tekst(p); if (t.includes(r0.navn) && t.includes(r0.kpi[0].label.toUpperCase())) start = p; }
+  const slut = start + 2 * d.roller.length - 1;
+  return { total, forstykke: [1, start - 1], rollekort: [start, slut], skema: [slut + 1, total], startErUlige: start % 2 === 1 };
+}
+
+// Byg en variant og sørg for, at rollekortene starter på en ulige side. Returnerer sideintervallerne til printvejledningen.
+async function byggPakke(d, medAI, fil) {
+  await build(d, medAI, fil, false);
+  let m = sidetal(d, fil);
+  if (!m.startErUlige) { await build(d, medAI, fil, true); m = sidetal(d, fil); m.indsattBlankSide = true; }
+  return m;
 }
 
 // Lærerpakken: Lærerguide og Cheatsheet i ÉT hæfte. Samme datastruktur som cockpittets bundt (guide og cheatsheet).
@@ -619,14 +645,16 @@ async function buildLaererpakke(d, fil) {
     sections: [{ properties: { page: { size: { width: PAGE_W, height: PAGE_H }, margin: { top: 1200, bottom: 1200, left: MV, right: MV } } }, children: out }] });
   fs.writeFileSync(fil, await Packer.toBuffer(doc));
 }
-module.exports = { build, buildLaererpakke };
+module.exports = { build, byggPakke, buildLaererpakke };
 if (require.main === module) {
   const d = JSON.parse(fs.readFileSync(process.argv[2], 'utf8')), ud = process.argv[3];
   const navn = d.spil.replace(/[^\p{L}\p{N}]+/gu, '_');
   (async () => {
-    await build(d, false, `${ud}/Elevpakke_${navn}_Uden_AI.docx`);      // helt uden koder og AI-henvisninger
-    await build(d, true, `${ud}/Elevpakke_${navn}_Med_AI.docx`);        // samme indhold + "Rådgiverkode: XXXX" på rollekortene
-    await buildLaererpakke(d, `${ud}/Laererpakke_${navn}_Samlet.docx`); // Lærerguide + Cheatsheet i én fil
+    const uden = await byggPakke(d, false, `${ud}/Elevpakke_${navn}_Uden_AI.docx`);   // helt uden koder og AI-henvisninger
+    const med = await byggPakke(d, true, `${ud}/Elevpakke_${navn}_Med_AI.docx`);      // samme indhold + "Rådgiverkode: XXXX" på rollekortene
+    await buildLaererpakke(d, `${ud}/Laererpakke_${navn}_Samlet.docx`);               // Lærerguide + Cheatsheet i én fil
+    fs.writeFileSync(`${ud}/sideintervaller.json`, JSON.stringify({ uden, med }, null, 2));  // bruges i lærerguidens printvejledning og i printlisten
+    console.log('Uden AI:', JSON.stringify(uden), '\nMed AI:', JSON.stringify(med));
   })();
 }
 ```
@@ -649,8 +677,11 @@ ok((tm.match(/Rådgiverkode: \d{4}/g) || []).length === d.roller.length, `Med AI
 ok(d.roller.every(r => tm.includes('Rådgiverkode: ' + r.kode)), 'Med AI: hver rolle har sin egen kode');
 const strip = t => t.replace(/ \| Rådgiverkode: \d{4}/g, '');
 ok(strip(tm) === tu, 'Samme indhold i begge filer, når koderne fjernes');
-const forventet = 1 + 1 + 2 * d.roller.length + 1;                        // intro, bilag, forside + bagside pr. rolle, beslutningsskema
-ok(pages(uden) === forventet && pages(med) === forventet, `Begge filer er ${forventet} sider: hvert rollekort fylder præcis forside + bagside`);
+const m = JSON.parse(fs.readFileSync(`${ud}/sideintervaller.json`, 'utf8'));               // skrevet af elevpakke.js
+ok(m.uden.startErUlige && m.med.startErUlige, `Rollekortene starter på en ulige side (side ${m.uden.rollekort[0]}), så dobbeltsidet print parrer forside og bagside rigtigt`);
+ok(JSON.stringify(m.uden) === JSON.stringify(m.med), 'Uden AI og Med AI har samme sideintervaller');
+ok(m.uden.rollekort[1] - m.uden.rollekort[0] + 1 === 2 * d.roller.length, `Rollekortene fylder præcis 2 sider hver (${2 * d.roller.length} sider)`);
+ok(pages(uden) === m.uden.total && pages(med) === m.med.total, `Begge filer er ${m.uden.total} sider: forstykke s. ${m.uden.forstykke.join('-')}, rollekort s. ${m.uden.rollekort.join('-')}, skema s. ${m.uden.skema.join('-')}`);
 ok(fs.existsSync(uden) && fs.existsSync(med) && uden !== med, 'To separate Word-filer');
 const lp = `${ud}/Laererpakke_${navn}_Samlet.docx`, tl = fs.existsSync(lp) ? text(lp) : '';
 ok(/lærerguide/i.test(tl) && /cheatsheet/i.test(tl) && d.guide.every(s => tl.includes(s.titel)) && d.cheatsheet.every(q => tl.includes(q.spoergsmaal)), 'Lærerpakken er én fil med både lærerguide og cheatsheet');

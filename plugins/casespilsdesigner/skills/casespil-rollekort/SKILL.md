@@ -102,7 +102,8 @@ Et rollekort er altid 2 sider, trykt dobbeltsidet. Spillet foregår fysisk i kla
 - ARGUMENTER, nummereret (3 stk., 1. person: "Mine data viser...")
 - DILEMMAER (3 stk., 2. person: "Skal du...?", med krydsreferencer til andre roller)
 - SÆRLIG BEFØJELSE (hvis relevant) og evt. TIP (2. person imperativ)
-- **FORTROLIGT NOTAT:** en tydelig boks med skjult information (2. person: "Du ved at...")
+- **FORTROLIGT NOTAT:** en tydelig boks med skjult information (2. person: "Du ved at..."). Det er en indrømmelse, rollen kan give, ikke et krav
+- **Mærkater på forsiden (når spillet har mandatkategorier, se `casespil-designprincipper`):** "Rød linje (bindende, du stemmer nej)" og "Skal med (forhandlingsønske, ikke bindende)". Mærkaterne har samme ordlyd på alle kort og i elevintroduktionen. En genereret rød linje slutter med "Et lavere trin bryder ikke din røde linje", aldrig "kan du leve med".
 
 **Bagside (Taktik og arbejdsark):**
 - FAGBEGREBER I SPILLET (fx Eastons model, BCG, Ansoff) med en forklaring i dagligsprog
@@ -163,6 +164,8 @@ Regler for de to elevpakker:
 - De bygges af samme data og samme kode med ét flag (`medAI`), så de ikke kan glide fra hinanden. Eneste forskel er rådgiverkoden på rollekortene.
 - Støtte- og stærkversion laves kun efter ønske og som egne filer i samme to varianter (fx `Elevpakke_[Spil]_Uden_AI_Stoette.docx`).
 - Antal rollekort at printe følger gruppeplanen (se nedenfor). Kortene i pakken er ét pr. rolle, og læreren printer det antal, planen viser.
+- **Dobbeltsidet print af hele pakken kræver sideparring.** Hvert rollekort er to sider, så en forside skal ligge på en ulige side. Har forstykket (intro og bilag) ulige sidetal, parres kortene forkert (bagsiden af ét kort kommer på samme ark som forsiden af næste). Byggekoden indsætter derfor en blank side, så rollekortene altid starter på en ulige side, og skriver sideintervallerne (forstykke, rollekort, skema) til `sideintervaller.json`. Intervallerne står i lærerguidens printvejledning og i printlisten. Tjek sidetallene efter hver bygning.
+- **Med AI og Uden AI bygges af samme kode** og adskiller sig kun på rådgiverkoden i banneret. Kontrollen i `references/template-kode.md` sammenholder teksten i de to filer (uden koderne skal de være ens) og sidetallene.
 
 ---
 

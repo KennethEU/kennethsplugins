@@ -74,6 +74,12 @@ Bruges, når spillet ender i en fælles plan med penge og en afstemning (Kommuna
 - **Flertal beregnes ud fra rollernes vægte** (Kommunalbudget: mindst 7 af 12), blanke stemmer tæller ikke som ja, og alle roller skal svare, før planen kan afsluttes.
 - **Ændring låser op igen:** rettes planen efter afstemningen, nulstilles afstemningen og resultatkoden automatisk.
 - **Gem og flyt:** udkast gemmes i browseren og kan hentes som fil; planen kan udskrives.
+- **Gemt tilstand valideres helt:** hele strukturen kontrolleres (typer, tilladte værdier, at id'er findes), ikke kun type og version. Ved fejl starter værktøjet tomt og viser aldrig en sidefejl. En tom valgmulighed ("Vælg") gemmes ikke som tom værdi.
+- **Ét udkast pr. bord:** nøglerne er `<spil>-tilstand-<bord>` og `<spil>-bord`, og bordskift gemmer først og indlæser derefter.
+- **Flere faner:** siden lytter på `storage`-eventet for den aktuelle nøgle og henter den nyeste udgave med en besked. Identisk værdi udløser ikke eventet, så der opstår ingen løkke.
+- **Fokus ved genopbygning:** når hele visningen bygges forfra, har alle betjeningselementer (også `select` og taltast) `data-k`, så fokus kan gendannes.
+- **Resultatkoder:** identiske koder dedupes med en besked, og to forskellige koder med samme bordnummer giver en advarsel.
+- **Afstemningen nulstilles ved enhver pakkeændring**, også resultatkoden, med en dansk besked.
 - **Resultatkode:** en kort kode med kontrolsum, som bordet læser op eller sender til læreren. Den indeholder kun tal og stemmer, aldrig startkrav eller tekster.
 - **Sammenligning (til læreren):** koder eller resultatfiler fra 3 til 6 borde (op til 30) vises side om side på storskærm i debriefingen.
 
@@ -120,6 +126,7 @@ Læreren får sit eget arbejdsbord bag et personligt adgangslink (`laerer-assist
   - **Forslagsknapper (chips/pills):** Forslag til spørgsmål må ALDRIG sende beskeden automatisk med det samme. De skal indsætte teksten i inputfeltet (`textarea`), auto-udvide feltets højde og give fokus, så læreren har mulighed for at læse og redigere spørgsmålet før manuel afsendelse med Enter eller Send-knappen.
   - **Kompakt skrivefelt og composer:** Lav højde (min-højde ca. 38 px), kort placeholder (fx `Stil et spørgsmål …`) for aldrig at knække over to linjer i den 35 % brede chatkolonne, og en minimalistisk tastatur-hjælpetekst i bunden (`Tryk Enter for at sende · Shift+Enter for ny linje   Klar`). Chat-textarea skal have hvid baggrund (`#fff`) og en ren, subtil kant.
   - **Ryd samtale:** Udformes som en diskret "ghost-knap" i chat-headeren med et lille skraldespandsikon i stedet for en dominerende knap.
+- **Mandat i cockpit:** de samme mandatfelter som på papirkortene (rød linje, skal med, fortroligt notat) følger med i cockpit-data og i lærerens systemprompt, og cockpittets fasetekster har samme formulering som elevmaterialerne.
 - **Hurtigopslag:** faner med lærerguide (foldbare sektioner), cheatsheet og facit, roller og hemmeligheder, og en tabel over alle rollekoder til eleverne.
 - **Lærerguidens struktur er en grænseflade.** Cockpittet læser lærerguiden som sektioner med titel og korte afsnit, så sektionerne i `casespil-laererguide` har faste titler, og ét afsnit rummer én tanke.
 

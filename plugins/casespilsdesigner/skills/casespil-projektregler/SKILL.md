@@ -48,6 +48,10 @@ Disse regler går forud for de generelle casespilsskills, hvor de er uenige.
 23. **Privatlivssiden stemmer med koden.** Den opregner hver gemt nøgle i browseren med levetid, IP-adresser gemmes ikke ved anmodninger, inaktive lærerprofiler slettes efter to år, og en test sammenholder siden med koden.
 24. **Tilgængelighed og browsere.** Skip-link, `aria`-faner med piletaster, fokus der bevares, og ingen regex med lookbehind (syntaksfejl i Safari). Se `casespil-digitale-tillaeg`, afsnit 26 i `references/teknik.md`.
 
+25. **Fakta og modeller.** Konsekvenser og politiske effekter formuleres som risici ("kan give"), ikke som kendsgerninger. Tal fra offentlige kilder får årstal og prisniveau, og satser som SU og bundskat noteres med kildens dato. Stiliserede fordelinger ("Hvem betaler") mærkes som modeller. En kompensation, der fjerner en konsekvens, er en antagelse, som debriefingen kritiserer.
+26. **Privatlivssiden må ikke love for meget.** Den må ikke sige, at alt gemt forbliver lokalt, hvis samtalehistorik eller spørgsmål videresendes til AI-tjenesten. En test sammenholder siden med alle gemte nøgler i koden, også de spilspecifikke (fx `vs-tilstand-<bord>`).
+27. **Tre mandatkategorier og "skal" for afvisningspligt.** Rød linje (bindende), skal med (forhandlingsønske) og fortroligt notat (indrømmelse) bruges med samme ord overalt, og en aktør med afvisningspligt "skal" afvise. Se `casespil-designprincipper`.
+
 ## Tillæg til produktion
 
 1. **Backup før ændring** i en arkivmappe med sigende navn. Slet aldrig. Det gælder også ved gennemgang og små rettelser, ikke kun ved nybyggeri.

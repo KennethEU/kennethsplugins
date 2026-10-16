@@ -25,6 +25,7 @@ Du er casespilsdesigner til dansk gymnasieundervisning (STX). Brug `casespil-des
 | `casespil-sprogtjek` | Dansk sprogtjek | Før levering |
 | `casespil-konsistenstjek` | Samlet kvalitetssikring, også af digitale dele | Sidste trin |
 | `casespil-miniversion` | Kort version på 10 til 20 minutter | Separat indgang |
+| `casespil-ekstern-review` | Ekstern AI-gennemgang: prompt, verificering af fund, rettelser og næste runde | Efter levering, i runder |
 
 ## Trinvis proces med gates
 

@@ -1171,6 +1171,8 @@ Gem forsøgene i en tabel `rate_limits (ip_address, action, is_failed, created_a
 - Administratorens adgangskode genereres tilfældigt første gang eller læses fra miljøet. Ingen standardadgangskode i kode. SMTP-oplysninger og `settings.json` ligger uden for git.
 - Udskift nøglerne, og byg bundtet på ny, ved semesterskifte eller mistanke om lækage. Udløbet af et link begrænser, hvor længe det kan hentes og deles, men tilbagekalder ikke data, som en lærer allerede har åbnet.
 
+**Selvbetjent forlængelse (valgt i casespil.dk).** Lærersiden viser dage tilbage og knappen "Forlæng til 7 dage" (`action: "extend"`). Serveren forlænger et stadig gyldigt token til 7 dage fra nu, hvis adressen stadig er godkendt og linket ikke er udløbet (rate limit 20 pr. 10 minutter, 5 fejl), og opdaterer `last_active_at`. Afvejningen: en lærer slipper for at bestille nyt link, men et link, der er blevet delt, kan holdes i live af den, der har det, så udløbet ikke længere begrænser, hvor længe en elev kan bruge et videregivet link. Sæt et loft for den samlede levetid (fx 90 dage fra udstedelsen) eller et højst antal forlængelser, og tilbagekald linket, hvis adressen fjernes fra godkendelsen.
+
 **Skitse af serverlogik (PHP, forkortet; kørt mod SQLite i hukommelsen):**
 
 ```php
@@ -1238,4 +1240,19 @@ Korte regler fra 171 commits og fem gennemgangsrunder. De er skrevet som krav, i
 
 **Ydelse og browsere.** Egne skrifttyper (ingen kald til Google Fonts), scenebilleder hentes først, når scenen aktiveres, store billeder er JPEG i kvalitet 80, og en hero-video hentes ikke ved reduceret bevægelse, databesparelse eller 2g og 3g. Regex med lookbehind giver en syntaksfejl i Safari: brug en anden fremgangsmåde. Et lydafspillerkald, der afbrydes af en hurtig pause (`AbortError`), er ingen blokeret lyd. En ugyldig URL-kodning i `#fase` må ikke vælte siden.
 
+**Mutationstest og gennemgangsrunder.** Casespil.dk blev gennemgået i runder, hvor en fil ad gangen fik bevidste fejl indsat (mutationstest: 20 til 57 fejl pr. fil, fx `<` i stedet for `<=` i en grænse), og de fejl, der overlevede, fik en ny test, der fanger dem. Brug metoden på de filer, hvor en fejl er dyr: adgangs-API, tokenlogik, budgetlogik, resultatkode og afspillere. Mål også på de rigtige skærmbredder (320, 360 og 412 px) med fyldte lister og lange mailadresser, print fra cockpittet i A4-bredde (ingen klippede faner), og tjek den udrullede side (`.git`, `data/` og tests giver 403 eller 404, og HSTS, `nosniff`, `X-Frame-Options` og `Referrer-Policy` er sat). Hvert sted, hvor tekst sættes ind som HTML (`innerHTML`), gennemgås for escaping, også i admin.
+
 **Tests.** Testpakken starter sin egen server, bruger proces-id i filnavne og porte (to samtidige kørsler vælter ikke hinanden) og kører ægte `php -S` mod API'et med ødelagte forespørgsler (ugyldig JSON, tom body, ugyldig UTF-8, 5000 tegn i navn, tal som e-mail). Hver rettelse får en test, der fejler uden rettelsen.
+
+## 27. Budgetværktøj: gemt tilstand, bord og faner (Kampen om velfærdsstaten, runde 1 til 3)
+
+Krav, der blev fundet ved eksterne gennemgange, og som er verificeret i `velfaerdsstaten/budget.js`:
+
+- **Valider hele tilstanden.** Funktionen `gyldig(x)` kontrollerer `kind`, `version`, at bordet er et helt tal, at hvert felt har den rigtige type, og at alle id'er (tiltag, trin, organisationer, kompensationer) findes i spildata. Ved fejl startes en tom tilstand (`LOGIC.blank(bord)`), aldrig en sidefejl. En tom valgmulighed ("Vælg", `value=""`) gemmes ikke som en tom værdi, der senere kan fejltolkes. Test med en ødelagt tilstand (ugyldig JSON, forkerte typer, `__proto__`, `1e999`, ukendte id'er).
+- **Ét udkast pr. bord.** Tilstanden gemmes under `<spil>-tilstand-<bord>` (fx `vs-tilstand-4`), og det aktuelle bord under `<spil>-bord`. Ved bordskift gemmes den nuværende tilstand først, derefter indlæses det nye bords tilstand, så to borde ikke overskriver hinanden.
+- **Afstemningen nulstilles ved enhver pakkeændring**, også resultatkoden, så en ny pakke aldrig vedtages med stemmer til den gamle. Vis en dansk besked ("Pakken er ændret, så afstemningen er nulstillet. Stem igen.").
+- **Flere faner.** `window.addEventListener('storage', ...)` reagerer kun på nøglen for det aktuelle bord og kun på en gyldig ny værdi, henter den nyeste udgave og viser en besked. En identisk værdi udløser ikke `storage`-eventet, så der opstår ingen løkke. Test to faner mod hinanden.
+- **Fokus.** Hele visningen bygges forfra ved hver ændring, så alle betjeningselementer (knapper, `select`, taltast til bordnummer) har `data-k`, og fokus gendannes bagefter med `document.querySelector('[data-k="..."]').focus({ preventScroll: true })`.
+- **Resultatkoder i opsamlingen.** Identiske koder dedupes med en besked, og to forskellige koder med samme bordnummer giver en advarsel ("Bord 4 optræder med to forskellige koder. Tjek, at bordnumrene er rigtige.").
+- **Cockpit.** De samme mandatfelter som på papirkortene (rød linje, skal med, fortroligt notat) ligger i cockpit-data og i lærerens systemprompt, og cockpittets fasetekster bruger samme formulering som elevmaterialerne.
+- **Rådgiverens prompt og kort** bruger de samme mærkater som kortene: "Skal med (forhandlingsønske, ikke bindende)" og "Fortroligt notat". Aktøren med afvisningspligt (embedsmanden) "skal" afvise.
