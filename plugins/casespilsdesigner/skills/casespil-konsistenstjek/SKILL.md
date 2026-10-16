@@ -136,6 +136,11 @@ Kilder: `casespil-projektregler` (beregner-tjek) og `casespil-digitale-tillaeg` 
 - [ ] Rådgiverens rollekortoverskrifter svarer til de faste overskrifter?
 - [ ] Websiden viser virksomheden før investeringen og er mærket som fiktiv?
 - [ ] Digitale dele er testet på computer og mobil (ingen vandret scroll, ingen konsolfejl)?
+- [ ] Samme budgetformel overalt (elevintro, bilag, rådgiverprompt, værktøj)? Fx tiltag minus ønsker minus kompensation plus ekstra konsekvenser fra fase 3.
+- [ ] Cockpit-data indeholder alle felter, kortene viser (rød linje, skal med, fortroligt notat), og cockpittets fasetekster har samme formulering som elevmaterialerne?
+- [ ] "Skal" og "kan" for en aktørs afvisningspligt er ens i alle dokumenter, cockpit og rådgiver?
+- [ ] Printet er testet som samlet dobbeltsidet print med sideparring (rollekortene starter på en ulige side, og sideintervallerne i lærerguiden stemmer med filen)?
+- [ ] Gemt tilstand er testet med en ødelagt gemt tilstand (forkerte typer, ukendte id'er, manglende felter) og med to faner mod hinanden?
 - [ ] Backup findes i arkivmappen, også for små rettelser?
 
 ## 9. Læsertest med frisk læser

@@ -49,6 +49,7 @@ Tabel med: Rolle | Organisation | Stemmer | Særlig beføjelse
 
 ### 4. Forberedelse (lærer)
 Tjekliste med:
+- [ ] Print med sideintervaller (fra `sideintervaller.json`, bygget sammen med pakken): fx "Intro og bilag: side 1 til 4 (enkeltsidet), rollekort: side 5 til 10 (dobbeltsidet), beslutningsskema: side 11". Dobbeltsidet print af hele elevpakken parrer kun rollekortene rigtigt, hvis printeren får intervallerne at vide eller rollekortene starter på en ulige side
 - [ ] Åbn lærerassistenten med dit personlige adgangslink fra din skolemail (et 1-klik link, gyldigt i 7 dage, indtil datoen i mailen). Er det udløbet, bestiller du et nyt på siden med samme mailadresse. Hent materialerne som ZIP inde i cockpittet. Videresend ikke linket, og læg ikke materialerne på en fælles side, eleverne kan se
 - [ ] Print kun denne ene lærerpakke til eget brug: `Laererpakke_[Spil]_Samlet.docx` (lærerguide og cheatsheet i ét hæfte)
 - [ ] Print elevintroduktion (1 pr. elev)
@@ -98,6 +99,10 @@ Konkrete sætninger med **fed** og *kursiv* til HVER overgang:
 - Aktivér stille grupper direkte
 
 ### 8. Inject drama (2-3 stk., brug HØJST ét)
+Et inject må ikke ændre reglerne, åbne et hul eller ændre pakkens beregning. Det er en analyse- og begrundelsesopgave ("Hvordan ændrer den nye oplysning jeres begrundelse?"), ikke en ny regel.
+
+**Eksempelpakker i guiden:** beregnes af spilmotoren efter alle konsekvenser (ikke i hånden), mærkes som udgangspunkter efter første forhandling, og får en mandatkontrol i tre kategorier: hvilke røde linjer pakken bryder (bindende), hvilke forhandlingsønsker den opfylder, og hvilke fortrolige indrømmelser den kræver. Formuleringer om effekter er betingede ("kan give", "kan føre til"), aldrig "giver".
+
 | Type | Indhold | Hvornår |
 |------|---------|---------|
 | Nye data | "Ny rapport viser..." | Energien daler |

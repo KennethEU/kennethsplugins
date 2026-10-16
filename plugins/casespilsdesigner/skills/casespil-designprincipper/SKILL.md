@@ -103,6 +103,20 @@ Design mindst én rolle hvis position bygger bro. Høj troværdighed, konkrete e
 ### Korridorpolitik
 Uformel forhandlingsfase EFTER positioner er kendte, FØR endelig afstemning. Kort fase, læreren styrer tiden.
 
+### Tre mandatkategorier (skjult information og krav)
+
+Hver rolles krav og indrømmelser hører til præcis én af tre kategorier. Reglen står i elevintroduktionen, og de samme ord står som mærkat på rollekortene og i rådgiverens og cockpittets tekster:
+
+- **Rød linje (bindende):** bryder pakken den, stemmer rollen nej. Den er et krav, ikke et ønske.
+- **Skal med (forhandlingsønske):** rollen kæmper for det, men må selv vælge at stemme ja uden. Ikke bindende.
+- **Fortroligt notat (indrømmelse):** noget rollen kan give. Ikke bindende og ikke et krav. Skjult information i den snævre betydning.
+
+Bland aldrig kategorierne, og brug aldrig "kan leve med" om en rød linje (et lavere trin bryder ikke en rød linje, og det skal stå sådan, hvis trin findes). Tjek, at alle tre findes i data, på kortene, i cockpit og i rådgiverens prompt (`casespil-konsistenstjek`).
+
+### Aktører med afvisningspligt
+
+En aktør, der har pligt til at afvise (fx en embedsmand, der skal afvise en pakke, der ikke lukker et hul), formuleres med "skal", ikke "kan". Brug det samme ord i elevintroduktion, rollekort, bilag, lærerguide, cheatsheet, cockpit og rådgiverens prompt. Et "kan" i ét dokument og et "skal" i et andet gør det uklart, om afvisningen er et valg.
+
 ### Teori-tagging
 Navngiv fagbegreber direkte i materialer (stærk-version): [NEO], [REAL], [LIB] osv.
 

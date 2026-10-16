@@ -30,7 +30,9 @@ casespilsdesigner/
     ├── casespil-projektregler/    ← Ingen ritualer, normalversion nok, beregner-tjek
     ├── casespil-digitale-tillaeg/ ← Digitale værktøjer: designregler
     │   └── references/teknik.md
-    └── casespil-konsistenstjek/   ← Kvalitetssikring af materialer
+    ├── casespil-konsistenstjek/   ← Kvalitetssikring af materialer
+    └── casespil-ekstern-review/   ← Ekstern AI-gennemgang i runder
+        └── references/prompt-skabelon.md
 ```
 
 I `evals/` ligger automatiske triggertests (`claude plugin eval plugins/casespilsdesigner`) og en plan for de tests, der skal køres i Cowork. Se `evals/README.md`.
@@ -69,6 +71,7 @@ Kommandoerne skrives med plugin-navnet foran, fx `/casespilsdesigner:casespil-ro
 | `casespil-projektregler` | Auto | Regler der overstyrer de øvrige skills (ritualer, versioner) |
 | `casespil-digitale-tillaeg` | Auto | AI-rådgiver, facit-beregner, lærershow, webside, spilintro, video |
 | `casespil-konsistenstjek` | Auto | Kvalitetssikring, "er det færdigt", "klar til print" |
+| `casespil-ekstern-review` | Auto | Ekstern AI-gennemgang (fx ChatGPT): prompt, verificering af fund, rettelser, næste runde |
 
 ## Anbefalet mappestruktur (Cowork)
 
@@ -104,6 +107,14 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 - **Claude.ai** — skills kan uploades individuelt via Settings > Skills
 
 ## Changelog
+
+### v2.7.0 (oktober 2026)
+- Ny skill `casespil-ekstern-review`: laver en prompt til en ekstern AI, verificerer hvert fund (Bekræftet, Delvist, Afvist, Ikke verificeret, med bevis) før noget ændres, anbefaler, retter ved kilden, tester og laver prompten til næste runde. Med skabelon i `references/prompt-skabelon.md` og triggertest `trigger-review-1`
+- Rettelser fra runderne på Kampen om velfærdsstaten: tre mandatkategorier (rød linje, skal med, fortroligt notat) og "skal" for afvisningspligt i `casespil-designprincipper`, `casespil-rollekort`, `casespil-projektregler` og `casespil-konsistenstjek`
+- Sideparring ved dobbeltsidet print: rollekortene starter altid på en ulige side (kode indsætter en blank side og skriver `sideintervaller.json`), og kontrollen i `casespil-rollekort/references/template-kode.md` måler sidetallene og sammenholder Med AI og Uden AI
+- `casespil-laererguide`: printvejledning med sideintervaller, eksempelpakker beregnet af motoren med mandatkontrol, og injects uden regelændring. `casespil-cheatsheet`: skel antagelse fra faktum
+- `casespil-digitale-tillaeg`: nyt afsnit 27 i `references/teknik.md` (valider hele den gemte tilstand, ét udkast pr. bord, afstemning nulstilles, `storage`-event mellem faner, `data-k` til fokus, dublerede resultatkoder, mandat i cockpit). Selvbetjent forlængelse af adgang er beskrevet med afvejningen og et forslag til loft, og mutationstest og gennemgangsrunder er tilføjet afsnit 26
+- Versionsnumrene i `plugin.json` og `marketplace.json` er rettet til 2.7.0 (de stod ved en fejl på 2.5.1, mens README sagde 2.6.0)
 
 ### v2.6.0 (oktober 2026)
 - Opdateret efter 171 nye commits i casespil.dk (11. til 12. oktober). Rettet: materialerne ligger i en separat krypteret `materialer.json`, som hentes ved klik (ikke `bundle.files`), `proxyToken` hedder `appId`, Lærersiden (`undervisere.html`) er adgangsvejen med single sign-on, rate limits (kun ukendte tokens tæller som fejl, 15 anmodninger pr. 10 minutter), proxyens grænser (modelliste, kun tekst, ratebegrænsning pr. IP, 8192 tokens), historik på 12 beskeder, og antal borde er `Math.floor(n / 5)`

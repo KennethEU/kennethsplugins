@@ -20,6 +20,7 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 | `/casespilsdesigner:casespil-laererguide` | Lærerguide med faseovergange og debriefing |
 | `/casespilsdesigner:casespil-cheatsheet` | Cheatsheet med modelsvar |
 | `/casespilsdesigner:casespil-konsistenstjek` | Kvalitetssikring før print |
+| `/casespilsdesigner:casespil-ekstern-review` | Ekstern AI-gennemgang i runder med verificering af fund |
 | `/casespilsdesigner:casespil-sprogtjek` | Sprogcheck af materialerne |
 | `/casespilsdesigner:casespil-digitale-tillaeg` | AI-rådgiver, facit-beregner og andre digitale dele |
 | `/bloom:bloom-spoergsmaal-til-tekst` | Komplet sæt arbejdsspørgsmål til en tekst, to versioner og taxonomy table |
@@ -67,6 +68,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 - `blooket` bruger scriptet `generate_csv.py`, som tjekker spørgsmålene og skriver Blooket-filen. Test det med `python3 plugins/blooket/tests/test_generate_csv.py`.
 
 ## Changelog
+
+### casespilsdesigner 2.7.0 (oktober 2026)
+- Ny skill `casespil-ekstern-review`, tre mandatkategorier, sideparring ved dobbeltsidet print og regler for gemt tilstand og faner fra runderne på Kampen om velfærdsstaten. Se plugin-READMEen.
 
 ### casespilsdesigner 2.6.0 (oktober 2026)
 - Opdateret efter 171 nye commits i casespil.dk: `materialer.json`, Lærersiden med single sign-on, rate limits og proxy, `Math.floor` til borde og nyt afsnit 26 om drift, privatliv og robusthed. Se plugin-READMEen.

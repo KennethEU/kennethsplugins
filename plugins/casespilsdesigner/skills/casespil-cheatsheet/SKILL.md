@@ -76,6 +76,7 @@ For hvert spørgsmål, skriv:
 2. **Fagbegreber** — hvilke termer SKAL eleverne bruge? Markér med fed.
 3. **Uddybning** — yderligere pointer stærke elever kan nævne
 4. **Typiske fejl** — hvad siger elever ofte forkert? (valgfrit, men værdifuldt)
+5. **Antagelse eller faktum:** skil modelantagelser fra fakta. En kompensation, der fjerner en konsekvens, er en antagelse, som debriefingen skal kritisere, ikke en kendsgerning. Undgå slutninger som "højere forsørgerbyrde, så færre arbejder", hvis forholdstallet ikke bærer dem. Skriv effekter som risici og betingede udsagn.
 
 ### Fase 3: Producér Word-dokument
 
