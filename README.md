@@ -69,6 +69,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.7.1 (oktober 2026)
+- Fortsæt-knappen i rådgivere: højst én fortsættelse pr. svar, med test. Se plugin-READMEen.
+
 ### casespilsdesigner 2.7.0 (oktober 2026)
 - Ny skill `casespil-ekstern-review`, tre mandatkategorier, sideparring ved dobbeltsidet print og regler for gemt tilstand og faner fra runderne på Kampen om velfærdsstaten. Se plugin-READMEen.
 

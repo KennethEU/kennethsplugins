@@ -141,6 +141,7 @@ Kilder: `casespil-projektregler` (beregner-tjek) og `casespil-digitale-tillaeg` 
 - [ ] "Skal" og "kan" for en aktørs afvisningspligt er ens i alle dokumenter, cockpit og rådgiver?
 - [ ] Printet er testet som samlet dobbeltsidet print med sideparring (rollekortene starter på en ulige side, og sideintervallerne i lærerguiden stemmer med filen)?
 - [ ] Gemt tilstand er testet med en ødelagt gemt tilstand (forkerte typer, ukendte id'er, manglende felter) og med to faner mod hinanden?
+- [ ] Rådgiverens Fortsæt-knap kan højst bruges én gang pr. svar og vises kun ved et afklippet svar (testet med en proxy, der altid afkorter)?
 - [ ] Backup findes i arkivmappen, også for små rettelser?
 
 ## 9. Læsertest med frisk læser
