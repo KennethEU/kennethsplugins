@@ -154,7 +154,7 @@ Korte krav fra gennemgangen af casespil.dk (detaljer i `references/teknik.md`, a
 
 - **Tal fra én kilde:** faste tal i tekster og værktøjer hentes fra spildata, og en test fejler, hvis tekst og data glider fra hinanden.
 - **Delt cockpitkode:** login, faner, gruppeplan, printliste og chat ligger i `cockpit.js` og `cockpit.css` i roden, og spillets side er tynd (`window.COCKPIT`).
-- **AI-klienten er robust:** Fortsæt-knap ved afkortede svar, delvise svar beholdes, tomme svar gemmes ikke, tidsfrist pr. streamet stykke, klare fejlbeskeder for netværksfilter, netværksfejl og udløbet session, og længdegrænser målt i bytes.
+- **AI-klienten er robust:** Fortsæt-knap kun ved svar, der er klippet af, og højst én fortsættelse pr. svar (flag `continued`, "afslut kort" i prompten, test med en proxy der altid afkorter), delvise svar beholdes, tomme svar gemmes ikke, tidsfrist pr. streamet stykke, klare fejlbeskeder for netværksfilter, netværksfejl og udløbet session, og længdegrænser målt i bytes.
 - **Privatliv:** en privatlivsside opregner alt, der gemmes i browseren, med levetid, og stemmer med koden. IP-adresser gemmes ikke ved anmodninger, inaktive profiler slettes efter 2 år, og elevens rollekode sendes aldrig til AI-tjenesten.
 - **Admin:** atomisk godkendelse, CSRF, Post/Redirect/Get, tilbagetrækning af links ved fjernelse, et selvtjek-værktøj og en tidsramme ved massegodkendelse.
 - **Tilgængelighed og browsere:** skip-link, `aria`-faner med piletaster, fokus der bevares, og ingen regex med lookbehind (syntaksfejl i Safari).

@@ -44,7 +44,7 @@ Disse regler går forud for de generelle casespilsskills, hvor de er uenige.
 
 20. **Tal og tekster fra én kilde.** Faste tal i tekster og værktøjer (pulje, flertal, stemmefordeling, pris, antal roller) hentes fra spildata og lærerdata, og en test fejler, hvis tekst og data glider fra hinanden.
 21. **Delt cockpitkode.** Login, faner, gruppeplan, printliste og chat ligger i en fælles `cockpit.js` og `cockpit.css` i roden, og spillets side er tynd (`window.COCKPIT`).
-22. **AI-klienter er robuste.** Fortsæt-knap ved afkortede svar, delvise svar beholdes, tomme svar gemmes ikke, tidsfrist pr. streamet stykke, klare fejlbeskeder, længdegrænser målt i bytes, og elevens rollekode sendes aldrig til AI-tjenesten. Proxyen har modelliste, kun tekst, nøgle i header, 256 KB, tidsfrist og ratebegrænsning pr. IP, og helst et dagsloft pr. app-id.
+22. **AI-klienter er robuste.** Fortsæt-knap kun ved svar, der er klippet af, og højst én fortsættelse pr. svar (testet med en falsk proxy, der altid afkorter), delvise svar beholdes, tomme svar gemmes ikke, tidsfrist pr. streamet stykke, klare fejlbeskeder, længdegrænser målt i bytes, og elevens rollekode sendes aldrig til AI-tjenesten. Proxyen har modelliste, kun tekst, nøgle i header, 256 KB, tidsfrist og ratebegrænsning pr. IP, og helst et dagsloft pr. app-id.
 23. **Privatlivssiden stemmer med koden.** Den opregner hver gemt nøgle i browseren med levetid, IP-adresser gemmes ikke ved anmodninger, inaktive lærerprofiler slettes efter to år, og en test sammenholder siden med koden.
 24. **Tilgængelighed og browsere.** Skip-link, `aria`-faner med piletaster, fokus der bevares, og ingen regex med lookbehind (syntaksfejl i Safari). Se `casespil-digitale-tillaeg`, afsnit 26 i `references/teknik.md`.
 

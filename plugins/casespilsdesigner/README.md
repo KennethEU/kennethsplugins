@@ -108,6 +108,9 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.7.1 (oktober 2026)
+- Fortsæt-knappen i AI-rådgivere er nu en eksplicit regel: kun ved et afklippet svar og højst én fortsættelse pr. svar (flag `continued`, "afslut kort" i prompten, tjek af sessionens udløb). `references/teknik.md` har en test, der erstatter proxyen med en falsk, der altid afkorter, og som fejler på kode uden spærren. Fundet i velfærdsstatens rådgiver, hvor knappen kunne trykkes uendeligt mange gange. Nyt tjekpunkt i `casespil-konsistenstjek`
+
 ### v2.7.0 (oktober 2026)
 - Ny skill `casespil-ekstern-review`: laver en prompt til en ekstern AI, verificerer hvert fund (Bekræftet, Delvist, Afvist, Ikke verificeret, med bevis) før noget ændres, anbefaler, retter ved kilden, tester og laver prompten til næste runde. Med skabelon i `references/prompt-skabelon.md` og triggertest `trigger-review-1`
 - Rettelser fra runderne på Kampen om velfærdsstaten: tre mandatkategorier (rød linje, skal med, fortroligt notat) og "skal" for afvisningspligt i `casespil-designprincipper`, `casespil-rollekort`, `casespil-projektregler` og `casespil-konsistenstjek`

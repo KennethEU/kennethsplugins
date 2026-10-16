@@ -1217,7 +1217,49 @@ Korte regler fra 171 commits og fem gennemgangsrunder. De er skrevet som krav, i
 
 **AI-klienten (lærerassistent og elevrådgivere).**
 - `maxOutputTokens: 8192` og `thinkingLevel: 'low'`: tænketokens tæller med i loftet og kan ellers æde svaret. Historik: de seneste 12 beskeder, og en samtalemåler under chatten vises fra 80 % (ravfarvet, rød ved 95 %).
-- Afbrudte svar: et svar, der rammer længdegrænsen, får en Fortsæt-knap (én gratis fortsættelse, tæller ikke som spørgsmål), og et delvist streamet svar beholdes som afbrudt i stedet for at blive kasseret. Fejl får Prøv igen og Rediger. Et tomt svar (fx blokeret af et sikkerhedsfilter) gemmes ikke som assistentens tur.
+- **Fortsæt-knappen: højst én fortsættelse pr. svar.** Knappen er kun til et svar, der er klippet af midt i, fordi det ramte længdegrænsen (`finishReason` er `MAX_TOKENS` eller `LENGTH`). Den må aldrig kunne trykkes gentagne gange. Mekanismen har fire dele, og alle skal være der (første udgave i velfærdsstaten havde ingen af dem, så knappen forblev synlig, så længe modellen blev ved med at blive afbrudt): (1) svaret får et flag `continued`, som sættes til `true` ved fortsættelsen, og knappen vises kun, når `truncated && !continued && !busy`; (2) fortsættelsens prompt beder om at afslutte kort: "Fortsæt præcis hvor du slap, og afslut svaret kort. Gentag ikke det, du allerede har skrevet."; (3) knappen tjekker sessionens udløb og at det sidste svar stadig er afbrudt og ikke fortsat, før den kalder AI (en anden fane kan have ændret det); (4) er svaret stadig afkortet efter fortsættelsen, står der "Svaret er stadig afkortet. Stil et mere afgrænset spørgsmål." Fortsættelsen tæller ikke som et spørgsmål. Et svar på 100 ord skal sjældent afkortes: gør ordgrænsen tydelig i prompten og sæt `thinkingLevel: 'low'`, fordi tænketokens tæller med i loftet. Testen nedenfor erstatter AI-proxyen med en falsk, der altid svarer afkortet, og kræver, at knappen vises højst én gang og at der højst laves to AI-kald. Kør den for hver rådgiver (rediger `CONFIG`). Den fejler på kode uden `continued` og består på rettet kode:
+
+```javascript
+// test_fortsaet.cjs: "Fortsæt svar" må højst bruges én gang pr. svar, også når modellen bliver ved med at blive afbrudt.
+// Kør (siden serveres på localhost): node test_fortsaet.cjs   (rediger CONFIG efter spillet)
+const { chromium } = require('playwright'), assert = require('assert');
+const CONFIG = {
+  side: 'http://127.0.0.1:8777/velfaerdsstaten/raadgiver.html', kode: '2916',      // en rollekode, der åbner rådgiveren
+  felt: { kode: '#kode', aaben: '#open', spoergsmaal: '#question', send: '#ask', mere: '#more' },
+  proxy: /workers\.dev/                                                          // adressen på AI-proxyen, der erstattes af en falsk
+};
+const cors = { 'access-control-allow-origin': '*', 'access-control-allow-headers': '*', 'access-control-allow-methods': 'POST, OPTIONS' };
+async function koer(browser, afslutning) {            // afslutning(n): finishReason for AI-kald nummer n
+  const page = await (await browser.newContext()).newPage(); let kald = 0;
+  await page.route(CONFIG.proxy, r => {
+    if (r.request().method() === 'OPTIONS') return r.fulfill({ status: 204, headers: cors });
+    kald++; r.fulfill({ status: 200, contentType: 'application/json', headers: cors,
+      body: JSON.stringify({ candidates: [{ content: { parts: [{ text: 'Svardel ' + kald + '.' }] }, finishReason: afslutning(kald) }] }) });
+  });
+  await page.goto(CONFIG.side); await page.fill(CONFIG.felt.kode, CONFIG.kode); await page.click(CONFIG.felt.aaben);
+  await page.fill(CONFIG.felt.spoergsmaal, 'Hvad skal jeg gøre?'); await page.click(CONFIG.felt.send); await page.waitForTimeout(800);
+  const synlig = [];
+  for (let i = 0; i < 5; i++) {                       // forsøg at trykke flere gange end tilladt
+    const v = await page.evaluate(s => { const b = document.querySelector(s); return !!b && !b.hidden && b.offsetParent !== null; }, CONFIG.felt.mere);
+    synlig.push(v); if (!v) break;
+    await page.click(CONFIG.felt.mere); await page.waitForTimeout(700);
+  }
+  await page.close(); return { synlig, kald };
+}
+(async () => {
+  const browser = await chromium.launch();
+  const altid = await koer(browser, () => 'MAX_TOKENS');                         // modellen bliver ved med at blive afbrudt
+  assert.deepStrictEqual(altid.synlig, [true, false], 'knappen vises højst én gang pr. svar: ' + JSON.stringify(altid.synlig));
+  assert.strictEqual(altid.kald, 2, 'ét spørgsmål og højst én fortsættelse (2 AI-kald), men ' + altid.kald);
+  const normal = await koer(browser, n => (n === 1 ? 'MAX_TOKENS' : 'STOP'));    // fortsættelsen afslutter svaret
+  assert.deepStrictEqual(normal.synlig, [true, false], 'knappen forsvinder, når svaret er afsluttet');
+  const kort = await koer(browser, () => 'STOP');                                // et svar, der ikke er afbrudt, får ingen knap
+  assert.deepStrictEqual(kort.synlig, [false], 'knappen vises ikke ved et fuldt svar');
+  console.log('fortsæt-svar: højst én fortsættelse pr. svar (afbrudt hver gang: ' + altid.kald + ' AI-kald), ingen knap ved fuldt svar');
+  await browser.close();
+})().catch(e => { console.error('FEJL: ' + e.message); process.exit(1); });
+```
+- Afbrudte svar (øvrigt): et svar, der rammer længdegrænsen, får en Fortsæt-knap (se ovenfor), og et delvist streamet svar beholdes som afbrudt i stedet for at blive kasseret. Fejl får Prøv igen og Rediger.
 - Tidsfrister pr. streamet stykke (en samlet frist på 45 sekunder afbrød lange svar). Parseren accepterer `data:` både med og uden mellemrum og læser sidste linje.
 - Fejlbeskeder for et HTML-svar fra skolens netværksfilter eller en login-side (ikke "Unexpected token"), for netværksfejl (ikke "Failed to fetch") og for en udløbet session.
 - Længdegrænsen til proxyen måles i bytes (æ, ø og å fylder 2), ikke tegn. `<` og `>` fjernes fra elevspørgsmål, afgrænsningen i prompten er tydelig, og elevens rollekode sendes aldrig til AI-tjenesten.
