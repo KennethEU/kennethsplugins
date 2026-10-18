@@ -142,6 +142,10 @@ Kilder: `casespil-projektregler` (beregner-tjek) og `casespil-digitale-tillaeg` 
 - [ ] Printet er testet som samlet dobbeltsidet print med sideparring (rollekortene starter på en ulige side, og sideintervallerne i lærerguiden stemmer med filen)?
 - [ ] Gemt tilstand er testet med en ødelagt gemt tilstand (forkerte typer, ukendte id'er, manglende felter) og med to faner mod hinanden?
 - [ ] Rådgiverens Fortsæt-knap kan højst bruges én gang pr. svar og vises kun ved et afklippet svar (testet med en proxy, der altid afkorter)?
+- [ ] Gemte svar i rådgiveren er testet med to faner og et forsinket svar (stabile besked-id, sessionens starttid tjekkes efter kaldet, `storage` udskydes under aktive kald)?
+- [ ] Resultatkoder afviser for lange, for korte og ændrede koder (præcis længde, rest-bits)?
+- [ ] Proxyen afbryder en for stor body uden `Content-Length` med 413?
+- [ ] Hvert fælles modul indlæses faktisk af siderne (søgning), og konsekvenskort er skrevet som betingede risici?
 - [ ] Backup findes i arkivmappen, også for små rettelser?
 
 ## 9. Læsertest med frisk læser

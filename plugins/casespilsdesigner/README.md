@@ -108,6 +108,10 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.8.0 (oktober 2026)
+- Opdateret efter 36 nye commits i casespil.dk (16. til 18. oktober). `references/teknik.md`: rådgiverens to kolonner uden fasevælger (afsnit 16), streng længde på resultatkoder (afsnit 18), og i afsnit 26 session og beskedidentitet under AI-kald, proxyens løbende bytegrænse, fælles moduler (kun når siderne bruger dem) og testrutine
+- `casespil-konsistenstjek`: fire nye tjekpunkter. `casespil-digitale-tillaeg`: fase udledes af rådgiveren, ikke valgt af eleven
+
 ### v2.7.1 (oktober 2026)
 - Fortsæt-knappen i AI-rådgivere er nu en eksplicit regel: kun ved et afklippet svar og højst én fortsættelse pr. svar (flag `continued`, "afslut kort" i prompten, tjek af sessionens udløb). `references/teknik.md` har en test, der erstatter proxyen med en falsk, der altid afkorter, og som fejler på kode uden spærren. Fundet i velfærdsstatens rådgiver, hvor knappen kunne trykkes uendeligt mange gange. Nyt tjekpunkt i `casespil-konsistenstjek`
 

@@ -69,6 +69,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.8.0 (oktober 2026)
+- Opdateret efter 36 nye commits i casespil.dk: rådgiver i to kolonner, session og beskedidentitet, streng resultatkode, proxyens bytegrænse og fælles moduler. Se plugin-READMEen.
+
 ### casespilsdesigner 2.7.1 (oktober 2026)
 - Fortsæt-knappen i rådgivere: højst én fortsættelse pr. svar, med test. Se plugin-READMEen.
 
