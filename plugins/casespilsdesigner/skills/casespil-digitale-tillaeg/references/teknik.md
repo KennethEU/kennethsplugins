@@ -383,7 +383,9 @@ Hubben er den ene side, eleverne åbner for at forstå spillet. Den er offentlig
 
 Rådgiveren er et arbejdsbord, ikke en chatboks med et kort ved siden af. Alt eleven skal bruge under forhandlingen ligger i samme side.
 
-**Computer (tre kolonner, fx `200px 1fr 320px`):**
+**Computer (to kolonner, ca. 60/40; ældre versioner brugte tre kolonner med en skinne):** Fasen vælges ikke af eleven. Rådgiveren udleder den af samtalen og spillets tekster, og der er kun én "Skift rolle"-knap. Rådgiveren åbner i en ny fane fra casespilssiden. Headeren viser organisationens logo uden at spilde højde, og begge spor (chat og kort) udnytter skærmhøjden uden tom bund. Tegnloftet er ens i alle spil (1200 tegn), uden tegntæller. Hvert spil må have sit eget udtryk (farver, skrift, avatar), men struktur, tilgængelighed og taleboble opbygges ens, helst af et fælles modul (se afsnit 26, "Fælles moduler").
+
+Beskrivelsen af de tre dele nedenfor gælder stadig indholdet, men den venstre skinne er slået sammen med den øvrige side, og fasevælgeren er fjernet:
 
 - **Venstre kolonne (skinne):** spilfaserne som knapper (kun elevfaserne), en spørgsmålsmåler ("7 af 10 tilbage" med små prikker), og et lille kort om spillet (pulje, stemmer, hvad der sker uden aftale).
 - **Midten:** chatten. Øverst rolletitel, stemmebadge og fasevælger med fasens opgave som hjælpetekst. Så tråden med bobler (rådgiveren venstre, eleven højre, en "tænker"-indikator), og nederst skrivefeltet (Enter sender, Shift+Enter giver ny linje, højst ca. 1200 tegn), en statuslinje og en diskret note ("Gemmes lokalt i 2 timer").
@@ -519,6 +521,7 @@ Sådan afleverer bordene deres aftale til lærerens skærm uden login eller serv
 **Regler:**
 
 - Bit-bredden skal rumme den højeste pris. 6 bit rummer 63; er en pris højere, udvides `AMOUNT_BITS`, og koden får nyt præfiks og ny version. En test skal fange det.
+- **Streng længde.** Kontrollér den forventede tekstlængde (`ceil((ceil(bits/8) + 2) * 8 / 5)` tegn) før afkodning, og afvis en kode med ekstra eller manglende tegn. Afvis også en kode, hvis sidste base32-tegn har rest-bits, der ikke er nul. Ellers accepterer parseren koder med ekstra tegn, som kontrolsummen ikke fanger. Test: for lang, for kort og ændret sidste tegn skal alle give fejl.
 - Afkodningen er **tolerant over for indtastning** (små bogstaver, mellemrum og bindestreger, O som 0, I og L som 1) og **streng over for indhold** (forkert præfiks, forkert længde, ukendt tegn, forkert kontrolsum, manglende stemme, ugyldig bevilling). Til sidst går den afkodede tilstand gennem samme `normalize` som filer.
 - Et nyt spil får nyt præfiks. Gamle versioner kan stadig afkodes, hvis det er nødvendigt (Kommunalbudget læser også version 1).
 - Kontrolsummen er en tastefejlsbeskyttelse, ikke sikkerhed: koden kan genskabes af en, der kender formatet.
@@ -1298,3 +1301,17 @@ Krav, der blev fundet ved eksterne gennemgange, og som er verificeret i `velfaer
 - **Resultatkoder i opsamlingen.** Identiske koder dedupes med en besked, og to forskellige koder med samme bordnummer giver en advarsel ("Bord 4 optræder med to forskellige koder. Tjek, at bordnumrene er rigtige.").
 - **Cockpit.** De samme mandatfelter som på papirkortene (rød linje, skal med, fortroligt notat) ligger i cockpit-data og i lærerens systemprompt, og cockpittets fasetekster bruger samme formulering som elevmaterialerne.
 - **Rådgiverens prompt og kort** bruger de samme mærkater som kortene: "Skal med (forhandlingsønske, ikke bindende)" og "Fortroligt notat". Aktøren med afvisningspligt (embedsmanden) "skal" afvise.
+
+**Session og beskedidentitet under AI-kald (Kampen om velfærdsstaten, Fund 1).** Et AI-kald tager sekunder, og eleven kan i mellemtiden have en anden fane åben, eller sessionen kan udløbe. Tre krav:
+- Hver besked har et stabilt `id` (fx `m_<starttid>_<nr>`), også i gamle gemte sessioner (tildel manglende id ved indlæsning).
+- Gem `session.started` før kaldet. Når svaret kommer, læs den gemte session igen og sammenlign. Er den nulstillet, kasseres svaret med en besked, og spørgsmålet tælles ikke. Find beskeden, der skal fortsættes, via `id`, ikke via "den sidste".
+- `storage`-hændelser og timere ændrer ikke visningen, mens et kald kører (`busy`). De gemmes i `pendingStorage` og afstemmes bagefter: manglende beskeder tilføjes, en fortsat besked vinder over en ikke fortsat, og tælleren bliver det højeste af begge og antallet af elevbeskeder. Test med to faner og et forsinket falsk svar.
+
+**Proxyens størrelsesgrænse tæller undervejs.** Læs requestens stream i stykker med løbende bytetæller og afbryd, så snart grænsen overskrides (413), også når `Content-Length` mangler eller er forkert. Mål ikke først efter at have læst hele bodyen. Test med en body uden længdeangivelse, der er større end grænsen.
+
+**Fælles moduler.** Fælles kode ligger i en mappe (`fælles/`) og har enhedstest:
+- `ai-transport.js`: tidsgrænse der nulstilles ved hvert stykke, genforsøg med forsinkelse ved 429 og 5xx, nyt forsøg uden `thinkingConfig` ved 400 (tæller ikke som forsøg), læsning af streaming og almindeligt JSON, `finishReason` som `truncated`, og danske, pædagogiske fejltekster uden rå browserfejl.
+- `raadgiver-ui.js`: taleboble, avatar og afsender, så hvert spil har sit eget udtryk men samme opbygning.
+Et fælles modul tæller først, når siderne bruger det. Tjek med en søgning, at hver side henviser til modulet; en fil, som ingen side indlæser, er død kode og giver falsk tryghed om, at fejl er rettet "ét sted".
+
+**Testrutine.** Hold `package.json` med scripts (`npm test` for kerne, `test:all` for alt) og en `browser_loader`, der finder Chromium uden hårdkodede maskinstier, så tests kan køres af andre og i CI. Hver gennemgangsrunde får en regressionstest pr. fund.
