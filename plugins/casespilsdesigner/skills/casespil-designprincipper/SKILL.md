@@ -111,7 +111,13 @@ Hver rolles krav og indrømmelser hører til præcis én af tre kategorier. Regl
 - **Skal med (forhandlingsønske):** rollen kæmper for det, men må selv vælge at stemme ja uden. Ikke bindende.
 - **Fortroligt notat (indrømmelse):** noget rollen kan give. Ikke bindende og ikke et krav. Skjult information i den snævre betydning.
 
-Bland aldrig kategorierne, og brug aldrig "kan leve med" om en rød linje (et lavere trin bryder ikke en rød linje, og det skal stå sådan, hvis trin findes). Tjek, at alle tre findes i data, på kortene, i cockpit og i rådgiverens prompt (`casespil-konsistenstjek`).
+Bland aldrig kategorierne, og brug aldrig "kan leve med" om en rød linje (et lavere niveau eller beløb bryder ikke en rød linje, og det skal stå sådan).
+
+**Trafiklys-mandat (variant, afprøvet i Velfærdsstaten):** i spil, hvor forhandlingen føres i beløb, kan de tre kategorier vises som et trafiklys pr. rolle i stedet for lister:
+- **Grøn:** tiltag rollen gerne støtter, med et kort tip om, hvem der er allieret.
+- **Gul:** tiltag rollen kan give med en betingelse ("kun hvis nedslidte undtages") og beløbet, der er tale om. Det er indrømmelsen fra det fortrolige notat, ikke et krav.
+- **Rød:** bindende veto, formuleret som et beløb eller en grænse ("brugerbetaling på +6 mia. kr. eller mere. Absolut veto"). Rollen stemmer altid nej.
+Trafiklyset kommer fra samme data som kortets øvrige tekster, så rød linje, gul betingelse og fortroligt notat aldrig siger noget forskelligt. Mærkater, elevintroduktion, rådgiver og cockpit bruger de samme tre ord. Tjek, at alle tre findes i data, på kortene, i cockpit og i rådgiverens prompt (`casespil-konsistenstjek`).
 
 ### Aktører med afvisningspligt
 

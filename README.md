@@ -69,6 +69,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.9.0 (oktober 2026)
+- Bordregler fra spillets data, trafiklys-mandat, milliarddosering, aftalevisning og faseshow i casespil-skills. Se plugin-READMEen.
+
 ### casespilsdesigner 2.8.0 (oktober 2026)
 - Opdateret efter 36 nye commits i casespil.dk: rådgiver i to kolonner, session og beskedidentitet, streng resultatkode, proxyens bytegrænse og fælles moduler. Se plugin-READMEen.
 

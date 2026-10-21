@@ -103,7 +103,7 @@ Et rollekort er altid 2 sider, trykt dobbeltsidet. Spillet foregår fysisk i kla
 - DILEMMAER (3 stk., 2. person: "Skal du...?", med krydsreferencer til andre roller)
 - SÆRLIG BEFØJELSE (hvis relevant) og evt. TIP (2. person imperativ)
 - **FORTROLIGT NOTAT:** en tydelig boks med skjult information (2. person: "Du ved at..."). Det er en indrømmelse, rollen kan give, ikke et krav
-- **Mærkater på forsiden (når spillet har mandatkategorier, se `casespil-designprincipper`):** "Rød linje (bindende, du stemmer nej)" og "Skal med (forhandlingsønske, ikke bindende)". Mærkaterne har samme ordlyd på alle kort og i elevintroduktionen. En genereret rød linje slutter med "Et lavere trin bryder ikke din røde linje", aldrig "kan du leve med".
+- **Mærkater på forsiden (når spillet har mandatkategorier, se `casespil-designprincipper`):** "Rød linje (bindende, du stemmer nej)" og "Skal med (forhandlingsønske, ikke bindende)". Mærkaterne har samme ordlyd på alle kort og i elevintroduktionen. En genereret rød linje slutter med "Et lavere niveau bryder ikke din røde linje", aldrig "kan du leve med". Har spillet trafiklys-mandat, står grøn, gul og rød som tre små felter på forsiden med samme ord som i elevintroduktionen. Brug beløb, ikke trin, hvis forhandlingen føres i milliarder.
 
 **Bagside (Taktik og arbejdsark):**
 - FAGBEGREBER I SPILLET (fx Eastons model, BCG, Ansoff) med en forklaring i dagligsprog

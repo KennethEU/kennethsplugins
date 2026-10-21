@@ -108,6 +108,12 @@ I Claude: tilføj en marketplace med adressen `KennethEU/kennethsplugins` (se ho
 
 ## Changelog
 
+### v2.9.0 (oktober 2026)
+- Opdateret efter spilændringerne 19. og 20. oktober. Bordregler er datadrevne (`bordregler`: størrelse = antal roller, minimum, lærer som embedsmand ved få elever, makkerpar), og de faste "5" er fjernet i `casespil-projektregler` (regel 17), `casespil-digitale-tillaeg` og `references/teknik.md`.
+- Trafiklys-mandat (grøn, gul, rød) som variant af de tre mandatkategorier i `casespil-designprincipper` og `casespil-rollekort`. "Trin" erstattes af niveau og beløb.
+- `casespil-digitale-tillaeg`: forhandling i milliarddosering, aftalevisning, køreplan til embedsmanden, fravigelse af ændringsgrænsen, faseshow til storskærm, rådgiverens faner, og lærerlogin med ét e-mailfelt.
+- `casespil-konsistenstjek`: tre nye tjekpunkter (bordregler, trafiklys, faseshow).
+
 ### v2.8.0 (oktober 2026)
 - Opdateret efter 36 nye commits i casespil.dk (16. til 18. oktober). `references/teknik.md`: rådgiverens to kolonner uden fasevælger (afsnit 16), streng længde på resultatkoder (afsnit 18), og i afsnit 26 session og beskedidentitet under AI-kald, proxyens løbende bytegrænse, fælles moduler (kun når siderne bruger dem) og testrutine
 - `casespil-konsistenstjek`: fire nye tjekpunkter. `casespil-digitale-tillaeg`: fase udledes af rådgiveren, ikke valgt af eleven

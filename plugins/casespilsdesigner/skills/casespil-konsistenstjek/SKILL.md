@@ -138,6 +138,9 @@ Kilder: `casespil-projektregler` (beregner-tjek) og `casespil-digitale-tillaeg` 
 - [ ] Digitale dele er testet på computer og mobil (ingen vandret scroll, ingen konsolfejl)?
 - [ ] Samme budgetformel overalt (elevintro, bilag, rådgiverprompt, værktøj)? Fx tiltag minus ønsker minus kompensation plus ekstra konsekvenser fra fase 3.
 - [ ] Cockpit-data indeholder alle felter, kortene viser (rød linje, skal med, fortroligt notat), og cockpittets fasetekster har samme formulering som elevmaterialerne?
+- [ ] Bordreglerne (størrelse, minimum, lærerrolle, makkerpar) står i spillets data og stemmer med gruppeberegner, printliste og lærerguide for hele intervallet?
+- [ ] Trafiklys og mandat: grøn, gul og rød på kortene stemmer med fortroligt notat, elevintroduktion, rådgiver og cockpit, og ingen tekst nævner "trin", når beløb er enheden?
+- [ ] Faseshowet henter alt fra spillets data og viser intet fortroligt?
 - [ ] "Skal" og "kan" for en aktørs afvisningspligt er ens i alle dokumenter, cockpit og rådgiver?
 - [ ] Printet er testet som samlet dobbeltsidet print med sideparring (rollekortene starter på en ulige side, og sideintervallerne i lærerguiden stemmer med filen)?
 - [ ] Gemt tilstand er testet med en ødelagt gemt tilstand (forkerte typer, ukendte id'er, manglende felter) og med to faner mod hinanden?
