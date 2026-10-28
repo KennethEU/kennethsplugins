@@ -5,7 +5,7 @@ description: Projektets faste regler for casespil (også kaldet rollespil), der 
 
 # Projektregler for casespil
 
-Disse regler går forud for de generelle casespilsskills, hvor de er uenige.
+Disse regler går forud for de generelle casespilsskills, hvor de er uenige. De handler om sprog, sikkerhed, kvalitet og produktion. Selve spildesignet (format, magt, krav, afstemning, faldback, forberedelse og debriefing) er valg, ikke regler: se Designvalg i `casespil-designprincipper`.
 
 ## Overstyringer
 
@@ -15,8 +15,8 @@ Disse regler går forud for de generelle casespilsskills, hvor de er uenige.
 4. **Sprog og retskrivning:** Dansk, ingen lange tankestreger. Sammensatte navneord skrives altid UDEN bindestreg (fx *lærersparring*, *lærerassistent*, *gymnasielærer og sparringspartner*, aldrig med bindestreg som i *lærer*-*sparring*). Dansk sætningskapitalisering i overskrifter, menuer og knapper: kun startbogstavet er stort (ikke engelsk Title Case).
 5. **Ordvalg:** skriv casespil i alle tekster, filnavne og overskrifter. Ordet rollespil forstås som det samme, og læreren må gerne bruge begge ord, men materialerne siger casespil.
 6. **AI-assistenter følger sprogreglerne.** Systemprompter til elevernes rådgiver og til lærerens assistent indeholder reglerne ovenfor (ingen faste minuttal, ingen rituelle fraser, ingen lange tankestreger) og henter fasenavne, roller og tal fra datasættet i stedet for at gentage dem som tekst. En prompt med egne fasenavne kommer før eller siden til at sige noget andet end materialerne.
-7. **To adskilte elevpakker: "Uden AI" og "Med AI-rådgiver".** Spillet foregår altid fysisk, så printfilerne skelner efter AI, ikke efter "analog" og "digital". `Elevpakke_[Spil]_Uden_AI.docx` samler intro, bilag, rollekort og beslutningsskema helt uden koder eller AI-henvisninger. `Elevpakke_[Spil]_Med_AI.docx` har nøjagtig samme indhold og den 4-cifrede rådgiverkode trykt på rollekortene ("Rådgiverkode: XXXX"). De ligger altid som to separate Word-filer og bygges af samme data. Se `casespil-rollekort`.
-8. **Rollekort er dobbeltsidet A4.** Forside (Rolle og mandat): topbanner, nøgletalsbjælke med tre felter, mål, baggrund, holdning og værdier, initiativkrav, nummererede argumenter, dilemmaer og en tydelig "Fortroligt notat"-boks. Bagside (Taktik og arbejdsark): fagbegreber, faseguide og forhandlingsnoter med fysiske notelinjer.
+7. **To adskilte elevpakker, når spillet har AI-rådgiver: "Uden AI" og "Med AI-rådgiver".** Uden AI-rådgiver er der kun pakken Uden AI. Spillet foregår altid fysisk, så printfilerne skelner efter AI, ikke efter "analog" og "digital". `Elevpakke_[Spil]_Uden_AI.docx` samler intro, bilag, rollekort og beslutningsskema helt uden koder eller AI-henvisninger. `Elevpakke_[Spil]_Med_AI.docx` har nøjagtig samme indhold og den 4-cifrede rådgiverkode trykt på rollekortene ("Rådgiverkode: XXXX"). De ligger altid som to separate Word-filer og bygges af samme data. Se `casespil-rollekort`.
+8. **Rollekort er dobbeltsidet A4.** Standardindholdet er som følger. Afsnit kan udelades eller byttes efter spillets designvalg (fx nøgletalsbjælke, initiativkrav og taktikdel), men overskrifterne holdes faste, hvis en AI-rådgiver læser kortene. Forside (Rolle og mandat): topbanner, nøgletalsbjælke med tre felter, mål, baggrund, holdning og værdier, initiativkrav, nummererede argumenter, dilemmaer og en tydelig "Fortroligt notat"-boks. Bagside (Taktik og arbejdsark): fagbegreber, faseguide og forhandlingsnoter med fysiske notelinjer.
 9. **Én samlet lærerfil.** `Laererpakke_[Spil]_Samlet.docx` samler lærerguide og cheatsheet i ét dokument, så læreren printer ét hæfte til eget brug.
 
 ## Tillæg til design
@@ -50,7 +50,7 @@ Disse regler går forud for de generelle casespilsskills, hvor de er uenige.
 
 25. **Fakta og modeller.** Konsekvenser og politiske effekter formuleres som risici ("kan give"), ikke som kendsgerninger. Tal fra offentlige kilder får årstal og prisniveau, og satser som SU og bundskat noteres med kildens dato. Stiliserede fordelinger ("Hvem betaler") mærkes som modeller. En kompensation, der fjerner en konsekvens, er en antagelse, som debriefingen kritiserer.
 26. **Privatlivssiden må ikke love for meget.** Den må ikke sige, at alt gemt forbliver lokalt, hvis samtalehistorik eller spørgsmål videresendes til AI-tjenesten. En test sammenholder siden med alle gemte nøgler i koden, også de spilspecifikke (fx `vs-tilstand-<bord>`).
-27. **Tre mandatkategorier og "skal" for afvisningspligt.** Rød linje (bindende), skal med (forhandlingsønske) og fortroligt notat (indrømmelse) bruges med samme ord overalt, og en aktør med afvisningspligt "skal" afvise. Se `casespil-designprincipper`. Har spillet trafiklys-mandat (grøn, gul, rød), gælder samme krav til ens ord overalt.
+27. **Tre mandatkategorier og "skal" for afvisningspligt.** Bruger spillet mandatkategorier, bruges rød linje (bindende), skal med (forhandlingsønske) og fortroligt notat (indrømmelse) med samme ord overalt, og en aktør med afvisningspligt "skal" afvise. Se `casespil-designprincipper`. Har spillet trafiklys-mandat (grøn, gul, rød), gælder samme krav til ens ord overalt.
 
 ## Tillæg til produktion
 

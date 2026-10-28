@@ -86,18 +86,19 @@ Vent på svar. Gå derefter til Gate 1.
 
 Re-ground: "Vi er ved **Gate 1 (format)** — baseret på dine svar foreslår jeg 2-3 formater."
 
-Præsentér **2-3 relevante formater** baseret på emnet (se `casespil-designprincipper`-skillen for formatoversigt). Brug dette format:
+Præsentér **2-3 forskellige spil** baseret på emnet. Forslagene skal adskille sig på flere designvalg (fx magt, krav, afstemning, faldback, forberedelse og resultat), ikke kun på formatets navn. Brug Designvalg og Forskellige spil af samme materiale i `casespil-designprincipper`. Brug dette format:
 
 ### Forslag A: [Formatnavn]
 **Kort beskrivelse:** [1-2 sætninger om hvad formatet gør]
 **Passer godt fordi:** [Kobl til lærerens emne og læringsmål]
 **Eksempel:** [Kort skitse af hvordan det ville se ud med dette emne]
+**Designvalg:** [De 3 til 4 valg, der gør netop dette spil anderledes]
 
 ### Forslag B: [Formatnavn]
 ...
 
 ### Anbefaling
-"Jeg anbefaler **Forslag [X]** fordi [kort begrundelse]."
+"Jeg anbefaler **Forslag [X]** fordi [kort begrundelse]." Sig også, at læreren kan blande valg fra forslagene.
 
 **VENT** på at læreren vælger. Gå IKKE videre før læreren har valgt format.
 
@@ -135,7 +136,7 @@ Beskriv:
 - **Afstemning/konsekvenser:** Hvordan afgøres resultatet?
 - **Spillets flow:** Hvad sker der i faserne? (intro → forhandling → afstemning → debriefing)
 
-- **Valgfrie mønstre:** præsentér relevante muligheder fra `casespil-designprincipper` (Valgfrie mønstre fra Strafudvalget) som alternativer, fx teorigruppe, afstemningsform, faldback og dilemmaformat. De er ikke standard, men en del af værktøjskassen.
+- **Designvalg:** præsentér de relevante valg fra menuen i `casespil-designprincipper` (fx afstemningsform, hvad der sker uden flertal, krav, forberedelse og rollekortets taktikdel) med 2 til 3 muligheder hver og en anbefaling. Intet valg er standard for alle spil.
 
 Spørg læreren:
 - "Giver mekanikken mening i din kontekst?"

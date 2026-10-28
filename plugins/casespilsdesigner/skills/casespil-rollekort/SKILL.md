@@ -92,7 +92,7 @@ Elevintroduktion (medium margener):
 
 ### Normal: dobbeltsidet A4 (forside og bagside)
 
-Et rollekort er altid 2 sider, trykt dobbeltsidet. Spillet foregår fysisk i klasselokalet med papir, dialog og forhandling, og bagsiden er arbejdsarket, eleven har foran sig under forhandlingen.
+Et rollekort er altid 2 sider, trykt dobbeltsidet. Listerne nedenfor er standardskabelonen. Afsnit kan udelades eller byttes efter spillets designvalg (se Designvalg i `casespil-designprincipper`). Spillet foregår fysisk i klasselokalet med papir, dialog og forhandling, og bagsiden er arbejdsarket, eleven har foran sig under forhandlingen.
 
 **Forside (Rolle og mandat):**
 - Topbanner med navn, titel, organisation og evt. beføjelse. I varianten Med AI står rådgiverkoden i bannerets undertitel (se Rådgiverkode)

@@ -1,6 +1,6 @@
 # Casespilsdesigner
 
-Et Cowork-plugin til design af casespil (også kaldet rollespil) og simuleringer i dansk gymnasieundervisning (STX). Bygger på evidensbaseret pædagogik med 10 designprincipper, 8 casespilsformater og struktureret debriefing.
+Et Cowork-plugin til design af casespil (også kaldet rollespil) og simuleringer i dansk gymnasieundervisning (STX). Bygger på evidensbaseret pædagogik med ti greb, en menu af designvalg, 8 casespilsformater og struktureret debriefing.
 
 ## Hvad pluginet gør
 

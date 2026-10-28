@@ -1,6 +1,6 @@
 ---
 name: casespil-designprincipper
-description: "De 10 designprincipper og 8 formater til casespil (også kaldet rollespil) i dansk gymnasieundervisning. Brug når læreren designer eller brainstormer casespil, rollespil og simulationer, vælger format (forhandling, krisehåndtering, lev-et-liv, retssag, bestyrelse osv.), eller spørger \"hvad er et godt format hvis eleverne skal ...\". Den styrer HVAD der designes; produktion af filer hører under rollekort. Brug ikke til almindeligt gruppearbejde, eksamensopgaver eller quizzer."
+description: "Ti greb, en menu af designvalg og 8 formater til casespil (også kaldet rollespil) i dansk gymnasieundervisning. Brug når læreren designer eller brainstormer casespil, rollespil og simulationer, vælger format (forhandling, krisehåndtering, lev-et-liv, retssag, bestyrelse osv.), eller spørger \"hvad er et godt format hvis eleverne skal ...\". Den styrer HVAD der designes; produktion af filer hører under rollekort. Brug ikke til almindeligt gruppearbejde, eksamensopgaver eller quizzer."
 allowed-tools:
   - Read
   - Glob
@@ -18,21 +18,21 @@ Denne skill er den faglige rygrad i pluginet. Den indeholder principper, formate
 - **`references/cases.md`** — 14 afprøvede cases med roller, stemmer, knaphed og fagbegreber
 - **`references/masterguide-kompakt.md`** — Teori (Kolb, Englund), skabeloner, koalitionsmatematik, evaluering, avancerede designmønstre
 
-## De 10 universelle designprincipper
+## Ti greb, der ofte virker
 
-Disse gælder for ALLE casespil uanset emne eller format:
+Brug grebene som inspiration og tjekliste, ikke som krav. Et spil kan bevidst fravælge et greb, hvis det giver en bedre konflikt eller passer bedre til klassen. Strafudvalget har fx lige stemmer til alle roller, fordi konflikten ligger i kravene og ikke i magten.
 
-| # | Princip | Kerneregel | Tjek-spørgsmål |
+| # | Greb | Idé | Tjek-spørgsmål |
 |---|---------|-----------|----------------|
-| 1 | **Ægte ressourceknaphed** | Der er ALDRIG nok til alle | Er efterspørgslen > udbuddet? |
-| 2 | **Magtasymmetri** | Ikke alle har lige magt | Har rollerne forskellige stemmevægte/beføjelser? |
+| 1 | **Ægte ressourceknaphed** | Der er ikke nok til alle, eller kun én løsning kan vælges | Er efterspørgslen > udbuddet? |
+| 2 | **Magtasymmetri** | Ulige magt (eller bevidst lige magt, så konflikten ligger i kravene) | Har rollerne forskellige stemmevægte/beføjelser? |
 | 3 | **Perspektiv-diversitet** | Roller ≠ elevernes eget perspektiv | Oplever eleverne noget ANDERLEDES? |
-| 4 | **Progressiv kompleksitet** | Byg i lag, ikke alt på én gang | Er der en klar fase 1 → 2 → 3 struktur? |
-| 5 | **Transparens og feedback** | Eleverne SER konsekvenserne | Får eleverne real-time feedback på valg? |
+| 4 | **Progressiv kompleksitet** | Byg i lag, ikke alt på én gang | Er der en klar rækkefølge i faserne? |
+| 5 | **Transparens og feedback** | Eleverne ser konsekvenserne | Ser eleverne konsekvensen af deres valg, undervejs eller i debriefingen? |
 | 6 | **Struktureret dialog** | Faciliteret samtale, ikke fri-for-alle | Er der talerliste, runder, afstemning? |
 | 7 | **Tryg ramme** | Fejl er OK i spillet. Læreren italesætter selv rammen, så materialerne bruger ingen ritualsætninger | Kan en utryg elev trække sig til en observatørrolle? |
-| 8 | **Skjult information** | Udvalgte roller ved noget andre ikke ved | Er der mindst 1-2 roller med skjult info? |
-| 9 | **Krydsreferencer** | Dilemmaer nævner andre roller eksplicit | Refererer hvert rollekort til mindst 2-3 andre? |
+| 8 | **Skjult information** | Nogle roller ved noget, andre ikke ved | Har spillet skjult info, og i givet fald hos hvem (enkelte roller eller et fortroligt notat til alle)? |
+| 9 | **Krydsreferencer** | Rollekortet nævner andre roller | Ved eleven, hvem hun kan alliere sig med eller skal overbevise? |
 | 10 | **Differentieret materiale** | Normalversionen er standard. Støtte- og stærkversion laves kun, hvis læreren ønsker det. Støtte kan også være en AI-rådgiver, som de svage elever kan spørge | Er der støtte til de elever, der har brug for det, uanset om det er en støttekort-version eller en rådgiver? |
 
 ## Casespilsformater
@@ -87,10 +87,43 @@ Webapp + Excel-regnskab, elever udforsker investeringer og ser finansielle konse
 
 ## Kombination af formater
 
-Formater kan kombineres for dybere læring. Maks. 2 formater per lektion. Eksempler:
+Formater kan kombineres for dybere læring, typisk højst to pr. lektion. Eksempler:
 - **C → A:** Lev som fattig → stem om velfærdspolitik (levede erfaringer → politik)
 - **D → A:** Kør økonomien → forhandl krisepakke (konsekvenser → løsninger)
 - **H → F:** Digital simulation → bestyrelsespræsentation (analyse → beslutning)
+
+## Designvalg (menu)
+
+Et casespil er en række valg. Brug tabellen, når du foreslår spil, og vis læreren de valg, der giver forskellige spil. Ingen af valgene er standard for alle spil.
+
+| Valg | Muligheder | Overvej |
+|------|-----------|---------|
+| Format | A til H ovenfor, eller en kombination | Hvad skal eleverne øve: forhandle, argumentere, opleve, regne? |
+| Knaphed | Penge, pladser, stemmer, tid, information, kun én løsning | Hvad tvinger eleverne til at prioritere? |
+| Magt | Lige stemmer, vægtede stemmer, veto, særlige beføjelser, wildcard uden stemme | Skal konflikten ligge i magt eller i krav? |
+| Krav | Røde linjer (bindende), skal med (ønske), ikke-bindende hovedkrav med synligt afkald, trafiklys | Hvor meget må eleverne give sig, og skal det kunne ses? |
+| Afstemning | Simpelt flertal, kvalificeret flertal, enstemmighed, ét forslag ad gangen, alle forslag på bordet med ét ja pr. rolle | Skal eleverne vælge mellem forslag eller sige ja/nej til ét? |
+| Uden flertal | Status quo, faldback der rammer alle, læreren afgør, ny runde | Giver faldbacken én rolle sin vilje? |
+| Forberedelse | Læse alene, teorigruppe med samme rolle, AI-rådgiver, lektie | Hvor meget støtte har klassen brug for? |
+| Rollekortets taktikdel | Tre dilemmaer, dilemma og taktik med "Sig fx", tips | Har eleverne mest brug for overvejelser eller for et konkret greb? |
+| Skjult information | Ingen, enkelte roller, et fortroligt notat til alle | Skal eleverne opdage noget undervejs? |
+| Resultat og feedback | Tavle, beslutningsskema, storskærm i cockpittet, budgetværktøj, beregner, lærershow | Hvordan ser klassen resultaterne side om side? |
+| Debriefing | RAS, sammenligning med en virkelig afgørelse, observatører fremlægger, skriftlig refleksion | Hvad skal eleverne tage med ud af timen? |
+| Differentiering | Normalversion, tre versioner, teorigruppe, AI-rådgiver, observatørrolle | Hvilken støtte passer til klassen? |
+| Længde | Fuldt casespil, miniversion på 10 til 20 minutter | Hvor meget tid er der? |
+
+## Forskellige spil af samme materiale
+
+Når læreren har et emne eller en tekst, så foreslå 2 til 3 spil, der adskiller sig på flere designvalg, ikke kun på formatets navn. Eksempel med materialet fra Strafudvalget (en virkelig voldssag og fem straffeteorier):
+
+| Spil | Format | Kerne | Designvalg, der adskiller det |
+|------|--------|-------|-------------------------------|
+| Strafudvalget | A Forhandling | Fem teorier forhandler én straf og ét tillæg | Lige stemmer, ikke-bindende hovedkrav med afkald, alle forslag på bordet, fri fod uden flertal |
+| Retssalen | E Retssag | Anklager og forsvarer argumenterer for straf, nævninger og dommere afgør | Faste roller med taletid, skjult bevismateriale, dommen afsløres og sammenlignes |
+| Livet efter dommen | C Lev-et-liv | Grupper følger gerningspersonen gennem straffen og ser recidivrisiko efter hvert valg | Tal som konsekvens, runder med begivenheder, ingen afstemning |
+| Fem minutter | Miniversion | Hver elev stemmer på en straf ud fra én teori, klassen ser fordelingen | Ingen forhandling, ét kort pr. teori, resultat på storskærm |
+
+Lad læreren blande valgene på tværs af forslagene.
 
 ## Vigtige designmønstre
 
@@ -166,9 +199,11 @@ Navngiv fagbegreber direkte i materialer (stærk-version): [NEO], [REAL], [LIB] 
 
 ## Pointsystemer
 
-ALDRIG i deliberative casespil (Format A, E, G). Fjerner fokus fra argumentation. Talbaserede konsekvenser (budget, likviditet) er OK i Format C, D, H — men aldrig som leaderboard.
+Frarådes i deliberative casespil (Format A, E, G), fordi point flytter fokus fra argumentationen. Talbaserede konsekvenser (budget, likviditet) passer til Format C, D og H, men helst ikke som en rangliste.
 
-## Debriefing: RAS-modellen
+## Debriefing: RAS-modellen (standard)
+
+RAS er udgangspunktet. Den kan kombineres med andre greb, fx sammenligning med en virkelig afgørelse, observatører der fremlægger, eller en kort skriftlig refleksion.
 
 | Trin | Formål | Varighed | Fokus |
 |------|--------|----------|-------|
