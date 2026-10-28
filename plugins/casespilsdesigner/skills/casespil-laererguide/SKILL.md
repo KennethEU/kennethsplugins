@@ -59,7 +59,7 @@ Tjekliste med:
 - [ ] Test evt. digitalt værktøj
 - [ ] Elevintroduktion uddeles FØR rollekort
 
-### 5. Tidsplan (UDEN minuttal)
+### 5. Tidsplan (som udgangspunkt uden minuttal)
 "Du styrer selv tempoet — skemaet viser rækkefølge og relativ vægtning."
 
 | Fase | Aktivitet | Lærers rolle |

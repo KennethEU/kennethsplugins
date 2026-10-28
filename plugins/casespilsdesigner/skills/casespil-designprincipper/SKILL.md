@@ -30,7 +30,7 @@ Brug grebene som inspiration og tjekliste, ikke som krav. Et spil kan bevidst fr
 | 4 | **Progressiv kompleksitet** | Byg i lag, ikke alt på én gang | Er der en klar rækkefølge i faserne? |
 | 5 | **Transparens og feedback** | Eleverne ser konsekvenserne | Ser eleverne konsekvensen af deres valg, undervejs eller i debriefingen? |
 | 6 | **Struktureret dialog** | Faciliteret samtale, ikke fri-for-alle | Er der talerliste, runder, afstemning? |
-| 7 | **Tryg ramme** | Fejl er OK i spillet. Læreren italesætter selv rammen, så materialerne bruger ingen ritualsætninger | Kan en utryg elev trække sig til en observatørrolle? |
+| 7 | **Tryg ramme** | Fejl er OK i spillet. Læreren italesætter som regel selv rammen, så materialerne bruger normalt ingen ritualsætninger | Kan en utryg elev trække sig til en observatørrolle? |
 | 8 | **Skjult information** | Nogle roller ved noget, andre ikke ved | Har spillet skjult info, og i givet fald hos hvem (enkelte roller eller et fortroligt notat til alle)? |
 | 9 | **Krydsreferencer** | Rollekortet nævner andre roller | Ved eleven, hvem hun kan alliere sig med eller skal overbevise? |
 | 10 | **Differentieret materiale** | Normalversionen er standard. Støtte- og stærkversion laves kun, hvis læreren ønsker det. Støtte kan også være en AI-rådgiver, som de svage elever kan spørge | Er der støtte til de elever, der har brug for det, uanset om det er en støttekort-version eller en rådgiver? |

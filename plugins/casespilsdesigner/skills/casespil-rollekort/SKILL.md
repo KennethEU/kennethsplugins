@@ -109,7 +109,7 @@ Et rollekort er altid 2 sider, trykt dobbeltsidet. Listerne nedenfor er standard
 
 **Bagside (Taktik og arbejdsark):**
 - FAGBEGREBER I SPILLET (fx Eastons model, BCG, Ansoff) med en forklaring i dagligsprog
-- FASEGUIDE: opgaver i fase 1, 2 og 3 (2 kolonner, INGEN minuttal). Spilfaserne har samme navne, numre og rækkefølge som i elevintroduktion og lærerguide og, hvis de findes, webside og rådgiver. Intro og Debriefing må stå som før- og eftertrin uden fasenummer
+- FASEGUIDE: opgaver i fase 1, 2 og 3 (2 kolonner, som udgangspunkt uden minuttal). Spilfaserne har samme navne, numre og rækkefølge som i elevintroduktion og lærerguide og, hvis de findes, webside og rådgiver. Intro og Debriefing må stå som før- og eftertrin uden fasenummer
 - DINE FORHANDLINGSNOTER med fysiske notelinjer til elevens blyant. Linjerne er rækker i en tabel med bundkant, ikke tomme afsnit (de smelter sammen til én linje)
 
 Hvert rollekort fylder præcis 2 sider. Tjek det i preview og med sidetælling (se Template-kode).

@@ -1,7 +1,7 @@
 {
   "name": "casespilsdesigner",
   "description": "Design af casespil (også kaldet rollespil) og simuleringer til dansk gymnasieundervisning (STX). Genererer rollekort (normalversion som standard), lærerguider og elevintroduktioner som professionelle Word-dokumenter. Bygger på evidensbaseret pædagogik med ti greb, en menu af designvalg, 8 casespilsformater og struktureret debriefing.",
-  "version": "2.14.0",
+  "version": "2.15.0",
   "author": {
     "name": "Kenneth / Marselisborg Gymnasium"
   }

@@ -218,7 +218,7 @@ Hvis læreren ved et gate-punkt indser at et tidligere valg skal ændres ("det f
 
 - Skriv ALTID på dansk med korrekte æøå
 - Brug Arial som standardskrift
-- Aldrig faste minuttal i materialer
+- Faste minuttal og faste sætninger kun som bevidst pædagogisk valg
 - Citér altid designprincipper når du begrunder valg
 - Brug "du" (ikke "De") til læreren
 - Præsentér ALTID mindst 2 muligheder ved hvert gate-punkt

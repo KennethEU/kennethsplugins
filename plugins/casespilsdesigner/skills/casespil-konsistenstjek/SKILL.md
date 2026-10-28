@@ -117,7 +117,7 @@ For hvert rollekort, verificér:
 - [ ] Har differentierings-sektion (ved flere versioner: råd til diskret uddeling; ved kun normalversion: kort note om det bevidste valg)?
 - [ ] Har forberedelsestjekliste?
 - [ ] Angiver at elevintro uddeles FØR rollekort?
-- [ ] Har INGEN faste minuttal (kun rækkefølge og relativ vægtning)?
+- [ ] Har ingen faste minuttal (kun rækkefølge og relativ vægtning), medmindre spillet bevidst har valgt faste tider?
 
 ## 8. Beregner- og digitaltjek (kun hvis der er penge, grænser, tilfældighed eller digitale dele)
 

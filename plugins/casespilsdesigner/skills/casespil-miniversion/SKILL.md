@@ -12,7 +12,7 @@ allowed-tools:
 
 Komprimér et casespil til en selvkørende øvelse på 10 til 20 minutter. Skillen indeholder både forløbet med godkendelsespunkter (gates) og metoden til at forenkle.
 
-**Fælles regler:** `casespil-projektregler` gælder og går forud (ingen ritualer, normalversion nok, ingen faste minuttal i elevmaterialer, dansk uden lange tankestreger). Faglig rygrad: `casespil-designprincipper`. Produktion: `casespil-rollekort`.
+**Fælles regler:** `casespil-projektregler` gælder og går forud (ritualer og faste minuttal kun som bevidst valg, normalversion nok, dansk uden lange tankestreger). Faglig rygrad: `casespil-designprincipper`. Produktion: `casespil-rollekort`.
 
 ## Trinvis proces med gates
 
