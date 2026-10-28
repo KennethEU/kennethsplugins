@@ -12,6 +12,8 @@ allowed-tools:
 
 **Projektregler:** `casespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
+**Én spilfil:** Rollekort, intro, bilag og skema bygges af spillets spilfil (`produktion/spil.cjs`). Generatoren laver kun layout og skriver ingen spiltekst selv. Se `casespil-projektregler`, Tillæg til produktion punkt 6, og `references/spilfil.md` dér.
+
 Denne skill styrer *hvordan* du genererer Word-dokumenter til casespil. Den faglige designviden (hvilke roller, dilemmaer, formater) styres af `casespil-designprincipper`-skillen med dens reference-filer.
 
 ## Fase 0: Saml kontekst (automatisk — FØR alt andet)

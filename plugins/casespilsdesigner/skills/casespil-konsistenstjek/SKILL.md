@@ -12,6 +12,8 @@ allowed-tools:
 
 **Projektregler:** `casespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
+**Én spilfil:** Tjek også, at ingen spiltekst står direkte i generatorerne, og at samme regel er ens i elevpakke, lærerpakke, miniside, cockpit og storskærm. Se `casespil-projektregler`, Tillæg til produktion punkt 6.
+
 Kør dette tjek EFTER at alle materialer er genereret, MEN FØR levering til brugeren. Rapporten præsenteres som en samlet liste med ✅ (bestået) eller ❌ (fejl) for hvert punkt.
 
 ## 0. Kør scriptet først

@@ -7,6 +7,8 @@ description: "Designregler og teknisk reference til digitale tilføjelser til et
 
 **Projektregler:** `casespil-projektregler` gælder altid og går forud, hvor den er uenig med denne skill.
 
+**Én spilfil:** Miniside, `spildata.js`, lærerbundt, storskærm og AI-prompter henter alle tekster og regler fra spillets spilfil (`produktion/spil.cjs`), også storskærmens statustekster. Krav, som storskærmen og facit regner med, er data i spilfilen. Se `casespil-projektregler`, Tillæg til produktion punkt 6.
+
 Denne skill kommer EFTER casespillets design og papirmaterialer er færdige (rollekort, elevintroduktion, bilag). Den styrer, hvordan de digitale dele bygges, så de passer sammen og ikke afslører noget, eleverne ikke må se.
 
 **Teknisk reference:** Før du bygger noget, læs `references/teknik.md`. Den indeholder de mønstre, der er afprøvet i to forskellige spil: filstruktur og fælles datasæt, kryptering og koder, proxy til modelkald, prompt-opbygning, session og spørgsmålstæller, rådgiverens grænseflade på computer og mobil, budgetværktøj, resultatkoder, sammenligning, krypteret lærerpakke, billeder og video, spilintroens opbygning og synkronisering, voiceover, grafisk stil og kontrast, mobil og Safari, automatiserede tests og sikkerhed. Spar tid ved at genbruge mønstrene i stedet for at opfinde dem igen.
