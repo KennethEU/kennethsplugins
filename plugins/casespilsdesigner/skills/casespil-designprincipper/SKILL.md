@@ -225,7 +225,7 @@ Eksplicit overgangssætning mellem A og S: "OK — nu har vi analyseret hvad der
 Når du designer et nyt casespil:
 
 1. **Læs `references/cases.md`** — find et lignende case og brug det som udgangspunkt for roller, stemmematematik og fagbegreber
-1. **Læs `references/elementkatalog.md`** — byggeklodser fra spillene på casespil.dk, som kan kombineres, og stedet hvor nye elementer tilføjes
+1. **Læs `references/elementkatalog.md`**: byggeklodser fra spillene på casespil.dk, som kan kombineres, og stedet hvor nye elementer tilføjes
 2. **Læs `references/masterguide-kompakt.md`** — for teori-begrundelser (Kolb, Englund), avancerede designmønstre (modulært scenarie-design, bilag-system), koalitionsmatematik, evaluering og rollekort-skabelon
 
 Pluginet er selvstændigt. Den fulde masterguide (MASTERGUIDE_Casespil_Samfundsfag_Erhvervsoekonomi_v3.md) kan lægges i arbejdsmappen som ekstra reference, men er ikke påkrævet.
