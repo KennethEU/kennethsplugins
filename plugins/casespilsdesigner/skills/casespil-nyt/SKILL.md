@@ -86,7 +86,7 @@ Vent på svar. Gå derefter til Gate 1.
 
 Re-ground: "Vi er ved **Gate 1 (format)** — baseret på dine svar foreslår jeg 2-3 formater."
 
-Præsentér **2-3 forskellige spil** baseret på emnet. Forslagene skal adskille sig på flere designvalg (fx magt, krav, afstemning, faldback, forberedelse og resultat), ikke kun på formatets navn. Brug Designvalg og Forskellige spil af samme materiale i `casespil-designprincipper`. Brug dette format:
+Præsentér **2-3 forskellige spil** baseret på emnet. Forslagene skal adskille sig på flere designvalg (fx magt, krav, afstemning, faldback, forberedelse, point og resultat), ikke kun på formatets navn. Brug Designvalg, Forskellige spil af samme materiale og `references/elementkatalog.md` i `casespil-designprincipper`. Mindst ét forslag bør have et element, som de tidligere spil ikke har brugt, så hvert nyt spil kan bringe noget nyt med. Brug dette format:
 
 ### Forslag A: [Formatnavn]
 **Kort beskrivelse:** [1-2 sætninger om hvad formatet gør]
@@ -202,6 +202,11 @@ Samle først alle tal og regler i ét sæt (fælles kilde, se `casespil-projektr
 8. Levér færdige filer
 
 ---
+
+
+## Efter produktion: tilføj nye elementer
+
+Har spillet et element, som `references/elementkatalog.md` i `casespil-designprincipper` ikke har, så foreslå læreren at tilføje det med en kort beskrivelse og spillets navn som kilde. Kataloget skal vokse med hvert spil.
 
 ## Gå tilbage
 

@@ -94,7 +94,7 @@ Formater kan kombineres for dybere læring, typisk højst to pr. lektion. Eksemp
 
 ## Designvalg (menu)
 
-Et casespil er en række valg. Brug tabellen, når du foreslår spil, og vis læreren de valg, der giver forskellige spil. Ingen af valgene er standard for alle spil.
+Et casespil er en række valg. Brug tabellen, når du foreslår spil, og vis læreren de valg, der giver forskellige spil. Ingen af valgene er standard for alle spil. De konkrete byggeklodser fra spillene på casespil.dk står i `references/elementkatalog.md`, og kataloget vokser med hvert nyt spil.
 
 | Valg | Muligheder | Overvej |
 |------|-----------|---------|
@@ -108,6 +108,8 @@ Et casespil er en række valg. Brug tabellen, når du foreslår spil, og vis læ
 | Rollekortets taktikdel | Tre dilemmaer, dilemma og taktik med "Sig fx", tips | Har eleverne mest brug for overvejelser eller for et konkret greb? |
 | Skjult information | Ingen, enkelte roller, et fortroligt notat til alle | Skal eleverne opdage noget undervejs? |
 | Resultat og feedback | Tavle, beslutningsskema, storskærm i cockpittet, budgetværktøj, beregner, lærershow | Hvordan ser klassen resultaterne side om side? |
+| Point og mål | Ingen point, fælles resultat i tal (fx omsætning), konsekvenser i tal (saldo, hvem betaler), chance i beregneren | Skal valgene kunne måles, og skal der være spænding ved afgørelsen? |
+| Nyt element | Noget, kataloget ikke har endnu | Hvad kunne gøre netop dette spil anderledes end de tidligere? |
 | Debriefing | RAS, sammenligning med en virkelig afgørelse, observatører fremlægger, skriftlig refleksion | Hvad skal eleverne tage med ud af timen? |
 | Differentiering | Normalversion, tre versioner, teorigruppe, AI-rådgiver, observatørrolle | Hvilken støtte passer til klassen? |
 | Længde | Fuldt casespil, miniversion på 10 til 20 minutter | Hvor meget tid er der? |
@@ -197,9 +199,14 @@ Interne betegnelser (trin, niveauer, motivnumre, sidehenvisninger til en lærebo
 ### Teori-tagging
 Navngiv fagbegreber direkte i materialer (stærk-version): [NEO], [REAL], [LIB] osv.
 
-## Pointsystemer
+## Point og resultat i tal (valgfrit)
 
-Frarådes i deliberative casespil (Format A, E, G), fordi point flytter fokus fra argumentationen. Talbaserede konsekvenser (budget, likviditet) passer til Format C, D og H, men helst ikke som en rangliste.
+Point eller et beregnet resultat kan være med, når det giver mening for spillet. I Fjord Outdoor skal bestyrelsen få mest muligt ud af puljen, og en beregner med pilotgrænse og chance viser til sidst, om valgene holdt. Det giver spænding og gør valgene mærkbare.
+
+Overvej:
+- Lad tallet følge af faglige valg, så debriefingen kan spørge, hvorfor resultatet blev som det blev.
+- I rene forhandlingsspil (fx Format A, E og G) kan point trække fokus fra argumentationen. Vælg dem bevidst, fx som et fælles mål for gruppen frem for en kamp mellem roller.
+- Hvis grupper sammenlignes, så brug det som udgangspunkt for samtale (hvorfor valgte I forskelligt?), ikke kun som vinder og taber.
 
 ## Debriefing: RAS-modellen (standard)
 
@@ -218,6 +225,7 @@ Eksplicit overgangssætning mellem A og S: "OK — nu har vi analyseret hvad der
 Når du designer et nyt casespil:
 
 1. **Læs `references/cases.md`** — find et lignende case og brug det som udgangspunkt for roller, stemmematematik og fagbegreber
+1. **Læs `references/elementkatalog.md`** — byggeklodser fra spillene på casespil.dk, som kan kombineres, og stedet hvor nye elementer tilføjes
 2. **Læs `references/masterguide-kompakt.md`** — for teori-begrundelser (Kolb, Englund), avancerede designmønstre (modulært scenarie-design, bilag-system), koalitionsmatematik, evaluering og rollekort-skabelon
 
 Pluginet er selvstændigt. Den fulde masterguide (MASTERGUIDE_Casespil_Samfundsfag_Erhvervsoekonomi_v3.md) kan lægges i arbejdsmappen som ekstra reference, men er ikke påkrævet.
