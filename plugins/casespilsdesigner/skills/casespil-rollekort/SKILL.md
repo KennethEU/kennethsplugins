@@ -207,4 +207,4 @@ Afslut ALTID med én af:
 
 ## Beslutningsskema
 
-Beslutningsskemaet fylder en hel A4-side, fordi det udfyldes i hånden: en afstemningstabel med en række pr. rolle, en bred navnekolonne (plads til to navne ved makkerpar) og kolonner til ja og nej, linjen med antal ja-stemmer med spillets regel for, hvad der sker uden flertal, og mange notelinjer til begrundelsen. Hold skemaet enkelt: ingen ekstra tabeller over alle forslag eller afstemninger, medmindre læreren beder om det.
+Et skema, der udfyldes i hånden, bør fylde en hel A4-side, fx med en afstemningstabel med en række pr. rolle, en bred navnekolonne (plads til to navne ved makkerpar) og kolonner til ja og nej, linjen med antal ja-stemmer med spillets regel for, hvad der sker uden flertal, og mange notelinjer til begrundelsen. Hold det enkelt, medmindre spillet eller læreren kræver mere.

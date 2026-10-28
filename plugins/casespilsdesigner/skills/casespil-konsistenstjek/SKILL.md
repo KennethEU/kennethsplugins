@@ -175,9 +175,9 @@ Formål: finde det, forfatteren ikke selv kan se. Du kender hele casespillet; el
 
 Brug punktet, når rollekort og elevintroduktion er færdige. Det er ikke relevant ved miniversioner uden elevintroduktion.
 
-## 10. Klassesimulering
+## 10. Klassesimulering (valgfri)
 
-Formål: se, om reglerne holder, og om nogen rolle eller løsning dominerer, når en hel klasse spiller.
+Brug den, når der er tid, eller når et spil er nyt eller ændret meget. Formål: se, om reglerne holder, og om nogen rolle eller løsning dominerer, når en hel klasse spiller.
 
 1. Udtræk elevmaterialet som tekst fra den færdige PDF (intro og bilag, hvert rollekort og skemaet), ikke fra kildefilen, så simuleringen ser det samme som eleverne.
 2. Start én underagent pr. udvalg (en billig model er nok), parallelt. Giv hvert udvalg navngivne elever med forskellige typer: principfast, doven og læser kun forsiden, dominerende, stille, stædig, makkerpar på samme rolle, og ét udvalg, hvor alle er stædige.

@@ -123,33 +123,41 @@ Trafiklyset kommer fra samme data som kortets øvrige tekster, så rød linje, g
 
 En aktør, der har pligt til at afvise (fx en embedsmand, der skal afvise en pakke, der ikke lukker et hul), formuleres med "skal", ikke "kan". Brug det samme ord i elevintroduktion, rollekort, bilag, lærerguide, cheatsheet, cockpit og rådgiverens prompt. Et "kan" i ét dokument og et "skal" i et andet gør det uklart, om afvisningen er et valg.
 
-### Dilemmaer eller dilemma og taktik (valg)
+### Valgfrie mønstre fra Strafudvalget
 
-Vælg ved Gate 3 i `casespil-nyt`, hvilket format afsnittet med dilemmaer har på rollekortet:
+Mønstrene nedenfor er afprøvet i Strafudvalget (2026). De er muligheder i værktøjskassen, ikke krav: Et casespil kan designes på mange måder, og mønstrene bruges kun, når de passer til spillets format, fag og klasse. Foreslå dem for læreren ved Gate 3 i `casespil-nyt` som alternativer ved siden af de andre muligheder.
+
+#### Dilemmaer eller dilemma og taktik
+
+Afsnittet med dilemmaer på rollekortet kan have to formater:
 - **Dilemmaer (klassisk):** tre dilemmaer i 2. person ("Skal du ...?") med krydsreferencer til andre roller. Passer til ældre elever og længere spil.
 - **Dilemma og taktik (afprøvet i Strafudvalget):** ét dilemma, én linje "Taktik:" (hvad rollen kan gøre i forhandlingen) og én linje "Sig fx:" (en sætning, eleven kan sige). Passer til 1.g og C-niveau, hvor eleverne har mere brug for et konkret greb end for flere overvejelser.
 
-Uanset format tjekkes hvert dilemma mod de andre rollers krav, ønsker og fortrolige notater. Et dilemma må ikke antyde en byttehandel, som den anden rolle ikke kan give (fx "gå ned i år for at få X med", hvis X kræver et tillæg, som rollen selv har som krav), og et dilemma om et ønske skal kalde det et ønske, så eleven ikke tror, det er hovedkravet.
+Uanset format bør hvert dilemma tjekkes mod de andre rollers krav, ønsker og fortrolige notater. Et dilemma må ikke antyde en byttehandel, som den anden rolle ikke kan give (fx "gå ned i år for at få X med", hvis X kræver et tillæg, som rollen selv har som krav), og et dilemma om et ønske skal kalde det et ønske, så eleven ikke tror, det er hovedkravet.
 
-### Teorigruppe før forhandling
+#### Teorigruppe før forhandling
 
-Elever med samme rollekort mødes først i en teorigruppe (ekspertgruppe) på tværs af udvalgene. De læser kortet alene eller højt for hinanden, finder hovedkrav og de to stærkeste argumenter, skriver en åbningssætning og gætter, hvad de andre vil. Det er den vigtigste støtte til svage elever og erstatter en særlig støtteversion.
+En mulighed er, at elever med samme rollekort mødes først i en teorigruppe (ekspertgruppe) på tværs af udvalgene. De læser kortet alene eller højt for hinanden, finder hovedkrav og de to stærkeste argumenter, skriver en åbningssætning og gætter, hvad de andre vil. Det giver svage elever støtte uden en særlig støtteversion. Alternativer er fx at læse kortet alene eller en fælles gennemgang i klassen.
 
-### Afstemning, faldback og afkald
+#### Afstemning, faldback og afkald
 
-- **Alle forslag på bordet:** I sidste runde skrives alle forslag op, før der stemmes, og hver rolle stemmer ja til højst ét. Det forhindrer, at flere pakker vedtages samtidig.
-- **Genafstemning og stopregel:** Får intet forslag flertal, forhandler man videre og stemmer igen, så længe der er tid. Reglen for, hvad der sker, når læreren stopper, står i elevintroen, på skemaet og på websiden med samme ord.
-- **Makkerpar deler stemmen** og skal blive enige. Det står i elevintroen.
-- **Faldback rammer alle:** Uden flertal skal resultatet være dårligt for alle roller (fx "gerningspersonen går fri"), ikke en standard, der giver én rolle sin vilje. Mærk det som en spilregel, hvis det ikke svarer til virkeligheden.
-- **Ikke-bindende krav og synligt afkald:** Er hovedkrav ikke bindende, er det et afkald at stemme ja til en pakke uden sit krav. Afkaldet vises for klassen i debriefingen. Den, der stemmer nej og taber, giver ikke afkald, og det er et debriefingspunkt i sig selv.
+Mulige regler, der kan kombineres efter behov:
 
-### Balance mellem ønsker og tillæg
+- **Alle forslag på bordet:** I sidste runde skrives alle forslag op, før der stemmes, og hver rolle stemmer ja til højst ét. Det forhindrer, at flere pakker vedtages samtidig. Alternativet er at stemme om ét forslag ad gangen.
+- **Genafstemning og stopregel:** Får intet forslag flertal, forhandler man videre og stemmer igen, så længe der er tid. Vælges det, står reglen for, hvad der sker, når læreren stopper, i elevintroen, på skemaet og på websiden med samme ord.
+- **Makkerpar deler stemmen** og skal blive enige. Vælges det, står det i elevintroen.
+- **Faldback, der rammer alle:** Uden flertal bliver resultatet dårligt for alle roller (fx "gerningspersonen går fri"), så alle har en grund til at forhandle. Andre muligheder er en standardløsning, en lærerafgørelse eller status quo, men vær opmærksom på, om standarden giver én rolle sin vilje. Mærk faldbacken som en spilregel, hvis den ikke svarer til virkeligheden.
+- **Ikke-bindende krav og synligt afkald:** Vælger man hovedkrav, der ikke er bindende (i stedet for røde linjer), er det et afkald at stemme ja til en pakke uden sit krav. Afkaldet vises for klassen i debriefingen. Den, der stemmer nej og taber, giver ikke afkald, og det er et debriefingspunkt i sig selv.
+
+#### Balance mellem ønsker og tillæg
+
+Disse tjek gælder uanset design:
 
 - Indgår to roller i alle vedtagelige pakker, er de vippestemmer. Det er et legitimt design, men skriv det i facit og brug det i debriefingen.
 - Tjek, at en rolles ønske eller fortrolige notat ikke ligner en anden rolles krav. I Strafudvalget lignede Den retfærdige strafs ønske ("stå til ansvar over for hende") erstatning, og erstatning vandt i fire af fem simulerede udvalg.
 - Ændr ikke balancen dagen før brug. Notér den som debriefingspunkt, og justér bagefter.
 
-### Elevernes enheder
+#### Elevernes enheder
 
 Interne betegnelser (trin, niveauer, motivnumre, sidehenvisninger til en lærebog, eleverne ikke har læst) står ikke i elevmaterialet eller på websiden. Brug de enheder, eleverne forstår (år, kroner, procent), også når data internt bruger trin.
 
