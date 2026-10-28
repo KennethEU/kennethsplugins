@@ -94,7 +94,7 @@ Formater kan kombineres for dybere læring, typisk højst to pr. lektion. Eksemp
 
 ## Designvalg (menu)
 
-Et casespil er en række valg. Brug tabellen, når du foreslår spil, og vis læreren de valg, der giver forskellige spil. Ingen af valgene er standard for alle spil. De konkrete byggeklodser fra spillene på casespil.dk står i `references/elementkatalog.md`, og kataloget vokser med hvert nyt spil.
+Et casespil er en række valg. Brug tabellen, når du foreslår spil, og vis læreren de valg, der giver forskellige spil. Ingen af valgene er standard for alle spil. De konkrete byggeklodser fra spillene på casespil.dk, flere designvalg (fx rammefortælling, procesmagt, valuta, usikkerhed, injects og lærerens rolle) og råd fra spillene står i `references/elementkatalog.md`. Kataloget vokser med hvert nyt spil.
 
 | Valg | Muligheder | Overvej |
 |------|-----------|---------|
@@ -103,7 +103,7 @@ Et casespil er en række valg. Brug tabellen, når du foreslår spil, og vis læ
 | Magt | Lige stemmer, vægtede stemmer, veto, særlige beføjelser, wildcard uden stemme | Skal konflikten ligge i magt eller i krav? |
 | Krav | Røde linjer (bindende), skal med (ønske), ikke-bindende hovedkrav med synligt afkald, trafiklys | Hvor meget må eleverne give sig, og skal det kunne ses? |
 | Afstemning | Simpelt flertal, kvalificeret flertal, enstemmighed, ét forslag ad gangen, alle forslag på bordet med ét ja pr. rolle | Skal eleverne vælge mellem forslag eller sige ja/nej til ét? |
-| Uden flertal | Status quo, faldback der rammer alle, læreren afgør, ny runde | Giver faldbacken én rolle sin vilje? |
+| Uden flertal | Intet sker, standardplan, grønthøster, faldback der rammer alle, læreren afgør, ny runde | Er faldbacken en straf, en tilstand eller en trussel, og giver den én rolle sin vilje? |
 | Forberedelse | Læse alene, teorigruppe med samme rolle, AI-rådgiver, lektie | Hvor meget støtte har klassen brug for? |
 | Rollekortets taktikdel | Tre dilemmaer, dilemma og taktik med "Sig fx", tips | Har eleverne mest brug for overvejelser eller for et konkret greb? |
 | Skjult information | Ingen, enkelte roller, et fortroligt notat til alle | Skal eleverne opdage noget undervejs? |
