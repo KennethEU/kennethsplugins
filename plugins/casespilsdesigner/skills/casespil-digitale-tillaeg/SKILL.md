@@ -105,6 +105,28 @@ Til et casespil med faser uden tilfældighed bygges et faseshow, en side til sto
 - Piletaster til næste og forrige slide og fuldskærm uden grå margener.
 - Slidesene viser aldrig fortroligt indhold eller rollernes røde linjer.
 
+## Resultatskærm til debriefing (afprøvet i Strafudvalget)
+
+Når udvalgene vælger en pakke på en skala (fx straflængde og tillæg), samler læreren resultaterne på en storskærm i cockpittet (`storskaerm.js` og `storskaerm.css`) og bruger den i debriefingen.
+
+**Indtastning:**
+- Læreren kan taste ind i en formular eller bygge resultatet direkte på storskærmen sammen med klassen: klik på skalaen for at sætte udvalgets prik og vælge tillæg, dobbeltklik for at skifte, træk eller piletaster for at flytte.
+- Ja-stemmer markeres med chips pr. rolle. Der er en knap til "Ingen enighed" pr. udvalg.
+- Statusteksterne skelner mellem "Ikke sat", "Ingen ja-stemmer endnu", "Uden flertal" og "Ingen enighed". Et udvalg med prik, men uden ja-stemmer, tælles ikke som afsluttet.
+- Indtastningen gemmes kun lokalt i browseren og står på privatlivssiden.
+
+**Afsløring:**
+- Afkald (ja til en pakke uden sit hovedkrav) beregnes ud fra hovedkravene som data i spilfilen og vises først, når læreren trykker "Afslør afkald".
+- Afkald må ikke kunne aflæses før det, heller ikke i indtastningsfanen og heller ikke via farve eller ikon.
+- Der beregnes intet afkald, før udvalgets valg er komplet (fx intet afkald, når tillægget ikke er valgt; vis "vælg tillæg").
+- Den virkelige dom eller det rigtige svar vises først med sin egen knap.
+
+**Bundlinje:** antal udvalg sat, uden afgørelse, afkald (skjult til afsløring) og mest valgte (ved lighed vises alle de lige store).
+
+**Lærerguiden** nævner indtastningen i cockpittet under Forberedelse og ved overgangen til debriefingen. Den giver også en regel, så læreren kan finde afkald med papir alene. Eleverne afleverer skemaet til læreren.
+
+**Test:** Kør alle kombinationer af pakke og ja-stemmer mod reglerne, og test at afkald ikke kan ses før afsløringen.
+
 ## Lærershow (artefakt)
 
 - Scener i den rækkefølge spillet har: plan, hvert projekt, portefølje, likviditet, flere år, hvad hvis, debriefing.

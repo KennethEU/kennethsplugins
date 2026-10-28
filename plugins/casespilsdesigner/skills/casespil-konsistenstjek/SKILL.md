@@ -73,6 +73,8 @@ For hvert rollekort, verificér:
 - [ ] Er der mindst én rolle med kompromis/brobygger-position?
 - [ ] Er der mindst én rolle med uformel magt (wildcard/moralsk autoritet)?
 - [ ] Er ingen rolle "oplagt vinder" — alle har trade-offs?
+- [ ] Er hvert dilemma tjekket mod de andre rollers krav, ønsker og fortrolige notater, så det ikke lover en byttehandel, den anden rolle ikke kan give?
+- [ ] Ligner en rolles ønske eller notat en anden rolles krav, så ét tillæg eller én løsning bliver favoriseret?
 
 ## 6. Differentierings-tjek
 
@@ -172,6 +174,17 @@ Formål: finde det, forfatteren ikke selv kan se. Du kender hele casespillet; el
    - [ ] Intet af det, læseren ikke forstår, er et fagbegreb, eleverne ikke har mødt.
 
 Brug punktet, når rollekort og elevintroduktion er færdige. Det er ikke relevant ved miniversioner uden elevintroduktion.
+
+## 10. Klassesimulering
+
+Formål: se, om reglerne holder, og om nogen rolle eller løsning dominerer, når en hel klasse spiller.
+
+1. Udtræk elevmaterialet som tekst fra den færdige PDF (intro og bilag, hvert rollekort og skemaet), ikke fra kildefilen, så simuleringen ser det samme som eleverne.
+2. Start én underagent pr. udvalg (en billig model er nok), parallelt. Giv hvert udvalg navngivne elever med forskellige typer: principfast, doven og læser kun forsiden, dominerende, stille, stædig, makkerpar på samme rolle, og ét udvalg, hvor alle er stædige.
+3. Hver elev må kun bruge sit eget kort og må ikke lyve. Udvalget spiller alle faser og runder, stemmer efter reglerne og udfylder skemaet.
+4. Bed om forhandlingen som replikker, det udfyldte skema, hvem der gav afkald, og en ærlig liste over, hvad der var uklart, med citat.
+5. Saml resultaterne i en tabel (pakke, antal afstemninger, afkald) og se efter mønstre: vinder den samme løsning næsten altid, går nogen fri, er en rolle altid uden for?
+6. Verificér hvert fund mod materialet, før noget rettes. Mange fund fra en billig model er fejllæsninger (fx en teorigruppe, der er misforstået som en gruppe i udvalget). Ret kun det, der holder.
 
 ## Rapportformat
 

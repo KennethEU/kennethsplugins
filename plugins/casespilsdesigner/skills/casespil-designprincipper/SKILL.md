@@ -123,6 +123,36 @@ Trafiklyset kommer fra samme data som kortets øvrige tekster, så rød linje, g
 
 En aktør, der har pligt til at afvise (fx en embedsmand, der skal afvise en pakke, der ikke lukker et hul), formuleres med "skal", ikke "kan". Brug det samme ord i elevintroduktion, rollekort, bilag, lærerguide, cheatsheet, cockpit og rådgiverens prompt. Et "kan" i ét dokument og et "skal" i et andet gør det uklart, om afvisningen er et valg.
 
+### Dilemmaer eller dilemma og taktik (valg)
+
+Vælg ved Gate 3 i `casespil-nyt`, hvilket format afsnittet med dilemmaer har på rollekortet:
+- **Dilemmaer (klassisk):** tre dilemmaer i 2. person ("Skal du ...?") med krydsreferencer til andre roller. Passer til ældre elever og længere spil.
+- **Dilemma og taktik (afprøvet i Strafudvalget):** ét dilemma, én linje "Taktik:" (hvad rollen kan gøre i forhandlingen) og én linje "Sig fx:" (en sætning, eleven kan sige). Passer til 1.g og C-niveau, hvor eleverne har mere brug for et konkret greb end for flere overvejelser.
+
+Uanset format tjekkes hvert dilemma mod de andre rollers krav, ønsker og fortrolige notater. Et dilemma må ikke antyde en byttehandel, som den anden rolle ikke kan give (fx "gå ned i år for at få X med", hvis X kræver et tillæg, som rollen selv har som krav), og et dilemma om et ønske skal kalde det et ønske, så eleven ikke tror, det er hovedkravet.
+
+### Teorigruppe før forhandling
+
+Elever med samme rollekort mødes først i en teorigruppe (ekspertgruppe) på tværs af udvalgene. De læser kortet alene eller højt for hinanden, finder hovedkrav og de to stærkeste argumenter, skriver en åbningssætning og gætter, hvad de andre vil. Det er den vigtigste støtte til svage elever og erstatter en særlig støtteversion.
+
+### Afstemning, faldback og afkald
+
+- **Alle forslag på bordet:** I sidste runde skrives alle forslag op, før der stemmes, og hver rolle stemmer ja til højst ét. Det forhindrer, at flere pakker vedtages samtidig.
+- **Genafstemning og stopregel:** Får intet forslag flertal, forhandler man videre og stemmer igen, så længe der er tid. Reglen for, hvad der sker, når læreren stopper, står i elevintroen, på skemaet og på websiden med samme ord.
+- **Makkerpar deler stemmen** og skal blive enige. Det står i elevintroen.
+- **Faldback rammer alle:** Uden flertal skal resultatet være dårligt for alle roller (fx "gerningspersonen går fri"), ikke en standard, der giver én rolle sin vilje. Mærk det som en spilregel, hvis det ikke svarer til virkeligheden.
+- **Ikke-bindende krav og synligt afkald:** Er hovedkrav ikke bindende, er det et afkald at stemme ja til en pakke uden sit krav. Afkaldet vises for klassen i debriefingen. Den, der stemmer nej og taber, giver ikke afkald, og det er et debriefingspunkt i sig selv.
+
+### Balance mellem ønsker og tillæg
+
+- Indgår to roller i alle vedtagelige pakker, er de vippestemmer. Det er et legitimt design, men skriv det i facit og brug det i debriefingen.
+- Tjek, at en rolles ønske eller fortrolige notat ikke ligner en anden rolles krav. I Strafudvalget lignede Den retfærdige strafs ønske ("stå til ansvar over for hende") erstatning, og erstatning vandt i fire af fem simulerede udvalg.
+- Ændr ikke balancen dagen før brug. Notér den som debriefingspunkt, og justér bagefter.
+
+### Elevernes enheder
+
+Interne betegnelser (trin, niveauer, motivnumre, sidehenvisninger til en lærebog, eleverne ikke har læst) står ikke i elevmaterialet eller på websiden. Brug de enheder, eleverne forstår (år, kroner, procent), også når data internt bruger trin.
+
 ### Teori-tagging
 Navngiv fagbegreber direkte i materialer (stærk-version): [NEO], [REAL], [LIB] osv.
 
@@ -156,6 +186,6 @@ Pluginet er selvstændigt. Den fulde masterguide (MASTERGUIDE_Casespil_Samfundsf
 Afslut ALTID med én af:
 
 - **DONE** — Casespil designet med roller, konflikt, stemmematematik og format valgt
-- **DONE_WITH_CONCERNS** — Design leveret, men med forbehold (fx: kun ét dilemma pr. rolle, eller balancen er skæv)
+- **DONE_WITH_CONCERNS** — Design leveret, men med forbehold (fx: dilemmaerne er ikke tjekket mod de andre rollers krav, eller balancen er skæv)
 - **BLOCKED** — Kan ikke designe casespil (fx: emnet har ingen naturlig konflikt, eller faget egner sig ikke til formatet)
 - **NEEDS_CONTEXT** — Mangler information (fx: "Hvor mange elever er der?" eller "Hvilket fagligt emne?")

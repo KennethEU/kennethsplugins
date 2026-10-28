@@ -135,9 +135,14 @@ Beskriv:
 - **Afstemning/konsekvenser:** Hvordan afgøres resultatet?
 - **Spillets flow:** Hvad sker der i faserne? (intro → forhandling → afstemning → debriefing)
 
+- **Afstemningsregler:** alle forslag på bordet, ét ja pr. rolle, genafstemning, stopregel og faldback (se `casespil-designprincipper`, Afstemning, faldback og afkald).
+- **Dilemmaformat:** tre dilemmaer eller dilemma og taktik (se `casespil-designprincipper`).
+
 Spørg læreren:
 - "Giver mekanikken mening i din kontekst?"
 - "Er knaphedselementet realistisk for eleverne?"
+- "Skal rollekortene have tre dilemmaer eller ét dilemma med taktik og et 'Sig fx'?"
+- "Hvad skal der ske, hvis et udvalg ikke når flertal?"
 
 **VENT** på OK.
 

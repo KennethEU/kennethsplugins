@@ -102,7 +102,7 @@ Et rollekort er altid 2 sider, trykt dobbeltsidet. Spillet foregår fysisk i kla
 - HOLDNING OG VÆRDIER (rollens faglige position og 2 værdier)
 - INITIATIVKRAV OG MULIGHEDER
 - ARGUMENTER, nummereret (3 stk., 1. person: "Mine data viser...")
-- DILEMMAER (3 stk., 2. person: "Skal du...?", med krydsreferencer til andre roller)
+- DILEMMAER (3 stk., 2. person: "Skal du...?", med krydsreferencer til andre roller) eller, hvis det er valgt ved designet, DILEMMA OG TAKTIK (ét dilemma, én linje "Taktik:" og én linje "Sig fx:"). Se `casespil-designprincipper`
 - SÆRLIG BEFØJELSE (hvis relevant) og evt. TIP (2. person imperativ)
 - **FORTROLIGT NOTAT:** en tydelig boks med skjult information (2. person: "Du ved at..."). Det er en indrømmelse, rollen kan give, ikke et krav
 - **Mærkater på forsiden (når spillet har mandatkategorier, se `casespil-designprincipper`):** "Rød linje (bindende, du stemmer nej)" og "Skal med (forhandlingsønske, ikke bindende)". Mærkaterne har samme ordlyd på alle kort og i elevintroduktionen. En genereret rød linje slutter med "Et lavere niveau bryder ikke din røde linje", aldrig "kan du leve med". Har spillet trafiklys-mandat, står grøn, gul og rød som tre små felter på forsiden med samme ord som i elevintroduktionen. Brug beløb, ikke trin, hvis forhandlingen føres i milliarder.
@@ -204,3 +204,7 @@ Afslut ALTID med én af:
 - **DONE_WITH_CONCERNS** — Rollekort leveret, men med forbehold (fx: en ønsket støtteversion mangler, eller farvepalet er tilpasset uden godkendelse)
 - **BLOCKED** — Kan ikke generere rollekort (fx: rollernes indhold er ikke defineret, designprincipper-skill ikke tilgængelig)
 - **NEEDS_CONTEXT** — Mangler information (fx: "Hvor mange roller skal der være? Skal der laves differentierede versioner?")
+
+## Beslutningsskema
+
+Beslutningsskemaet fylder en hel A4-side, fordi det udfyldes i hånden: en afstemningstabel med en række pr. rolle, en bred navnekolonne (plads til to navne ved makkerpar) og kolonner til ja og nej, linjen med antal ja-stemmer med spillets regel for, hvad der sker uden flertal, og mange notelinjer til begrundelsen. Hold skemaet enkelt: ingen ekstra tabeller over alle forslag eller afstemninger, medmindre læreren beder om det.
