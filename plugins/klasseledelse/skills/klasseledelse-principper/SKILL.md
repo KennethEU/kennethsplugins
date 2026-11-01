@@ -87,6 +87,8 @@ Læs kortet sådan her. Tærsklerne er arbejdsregler og ikke forskning:
 - **Længere selvstændigt arbejde:** brug ikke minutgrænsen. Spørg i stedet, om der er produkt, roller og nedslag undervejs, og om læreren kan se, hvem der er gået i stå. Med det på plads tæller projekt- og gruppearbejde som A, også i lang tid. Ellers er det G.
 - **Første A:** ligger den inden for de første minutter?
 - **Afslutningen:** henter alle stof frem eller skriver noget til sidst, eller slutter timen bare?
+- **Blandede faser:** brug ikke koder som L/A. Del fasen op, så en kort parsnak ikke skjuler en lang gennemgang. Ét minuts parsnak midt i ni minutter er to strækninger med L.
+- **Skrivning på egen computer:** er G, medmindre læreren faktisk går rundt og kan se arbejdet, eller eleverne bruger det bagefter.
 
 Kortet viser kun, hvem der er aktiv, ikke om aktiviteten er god. Mange A'er er ikke i sig selv kvalitet. Vurdér derfor altid også:
 
@@ -120,7 +122,37 @@ Gælder, når eleverne kun har teksten på skærm, fx som iBog. Det er praksisr�
 
 - Skriv i drejebogen, hvornår skærmene er oppe og nede.
 - Skal noget tjekkes i teksten, så foreslå én computer pr. par eller gruppe.
-- Faser, hvor eleverne forklarer for hinanden, er uden skærm, så de arbejder ud fra deres egne noter.
+- Faser, hvor eleverne forklarer for hinanden, er som standard uden skærm, så de arbejder ud fra deres egne noter. Undtagelsen er, når skærmen er selve arbejdet, fx regneark eller medieproduktion.
+- Den individuelle afsluttende skrivning må gerne ske på computeren, direkte i elevernes noter.
+
+## Tid og planens vægt
+
+Det hele er arbejdsregler og praksisråd, ikke forskning.
+
+- **Enkel plan, præcis opgave:** planen må ikke være mere avanceret, end læreren kan huske den. Brug ca. 5 til 6 faser i et modul på 90 minutter og én bærende aktivitet. Læg præcisionen i opgaverne: de skal være skrevet færdigt, så eleverne kan gå i gang. Læg ikke ekstra lag oven i en plan, der allerede virker.
+- **Slack:** træk pause, hej og oprydning fra modulets tid. Lad derefter ca. 5 minutter stå tomme, eller skriv præcist, hvad der skæres, når tiden løber.
+- **Overgange:** flytning, uddeling og login er egne minutter i drejebogen.
+- **Holdstørrelse:** regn tiderne mod det største hold, og sig, hvad der bliver anderledes med det mindste.
+- **Klokkeslæt:** de står kun i lærerens drejebog. Slides og elevark viser kun varighed, fx "10 min."
+- **Sprog:** skriv, at tiderne er regnet igennem. Skriv ikke, at de er testet, før planen har været brugt i en klasse.
+- **Planens vægt:** tæl faser, slags print og ark til at klippe, og anslå forberedelsen. Over ca. tre slags print, klippeark eller ca. 30 minutters forberedelse ud over slides er et signal. Foreslå så den forenkling, der sparer mest forberedelse og koster målet mindst. Læreren kan vælge den fra.
+
+## Grupper og fravær
+
+Det er praksisråd, ikke forskning.
+
+- **Gruppefaser:** spørg, om nogen kan gemme sig. Brug hellere turregler, hvor alle på skift bidrager, end roller som "den, der skriver".
+- **Fordeling:** betyder sammensætningen noget, så lav grupperne på forhånd, og læg dem i klassens fælles system, fx Lectio. Ellers lad eleverne tælle af på dagen, så fraværet er regnet med.
+- **Tjek hver række:** prøv gruppereglen på hvert elevtal i spændet. Ingen må ende alene ved et bord, og reglen for fravær skal virke ved det elevtal, den gælder for.
+- **Puslespil og lignende:** skriv, hvad der sker, hvis en gruppe mangler en ekspert.
+
+## Noter
+
+Det er praksisråd, ikke forskning.
+
+- Sig, hvilket produkt der er værd at gemme, og hvordan det kommer i elevernes noter. Eleverne skal ikke bruge tid i timen på at skrive papir af.
+- Findes et gruppeark kun i ét eksemplar, så saml det ind, fotografér det efter modulet, og læg billedet i det fælles system. Under skrivningen skal læreren gå rundt, ikke fotografere.
+- Står indholdet i bogen, så henvis til det. Læreren kan lægge en udgave med facit i det fælles system.
 
 ## Materialer og det, skillene ikke laver
 

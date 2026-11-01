@@ -71,6 +71,10 @@ Meget af forskningen er fra grundskolen eller universitetet. Gymnasiet ligger im
 - Medansvar, fx valg af produkt eller arbejdsmetode, har positiv betydning. Det trækker imod en meget stram linje og bør tænkes ind. **Moderat.** [EVA 2019, s. 11](https://uvm.dk/media/45ppq5sy/191030-vidensnotat-klasseledelse-i-gym.pdf)
 - Klasseledelsesprogrammer har en lille gennemsnitlig effekt (g = 0,22), og smalle indsatser ser ud til at virke bedre end brede. Grundlaget er grundskolen, så det kan ikke overføres direkte. **Moderat.** [Korpershoek m.fl., opdatering](https://research.rug.nl/en/publications/an-update-of-the-meta-analysis-of-the-effects-of-classroom-manage/)
 
+### Tid, grupper og noter
+
+- Slack, overgange som egne minutter, planens vægt, turregler i gruppefaser, gruppefordeling og fotograferede gruppeark er praksisråd og arbejdsregler. De er ikke undersøgt i denne gennemgang. **Praksis.**
+
 ### Pladser (princip 1)
 
 - Forskningen om pladser er blandet og består mest af små studier. Lærerplacering hjalp de stærke, men ikke de svage, i ét lille gymnasiestudie. **Omdiskuteret.** [Montana State, biologi](https://scholarworks.montana.edu/handle/1/1419)
