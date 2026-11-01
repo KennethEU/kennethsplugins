@@ -7,10 +7,11 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 | [`casespilsdesigner`](plugins/casespilsdesigner/README.md) | Design af casespil (også kaldet rollespil) og simuleringer: rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring | 10 |
 | [`bloom`](plugins/bloom) | Arbejdsspørgsmål til fagtekster efter Blooms taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time | 6 |
 | [`blooket`](plugins/blooket) | Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale | 2 |
+| [`klasseledelse`](plugins/klasseledelse) | Planlægning og vurdering af lektioner, så alle elever deltager, holdt op mod forskningen | 3 |
 
 ## Kommandoer
 
-Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `blooket-`), så de står samlet i menuen. Skriv `/casespil`, `/bloom` eller `/blooket` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
+Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `blooket-`, `klasseledelse-`), så de står samlet i menuen. Skriv `/casespil`, `/bloom`, `/blooket` eller `/klasseledelse` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
 
 | Kommando | Hvad den gør |
 |----------|--------------|
@@ -29,8 +30,10 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 | `/bloom:bloom-vurder-spoergsmaal` | Vurdering og forbedring af eksisterende spørgsmål |
 | `/bloom:bloom-planlaeg-time` | Tre-faset time med spørgsmål og arbejdsformer |
 | `/blooket:blooket-lav-quiz` | Blooket-quiz som CSV-fil |
+| `/klasseledelse:klasseledelse-planlaeg-lektion` | Lektion eller modul med drejebog, hvor alle er med |
+| `/klasseledelse:klasseledelse-vurder-plan` | Vurdering af en plan med deltagelseskort og konkrete omskrivninger |
 
-`casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom) og `blooket-quizformat` (Blooket) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
+`casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket) og `klasseledelse-principper` (klasseledelse) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
 
 ## Installation
 
@@ -42,6 +45,7 @@ claude plugin marketplace add KennethEU/kennethsplugins
 claude plugin install casespilsdesigner@kennethsplugins
 claude plugin install bloom@kennethsplugins
 claude plugin install blooket@kennethsplugins
+claude plugin install klasseledelse@kennethsplugins
 ```
 
 ## Struktur
@@ -54,7 +58,8 @@ kennethsplugins/
     │   ├── .claude-plugin/plugin.json
     │   └── skills/...
     ├── bloom/
-    └── blooket/
+    ├── blooket/
+    └── klasseledelse/
 ```
 
 ## Tests
@@ -68,6 +73,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 - `blooket` bruger scriptet `generate_csv.py`, som tjekker spørgsmålene og skriver Blooket-filen. Test det med `python3 plugins/blooket/tests/test_generate_csv.py`.
 
 ## Changelog
+
+### klasseledelse 1.0.0 og bloom 1.2.1 (november 2026)
+- Nyt plugin `klasseledelse` med tre skills til at planlægge og vurdere lektioner, så alle elever deltager. Principperne er holdt op mod forskningen i `references/evidens.md`. `bloom-planlaeg-time` henviser nu til det nye plugin ved timer uden fagtekst.
 
 ### casespilsdesigner 2.9.0 (oktober 2026)
 - Bordregler fra spillets data, trafiklys-mandat, milliarddosering, aftalevisning og faseshow i casespil-skills. Se plugin-READMEen.

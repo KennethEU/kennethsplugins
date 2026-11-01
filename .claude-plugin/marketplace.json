@@ -4,7 +4,7 @@
     "name": "Kenneth"
   },
   "metadata": {
-    "description": "Plugins til dansk gymnasieundervisning (STX): casespil, Bloom-spørgsmål og Blooket-quizzer"
+    "description": "Plugins til dansk gymnasieundervisning (STX): casespil, Bloom-spørgsmål, Blooket-quizzer og klasseledelse"
   },
   "plugins": [
     {
@@ -17,13 +17,19 @@
       "name": "bloom",
       "source": "./plugins/bloom",
       "description": "Arbejdsspørgsmål til fagtekster efter Blooms reviderede taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time.",
-      "version": "1.2.0"
+      "version": "1.2.1"
     },
     {
       "name": "blooket",
       "source": "./plugins/blooket",
       "description": "Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale.",
       "version": "1.2.0"
+    },
+    {
+      "name": "klasseledelse",
+      "source": "./plugins/klasseledelse",
+      "description": "Planlægning og vurdering af lektioner og moduler, så alle elever deltager: deltagelseskort, konkrete omskrivninger og principper holdt op mod forskningen.",
+      "version": "1.0.0"
     }
   ]
 }
