@@ -117,6 +117,7 @@ Foreslå ikke altid en plan B. Foreslå den kun, når planen bygger på, at elev
 ## Hvad skillene ikke laver
 
 - **Materialer:** skillene laver planen. Korte replikker og mundtlige sidemandsspørgsmål hører til planen, men arbejdsark, opgavesæt og sæt af arbejdsspørgsmål gør ikke. Sig det tydeligt, og henvis fx til `bloom-spoergsmaal-til-tekst` for spørgsmål.
+- **Aktiviteter:** skillene vælger enkle greb selv, men de har ikke et katalog over øvelser. Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse` for én øvelse eller `cl-forloeb` for et helt modul med CL.
 - **Undervisningsplanlæggeren:** tilbyd ikke at lægge planer ind i den eller andre systemer.
 
 ## Vær ærlig om tekster

@@ -76,7 +76,7 @@ Skriv først målet i én sætning og derefter drejebogen:
 Efter tabellen:
 
 - **Deltagelseskort:** forklaring af koderne, rækkefølgen af koder, længste strækning med L og E og antal trygge deltagelser.
-- **Materialer:** hvad der skal forberedes, fx slides og noteark. Sig tydeligt, at du ikke har lavet arbejdsark, opgaver eller spørgsmålssæt, og tilbyd en anden skill, fx `bloom-spoergsmaal-til-tekst`. Tilbyd og **VENT** på svar. Er den ikke tilgængelig, så sig det.
+- **Materialer:** hvad der skal forberedes, fx slides og noteark. Sig tydeligt, at du ikke har lavet arbejdsark, opgaver eller spørgsmålssæt, og tilbyd en anden skill, fx `bloom-spoergsmaal-til-tekst`. Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse` (én øvelse) eller `cl-forloeb` (et helt modul med CL). Tilbyd og **VENT** på svar. Er skillen ikke tilgængelig, så sig, at den hører til et plugin, der ikke ser ud til at være installeret, og fortsæt uden.
 - **Det kan du forvente:** én typisk reaktion fra eleverne, og hvordan du møder den, hvis formen er ny for klassen.
 
 ### Kvalitetstjek inden aflevering
