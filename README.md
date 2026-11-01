@@ -80,6 +80,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### cl-oevelser 1.1.0 (november 2026)
+- Kataloget er udvidet fra 15 til 29 øvelser med strukturer til start, beregning, tekstarbejde, holdning og argumentation. De nye står adskilt fra Kenneths egne, med kilder og tydelig markering af, hvad der ikke er afprøvet eller bekræftet.
+
 ### cl-oevelser 1.0.1 (november 2026)
 - Vises nu som "CL-øvelser". Det tekniske navn er stadig `cl-oevelser`.
 

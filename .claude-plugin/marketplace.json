@@ -36,7 +36,7 @@
       "displayName": "CL-øvelser",
       "source": "./plugins/cl-oevelser",
       "description": "Inspirationskatalog med CL-øvelser (Cooperative Learning): find og tilpas øvelser, udvikl nye og kombinér dem til forløb, holdt op mod SPIL-principperne.",
-      "version": "1.0.1"
+      "version": "1.1.0"
     }
   ]
 }

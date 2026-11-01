@@ -1,6 +1,6 @@
 ---
 name: cl-find-oevelse
-description: "Inspirationskatalog: finder og tilpasser CL-øvelser (Cooperative Learning) til en konkret undervisningssituation og leverer en komplet beskrivelse med SPIL-tjek, trin og fagligt eksempel. Brug når læreren siger \"CL-øvelse\", \"cooperative learning\", \"giv mig en idé til en øvelse\", \"øvelse til lektieopsamling\", \"variation af gruppearbejde\", \"tavleopsamling på en anden måde\", beder om at se kataloget, eller nævner en øvelse som Svar-bazar, Mix og match, Møde på midten, Kuvertleg eller Fishbowl. Brug ikke til en hel lektion med drejebog (klasseledelse-planlaeg-lektion), en time bygget på spørgsmål til en fagtekst (bloom-planlaeg-time), en øvelse fra bunden (cl-ny-oevelse), flere øvelser i et forløb (cl-forloeb) eller casespil."
+description: "Inspirationskatalog: finder og tilpasser CL-øvelser (Cooperative Learning) til en konkret undervisningssituation og leverer en komplet beskrivelse med SPIL-tjek, trin og fagligt eksempel. Brug når læreren siger \"CL-øvelse\", \"cooperative learning\", \"giv mig en idé til en øvelse\", \"øvelse til lektieopsamling\", \"variation af gruppearbejde\", \"tavleopsamling på en anden måde\", beder om at se kataloget, eller nævner en øvelse som Svar-bazar, Mix og match, Møde på midten, Kuvertleg, Fishbowl, Ekspertgrupper, Quiz og byt eller Struktureret kontrovers. Brug ikke til en hel lektion med drejebog (klasseledelse-planlaeg-lektion), en time bygget på spørgsmål til en fagtekst (bloom-planlaeg-time), en øvelse fra bunden (cl-ny-oevelse), flere øvelser i et forløb (cl-forloeb) eller casespil."
 argument-hint: "[emne, formål, klasse og tid]"
 allowed-tools:
   - Read
@@ -27,7 +27,7 @@ Spørg samlet i én besked om det, der mangler:
 
 1. **Antal elever**
 2. **Fagligt emne** (tekst, begreb, teori, case)
-3. **Formål** (lektieopsamling, tekstanalyse, begrebsarbejde, repetition, produktion, feedback)
+3. **Formål** (lektieopsamling, tekstanalyse, begrebsarbejde, repetition, beregning, holdning og argumentation, produktion, feedback)
 4. **Tid til rådighed**
 5. **Lokale** (bordgrupper, plads til bevægelse, tavle eller skærm)
 6. **Elevforudsætninger** (er lektien læst, kendskab til emnet, klassens dynamik, herunder hvilke teorier klassen har mødt)

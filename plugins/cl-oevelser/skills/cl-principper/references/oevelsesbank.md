@@ -1,6 +1,6 @@
 # Øvelsesbank
 
-15 øvelser. Trinene er Kenneths egne beskrivelser, let redigeret. SPIL-vurdering, skærpelser, tider i "ca." og fagidéer er arbejdsforslag, som skal justeres i praksis.
+29 øvelser: 15 fra Kenneths egen samling og 14 fra søgning. I de 15 er trinene Kenneths egne beskrivelser, let redigeret. SPIL-vurdering, skærpelser, tider i "ca." og fagidéer er arbejdsforslag, som skal justeres i praksis.
 
 **SPIL-vurdering:** Stærk = sikret af reglerne. Middel = sker ofte, men er ikke sikret. Svag = reglerne sikrer det ikke.
 
@@ -23,6 +23,26 @@
 | [Café-session](#café-session) | Gruppearbejde og opsamling | Grupper plus caféejere | 45-60 min | Ja | I og L svag |
 | [Bingopladen](#bingopladen) | Lektieopsamling | Hele klassen, så grupper | 15-25 min | Nej | S og P svag |
 | [Fishbowl](#fishbowl) | Gruppearbejde og opsamling | Hele klassen | 20-30 min | Lidt | S, P, I og L svag |
+
+
+### Nye øvelser (ikke afprøvet i Kenneths klasser)
+
+| Øvelse | Formål | Gruppe | Ca. tid | Bevægelse | SPIL-svaghed |
+|--------|--------|--------|---------|-----------|--------------|
+| [Tænk-par-del](#tænk-par-del) | Start, aktivering i gennemgang | Par | 3-5 min | Nej | L middel |
+| [Par på tid](#par-på-tid) | Start, aktivering, mundtlighed | Par | 3-5 min | Nej | Ingen |
+| [Ordet rundt](#ordet-rundt) | Brainstorm, aktivering | Teams á 4 | 3-5 min | Nej | Ingen |
+| [Quiz og byt](#quiz-og-byt) | Repetition, begreber | Skiftende par | 10-15 min | Ja | Ingen |
+| [Ekspertgrupper](#ekspertgrupper) | Tekstarbejde, nyt stof | Teams á 4 plus ekspertgrupper | 40-60 min | Ja | Ingen |
+| [Notepar](#notepar) | Noter efter gennemgang | Par | 5-10 min | Nej | Ingen |
+| [Træner og løser](#træner-og-løser) | Beregning, færdighedstræning | Par | 15-25 min | Nej | Ingen |
+| [Spørgsmål og modelsvar](#spørgsmål-og-modelsvar) | Skriftlighed, eksamenstræning | Par | 30-40 min | Nej | Ingen |
+| [Struktureret kontrovers](#struktureret-kontrovers) | Holdning, argumentation | Teams á 4 | 40-60 min | Nej | Ingen |
+| [Hjørner](#hjørner) | Holdning, begreber | Par i hjørner | 10-15 min | Ja | P svag |
+| [Værdilinje](#værdilinje) | Holdning, argumentation | Par | 10-15 min | Ja | P svag |
+| [Interview i tre trin](#interview-i-tre-trin) | Dialog, egne erfaringer | Teams á 4 | 10-15 min | Nej | Ingen |
+| [Én på besøg](#én-på-besøg) | Midt i gruppearbejde | Teams á 4 | 5-10 min | Ja | L middel |
+| [Dobbeltcirkler](#dobbeltcirkler) | Repetition, mundtlighed | Skiftende par | 10-15 min | Ja | Ingen |
 
 ---
 
@@ -354,3 +374,296 @@
 - Samfundsfag: diskussion af et politisk dilemma med argumenter fra hver gruppe.
 - Mediefag: samtale om en films budskab.
 - Erhvervsøkonomi: samtale om, hvilken strategi en virksomhed bør vælge.
+
+---
+
+## Nye øvelser fra søgning
+
+Disse øvelser er ikke afprøvet i Kenneths klasser. Trinene er skrevet med egne ord, og de danske navne er arbejdsnavne, som kan afvige fra *Cooperative Learning* af Stenlev og Kagan. Hver øvelse angiver grundlaget: **Kilde** betyder, at trinene er sammenholdt med søgeresultater fra kilderne nedenfor, ikke med en grundig læsning af hver kilde. **Almen viden** betyder, at de ikke kunne bekræftes i søgningen og bør tjekkes.
+
+**Korte strukturer**
+
+### Tænk-par-del
+
+Engelsk: Think-Pair-Share. **Grundlag:** kilde 1 og 2. **Materialer:** ét spørgsmål. **Lokale:** intet særligt.
+
+1. Læreren stiller et spørgsmål.
+2. Alle tænker alene og skriver stikord. Hold fast i tænketiden, da den er den første, der bliver skåret væk.
+3. Parret deler deres svar og taler dem igennem.
+4. Nogle par deler med klassen.
+
+**Noter:** stikordene fra trin 2 suppleres efter trin 3.
+
+**SPIL:** S stærk (par), P middel, I middel, L middel.
+
+**Skærpelse:** sig, hvem i parret der begynder, og giv begge lige lang tid, eller brug Par på tid. Vælg, hvem der deler i plenum, så det ikke kun er de frivillige.
+
+**Fagidéer:**
+- Samfundsfag: hvad viser denne figur over valgdeltagelse?
+- Mediefag: hvem er målgruppen for denne annonce, og hvordan ved du det?
+- Erhvervsøkonomi: hvad sker der med dækningsbidraget, hvis prisen sænkes?
+
+### Par på tid
+
+Engelsk: Timed Pair Share. **Grundlag:** kilde 3 og 4. **Materialer:** stopur. **Lokale:** intet særligt.
+
+1. Læreren stiller et spørgsmål og giver tænketid.
+2. Makker A taler i et fast tidsrum, fx ét minut. Makker B lytter uden at afbryde.
+3. Makker B svarer kort med noget, vedkommende hæftede sig ved.
+4. Rollerne byttes.
+
+**Noter:** begge skriver bagefter det bedste fra makkerens svar ned.
+
+**SPIL:** S stærk (par, ca. 50 %), P middel, I stærk, L stærk.
+
+**Fagidéer:**
+- Samfundsfag: argumentér for eller imod et konkret lovforslag.
+- Mediefag: genfortæl klippets opbygning med fagbegreber.
+- Erhvervsøkonomi: forklar en virksomheds forretningsmodel.
+
+### Ordet rundt
+
+Engelsk: RoundRobin. **Grundlag:** navnet i kilde 3 og 8, trinene almen viden. **Materialer:** ingen. **Lokale:** bordgrupper.
+
+1. Læreren stiller et spørgsmål med mange mulige svar.
+2. Eleverne i teamet siger på skift ét svar, med uret, til tiden er gået.
+3. Man må sige "videre" én gang, men runden kommer tilbage.
+4. Hvert team giver det bedste svar videre til klassen.
+
+**Noter:** en ny skriver ved hver runde, eller alle skriver svarene ned.
+
+**SPIL:** S stærk (teams, ca. 25 %), P middel, I stærk, L stærk.
+
+**Fagidéer:**
+- Samfundsfag: eksempler på socialiseringsinstanser.
+- Mediefag: virkemidler i en kendt kampagne.
+- Erhvervsøkonomi: faktorer, der påvirker efterspørgslen.
+
+**Tekst og begreber**
+
+### Quiz og byt
+
+Engelsk: Quiz-Quiz-Trade. **Grundlag:** kilde 3 og 5. **Materialer:** kort med spørgsmål på forsiden og svar på bagsiden, ét pr. elev. **Lokale:** plads til at gå rundt.
+
+1. Hver elev har et kort og finder en makker.
+2. A spørger, B svarer, og A hjælper eller roser.
+3. Rollerne byttes.
+4. De bytter kort, takker og finder en ny makker.
+
+**Noter:** lad eleverne skrive de kort ned, de havde svært ved, og saml dem i et fælles dokument.
+
+**SPIL:** S stærk (par), P stærk, I stærk, L stærk.
+
+**Skærpelse:** lad eleverne selv lave kortene i timen før. Spørgsmål med ét rigtigt svar træner mest genkaldelse, så gør enkelte kort sværere, hvis målet er forståelse. Skellet til Mix og match er, at her er der svar på kortet, og man skal ikke finde en bestemt makker.
+
+**Fagidéer:**
+- Samfundsfag: politiske begreber, hvor svaret er en definition og et eksempel.
+- Mediefag: billedkort, hvor makkeren skal navngive beskæring og vinkel.
+- Erhvervsøkonomi: små regnestykker med facit på bagsiden.
+
+### Ekspertgrupper
+
+Engelsk: Jigsaw, efter Aronson. **Grundlag:** kilde 6 og 9. **Materialer:** en tekst delt i lige så mange dele, som der er elever i et hjemmehold, og et noteark. **Lokale:** plads til at flytte om.
+
+1. Eleverne sidder i hjemmehold på fire, og hver får sin del af stoffet.
+2. Alle med samme del mødes i en ekspertgruppe, læser og aftaler, hvad der er vigtigst.
+3. Eleverne går hjem og underviser på skift i deres del, mens de andre tager noter.
+4. Afslut med en opgave, der kræver alle dele, fx en lille quiz eller et spørgsmål, som holdet svarer på sammen.
+
+**Noter:** notearket udfyldes i trin 3.
+
+**SPIL:** S stærk, P stærk (de andre kan kun få stoffet gennem dig), I stærk, L stærk.
+
+**Skærpelse:** læg et stillads i ekspertgruppen, fx tre punkter, alle skal kunne forklare, så en svag ekspert ikke efterlader sit hold uden stof. Sørg for, at læreren hører ekspertgrupperne, før de går hjem.
+
+**Fagidéer:**
+- Samfundsfag: fire velfærdsmodeller eller fire ideologier.
+- Mediefag: fire nyhedskriterier eller fire filmgenrer.
+- Erhvervsøkonomi: de fem konkurrencekræfter i en branche, med hjemmehold på fem.
+
+### Notepar
+
+Engelsk: Note-Taking Pairs. **Grundlag:** kilde 6. **Materialer:** elevernes noter og et par styrende spørgsmål. **Lokale:** intet særligt.
+
+1. Efter en gennemgang eller lektie opsummerer A et begreb ud fra sine noter: hvad er det, hvad bruges det til, hvad er det vigtigste?
+2. B lytter, retter og supplerer ud fra sine egne noter.
+3. Rollerne byttes ved næste begreb.
+
+**Noter:** begge retter deres noter, hvilket er hele pointen.
+
+**SPIL:** S stærk (par), P stærk, I stærk, L stærk.
+
+**Fagidéer:**
+- Samfundsfag: tre begreber fra dagens gennemgang.
+- Mediefag: noter fra et klip, set to gange.
+- Erhvervsøkonomi: noter til en beregningsmetode, hvor makkeren følger trinene.
+
+### Træner og løser
+
+Engelsk: RallyCoach. **Grundlag:** kilde 3. **Materialer:** to opgavesæt af samme type, ét ark pr. par. **Lokale:** par.
+
+1. A løser første opgave og siger tankerne højt. B følger med, roser og hjælper, hvis A går i stå.
+2. Rollerne byttes ved næste opgave.
+3. Efter hvert andet svar tjekker parret facit og finder eventuelle fejl.
+
+**Noter:** det løste ark.
+
+**SPIL:** S stærk (par), P stærk, I stærk, L stærk.
+
+**Skærpelse:** træneren må give hint, men ikke tage over. Giv de sidste opgaver et højere niveau, så stærke par har noget at strække sig efter.
+
+**Fagidéer:**
+- Samfundsfag: beregninger med procent og procentpoint, eller aflæsning af statistik.
+- Mediefag: analyse af billeder efter en fast model.
+- Erhvervsøkonomi: dækningsbidrag, break-even og nøgletal. Passer også i regneark.
+
+### Spørgsmål og modelsvar
+
+Engelsk: Dyadic Essays. **Grundlag:** kilde 6. **Materialer:** tekst, papir. **Lokale:** intet særligt.
+
+1. Hver elev skriver til lektien et eksamenslignende spørgsmål og et modelsvar på et ark for sig.
+2. Parret bytter kun spørgsmål og skriver et svar uden noter.
+3. De bytter modelsvar og sammenligner, hvad der er bedst, og hvad der mangler.
+4. Klassen deler de bedste spørgsmål.
+
+**Noter:** begge modelsvar og det rettede svar.
+
+**SPIL:** S stærk, P middel, I stærk, L stærk.
+
+**Fagidéer:**
+- Samfundsfag: træn "redegør" og "diskuter".
+- Mediefag: analysespørgsmål til et medieprodukt.
+- Erhvervsøkonomi: spørgsmål til en virksomhedscase.
+
+**Holdning og argumentation**
+
+### Struktureret kontrovers
+
+Engelsk: Structured Academic Controversy, efter Johnson og Johnson. **Grundlag:** kilde 7. **Materialer:** "bør"-spørgsmål og baggrundstekst til begge sider. **Lokale:** teams á 4. **Tid:** ca. 40-60 min.
+
+1. To par i et team får hver sin side af et spørgsmål og forbereder argumenterne.
+2. Første par fremlægger, andet par lytter og stiller afklarende spørgsmål, til de har forstået det. Så byttes der.
+3. Parrene bytter side og argumenterer for det modsatte, gerne med nye argumenter.
+4. Holdet lægger siderne fra sig og forsøger at finde en fælles holdning, eller at beskrive præcist, hvor de er uenige.
+5. Læreren samler op med klassen.
+
+**Noter:** teamet skriver sin fælles konklusion og de bedste argumenter på begge sider.
+
+**SPIL:** S stærk, P stærk, I stærk, L stærk.
+
+**Skærpelse:** brug den til spørgsmål, hvor der er reel uenighed, ikke til empiriske spørgsmål med et klart svar. Sig, hvem i parret der fremlægger hvad.
+
+**Fagidéer:**
+- Samfundsfag: bør kontanthjælpen sættes ned? Bør valgretsalderen sænkes?
+- Mediefag: bør sociale medier have aldersgrænse? Bør public service finansieres af staten?
+- Erhvervsøkonomi: bør en virksomhed flytte produktionen til udlandet?
+
+### Hjørner
+
+Engelsk: Corners. **Grundlag:** kilde 4 er kort, trinene er almen viden. **Materialer:** fire svarmuligheder ved hvert hjørne. **Lokale:** plads til at gå.
+
+1. Læreren stiller et spørgsmål med fire muligheder og giver tænketid. Eleverne skriver deres valg ned.
+2. Eleverne går til deres hjørne.
+3. De finder en makker i hjørnet og giver hver deres begrundelse.
+4. Enkelte fortæller, hvad deres makker sagde. Eleverne kan finde en makker fra et andet hjørne og sammenligne.
+
+**Noter:** skriv den bedste begrundelse fra hvert hjørne i et fælles dokument.
+
+**SPIL:** S stærk (par i hjørnerne), P svag, I stærk, L stærk.
+
+**Skærpelse:** P er svag, så lad parret fra to hjørner finde et fælles svar på, hvor de er uenige. Går alle til samme hjørne, så sig fx, at de skal forsvare det næstbedste.
+
+**Fagidéer:**
+- Samfundsfag: hvilken af fire ideologier er tættest på dette forslag?
+- Mediefag: hvilken af fire appelformer er den stærkeste i denne reklame?
+- Erhvervsøkonomi: hvilken af fire strategier ville du vælge til virksomheden?
+
+### Værdilinje
+
+Engelsk: Value Line. **Grundlag:** almen viden, kan ikke bekræftes i søgningen. **Materialer:** en påstand. **Lokale:** plads til en lang række.
+
+1. Læreren giver en påstand. Alle skriver deres holdning på en skala fra 1 til 10.
+2. Eleverne stiller sig på en linje efter deres tal og taler med dem, der står ved siden af.
+3. Linjen foldes, så yderpunkterne møder hinanden, og hvert par taler med en, der er uenig.
+4. Parrene gengiver den andens argument, før de svarer med deres eget.
+
+**Noter:** hver elev skriver det stærkeste argument mod sin egen holdning.
+
+**SPIL:** S stærk (par), P svag, I stærk, L stærk.
+
+**Skærpelse:** krav om at gengive makkerens argument giver noget, at parret har brug for hinanden. Vær varsom med personlige emner, for pladsen på linjen er synlig for alle.
+
+**Fagidéer:**
+- Samfundsfag: "Staten skal bestemme mere over vores forbrug."
+- Mediefag: "Influencere har ansvar for det, deres følgere gør."
+- Erhvervsøkonomi: "En virksomhed har kun ansvar over for sine ejere."
+
+**Dialog og opsamling**
+
+### Interview i tre trin
+
+Engelsk: Three-Step Interview. **Grundlag:** kilde 6. **Materialer:** spørgsmål. **Lokale:** bordgrupper.
+
+1. To par i et team. A interviewer B, mens C interviewer D.
+2. Rollerne byttes.
+3. Teamet tager en runde, hvor hver elev fortæller, hvad makkeren sagde.
+
+**Noter:** alle skriver det, de vil fremlægge, og teamet samler det vigtigste.
+
+**SPIL:** S stærk, P middel, I stærk, L stærk.
+
+**Fagidéer:**
+- Samfundsfag: hvad har påvirket dine politiske holdninger?
+- Mediefag: hvordan har du brugt sociale medier i dag, og hvad fik dig til det?
+- Erhvervsøkonomi: hvad fik dig til at købe det, du købte sidst?
+
+### Én på besøg
+
+Engelsk: Three-Stay, One-Stray. **Grundlag:** kilde 6. **Materialer:** ingen. **Lokale:** bordgrupper.
+
+1. Teamet arbejder med en opgave, til det når et beslutningspunkt.
+2. Læreren udpeger ét nummer. Den elev går til et andet team, mens de tre andre bliver.
+3. Gæsten fortæller om sit teams idé og spørger, hvad teamet selv har fundet på.
+4. Gæsten går hjem og fortæller det videre. Skift nummer til næste besøg.
+
+**Noter:** hjemmeholdet skriver, hvad det ændrer på grund af besøget.
+
+**SPIL:** S stærk, P stærk, I stærk, L middel.
+
+**Skærpelse:** sørg for, at alle er ude i løbet af timen. Hurtigere end Tre til te, og god midt i et længere gruppearbejde.
+
+**Fagidéer:**
+- Samfundsfag: undersøgelsesdesign i et projekt.
+- Mediefag: idé eller storyboard i en produktion.
+- Erhvervsøkonomi: strategi i en case.
+
+### Dobbeltcirkler
+
+Engelsk: Inside-Outside Circle. **Grundlag:** almen viden, en dansk vejledning fandtes, men kunne ikke læses. **Materialer:** spørgsmål. **Lokale:** plads til to cirkler.
+
+1. Eleverne står i to cirkler, så hver i inderkredsen står over for én i yderkredsen.
+2. Læreren stiller et spørgsmål. Inderkredsen svarer, og yderkredsen lytter og hjælper. Så byttes der.
+3. Yderkredsen rykker et antal pladser, og læreren stiller et nyt spørgsmål.
+
+**Noter:** ingen indbygget. Afslut med et par minutters note fra hukommelsen.
+
+**SPIL:** S stærk (par), P middel, I stærk, L stærk.
+
+**Fagidéer:**
+- Samfundsfag: fortæl om en teoretikers hovedpointe.
+- Mediefag: mundtlig analyse af et billede, der vises på skærmen.
+- Erhvervsøkonomi: forklar et nøgletal, som kammeraten har på et kort.
+
+---
+
+## Kilder til de nye øvelser
+
+1. Harvard, Bok Center: [Think-Pair-Share](https://bokcenter.harvard.edu/think-pair-share)
+2. Drexel University: [Active Learning Strategies](https://drexel.edu/teaching-and-learning/resources/active-and-collaborative-learning/active-learning-strategies)
+3. Kagan Publishing: [Structures](https://www.kaganonline.com/download/BKCLR-structures.pdf), kun søgeresultat, selve filen kunne ikke læses
+4. [Kagan-oversigt](https://blogs.ubc.ca/btravis/2015/02/26/cooperative-learning/), University of British Columbia
+5. eMINTS: [Quiz-Quiz Trade](https://sites.google.com/a/emints.org/cooperative-learning-strategies/quiz-quiz-trade)
+6. Carleton College, SERC: [Cooperative Learning Techniques](https://serc.carleton.edu/introgeo/cooperative/techniques.html)
+7. University of Wisconsin: [Structured Academic Controversy](https://irisnrc.wisc.edu/wp-content/uploads/sites/1577/2021/11/Structured-Academic-Controversy_-TDPV-.pdf), efter Johnson og Johnson, *Creative Controversy* (1995)
+8. Stenlev og Kagan: *Cooperative Learning* (Malling Beck, 2006), som rummer flere strukturer end dem her
+9. Clayton State University: [Jigsaw](https://clayton.edu/celt/docs/jigsaw.pdf)

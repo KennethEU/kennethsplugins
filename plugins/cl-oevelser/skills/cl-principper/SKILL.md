@@ -9,7 +9,7 @@ allowed-tools:
 
 # CL: principper og skabelon
 
-Kilde: SPIL-principperne er gengivet med egne ord efter Jette Stenlev og Spencer Kagan, *Cooperative Learning* (Forlag Malling Beck, 2006). Gengiv ikke bogens tekst ordret. Øvelserne i `references/oevelsesbank.md` er Kenneths egne beskrivelser, og SPIL-vurderingerne i banken er arbejdsvurderinger, ikke bogens.
+Kilde: SPIL-principperne er gengivet med egne ord efter Jette Stenlev og Spencer Kagan, *Cooperative Learning* (Forlag Malling Beck, 2006). Gengiv ikke bogens tekst ordret. I `references/oevelsesbank.md` er 15 øvelser Kenneths egne beskrivelser, og 14 er fundet ved søgning og skrevet med egne ord. SPIL-vurderingerne i banken er arbejdsvurderinger, ikke bogens.
 
 ## SPIL
 
@@ -38,6 +38,7 @@ Indhold + struktur = aktivitet. Strukturen organiserer samspillet og er tom, ind
 - Banken er ikke ensartet i SPIL. Flere øvelser er svage på et eller flere principper, og det står ved hver øvelse.
 - **Anbefal aldrig en øvelse med "Svag" uden dens skærpelse.** Skriv skærpelsen ind i trinene, og sig kort, hvad du har ændret, og hvorfor.
 - Er en øvelse svag på flere principper, også efter skærpelse, så sig det, fx at Fishbowl ikke er CL i sig selv. Læreren må gerne vælge den alligevel, men skal vide det.
+- **Sig det, hvis du anbefaler en af de nye øvelser:** den er ikke afprøvet i Kenneths klasser, og er grundlaget "almen viden", så skal læreren tjekke den mod bogen.
 - Tider i banken er vejledende skøn, undtagen hvor Kenneths beskrivelse selv angiver dem. Regn altid tiden om til den konkrete klasse.
 
 ## Erfaringer fra Kenneths klasser
