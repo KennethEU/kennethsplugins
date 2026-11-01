@@ -93,6 +93,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 ### cl-oevelser 1.0.0, klasseledelse 1.1.1 og bloom 1.2.2 (november 2026)
 - Nyt plugin `cl-oevelser` med fire skills og et katalog på 15 CL-øvelser. Hver øvelse har en SPIL-vurdering, skærpelser, hvor den er svag, og fagidéer til samfundsfag, mediefag og erhvervsøkonomi. `klasseledelse-planlaeg-lektion` og `bloom-planlaeg-time` henviser nu til pluginet ved enkelte CL-øvelser.
 
+### dida 1.0.1 og klasseledelse 1.4.1 (november 2026)
+- `dida-plan` er nu beskrevet som et supplement til lærerens slides og ikke som en erstatning. Faser med gennemgang, figurer eller billeder skal stadig have slides.
+
 ### dida 1.0.0, klasseledelse 1.4.0, cl-oevelser 1.1.1 og bloom 1.2.3 (november 2026)
 - Nyt plugin `dida` med skillen `dida-plan`, der omsætter en plan til en JSON-fil, som vises på storskærm på dida.dk/plan. Filen tjekkes med et lille script. `klasseledelse-planlaeg-lektion`, `klasseledelse-vurder-plan`, `cl-forloeb` og `bloom-planlaeg-time` tilbyder den.
 

@@ -8,7 +8,7 @@ Har læreren et design system eller et eget slidesæt, så brug det som skabelon
 
 ## Slides
 
-Vil læreren ikke lave PowerPoint, så kan `dida-plan` lave en fil til dida.dk/plan i stedet. Faglige figurer og billeder skal stadig ligge et andet sted.
+`dida-plan` kan vise køreplan og opgaver på storskærm ved siden af slides. Faser med gennemgang, figurer eller billeder skal stadig have slides.
 
 - Lav dem som .pptx, så de kan sættes ind i lærerens eget sæt. Brug en skill til slides, hvis den er tilgængelig. Ellers beskriv dem i chatten, og sig det.
 - Lærerens replikker står i notefeltet.
