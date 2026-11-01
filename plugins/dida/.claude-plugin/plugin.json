@@ -1,0 +1,9 @@
+{
+  "name": "dida",
+  "displayName": "dida.dk",
+  "description": "Laver filer, der kan bruges på dida.dk: en lektionsplan som JSON-fil, der kan vises på storskærm med køreplan og timer på dida.dk/plan.",
+  "version": "1.0.0",
+  "author": {
+    "name": "Kenneth / Marselisborg Gymnasium"
+  }
+}

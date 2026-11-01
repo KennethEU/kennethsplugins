@@ -49,7 +49,7 @@ Spørg: "Passer rækkefølgen, eller skal noget byttes?"
 
 ### Sådan afleverer du
 
-Giv det hele samlet i ét svar, og vis overblikket først. Tilbyd printklart materiale som Word efter afsnittet i principperne. **VENT** på svar.
+Giv det hele samlet i ét svar, og vis overblikket først. Tilbyd printklart materiale som Word efter afsnittet i principperne, og tilbyd `dida-plan`, hvis modulet skal vises på storskærm. Er den ikke tilgængelig, så fortsæt uden. **VENT** på svar.
 
 ### Kvalitetstjek inden aflevering
 

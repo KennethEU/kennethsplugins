@@ -9,6 +9,7 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 | [`blooket`](plugins/blooket) | Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale | 2 |
 | [`klasseledelse`](plugins/klasseledelse) | Planlægning og vurdering af lektioner, så alle elever deltager, holdt op mod forskningen | 3 |
 | [`cl-oevelser`](plugins/cl-oevelser) | Inspirationskatalog med CL-øvelser: find og tilpas, udvikl nye og kombinér til forløb, holdt op mod SPIL-principperne | 4 |
+| [`dida`](plugins/dida) | Lektionsplan som JSON-fil til storskærmsvisning på dida.dk/plan | 1 |
 
 ## Kommandoer
 
@@ -36,6 +37,7 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 | `/cl-oevelser:cl-find-oevelse` | Finder og tilpasser en CL-øvelse fra kataloget |
 | `/cl-oevelser:cl-ny-oevelse` | Udvikler en ny CL-øvelse, eller gør en aktivitet til CL |
 | `/cl-oevelser:cl-forloeb` | Kombinerer CL-øvelser til et modul eller forløb |
+| `/dida:dida-plan` | Omsætter en plan til en fil til dida.dk/plan |
 
 `casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket), `klasseledelse-principper` (klasseledelse) og `cl-principper` (CL) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
 
@@ -51,6 +53,7 @@ claude plugin install bloom@kennethsplugins
 claude plugin install blooket@kennethsplugins
 claude plugin install klasseledelse@kennethsplugins
 claude plugin install cl-oevelser@kennethsplugins
+claude plugin install dida@kennethsplugins
 ```
 
 ## Struktur
@@ -65,7 +68,8 @@ kennethsplugins/
     ├── bloom/
     ├── blooket/
     ├── klasseledelse/
-    └── cl-oevelser/
+    ├── cl-oevelser/
+    └── dida/
 ```
 
 ## Tests
@@ -88,6 +92,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ### cl-oevelser 1.0.0, klasseledelse 1.1.1 og bloom 1.2.2 (november 2026)
 - Nyt plugin `cl-oevelser` med fire skills og et katalog på 15 CL-øvelser. Hver øvelse har en SPIL-vurdering, skærpelser, hvor den er svag, og fagidéer til samfundsfag, mediefag og erhvervsøkonomi. `klasseledelse-planlaeg-lektion` og `bloom-planlaeg-time` henviser nu til pluginet ved enkelte CL-øvelser.
+
+### dida 1.0.0, klasseledelse 1.4.0, cl-oevelser 1.1.1 og bloom 1.2.3 (november 2026)
+- Nyt plugin `dida` med skillen `dida-plan`, der omsætter en plan til en JSON-fil, som vises på storskærm på dida.dk/plan. Filen tjekkes med et lille script. `klasseledelse-planlaeg-lektion`, `klasseledelse-vurder-plan`, `cl-forloeb` og `bloom-planlaeg-time` tilbyder den.
 
 ### klasseledelse 1.3.0 (november 2026)
 - Ny hovedregel: enkel plan, præcis opgave. Planer holdes på ca. 5 til 6 faser med én bærende aktivitet i et modul på 90 minutter, og opgaverne skrives færdigt.

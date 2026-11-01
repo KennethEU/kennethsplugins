@@ -2,7 +2,7 @@
   "name": "cl-oevelser",
   "displayName": "CL-øvelser",
   "description": "Inspirationskatalog med CL-øvelser (Cooperative Learning) til dansk gymnasieundervisning: find og tilpas øvelser, udvikl nye og kombinér dem til forløb, alt holdt op mod SPIL-principperne.",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "author": {
     "name": "Kenneth / Marselisborg Gymnasium"
   }

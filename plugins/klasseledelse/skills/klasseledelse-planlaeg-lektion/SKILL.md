@@ -125,6 +125,8 @@ Når læreren har godkendt planen, så tilbyd: "Skal jeg lave printklare elevark
 
 Skal læreren bruge et helt sæt arbejdsspørgsmål til en tekst, så tilbyd `bloom-spoergsmaal-til-tekst` i stedet.
 
+Tilbyd også at vise planen på storskærm uden PowerPoint med `dida-plan`, der laver en fil til dida.dk/plan. Tilbyd og **VENT** på svar. Er skillen ikke tilgængelig, så sig, at den hører til et plugin, der ikke ser ud til at være installeret, og fortsæt uden.
+
 ---
 
 ## Completion Status

@@ -103,7 +103,7 @@ Spørg: "Hvilke af de tre ændringer skal med i den forbedrede plan? Jeg skriver
 | Tid | Læreren gør og siger | Alle elever gør | Synligt tjek | Kode | Skærm |
 |-----|----------------------|-----------------|--------------|------|-------|
 
-Bevar lærerens eget indhold, formål og stemme. Tjek, at tiderne stadig summer, og vis det nye deltagelseskort sammen med det gamle. Sig til sidst, hvilke materialer der nu mangler, jf. principperne.
+Bevar lærerens eget indhold, formål og stemme. Tjek, at tiderne stadig summer, og vis det nye deltagelseskort sammen med det gamle. Sig til sidst, hvilke materialer der nu mangler, jf. principperne, og tilbyd `dida-plan`, hvis planen skal vises på storskærm. Se "Videresendelse til andre skills".
 
 ## Videresendelse til andre skills
 

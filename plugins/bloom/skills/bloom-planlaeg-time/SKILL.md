@@ -66,7 +66,7 @@ Spørg: "Passer strukturen? Skal nogen faser have mere/mindre tid, eller skal ar
 4. **Fase 3:** 1 åbent spørgsmål på Evaluere/Skabe til klassediskussion.
 5. **Kvalitetstjek:** Bygger faserne logisk på hinanden? Er Bloom-progressionen tydelig?
 
-Afslut med: "Vil du justere noget — fx et bestemt spørgsmål, tidsfordelingen, eller arbejdsformen?"
+Afslut med: "Vil du justere noget — fx et bestemt spørgsmål, tidsfordelingen, eller arbejdsformen?" Tilbyd også `dida-plan`, hvis timen skal vises på storskærm. Er den ikke tilgængelig, så fortsæt uden.
 
 ---
 

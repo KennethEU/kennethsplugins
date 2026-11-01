@@ -159,6 +159,7 @@ Det er praksisråd, ikke forskning.
 - **Materialer:** `klasseledelse-planlaeg-lektion` tilbyder printklare elevark og lærerfacit, når planen er godkendt. Facit skal mærkes med, hvad der bygger på tekst, der er læst, og hvad der ikke er tjekket. `klasseledelse-vurder-plan` laver ikke selv materialer, men kan tilbyde at sende videre.
 - **Arbejdsspørgsmål:** hele sæt af arbejdsspørgsmål til en tekst hører til `bloom-spoergsmaal-til-tekst`.
 - **Aktiviteter:** skillene vælger enkle greb selv, men de har ikke et katalog over øvelser. Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse` for én øvelse eller `cl-forloeb` for et helt modul med CL.
+- **Storskærm:** `dida-plan` laver en fil til dida.dk/plan, så køreplan og opgaver kan vises uden PowerPoint. Tilbyd den, når planen er godkendt.
 - **Undervisningsplanlæggeren:** tilbyd ikke at lægge planer ind i den eller andre systemer.
 
 ## Vær ærlig om tekster
