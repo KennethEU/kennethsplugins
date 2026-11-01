@@ -74,6 +74,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.0.1 (november 2026)
+- Vurdering og planlægning tjekker nu faglig tyngde, udfordring til stærke elever og sammenhæng over tid. Minutgrænserne gælder ikke længere projekt- og gruppearbejde med produkt og nedslag, og nyt afsnit om sårbare elever. Planlægning kræver kun fag, tid og mål.
+
 ### klasseledelse 1.0.0 og bloom 1.2.1 (november 2026)
 - Nyt plugin `klasseledelse` med tre skills til at planlægge og vurdere lektioner, så alle elever deltager. Principperne er holdt op mod forskningen i `references/evidens.md`. `bloom-planlaeg-time` henviser nu til det nye plugin ved timer uden fagtekst.
 

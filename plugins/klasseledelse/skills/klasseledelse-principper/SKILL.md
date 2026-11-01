@@ -72,17 +72,32 @@ Læg planen ud som en tidslinje og giv hver fase én kode:
 
 | Kode | Betydning | Eksempel |
 |------|-----------|----------|
-| **A** | Alle gør noget, og læreren kan se det | Sidemandssnak med opfølgning, skrivning, alle rækker hånden op |
-| **G** | Alle kan arbejde, men læreren kan ikke se, om de gør | Gruppearbejde uden produkt, læsning på skærm, individuel opgave uden tjek |
+| **A** | Alle gør noget, og læreren kan se det undervejs eller lige efter | Sidemandssnak med opfølgning, skrivning med runde eller opsamling, alle rækker hånden op |
+| **G** | Alle kan arbejde, men læreren kan ikke se, om de gør | Gruppearbejde uden produkt, læsning på skærm, skrivning uden tjek |
 | **E** | Enkelte er aktive | Klassediskussion, frivillige svar, elevfremlæggelse |
 | **L** | Læreren taler | Gennemgang |
 
 Læs kortet sådan her. Tærsklerne er arbejdsregler og ikke forskning:
 
-- **Længste strækning uden A:** over ca. 10 minutter er et tydeligt signal. Over ca. 20 minutter er næsten altid det vigtigste problem.
-- **G er ikke en fejl.** Men G skal normalt have en rolle, et produkt eller et nedslag, før den tæller som A.
+- **Længste strækning med L og E:** over ca. 10 minutter er et tydeligt signal. Over ca. 20 minutter er næsten altid det vigtigste problem.
+- **Længere selvstændigt arbejde:** brug ikke minutgrænsen. Spørg i stedet, om der er produkt, roller og nedslag undervejs, og om læreren kan se, hvem der er gået i stå. Med det på plads tæller projekt- og gruppearbejde som A, også i lang tid. Ellers er det G.
 - **Første A:** ligger den inden for de første minutter?
 - **Afslutningen:** henter alle stof frem eller skriver noget til sidst, eller slutter timen bare?
+
+Kortet viser kun, hvem der er aktiv, ikke om aktiviteten er god. Mange A'er er ikke i sig selv kvalitet. Vurdér derfor altid også:
+
+- **Faglig tyngde:** tænker eleverne over det, de skal lære, og træner aktiviteten målet? Skal de analysere, må timen ikke kun bestå af korsvar, håndsoprækning og let repetition.
+- **Udfordring til alle:** har de stærke elever også noget at strække sig efter, fx et sværere eksempel eller et krav om begrundelse?
+- **Sammenhæng over tid:** hvad hentes frem fra sidste gang, og hvad skal gentages næste gang?
+
+## Sårbare elever
+
+Trygge greb er ikke nok for alle. En elev med fx angst kan tage skade af et uventet spørgsmål.
+
+- Aftal formen med eleven på forhånd, fx at læreren varsler spørgsmålet, mens eleverne arbejder i par.
+- Eleven må ikke være tvunget til at svare højt. Deltagelse kan også være at skrive eller tale med sidemanden.
+- Skriv ikke elevnavne, diagnoser eller andre personlige oplysninger i planen. Er de allerede i det, læreren sender, så gentag dem ikke, og brug i stedet "den elev, du har en aftale med".
+- Følg skolens praksis og inddrag fx studievejleder, hvis problemet er større end én lektion. Skillen vurderer planen og stiller ikke diagnoser.
 
 ## Sådan skal du formulere dig
 

@@ -19,16 +19,15 @@ Lav en lektion, hvor alle løbende gør noget fagligt, læreren kan se, og som l
 
 Re-ground: "Vi planlægger en lektion, hvor alle er med. Jeg mangler et par oplysninger."
 
-Stil kun de spørgsmål, læreren ikke allerede har besvaret:
+Spørg kun om det nødvendige, hvis læreren ikke allerede har svaret:
 
 1. **Fag, emne og klasse:** Hvilket fag og hvilken årgang?
 2. **Tid:** Hvor lang er lektionen?
 3. **Mål:** Hvad skal alle kunne, når de går, fx et begreb, en metode eller en genre?
-4. **Forkundskab:** Er stoffet nyt, eller har de mødt det før? Hvad har de læst?
-5. **Skærme:** Skal eleverne bruge computer i timen, og i hvilke faser?
-6. **Klassen:** Er der noget særligt, fx passive elever, uro bag skærmene eller sidste modul fredag?
 
-**VENT** på svar. Hvis alt fremgår, så gå direkte videre til Gate 2.
+Resten antager du og skriver tydeligt i Gate 2, så læreren kan rette det: forkundskab og hvad klassen kommer fra sidst, om eleverne skal bruge computer, og om klassen har særlige forhold.
+
+**VENT** på svar. Hvis de tre fremgår, så gå direkte videre til Gate 2.
 
 ### Gate 2: Foreslå skelet (VENT på OK)
 
@@ -45,7 +44,7 @@ Vis derefter skelettet med koder fra deltagelseskortet:
 |-----|------|------|----------------------|
 | [x] | [fase] | A/G/E/L | [synlig handling] |
 
-Under tabellen: længste strækning uden A, og hvad du har valgt fra og hvorfor.
+Under tabellen: dine antagelser, længste strækning med L og E, og hvad du har valgt fra og hvorfor.
 
 Spørg: "Passer skelettet, eller skal noget flyttes eller ændres?"
 
@@ -53,15 +52,15 @@ Spørg: "Passer skelettet, eller skal noget flyttes eller ændres?"
 
 ### Skriv drejebogen
 
-2. **Start:** skriv en hook, der er koblet direkte til målet, og en aktiv start, hvor alle kan være med. Tjek, at hooken ikke kun er underholdning.
-3. **Gennemgang:** del stoffet op i små bidder. Læg en aktivering ind efter hver bid. Skriv hvert sidemandsspørgsmål færdigt, så det kan besvares af alle.
+2. **Start:** skriv en hook, der er koblet direkte til målet, og en aktiv start, hvor alle kan være med og henter noget frem fra sidst. Tjek, at hooken ikke kun er underholdning.
+3. **Gennemgang:** del stoffet op i små bidder. Læg en aktivering ind efter hver bid. Skriv hvert sidemandsspørgsmål færdigt, så det kan besvares af alle og får eleverne til at tænke over målet. Skal de analysere, skal de også øve sig i at analysere.
 4. **Cold calling:** sæt den efter sidemandssnak, til et spørgsmål, eleven kan svare på. Skriv, hvordan du markerer øverum.
 5. **Fagtermer:** vælg få, håndfaste begreber, alle skal kunne sige og bruge.
 6. **Slides:** beskriv hvert slide med billede eller diagram og højst få stikord.
-7. **Selvstændigt arbejde:** giv det en rolle, et produkt eller et nedslag, så det bliver A. Hvis koden stadig er G, så skriv hvorfor.
-8. **Afslutning:** lad alle skrive eller hente stoffet frem fra hukommelsen, fx i en stilladseret note eller et lille tjek.
+7. **Selvstændigt arbejde:** giv det en rolle, et produkt og nedslag, så det bliver A. Hvis koden stadig er G, så skriv hvorfor. Skriv også en udfordring til de stærke elever.
+8. **Afslutning:** lad alle skrive eller hente stoffet frem fra hukommelsen, fx i en stilladseret note eller et lille tjek. Skriv, hvad der skal gentages næste gang.
 9. **Forventninger og begrundelser:** skriv de få sætninger, der siger, hvad eleverne skal, og hvorfor. Skriv i et sprog, der passer til 16-19-årige.
-10. **Den sårbare elev:** tæl, hvor mange gange en genert elev kan deltage trygt. Der skal være mindst fem.
+10. **Den sårbare elev:** tæl, hvor mange gange en genert elev kan deltage trygt. Der skal være mindst fem, og sidemandssnak og skrivning tæller med. Nævner læreren en bestemt elev, så følg afsnittet "Sårbare elever".
 11. **Hvis noget skrider:** skriv én plan for det, der kan skæres væk, hvis tiden løber, og én replik til at holde tempoet, hvis nogen afsporer timen.
 
 ### Sådan afleverer du
@@ -73,7 +72,7 @@ Skriv først målet i én sætning og derefter drejebogen:
 
 Efter tabellen:
 
-- **Deltagelseskort:** rækkefølgen af koder, længste strækning uden A og antal trygge deltagelser.
+- **Deltagelseskort:** rækkefølgen af koder, længste strækning med L og E og antal trygge deltagelser.
 - **Materialer:** slides, noteark og hvad der skal forberedes.
 - **Det kan du forvente:** én typisk reaktion fra eleverne, og hvordan du møder den, hvis formen er ny for klassen.
 
@@ -81,7 +80,8 @@ Efter tabellen:
 
 - Passer tiderne, og summer de til lektionens længde?
 - Er hvert spørgsmål skrevet færdigt?
-- Peger alle aktiviteter på målet?
+- Peger alle aktiviteter på målet, og træner de det, eleverne skal kunne?
+- Har de stærke elever noget at strække sig efter?
 - Er der tid til overgange?
 - Er planen realistisk at gennemføre, eller er den fyldt med for mange greb?
 

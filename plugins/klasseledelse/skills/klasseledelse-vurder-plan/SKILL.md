@@ -35,14 +35,17 @@ Spørg kun om det, der mangler:
 ### Analyse
 
 3. **Lav deltagelseskortet.** Giv hver fase en kode (A, G, E eller L). Mangler planen tider, så anslå dem og skriv tydeligt, at de er anslået.
-4. **Find det vigtigste.** Spørg: Hvor falder eleverne fra, og hvad betyder det for målet? Begynd med den længste strækning uden A og afslutningen.
+4. **Find det vigtigste.** Spørg: Hvor falder eleverne fra, og hvad betyder det for målet? Se på den længste strækning med L og E, på længere selvstændigt arbejde, på afslutningen og på, om aktiviteterne faktisk træner målet. En plan med mange A'er og lav faglig tyngde har et større problem end en plan med få, gode aktiviteter.
 5. **Tjek skærpelserne:**
+   - Tænker eleverne over det, de skal lære, og træner aktiviteterne målet?
+   - Har de stærke elever noget at strække sig efter?
+   - Hentes noget frem fra sidst, og er der en plan for at gentage det næste gang?
    - Er hooken og historierne koblet til målet?
    - Skal eleverne læse tekst, mens læreren taler?
    - Passer model og styring til, hvor meget klassen kan i forvejen?
    - Er repetition reel genkaldelse?
    - Er skærmbrug tænkt ind i hver fase?
-   - Kan en genert elev svare trygt, og er øverum markeret?
+   - Kan en genert elev svare trygt, og er øverum markeret? Følg afsnittet "Sårbare elever", hvis læreren nævner en bestemt elev.
    - Er forventninger og begrundelser skrevet ind, og er der kontakt i planen ud over styring?
 6. **Skel mellem problem og valg.** Hvis noget strider mod bogen, men tjener formålet, så omtal det som et valg, og sig, hvad der skal til for at det virker. Tving ikke Direct Instruction ned over et bevidst åbent forløb. Spørg til formål og placering.
 
@@ -55,7 +58,7 @@ Spørg kun om det, der mangler:
 | Tid | Fase | Kode | Kommentar |
 |-----|------|------|-----------|
 
-Under tabellen: længste strækning uden A, første A og hvordan timen slutter.
+Under tabellen: længste strækning med L og E, første A, hvordan timen slutter, og om aktiviteterne træner målet.
 
 **3. De tre vigtigste ændringer.** Højst tre, sorteret efter betydning. For hver:
 
