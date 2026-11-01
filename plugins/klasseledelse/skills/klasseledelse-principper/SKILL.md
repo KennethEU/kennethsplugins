@@ -23,7 +23,7 @@ Deltagelse er en forudsætning for alt andet. Elever, der ikke er mentalt med, f
 | 2 | Hook: vækker nysgerrighed fra start | Fanger starten, og peger den på timens mål? |
 | 3 | Overskuelige slides: billeder og stikord frem for tekst | Skal eleverne læse, mens læreren taler? |
 | 4 | Alle med ombord med korte mellemrum | Hvor længe går der, før alle igen skal gøre noget? |
-| 5 | Eksplicitte forventninger til adfærd | Ved eleverne præcist, hvad de skal gøre, og følger læreren op? |
+| 5 | Eksplicitte forventninger til adfærd, herunder køreplan og instruktionsslide til hver fase (praksisråd, ikke dokumenteret effekt) | Ved eleverne præcist, hvad de skal gøre, kan de se, hvor de er i modulet, og følger læreren op? |
 | 6 | Begrundelser | Forstår eleverne, hvorfor de gør det? |
 | 7 | Eksemplarisk produkt | Ved eleverne, hvordan et godt resultat ser ud? |
 | 8 | Hyppig repetition og mestring | Henter alle stof frem fra hukommelsen, og kan de lykkes? |
@@ -114,9 +114,18 @@ Foreslå ikke altid en plan B. Foreslå den kun, når planen bygger på, at elev
   3. **Mange har ikke læst:** lad alle læse et kort stykke i timen først, og lav genkaldelsen bagefter. Hold så ikke fast i, at det er lektietjek.
 - Lad aldrig nogle have skærmen oppe, mens de andre har den nede, medmindre læreren har valgt det.
 
-## Hvad skillene ikke laver
+## Tekster kun på skærm
 
-- **Materialer:** skillene laver planen. Korte replikker og mundtlige sidemandsspørgsmål hører til planen, men arbejdsark, opgavesæt og sæt af arbejdsspørgsmål gør ikke. Sig det tydeligt, og henvis fx til `bloom-spoergsmaal-til-tekst` for spørgsmål.
+Gælder, når eleverne kun har teksten på skærm, fx som iBog. Det er praksisråd, ikke dokumenteret effekt.
+
+- Skriv i drejebogen, hvornår skærmene er oppe og nede.
+- Skal noget tjekkes i teksten, så foreslå én computer pr. par eller gruppe.
+- Faser, hvor eleverne forklarer for hinanden, er uden skærm, så de arbejder ud fra deres egne noter.
+
+## Materialer og det, skillene ikke laver
+
+- **Materialer:** `klasseledelse-planlaeg-lektion` tilbyder printklare elevark og lærerfacit, når planen er godkendt. Facit skal mærkes med, hvad der bygger på tekst, der er læst, og hvad der ikke er tjekket. `klasseledelse-vurder-plan` laver ikke selv materialer, men kan tilbyde at sende videre.
+- **Arbejdsspørgsmål:** hele sæt af arbejdsspørgsmål til en tekst hører til `bloom-spoergsmaal-til-tekst`.
 - **Aktiviteter:** skillene vælger enkle greb selv, men de har ikke et katalog over øvelser. Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse` for én øvelse eller `cl-forloeb` for et helt modul med CL.
 - **Undervisningsplanlæggeren:** tilbyd ikke at lægge planer ind i den eller andre systemer.
 

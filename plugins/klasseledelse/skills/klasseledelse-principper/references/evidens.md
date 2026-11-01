@@ -64,6 +64,7 @@ Meget af forskningen er fra grundskolen eller universitetet. Gymnasiet ligger im
 
 ### Forventninger, rammer og begrundelser (princip 1, 5 og 6)
 
+- Køreplan til eleverne og instruktionsslide til hver fase er praksisråd uden dokumenteret effekt. EVA peger generelt på tydelig struktur, men ikke på netop disse redskaber. **Praksis.**
 - Høj styring kombineret med høj kontakt giver de bedste betingelser. I klasser med lav styring lærer eleverne mindre, også når relationen er god. **Moderat.** [EVA 2019, s. 7](https://uvm.dk/media/45ppq5sy/191030-vidensnotat-klasseledelse-i-gym.pdf)
 - Spilleregler og rutiner bør etableres tidligt, men alene har de kun en lille effekt på adfærden. Eleverne efterspørger, at lærerne håndterer dem ens. **Moderat.** [EVA 2019, s. 8](https://uvm.dk/media/45ppq5sy/191030-vidensnotat-klasseledelse-i-gym.pdf)
 - Autonomistøttende undervisning, hvor begrundelser er ét element, kan læres og giver en række gevinster. **Stærk** som samlet tilgang, **moderat** for begrundelser alene. [Reeve og Cheon 2021](https://selfdeterminationtheory.org/wp-content/uploads/2021/05/2021_ReeveCheon_AutonomySupportive.pdf)

@@ -89,6 +89,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 ### cl-oevelser 1.0.0, klasseledelse 1.1.1 og bloom 1.2.2 (november 2026)
 - Nyt plugin `cl-oevelser` med fire skills og et katalog på 15 CL-øvelser. Hver øvelse har en SPIL-vurdering, skærpelser, hvor den er svag, og fagidéer til samfundsfag, mediefag og erhvervsøkonomi. `klasseledelse-planlaeg-lektion` og `bloom-planlaeg-time` henviser nu til pluginet ved enkelte CL-øvelser.
 
+### klasseledelse 1.2.0 (november 2026)
+- Planlægning leverer køreplan til eleverne og instruktionsslides, styrer skærme ved tekster kun på skærm, laver tabel over fremmøde og printliste og tilbyder printklare elevark og mærket lærerfacit. Begge skills spørger, om modulet er det sidste i forløbet, og vurderingen tjekker, om eleverne kan se, hvor de er.
+
 ### klasseledelse 1.1.2 (november 2026)
 - Skillene kan tilbyde `cl-find-oevelse` og `cl-forloeb`, når en plan mangler en aktivitet.
 

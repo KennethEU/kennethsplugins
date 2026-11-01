@@ -31,7 +31,7 @@ Er det en materialeliste, så stil ikke spørgsmålene i Gate 1, og lav ikke et 
 
 ### Gate 1: Afklar kun det nødvendige (VENT på svar)
 
-Vurderingen afhænger især af formål, klasse og tid. Hvis de tre fremgår, så spring denne gate over. Er modulet på 90 minutter eller mere, og står der intet om pause, så spørg også om det.
+Vurderingen afhænger især af formål, klasse og tid, og af om modulet er det sidste i forløbet. Hvis det hele fremgår, så spring denne gate over. Er modulet på 90 minutter eller mere, og står der intet om pause, så spørg også om det.
 
 Re-ground: "Du vil have din plan vurderet. Jeg mangler kun lige det her."
 
@@ -39,7 +39,8 @@ Spørg kun om det, der mangler:
 
 1. **Formål:** Hvad skal eleverne kunne bagefter?
 2. **Klasse og tid:** Hvilken årgang, hvor lang er timen, og er der pause?
-3. **Bevidste valg:** Er der noget, du gør med vilje, fx åbent gruppearbejde, som jeg ikke skal ændre?
+3. **Forløbet:** Er modulet det sidste i forløbet? Så skal planen samle op på hele forløbet og ikke kun på dagens tekst.
+4. **Bevidste valg:** Er der noget, du gør med vilje, fx åbent gruppearbejde, som jeg ikke skal ændre?
 
 **VENT** på svar.
 
@@ -58,6 +59,8 @@ Spørg kun om det, der mangler:
    - Er skærmbrug tænkt ind i hver fase?
    - Kan en genert elev svare trygt, og er øverum markeret? Følg afsnittet "Sårbare elever", hvis læreren nævner en bestemt elev.
    - Er forventninger og begrundelser skrevet ind, og er der kontakt i planen ud over styring?
+   - Kan eleverne se, hvor de er i modulet, og ved de, hvad de skal ved hver overgang, herunder om skærmen er oppe eller nede?
+   - Er modulet det sidste i forløbet, samler planen så op på hele forløbet og ikke kun på dagens tekst?
 6. **Skel mellem problem og valg.** Hvis noget strider mod bogen, men tjener formålet, så omtal det som et valg, og sig, hvad der skal til for at det virker. Tving ikke Direct Instruction ned over et bevidst åbent forløb. Spørg til formål og placering.
 7. **Tjek spørgsmålene.** Er arbejdsspørgsmålene mest på Huske/Forstå, så tilbyd at sende dem til `bloom-vurder-spoergsmaal`. Nævn det ikke bare som en svaghed. Se "Videresendelse til andre skills".
 8. **Tjek lektien.** Bygger planen på, at eleverne har læst, så følg afsnittet "Elever, der ikke har læst" i principperne.
@@ -95,8 +98,8 @@ Spørg: "Hvilke af de tre ændringer skal med i den forbedrede plan? Jeg skriver
 
 **VENT** på svar. Skriv derefter planen om med de valgte ændringer og intet andet, i samme drejebogsformat som `klasseledelse-planlaeg-lektion`. Vil læreren have mere end de tre med, så skal det siges:
 
-| Tid | Læreren gør og siger | Alle elever gør | Synligt tjek | Kode |
-|-----|----------------------|-----------------|--------------|------|
+| Tid | Læreren gør og siger | Alle elever gør | Synligt tjek | Kode | Skærm |
+|-----|----------------------|-----------------|--------------|------|-------|
 
 Bevar lærerens eget indhold, formål og stemme. Tjek, at tiderne stadig summer, og vis det nye deltagelseskort sammen med det gamle. Sig til sidst, hvilke materialer der nu mangler, jf. principperne.
 
