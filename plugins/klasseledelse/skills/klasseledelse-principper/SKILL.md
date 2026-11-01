@@ -72,10 +72,14 @@ Læg planen ud som en tidslinje og giv hver fase én kode:
 
 | Kode | Betydning | Eksempel |
 |------|-----------|----------|
-| **A** | Alle gør noget, og læreren kan se det undervejs eller lige efter | Sidemandssnak med opfølgning, skrivning med runde eller opsamling, alle rækker hånden op |
-| **G** | Alle kan arbejde, men læreren kan ikke se, om de gør | Gruppearbejde uden produkt, læsning på skærm, skrivning uden tjek |
-| **E** | Enkelte er aktive | Klassediskussion, frivillige svar, elevfremlæggelse |
-| **L** | Læreren taler | Gennemgang |
+| **A (Alle)** | Alle gør noget, og læreren kan se det undervejs eller lige efter | Sidemandssnak med opfølgning, skrivning med runde eller opsamling, alle rækker hånden op |
+| **G (Gemt)** | Alle kan arbejde, men arbejdet er gemt for læreren, som ikke kan se, om de gør | Gruppearbejde uden produkt, læsning på skærm, skrivning uden tjek |
+| **E (Enkelte)** | Enkelte er aktive | Klassediskussion, frivillige svar, elevfremlæggelse |
+| **L (Lærer)** | Læreren taler | Gennemgang |
+
+Vis altid denne linje, når kortet vises:
+
+"A = alle er aktive, og du kan se det. G = gemt arbejde, du ikke kan se. E = enkelte er aktive. L = læreren taler."
 
 Læs kortet sådan her. Tærsklerne er arbejdsregler og ikke forskning:
 
@@ -98,6 +102,28 @@ Trygge greb er ikke nok for alle. En elev med fx angst kan tage skade af et uven
 - Eleven må ikke være tvunget til at svare højt. Deltagelse kan også være at skrive eller tale med sidemanden.
 - Skriv ikke elevnavne, diagnoser eller andre personlige oplysninger i planen. Er de allerede i det, læreren sender, så gentag dem ikke, og brug i stedet "den elev, du har en aftale med".
 - Følg skolens praksis og inddrag fx studievejleder, hvis problemet er større end én lektion. Skillen vurderer planen og stiller ikke diagnoser.
+
+## Elever, der ikke har læst
+
+Foreslå ikke altid en plan B. Foreslå den kun, når planen bygger på, at eleverne har læst, og hold den kort. Der er ikke fundet forskning om det her, så det er praksisråd.
+
+- Udpeg ikke, hvem der ikke har læst, foran klassen.
+- Vælg efter, hvor teksten er:
+  1. **Papir (bedst):** et kort resumé eller uddrag på papir, så alle kan have skærmen nede ved genkaldelsen.
+  2. **Kun på skærm:** læg faserne efter hinanden. Først genkalder alle uden skærm, og de, der ikke har læst, skriver, hvad de kan eller forventer. Derefter åbner alle teksten og tjekker deres noter.
+  3. **Mange har ikke læst:** lad alle læse et kort stykke i timen først, og lav genkaldelsen bagefter. Hold så ikke fast i, at det er lektietjek.
+- Lad aldrig nogle have skærmen oppe, mens de andre har den nede, medmindre læreren har valgt det.
+
+## Hvad skillene ikke laver
+
+- **Materialer:** skillene laver planen. Korte replikker og mundtlige sidemandsspørgsmål hører til planen, men arbejdsark, opgavesæt og sæt af arbejdsspørgsmål gør ikke. Sig det tydeligt, og henvis fx til `bloom-spoergsmaal-til-tekst` for spørgsmål.
+- **Undervisningsplanlæggeren:** tilbyd ikke at lægge planer ind i den eller andre systemer.
+
+## Vær ærlig om tekster
+
+- Kan du ikke læse en tekst, fx et iBog-link bag login, så sig det. Bed læreren sende teksten eller fortælle kort, hvad den handler om.
+- Find ikke på indhold, fx hvad en tabel viser.
+- Anslå ikke læsetid uden grundlag. Spørg, eller skriv, at tiden skal justeres af læreren.
 
 ## Sådan skal du formulere dig
 

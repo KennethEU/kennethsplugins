@@ -74,6 +74,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.1.0 (november 2026)
+- Vurderingsskillen genkender en materialeliste og tilbyder at planlægge i stedet. Koderne A, G, E og L forklares hver gang, svage spørgsmål kan sendes til Bloom, og skillene er ærlige om materialer og tekster, de ikke kan læse. Kort version som standard, spørgsmål om pause og råd til elever, der ikke har læst.
+
 ### klasseledelse 1.0.1 (november 2026)
 - Vurdering og planlægning tjekker nu faglig tyngde, udfordring til stærke elever og sammenhæng over tid. Minutgrænserne gælder ikke længere projekt- og gruppearbejde med produkt og nedslag, og nyt afsnit om sårbare elever. Planlægning kræver kun fag, tid og mål.
 

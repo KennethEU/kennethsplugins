@@ -5,6 +5,7 @@ argument-hint: "[emne, klasse og tid]"
 allowed-tools:
   - Read
   - Glob
+  - Skill
 ---
 
 # Planlæg lektion, hvor alle er med
@@ -22,8 +23,10 @@ Re-ground: "Vi planlægger en lektion, hvor alle er med. Jeg mangler et par oply
 Spørg kun om det nødvendige, hvis læreren ikke allerede har svaret:
 
 1. **Fag, emne og klasse:** Hvilket fag og hvilken årgang?
-2. **Tid:** Hvor lang er lektionen?
+2. **Tid:** Hvor lang er lektionen, og er der pause, hvis den er på 90 minutter eller mere?
 3. **Mål:** Hvad skal alle kunne, når de går, fx et begreb, en metode eller en genre?
+
+Får du tekster som link, så følg "Vær ærlig om tekster" i principperne. Bygger timen på lektie, så følg "Elever, der ikke har læst".
 
 Resten antager du og skriver tydeligt i Gate 2, så læreren kan rette det: forkundskab og hvad klassen kommer fra sidst, om eleverne skal bruge computer, og om klassen har særlige forhold.
 
@@ -38,7 +41,7 @@ Træf først disse to valg og begrund dem kort:
 - **Rækkefølge:** instruktion først eller problem først, ud fra forkundskab, stoffets sværhedsgrad og klassen. Anbefal ét.
 - **Model:** skal eleverne se et eksemplarisk produkt? Vis det ved nyt, og aftrap det, når klassen kender genren.
 
-Vis derefter skelettet med koder fra deltagelseskortet:
+Vis derefter skelettet med koder fra deltagelseskortet, og skriv forklaringen af koderne lige over tabellen med standardlinjen fra principperne:
 
 | Tid | Fase | Kode | Hvad alle elever gør |
 |-----|------|------|----------------------|
@@ -72,8 +75,8 @@ Skriv først målet i én sætning og derefter drejebogen:
 
 Efter tabellen:
 
-- **Deltagelseskort:** rækkefølgen af koder, længste strækning med L og E og antal trygge deltagelser.
-- **Materialer:** slides, noteark og hvad der skal forberedes.
+- **Deltagelseskort:** forklaring af koderne, rækkefølgen af koder, længste strækning med L og E og antal trygge deltagelser.
+- **Materialer:** hvad der skal forberedes, fx slides og noteark. Sig tydeligt, at du ikke har lavet arbejdsark, opgaver eller spørgsmålssæt, og tilbyd en anden skill, fx `bloom-spoergsmaal-til-tekst`. Tilbyd og **VENT** på svar. Er den ikke tilgængelig, så sig det.
 - **Det kan du forvente:** én typisk reaktion fra eleverne, og hvordan du møder den, hvis formen er ny for klassen.
 
 ### Kvalitetstjek inden aflevering
