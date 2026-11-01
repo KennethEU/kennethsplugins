@@ -1,0 +1,81 @@
+---
+name: cl-find-oevelse
+description: "Inspirationskatalog: finder og tilpasser CL-øvelser (Cooperative Learning) til en konkret undervisningssituation og leverer en komplet beskrivelse med SPIL-tjek, trin og fagligt eksempel. Brug når læreren siger \"CL-øvelse\", \"cooperative learning\", \"giv mig en idé til en øvelse\", \"øvelse til lektieopsamling\", \"variation af gruppearbejde\", \"tavleopsamling på en anden måde\", beder om at se kataloget, eller nævner en øvelse som Svar-bazar, Mix og match, Møde på midten, Kuvertleg eller Fishbowl. Brug ikke til en hel lektion med drejebog (klasseledelse-planlaeg-lektion), en time bygget på spørgsmål til en fagtekst (bloom-planlaeg-time), en øvelse fra bunden (cl-ny-oevelse), flere øvelser i et forløb (cl-forloeb) eller casespil."
+argument-hint: "[emne, formål, klasse og tid]"
+allowed-tools:
+  - Read
+  - Glob
+  - Skill
+---
+
+# Find og tilpas en CL-øvelse
+
+Find den rigtige øvelse til situationen, og gør den klar til brug.
+
+## Trin
+
+1. **Læs** `${CLAUDE_SKILL_DIR}/../cl-principper/SKILL.md` og `${CLAUDE_SKILL_DIR}/../cl-principper/references/oevelsesbank.md`.
+
+2. **Vælg spor:**
+   - **Læreren vil bare se muligheder**, fx "hvad har du?" eller "giv mig lidt inspiration": vis oversigten fra banken grupperet efter formål med én linje pr. øvelse. Stil ingen spørgsmål først. Slut med at spørge, hvad næste time handler om.
+   - **Læreren nævner en bestemt øvelse:** gå til Gate 1 og derefter direkte til beskrivelsen. Er øvelsen svag på SPIL, så sig det og skriv skærpelsen ind.
+   - **Læreren har en situation:** følg hele forløbet nedenfor.
+
+### Gate 1: Afklar situationen (VENT på svar)
+
+Spørg samlet i én besked om det, der mangler:
+
+1. **Antal elever**
+2. **Fagligt emne** (tekst, begreb, teori, case)
+3. **Formål** (lektieopsamling, tekstanalyse, begrebsarbejde, repetition, produktion, feedback)
+4. **Tid til rådighed**
+5. **Lokale** (bordgrupper, plads til bevægelse, tavle eller skærm)
+6. **Elevforudsætninger** (er lektien læst, kendskab til emnet, klassens dynamik, herunder hvilke teorier klassen har mødt)
+
+Spørg kort og kollegialt. Står noget allerede i beskeden, så spørg ikke igen.
+
+**VENT** på svar.
+
+### Gate 2: Anbefal 1 til 3 øvelser (VENT på valg)
+
+For hver øvelse:
+
+- navn og kort beskrivelse
+- hvorfor den passer her
+- hvilke SPIL-principper den især understøtter, og om den kræver en skærpelse
+
+Vælg ud fra formål, tid og lokale. Er klassen fagligt svagere eller urolig, så foreslå en bevægelsesøvelse først, hvis lokalet tillader det. Passer ingen øvelse, så sig det og tilbyd `cl-ny-oevelse`.
+
+Sæt din anbefaling øverst, og spørg: "Hvilken lyder bedst?"
+
+**VENT** på valg.
+
+### Skriv beskrivelsen
+
+3. **Brug skabelonen** fra principperne.
+4. **Regn på klassen:** fordel netop dette elevtal i grupper, og sig, hvad I gør med de elever, der ikke går op. Summér tiderne, så de passer, også med instruktion og overgange.
+5. **Læg indholdet i:** skriv spørgsmål, kort eller opgaver færdige til emnet. Du må kun bruge indhold, du kender eller har fået. Mangler du teksten, så bed om den eller marker tydeligt, at spørgsmålene skal tjekkes.
+6. **Skriv skærpelsen ind** i trinene, ikke kun som tip.
+7. **Sørg for noter:** beskriv præcist, hvordan eleverne får noter.
+
+### Sådan afleverer du
+
+Giv den fulde beskrivelse samlet i ét svar. Tilbyd derefter printklart materiale som Word, når øvelsen kræver det, fx kort, ark eller kuverter, og følg afsnittet "Printklart materiale" i principperne. **VENT** på svar, før du laver det.
+
+### Kvalitetstjek inden aflevering
+
+- Er alle fire SPIL-principper dækket i selve trinene?
+- Passer elevtal, grupper og tid?
+- Er alle spørgsmål skrevet færdige, og trækker de på målet?
+- Står der, hvordan eleverne får noter?
+- Har du skrevet, hvad der er ændret i forhold til bankens øvelse?
+
+Afslut med: "Skal den justeres, eller skal jeg lave materialet til print?"
+
+---
+
+## Completion Status
+
+- **DONE**: Øvelse beskrevet og tjekket
+- **DONE_WITH_CONCERNS**: Leveret, men tid eller SPIL er stram, og det er sagt
+- **NEEDS_CONTEXT**: Mangler oplysninger fra Gate 1

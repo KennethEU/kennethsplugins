@@ -8,10 +8,11 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 | [`bloom`](plugins/bloom) | Arbejdsspørgsmål til fagtekster efter Blooms taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time | 6 |
 | [`blooket`](plugins/blooket) | Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale | 2 |
 | [`klasseledelse`](plugins/klasseledelse) | Planlægning og vurdering af lektioner, så alle elever deltager, holdt op mod forskningen | 3 |
+| [`cl-oevelser`](plugins/cl-oevelser) | Inspirationskatalog med CL-øvelser: find og tilpas, udvikl nye og kombinér til forløb, holdt op mod SPIL-principperne | 4 |
 
 ## Kommandoer
 
-Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `blooket-`, `klasseledelse-`), så de står samlet i menuen. Skriv `/casespil`, `/bloom`, `/blooket` eller `/klasseledelse` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
+Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `blooket-`, `klasseledelse-`, `cl-`), så de står samlet i menuen. Skriv `/casespil`, `/bloom`, `/blooket`, `/klasseledelse` eller `/cl` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
 
 | Kommando | Hvad den gør |
 |----------|--------------|
@@ -32,8 +33,11 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 | `/blooket:blooket-lav-quiz` | Blooket-quiz som CSV-fil |
 | `/klasseledelse:klasseledelse-planlaeg-lektion` | Lektion eller modul med drejebog, hvor alle er med |
 | `/klasseledelse:klasseledelse-vurder-plan` | Vurdering af en plan med deltagelseskort og konkrete omskrivninger |
+| `/cl-oevelser:cl-find-oevelse` | Finder og tilpasser en CL-øvelse fra kataloget |
+| `/cl-oevelser:cl-ny-oevelse` | Udvikler en ny CL-øvelse, eller gør en aktivitet til CL |
+| `/cl-oevelser:cl-forloeb` | Kombinerer CL-øvelser til et modul eller forløb |
 
-`casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket) og `klasseledelse-principper` (klasseledelse) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
+`casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket), `klasseledelse-principper` (klasseledelse) og `cl-principper` (CL) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
 
 ## Installation
 
@@ -46,6 +50,7 @@ claude plugin install casespilsdesigner@kennethsplugins
 claude plugin install bloom@kennethsplugins
 claude plugin install blooket@kennethsplugins
 claude plugin install klasseledelse@kennethsplugins
+claude plugin install cl-oevelser@kennethsplugins
 ```
 
 ## Struktur
@@ -59,7 +64,8 @@ kennethsplugins/
     │   └── skills/...
     ├── bloom/
     ├── blooket/
-    └── klasseledelse/
+    ├── klasseledelse/
+    └── cl-oevelser/
 ```
 
 ## Tests
@@ -73,6 +79,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 - `blooket` bruger scriptet `generate_csv.py`, som tjekker spørgsmålene og skriver Blooket-filen. Test det med `python3 plugins/blooket/tests/test_generate_csv.py`.
 
 ## Changelog
+
+### cl-oevelser 1.0.0, klasseledelse 1.1.1 og bloom 1.2.2 (november 2026)
+- Nyt plugin `cl-oevelser` med fire skills og et katalog på 15 CL-øvelser. Hver øvelse har en SPIL-vurdering, skærpelser, hvor den er svag, og fagidéer til samfundsfag, mediefag og erhvervsøkonomi. `klasseledelse-planlaeg-lektion` og `bloom-planlaeg-time` henviser nu til pluginet ved enkelte CL-øvelser.
 
 ### klasseledelse 1.1.0 (november 2026)
 - Vurderingsskillen genkender en materialeliste og tilbyder at planlægge i stedet. Koderne A, G, E og L forklares hver gang, svage spørgsmål kan sendes til Bloom, og skillene er ærlige om materialer og tekster, de ikke kan læse. Kort version som standard, spørgsmål om pause og råd til elever, der ikke har læst.

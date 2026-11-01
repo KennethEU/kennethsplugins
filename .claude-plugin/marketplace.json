@@ -4,20 +4,20 @@
     "name": "Kenneth"
   },
   "metadata": {
-    "description": "Plugins til dansk gymnasieundervisning (STX): casespil, Bloom-spørgsmål, Blooket-quizzer og klasseledelse"
+    "description": "Plugins til dansk gymnasieundervisning (STX): casespil, Bloom-spørgsmål, Blooket-quizzer, klasseledelse og CL-øvelser"
   },
   "plugins": [
     {
       "name": "casespilsdesigner",
       "source": "./plugins/casespilsdesigner",
       "description": "Design af casespil (også kaldet rollespil) og simuleringer til dansk gymnasieundervisning (STX): rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring.",
-      "version": "2.9.0"
+      "version": "2.15.0"
     },
     {
       "name": "bloom",
       "source": "./plugins/bloom",
       "description": "Arbejdsspørgsmål til fagtekster efter Blooms reviderede taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time.",
-      "version": "1.2.1"
+      "version": "1.2.2"
     },
     {
       "name": "blooket",
@@ -29,7 +29,13 @@
       "name": "klasseledelse",
       "source": "./plugins/klasseledelse",
       "description": "Planlægning og vurdering af lektioner og moduler, så alle elever deltager: deltagelseskort, konkrete omskrivninger og principper holdt op mod forskningen.",
-      "version": "1.1.0"
+      "version": "1.1.1"
+    },
+    {
+      "name": "cl-oevelser",
+      "source": "./plugins/cl-oevelser",
+      "description": "Inspirationskatalog med CL-øvelser (Cooperative Learning): find og tilpas øvelser, udvikl nye og kombinér dem til forløb, holdt op mod SPIL-principperne.",
+      "version": "1.0.0"
     }
   ]
 }
