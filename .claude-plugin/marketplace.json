@@ -29,7 +29,7 @@
       "name": "klasseledelse",
       "source": "./plugins/klasseledelse",
       "description": "Planlægning og vurdering af lektioner og moduler, så alle elever deltager: deltagelseskort, konkrete omskrivninger og principper holdt op mod forskningen.",
-      "version": "1.5.0"
+      "version": "1.6.0"
     },
     {
       "name": "cl-oevelser",
@@ -42,7 +42,7 @@
       "name": "dida",
       "source": "./plugins/dida",
       "description": "Laver filer til dida.dk: en lektionsplan som JSON-fil, der vises på storskærm med køreplan og timer på dida.dk/plan.",
-      "version": "1.0.1"
+      "version": "1.0.2"
     }
   ]
 }

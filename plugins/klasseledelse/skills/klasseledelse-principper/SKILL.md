@@ -50,7 +50,7 @@ Bogen bygger på efterskole og folkeskole. Tilpas altid sådan her:
 - **Bedømmelse:** læreren er også bedømmer. Sig tydeligt, hvornår noget er øverum, især ved cold calling.
 - **Begrundelser:** de vejer tungere hos ældre elever. Forbered læreren på modstand, fx at nogle vil opleve rammerne som for stramme. Det er ikke i sig selv et tegn på, at planen er dårlig.
 - **Medansvar:** giv reelle valg, hvor det ikke skader målet, fx produkt, eksempel eller metode.
-- **Moduler:** lange moduler skal have flere tydelige faser, og de sidste 20 minutter skal planlægges særligt omhyggeligt.
+- **Moduler:** lange moduler skal have få, tydelige faser, jf. "Enkelhed før aktivering", og de sidste 25 minutter skal planlægges særligt omhyggeligt.
 - **Opgaveformer:** projekt, casespil og feltarbejde har deres egen logik. Vurdér dem på deres formål, ikke som mislykket tavleundervisning.
 
 ## Skærpelser ud fra forskningen
@@ -125,17 +125,51 @@ Gælder, når eleverne kun har teksten på skærm, fx som iBog. Det er praksisr�
 - Faser, hvor eleverne forklarer for hinanden, er som standard uden skærm, så de arbejder ud fra deres egne noter. Undtagelsen er, når skærmen er selve arbejdet, fx regneark eller medieproduktion.
 - Den individuelle afsluttende skrivning må gerne ske på computeren, direkte i elevernes noter.
 
-## Tid og planens vægt
+## Enkelhed før aktivering
+
+Det er praksisråd og arbejdsregler, ikke forskning. De bygger på erfaring: Et modul på 90 minutter med 12 trin, 6 elevark og 7 gruppeskift var for meget, også for et stærkt hold på 12 elever. Klassen nåede ikke den afsluttende skrivning, kortene blev ikke klippet ud, og eleverne spurgte, om materialet var lavet af AI.
+
+"Alle er aktive ofte" betyder ikke mange aktiviteter. Aktiveringen sker inde i få, længere faser med kendte greb: parsnak, cold calling efter parsnak, turtagning og skrivning. Også "hvert tredje minut" gælder inde i en fase, ikke som skift mellem faser.
+
+**Enkel plan, præcis opgave:** planen må ikke være mere avanceret, end læreren kan huske den. Opgaverne skal være skrevet færdigt, så eleverne kan gå i gang, men med lærerens ord og uden ekstra ark.
+
+### Aktivitetsbudget
+
+- **Faser:** højst 4 i et modul på 90 minutter, ud over hej, pause og oprydning. Højst 2 til 3 ved 45 til 60 minutter.
+- **Nye strukturer:** højst én pr. modul. Ellers genbruges arbejdsformer og grupper, klassen kender.
+- **Skift:** hvert gruppeskift og materialeskift koster ca. 3 minutter og står i planen.
+- **Grupper:** dannes én gang og bruges resten af modulet, hvis det er muligt.
+- **Elevark:** højst 2 pr. modul. Brug tavlen, bogen og lærerens egne materialer frem for nye ark.
+- **Forberedelse i timen:** ingen materialer, der skal klippes eller samles i timen, medmindre læreren beder om det.
+
+### Det vigtigste først
+
+- Den aktivitet, målet afhænger af, fx skrivningen eller svaret på problemformuleringen, starter senest 25 minutter før modulets slutning og må aldrig være det, der skæres.
+- "Hvis tiden løber" peger på noget, der kan springes helt over, ikke på at komprimere det hele.
+- Tjek: Kan klassen nå den vigtigste aktivitet, hvis alt tager 20 % længere tid?
+
+### Når læreren beder om ændringer
+
+- Spørg "Hvad kan vi fjerne?", før du lægger noget til. En ny aktivitet, et nyt ark eller en ny regel skal erstatte noget, ikke komme oveni.
+- Når planen er ændret flere gange, så tæl igen: faser, skift, ark og minutter. Sig det tydeligt, hvis budgettet er overskredet.
+
+### Materiale, der ikke ligner AI
+
+- Færre og enklere ark. Ikke færdigformulerede kort til alt.
+- Brug lærerens egne ord, eksempler og strukturer fra forløbet, fx fra slides og Lectio. Opfind ikke nye begreber eller rollenavne.
+- Ingen perfekt symmetri, fx 9 kort med lige lange tekster. Hellere få punkter med lærerens eget sprog.
+- Tilbyd, at læreren selv skriver eller retter instruktionerne, før de printes.
+
+## Tid
 
 Det hele er arbejdsregler og praksisråd, ikke forskning.
 
-- **Enkel plan, præcis opgave:** planen må ikke være mere avanceret, end læreren kan huske den. Brug ca. 5 til 6 faser i et modul på 90 minutter og én bærende aktivitet. Læg præcisionen i opgaverne: de skal være skrevet færdigt, så eleverne kan gå i gang. Læg ikke ekstra lag oven i en plan, der allerede virker.
 - **Slack:** træk pause, hej og oprydning fra modulets tid. Lad derefter ca. 5 minutter stå tomme, eller skriv præcist, hvad der skæres, når tiden løber.
 - **Overgange:** flytning, uddeling og login er egne minutter i drejebogen.
 - **Holdstørrelse:** regn tiderne mod det største hold, og sig, hvad der bliver anderledes med det mindste.
 - **Klokkeslæt:** de står kun i lærerens drejebog. Slides og elevark viser kun varighed, fx "10 min."
 - **Sprog:** skriv, at tiderne er regnet igennem. Skriv ikke, at de er testet, før planen har været brugt i en klasse.
-- **Planens vægt:** tæl faser, slags print og ark til at klippe, og anslå forberedelsen. Over ca. tre slags print, klippeark eller ca. 30 minutters forberedelse ud over slides er et signal. Foreslå så den forenkling, der sparer mest forberedelse og koster målet mindst. Læreren kan vælge den fra.
+- **Planens vægt:** tæl faser, nye strukturer, skift, elevark og minutter mod aktivitetsbudgettet, og anslå forberedelsen. Er budgettet overskredet, så foreslå den forenkling, der sparer mest og koster målet mindst. Læreren kan vælge den fra.
 
 ## Grupper og fravær
 

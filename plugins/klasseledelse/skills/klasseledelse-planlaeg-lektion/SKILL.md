@@ -50,7 +50,7 @@ Vis derefter skelettet med koder fra deltagelseskortet, og skriv forklaringen af
 |-----|------|------|----------------------|
 | [x] | [fase] | A/G/E/L | [synlig handling] |
 
-Under tabellen: dine antagelser, længste strækning med L og E, hvad du har valgt fra og hvorfor, og planens vægt med en forenkling, hvis der er signal om det, jf. "Tid og planens vægt" i principperne.
+Under tabellen: dine antagelser, længste strækning med L og E, hvad du har valgt fra og hvorfor, og en optælling mod aktivitetsbudgettet i principperne: faser, nye strukturer, skift, elevark og minutter. Er budgettet overskredet, så sig det, og foreslå, hvad der kan fjernes.
 
 Bruger skelettet grupper, og kender du ikke fremmødet, så spørg også: "Hvor mange elever plejer at møde op, som et spænd pr. klasse, fx 10-12 og 13-19?"
 
@@ -60,7 +60,7 @@ Spørg: "Passer skelettet, eller skal noget flyttes eller ændres?"
 
 ### Skriv drejebogen
 
-Hold planen enkel, og skriv opgaverne præcist, jf. "Enkel plan, præcis opgave" i principperne. Trinene nedenfor er et tjek, ikke noget, der skal stå som egne punkter i planen. I drejebogen skal der kun stå de replikker, læreren faktisk skal bruge, fx opgaven og overgangene. Opgavens tekst kan genbruges på instruktionsslidet, så intet skrives to gange.
+Hold planen inden for aktivitetsbudgettet, og skriv opgaverne præcist, jf. "Enkelhed før aktivering" i principperne. Læg aktiveringen inde i faserne, ikke i flere skift. Trinene nedenfor er et tjek, ikke noget, der skal stå som egne punkter i planen. I drejebogen skal der kun stå de replikker, læreren faktisk skal bruge, fx opgaven og overgangene. Opgavens tekst kan genbruges på instruktionsslidet, så intet skrives to gange.
 
 2. **Start:** skriv en hook, der er koblet direkte til målet, og en aktiv start, hvor alle kan være med og henter noget frem fra sidst. Tjek, at hooken ikke kun er underholdning.
 3. **Gennemgang:** del stoffet op i små bidder. Læg en aktivering ind efter hver bid. Skriv hvert sidemandsspørgsmål færdigt, så det kan besvares af alle og får eleverne til at tænke over målet. Skal de analysere, skal de også øve sig i at analysere.
@@ -71,7 +71,7 @@ Hold planen enkel, og skriv opgaverne præcist, jf. "Enkel plan, præcis opgave"
 8. **Afslutning:** lad alle skrive eller hente stoffet frem fra hukommelsen, fx i en stilladseret note eller et lille tjek. Skriv, hvad der skal gentages næste gang, og hvordan produktet kommer i noterne, jf. "Noter" i principperne.
 9. **Forventninger og begrundelser:** skriv de få sætninger, der siger, hvad eleverne skal, og hvorfor. Skriv i et sprog, der passer til 16-19-årige.
 10. **Den sårbare elev:** tæl, hvor mange gange en genert elev kan deltage trygt. Der skal være mindst fem, og sidemandssnak og skrivning tæller med. Nævner læreren en bestemt elev, så følg afsnittet "Sårbare elever".
-11. **Tid, og hvis noget skrider:** følg "Tid og planens vægt" i principperne, og giv overgange egne rækker i drejebogen. Skriv én plan for det, der kan skæres væk, hvis tiden løber, og én replik til at holde tempoet, hvis nogen afsporer timen.
+11. **Tid, og hvis noget skrider:** følg "Tid" og "Det vigtigste først" i principperne, og giv overgange egne rækker i drejebogen. Skriv én plan for det, der kan springes helt over, hvis tiden løber, og én replik til at holde tempoet, hvis nogen afsporer timen.
 12. **Skærme:** følg "Tekster kun på skærm" i principperne, hvis teksten kun findes på skærm. Drejebogen skal selv sige, hvornår skærmene er oppe og nede.
 13. **Grupper:** bruger planen grupper, så lav tabellen over fremmøde nedenfor.
 14. **Sidste modul i forløbet:** lad genkaldelse og afslutning dække hele forløbet, så eleverne kobler dagens tekst til det, de har arbejdet med før.
@@ -86,11 +86,11 @@ Skriv først målet i én sætning og derefter drejebogen:
 
 Efter tabellen:
 
-- **Køreplan til eleverne:** lever den altid. 5 til 6 trin med modulets mål eller problemformulering øverst, skrevet til eleverne, så den kan stå fremme hele modulet med det aktuelle trin fremhævet.
+- **Køreplan til eleverne:** lever den altid. Ét trin pr. fase med modulets mål eller problemformulering øverst, skrevet til eleverne, så den kan stå fremme hele modulet med det aktuelle trin fremhævet.
 - **Instruktionsslide til hver fase:** kort tekst, der siger, hvad eleverne laver, med hvem, hvor længe, om skærmen er oppe eller nede, og hvornår de er klar. Lærerens replikker hører til i notefeltet.
 - **Fremmøde (hvis planen bruger grupper):** en enkel regel og en kort tabel med mindste, typiske og største elevtal: antal grupper og fordeling, fx 13 elever = 3 grupper á 3 + 1 gruppe á 4. Tjek, at hver fordeling summer til elevtallet, og prøv selv gruppereglen af på alle elevtal i spændet. Derunder en printliste med én kolonne pr. holdstørrelse, der regner med det højeste elevtal og det højeste antal grupper for holdet.
 - **Deltagelseskort:** forklaring af koderne, rækkefølgen af koder, længste strækning med L og E og antal trygge deltagelser.
-- **Planens vægt:** antal faser, slags print og klippeark og anslået forberedelse. Skriv, at tiderne er regnet igennem og ikke afprøvet.
+- **Planens vægt:** optælling mod aktivitetsbudgettet og anslået forberedelse. Skriv, at tiderne er regnet igennem og ikke afprøvet.
 - **Materialer:** hvad der skal forberedes, fx slides og noteark. Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse` (én øvelse) eller `cl-forloeb` (et helt modul med CL). Tilbyd og **VENT** på svar. Er skillen ikke tilgængelig, så sig, at den hører til et plugin, der ikke ser ud til at være installeret, og fortsæt uden.
 - **Det kan du forvente:** én typisk reaktion fra eleverne, og hvordan du møder den, hvis formen er ny for klassen.
 
@@ -106,9 +106,10 @@ Efter tabellen:
 - Holder gruppereglen og fraværsreglen på alle elevtal i spændet?
 - Er opgaverne skrevet færdigt, og er planen stadig så enkel, at læreren kan huske den?
 - Står der kun varighed og ingen klokkeslæt i det, eleverne ser?
-- Er planen realistisk at gennemføre, eller er den fyldt med for mange greb og for meget forberedelse?
+- Holder planen aktivitetsbudgettet, og starter den vigtigste aktivitet senest 25 minutter før slut?
+- Kan klassen nå den vigtigste aktivitet, hvis alt tager 20 % længere tid?
 
-Afslut med: "Vil du justere noget, fx tempoet, en aktivitet eller tonen?"
+Afslut med: "Vil du justere noget, fx tempoet, en aktivitet eller tonen?" Beder læreren om ændringer, så følg "Når læreren beder om ændringer" i principperne.
 
 ### Gate 3: Tilbyd materialer (VENT på svar)
 

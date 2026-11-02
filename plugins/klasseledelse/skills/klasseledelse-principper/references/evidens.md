@@ -73,6 +73,7 @@ Meget af forskningen er fra grundskolen eller universitetet. Gymnasiet ligger im
 
 ### Tid, grupper og noter
 
+- Aktivitetsbudgettet (højst 4 faser pr. 90 minutter, én ny struktur, højst 2 elevark, ca. 3 minutter pr. skift) bygger på erfaring fra ét modul og er ikke undersøgt. **Praksis.**
 - Slack, overgange som egne minutter, planens vægt, turregler i gruppefaser, gruppefordeling og fotograferede gruppeark er praksisråd og arbejdsregler. De er ikke undersøgt i denne gennemgang. **Praksis.**
 
 ### Pladser (princip 1)

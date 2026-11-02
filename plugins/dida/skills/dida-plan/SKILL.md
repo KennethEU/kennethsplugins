@@ -40,8 +40,9 @@ Spørg: "Passer trinene?"
 
 ## Regler for trinene
 
-- **Et nyt trin, når eleverne skal gøre noget nyt,** eller når skærmen skifter. Står skærmen både oppe og nede i én fase, så del den. Læg små overgange ind i det trin, de hører til.
-- **Planens antal faser bevares.** Læg ikke ekstra trin til. Slå korte faser sammen, hvis planen har flere end ca. 12 trin.
+- **Ét trin pr. fase i planen,** plus pause. Læg ikke ekstra trin til, og læg overgange ind i det trin, de hører til.
+- **Skifter skærmen midt i en fase,** så del fasen i to trin, men kun hvis det ikke giver mere end ca. 6 trin i et modul på 90 minutter. Ellers skriv skiftet i opgaven, fx "Efter 6 minutter: én computer pr. par".
+- **Har planen mange flere trin end det,** så sig, at den ser ud til at overskride aktivitetsbudgettet i `klasseledelse-principper`, og spørg, om den skal forenkles først.
 - **`instruction` er skrevet til eleverne,** med "du" eller "I", i korte linjer. Det er opgaven, færdigformuleret, så de kan gå i gang uden at spørge.
 - **`teacherNote` er til læreren:** replikker, hvad man skal gå efter, og hvad der kan skæres. Alt, hvad klassen ikke skal se, hører til her.
 - **`doneWhen`** er noget, eleverne selv kan se, fx "Kædearket er udfyldt".

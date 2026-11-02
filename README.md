@@ -93,6 +93,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 ### cl-oevelser 1.0.0, klasseledelse 1.1.1 og bloom 1.2.2 (november 2026)
 - Nyt plugin `cl-oevelser` med fire skills og et katalog på 15 CL-øvelser. Hver øvelse har en SPIL-vurdering, skærpelser, hvor den er svag, og fagidéer til samfundsfag, mediefag og erhvervsøkonomi. `klasseledelse-planlaeg-lektion` og `bloom-planlaeg-time` henviser nu til pluginet ved enkelte CL-øvelser.
 
+### klasseledelse 1.6.0 og dida 1.0.2 (november 2026)
+- Nyt afsnit i principperne, "Enkelhed før aktivering": et aktivitetsbudget (højst 4 faser pr. 90 minutter, én ny struktur, højst 2 elevark), den vigtigste aktivitet senest 25 minutter før slut, "Hvad kan vi fjerne?" ved ændringer og materiale, der ikke ligner AI. `klasseledelse-planlaeg-lektion` og `klasseledelse-vurder-plan` tæller planen mod budgettet. `dida-plan` laver ét trin pr. fase.
+
 ### klasseledelse 1.5.0 (november 2026)
 - Nye materialeregler i `klasseledelse-planlaeg-lektion`: elevark i klassisk stil uden etiketter, navnelinjer og andet, der ligner noget AI-lavet, printfiler delt efter modtager, en lærerpakke på højst 4 sider med drejebog og facit, og et tjek af, at opgaverne kan løses med teksterne.
 

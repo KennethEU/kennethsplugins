@@ -4,6 +4,9 @@ Læses ved Gate 3. Lav kun det, læreren har sagt ja til. Elevark og lærerpakke
 
 ## Før du laver noget
 
+- Følg "Enkelhed før aktivering" i principperne: højst 2 elevark pr. modul, ingen klippeark, medmindre læreren beder om det, og lærerens egne ord.
+- Tilbyd, at læreren selv skriver eller retter instruktionerne, før de printes.
+
 - Ved du ikke, hvilke tekster der er lektie, og hvilke der læses i timen, så spørg.
 - Kører planen i flere klasser, så tjek, at opgaver, der bygger på forløbet, passer til hver klasses forløb.
 
@@ -50,7 +53,7 @@ Del materialet i filer efter, hvem der får det, så læreren kan printe hver fi
 1. **Alle elever:** dobbeltsidet, ét pr. elev. Saml det, alle skal have, på samme ark, fx skemaet forrest og skrivearket bagpå.
 2. **Ark i varianter**, fx ekspertkort A, B og C: én side pr. variant, enkeltsidet, så læreren printer det antal, der skal bruges af hver.
 3. **Pr. gruppe:** dobbeltsidet, hvis den samme gruppe bruger begge sider, fx kædeark forrest og placeringsark bagpå.
-4. **Klip-ud-ark:** enkeltsidet og i sin egen fil, så bagsiden er tom.
+4. **Klip-ud-ark (kun hvis læreren beder om det):** enkeltsidet og i sin egen fil, så bagsiden er tom.
 5. **Til Lectio:** facit eller skema, som eleverne kan bruge i deres noter. Printes ikke.
 
 Nummerér filnavnene i den rækkefølge, med lærerpakken først: `0_Laererpakke`, `1_Alle_elever` og så videre. Spring de numre over, planen ikke bruger.
@@ -71,4 +74,4 @@ Nummerér filnavnene i den rækkefølge, med lærerpakken først: `0_Laererpakke
 
 - Kan alle opgaver løses med lektien og den tekst, der læses i timen? Markér huller, fx at en tekst kun nævner to af tre elementer.
 - Har du teksten, så tæl ord, og regn læsetiden ud med ca. 150 ord i minuttet. Det er en arbejdsregel. Har du ikke teksten, så anslå ikke læsetid.
-- Er ekspertdele og andre parallelle dele nogenlunde lige lange?
+- Tager ekspertdele og andre parallelle dele nogenlunde lige lang tid? De må gerne se forskellige ud, så de ikke virker AI-lavede.

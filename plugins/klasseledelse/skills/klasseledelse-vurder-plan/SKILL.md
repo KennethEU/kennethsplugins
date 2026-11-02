@@ -46,9 +46,10 @@ Spørg kun om det, der mangler:
 
 ### Analyse
 
-3. **Lav deltagelseskortet.** Giv hver fase en kode (A, G, E eller L). Mangler planen tider, så anslå dem og skriv tydeligt, at de er anslået.
-4. **Find det vigtigste.** Spørg: Hvor falder eleverne fra, og hvad betyder det for målet? Se på den længste strækning med L og E, på længere selvstændigt arbejde, på afslutningen og på, om aktiviteterne faktisk træner målet. En plan med mange A'er og lav faglig tyngde har et større problem end en plan med få, gode aktiviteter. Er planen tung at forberede eller for avanceret, så vej det med, og foreslå hellere at fjerne noget end at tilføje, jf. "Tid og planens vægt" i principperne.
-5. **Tjek skærpelserne:**
+3. **Tæl mod aktivitetsbudgettet** i principperne: faser, nye strukturer, skift, elevark og minutter. Er budgettet overskredet, er det det første, du nævner i den samlede vurdering. Spørg også: Kan klassen nå den vigtigste aktivitet, hvis alt tager 20 % længere tid?
+4. **Lav deltagelseskortet.** Giv hver fase en kode (A, G, E eller L). Mangler planen tider, så anslå dem og skriv tydeligt, at de er anslået.
+5. **Find det vigtigste.** Spørg: Hvor falder eleverne fra, og hvad betyder det for målet? Se på den længste strækning med L og E, på længere selvstændigt arbejde, på afslutningen og på, om aktiviteterne faktisk træner målet. En plan med mange A'er og lav faglig tyngde har et større problem end en plan med få, gode aktiviteter. Er planen tung at forberede eller for avanceret, så vej det med, og foreslå hellere at fjerne noget end at tilføje, jf. "Enkelhed før aktivering" i principperne.
+6. **Tjek skærpelserne:**
    - Tænker eleverne over det, de skal lære, og træner aktiviteterne målet?
    - Har de stærke elever noget at strække sig efter?
    - Hentes noget frem fra sidst, og er der en plan for at gentage det næste gang?
@@ -63,10 +64,10 @@ Spørg kun om det, der mangler:
    - Er modulet det sidste i forløbet, samler planen så op på hele forløbet og ikke kun på dagens tekst?
    - Holder tiderne mod det største hold, med overgange og slack, og ved eleverne, hvordan produktet kommer i deres noter?
    - Kan nogen gemme sig i gruppefaserne, eller sikrer turregler, at alle bidrager?
-6. **Skel mellem problem og valg.** Hvis noget strider mod bogen, men tjener formålet, så omtal det som et valg, og sig, hvad der skal til for at det virker. Tving ikke Direct Instruction ned over et bevidst åbent forløb. Spørg til formål og placering.
-7. **Tjek spørgsmålene.** Er arbejdsspørgsmålene mest på Huske/Forstå, så tilbyd at sende dem til `bloom-vurder-spoergsmaal`. Nævn det ikke bare som en svaghed. Se "Videresendelse til andre skills".
-8. **Tjek lektien.** Bygger planen på, at eleverne har læst, så følg afsnittet "Elever, der ikke har læst" i principperne.
-9. **Tjek aktiviteterne.** Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse`. Skal hele modulet bygges op om CL, så tilbyd `cl-forloeb`. Se "Videresendelse til andre skills".
+7. **Skel mellem problem og valg.** Hvis noget strider mod bogen, men tjener formålet, så omtal det som et valg, og sig, hvad der skal til for at det virker. Tving ikke Direct Instruction ned over et bevidst åbent forløb. Spørg til formål og placering.
+8. **Tjek spørgsmålene.** Er arbejdsspørgsmålene mest på Huske/Forstå, så tilbyd at sende dem til `bloom-vurder-spoergsmaal`. Nævn det ikke bare som en svaghed. Se "Videresendelse til andre skills".
+9. **Tjek lektien.** Bygger planen på, at eleverne har læst, så følg afsnittet "Elever, der ikke har læst" i principperne.
+10. **Tjek aktiviteterne.** Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse`. Skal hele modulet bygges op om CL, så tilbyd `cl-forloeb`. Se "Videresendelse til andre skills".
 
 ### Sådan afleverer du
 
@@ -98,7 +99,7 @@ Under tabellen: længste strækning med L og E, første A, hvordan timen slutter
 
 Spørg: "Hvilke af de tre ændringer skal med i den forbedrede plan? Jeg skriver kun dem, du vælger, ind, og resten af din plan står uændret."
 
-**VENT** på svar. Skriv derefter planen om med de valgte ændringer og intet andet, i samme drejebogsformat som `klasseledelse-planlaeg-lektion`. Vil læreren have mere end de tre med, så skal det siges:
+**VENT** på svar. Skriv derefter planen om med de valgte ændringer og intet andet, i samme drejebogsformat som `klasseledelse-planlaeg-lektion`. Vil læreren have mere end de tre med, så følg "Når læreren beder om ændringer" i principperne, og sig det:
 
 | Tid | Læreren gør og siger | Alle elever gør | Synligt tjek | Kode | Skærm |
 |-----|----------------------|-----------------|--------------|------|-------|
