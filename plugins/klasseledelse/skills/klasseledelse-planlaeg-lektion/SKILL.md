@@ -112,12 +112,12 @@ Afslut med: "Vil du justere noget, fx tempoet, en aktivitet eller tonen?"
 
 ### Gate 3: Tilbyd materialer (VENT på svar)
 
-Når læreren har godkendt planen, så tilbyd: "Skal jeg lave printklare elevark, et lærerfacit og slides til planen?" Nævn de ark, planen konkret bruger: skemaer, ekspertkort, kort til at klippe ud eller skriveark.
+Når læreren har godkendt planen, så tilbyd: "Skal jeg lave printklare elevark, en lærerpakke med drejebog og facit og slides til planen?" Nævn de ark, planen konkret bruger: skemaer, ekspertkort, kort til at klippe ud eller skriveark.
 
 **VENT** på svar. Siger læreren ja, så læs `${CLAUDE_SKILL_DIR}/references/materialer.md`, og:
 
 1. Lav kun det, læreren har sagt ja til, og kun de ark, planen bruger, så de kan printes uden redigering. Brug en dokumentskill som `docx`, hvis den er tilgængelig. Ellers skriv arkene i chatten, og sig det.
-2. Lav lærerfacittet som et særskilt dokument, så det ikke ryger med ud til eleverne.
+2. Lav lærerpakken som en særskilt fil med facit, så facit ikke ryger med ud til eleverne, og del elevarkene i printfiler efter modtager.
 3. Mærk hvert punkt i facittet:
    - **Fra teksten:** bygger på en tekst, du har læst.
    - **Ikke tjekket:** du har ikke kunnet læse teksten. Læreren skal selv tjekke punktet.
