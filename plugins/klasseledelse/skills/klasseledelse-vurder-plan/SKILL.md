@@ -67,7 +67,7 @@ Spørg kun om det, der mangler:
 7. **Skel mellem problem og valg.** Hvis noget strider mod bogen, men tjener formålet, så omtal det som et valg, og sig, hvad der skal til for at det virker. Tving ikke Direct Instruction ned over et bevidst åbent forløb. Spørg til formål og placering.
 8. **Tjek spørgsmålene.** Er arbejdsspørgsmålene mest på Huske/Forstå, så tilbyd at sende dem til `bloom-vurder-spoergsmaal`. Nævn det ikke bare som en svaghed. Se "Videresendelse til andre skills".
 9. **Tjek lektien.** Bygger planen på, at eleverne har læst, så følg afsnittet "Elever, der ikke har læst" i principperne.
-10. **Tjek aktiviteterne.** Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse`. Skal hele modulet bygges op om CL, så tilbyd `cl-forloeb`. Se "Videresendelse til andre skills".
+10. **Tjek aktiviteterne.** Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse`. Skal hele modulet bygges op om CL, så tilbyd `cl-forloeb`. Har planen en gruppefase på 20 minutter eller mere uden klar struktur for, hvem der gør hvad, så tilbyd `dagsorden-lav`. Se "Videresendelse til andre skills".
 
 ### Sådan afleverer du
 
@@ -110,6 +110,7 @@ Bevar lærerens eget indhold, formål og stemme. Tjek, at tiderne stadig summer,
 
 - Tilbyd altid videresendelse, og **VENT** på svar. Gå aldrig videre af dig selv, for læreren skal vide, at opgaven skifter.
 - Mangler planen en aktivitet, så er mulighederne `cl-find-oevelse` (én øvelse) og `cl-forloeb` (et helt modul med CL). Foreslå den, der passer, og sig kort hvorfor.
+- Har planen en lang gruppefase, hvor eleverne skal være selvkørende, så er muligheden `dagsorden-lav` (en udretterdagsorden med roller, individuel tænketid og fælles produkt til den fase).
 - Siger læreren ja, så start den anden skill, og giv den det, du allerede ved, så læreren ikke skal svare igen.
 - Er skillen ikke tilgængelig, så sig, at den hører til et plugin, der ikke ser ud til at være installeret, og fortsæt uden. Lad være med at gætte på, hvad den ville have svaret.
 

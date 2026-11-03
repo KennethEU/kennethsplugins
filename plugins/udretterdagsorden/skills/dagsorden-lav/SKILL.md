@@ -243,6 +243,10 @@ node "${CLAUDE_SKILL_DIR}/../dagsorden-principper/scripts/generate-dagsorden.js"
 
 Kør både A og B.
 
+### Efter levering
+
+Skal resten af modulet (hook, gennemgang, afslutning) vises på storskærm, så tilbyd `dida-plan`. Vil læreren hellere have én kort øvelse end en hel protokol, så tilbyd `cl-find-oevelse`. Er en skill ikke tilgængelig, så sig, at den hører til et plugin, der ikke ser ud til at være installeret, og fortsæt uden.
+
 ---
 
 ## Completion Status

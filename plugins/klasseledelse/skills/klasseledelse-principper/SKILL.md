@@ -193,6 +193,7 @@ Det er praksisråd, ikke forskning.
 - **Materialer:** `klasseledelse-planlaeg-lektion` tilbyder printklare elevark og en lærerpakke med facit, når planen er godkendt. Reglerne står i `klasseledelse-planlaeg-lektion/references/materialer.md`. Facit skal mærkes med, hvad der bygger på tekst, der er læst, og hvad der ikke er tjekket. `klasseledelse-vurder-plan` laver ikke selv materialer, men kan tilbyde at sende videre.
 - **Arbejdsspørgsmål:** hele sæt af arbejdsspørgsmål til en tekst hører til `bloom-spoergsmaal-til-tekst`.
 - **Aktiviteter:** skillene vælger enkle greb selv, men de har ikke et katalog over øvelser. Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse` for én øvelse eller `cl-forloeb` for et helt modul med CL.
+- **Gruppearbejde:** har planen en gruppefase på 20 minutter eller mere, hvor eleverne skal arbejde selv, så tilbyd `dagsorden-lav`. Den laver en udretterdagsorden med rollerne pas-på-tur, pas-på-tid og pas-på-doc, individuel tænketid, pause og fælles produkt, som eleverne følger på deres telefoner via dida.dk eller på papir. Den er til selve gruppefasen, ikke til hele modulet.
 - **Storskærm:** `dida-plan` laver en fil til dida.dk/plan, så køreplan og opgaver kan vises på storskærm ved siden af lærerens slides. Tilbyd den, når planen er godkendt.
 - **Undervisningsplanlæggeren:** tilbyd ikke at lægge planer ind i den eller andre systemer.
 

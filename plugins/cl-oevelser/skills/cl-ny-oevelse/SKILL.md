@@ -1,6 +1,6 @@
 ---
 name: cl-ny-oevelse
-description: "Udvikler en ny CL-øvelse (Cooperative Learning) ud fra SPIL-principperne, når kataloget ikke dækker behovet, eller omskriver lærerens egen aktivitet eller gruppearbejde, så det bliver til CL. Brug når læreren siger \"lav en ny CL-øvelse\", \"opfind en øvelse\", \"ingen af øvelserne passer\", \"kan du gøre mit gruppearbejde til CL\" eller \"lav den her aktivitet om, så alle deltager lige meget\". Brug ikke til at finde eller tilpasse en øvelse fra kataloget (cl-find-oevelse), til at vurdere en hel lektionsplan (klasseledelse-vurder-plan) eller til casespil."
+description: "Udvikler en ny CL-øvelse (Cooperative Learning) ud fra SPIL-principperne, når kataloget ikke dækker behovet, eller omskriver lærerens egen aktivitet eller gruppearbejde, så det bliver til CL. Brug når læreren siger \"lav en ny CL-øvelse\", \"opfind en øvelse\", \"ingen af øvelserne passer\", \"kan du gøre mit gruppearbejde til CL\" eller \"lav den her aktivitet om, så alle deltager lige meget\". Brug ikke til at finde eller tilpasse en øvelse fra kataloget (cl-find-oevelse), til at vurdere en hel lektionsplan (klasseledelse-vurder-plan), til en hel gruppearbejdsprotokol med roller og faser på 20 minutter eller mere (dagsorden-lav) eller til casespil."
 argument-hint: "[behov eller aktivitet]"
 allowed-tools:
   - Read

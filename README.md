@@ -90,6 +90,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.6.1, cl-oevelser 1.1.2 og udretterdagsorden 1.0.1 (november 2026)
+- `klasseledelse-planlaeg-lektion`, `klasseledelse-vurder-plan` og `cl-forloeb` tilbyder nu `dagsorden-lav`, når en plan har en gruppefase på 20 minutter eller mere, hvor eleverne skal arbejde selv. `cl-find-oevelse` og `cl-ny-oevelse` sender hele gruppearbejdsprotokoller videre til `dagsorden-lav`, og `dagsorden-lav` tilbyder omvendt `dida-plan` og `cl-find-oevelse` efter levering.
+
 ### udretterdagsorden 1.0.0, dida 1.0.3 og bloom 1.2.4 (november 2026)
 - Nyt plugin `udretterdagsorden` med skillene `dagsorden-lav` og `dagsorden-ide` og vidensbasen `dagsorden-principper`, flyttet hertil fra pluginet `uv` (`dag-dagsorden`, `dag-dagsorden-ide` og `udretterdagsorden`). Dagsordenen er en selvkørende protokol til gruppearbejde med rollerne pas-på-tur, pas-på-tid og pas-på-doc, individuel tænketid, pause og fælles produkt, og leveres som JSON til dida.dk/d/ eller som Word-dokument. Stierne går nu via `${CLAUDE_SKILL_DIR}`, henvisningerne til `uv` er væk, beskrivelserne har fået "Brug ikke til", og Word-scriptet har sin egen `package.json`. `dida-plan`, `bloom-planlaeg-time` og `bloom-spoergsmaalsregler` henviser nu til `dagsorden-lav`.
 
