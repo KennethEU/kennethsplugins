@@ -10,10 +10,11 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 | [`klasseledelse`](plugins/klasseledelse) | Planlægning og vurdering af lektioner, så alle elever deltager, holdt op mod forskningen | 3 |
 | [`cl-oevelser`](plugins/cl-oevelser) | Inspirationskatalog med CL-øvelser: find og tilpas, udvikl nye og kombinér til forløb, holdt op mod SPIL-principperne | 4 |
 | [`dida`](plugins/dida) | Lektionsplan som JSON-fil til storskærmsvisning på dida.dk/plan | 1 |
+| [`udretterdagsorden`](plugins/udretterdagsorden) | Udretterdagsordener til gruppearbejde: selvkørende protokol med roller, individuel tænketid, pause og fælles produkt, til dida.dk eller Word, med idésparring om struktur | 3 |
 
 ## Kommandoer
 
-Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `blooket-`, `klasseledelse-`, `cl-`), så de står samlet i menuen. Skriv `/casespil`, `/bloom`, `/blooket`, `/klasseledelse` eller `/cl` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
+Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `blooket-`, `klasseledelse-`, `cl-`, `dagsorden-`), så de står samlet i menuen. Skriv `/casespil`, `/bloom`, `/blooket`, `/klasseledelse`, `/cl` eller `/dagsorden` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
 
 | Kommando | Hvad den gør |
 |----------|--------------|
@@ -38,8 +39,10 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 | `/cl-oevelser:cl-ny-oevelse` | Udvikler en ny CL-øvelse, eller gør en aktivitet til CL |
 | `/cl-oevelser:cl-forloeb` | Kombinerer CL-øvelser til et modul eller forløb |
 | `/dida:dida-plan` | Omsætter en plan til en fil til dida.dk/plan |
+| `/udretterdagsorden:dagsorden-lav` | Udretterdagsorden til gruppearbejde ud fra emne, fag og tid, til dida.dk eller Word |
+| `/udretterdagsorden:dagsorden-ide` | Foreslår 2 til 3 strukturer for gruppearbejdet og laver derefter dagsordenen |
 
-`casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket), `klasseledelse-principper` (klasseledelse) og `cl-principper` (CL) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
+`casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket), `klasseledelse-principper` (klasseledelse), `cl-principper` (CL) og `dagsorden-principper` (udretterdagsorden) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
 
 ## Installation
 
@@ -54,6 +57,7 @@ claude plugin install blooket@kennethsplugins
 claude plugin install klasseledelse@kennethsplugins
 claude plugin install cl-oevelser@kennethsplugins
 claude plugin install dida@kennethsplugins
+claude plugin install udretterdagsorden@kennethsplugins
 ```
 
 ## Struktur
@@ -69,7 +73,8 @@ kennethsplugins/
     ├── blooket/
     ├── klasseledelse/
     ├── cl-oevelser/
-    └── dida/
+    ├── dida/
+    └── udretterdagsorden/
 ```
 
 ## Tests
@@ -81,8 +86,12 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 - Skillene i `bloom` og `blooket` er flyttet hertil fra pluginet `uv`. Har du begge installeret, ligger skillene to steder og kan udløse hinanden. Fjern dem fra `uv`, når du har afprøvet de nye.
 - Pluginsene bruger ingen MCP-forbindelser. De tidligere kald til en undervisningsdatabase er fjernet.
 - `blooket` bruger scriptet `generate_csv.py`, som tjekker spørgsmålene og skriver Blooket-filen. Test det med `python3 plugins/blooket/tests/test_generate_csv.py`.
+- `udretterdagsorden` tjekker dagsordenen med `validate-dagsorden.py` og laver Word-udgaven med `generate-dagsorden.js`, som kræver npm-pakken `docx` (kør `npm install` i `plugins/udretterdagsorden/skills/dagsorden-principper/scripts`).
 
 ## Changelog
+
+### udretterdagsorden 1.0.0, dida 1.0.3 og bloom 1.2.4 (november 2026)
+- Nyt plugin `udretterdagsorden` med skillene `dagsorden-lav` og `dagsorden-ide` og vidensbasen `dagsorden-principper`, flyttet hertil fra pluginet `uv` (`dag-dagsorden`, `dag-dagsorden-ide` og `udretterdagsorden`). Dagsordenen er en selvkørende protokol til gruppearbejde med rollerne pas-på-tur, pas-på-tid og pas-på-doc, individuel tænketid, pause og fælles produkt, og leveres som JSON til dida.dk/d/ eller som Word-dokument. Stierne går nu via `${CLAUDE_SKILL_DIR}`, henvisningerne til `uv` er væk, beskrivelserne har fået "Brug ikke til", og Word-scriptet har sin egen `package.json`. `dida-plan`, `bloom-planlaeg-time` og `bloom-spoergsmaalsregler` henviser nu til `dagsorden-lav`.
 
 ### cl-oevelser 1.1.0 (november 2026)
 - Kataloget er udvidet fra 15 til 29 øvelser med strukturer til start, beregning, tekstarbejde, holdning og argumentation. De nye står adskilt fra Kenneths egne, med kilder og tydelig markering af, hvad der ikke er afprøvet eller bekræftet.

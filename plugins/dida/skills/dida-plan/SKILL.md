@@ -1,6 +1,6 @@
 ---
 name: dida-plan
-description: "Omsætter en lektions- eller modulplan til en JSON-fil, der kan uploades på dida.dk/plan og vises på storskærm med køreplan, opgaver og timer, som eleverne følger i de elevaktive faser. Planen bruges ved siden af lærerens slides, som stadig bærer fagbegreber, figurer og billeder. Brug når læreren siger \"lav en dida-plan\", \"lav planen til dida\", \"vis planen på storskærm\", \"JSON til dida.dk/plan\", eller siger ja til tilbuddet fra en anden skill. Brug ikke til at lave selve planen fra bunden (klasseledelse-planlaeg-lektion), til PowerPoint-slides eller til live gruppearbejde på elevernes telefoner (Dagsorden på dida.dk)."
+description: "Omsætter en lektions- eller modulplan til en JSON-fil, der kan uploades på dida.dk/plan og vises på storskærm med køreplan, opgaver og timer, som eleverne følger i de elevaktive faser. Planen bruges ved siden af lærerens slides, som stadig bærer fagbegreber, figurer og billeder. Brug når læreren siger \"lav en dida-plan\", \"lav planen til dida\", \"vis planen på storskærm\", \"JSON til dida.dk/plan\", eller siger ja til tilbuddet fra en anden skill. Brug ikke til at lave selve planen fra bunden (klasseledelse-planlaeg-lektion), til PowerPoint-slides eller til en udretterdagsorden til gruppearbejde på elevernes telefoner (dagsorden-lav i pluginet udretterdagsorden)."
 argument-hint: "[plan eller drejebog]"
 allowed-tools:
   - Read

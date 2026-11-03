@@ -1,0 +1,103 @@
+{
+  "title": "Politisk kommunikation: priming, framing og diskurs",
+  "topic": "Politisk kommunikation: priming, framing og diskurs",
+  "subject": "Samfundsfag",
+  "klasse": "1muse",
+  "totalTime": 80,
+  "roles": [
+    {
+      "navn": "Pas-på-tur",
+      "beskrivelse": "Den der senest var i udlandet – ordstyrer, sikrer alle præsenterer på tur"
+    },
+    {
+      "navn": "Pas-på-tid",
+      "beskrivelse": "Den der tidligst stod op i dag – tidsstyrer, giver besked ved halvtid og udløb"
+    },
+    {
+      "navn": "Pas-på-doc",
+      "beskrivelse": "Den der har kortest fornavn – referent, skriver stikord i det fælles dokument"
+    }
+  ],
+  "steps": [
+    {
+      "heading": "Valg af roller + opret dokument",
+      "type": "normal",
+      "duration": 3,
+      "instruction": "1) Fordel roller efter kriterierne ovenfor.\n2) Pas-på-doc opretter et Google Doc og deler med gruppen og læreren.",
+      "note": null,
+      "docInstruction": null,
+      "requiresAnswer": false,
+      "groupInstructions": null
+    },
+    {
+      "heading": "Individuel forberedelse: arbejdsspørgsmål",
+      "type": "individuel",
+      "duration": 10,
+      "instruction": "I fordeler arbejdsspørgsmålene:\nPas-på-tur: spørgsmål 1 + 2\nPas-på-tid: spørgsmål 3 + 4\nPas-på-doc: spørgsmål 5\n\nBrug teksten fra 7.4 og skriv svar i stikord på papir eller i jeres eget dokument. Arbejd i tavshed.",
+      "note": "I skal kunne forklare jeres svar mundtligt bagefter.",
+      "docInstruction": null,
+      "requiresAnswer": false,
+      "groupInstructions": null
+    },
+    {
+      "heading": "Præsentation på tur: arbejdsspørgsmål",
+      "type": "normal",
+      "duration": 12,
+      "instruction": "I præsenterer jeres svar på tur i rækkefølgen 1–5.\nDe andre lytter og stiller opklarende spørgsmål.",
+      "note": "Hvert svar skal give mening for én, der ikke har læst teksten.",
+      "docInstruction": "Pas-på-doc skriver alle svar i stikord i det fælles doc under overskriften \u201CArb.spørgsmål\u201D.",
+      "requiresAnswer": false,
+      "groupInstructions": null
+    },
+    {
+      "heading": "Pause",
+      "type": "pause",
+      "duration": 5,
+      "instruction": "Hyggesnak, toilet, hent vand.",
+      "note": null,
+      "docInstruction": null,
+      "requiresAnswer": false,
+      "groupInstructions": null
+    },
+    {
+      "heading": "Case: fordeling + individuel analyse",
+      "type": "individuel",
+      "duration": 15,
+      "instruction": "Åbn Lilleskole-PDF'en. Læs s. 1–6 i tavshed. Fordel herefter case-delene:\n\nPas-på-tur → BILLEDE: Tag screenshot af forsidebilledet. Sæt det ind i doc. Skriv kort analyse: stemning, hvorfor dette billede, sammenhæng med navnet.\n\nPas-på-tid → PRIMING: Find sætninger hvor S forsøger at skabe en følelse af, at noget er galt. Sæt dem ind i doc under overskriften \u201CPriming\u201D. Skriv en kort analyse: hvilken følelse skal modtageren sidde med?\n\nPas-på-doc → FRAMING: Find sætninger hvor S beskriver deres forslag. Sæt dem ind i doc under overskriften \u201CFraming\u201D. Skriv en kort analyse: hvad kendetegner diskursen?",
+      "note": "Alle skriver direkte i det fælles doc i denne fase.",
+      "docInstruction": null,
+      "requiresAnswer": false,
+      "groupInstructions": null
+    },
+    {
+      "heading": "Matrix",
+      "type": "normal",
+      "duration": 13,
+      "instruction": "Find den person fra nabogruppen, der har samme case-del som dig (billede finder billede, priming finder priming osv.).\n\n1) Præsentér hvad du har fundet og skrevet.\n2) Sammenlign: Har den anden fundet noget, du har overset?\n3) Ret og tilføj i dit eget doc, hvis du får nye pointer.",
+      "note": "Pas-på-tid holder stadig øje med tiden fra stamgruppen.",
+      "docInstruction": null,
+      "requiresAnswer": false,
+      "groupInstructions": null
+    },
+    {
+      "heading": "Stamgruppe: præsentation + sammenskrivning",
+      "type": "normal",
+      "duration": 15,
+      "instruction": "Gå tilbage til jeres stamgruppe.\nI præsenterer på tur jeres case-del:\n1) Hvad fandt du? 2) Hvad tilføjede du efter matrix?\nMens I præsenterer, læser de andre med i doc og stiller spørgsmål.",
+      "note": null,
+      "docInstruction": "Pas-på-doc tjekker, at alle tre afsnit (billede, priming, framing) er skrevet ind og giver mening.",
+      "requiresAnswer": false,
+      "groupInstructions": null
+    },
+    {
+      "heading": "Kvalitetstjek + afslutning",
+      "type": "normal",
+      "duration": 7,
+      "instruction": "Læs hele dokumentet igennem i fællesskab. Tjek:\n1) Er der svar på alle 5 arbejdsspørgsmål?\n2) Er billede, priming og framing-afsnittene komplette?\n3) Giver det mening for én, der ikke kender casen?\nRet det, der mangler.",
+      "note": null,
+      "docInstruction": null,
+      "requiresAnswer": false,
+      "groupInstructions": null
+    }
+  ]
+}

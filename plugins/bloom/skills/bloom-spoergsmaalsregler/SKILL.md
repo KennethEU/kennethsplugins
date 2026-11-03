@@ -1,6 +1,6 @@
 ---
 name: bloom-spoergsmaalsregler
-description: "Regler og referencer til Bloom-skillene: Blooms reviderede taksonomi, forbudte formuleringer og verber, taxonomy table og kvalitetstjek af arbejdsspørgsmål til fagtekster i STX. Læses af bloom-spoergsmaal-til-tekst, bloom-lektiespoergsmaal, bloom-skabe-opgaver, bloom-vurder-spoergsmaal og bloom-planlaeg-time. Brug direkte, når læreren spørger, hvordan spørgsmål til en tekst bør formuleres, eller når ingen af de andre bloom-skills passer. Brug ikke til quizzer (pluginet blooket), mundtlige eksamensspørgsmål med bilag eller gruppearbejdsdagsordener."
+description: "Regler og referencer til Bloom-skillene: Blooms reviderede taksonomi, forbudte formuleringer og verber, taxonomy table og kvalitetstjek af arbejdsspørgsmål til fagtekster i STX. Læses af bloom-spoergsmaal-til-tekst, bloom-lektiespoergsmaal, bloom-skabe-opgaver, bloom-vurder-spoergsmaal og bloom-planlaeg-time. Brug direkte, når læreren spørger, hvordan spørgsmål til en tekst bør formuleres, eller når ingen af de andre bloom-skills passer. Brug ikke til quizzer (pluginet blooket), mundtlige eksamensspørgsmål med bilag eller gruppearbejdsdagsordener (dagsorden-lav)."
 user-invocable: false
 allowed-tools:
   - Read

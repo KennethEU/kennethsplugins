@@ -1,0 +1,8 @@
+{
+  "name": "dagsorden-scripts",
+  "private": true,
+  "description": "Afhængigheder til generate-dagsorden.js (Word-udgave af en udretterdagsorden)",
+  "dependencies": {
+    "docx": "^9.5.1"
+  }
+}
