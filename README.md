@@ -11,6 +11,7 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 | [`cl-oevelser`](plugins/cl-oevelser) | Inspirationskatalog med CL-øvelser: find og tilpas, udvikl nye og kombinér til forløb, holdt op mod SPIL-principperne | 4 |
 | [`dida`](plugins/dida) | Lektionsplan som JSON-fil til storskærmsvisning på dida.dk/plan | 1 |
 | [`udretterdagsorden`](plugins/udretterdagsorden) | Udretterdagsordener til gruppearbejde: selvkørende protokol med roller, individuel tænketid, pause og fælles produkt, til dida.dk eller Word, med idésparring om struktur | 3 |
+| [`modulplanlaegger`](plugins/modulplanlaegger) | Forløb og modulrækker ud fra didaktisk viden: mål, progression, evaluering og fagdidaktik, med videresendelse til de andre plugins | 2 |
 
 ## Kommandoer
 
@@ -41,8 +42,9 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 | `/dida:dida-plan` | Omsætter en plan til en fil til dida.dk/plan |
 | `/udretterdagsorden:dagsorden-lav` | Udretterdagsorden til gruppearbejde ud fra emne, fag og tid, til dida.dk eller Word |
 | `/udretterdagsorden:dagsorden-ide` | Foreslår 2 til 3 strukturer for gruppearbejdet og laver derefter dagsordenen |
+| `/modulplanlaegger:didaktik-planlaeg-forloeb` | Planlægger et forløb eller en modulrække og sender modulerne videre til de andre skills |
 
-`casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket), `klasseledelse-principper` (klasseledelse), `cl-principper` (CL) og `dagsorden-principper` (udretterdagsorden) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
+`casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket), `klasseledelse-principper` (klasseledelse), `cl-principper` (CL), `dagsorden-principper` (udretterdagsorden) og `didaktik-principper` (modulplanlægger) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
 
 ## Installation
 

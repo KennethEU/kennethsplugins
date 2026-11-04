@@ -50,6 +50,13 @@
       "source": "./plugins/udretterdagsorden",
       "description": "Udretterdagsordener til gruppearbejde: selvkørende trin-for-trin-protokoller med roller, individuel tænketid, pause og fælles produkt, til dida.dk eller Word, med idésparring om struktur.",
       "version": "1.0.1"
+    },
+    {
+      "name": "modulplanlaegger",
+      "displayName": "Modulplanlægger",
+      "source": "./plugins/modulplanlaegger",
+      "description": "Planlægning af forløb og modulrækker ud fra didaktisk viden: mål, progression, arbejdsformer, evaluering og fagdidaktik, med videresendelse til de andre plugins.",
+      "version": "0.1.0"
     }
   ]
 }
