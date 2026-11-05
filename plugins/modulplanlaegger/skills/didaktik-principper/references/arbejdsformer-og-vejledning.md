@@ -20,6 +20,12 @@ Målet afgør formen. Ingen arbejdsform er bedst i sig selv. Et forløb veksler 
 
 Elever oplever formidlingen som vigtig, når den lykkes: den giver overblik og tryghed. Men den skal afløses af bearbejdning, ellers bliver læringen passiv.
 
+## Styring og forhåndsviden
+
+Nybegyndere lærer mere af tydelig, vejledt instruktion end af at finde ud af det selv. Fordelen aftager, når eleverne har meget forhåndsviden (**Stærk** som princip). Det taler for formidling og høj styring tidligt i et forløb og ved nyt og svært stof, og for mere elevstyring senere. Problem- og undersøgelsesorienteret arbejde er stadig legitimt, men kræver stilladsering og tydelig opsamling (**Moderat**).
+
+Direct Instruction i bogen *Fra monsterelever til mønsterelever* bygger mest på færdigskrevne programmer til grundskolen. Brug principperne, ikke programmerne. Kilder og mærker står i `klasseledelse-principper/references/evidens.md`.
+
 ## De fire læringsrum (Steen Beck)
 
 To akser: **høj eller lav styring** (orden, deduktiv, eller kaos, induktiv) og **nærhed eller afstand** mellem lærer og elev.

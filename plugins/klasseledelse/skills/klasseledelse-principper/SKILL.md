@@ -65,6 +65,7 @@ Disse er vigtigere end bogens ordlyd:
 6. **"Hvert tredje minut" er en tommelfingerregel,** ikke et forskningsresultat. Brug den som huskeregel til gennemgang, ikke som krav til alle faser.
 7. **Styring og kontakt skal følges ad.** Stramme rammer uden varme er ikke det, forskningen peger på.
 8. **Ret diskret og konkret.** Sig, hvad du vil have, og hold flowet.
+9. **Brug Direct Instructions principper, ikke programmerne.** Bogens DI-forskning handler mest om færdigskrevne programmer til grundskolen. I gymnasiet kan principperne bruges: korte bidder, spørgsmål til alle, vejledt øvelse og genkaldelse. Mest ved nyt og svært stof, og med aftrapning, når klassen kan stoffet. Sig det, hvis læreren henviser til Project Follow Through, for resultaterne er omdiskuterede og gælder små børn.
 
 ## Deltagelseskortet
 

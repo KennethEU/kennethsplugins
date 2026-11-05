@@ -92,6 +92,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.7.0 og modulplanlaegger 0.1.1 (november 2026)
+- Direct Instruction er gennemgået: metaanalysen fra 2018, debatten om Project Follow Through, vejledt instruktion og kritikken af Rosenshines principper står nu med evidensmærker i `evidens.md`. Principperne har en ny skærpelse: brug DI's principper, ikke programmerne. `didaktik-principper` har et kort afsnit om styring og forhåndsviden.
+
 ### klasseledelse 1.6.1, cl-oevelser 1.1.2 og udretterdagsorden 1.0.1 (november 2026)
 - `klasseledelse-planlaeg-lektion`, `klasseledelse-vurder-plan` og `cl-forloeb` tilbyder nu `dagsorden-lav`, når en plan har en gruppefase på 20 minutter eller mere, hvor eleverne skal arbejde selv. `cl-find-oevelse` og `cl-ny-oevelse` sender hele gruppearbejdsprotokoller videre til `dagsorden-lav`, og `dagsorden-lav` tilbyder omvendt `dida-plan` og `cl-find-oevelse` efter levering.
 

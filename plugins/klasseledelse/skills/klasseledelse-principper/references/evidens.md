@@ -50,6 +50,19 @@ Meget af forskningen er fra grundskolen eller universitetet. Gymnasiet ligger im
 - Bogen placerer bøvlet sidst i et forløb. En metaanalyse fandt derimod en moderat fordel ved at lade elever forsøge sig med et problem før instruktionen (g = 0,36), større når forsøget er designet efter Productive Failure-principperne. Fordelen gælder mere for ældre elever, og det meste er fra matematik og naturfag. Forfatterne er også fortalere for metoden. **Omdiskuteret.** [Sinha og Kapur 2021](https://www.x-mol.com/paper/1406031499744456704), [omtale](https://phys.org/news/2021-09-productively-wiser.html)
 - Konsekvens: begge rækkefølger er legitime i gymnasiet. Problem først kræver, at forsøget er overkommeligt, at alle kan komme i gang, og at der følger tydelig instruktion bagefter.
 
+### Direct Instruction og eksplicit undervisning (bogens kapitel 3)
+
+Gennemgået november 2026 ud fra artiklernes resuméer og omtaler. Fuldteksterne er ikke læst.
+
+- **To ting med samme navn.** "DI" er Engelmanns færdigskrevne programmer, mest til læsning, matematik og sprog i grundskolen. "Direkte" eller eksplicit undervisning er generelle principper som korte bidder, hyppige spørgsmål til alle, vejledt øvelse og genkaldelse, fx hos Rosenshine. Det er kun principperne, der kan overføres til gymnasiet. Bogen skelner ikke altid.
+- **Metaanalysen.** 328 studier fra 1966 til 2016 fandt positive effekter af DI-programmerne i alle akademiske fag og kaldte dem moderate til store. Effekterne holdt sig over tid. Effekten på affektive udfald, som selvtillid, var ikke statistisk sikker i metaregressionerne. Aldersfordelingen er ikke tjekket her, og forfatterne er tilknyttet DI's eget institut. **Stærk** for DI-programmer i grundskolen, **Moderat** for principperne i gymnasiet. [Stockard m.fl. 2018](https://scholarsbank.uoregon.edu/items/9c5db747-52be-4bd8-8771-b05d0f7c0b01/full)
+- **Project Follow Through** (1967 til 1977, børn i 0. til 3. klasse). DI klarede sig bedst i den officielle evaluering. En kritik fra 1978 fandt svage mål og statistik og ingen overbevisende forskel mellem modellerne. Samme tidsskrift bragte svar, der fastholdt hovedresultaterne, og en senere genanalyse fandt igen en fordel for DI i basale færdigheder. Variationen mellem skoler med samme model var større end mellem modellerne. **Omdiskuteret** som bevis for DI, og målgruppen ligger langt fra gymnasiet. [House m.fl. 1978](https://www.harvardeducationalreview.org/content/48/2/128), [svar fra Anderson m.fl.](https://scilit.com/publications/9fd99fdaf7f9dec1a2699b3df6cea90b), [omtale af debatten](https://alfiekohn.org/?p=527)
+- **Bogens påstand om selvtillid.** At DI også gav bedre selvtillid, står i bogen, men metaanalysen fandt ikke en sikker effekt på affektive udfald. Brug det ikke som fakta. **Omdiskuteret.**
+- **Vejledning til nybegyndere.** Minimal vejledning er mindre effektiv for nybegyndere end stærk, vejledt instruktion. Fordelen aftager, når eleverne har meget forhåndsviden. **Stærk** som princip. [Kirschner, Sweller og Clark 2006](https://caseresources.hsph.harvard.edu/resource/why-minimal-guidance-during-instruction-does-not-work)
+- **Modsvaret.** Problembaseret og undersøgende undervisning med meget stilladsering er ikke det samme som minimal vejledning og har også andre mål, fx faglige arbejdsmåder og samarbejde. **Moderat.** [Hmelo-Silver, Duncan og Chinn 2007](https://bibsonomy.org/bibtex/26b900b0d98149b52011cd1efb9827fe3/tobold)
+- **Kritik af Rosenshines principper.** Hvert princip bygger på to til tre, mest ældre, kilder og er ofte vagt formuleret. Kritikerne kalder dem ikke forkerte, men opfordrer til at bruge dem som god praksis og ikke som et bevist system. Der er ikke fundet studier af netop principperne i gymnasiet. **Praksis**, med støtte i forskningen om genkaldelse og vejledning. [Bokhove i TES](https://www.tes.com/magazine/teaching-learning/general/why-rosenshines-principles-arent-all-they-seem), [Chartered College](https://my.chartered.college/impact_article/criticality-in-evidence-informed-teaching-expansive-learning-with-rosenshine/)
+- **Konsekvens:** brug DI's principper, når stoffet er nyt og svært, og aftrap styringen, når klassen kan stoffet. Bøvl, undersøgelse og større frihed er stadig legitime valg, men kræver stilladsering og tydelig opsamling.
+
 ### Repetition (princip 8)
 
 - At hente stof frem fra hukommelsen giver bedre læring end at genlæse, med en middel effekt. Tallene varierer mellem kilderne, så angiv ikke præcise størrelser. **Stærk.** [Adesope m.fl. 2017](https://doi.org/10.3102/0034654316689306)
@@ -97,6 +110,6 @@ Meget af forskningen er fra grundskolen eller universitetet. Gymnasiet ligger im
 
 Disse må ikke fremstilles som dokumenterede:
 
-- Project Follow Through og bogens øvrige referencer, da bogens noter og s. 182 til 198 ikke er gennemgået.
-- En faglig kritik af Rosenshines principper.
+- Fuldteksterne om Project Follow Through og metaanalysens aldersfordeling. Resuméerne og omtalerne er gennemgået, se afsnittet om Direct Instruction.
+- Bogens øvrige referencer, da bogens noter og s. 182 til 198 ikke er gennemgået.
 - Danske studier af computere i stx-klasser ud over dem, EVA refererer.

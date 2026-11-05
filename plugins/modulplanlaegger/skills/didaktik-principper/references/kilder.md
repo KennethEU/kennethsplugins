@@ -79,4 +79,4 @@ Artiklerne fra tidsskriftet POLIS (15 PDF'er, heraf 5 hele numre) er gennemgået
 
 - **Erhvervsøkonomi** har intet materiale i mapperne. Der er derfor ingen fagfil.
 - **Gældende regler:** alt om bekendtgørelser, læreplaner, spørgeord og prøveformer er fra 2010 til 2012 og skal tjekkes mod emu.dk.
-- **Nyere forskning** om fx feedback, hentning fra hukommelsen og kognitiv belastning findes ikke i mapperne. Noget af det står i `klasseledelse-principper/references/evidens.md`.
+- **Nyere forskning** om fx feedback, hentning fra hukommelsen og kognitiv belastning findes ikke i mapperne. Noget af det står i `klasseledelse-principper/references/evidens.md`, herunder Direct Instruction og vejledt instruktion.
