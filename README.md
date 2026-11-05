@@ -92,6 +92,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.8.0 og modulplanlaegger 0.1.2 (november 2026)
+- Forskning om styring og aktivitet fra 15 år og op (PISA, metaanalyser om opdagelse og vejledning, universitetsstudier) står nu i `evidens.md`. Ny skærpelse 10: ren forelæsning og opdagelse uden hjælp er de svage yderpunkter. Planlaeg-lektion begrunder rækkefølgen med evidensmærke, vurder-plan nævner yderpunkterne, og forløbsplanlæggeren aftrapper styringen over forløbet.
+
 ### klasseledelse 1.7.0 og modulplanlaegger 0.1.1 (november 2026)
 - Direct Instruction er gennemgået: metaanalysen fra 2018, debatten om Project Follow Through, vejledt instruktion og kritikken af Rosenshines principper står nu med evidensmærker i `evidens.md`. Principperne har en ny skærpelse: brug DI's principper, ikke programmerne. `didaktik-principper` har et kort afsnit om styring og forhåndsviden.
 

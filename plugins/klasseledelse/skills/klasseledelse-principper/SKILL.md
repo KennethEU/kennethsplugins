@@ -66,6 +66,7 @@ Disse er vigtigere end bogens ordlyd:
 7. **Styring og kontakt skal følges ad.** Stramme rammer uden varme er ikke det, forskningen peger på.
 8. **Ret diskret og konkret.** Sig, hvad du vil have, og hold flowet.
 9. **Brug Direct Instructions principper, ikke programmerne.** Bogens DI-forskning handler mest om færdigskrevne programmer til grundskolen. I gymnasiet kan principperne bruges: korte bidder, spørgsmål til alle, vejledt øvelse og genkaldelse. Mest ved nyt og svært stof, og med aftrapning, når klassen kan stoffet. Sig det, hvis læreren henviser til Project Follow Through, for resultaterne er omdiskuterede og gælder små børn.
+10. **De svage yderpunkter er ren forelæsning og opdagelse uden hjælp.** Fra 15 år og op peger forskningen på lærerstyring med aktivitet undervejs. Problem først virker kun med stilladsering og tydelig opsamling. Elever kan opleve aktiv undervisning som mindre lærerig, selvom de lærer mere, så sig fra start, hvorfor I gør det.
 
 ## Deltagelseskortet
 

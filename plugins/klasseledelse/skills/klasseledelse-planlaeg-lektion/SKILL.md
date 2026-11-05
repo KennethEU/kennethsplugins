@@ -41,7 +41,7 @@ Re-ground: "Vi er ved **Gate 2**. Her er skelettet, før jeg skriver drejebogen.
 
 Træf først disse to valg og begrund dem kort:
 
-- **Rækkefølge:** instruktion først eller problem først, ud fra forkundskab, stoffets sværhedsgrad og klassen. Anbefal ét.
+- **Rækkefølge:** instruktion først eller problem først, ud fra forkundskab, stoffets sværhedsgrad og klassen. Anbefal ét, og begrund det med skærpelse 4, 9 og 10 i principperne og ét evidensmærke. Vælger du problem først, så skriv, hvordan forsøget stilladseres, og hvor opsamlingen ligger. Er gennemgangen lang, så skriv, hvor aktiviteten ligger undervejs.
 - **Model:** skal eleverne se et eksemplarisk produkt? Vis det ved nyt, og aftrap det, når klassen kender genren.
 
 Vis derefter skelettet med koder fra deltagelseskortet, og skriv forklaringen af koderne lige over tabellen med standardlinjen fra principperne:
@@ -92,7 +92,7 @@ Efter tabellen:
 - **Deltagelseskort:** forklaring af koderne, rækkefølgen af koder, længste strækning med L og E og antal trygge deltagelser.
 - **Planens vægt:** optælling mod aktivitetsbudgettet og anslået forberedelse. Skriv, at tiderne er regnet igennem og ikke afprøvet.
 - **Materialer:** hvad der skal forberedes, fx slides og noteark. Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse` (én øvelse) eller `cl-forloeb` (et helt modul med CL). Har planen en gruppefase på 20 minutter eller mere, hvor eleverne skal arbejde selv, så tilbyd `dagsorden-lav` (en udretterdagsorden med roller og faser til den fase). Tilbyd og **VENT** på svar. Er skillen ikke tilgængelig, så sig, at den hører til et plugin, der ikke ser ud til at være installeret, og fortsæt uden.
-- **Det kan du forvente:** én typisk reaktion fra eleverne, og hvordan du møder den, hvis formen er ny for klassen.
+- **Det kan du forvente:** én typisk reaktion fra eleverne, og hvordan du møder den, hvis formen er ny for klassen. Er planen mere aktiv, end klassen er vant til, så skriv en kort begrundelse til eleverne om, at det føles sværere, men giver mere læring (Moderat).
 
 ### Kvalitetstjek inden aflevering
 

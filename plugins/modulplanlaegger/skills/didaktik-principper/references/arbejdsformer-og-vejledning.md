@@ -22,7 +22,7 @@ Elever oplever formidlingen som vigtig, når den lykkes: den giver overblik og t
 
 ## Styring og forhåndsviden
 
-Nybegyndere lærer mere af tydelig, vejledt instruktion end af at finde ud af det selv. Fordelen aftager, når eleverne har meget forhåndsviden (**Stærk** som princip). Det taler for formidling og høj styring tidligt i et forløb og ved nyt og svært stof, og for mere elevstyring senere. Problem- og undersøgelsesorienteret arbejde er stadig legitimt, men kræver stilladsering og tydelig opsamling (**Moderat**).
+Nybegyndere lærer mere af tydelig, vejledt instruktion end af at finde ud af det selv. Fordelen aftager, når eleverne har meget forhåndsviden (**Stærk** som princip). Det taler for formidling og høj styring tidligt i et forløb og ved nyt og svært stof, og for mere elevstyring senere. Problem- og undersøgelsesorienteret arbejde er stadig legitimt, men kræver stilladsering og tydelig opsamling (**Moderat**). De svage yderpunkter er ren forelæsning og opdagelse uden hjælp. Det stærke er styring med aktivitet undervejs (**Moderat** fra 15 år og op).
 
 Direct Instruction i bogen *Fra monsterelever til mønsterelever* bygger mest på færdigskrevne programmer til grundskolen. Brug principperne, ikke programmerne. Kilder og mærker står i `klasseledelse-principper/references/evidens.md`.
 

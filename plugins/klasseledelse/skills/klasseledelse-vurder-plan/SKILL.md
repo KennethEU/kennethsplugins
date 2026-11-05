@@ -55,7 +55,7 @@ Spørg kun om det, der mangler:
    - Hentes noget frem fra sidst, og er der en plan for at gentage det næste gang?
    - Er hooken og historierne koblet til målet?
    - Skal eleverne læse tekst, mens læreren taler?
-   - Passer model og styring til, hvor meget klassen kan i forvejen?
+   - Passer model og styring til, hvor meget klassen kan i forvejen? Er nyt stof enten ren forelæsning eller opdagelse uden hjælp, så nævn det, jf. skærpelse 9 og 10 i principperne, med evidensmærke.
    - Er repetition reel genkaldelse?
    - Er skærmbrug tænkt ind i hver fase?
    - Kan en genert elev svare trygt, og er øverum markeret? Følg afsnittet "Sårbare elever", hvis læreren nævner en bestemt elev.
@@ -64,7 +64,7 @@ Spørg kun om det, der mangler:
    - Er modulet det sidste i forløbet, samler planen så op på hele forløbet og ikke kun på dagens tekst?
    - Holder tiderne mod det største hold, med overgange og slack, og ved eleverne, hvordan produktet kommer i deres noter?
    - Kan nogen gemme sig i gruppefaserne, eller sikrer turregler, at alle bidrager?
-7. **Skel mellem problem og valg.** Hvis noget strider mod bogen, men tjener formålet, så omtal det som et valg, og sig, hvad der skal til for at det virker. Tving ikke Direct Instruction ned over et bevidst åbent forløb. Spørg til formål og placering.
+7. **Skel mellem problem og valg.** Hvis noget strider mod bogen, men tjener formålet, så omtal det som et valg, og sig, hvad der skal til for at det virker. Tving ikke Direct Instruction ned over et bevidst åbent forløb, men sig, hvilken stilladsering og opsamling det kræver. Spørg til formål og placering.
 8. **Tjek spørgsmålene.** Er arbejdsspørgsmålene mest på Huske/Forstå, så tilbyd at sende dem til `bloom-vurder-spoergsmaal`. Nævn det ikke bare som en svaghed. Se "Videresendelse til andre skills".
 9. **Tjek lektien.** Bygger planen på, at eleverne har læst, så følg afsnittet "Elever, der ikke har læst" i principperne.
 10. **Tjek aktiviteterne.** Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse`. Skal hele modulet bygges op om CL, så tilbyd `cl-forloeb`. Har planen en gruppefase på 20 minutter eller mere uden klar struktur for, hvem der gør hvad, så tilbyd `dagsorden-lav`. Se "Videresendelse til andre skills".

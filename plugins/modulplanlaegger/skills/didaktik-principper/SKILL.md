@@ -65,6 +65,7 @@ Læs kun den fil, et planlægningstrin har brug for:
 | Bruges elevernes forforståelse i starten? | laering-og-motivation |
 | Vises nye opgavetyper, før eleverne selv skal løse dem, og fjernes støtten gradvist? | laering-og-motivation |
 | Bevæger forløbet sig mellem flere arbejdsformer og læringsrum? | arbejdsformer-og-vejledning |
+| Er styringen høj ved nyt og svært stof og aftrappet senere, uden ren forelæsning eller opdagelse uden hjælp? | arbejdsformer-og-vejledning |
 | Kan eleverne efter forløbet noget, de ikke kunne før, og bygger det på tidligere forløb? | progression |
 | Er der en formativ evaluering midt i forløbet, der kan ændre resten? | evaluering |
 | Er lektierne nødvendige i timerne? | evaluering |

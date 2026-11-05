@@ -2,7 +2,7 @@
   "name": "modulplanlaegger",
   "displayName": "Modulplanlægger",
   "description": "Planlægning af forløb og modulrækker i dansk gymnasieundervisning ud fra didaktisk viden: mål, progression, arbejdsformer, evaluering og fagdidaktik, med videresendelse til de andre plugins og forløb gemt som filer i en mappe på computeren.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "author": {
     "name": "Kenneth / Marselisborg Gymnasium"
   }
