@@ -69,6 +69,31 @@ Gennemgået november 2026. Metaanalysen fra 2018 er læst i fuld længde. De øv
 - **Kritik af Rosenshines principper.** Hvert princip bygger på to til tre, mest ældre, kilder og er ofte vagt formuleret. Kritikerne kalder dem ikke forkerte, men opfordrer til at bruge dem som god praksis og ikke som et bevist system. Der er ikke fundet studier af netop principperne i gymnasiet. **Praksis**, med støtte i forskningen om genkaldelse og vejledning. [Bokhove i TES](https://www.tes.com/magazine/teaching-learning/general/why-rosenshines-principles-arent-all-they-seem), [Chartered College](https://my.chartered.college/impact_article/criticality-in-evidence-informed-teaching-expansive-learning-with-rosenshine/)
 - **Konsekvens:** brug DI's principper, når stoffet er nyt og svært, og aftrap styringen, når klassen kan stoffet. Bøvl, undersøgelse og større frihed er stadig legitime valg, men kræver stilladsering og tydelig opsamling.
 
+### Eksplicit undervisning i praksis (Archer og Hughes)
+
+Gennemgået november 2026 ud fra bogens kapitel 1 (forlagets gratis prøvekapitel) og kapitel 2 om modulets start (s. 24 til 28, fra lærerens skærmbilleder). Forfatterne er tydelige fortalere for metoden, og eksemplerne er fra grundskolen. Bogen er god til praksis, men ikke en neutral forskningskilde. **Praksis**, med støtte i forskningen om vejledning og genkaldelse. [Archer og Hughes 2011, kapitel 1](https://www.guilford.com/excerpts/archer_ch1.pdf?t=1)
+
+- **Seksten elementer.** De fleste står allerede i principperne: det vigtigste stof, små bidder, mål og begrundelse, genkaldelse, hyppige svar fra alle, eksempler og ikke-eksempler, frisk tempo og spredt repetition.
+- **Vejledt øvelse med aftrapning.** Læreren viser og tænker højt. Så løser klassen en opgave sammen med læreren. Til sidst løser eleverne selv. Sværhedsgraden går op, mens støtten går ned.
+- **Succesrate.** Eleverne bør svare rigtigt omkring 80 % af gangene i den første undervisning og 90 til 95 % i selvstændig øvelse. Det stammer fra Brophy og Evertson 1976 og er en tommelfingerregel, ikke et præcist mål.
+- **Dele skal kobles til helheden.** Færdigheder, der kun øves hver for sig, overføres ikke ("splinter skills"). Brug delene samlet allerede i samme forløb.
+- **Organisér viden.** Skemaer, modeller og oversigter, der viser, hvordan begreberne hænger sammen, gør det lettere at hente stoffet frem igen.
+- **Modulets start (kapitel 2).** Fang opmærksomheden med det samme signal hver gang, og gentag det, når eleverne har kigget væk. Sig målet. Lad eleverne høre eller selv finde, hvorfor, hvor og hvornår de skal bruge det, fx ved at fortælle det til sidemanden. Tjek forudsætningerne hos alle med en lille opgave. Et tjek er ikke at spørge "kan I huske det?" eller at lade én elev løse en opgave ved tavlen, og det er ikke en ny gennemgang. Lektien kan bruges som tjek.
+- **Spor at følge:** en rapport om læsning hos unge (Kamil m.fl. 2008, IES) gav den stærkeste evidens til eksplicit undervisning i ordforråd og i læsestrategier. Rapporten er ikke læst her.
+
+### Den eksplicitte lektion og planlagt øvelse (HLP 16)
+
+Gennemgået november 2026 ud fra kapitlet "Use Explicit Instruction" af Hughes, Riccomini og Morris i *High Leverage Practices for Inclusive Classrooms* (Routledge, 2018), s. 215 til 232. Kapitlet er skrevet til specialundervisning med eksempler fra grundskolen. De studier, det henviser til, er ikke læst her.
+
+- **Trappe vejledningen ned:** læreren fortæller først, hvad eleverne skal gøre, spørger derefter, og minder til sidst kun om det. Bagefter løser eleverne én opgave uden hjælp, mens læreren kigger med, før de arbejder selv. **Praksis.**
+- **Frem eller tilbage:** svarer mange forkert, går læreren et trin tilbage, fx fra egen øvelse til en fælles opgave. **Praksis.**
+- **Ens ord:** forklaringen skal være klar, kort og bruge de samme fagord hele vejen. Den forberedes og improviseres ikke. Kapitlet henviser til metaanalyser om lærerens klarhed. **Praksis.**
+- **Afslutning:** opsamling, hvad der skal ske næste gang, og selvstændig øvelse kun hvis eleverne kan stoffet, ellers tidligere stof. **Praksis.**
+- **Faste overgangssætninger:** de samme korte sætninger ved hvert skift holder tempo og opmærksomhed. **Praksis.**
+- **Spredt øvelse:** gentagelser med pauser imellem giver bedre langtidshukommelse end samlet øvelse, også selvom samlet øvelse virker bedre på kort sigt. Tommelfingerregel: lad der gå 10 til 20 % af den tid, stoffet skal huskes, mellem gentagelserne, fx ca. hver 18. dag mod en prøve om 90 dage. **Stærk** som princip, ifølge kapitlet med Cepeda m.fl. 2008. Tallene for intervallet er **Moderat**.
+- **Blandet øvelse:** at blande opgavetyper, der let forveksles, giver bedre langtidshukommelse og evne til at skelne end at øve én type ad gangen. Nybegyndere skal øve hver type for sig først, og eleverne skal vide, at det føles langsommere. Studierne er mest fra matematik i grundskolen. **Moderat** for gymnasiets fag.
+- **Genkaldelse:** korte genkaldelser uden hjælpemidler og uden karakter, med feedback bagefter, ellers bliver misforståelserne siddende. Formatet behøver ikke ligne eksamen, og spredte genkaldelser virker bedre end mange i træk. **Stærk** som princip, jf. Repetition nedenfor.
+
 ### Styring og aktivitet fra 15 år og op
 
 Gennemgået november 2026 ud fra resuméer og omtaler. Fuldteksterne er ikke læst. Der er ikke fundet danske effektmålinger fra gymnasiet.

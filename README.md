@@ -106,6 +106,10 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.10.0 og modulplanlaegger 0.1.4 (november 2026)
+- Archer og Hughes, *Explicit Instruction*, kapitel 1 og 2: modulets start med fast signal, mål, relevans og tjek af forudsætninger hos alle, vejledt øvelse i tre trin, succesrate på ca. 80 % som tommelfingerregel og skemaer, der organiserer viden. Forløbsplanlæggeren kobler delene til helheden i samme forløb.
+- HLP 16 (Hughes, Riccomini og Morris): vejledningen trappes ned fra at fortælle over at spørge til at minde om, faste overgangssætninger, lektie kun når eleverne kan stoffet, og øvelse over tid med spredte gentagelser, blandede opgaver og genkaldelse med feedback. Forløbsplanlæggeren lægger spredt genkaldelse ind i modulrækken.
+
 ### klasseledelse 1.9.0 og modulplanlaegger 0.1.3 (november 2026)
 - Metaanalysen af Direct Instruction (Stockard m.fl. 2018) er læst i fuld længde. `evidens.md` har nu de præcise tal, aldersfordelingen og DI's designprincipper. Nye begreber introduceres med eksempler og et ikke-eksempel i planlaeg-lektion og tjekkes i vurder-plan. Forløbsplanlæggeren lægger begreberne hver for sig først og samler dem senere.
 

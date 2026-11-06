@@ -66,7 +66,7 @@ Vis rammen kort:
 - **Slutkompetence:** hvad kan eleverne bagefter, som de ikke kunne før? Skriv det som en synlig handling.
 - **Faglige mål:** de mål fra læreplanen, forløbet dækker, citeret ordret med afsnitsnummer fra den hentede læreplan, eller med lærerens ordlyd. Brug vejledningens uddybning og eksempler, når de passer til forløbet, og skriv versionen af læreplan og vejledning.
 - **Tilgang:** induktiv eller deduktiv start, og om indholdet vælges ud fra faget, en aktuel udfordring eller begge. Anbefal én og begrund kort.
-- **Progressionslinje:** hvordan selvstændighed, niveau og arbejdsformer udvikler sig fra første til sidste modul. Start med høj styring ved nyt og svært stof, og aftrap den, når klassen kan stoffet, jf. "Styring og forhåndsviden" i `didaktik-principper`. Læg de centrale begreber hver for sig først og saml dem senere, jf. "Dele før helhed" i `references/progression.md`.
+- **Progressionslinje:** hvordan selvstændighed, niveau og arbejdsformer udvikler sig fra første til sidste modul. Start med høj styring ved nyt og svært stof, og aftrap den, når klassen kan stoffet, jf. "Styring og forhåndsviden" i `didaktik-principper`. Læg de centrale begreber hver for sig først og saml dem senere, jf. "Dele før helhed" i `references/progression.md`. Læg spredt genkaldelse og blandede opgaver ind efter "Øvelse over tid" i samme fil.
 - **Evaluering:** én formativ evaluering midt i forløbet, der kan ændre resten, og den afsluttende evaluering. Mål, aktiviteter og evaluering skal pege samme vej.
 - **Antagelser:** det, du har antaget om klassen og rammerne.
 

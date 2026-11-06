@@ -34,9 +34,11 @@ Deltagelse er en forudsætning for alt andet. Elever, der ikke er mentalt med, f
 
 Brug dem som en værktøjskasse. En god plan bruger nogle få, gennemført godt.
 
-- **Start:** fængende start, aktiv start (kort og let tilgængelig, alle kan være med).
+- **Start:** fast opmærksomhedssignal, mål og begrundelse, fængende start, aktiv start (kort og let tilgængelig, alle kan være med) og et tjek af forudsætningerne hos alle.
 - **Aktivering:** sidemandssnak, repetitionsspørgsmål med hint og ventetid, tryg cold calling efter sidemandssnak, call-response på vigtige begreber, kort krops- eller energipause.
-- **Formidling:** enkle slides, fortælleelementer, få og håndfaste fagtermer, tydeligt opmærksomhedssignal med varme. Nye begreber introduceres med to til tre klare eksempler og ét ikke-eksempel, der ligner, men ikke er det (praksisråd fra DI).
+- **Formidling:** enkle slides, fortælleelementer, få og håndfaste fagtermer, tydeligt opmærksomhedssignal med varme. Nye begreber introduceres med to til tre klare eksempler og ét ikke-eksempel, der ligner, men ikke er det (praksisråd fra DI). Skemaer og modeller viser, hvordan begreberne hænger sammen.
+- **Øvelse:** jeg viser, vi gør det sammen, I gør det selv. Læreren fortæller først, spørger så og minder til sidst kun om det. Eleverne bør svare rigtigt omkring 80 % af gangene, før de arbejder selv (tommelfingerregel). Svarer mange forkert, så gå et trin tilbage. Brug de samme korte sætninger ved hvert skift, fx "Nu gør vi én sammen".
+- **Øvelse over tid:** gentag med pauser imellem, bland opgavetyper, der let forveksles, når hver type er lært, og giv feedback efter hver genkaldelse.
 - **Fastholdelse:** noter og skriftlighed med stillads, gerne fem minutters skrivning til sidst.
 - **Inklusion:** fem små succeser til den generte elev. Læreren planlægger, så den mest sårbare elev kan deltage mindst fem gange på en måde, der er tryg.
 

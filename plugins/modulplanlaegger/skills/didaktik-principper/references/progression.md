@@ -23,6 +23,16 @@ Direct Instruction underviser i enkelte begreber hver for sig og samler dem dere
 - Læg de centrale begreber hver for sig i de første moduler, og saml dem i analyse og diskussion senere.
 - Hent tidligere begreber frem i hvert modul.
 - Brug de samme rutiner gennem forløbet. Konsistens over tid tæller mere end enkelte stramme moduler.
+- Brug delene samlet allerede i samme forløb, ikke kun til sidst. Dele, der kun øves hver for sig, overføres ikke (Archer og Hughes).
+
+## Øvelse over tid
+
+Kilder og mærker står i `klasseledelse-principper/references/evidens.md` under HLP 16.
+
+- **Spredt genkaldelse:** læg korte genkaldelser af tidligere stof ind i modulrækken med pauser imellem, ikke kun i et repetitionsmodul til sidst. Tommelfingerregel: lad der gå 10 til 20 % af tiden frem til eksamen mellem gentagelserne (**Moderat**).
+- **Blandede opgaver:** når begreberne er lært hver for sig, så læg et modul eller en øvelse, hvor eleverne skal skelne mellem dem, der let forveksles, fx velfærdsmodeller eller ideologier fra flere forløb. Sig til eleverne, at det føles langsommere (**Moderat**).
+- **Feedback:** hver genkaldelse skal følges af feedback, ellers bliver misforståelserne siddende.
+- **Uden karakter:** genkaldelse virker bedst som øvelse, ikke som prøve.
 
 ## Tre måder at tænke progression på (Dolin)
 
