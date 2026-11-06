@@ -94,6 +94,36 @@ Gennemgået november 2026 ud fra kapitlet "Use Explicit Instruction" af Hughes, 
 - **Blandet øvelse:** at blande opgavetyper, der let forveksles, giver bedre langtidshukommelse og evne til at skelne end at øve én type ad gangen. Nybegyndere skal øve hver type for sig først, og eleverne skal vide, at det føles langsommere. Studierne er mest fra matematik i grundskolen. **Moderat** for gymnasiets fag.
 - **Genkaldelse:** korte genkaldelser uden hjælpemidler og uden karakter, med feedback bagefter, ellers bliver misforståelserne siddende. Formatet behøver ikke ligne eksamen, og spredte genkaldelser virker bedre end mange i træk. **Stærk** som princip, jf. Repetition nedenfor.
 
+### Fire oversigter, læst i fuld længde
+
+Gennemgået november 2026. De fire tekster er læst i fuld længde, men de studier, de bygger på, er ikke læst her.
+
+**Rosenshine, "Principles of Instruction" (American Educator, 2012).** Ti principper fra kognitionsforskning, studier af de mest effektive lærere og forskning i støtte til svære opgaver.
+- De mest effektive lærere i et studie af matematik brugte ca. 23 af 40 minutter på at forklare, vise, stille spørgsmål og gennemgå eksempler. De mindst effektive brugte 11 minutter og måtte derefter forklare igen ved bordene. **Moderat**, grundskolen.
+- Svarprocenten i den vejledte øvelse var 82 hos de mest effektive og 73 hos de mindst effektive. Ca. 80 % rigtige ser ud til at være passende. **Moderat.**
+- Korte besøg ved bordene, højst ca. 30 sekunder, hænger sammen med engagement. Må læreren forklare meget ved bordene, har den vejledte øvelse været for kort. **Moderat.**
+- "Er der nogen spørgsmål?" er ikke et tjek af forståelse. De effektive lærere bad eleverne opsummere, gentage eller tage stilling til andres svar. **Moderat.**
+- Ugentlig og månedlig repetition. Også i "secondary" klarede klasser med ugentlige småprøver sig bedre til den afsluttende prøve. **Moderat.**
+- De effektive lærere lagde praktiske og undersøgende aktiviteter efter det grundlæggende stof, ikke før. Det er Rosenshines vurdering og trækker imod "problem først", se Sinha og Kapur ovenfor. **Omdiskuteret.**
+[Rosenshine 2012](https://www.aft.org/sites/default/files/Rosenshine.pdf)
+
+**IES, *Improving Adolescent Literacy* (Kamil m.fl. 2008).** Praktisk vejledning til lærere fra 4. klasse til high school.
+- Eksplicit undervisning i ordforråd: faste stunder, gentagen brug af ordene i flere sammenhænge og strategier til selv at lære nye ord. **Stærk** ifølge panelet.
+- Eksplicit undervisning i læsestrategier: fx at finde hovedpointen, stille sig selv spørgsmål, omformulere og bruge skemaer, undervist med model, vejledt øvelse og selvstændig brug. **Stærk** ifølge panelet, bygget på fem lodtrukne forsøg, mest ældre.
+- Længere samtaler om teksters betydning med forberedte spørgsmål og en fast samtaleform i grupper. **Moderat.**
+- Panelet nævner selv, at fagenes egne måder at argumentere og bruge belæg på ikke er med, fordi forskningen ikke var stærk nok.
+[Kamil m.fl. 2008](https://ies.ed.gov/ncee/wwc/PracticeGuide/8)
+
+**Dunlosky m.fl. 2013, ti studieteknikker.** Høj nytte: genkaldelse (at teste sig selv) og spredt øvelse, på tværs af aldre og fag. Middel nytte: at spørge "hvorfor", at forklare for sig selv og blandet øvelse. Lav nytte: at opsummere, understrege, genlæse, huskeregler med nøgleord og billeder. Opsummering virker kun for elever, der er trænet i det, også i high school. **Stærk** for de høje og lave vurderinger. [Dunlosky m.fl. 2013](https://doi.org/10.1177/1529100612453266)
+
+**Deans for Impact, *The Science of Learning*, 2. udgave.** Kort oversigt med faldgruber.
+- Forklaringsopgaver ("hvordan" og "hvorfor") og varierede eksempler hjælper eleverne med at forstå meningen.
+- Overførsel kræver, at eleverne sammenligner opgaver med forskellig overflade og samme struktur. Fejlbehæftede eksempler kan bruges, når eleverne har set korrekte eksempler først.
+- Feedback skal være konkret, handle om opgaven og pege frem. Øjeblikkelig feedback, når en ny færdighed øves, og gerne forsinket, når eleverne kan stoffet.
+- Elever overvurderer, hvad de har lært, når noget føles let. Genkaldelse efter fx en uge er et mere sikkert tegn.
+- Motivation vokser med oplevet fremgang, så tidlige succeser og små trin hjælper.
+**Moderat**, da det er en sammenfatning. [Deans for Impact](https://www.deansforimpact.org/tools-and-resources/the-science-of-learning)
+
 ### Styring og aktivitet fra 15 år og op
 
 Gennemgået november 2026 ud fra resuméer og omtaler. Fuldteksterne er ikke læst. Der er ikke fundet danske effektmålinger fra gymnasiet.

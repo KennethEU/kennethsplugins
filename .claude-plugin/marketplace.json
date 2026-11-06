@@ -29,7 +29,7 @@
       "name": "klasseledelse",
       "source": "./plugins/klasseledelse",
       "description": "Planlægning og vurdering af lektioner og moduler, så alle elever deltager: deltagelseskort, konkrete omskrivninger og principper holdt op mod forskningen.",
-      "version": "1.10.0"
+      "version": "1.11.0"
     },
     {
       "name": "cl-oevelser",
@@ -56,7 +56,7 @@
       "displayName": "Modulplanlægger",
       "source": "./plugins/modulplanlaegger",
       "description": "Planlægning af forløb og modulrækker ud fra didaktisk viden: mål, progression, arbejdsformer, evaluering og fagdidaktik, med videresendelse til de andre plugins.",
-      "version": "0.1.4"
+      "version": "0.1.5"
     }
   ]
 }

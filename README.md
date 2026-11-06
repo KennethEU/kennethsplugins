@@ -106,6 +106,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.11.0 og modulplanlaegger 0.1.5 (november 2026)
+- Rosenshine (2012), IES om læsning hos unge (2008), Dunlosky m.fl. (2013) og Deans for Impact er læst og står i `evidens.md`. Nyt: korte besøg ved bordene, en plan for elever på forskelligt niveau, eksplicit undervisning i fagord og læsestrategier, selvtest frem for genlæsning, cases med samme mekanisme og aldrig "Er der nogen spørgsmål?" som tjek. Forløbsplanlæggeren får ugentlig og månedlig repetition og studieteknik.
+
 ### klasseledelse 1.10.0 og modulplanlaegger 0.1.4 (november 2026)
 - Archer og Hughes, *Explicit Instruction*, kapitel 1 og 2: modulets start med fast signal, mål, relevans og tjek af forudsætninger hos alle, vejledt øvelse i tre trin, succesrate på ca. 80 % som tommelfingerregel og skemaer, der organiserer viden. Forløbsplanlæggeren kobler delene til helheden i samme forløb.
 - HLP 16 (Hughes, Riccomini og Morris): vejledningen trappes ned fra at fortælle over at spørge til at minde om, faste overgangssætninger, lektie kun når eleverne kan stoffet, og øvelse over tid med spredte gentagelser, blandede opgaver og genkaldelse med feedback. Forløbsplanlæggeren lægger spredt genkaldelse ind i modulrækken.

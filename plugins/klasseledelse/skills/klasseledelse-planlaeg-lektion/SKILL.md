@@ -67,15 +67,16 @@ Hold planen inden for aktivitetsbudgettet, og skriv opgaverne præcist, jf. "Enk
 4. **Cold calling:** sæt den efter sidemandssnak, til et spørgsmål, eleven kan svare på. Skriv, hvordan du markerer øverum.
 5. **Fagtermer:** vælg få, håndfaste begreber, alle skal kunne sige og bruge. Skriv for hvert nyt begreb to til tre klare eksempler og ét ikke-eksempel, der ligner, men ikke er det, fx flexicurity over for gig-økonomi. Tjek forudsætninger og typiske misforståelser, før nyt stof bygges ovenpå.
 6. **Slides:** beskriv hvert slide med billede eller diagram og højst få stikord.
-7. **Selvstændigt arbejde:** giv det en rolle, et produkt og nedslag, så det bliver A. Hvis koden stadig er G, så skriv hvorfor. Skriv også en udfordring til de stærke elever. Tjek hver gruppefase efter "Grupper og fravær" i principperne, og sig det, hvis en øvelse ikke er afprøvet.
+7. **Selvstændigt arbejde:** giv det en rolle, et produkt og nedslag, så det bliver A. Hvis koden stadig er G, så skriv hvorfor. Skriv også en udfordring til de stærke elever. Tjek hver gruppefase efter "Grupper og fravær" i principperne, og sig det, hvis en øvelse ikke er afprøvet. Skriv, hvad eleverne gør, der allerede kan stoffet efter tjekket, og at læreren går rundt med korte besøg.
 8. **Afslutning:** lad alle skrive eller hente stoffet frem fra hukommelsen, fx i en stilladseret note eller et lille tjek. Skriv, hvad der skal gentages næste gang, og hvordan produktet kommer i noterne, jf. "Noter" i principperne. Sig, hvad der skal ske næste gang. Giv kun selvstændig lektie i det nye, hvis eleverne kan det. Ellers giv tidligere stof for.
 9. **Forventninger og begrundelser:** skriv de få sætninger, der siger, hvad eleverne skal, og hvorfor. Skriv i et sprog, der passer til 16-19-årige.
 10. **Den sårbare elev:** tæl, hvor mange gange en genert elev kan deltage trygt. Der skal være mindst fem, og sidemandssnak og skrivning tæller med. Nævner læreren en bestemt elev, så følg afsnittet "Sårbare elever".
 11. **Tid, og hvis noget skrider:** følg "Tid" og "Det vigtigste først" i principperne, og giv overgange egne rækker i drejebogen. Skriv én plan for det, der kan springes helt over, hvis tiden løber, og én replik til at holde tempoet, hvis nogen afsporer timen.
-12. **Skærme:** følg "Tekster kun på skærm" i principperne, hvis teksten kun findes på skærm. Drejebogen skal selv sige, hvornår skærmene er oppe og nede.
-13. **Grupper:** bruger planen grupper, så lav tabellen over fremmøde nedenfor.
-14. **Sidste modul i forløbet:** lad genkaldelse og afslutning dække hele forløbet, så eleverne kobler dagens tekst til det, de har arbejdet med før.
-15. **Genkaldelse i stedet for spørgsmål:** dækker en genkaldelse, fx et tomt skema, de samme arbejdsspørgsmål på Huske/Forstå, så foreslå at erstatte dem, og sig det tydeligt. Eleverne skal bagefter tjekke deres svar mod teksten.
+12. **Tekster:** skal eleverne læse en fagtekst, så vælg de få fagord, der skal undervises eksplicit, og én læsestrategi, fx at finde hovedpointen. Lad lektien være selvtest frem for genlæsning.
+13. **Skærme:** følg "Tekster kun på skærm" i principperne, hvis teksten kun findes på skærm. Drejebogen skal selv sige, hvornår skærmene er oppe og nede.
+14. **Grupper:** bruger planen grupper, så lav tabellen over fremmøde nedenfor.
+15. **Sidste modul i forløbet:** lad genkaldelse og afslutning dække hele forløbet, så eleverne kobler dagens tekst til det, de har arbejdet med før.
+16. **Genkaldelse i stedet for spørgsmål:** dækker en genkaldelse, fx et tomt skema, de samme arbejdsspørgsmål på Huske/Forstå, så foreslå at erstatte dem, og sig det tydeligt. Eleverne skal bagefter tjekke deres svar mod teksten.
 
 ### Sådan afleverer du
 

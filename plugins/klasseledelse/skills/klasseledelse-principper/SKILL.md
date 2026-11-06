@@ -39,6 +39,9 @@ Brug dem som en værktøjskasse. En god plan bruger nogle få, gennemført godt.
 - **Formidling:** enkle slides, fortælleelementer, få og håndfaste fagtermer, tydeligt opmærksomhedssignal med varme. Nye begreber introduceres med to til tre klare eksempler og ét ikke-eksempel, der ligner, men ikke er det (praksisråd fra DI). Skemaer og modeller viser, hvordan begreberne hænger sammen.
 - **Øvelse:** jeg viser, vi gør det sammen, I gør det selv. Læreren fortæller først, spørger så og minder til sidst kun om det. Eleverne bør svare rigtigt omkring 80 % af gangene, før de arbejder selv (tommelfingerregel). Svarer mange forkert, så gå et trin tilbage. Brug de samme korte sætninger ved hvert skift, fx "Nu gør vi én sammen".
 - **Øvelse over tid:** gentag med pauser imellem, bland opgavetyper, der let forveksles, når hver type er lært, og giv feedback efter hver genkaldelse.
+- **Under selvstændigt arbejde:** gå rundt med korte besøg. Må du forklare meget ved bordene, så stop, og tag en fælles opgave mere. Viser tjekket, at nogle allerede kan stoffet, så lad dem gå videre til en sværere opgave, mens du tager det fælles trin med resten.
+- **Fagtekster:** undervis eksplicit i de vigtigste fagord og i, hvordan man læser teksten, fx finder hovedpointen eller stiller sig selv spørgsmål. Lær eleverne at teste sig selv frem for at genlæse og understrege.
+- **Overførsel:** lad eleverne sammenligne cases med forskellig overflade og samme mekanisme.
 - **Fastholdelse:** noter og skriftlighed med stillads, gerne fem minutters skrivning til sidst.
 - **Inklusion:** fem små succeser til den generte elev. Læreren planlægger, så den mest sårbare elev kan deltage mindst fem gange på en måde, der er tryg.
 
@@ -211,6 +214,7 @@ Det er praksisråd, ikke forskning.
 
 - Skriv "ikke synligt i planen", når noget ikke står der. Læreren kan sagtens gøre det alligevel.
 - Giv konkrete formuleringer, læreren kan bruge i morgen, ikke generelle råd.
+- Brug aldrig "Er der nogen spørgsmål?" som tjek af forståelse. Lad eleverne opsummere, svare på et spørgsmål eller tage stilling til et andet svar.
 - Brug kun forskningspåstande fra `references/evidens.md`, og læs filen, før du henviser til forskning. Sig det, hvis noget ikke er dokumenteret.
 - Omtal uenighed mellem bog og forskning åbent.
 - Skriv uden tankestreger.

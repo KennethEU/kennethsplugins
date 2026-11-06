@@ -56,7 +56,8 @@ Spørg kun om det, der mangler:
    - Er hooken og historierne koblet til målet?
    - Skal eleverne læse tekst, mens læreren taler?
    - Passer model og styring til, hvor meget klassen kan i forvejen? Er nyt stof enten ren forelæsning eller opdagelse uden hjælp, så nævn det, jf. skærpelse 9 og 10 i principperne, med evidensmærke.
-   - Er repetition reel genkaldelse?
+   - Er repetition reel genkaldelse, og er tjek af forståelse mere end "Er der nogen spørgsmål?"?
+   - Er der en plan for de elever, der allerede kan stoffet, og for dem, der ikke kan?
    - Introduceres nye begreber med klare eksempler og et ikke-eksempel, og tjekkes forudsætningerne hos alle, før der bygges ovenpå?
    - Får nye færdigheder et vejledt trin mellem lærerens eksempel og det selvstændige arbejde?
    - Er skærmbrug tænkt ind i hver fase?

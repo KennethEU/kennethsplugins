@@ -33,6 +33,10 @@ Kilder og mærker står i `klasseledelse-principper/references/evidens.md` under
 - **Blandede opgaver:** når begreberne er lært hver for sig, så læg et modul eller en øvelse, hvor eleverne skal skelne mellem dem, der let forveksles, fx velfærdsmodeller eller ideologier fra flere forløb. Sig til eleverne, at det føles langsommere (**Moderat**).
 - **Feedback:** hver genkaldelse skal følges af feedback, ellers bliver misforståelserne siddende.
 - **Uden karakter:** genkaldelse virker bedst som øvelse, ikke som prøve.
+- **Ugentlig og månedlig repetition:** fx en kort genkaldelse af sidste uges stof hver uge og af månedens stof en gang om måneden (**Moderat**, Rosenshine).
+- **Fagord og læsning:** vælg forløbets vigtigste fagord, og brug dem igen og igen i flere sammenhænge. Undervis én læsestrategi ad gangen med fagteksterne (**Stærk** for unge, IES 2008).
+- **Studieteknik:** lær eleverne at teste sig selv og sprede deres forberedelse. Genlæsning og understregning virker svagt (**Stærk**, Dunlosky m.fl. 2013).
+- **Overførsel:** saml forløbet med cases, der ser forskellige ud, men bygger på samme mekanisme, og lad eleverne sammenligne dem.
 
 ## Tre måder at tænke progression på (Dolin)
 
