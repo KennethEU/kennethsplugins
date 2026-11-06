@@ -52,10 +52,16 @@ Meget af forskningen er fra grundskolen eller universitetet. Gymnasiet ligger im
 
 ### Direct Instruction og eksplicit undervisning (bogens kapitel 3)
 
-Gennemgået november 2026 ud fra artiklernes resuméer og omtaler. Fuldteksterne er ikke læst.
+Gennemgået november 2026. Metaanalysen fra 2018 er læst i fuld længde. De øvrige kilder er gennemgået ud fra resuméer og omtaler.
 
 - **To ting med samme navn.** "DI" er Engelmanns færdigskrevne programmer, mest til læsning, matematik og sprog i grundskolen. "Direkte" eller eksplicit undervisning er generelle principper som korte bidder, hyppige spørgsmål til alle, vejledt øvelse og genkaldelse, fx hos Rosenshine. Det er kun principperne, der kan overføres til gymnasiet. Bogen skelner ikke altid.
-- **Metaanalysen.** 328 studier fra 1966 til 2016 fandt positive effekter af DI-programmerne i alle akademiske fag og kaldte dem moderate til store. Effekterne holdt sig over tid. Effekten på affektive udfald, som selvtillid, var ikke statistisk sikker i metaregressionerne. Aldersfordelingen er ikke tjekket her, og forfatterne er tilknyttet DI's eget institut. **Stærk** for DI-programmer i grundskolen, **Moderat** for principperne i gymnasiet. [Stockard m.fl. 2018](https://scholarsbank.uoregon.edu/items/9c5db747-52be-4bd8-8771-b05d0f7c0b01/full)
+- **Metaanalysen.** 328 studier fra 1966 til 2016 fandt positive effekter af DI-programmerne i alle akademiske fag, i den samlede model 0,60 (95 % sikkerhedsinterval 0,54 til 0,66). Effekterne holdt sig over tid og var større, jo længere og jo mere eleverne havde arbejdet med programmerne. Effekten på affektive udfald, som selvværd, var 0,14 og ikke statistisk sikker. Studierne går fra førskole til voksne, men flertallet er elever i 3. klasse og yngre, og forfatterne skriver selv, at studier af programmer til ældre elever er sjældne. Om lærerne var trænet, hang kun sammen med effekten i ét fag, men forfatterne kalder målet groft. Forfatterne arbejdede delvist for DI's eget institut. **Stærk** for DI-programmer i grundskolen, **Moderat** for principperne i gymnasiet. [Stockard m.fl. 2018, s. 15 til 25](https://scholarsbank.uoregon.edu/items/9c5db747-52be-4bd8-8771-b05d0f7c0b01/full)
+- **Sådan er DI bygget op** (samme artikel, s. 2 til 3). Det er designprincipper fra DI's teori og ikke selvstændigt testet her, men de kan bruges direkte i planlægningen:
+  - *Eksempler og ikke-eksempler:* eleverne slutter sig til et begreb ud fra eksemplerne. De skal være entydige, stå i en rækkefølge, der leder til den rigtige slutning, og bruge få trin. Små forskelle i eksemplerne kan give forkerte slutninger.
+  - *Lær rigtigt første gang:* det er lettere at lære et nyt begreb end at aflære en forkert forståelse. Tjek forudsætninger, før nyt stof bygges ovenpå.
+  - *Dele før helhed:* enkelte begreber og færdigheder undervises hver for sig og samles derefter i stadig mere komplekse anvendelser, med fast repetition og løbende tjek.
+  - *Forberedte formuleringer:* færdigskrevne forklaringer og eksempler fjerner ikke lærerens personlighed, men frigør opmærksomhed til elevernes svar.
+  **Praksis** for gymnasiet.
 - **Project Follow Through** (1967 til 1977, børn i 0. til 3. klasse). DI klarede sig bedst i den officielle evaluering. En kritik fra 1978 fandt svage mål og statistik og ingen overbevisende forskel mellem modellerne. Samme tidsskrift bragte svar, der fastholdt hovedresultaterne, og en senere genanalyse fandt igen en fordel for DI i basale færdigheder. Variationen mellem skoler med samme model var større end mellem modellerne. **Omdiskuteret** som bevis for DI, og målgruppen ligger langt fra gymnasiet. [House m.fl. 1978](https://www.harvardeducationalreview.org/content/48/2/128), [svar fra Anderson m.fl.](https://scilit.com/publications/9fd99fdaf7f9dec1a2699b3df6cea90b), [omtale af debatten](https://alfiekohn.org/?p=527)
 - **Bogens påstand om selvtillid.** At DI også gav bedre selvtillid, står i bogen, men metaanalysen fandt ikke en sikker effekt på affektive udfald. Brug det ikke som fakta. **Omdiskuteret.**
 - **Vejledning til nybegyndere.** Minimal vejledning er mindre effektiv for nybegyndere end stærk, vejledt instruktion. Fordelen aftager, når eleverne har meget forhåndsviden. **Stærk** som princip. [Kirschner, Sweller og Clark 2006](https://caseresources.hsph.harvard.edu/resource/why-minimal-guidance-during-instruction-does-not-work)
@@ -124,6 +130,7 @@ Gennemgået november 2026 ud fra resuméer og omtaler. Fuldteksterne er ikke læ
 
 Disse må ikke fremstilles som dokumenterede:
 
-- Fuldteksterne om Project Follow Through og metaanalysens aldersfordeling. Resuméerne og omtalerne er gennemgået, se afsnittet om Direct Instruction.
+- Fuldteksterne om Project Follow Through. Resuméerne og omtalerne er gennemgået, se afsnittet om Direct Instruction.
+- Engelmann og Carnines *Theory of Instruction* om eksempeldesign, som metaanalysen henviser til.
 - Bogens øvrige referencer, da bogens noter og s. 182 til 198 ikke er gennemgået.
 - Danske studier af computere i stx-klasser ud over dem, EVA refererer.

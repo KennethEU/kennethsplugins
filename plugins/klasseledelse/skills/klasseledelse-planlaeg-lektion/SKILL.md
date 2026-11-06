@@ -65,7 +65,7 @@ Hold planen inden for aktivitetsbudgettet, og skriv opgaverne præcist, jf. "Enk
 2. **Start:** skriv en hook, der er koblet direkte til målet, og en aktiv start, hvor alle kan være med og henter noget frem fra sidst. Tjek, at hooken ikke kun er underholdning.
 3. **Gennemgang:** del stoffet op i små bidder. Læg en aktivering ind efter hver bid. Skriv hvert sidemandsspørgsmål færdigt, så det kan besvares af alle og får eleverne til at tænke over målet. Skal de analysere, skal de også øve sig i at analysere.
 4. **Cold calling:** sæt den efter sidemandssnak, til et spørgsmål, eleven kan svare på. Skriv, hvordan du markerer øverum.
-5. **Fagtermer:** vælg få, håndfaste begreber, alle skal kunne sige og bruge.
+5. **Fagtermer:** vælg få, håndfaste begreber, alle skal kunne sige og bruge. Skriv for hvert nyt begreb to til tre klare eksempler og ét ikke-eksempel, der ligner, men ikke er det, fx flexicurity over for gig-økonomi. Tjek forudsætninger og typiske misforståelser, før nyt stof bygges ovenpå.
 6. **Slides:** beskriv hvert slide med billede eller diagram og højst få stikord.
 7. **Selvstændigt arbejde:** giv det en rolle, et produkt og nedslag, så det bliver A. Hvis koden stadig er G, så skriv hvorfor. Skriv også en udfordring til de stærke elever. Tjek hver gruppefase efter "Grupper og fravær" i principperne, og sig det, hvis en øvelse ikke er afprøvet.
 8. **Afslutning:** lad alle skrive eller hente stoffet frem fra hukommelsen, fx i en stilladseret note eller et lille tjek. Skriv, hvad der skal gentages næste gang, og hvordan produktet kommer i noterne, jf. "Noter" i principperne.

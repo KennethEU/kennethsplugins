@@ -16,6 +16,14 @@ Progression er svaret på "hvad vil det sige at blive bedre i mit fag?". Den ska
 - **Repræsentationer:** fra det konkrete og fænomenologiske til begreber og modeller.
 - **Deltagelse:** fra perifer til central deltagelse i fagets praksis.
 
+## Dele før helhed (Direct Instruction)
+
+Direct Instruction underviser i enkelte begreber hver for sig og samler dem derefter i stadig mere komplekse anvendelser, med fast repetition af det tidligere. Effekten af programmerne var større, jo længere og jo mere eleverne arbejdede med dem. **Praksis** for gymnasiet, kilder i `klasseledelse-principper/references/evidens.md`.
+
+- Læg de centrale begreber hver for sig i de første moduler, og saml dem i analyse og diskussion senere.
+- Hent tidligere begreber frem i hvert modul.
+- Brug de samme rutiner gennem forløbet. Konsistens over tid tæller mere end enkelte stramme moduler.
+
 ## Tre måder at tænke progression på (Dolin)
 
 1. **Kognitiv progression:** tænkningen følger en udviklingsvej fra simpelt til komplekst (fx Bloom eller SOLO).

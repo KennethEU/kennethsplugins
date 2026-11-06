@@ -57,6 +57,7 @@ Spørg kun om det, der mangler:
    - Skal eleverne læse tekst, mens læreren taler?
    - Passer model og styring til, hvor meget klassen kan i forvejen? Er nyt stof enten ren forelæsning eller opdagelse uden hjælp, så nævn det, jf. skærpelse 9 og 10 i principperne, med evidensmærke.
    - Er repetition reel genkaldelse?
+   - Introduceres nye begreber med klare eksempler og et ikke-eksempel, og tjekkes forudsætninger, før der bygges ovenpå?
    - Er skærmbrug tænkt ind i hver fase?
    - Kan en genert elev svare trygt, og er øverum markeret? Følg afsnittet "Sårbare elever", hvis læreren nævner en bestemt elev.
    - Er forventninger og begrundelser skrevet ind, og er der kontakt i planen ud over styring?

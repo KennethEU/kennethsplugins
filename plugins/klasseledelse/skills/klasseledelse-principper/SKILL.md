@@ -36,7 +36,7 @@ Brug dem som en værktøjskasse. En god plan bruger nogle få, gennemført godt.
 
 - **Start:** fængende start, aktiv start (kort og let tilgængelig, alle kan være med).
 - **Aktivering:** sidemandssnak, repetitionsspørgsmål med hint og ventetid, tryg cold calling efter sidemandssnak, call-response på vigtige begreber, kort krops- eller energipause.
-- **Formidling:** enkle slides, fortælleelementer, få og håndfaste fagtermer, tydeligt opmærksomhedssignal med varme.
+- **Formidling:** enkle slides, fortælleelementer, få og håndfaste fagtermer, tydeligt opmærksomhedssignal med varme. Nye begreber introduceres med to til tre klare eksempler og ét ikke-eksempel, der ligner, men ikke er det (praksisråd fra DI).
 - **Fastholdelse:** noter og skriftlighed med stillads, gerne fem minutters skrivning til sidst.
 - **Inklusion:** fem små succeser til den generte elev. Læreren planlægger, så den mest sårbare elev kan deltage mindst fem gange på en måde, der er tryg.
 

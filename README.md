@@ -106,6 +106,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.9.0 og modulplanlaegger 0.1.3 (november 2026)
+- Metaanalysen af Direct Instruction (Stockard m.fl. 2018) er læst i fuld længde. `evidens.md` har nu de præcise tal, aldersfordelingen og DI's designprincipper. Nye begreber introduceres med eksempler og et ikke-eksempel i planlaeg-lektion og tjekkes i vurder-plan. Forløbsplanlæggeren lægger begreberne hver for sig først og samler dem senere.
+
 ### klasseledelse 1.8.0 og modulplanlaegger 0.1.2 (november 2026)
 - Forskning om styring og aktivitet fra 15 år og op (PISA, metaanalyser om opdagelse og vejledning, universitetsstudier) står nu i `evidens.md`. Ny skærpelse 10: ren forelæsning og opdagelse uden hjælp er de svage yderpunkter. Planlaeg-lektion begrunder rækkefølgen med evidensmærke, vurder-plan nævner yderpunkterne, og forløbsplanlæggeren aftrapper styringen over forløbet.
 
