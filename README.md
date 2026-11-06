@@ -60,13 +60,26 @@ claude plugin install klasseledelse@kennethsplugins
 claude plugin install cl-oevelser@kennethsplugins
 claude plugin install dida@kennethsplugins
 claude plugin install udretterdagsorden@kennethsplugins
+claude plugin install modulplanlaegger@kennethsplugins
 ```
+
+**Antigravity (Gemini):** scriptet `update_plugins.sh` henter den nyeste version og kobler alle plugins til Antigravity. Det forventer en klon af repoet i `~/.gemini/repos/kennethsplugins` og mappen `~/.gemini/config/plugins`. Første gang:
+```
+git clone git@github.com:KennethEU/kennethsplugins.git ~/.gemini/repos/kennethsplugins
+mkdir -p ~/.gemini/config/plugins
+```
+Kør derefter scriptet, når du vil opdatere, eller når der er kommet et nyt plugin:
+```
+bash ~/.gemini/repos/kennethsplugins/update_plugins.sh
+```
+Scriptet kører `git pull`, laver en genvej `plugin.json` i hver plugin-mappe (Antigravity leder efter den dér og ikke i `.claude-plugin/`) og en genvej fra `~/.gemini/config/plugins/<navn>` til hvert plugin. Fordi det er genveje, slår rettelser i et eksisterende plugin igennem uden at køre scriptet igen.
 
 ## Struktur
 
 ```
 kennethsplugins/
 ├── .claude-plugin/marketplace.json     ← kataloget over plugins
+├── update_plugins.sh                   ← opdaterer og kobler plugins til Antigravity
 └── plugins/
     ├── casespilsdesigner/              ← hvert plugin har sin egen mappe
     │   ├── .claude-plugin/plugin.json
@@ -76,7 +89,8 @@ kennethsplugins/
     ├── klasseledelse/
     ├── cl-oevelser/
     ├── dida/
-    └── udretterdagsorden/
+    ├── udretterdagsorden/
+    └── modulplanlaegger/
 ```
 
 ## Tests
