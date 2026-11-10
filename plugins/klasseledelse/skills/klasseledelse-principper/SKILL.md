@@ -211,6 +211,23 @@ Det er praksisråd, ikke forskning.
 - Find ikke på indhold, fx hvad en tabel viser.
 - Anslå ikke læsetid uden grundlag. Spørg, eller skriv, at tiden skal justeres af læreren.
 
+## Fakta, tal og aktuelle forhold
+
+Bygger lektionen ikke på en tekst, kommer hook, eksempler og gennemgang fra din egen viden. Den kan være forældet eller forkert, og læreren står med den foran klassen.
+
+- **Mærk det, der skal tjekkes:** tal, årstal, citater, lovgivning, partiers politik og aktuelle sager, som ikke kommer fra læreren, en læst tekst eller `forloeb.md`, mærkes "(tjek)" i drejebogen. Skriv helst hooken, så den ikke står og falder med et præcist tal.
+- **Opfind ikke noget, der ligner virkelighed:** ingen opdigtede citater, undersøgelser eller navngivne sager. En opdigtet case skal fremstå som opdigtet: "Forestil jer en kommune, der ...".
+- **Definitioner skal passe med elevernes bog.** Har du ikke bogen, så skriv under "Forbered", at læreren holder definitionerne op mod den.
+- **Saml det for læreren:** er noget mærket, så skriv én linje "Tjek: ..." med det hele, så læreren ikke skal lede i drejebogen.
+
+## Kun det, klassen har mødt
+
+En klasse har ikke nødvendigvis haft de teorier og teoretikere, der plejer at høre til emnet.
+
+- Brug kun teorier, teoretikere og modeller fra læreren, en læst tekst eller `forloeb.md`.
+- Kender du dem ikke, fx i hurtig-tilstand, så skriv dem, du selv trækker ind, i antagelseslinjen øverst: "Antaget: klassen har haft X og Y." Så ser læreren det, før resten læses.
+- Lav ikke elevark til print med teoretikere, læreren ikke har bekræftet. Nævn dem, og få et ja først.
+
 ## Arbejdsgang: hurtigt, kort og samlet
 
 Gælder alle skills i pluginet og går forud for deres gates. Samme afsnit står i de andre undervisningsplugins, så de opfører sig ens.

@@ -56,8 +56,8 @@ Sæt din anbefaling øverst, og spørg: "Hvilken lyder bedst?"
 ### Skriv beskrivelsen
 
 3. **Brug den korte version** fra principperne. Brug den fulde skabelon, når læreren beder om den.
-4. **Regn på klassen:** fordel netop dette elevtal i grupper, og sig, hvad I gør med de elever, der ikke går op. Summér tiderne, så de passer, også med instruktion og overgange.
-5. **Læg indholdet i:** skriv spørgsmål, kort eller opgaver færdige til emnet. Du må kun bruge indhold, du kender eller har fået. Mangler du teksten, så bed om den eller marker tydeligt, at spørgsmålene skal tjekkes.
+4. **Regn på klassen:** fordel netop dette elevtal i grupper, og skriv, hvad læreren gør, når der mangler elever på dagen, jf. "Elevtal og fravær" i principperne. Summér tiderne, så de passer, også med instruktion og overgange.
+5. **Læg indholdet i:** skriv spørgsmål, kort eller opgaver færdige til emnet. Du må kun bruge indhold, du kender eller har fået. Mangler du teksten, så bed om den eller marker tydeligt, at spørgsmålene skal tjekkes. Følg "Fakta, tal og aktuelle forhold" og "Kun det, klassen har mødt" i principperne. Skriv også ind i trinnet, hvad de gør, der er færdige først.
 6. **Skriv skærpelsen ind** i trinene, ikke kun som tip.
 7. **Sørg for noter:** beskriv præcist, hvordan eleverne får noter.
 
@@ -70,7 +70,10 @@ Giv beskrivelsen samlet i ét svar, i den korte version. Slut med én linje: "Si
 Lav tjekket stille, og ret det, der ikke holder.
 
 - Er alle fire SPIL-principper dækket i selve trinene, eller står svagheden i en linje?
-- Passer elevtal, grupper og tid?
+- Passer elevtal, grupper og tid, også når fire elever mangler?
+- Bruger kort og spørgsmål kun teorier og teoretikere, klassen har mødt, eller står de i antagelseslinjen?
+- Er tal, aktuelle forhold og usikre svar samlet i linjen "Tjek"?
+- Ved de par eller teams, der er færdige først, hvad de skal?
 - Er alle spørgsmål skrevet færdige, og trækker de på målet?
 - Har du prøvet spørgsmål og kort af? Skriv svaret selv, og svar så som en middelmådig elev på den tid, øvelsen giver. Kan du ikke skrive ét sikkert svar, eller er et tomt svar nok, så ret spørgsmålet.
 - Står der, hvordan eleverne får noter?

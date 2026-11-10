@@ -41,8 +41,8 @@ Spørg: "Rammer den, eller skal noget ændres?"
 ### Skriv øvelsen
 
 2. **Brug den korte version** fra principperne, og regn elevtal og tid igennem. Brug den fulde skabelon, når læreren beder om den.
-3. **Læg indholdet i** med færdigskrevne spørgsmål, kort eller opgaver. Find ikke på indhold fra tekster, du ikke har læst.
-4. **Prøv den i hovedet:** hvad gør den elev, der ikke har læst? Den stille elev? Den stærke elev, der er hurtigt færdig? Justér, hvis nogen kan gemme sig eller løbe fra opgaven.
+3. **Læg indholdet i** med færdigskrevne spørgsmål, kort eller opgaver. Find ikke på indhold fra tekster, du ikke har læst, og følg "Fakta, tal og aktuelle forhold" og "Kun det, klassen har mødt" i principperne.
+4. **Prøv den i hovedet:** hvad gør den elev, der ikke har læst? Den stille elev? Den stærke elev, der er hurtigt færdig? Hvad sker der, hvis fire elever mangler, jf. "Elevtal og fravær" i principperne? Justér, hvis nogen kan gemme sig eller løbe fra opgaven.
 
 ### Sådan afleverer du
 

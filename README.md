@@ -118,6 +118,12 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.14.0 og cl-oevelser 1.6.0 (november 2026)
+- **Fakta, tal og aktuelle forhold:** nyt afsnit i `klasseledelse-principper` og `cl-principper`. Tal, citater, partiers politik og aktuelle sager, der ikke kommer fra læreren eller en læst tekst, mærkes og samles i én linje "Tjek". Opdigtede cases skal fremstå som opdigtede.
+- **Kun det, klassen har mødt:** teorier og teoretikere, skillen selv trækker ind, står i antagelseslinjen øverst, også i hurtig-tilstand. Kort og ark til print laves ikke med teoretikere, læreren ikke har bekræftet.
+- `cl-oevelser`: nyt afsnit "Elevtal og fravær" (grupperegel på et spænd, ulige elevtal, kort uden makker, manglende ekspert) og en ny linje "Mangler der elever" i øvelsesbeskrivelsen. Nyt afsnit "Dem, der er færdige først".
+- `klasseledelse-planlaeg-lektion`: forventede svar til drejebogens spørgsmål på opfordring, med det typiske forkerte svar.
+
 ### bloom 1.5.0 (november 2026)
 - **Anvende-spørgsmål** afprøves nu med modelsvar i stedet for facit i teksten. Nyt afsnit "Cases og aktuelle forhold": casens oplysninger står i spørgsmålet, og aktuelle forhold, der ikke kommer fra teksten eller læreren, mærkes "tjek aktualitet".
 - **Tid:** nyt afsnit "Tid: arbejdsregler". Lektiespørgsmål får en linje med læsetid og svartid, og et sæt arbejdsspørgsmål får anslået tid og de spørgsmål, der kan springes over. Tallene er arbejdsregler, ikke afprøvet i klassen.

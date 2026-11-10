@@ -95,8 +95,8 @@ Det er den, læreren får, medmindre læreren beder om den grundige udgave:
    Tag kolonnen Skærm med, hvis eleverne bruger skærm i modulet. Kolonnen Kode hører til den grundige udgave. Skriv opgaver og spørgsmål færdigt i tabellen, men hold lærerens øvrige replikker på stikord.
 3. **Køreplan til eleverne:** ét trin pr. fase med modulets mål eller problemformulering øverst, skrevet til eleverne, så den kan stå fremme hele modulet.
 4. **Tre linjer til læreren:** "Kan springes over", hvis tiden løber. "Forbered": det, der skal laves eller printes inden timen. "Grupper": gruppereglen i én linje, hvis planen bruger grupper, fx "tæl af til 4, og ved 13 elever bliver det 3 grupper á 3 og 1 á 4".
-5. **Kun ved problemer:** én linje, hvis aktivitetsbudgettet er overskredet, tiden er stram, eller en genert elev har færre end fem trygge deltagelser.
-6. **Én afsluttende linje:** "Sig til, hvis noget skal ændres, eller hvis du vil have instruktionsslides, deltagelseskort, fremmødetabel med printliste, elevark til print eller planen som dida-plan til storskærmen." Mangler planen en aktivitet, eller har den en gruppefase på 20 minutter eller mere, hvor eleverne arbejder selv, så nævn `cl-find-oevelse` eller `dagsorden-lav` i samme linje.
+5. **Kun ved problemer:** én linje, hvis aktivitetsbudgettet er overskredet, tiden er stram, eller en genert elev har færre end fem trygge deltagelser. Én linje "Tjek: ...", hvis drejebogen har tal, aktuelle forhold eller definitioner, der er mærket "(tjek)", jf. "Fakta, tal og aktuelle forhold" i principperne.
+6. **Én afsluttende linje:** "Sig til, hvis noget skal ændres, eller hvis du vil have forventede svar til spørgsmålene, instruktionsslides, deltagelseskort, fremmødetabel med printliste, elevark til print eller planen som dida-plan til storskærmen." Mangler planen en aktivitet, eller har den en gruppefase på 20 minutter eller mere, hvor eleverne arbejder selv, så nævn `cl-find-oevelse` eller `dagsorden-lav` i samme linje.
 
 Skriv ikke begrundelser, evidensmærker eller optællinger i den korte version, medmindre læreren spørger hvorfor.
 
@@ -109,6 +109,7 @@ Når læreren beder om det hele eller om enkelte dele, så lever drejebogen med 
 
 - **Instruktionsslide til hver fase:** kort tekst, der siger, hvad eleverne laver, med hvem, hvor længe, om skærmen er oppe eller nede, og hvornår de er klar. Brug de samme korte overgangssætninger hver gang, fx "Nu gør vi én sammen" og "Nu prøver I selv". Lærerens replikker hører til i notefeltet.
 - **Fremmøde (hvis planen bruger grupper):** en enkel regel og en kort tabel med mindste, typiske og største elevtal: antal grupper og fordeling, fx 13 elever = 3 grupper á 3 + 1 gruppe á 4. Tjek, at hver fordeling summer til elevtallet, og prøv selv gruppereglen af på alle elevtal i spændet. Derunder en printliste med én kolonne pr. holdstørrelse, der regner med det højeste elevtal og det højeste antal grupper for holdet.
+- **Forventede svar:** til hvert spørgsmål i drejebogen ét kort, godt svar og det typiske forkerte eller halve svar, du fandt, da du prøvede spørgsmålet af som en middelmådig elev. Det er det, læreren møder i opsamlingen. Mærk svar, der ikke bygger på en tekst, du har læst, med "ikke tjekket".
 - **Deltagelseskort:** forklaring af koderne, rækkefølgen af koder, længste strækning med L og E og antal trygge deltagelser.
 - **Planens vægt:** optælling mod aktivitetsbudgettet og anslået forberedelse. Skriv, at tiderne er regnet igennem og ikke afprøvet.
 - **Materialer:** hvad der skal forberedes, fx slides og noteark. Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse` (én øvelse) eller `cl-forloeb` (et helt modul med CL). Har planen en gruppefase på 20 minutter eller mere, hvor eleverne skal arbejde selv, så tilbyd `dagsorden-lav` (en udretterdagsorden med roller og faser til den fase). Tilbyd og **VENT** på svar. Er skillen ikke tilgængelig, så sig, at den hører til et plugin, der ikke ser ud til at være installeret, og fortsæt uden.
@@ -121,6 +122,8 @@ Lav tjekket stille, og ret planen, før du afleverer. Skriv kun det til læreren
 - Passer tiderne, og summer de til lektionens længde?
 - Er hvert spørgsmål skrevet færdigt?
 - Har du prøvet hvert spørgsmål til eleverne af? Skriv svaret selv, og svar så som en middelmådig elev på den afsatte tid. Alle skal kunne sige noget, og et tomt svar må ikke være nok.
+- Er tal, aktuelle forhold og definitioner, der ikke kommer fra læreren eller en læst tekst, mærket "(tjek)" og samlet i én linje?
+- Bruger planen kun teorier og teoretikere, klassen har mødt, eller står de i antagelseslinjen?
 - Peger alle aktiviteter på målet, og træner de det, eleverne skal kunne?
 - Har de stærke elever noget at strække sig efter?
 - Har overgange egne minutter, og er der slack, når pause, hej og oprydning er trukket fra?

@@ -44,8 +44,8 @@ Spørg: "Passer rækkefølgen, eller skal noget byttes?"
 
 ### Skriv forløbet
 
-2. **Lav en samlet oversigt** med tider, overgange og grupper, så de samme grupper ikke skal laves om uden grund.
-3. **Beskriv hver øvelse** efter den korte version i principperne, men gentag ikke materialer og rammer, der allerede står. Skriv spørgsmål og opgaver færdige, hvor du kender indholdet.
+2. **Lav en samlet oversigt** med tider, overgange og grupper, så de samme grupper ikke skal laves om uden grund. Skriv gruppereglen, så den også virker, når der mangler elever, jf. "Elevtal og fravær" i principperne.
+3. **Beskriv hver øvelse** efter den korte version i principperne, men gentag ikke materialer og rammer, der allerede står. Skriv spørgsmål og opgaver færdige, hvor du kender indholdet, og følg "Fakta, tal og aktuelle forhold" og "Kun det, klassen har mødt" i principperne.
 4. **Skriv overgangene:** hvad siger læreren, og hvad tager eleverne med videre?
 5. **Skriv noterne:** hvad står eleverne med, når forløbet er slut?
 6. **Skriv, hvad der kan skæres væk,** hvis tiden løber.
@@ -59,6 +59,10 @@ Giv det hele samlet i ét svar, og vis overblikket først. Slut med én linje om
 Lav tjekket stille, og ret det, der ikke holder.
 
 - Summer tiderne til modulets længde, også med overgange?
+- Virker grupperne og hver øvelse, også når fire elever mangler?
+- Bruger forløbet kun teorier og teoretikere, klassen har mødt, eller står de i antagelseslinjen?
+- Er tal, aktuelle forhold og usikre svar samlet i linjen "Tjek"?
+- Ved de par eller teams, der er færdige først, hvad de skal?
 - Er alle øvelser med svag SPIL skærpet?
 - Bygger øvelserne reelt på hinanden?
 - Har du prøvet spørgsmål og opgaver af? Skriv svaret selv, og svar så som en middelmådig elev på den tid, øvelsen giver. Kan du ikke skrive ét sikkert svar, eller er et tomt svar nok, så ret spørgsmålet.

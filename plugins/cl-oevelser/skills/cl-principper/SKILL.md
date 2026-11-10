@@ -57,6 +57,39 @@ Praksiserfaring, ikke forskning:
 
 **Erhvervsøkonomi:** cases og beregninger. Kobl teori til rigtige virksomheder, og brug gerne regneark og modeller.
 
+## Fakta, tal og aktuelle forhold
+
+Spørgsmål og kort uden en tekst bag kommer fra din egen viden. Den kan være forældet eller forkert, og fejlen ender på et kort i hænderne på eleverne.
+
+- **Mærk det, der skal tjekkes:** tal, årstal, citater, lovgivning, partiers politik, virksomheders forhold og aktuelle sager, som ikke kommer fra læreren, en læst tekst eller `forloeb.md`, samles i linjen "Tjek" i beskrivelsen.
+- **Opfind ikke noget, der ligner virkelighed:** ingen opdigtede citater, undersøgelser eller navngivne sager. En opdigtet case skal fremstå som opdigtet: "Forestil jer en virksomhed, der ...".
+- **Facit på kort** skal du selv kunne begrunde. Er du i tvivl om et svar, så tag kortet ud, eller sæt det i linjen "Tjek".
+
+## Kun det, klassen har mødt
+
+En klasse har ikke nødvendigvis haft de teorier og teoretikere, der plejer at høre til emnet.
+
+- Brug kun teorier, teoretikere og modeller fra læreren, en læst tekst eller `forloeb.md`.
+- Kender du dem ikke, fx i hurtig-tilstand, hvor Gate 1 springes over, så skriv dem, du selv trækker ind, i antagelseslinjen øverst: "Antaget: klassen har haft X og Y." Så ser læreren det, før resten læses.
+- Lav ikke kort eller ark til print med teoretikere, læreren ikke har bekræftet. Nævn dem, og få et ja først. Et kortsæt med en teoretiker, klassen ikke har haft, kan ikke bruges.
+
+## Elevtal og fravær
+
+Det er praksisråd, ikke forskning. Der mangler næsten altid nogen på dagen, så en øvelse, der kun virker på det oplyste elevtal, virker ikke.
+
+- **Regel på et spænd:** skriv gruppereglen, så den virker fra ca. fire færre end det oplyste elevtal og op til det fulde tal, fx "teams á 4, og går det ikke op, så ét eller to teams á 3". Prøv den selv af på hvert tal i spændet. Ingen må ende alene.
+- **Dan grupperne på dagen** ved at tælle af, medmindre sammensætningen betyder noget.
+- **Par:** skriv, hvad der sker ved ulige elevtal: en trio, eller læreren er med.
+- **Kort, der hører sammen:** print til det fulde elevtal, og skriv, hvad læreren tager ud, når der mangler elever. Tag hele par eller hele sæt ud, så ingen står med et kort uden makker.
+- **Faste dele,** fx ekspertgrupper og puslespil: skriv, hvad der sker, når et team mangler en ekspert. To teams kan slås sammen, eller teamet får ekspertens ark.
+- **Forberedelse hjemme:** øvelsen må ikke falde, fordi én elev med en bestemt del er væk.
+
+Saml det i linjen "Mangler der elever" i beskrivelsen.
+
+## Dem, der er færdige først
+
+Par og teams bliver ikke færdige samtidig. Skriv ind i trinnet, hvad de hurtige gør, så de ikke venter: et ekstra kort, et sværere spørgsmål, eller at de skriver deres svar ind i noterne. Det skal bygge videre på opgaven og ikke være en ny aktivitet.
+
 ## Kvalitetskrav
 
 En anbefaling skal være:
@@ -65,7 +98,7 @@ En anbefaling skal være:
 - realistisk i tid, også med overgange og instruktion
 - fagligt relevant for det konkrete emne
 - i overensstemmelse med SPIL
-- tilpasset klassens størrelse og forudsætninger
+- tilpasset klassens størrelse og forudsætninger, også når der mangler elever
 - gennemarbejdet nok til at kunne bruges i morgen, med færdigskrevne spørgsmål, hvor du kender indholdet
 
 ## Kort version (standard)
@@ -82,6 +115,7 @@ Forbered: [det, der skal laves eller printes inden timen]
 2. [trin] ([x] min)
 
 Spørgsmål, kort eller opgaver: [skrevet færdigt til emnet]
+Mangler der elever: [hvad læreren gør, i én linje]
 Noter: [hvordan eleverne får noter, i én linje]
 ```
 
@@ -90,6 +124,7 @@ Læg kun disse linjer til, når de gælder:
 - **Skærpet:** hvad du har ændret i forhold til banken, og hvilket princip det sikrer.
 - **Svag på:** de principper, øvelsen stadig er svag på.
 - **Ikke afprøvet:** hvis øvelsen er en af de nye i banken eller en, du selv har lavet.
+- **Tjek:** tal, aktuelle forhold og svar, læreren skal tjekke, jf. "Fakta, tal og aktuelle forhold".
 
 SPIL-tjek pr. princip, variationer og tips hører til den fulde beskrivelse.
 
