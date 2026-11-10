@@ -17,6 +17,8 @@ Lav en lektion, hvor alle løbende gør noget fagligt, læreren kan se, og som l
 
 1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../klasseledelse-principper/SKILL.md`. Læs `${CLAUDE_SKILL_DIR}/../klasseledelse-principper/references/evidens.md`, før du henviser til forskning.
 
+**Skal kendes:** fag, emne eller mål, og modulets længde. Resten antager du. Følg "Arbejdsgang" i principperne: i hurtig-tilstand springer du Gate 1 og 2 over, skriver antagelserne i én linje og afleverer den korte version med det samme. Findes der en `forloeb.md`, så hent rammerne dér.
+
 ### Gate 1: Afklar rammer (VENT på svar)
 
 Re-ground: "Vi planlægger en lektion, hvor alle er med. Jeg mangler et par oplysninger."
@@ -39,7 +41,7 @@ Resten antager du og skriver tydeligt i Gate 2, så læreren kan rette det: fork
 
 Re-ground: "Vi er ved **Gate 2**. Her er skelettet, før jeg skriver drejebogen."
 
-Træf først disse to valg og begrund dem kort:
+Træf først disse to valg, og skriv hvert af dem i én linje:
 
 - **Rækkefølge:** instruktion først eller problem først, ud fra forkundskab, stoffets sværhedsgrad og klassen. Anbefal ét, og begrund det med skærpelse 4, 9 og 10 i principperne og ét evidensmærke. Vælger du problem først, så skriv, hvordan forsøget stilladseres, og hvor opsamlingen ligger. Er gennemgangen lang, så skriv, hvor aktiviteten ligger undervejs.
 - **Model:** skal eleverne se et eksemplarisk produkt? Vis det ved nyt, og aftrap det, når klassen kender genren.
@@ -50,7 +52,7 @@ Vis derefter skelettet med koder fra deltagelseskortet, og skriv forklaringen af
 |-----|------|------|----------------------|
 | [x] | [fase] | A/G/E/L | [synlig handling] |
 
-Under tabellen: dine antagelser, længste strækning med L og E, hvad du har valgt fra og hvorfor, og en optælling mod aktivitetsbudgettet i principperne: faser, nye strukturer, skift, elevark og minutter. Er budgettet overskredet, så sig det, og foreslå, hvad der kan fjernes.
+Under tabellen: dine antagelser i én linje. Tæl stille mod aktivitetsbudgettet i principperne: faser, nye strukturer, skift, elevark og minutter. Skriv kun noget om budgettet eller om den længste strækning med L og E, hvis der er et problem, og foreslå så, hvad der kan fjernes.
 
 Bruger skelettet grupper, og kender du ikke fremmødet, så spørg også: "Hvor mange elever plejer at møde op, som et spænd pr. klasse, fx 10-12 og 13-19?"
 
@@ -80,14 +82,31 @@ Hold planen inden for aktivitetsbudgettet, og skriv opgaverne præcist, jf. "Enk
 
 ### Sådan afleverer du
 
-Skriv først målet i én sætning og derefter drejebogen:
+#### Kort version (standard)
+
+Det er den, læreren får, medmindre læreren beder om den grundige udgave:
+
+1. **Målet** i én sætning, og antagelserne i én linje.
+2. **Drejebogen:**
+
+   | Tid | Læreren gør og siger | Alle elever gør | Synligt tjek |
+   |-----|----------------------|-----------------|--------------|
+
+   Tag kolonnen Skærm med, hvis eleverne bruger skærm i modulet. Kolonnen Kode hører til den grundige udgave. Skriv opgaver og spørgsmål færdigt i tabellen, men hold lærerens øvrige replikker på stikord.
+3. **Køreplan til eleverne:** ét trin pr. fase med modulets mål eller problemformulering øverst, skrevet til eleverne, så den kan stå fremme hele modulet.
+4. **Tre linjer til læreren:** "Kan springes over", hvis tiden løber. "Forbered": det, der skal laves eller printes inden timen. "Grupper": gruppereglen i én linje, hvis planen bruger grupper, fx "tæl af til 4, og ved 13 elever bliver det 3 grupper á 3 og 1 á 4".
+5. **Kun ved problemer:** én linje, hvis aktivitetsbudgettet er overskredet, tiden er stram, eller en genert elev har færre end fem trygge deltagelser.
+6. **Én afsluttende linje:** "Sig til, hvis noget skal ændres, eller hvis du vil have instruktionsslides, deltagelseskort, fremmødetabel med printliste, elevark til print eller planen som dida-plan til storskærmen." Mangler planen en aktivitet, eller har den en gruppefase på 20 minutter eller mere, hvor eleverne arbejder selv, så nævn `cl-find-oevelse` eller `dagsorden-lav` i samme linje.
+
+Skriv ikke begrundelser, evidensmærker eller optællinger i den korte version, medmindre læreren spørger hvorfor.
+
+#### Grundig udgave (på opfordring)
+
+Når læreren beder om det hele eller om enkelte dele, så lever drejebogen med kolonnerne Kode og Skærm og de dele, der er bedt om:
 
 | Tid | Læreren gør og siger | Alle elever gør | Synligt tjek | Kode | Skærm |
 |-----|----------------------|-----------------|--------------|------|-------|
 
-Efter tabellen:
-
-- **Køreplan til eleverne:** lever den altid. Ét trin pr. fase med modulets mål eller problemformulering øverst, skrevet til eleverne, så den kan stå fremme hele modulet med det aktuelle trin fremhævet.
 - **Instruktionsslide til hver fase:** kort tekst, der siger, hvad eleverne laver, med hvem, hvor længe, om skærmen er oppe eller nede, og hvornår de er klar. Brug de samme korte overgangssætninger hver gang, fx "Nu gør vi én sammen" og "Nu prøver I selv". Lærerens replikker hører til i notefeltet.
 - **Fremmøde (hvis planen bruger grupper):** en enkel regel og en kort tabel med mindste, typiske og største elevtal: antal grupper og fordeling, fx 13 elever = 3 grupper á 3 + 1 gruppe á 4. Tjek, at hver fordeling summer til elevtallet, og prøv selv gruppereglen af på alle elevtal i spændet. Derunder en printliste med én kolonne pr. holdstørrelse, der regner med det højeste elevtal og det højeste antal grupper for holdet.
 - **Deltagelseskort:** forklaring af koderne, rækkefølgen af koder, længste strækning med L og E og antal trygge deltagelser.
@@ -96,6 +115,8 @@ Efter tabellen:
 - **Det kan du forvente:** én typisk reaktion fra eleverne, og hvordan du møder den, hvis formen er ny for klassen. Er planen mere aktiv, end klassen er vant til, så skriv en kort begrundelse til eleverne om, at det føles sværere, men giver mere læring (Moderat).
 
 ### Kvalitetstjek inden aflevering
+
+Lav tjekket stille, og ret planen, før du afleverer. Skriv kun det til læreren, der ikke kan rettes.
 
 - Passer tiderne, og summer de til lektionens længde?
 - Er hvert spørgsmål skrevet færdigt?
@@ -110,13 +131,13 @@ Efter tabellen:
 - Holder planen aktivitetsbudgettet, og starter den vigtigste aktivitet senest 25 minutter før slut?
 - Kan klassen nå den vigtigste aktivitet, hvis alt tager 20 % længere tid?
 
-Afslut med: "Vil du justere noget, fx tempoet, en aktivitet eller tonen?" Beder læreren om ændringer, så følg "Når læreren beder om ændringer" i principperne.
+Afslut med den ene linje fra den korte version. Beder læreren om ændringer, så følg "Når læreren beder om ændringer" i principperne.
 
-### Gate 3: Tilbyd materialer (VENT på svar)
+### Gate 3: Materialer (kun når læreren beder om dem)
 
-Når læreren har godkendt planen, så tilbyd: "Skal jeg lave printklare elevark, en lærerpakke med drejebog og facit og slides til planen?" Nævn de ark, planen konkret bruger: skemaer, ekspertkort, kort til at klippe ud eller skriveark.
+Tilbuddet om materialer står i den afsluttende linje. Nævn dér de ark, planen konkret bruger: skemaer, ekspertkort eller skriveark. Lav ikke materialer, før læreren har sagt ja.
 
-**VENT** på svar. Siger læreren ja, så læs `${CLAUDE_SKILL_DIR}/references/materialer.md`, og:
+Siger læreren ja, så læs `${CLAUDE_SKILL_DIR}/references/materialer.md`, og:
 
 1. Lav kun det, læreren har sagt ja til, og kun de ark, planen bruger, så de kan printes uden redigering. Brug en dokumentskill som `docx`, hvis den er tilgængelig. Ellers skriv arkene i chatten, og sig det.
 2. Lav lærerpakken som en særskilt fil med facit, så facit ikke ryger med ud til eleverne, og del elevarkene i printfiler efter modtager.
@@ -127,7 +148,7 @@ Når læreren har godkendt planen, så tilbyd: "Skal jeg lave printklare elevark
 
 Skal læreren bruge et helt sæt arbejdsspørgsmål til en tekst, så tilbyd `bloom-spoergsmaal-til-tekst` i stedet.
 
-Tilbyd også at vise køreplan og opgaver på storskærm med `dida-plan`. Den supplerer slides, men erstatter dem ikke: faser med gennemgang, figurer eller billeder skal stadig have slides. Tilbyd og **VENT** på svar. Er skillen ikke tilgængelig, så sig, at den hører til et plugin, der ikke ser ud til at være installeret, og fortsæt uden.
+Vil læreren have køreplan og opgaver på storskærm, så start `dida-plan`, og giv den den godkendte plan, så den ikke spørger igen. Den supplerer slides, men erstatter dem ikke: faser med gennemgang, figurer eller billeder skal stadig have slides. Er skillen ikke tilgængelig, så sig, at den hører til et plugin, der ikke ser ud til at være installeret, og fortsæt uden.
 
 ---
 

@@ -5,41 +5,42 @@ argument-hint: "[fagtekst eller emne]"
 allowed-tools:
   - Read
   - Glob
+  - Write
 ---
 
 # Lektiespørgsmål
 
-Lav overkommelige lektiespørgsmål som eleverne kan forberede hjemme og som kan bruges som lektietjek i starten af timen.
+Lav overkommelige lektiespørgsmål, som eleverne kan forberede hjemme, og som kan bruges som lektietjek i starten af timen.
 
-## Brug
+**Skal kendes:** teksten. Har du den ikke, så bed om den eller om et kort resumé, og stop. Følg "Arbejdsgang" i `bloom-spoergsmaalsregler`.
 
-Giv mig en tekst og eventuelt ønsket antal (default: 3). Jeg laver spørgsmål der:
+Spørgsmålene:
 
-- Ligger på **Huske/Forstå**-niveau
-- Dækker tekstens vigtigste indhold
-- Kan besvares på 5-7 minutter samlet
-- Har Bloom-niveau og videnstype angivet
+- ligger på **Huske/Forstå**
+- dækker tekstens vigtigste indhold
+- kan besvares på 5 til 7 minutter samlet
+- har Bloom-niveau og videnstype angivet
 
 ## Trin
 
 1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/SKILL.md` for spørgsmålsregler.
-2. **Identificér kernestof:** Hvad skal eleven mindst have forstået for at kunne følge timen?
+2. **Find kernestoffet:** Hvad skal eleven mindst have forstået for at kunne følge timen? Vælg de tre vigtigste begreber eller pointer.
+3. **Formulér 3 spørgsmål** (eller det antal, læreren beder om) på Huske/Forstå med konkrete spørgeord.
+4. **Angiv metadata** (Bloom-niveau og videnstype) for hvert spørgsmål.
 
-### Gate: Bekræft kernestof — VENT på OK
+## Sådan afleverer du
 
-Re-ground: "Jeg har læst teksten og identificeret de vigtigste begreber. Her er hvad jeg vil teste i lektietjekket."
+Der er ingen gate, og du spørger ikke, om det skal være hurtigt eller grundigt. Tre spørgsmål er hurtigere at rette bagefter end at godkende på forhånd.
 
-Præsentér de 3-5 vigtigste begreber/pointer fra teksten og spørg:
-"Er det disse begreber du vil teste i lektietjekket? Eller vil du prioritere anderledes?"
+- Én linje øverst: "Fokus: [X, Y og Z]."
+- Spørgsmålene.
+- Én linje til sidst: "Sig til, hvis fokus skal flyttes, eller du vil have flere."
 
-**VENT** på svar.
+Beder læreren om sparring om, hvad lektietjekket skal teste, så vis de 3 til 5 vigtigste begreber med din anbefaling, og **VENT** på svar, før du skriver spørgsmålene.
 
-Giv en anbefaling: "Jeg anbefaler at vi fokuserer på [X, Y, Z] fordi det er de begreber der er mest centrale for tekstens hovedpointe."
+## Eksempel på output
 
-3. **Formulér spørgsmål** på Huske/Forstå-niveau med konkrete spørgeord.
-4. **Angiv metadata** (Bloom-niveau + videnstype) for hvert spørgsmål.
-
-## Eksempel output
+Fokus: de fire friheder, tekniske handelshindringer og arbejdskraftens frie bevægelighed.
 
 **1. Hvad er de fire friheder i EU's indre marked?**
 *(Huske, faktuel viden)*
@@ -54,6 +55,6 @@ Giv en anbefaling: "Jeg anbefaler at vi fokuserer på [X, Y, Z] fordi det er de 
 
 ## Completion Status
 
-- **DONE** — Lektiespørgsmål leveret med metadata
-- **DONE_WITH_CONCERNS** — Leveret, men kernestoffet var svært at afgrænse
-- **NEEDS_CONTEXT** — Mangler information om hvad eleverne har arbejdet med før
+- **DONE**: Lektiespørgsmål leveret med metadata
+- **DONE_WITH_CONCERNS**: Leveret, men kernestoffet var svært at afgrænse
+- **NEEDS_CONTEXT**: Mangler teksten

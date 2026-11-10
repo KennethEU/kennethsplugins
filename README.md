@@ -15,7 +15,7 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 
 ## Kommandoer
 
-Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `blooket-`, `klasseledelse-`, `cl-`, `dagsorden-`), så de står samlet i menuen. Skriv `/casespil`, `/bloom`, `/blooket`, `/klasseledelse`, `/cl` eller `/dagsorden` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
+Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `blooket-`, `klasseledelse-`, `cl-`, `dagsorden-`, `dida-`, `didaktik-`), så de står samlet i menuen. Skriv `/casespil`, `/bloom`, `/blooket`, `/klasseledelse`, `/cl`, `/dagsorden`, `/dida` eller `/didaktik` i Cowork for at se hele gruppen. I Claude Code kommer plugin-navnet også foran (`/bloom:bloom-lektiespoergsmaal`).
 
 | Kommando | Hvad den gør |
 |----------|--------------|
@@ -28,11 +28,11 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 | `/casespilsdesigner:casespil-ekstern-review` | Ekstern AI-gennemgang i runder med verificering af fund |
 | `/casespilsdesigner:casespil-sprogtjek` | Sprogcheck af materialerne |
 | `/casespilsdesigner:casespil-digitale-tillaeg` | AI-rådgiver, facit-beregner og andre digitale dele |
-| `/bloom:bloom-spoergsmaal-til-tekst` | Komplet sæt arbejdsspørgsmål til en tekst, to versioner og taxonomy table |
+| `/bloom:bloom-spoergsmaal-til-tekst` | Sæt arbejdsspørgsmål til en tekst i taksonomisk progression. Tekstnær version og taxonomy table på opfordring |
 | `/bloom:bloom-lektiespoergsmaal` | 3 lektiespørgsmål på Huske/Forstå |
-| `/bloom:bloom-skabe-opgaver` | 8 til 12 kreative skabe-spørgsmål |
+| `/bloom:bloom-skabe-opgaver` | 6 kreative skabe-spørgsmål, op til 12 på opfordring |
 | `/bloom:bloom-vurder-spoergsmaal` | Vurdering og forbedring af eksisterende spørgsmål |
-| `/bloom:bloom-planlaeg-time` | Tre-faset time med spørgsmål og arbejdsformer |
+| `/bloom:bloom-planlaeg-time` | Tre-faset time med spørgsmål og arbejdsformer, til 45 eller 90 minutter |
 | `/blooket:blooket-lav-quiz` | Blooket-quiz som CSV-fil |
 | `/klasseledelse:klasseledelse-planlaeg-lektion` | Lektion eller modul med drejebog, hvor alle er med |
 | `/klasseledelse:klasseledelse-vurder-plan` | Vurdering af en plan med deltagelseskort og konkrete omskrivninger |
@@ -45,6 +45,17 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 | `/modulplanlaegger:didaktik-planlaeg-forloeb` | Planlægger et forløb eller en modulrække og sender modulerne videre til de andre skills |
 
 `casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket), `klasseledelse-principper` (klasseledelse), `cl-principper` (CL), `dagsorden-principper` (udretterdagsorden) og `didaktik-principper` (modulplanlægger) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
+
+## Hurtigt og kort
+
+Skillene til daglig planlægning (`klasseledelse`, `bloom`, `cl-oevelser`, `dida`, `udretterdagsorden` og `modulplanlaegger`) følger samme arbejdsgang:
+
+- **Hurtig eller grundig:** skillen spørger først, om du vil have det hurtigt eller en grundigere planlægning. Hurtigt betyder ingen flere spørgsmål, antagelserne i én linje øverst og aflevering med det samme. Grundigt betyder afklaring og godkendelsestrin undervejs. Skriver du "hurtigt" eller "bare lav den", eller beder du om sparring ("hvad synes du?"), springer den spørgsmålet over, og valget gælder resten af samtalen.
+- **Kort som standard:** du får det, du skal bruge i timen. Deltagelseskort, taxonomy table, fuld øvelsesbeskrivelse og lignende kommer, når du beder om dem. Det står i den sidste linje af svaret, hvad du kan bede om.
+- **Forløbsmappen:** findes der en `forloeb.md` fra `didaktik-planlaeg-forloeb`, læser de andre skills rammerne dér og gemmer deres materialer i forløbets mappe med modulnummeret først i filnavnet.
+- **Ingen dobbelt godkendelse:** når én skill sender videre til en anden, fx en godkendt drejebog til `dida-plan`, laver modtageren resultatet direkte.
+
+Reglerne står i afsnittet "Arbejdsgang" i hvert plugins principfil. `python3 tjek_arbejdsgang.py` tjekker, at afsnittet er ens i alle fem.
 
 ## Installation
 
@@ -80,6 +91,7 @@ Scriptet kører `git pull`, laver en genvej `plugin.json` i hver plugin-mappe (A
 kennethsplugins/
 ├── .claude-plugin/marketplace.json     ← kataloget over plugins
 ├── update_plugins.sh                   ← opdaterer og kobler plugins til Antigravity
+├── tjek_arbejdsgang.py                 ← tjekker, at "Arbejdsgang" er ens i principfilerne
 └── plugins/
     ├── casespilsdesigner/              ← hvert plugin har sin egen mappe
     │   ├── .claude-plugin/plugin.json
@@ -105,6 +117,15 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 - `udretterdagsorden` tjekker dagsordenen med `validate-dagsorden.py` og laver Word-udgaven med `generate-dagsorden.js`, som kræver npm-pakken `docx` (kør `npm install` i `plugins/udretterdagsorden/skills/dagsorden-principper/scripts`).
 
 ## Changelog
+
+### klasseledelse 1.13.0, bloom 1.3.0, cl-oevelser 1.5.0, dida 1.1.0, udretterdagsorden 1.1.0 og modulplanlaegger 0.2.0 (november 2026)
+- **Hurtig-tilstand og kort output** i alle skills til daglig planlægning, beskrevet i et fælles afsnit "Arbejdsgang" i principfilerne. Skillene spørger først, om det skal være hurtigt eller grundigt. Hurtigt springer spørgsmål og godkendelse over og afleverer en kort version. Resten kommer på opfordring.
+- `klasseledelse-planlaeg-lektion` afleverer mål, drejebog, køreplan og tre linjer til læreren. Instruktionsslides, deltagelseskort, fremmødetabel og planens vægt er flyttet til den grundige udgave.
+- `bloom`: ét sæt i taksonomisk progression som standard, 3 lektiespørgsmål uden godkendelsestrin, 6 skabe-spørgsmål, kort vurdering med forbedret sæt og en ny skabelon til 90 minutter i `bloom-planlaeg-time` med lektietjek som genkaldelse og individuel skrivning til sidst. Tankestreger er fjernet.
+- `cl-oevelser`: kort øvelsesbeskrivelse som standard, fuld skabelon på opfordring. `cl-principper` har nu det rigtige antal øvelser fra søgning (29).
+- **Forløbsmappen** bruges af alle: skillene læser `forloeb.md`, når den findes, og gemmer materialer med modulnummer. `dida-plan` laver filen direkte, når planen lige er godkendt.
+- `dagsorden-ide` gentager ikke længere designreglerne fra `dagsorden-lav`.
+- Nyt script `tjek_arbejdsgang.py`, `.gitignore` i evals for `dida` og `modulplanlaegger`, og præfikserne `dida-` og `didaktik-` står nu i oversigten.
 
 ### cl-oevelser 1.4.0 (november 2026)
 - Seks nye øvelser fra søgning på tysk, spansk, japansk og koreansk: Dækkeserviet, Læretempo-duet, Blyanter i midten, Tre minutters stop, Ekspertgrupper med før og efter og Havruta. Varianterne 1-2-4 og Holdpoint for fremgang (STAD). Ekspertgrupper har fået et forbehold, fordi lodtrukne forsøg ikke fandt ekstra læring. Kataloget har nu 44 øvelser, og `cl-find-oevelse` viser højst 8 til 10 ad gangen, når læreren vil se muligheder.

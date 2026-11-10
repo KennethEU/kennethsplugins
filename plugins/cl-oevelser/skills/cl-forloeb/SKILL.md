@@ -6,6 +6,7 @@ allowed-tools:
   - Read
   - Glob
   - Skill
+  - Write
 ---
 
 # Kombinér CL-øvelser til et forløb
@@ -15,6 +16,8 @@ Sæt øvelser sammen, så produktet fra den ene bliver råstof til den næste.
 ## Trin
 
 1. **Læs** `${CLAUDE_SKILL_DIR}/../cl-principper/SKILL.md` og `${CLAUDE_SKILL_DIR}/../cl-principper/references/oevelsesbank.md`.
+
+**Skal kendes:** emne og mål, og modulets længde. Følg "Arbejdsgang" i principperne: i hurtig-tilstand springer du Gate 1 og 2 over, skriver antagelserne i én linje og viser overblikstabellen fra Gate 2 øverst i det færdige forløb.
 
 ### Gate 1: Afklar rammer (VENT på svar)
 
@@ -42,16 +45,18 @@ Spørg: "Passer rækkefølgen, eller skal noget byttes?"
 ### Skriv forløbet
 
 2. **Lav en samlet oversigt** med tider, overgange og grupper, så de samme grupper ikke skal laves om uden grund.
-3. **Beskriv hver øvelse** efter skabelonen i principperne, men gentag ikke materialer og rammer, der allerede står. Skriv spørgsmål og opgaver færdige, hvor du kender indholdet.
+3. **Beskriv hver øvelse** efter den korte version i principperne, men gentag ikke materialer og rammer, der allerede står. Skriv spørgsmål og opgaver færdige, hvor du kender indholdet.
 4. **Skriv overgangene:** hvad siger læreren, og hvad tager eleverne med videre?
 5. **Skriv noterne:** hvad står eleverne med, når forløbet er slut?
 6. **Skriv, hvad der kan skæres væk,** hvis tiden løber.
 
 ### Sådan afleverer du
 
-Giv det hele samlet i ét svar, og vis overblikket først. Tilbyd printklart materiale som Word efter afsnittet i principperne, og tilbyd `dida-plan`, hvis modulet skal vises på storskærm. Indeholder forløbet en gruppefase på 20 minutter eller mere, hvor eleverne skal arbejde selv, så tilbyd `dagsorden-lav` til den fase. Er en skill ikke tilgængelig, så fortsæt uden. **VENT** på svar.
+Giv det hele samlet i ét svar, og vis overblikket først. Slut med én linje om, hvad læreren kan bede om: ændringer, materiale til print, modulet som dida-plan til storskærmen og, hvis forløbet har en gruppefase på 20 minutter eller mere, hvor eleverne arbejder selv, `dagsorden-lav` til den fase. Lav ikke printmateriale, og start ikke en anden skill, før læreren har sagt ja. Giv så den anden skill forløbet, så den ikke spørger igen. Er en skill ikke tilgængelig, så fortsæt uden.
 
 ### Kvalitetstjek inden aflevering
+
+Lav tjekket stille, og ret det, der ikke holder.
 
 - Summer tiderne til modulets længde, også med overgange?
 - Er alle øvelser med svag SPIL skærpet?

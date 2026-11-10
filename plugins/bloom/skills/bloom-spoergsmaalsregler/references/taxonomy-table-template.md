@@ -29,7 +29,7 @@ For hvert spørgsmål, bestem:
 1. **Kolonne:** Hvilket kognitivt niveau? (Huske → Skabe)
 2. **Række:** Hvilken videnstype?
 
-### Videnstyperne — beslutningsguide
+### Videnstyperne: beslutningsguide
 
 | Videnstype | Spørgsmålet handler om... | Eksempler |
 |------------|---------------------------|-----------|
@@ -43,7 +43,7 @@ For hvert spørgsmål, bestem:
 **Teoretiske tekster** (ideologier, integrationsteorier, vælgeradfærdsteorier):
 - Konceptuel viden dominerer (60-80 %)
 - Faktuel viden koncentreret på Huske-niveau
-- Procedural og metakognitiv sparsom — notér dette som forventeligt
+- Procedural og metakognitiv sparsom: notér dette som forventeligt
 
 **Empiriske tekster** (data, statistik, cases):
 - Mere procedural viden (brug af figurer, data)

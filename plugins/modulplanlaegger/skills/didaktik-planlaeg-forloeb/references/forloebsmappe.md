@@ -15,7 +15,7 @@ Planlægningen ligger i almindelige filer i en mappe på lærerens computer. Der
 |-----|---------|
 | `forloeb.md` | Ramme, modulrække eller skitse, status pr. modul og log. Den eneste fil, der skal læses for at fortsætte forløbet |
 | `modul-01-<tema>.md`, `modul-02-<tema>.md` ... | Detaljer for det enkelte modul, når det er planlagt |
-| Filer fra andre skills | Drejebog, elevark, slides, quiz, dida-plan og lignende. Læg dem i samme mappe, og skriv modulnummeret først i filnavnet, fx `modul-03-dida-plan.json` |
+| Filer fra andre skills | Drejebog, elevark, slides, quiz, dida-plan og lignende. Læg dem i samme mappe, og skriv modulnummeret først i filnavnet, fx `modul-03-drejebog.md` eller `modul-03-ulighed.dida-plan.json`. De andre plugins gør det selv, når de finder `forloeb.md` |
 
 Opret aldrig filer uden for den forløbsmappe, læreren har godkendt. Overskriv ikke en eksisterende fil uden at læse den først og sige, hvad der ændres.
 

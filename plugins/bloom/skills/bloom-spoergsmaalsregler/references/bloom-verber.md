@@ -1,4 +1,4 @@
-# Bloom's Reviderede Taksonomi — Kognitive Procesverber
+# Bloom's Reviderede Taksonomi: Kognitive Procesverber
 
 Komplet oversigt over verber til hvert kognitivt niveau med danske oversættelser og subkategorier.
 Brug denne fil når du skal formulere spørgsmål og vil sikre at verbet matcher det intenderede niveau.
@@ -95,7 +95,7 @@ Bruge viden og procedurer i nye situationer.
 - "Brug tekstens beskrivelse af Schengen til at forklare problemerne under flygtningekrisen."
 
 ### Vigtigt
-Anvende-spørgsmål kræver en NY situation eller case — ikke bare at gentage tekstens eget eksempel.
+Anvende-spørgsmål kræver en NY situation eller case, ikke bare at gentage tekstens eget eksempel.
 
 ---
 
@@ -151,7 +151,7 @@ Foretage vurderinger baseret på kriterier og standarder.
 - "Prioriter de fem faktorer efter deres betydning og begrund din prioritering."
 
 ### Vigtigt
-Kræv altid BEGRUNDELSE. "Hvad synes du om..." er IKKE et evalueringsspørgsmål — det er en holdningstilkendegivelse uden kriterier.
+Kræv altid BEGRUNDELSE. "Hvad synes du om..." er IKKE et evalueringsspørgsmål. Det er en holdningstilkendegivelse uden kriterier.
 
 ---
 
@@ -182,9 +182,9 @@ Sammensætte elementer til noget nyt og kohærent.
 
 ### Kategorier til dedikerede skabe-sæt (Mode 3)
 Når du laver et rent skabe-sæt, organisér i disse kategorier:
-1. **Design/Konstruktion** — byg noget nyt (model, system, kampagne)
-2. **Planlægning** — lav en strategi eller handlingsplan
-3. **Generering** — udvikl hypoteser eller alternativer
-4. **Produktion** — skriv, tegn, komponer et konkret produkt
-5. **Integration** — kombinér elementer fra forskellige dele af teksten
-6. **Metakognitiv** — reflektér over egen analyseproces (sparsomt)
+1. **Design/Konstruktion**: byg noget nyt (model, system, kampagne)
+2. **Planlægning**: lav en strategi eller handlingsplan
+3. **Generering**: udvikl hypoteser eller alternativer
+4. **Produktion**: skriv, tegn, komponer et konkret produkt
+5. **Integration**: kombinér elementer fra forskellige dele af teksten
+6. **Metakognitiv**: reflektér over egen analyseproces (sparsomt)

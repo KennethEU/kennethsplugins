@@ -19,6 +19,8 @@ Du giver ikke point, og du krydser ikke principper af. En plan, der bruger alle 
 1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../klasseledelse-principper/SKILL.md`. Læs `${CLAUDE_SKILL_DIR}/../klasseledelse-principper/references/evidens.md`, før du henviser til forskning.
 2. **Læs planen.** Hvis den er en fil, så læs filen. Hvis du ikke har nogen plan, så bed om den og stop.
 
+**Skal kendes:** planen. Følg "Arbejdsgang" i principperne: i hurtig-tilstand springer du Gate 1 over, læser formål, klasse og tid ud af planen eller `forloeb.md`, skriver antagelserne i én linje og afleverer den korte version. Spørgsmålet i Gate 2 bliver til den afsluttende linje.
+
 ### Tjek først: Er det en plan? (FØR Gate 1)
 
 En plan siger, hvad der sker hvornår. Der skal mindst være en rækkefølge af faser, og noget om tid eller arbejdsformer. Tekster, sider og spørgsmål alene er en materialeliste.

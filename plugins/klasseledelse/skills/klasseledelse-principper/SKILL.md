@@ -211,6 +211,58 @@ Det er praksisråd, ikke forskning.
 - Find ikke på indhold, fx hvad en tabel viser.
 - Anslå ikke læsetid uden grundlag. Spørg, eller skriv, at tiden skal justeres af læreren.
 
+## Arbejdsgang: hurtigt, kort og samlet
+
+Gælder alle skills i pluginet og går forud for deres gates. Samme afsnit står i de andre undervisningsplugins, så de opfører sig ens.
+
+### Hurtig eller grundig
+
+Læreren vælger selv. Start med ét spørgsmål, og **VENT** på svar:
+
+"Vil du have det hurtigt, hvor jeg antager resten og afleverer med det samme, eller en grundigere planlægning, hvor vi afklarer og godkender undervejs?"
+
+Mangler der noget under "Skal kendes" i den enkelte skill, så spørg om det i samme besked.
+
+Spørg ikke, når valget allerede er truffet:
+
+- Læreren skriver "hurtigt", "bare lav den", "ingen spørgsmål" eller lignende: hurtig.
+- Læreren beder om sparring, fx "hvad synes du?" eller "hjælp mig med at vælge", eller om den grundige udgave: grundig.
+- Læreren har valgt tidligere i samtalen: valget gælder, indtil læreren siger andet.
+- Opgaven kommer fra en anden skill, jf. "Når en anden skill sender videre".
+- Skillen siger selv, at den ikke har nogen gate.
+
+**Hurtig-tilstand:**
+
+1. Stil ingen flere spørgsmål, og spring gates om afklaring og godkendelse over. Gates, der tilbyder printmateriale eller en anden skill, bliver til én linje til sidst.
+2. Skriv dine antagelser i én linje øverst, fx "Antaget: 2.g, 90 min. med pause, de fleste har læst."
+3. Aflever den korte version med det samme.
+4. Slut med én linje om, hvad læreren kan bede om nu.
+
+**Grundig planlægning:** brug gates, som de står i skillen. Outputtet er stadig kort som standard.
+
+I begge tilstande gælder reglerne om indhold: find ikke på indhold fra tekster, du ikke har læst, og sig, hvad der ikke er tjekket.
+
+### Kort som standard
+
+- Aflever det, læreren skal bruge i timen. Begrundelser, optællinger og tjeklister skrives kun, når de viser et problem, eller når læreren beder om dem.
+- Lav kvalitetstjek stille. Skriv kun de punkter, der ikke holder.
+- Gentag ikke lærerens oplysninger, og forklar ikke, hvad du vil gøre.
+- Den enkelte skill siger, hvad den korte version indeholder, og hvad der kun kommer på opfordring. Nævn det sidste i én linje, ikke som en liste af tilbud.
+
+### Forløbsmappen
+
+Kan du se filer, så søg efter `forloeb.md` i den mappe, I arbejder i (`**/forloeb.md`). Den laves af `didaktik-planlaeg-forloeb`. Findes den, og hører opgaven til forløbet:
+
+- Læs den, og brug fag, klasse, modullængde, modulets mål og det, klassen har haft. Spørg ikke om det, der står der.
+- Gem resultatet i forløbets mappe med modulnummeret først i filnavnet, fx `modul-03-drejebog.md`, og sig, hvor det ligger. Overskriv ikke en fil uden at sige det først.
+- Ret ikke i `forloeb.md`. Det gør `didaktik-planlaeg-forloeb`.
+
+Findes den ikke, så nævn den ikke, og gem kun filer, når læreren beder om det.
+
+### Når en anden skill sender videre
+
+Kommer opgaven fra en anden skill, eller ligger der en plan i samtalen, som læreren lige har godkendt, så brug det, der allerede er afklaret, og spring din egen afklaring og godkendelse af det samme over. Gå direkte til resultatet.
+
 ## Sådan skal du formulere dig
 
 - Skriv "ikke synligt i planen", når noget ikke står der. Læreren kan sagtens gøre det alligevel.

@@ -5,6 +5,7 @@ argument-hint: "[plan eller drejebog]"
 allowed-tools:
   - Read
   - Glob
+  - Skill
   - Write
   - Bash(python3:*)
 ---
@@ -15,7 +16,11 @@ Lav en fil, klassen kan følge med i på storskærmen. Planen skal være enkel, 
 
 ## Trin
 
-1. **Find planen.** Brug planen fra samtalen, eller læs filen, hvis du får en. Har du ingen plan, så bed om den, eller tilbyd at lave den med `klasseledelse-planlaeg-lektion`, og stop. Er den en liste over tekster og sider uden faser, så find ikke på faser. Sig det, og spørg.
+1. **Find planen.** Brug planen fra samtalen, eller læs filen, hvis du får en. Har du ingen plan, så bed om den, eller tilbyd at lave den med `klasseledelse-planlaeg-lektion`, og stop. Siger læreren ja, så start den skill. Er den en liste over tekster og sider uden faser, så find ikke på faser. Sig det, og spørg.
+
+### Hurtig vej: godkendt plan
+
+Har læreren lige godkendt planen i samtalen, sender en anden skill planen videre, eller skriver læreren "hurtigt" eller "bare lav den", så spring Gate 1 over. Lav trinene, skriv og tjek filen, og vis tabellen fra Gate 1 bagefter som kvittering med én linje om, hvad du har slået sammen eller delt op. Kommer læreren med en plan, du ikke har set før, og er intet af det opfyldt, så spørg først: "Skal jeg lave filen med det samme, eller vil du se trinene først?" Brug ellers kun Gate 1, når planen mangler tider eller opgaver, eller når den har mange flere trin, end reglerne tillader.
 
 ### Gate 1: Vis trinene (VENT på OK)
 
@@ -34,7 +39,7 @@ Spørg: "Passer trinene?"
 
 ### Skriv filen
 
-3. **Skriv filen** med Write, efter formatet nedenfor, som `<titel>.dida-plan.json` i lærerens mappe. Kan du ikke skrive filer, så giv JSON'en i én kodeblok.
+3. **Skriv filen** med Write, efter formatet nedenfor, som `<titel>.dida-plan.json` i lærerens mappe. Ligger der en `forloeb.md` for forløbet (søg med `**/forloeb.md`), så gem filen i forløbets mappe med modulnummeret først, fx `modul-03-<titel>.dida-plan.json`, og ret ikke i `forloeb.md`. Kan du ikke skrive filer, så giv JSON'en i én kodeblok.
 4. **Tjek filen:** kør `python3 "${CLAUDE_SKILL_DIR}/scripts/tjek_plan.py" "<fil>"`, og ret alle fejl. Kan du ikke køre scriptet, så gennemgå reglerne selv, og sig, at scriptet ikke er kørt.
 5. **Aflever:** sig, hvor filen ligger, og at den uploades på dida.dk/plan. Filen bliver i browseren og sendes ikke til serveren. Nævn genvejene: pile skifter trin, mellemrum starter timeren, F giver fuld skærm, og N åbner lærernoter i eget vindue.
 

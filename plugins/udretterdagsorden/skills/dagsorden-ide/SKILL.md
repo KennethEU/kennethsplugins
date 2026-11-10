@@ -25,7 +25,9 @@ Bed læreren beskrive, hvad eleverne skal arbejde med. Det kan være:
 - En rå idé ("jeg vil gerne have dem til at øve sig på PEST-analyse")
 - Et læringsmål ("de skal kunne skelne mellem virksomhedsformer")
 
-Spørg kort og præcist om det, du mangler for at analysere. Fokusér på:
+Følg "Arbejdsgang" i `dagsorden-principper`: står materiale, formål og tid allerede i beskeden eller i `forloeb.md`, så spring spørgsmålene over, og gå direkte til forslagene.
+
+Spørg ellers kort og præcist om det, du mangler for at analysere. Fokusér på:
 1. **Hvad er materialet?** (tekster, antal, sværhedsgrad, omfang)
 2. **Hvad er formålet?** (overblik, dybdeanalyse, repetition, produktion)
 3. **Hvor lang tid?** (minutter)
@@ -79,9 +81,9 @@ Stil **højst ét opfølgningsspørgsmål** samlet.
 Når læreren har valgt:
 
 1. Læs resten af vidensbasen `${CLAUDE_SKILL_DIR}/../dagsorden-principper/SKILL.md`: rollesystem, regler for instruktionstekst, kvalitetskriterier og JSON-format. Læs eksemplet i `${CLAUDE_SKILL_DIR}/../dagsorden-principper/resources/`.
-2. Design dagsordenen efter reglerne i vidensbasen og retningslinjerne nedenfor.
+2. Læs `${CLAUDE_SKILL_DIR}/../dagsorden-lav/SKILL.md`, og design dagsordenen efter trin 3 dér og reglerne i vidensbasen.
 3. Verificér kvalitetskriterierne internt (vis ikke tjeklisten). Kør `python3 "${CLAUDE_SKILL_DIR}/../dagsorden-principper/scripts/validate-dagsorden.py" <json-fil>`. Kan du ikke køre scriptet, så sig det.
-4. **Præsentér som kompakt overblik.** Læs `${CLAUDE_SKILL_DIR}/../dagsorden-lav/SKILL.md`, og følg præcis samme præsentations- og iterationsflow (trin 5 til 7).
+4. **Præsentér som kompakt overblik,** og følg præcis samme præsentations- og iterationsflow som `dagsorden-lav` (trin 5 til 7).
 
 Fra dette punkt er flowet identisk med `dagsorden-lav`:
 - Kompakt overblik i chatten
@@ -90,28 +92,7 @@ Fra dette punkt er flowet identisk med `dagsorden-lav`:
 
 ### Designretningslinjer
 
-**Struktur:**
-1. Start altid med rollevalg (2 til 4 min). Vælg tre *forskellige*, sjove, objektive kriterier.
-2. Individuel fase før gruppefase: eleverne tænker selv, inden de deler.
-3. Progressiv kompleksitet: start let, slut sværest.
-4. Pause (5 min), hvis den samlede tid er over 25 min.
-5. Afslut med produkt og/eller plenumforberedelse.
-
-**Instruktionstekst:**
-- Skriv til eleverne: "I", "du", "jeres".
-- Vær konkret: "Skim i tavshed" frem for "læs teksten".
-- Angiv pas-på-docs opgave eksplicit i hvert trin med gruppeproduktion.
-- Brug nummererede delopgaver 1), 2), 3), når der er flere handlinger.
-- Brug `**fed tekst**` til at fremhæve nøgleord (virker i dida.dk og markdown).
-
-**Differentiering:**
-- Sæt `groupCount` og `groupLabels` i JSON-roden.
-- Brug `groupInstructions` på trin, der kræver gruppespecifikt indhold.
-- Standard-`instruction` fungerer som fallback.
-
-**Tidsberegning:**
-- Summér alle trin, og verificér, at de matcher `totalTime`.
-- Typiske tider: rollevalg 3 min, individuel forberedelse 5 til 8 min, præsentation på tur 8 til 12 min, fælles analyse 8 til 15 min, pause 5 min, produktion 7 til 15 min, afslutning 3 til 5 min.
+Reglerne for struktur, instruktionstekst, differentiering og tidsberegning står i trin 3 i `dagsorden-lav` og i vidensbasen. Følg dem dér, så de kun skal rettes ét sted.
 
 ---
 

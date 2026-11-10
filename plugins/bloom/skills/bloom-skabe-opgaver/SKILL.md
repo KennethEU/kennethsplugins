@@ -1,57 +1,62 @@
 ---
 name: bloom-skabe-opgaver
-description: "Laver 8 til 12 kreative skabe-spørgsmål (Bloom niveau 6) til en fagtekst: design, planlægning, generering, produktion og integration. Brug når læreren siger \"skabe-spørgsmål\", \"kreative opgaver\", \"niveau 6\", \"projektopgaver\", \"eleverne skal producere noget\". Brug ikke til et komplet sæt på alle niveauer (bloom-spoergsmaal-til-tekst) eller til lektiespørgsmål (bloom-lektiespoergsmaal)."
+description: "Laver kreative skabe-spørgsmål (Bloom niveau 6) til en fagtekst, 6 som standard og op til 12 på opfordring: design, planlægning, generering, produktion og integration. Brug når læreren siger \"skabe-spørgsmål\", \"kreative opgaver\", \"niveau 6\", \"projektopgaver\", \"eleverne skal producere noget\". Brug ikke til et komplet sæt på alle niveauer (bloom-spoergsmaal-til-tekst) eller til lektiespørgsmål (bloom-lektiespoergsmaal)."
 argument-hint: "[fagtekst eller emne]"
 allowed-tools:
   - Read
   - Glob
+  - Write
 ---
 
 # Skabe-spørgsmål (Bloom niveau 6)
 
-Generér dedikerede kreative spørgsmål der kræver at eleverne designer, planlægger og producerer noget nyt. Velegnet til projektarbejde, større opgaver og eksamensforberedelse.
+Lav kreative spørgsmål, der kræver, at eleverne designer, planlægger og producerer noget nyt. Velegnet til projektarbejde, større opgaver og eksamensforberedelse.
+
+**Skal kendes:** teksten. Har du den ikke, så bed om den, og stop. Følg "Arbejdsgang" i `bloom-spoergsmaalsregler`: i hurtig-tilstand springer du gaten over.
 
 ## Kategorier
 
-- **Design/Konstruktion** — byg en model, kampagne, regelsæt
-- **Planlægning** — lav en strategi eller handlingsplan
-- **Generering** — udvikl hypoteser eller alternativer
-- **Produktion** — skriv et scenarie, debatindlæg, interview
-- **Integration** — kombinér elementer fra flere dele af teksten
+- **Design/Konstruktion**: byg en model, kampagne, regelsæt
+- **Planlægning**: lav en strategi eller handlingsplan
+- **Generering**: udvikl hypoteser eller alternativer
+- **Produktion**: skriv et scenarie, debatindlæg, interview
+- **Integration**: kombinér elementer fra flere dele af teksten
 
 ## Trin
 
 1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/SKILL.md`.
 2. **Læs Skabe-verberne** i `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/references/bloom-verber.md` (Niveau 6-sektionen).
-3. **Identificér kreativt potentiale** i teksten: hvad kan redesignes, planlægges, genereres?
+3. **Find det kreative potentiale** i teksten: hvad kan redesignes, planlægges eller genereres? Vælg de to til tre kategorier, teksten bærer bedst.
 
-### Gate: Bekræft fokus — VENT på OK
+### Gate: Bekræft fokus (kun uden for hurtig-tilstand, VENT på svar)
 
-Re-ground: "Jeg har analyseret teksten for kreativt potentiale. Her er hvad eleverne kan arbejde med på Skabe-niveau."
+Bruges, når læreren beder om sparring om, hvad opgaverne skal bruges til.
 
-Præsentér for læreren:
+Vis 3 til 4 muligheder fra teksten og de kategorier, der passer bedst, og giv en anbefaling: "Jeg anbefaler, at vi fokuserer på [kategori], fordi [begrundelse]."
 
-- **Kreativt potentiale:** [3-4 muligheder fra teksten]
-- **Anbefalede kategorier:** [Hvilke af de 5 kategorier der passer bedst]
-- **Foreslået antal:** [8-12 spørgsmål, med fordeling på kategorier]
-
-Spørg: "Hvilke kategorier vil du have flest spørgsmål i? Skal de bruges til gruppearbejde, individuelt projekt, eller eksamensforberedelse?"
+Spørg: "Skal de bruges til gruppearbejde, individuelt projekt eller eksamensforberedelse?"
 
 **VENT** på svar.
 
-Giv en anbefaling: "Jeg anbefaler at vi fokuserer på [kategori] fordi [begrundelse — fx teksten har stærkest potentiale til design/planlægning]."
+### Generér
 
-### Generér og præsentér
+4. **Formulér spørgsmålene** i de valgte kategorier med dansk kontekst og videnstype angivet.
+5. **Kvalitetstjek** stille: Kræver hvert spørgsmål, at eleven skaber noget nyt? Ret dem, der kun er Evaluere.
 
-4. **Formulér spørgsmål** i de valgte kategorier med dansk kontekst og videnstype angivet.
-5. **Kvalitetstjek:** Kræver hvert spørgsmål at eleven SKABER noget nyt?
+## Sådan afleverer du
 
-Afslut med: "Vil du justere ambitionsniveauet, tilføje flere i en bestemt kategori, eller ændre konteksten?"
+**Kort version (standard):**
+
+- Én linje øverst: de valgte kategorier og antagelsen om brugen, fx "Kategorier: Design og Planlægning. Antaget: gruppearbejde."
+- 6 spørgsmål med kategori og videnstype.
+- Én linje til sidst: "Sig til, hvis du vil have flere (op til 12), en anden kategori eller et andet ambitionsniveau."
+
+Beder læreren om et bestemt antal eller om alle kategorier, så lever det.
 
 ---
 
 ## Completion Status
 
-- **DONE** — Skabe-spørgsmål leveret i valgte kategorier
-- **DONE_WITH_CONCERNS** — Leveret, men nogle spørgsmål er tæt på Evaluere-niveau
-- **NEEDS_CONTEXT** — Mangler information om kontekst (gruppe/individ/eksamen)
+- **DONE**: Skabe-spørgsmål leveret
+- **DONE_WITH_CONCERNS**: Leveret, men nogle spørgsmål er tæt på Evaluere-niveau
+- **NEEDS_CONTEXT**: Mangler teksten

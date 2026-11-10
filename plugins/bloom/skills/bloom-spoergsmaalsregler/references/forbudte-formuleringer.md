@@ -18,8 +18,8 @@ Disse akademiske direktiver må ALDRIG bruges i spørgsmålsformuleringer:
 
 | Forbudt | Hvorfor | Brug i stedet |
 |---------|---------|---------------|
-| **Analysér** | Upræcist — fortæller ikke eleven hvad de skal gøre | "Hvilke forskelle er der mellem...", "Hvordan hænger...sammen" |
-| **Diskutér** | For åbent — giver ingen retning | "Er det holdbart at...? Begrund", "Hvilke argumenter taler for og imod..." |
+| **Analysér** | Upræcist: fortæller ikke eleven hvad de skal gøre | "Hvilke forskelle er der mellem...", "Hvordan hænger...sammen" |
+| **Diskutér** | For åbent: giver ingen retning | "Er det holdbart at...? Begrund", "Hvilke argumenter taler for og imod..." |
 | **Redegør for** | Akademisk og vagt | "Forklar med egne ord...", "Beskriv hvordan..." |
 | **Reflektér over** | Uspecifikt | "Hvad ville du selv vælge, og hvorfor?", "Hvilken betydning har...for..." |
 | **Perspektivér** | STX-eksamensterm, ikke et handlingsverb | "Hvordan kan [teori X] bruges til at forstå [fænomen Y]?" |

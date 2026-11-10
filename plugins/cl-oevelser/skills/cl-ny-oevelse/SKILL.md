@@ -6,6 +6,7 @@ allowed-tools:
   - Read
   - Glob
   - Skill
+  - Write
 ---
 
 # Udvikl en ny CL-øvelse
@@ -15,6 +16,8 @@ Byg en øvelse, hvor reglerne sikrer SPIL, så læreren ikke skal håbe på det.
 ## Trin
 
 1. **Læs** `${CLAUDE_SKILL_DIR}/../cl-principper/SKILL.md` og `${CLAUDE_SKILL_DIR}/../cl-principper/references/oevelsesbank.md`. Tjek først, om en øvelse i banken allerede kan løse det. Så sig det, og spørg, om læreren hellere vil bruge den.
+
+**Skal kendes:** behovet eller den aktivitet, der skal omskrives, og emnet. Følg "Arbejdsgang" i principperne: i hurtig-tilstand springer du Gate 1 og 2 over, skriver antagelserne i én linje og afleverer øvelsen i den korte version. Tabellen over, hvilken regel der sikrer hvert princip, skal med, fordi øvelsen er ny.
 
 ### Gate 1: Afklar behovet (VENT på svar)
 
@@ -37,7 +40,7 @@ Spørg: "Rammer den, eller skal noget ændres?"
 
 ### Skriv øvelsen
 
-2. **Brug skabelonen** fra principperne, og regn elevtal og tid igennem.
+2. **Brug den korte version** fra principperne, og regn elevtal og tid igennem. Brug den fulde skabelon, når læreren beder om den.
 3. **Læg indholdet i** med færdigskrevne spørgsmål, kort eller opgaver. Find ikke på indhold fra tekster, du ikke har læst.
 4. **Prøv den i hovedet:** hvad gør den elev, der ikke har læst? Den stille elev? Den stærke elev, der er hurtigt færdig? Justér, hvis nogen kan gemme sig eller løbe fra opgaven.
 
@@ -45,7 +48,7 @@ Spørg: "Rammer den, eller skal noget ændres?"
 
 Skriv tydeligt øverst: "Ny øvelse, ikke fra kataloget og ikke afprøvet." Omtal den ikke som en etableret CL-struktur.
 
-Tilbyd printklart materiale som Word efter afsnittet i principperne, og tilbyd en katalogpost i samme format som banken, hvis øvelsen virker i klassen. **VENT** på svar.
+Slut med én linje om, hvad læreren kan bede om: ændringer, den fulde beskrivelse, materiale til print og en katalogpost i samme format som banken, hvis øvelsen virker i klassen. Lav ikke printmateriale, før læreren har sagt ja, og følg så afsnittet i principperne.
 
 ---
 

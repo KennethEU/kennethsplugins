@@ -33,6 +33,15 @@ Lav et forløb, der kan begrundes didaktisk, har en tydelig progression og kan s
 
 Ved B og C ligger detaljerne for de senere moduler ikke fast. Sig det, og fasthold rammen, så modulerne stadig hænger sammen.
 
+**Skal kendes:** fag og niveau, emne og omtrentligt antal moduler. Følg "Arbejdsgang" i `didaktik-principper`. Skal du både spørge om indgang og om hurtig eller grundig, så gør det i samme besked. I hurtig-tilstand:
+
+- **Indgang A:** vis rammen i få linjer og modulrækken i samme svar (Gate 1, 2 og 3 samlet), og spørg én gang, om noget skal ændres.
+- **Indgang B:** vis den korte ramme, skitsen og modul 1 i samme svar.
+- **Indgang C:** findes `forloeb.md`, og har læreren allerede skrevet, hvordan sidste modul gik, så spring spørgsmålet over.
+- Skriv antagelserne i én linje øverst. Hent læreplanen, hvis det kan gøres hurtigt. Ellers skriv "Læreplan: ikke tjekket".
+- Gate 4 bliver til én linje, der foreslår den skill, der passer bedst til det første modul.
+- Gate 5: findes forløbsmappen allerede, så gem uden at spørge, og sig, hvor filerne ligger. Ellers spørg, hvor forløbene skal ligge.
+
 ### Gate 1: Afklar rammer (VENT på svar)
 
 Ved indgang B: spørg kun om fag, niveau, klasse, emne, omtrentligt antal moduler og hvad første modul skal nå. Hent læreplanens faglige mål og kernestof, hvis det kan gøres hurtigt. Vejledning, materialer og evaluering kan vente til næste modul. Skriv det, du antager.
@@ -134,7 +143,7 @@ Tilbyd at gemme forløbet i forløbsmappen, og nævn mappens sti. Skriv ikke fil
 
 - Opret forløbets undermappe og `forloeb.md` efter skabelonen i `references/forloebsmappe.md`, med rammen og modulrækken.
 - Opret en fil for hvert modul, der er planlagt i detaljer, fx `modul-01-<tema>.md`.
-- Laver en anden skill materialer til et modul, så bed den gemme dem i samme forløbsmappe med modulnummeret først i filnavnet.
+- Laver en anden skill materialer til et modul, så gemmer den dem selv i forløbsmappen med modulnummeret først i filnavnet, når `forloeb.md` findes. Gem derfor forløbet, før du sender et modul videre, hvis læreren har sagt ja til at gemme.
 - **Ved indgang B:** sæt status til "foreløbig ramme", skriv de senere moduler som skitse i rækken, og opret kun filen for modul 1. Sig til læreren, at næste modul kan planlægges med "planlæg næste modul i [forløbets titel]".
 - Sig bagefter, hvilke filer der er oprettet, og hvor de ligger.
 

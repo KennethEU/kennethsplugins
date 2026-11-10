@@ -2,7 +2,7 @@
   "name": "udretterdagsorden",
   "displayName": "Udretterdagsorden",
   "description": "Udretterdagsordener til gruppearbejde i dansk gymnasieundervisning (STX): selvkørende trin-for-trin-protokoller med roller, individuel tænketid, pause og fælles produkt, leveret til dida.dk (elevernes telefoner) eller som Word-dokument. Med idésparring om struktur (samlet, matrix, to runder, case, peer-feedback).",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "author": {
     "name": "Kenneth / Marselisborg Gymnasium"
   }

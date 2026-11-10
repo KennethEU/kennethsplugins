@@ -1,63 +1,70 @@
 ---
 name: bloom-spoergsmaal-til-tekst
-description: "Laver et komplet sæt arbejdsspørgsmål til en fagtekst efter Blooms taksonomi, i to versioner (taksonomisk progression og tekstnær struktur) med taxonomy table. Brug når læreren siger \"lav arbejdsspørgsmål\", \"spørgsmål til denne tekst\", \"Bloom-spørgsmål\", \"analyser teksten med Bloom\", eller uploader en fagtekst og vil have spørgsmål. Brug ikke til kun lektiespørgsmål (bloom-lektiespoergsmaal), kun skabe-spørgsmål (bloom-skabe-opgaver), vurdering af eksisterende spørgsmål (bloom-vurder-spoergsmaal), timeplanlægning (bloom-planlaeg-time), quizzer (pluginet blooket) eller eksamensspørgsmål med bilag."
+description: "Laver et sæt arbejdsspørgsmål til en fagtekst efter Blooms taksonomi: som standard ét sæt i taksonomisk progression, og på opfordring også tekstnær version afsnit for afsnit og taxonomy table. Brug når læreren siger \"lav arbejdsspørgsmål\", \"spørgsmål til denne tekst\", \"Bloom-spørgsmål\", \"analyser teksten med Bloom\", eller uploader en fagtekst og vil have spørgsmål. Brug ikke til kun lektiespørgsmål (bloom-lektiespoergsmaal), kun skabe-spørgsmål (bloom-skabe-opgaver), vurdering af eksisterende spørgsmål (bloom-vurder-spoergsmaal), timeplanlægning (bloom-planlaeg-time), quizzer (pluginet blooket) eller eksamensspørgsmål med bilag."
 argument-hint: "[fagtekst eller emne]"
 allowed-tools:
   - Read
   - Glob
+  - Write
 ---
 
-# Fuld Bloom-kørsel
+# Arbejdsspørgsmål til en tekst
 
-Generér et komplet sæt arbejdsspørgsmål baseret på Bloom's Reviderede Taksonomi med to versioner og taxonomy table.
+Lav et sæt arbejdsspørgsmål til en fagtekst efter Blooms reviderede taksonomi.
+
+**Skal kendes:** teksten. Har du den ikke, så bed om den, og stop. Følg "Arbejdsgang" i `bloom-spoergsmaalsregler`: i hurtig-tilstand springer du Gate 1 over.
 
 ## Leverancer
 
-1. **Version 1: Taksonomisk progression:** Spørgsmål organiseret efter de 6 Bloom-niveauer (Huske → Skabe) plus 2-3 brede hovedspørgsmål.
-2. **Version 2: Tekstnær struktur:** Spørgsmål organiseret efter tekstens afsnit med overordnede, uddybende og detaljespørgsmål.
-3. **Taxonomy Table:** Oversigt over spørgsmålsfordelingen med balance-kommentar og anbefalinger til klasserum.
+**Kort version (standard):**
+
+1. Én linje øverst med fokus og antagelser, fx "Fokus: X, Y og Z. Antaget: klassearbejde i samfundsfag A."
+2. **Version 1: Taksonomisk progression.** 10 til 14 spørgsmål på de niveauer, teksten bærer, med niveauet som overskrift, og 1 til 2 brede hovedspørgsmål til sidst.
+3. Balancen i én linje, fx "Tungest i Forstå og Analysere. Teksten bærer ikke Skabe."
+4. Én afsluttende linje: "Sig til, hvis du vil have den tekstnære version afsnit for afsnit, taxonomy table, flere spørgsmål på et niveau eller basis og udvidet."
+
+**På opfordring:**
+
+- **Version 2: Tekstnær struktur.** Spørgsmål efter tekstens afsnit med overordnede, uddybende og detaljespørgsmål.
+- **Taxonomy table** med kommentar til balancen og anbefalinger til klasserummet.
+- Det fulde antal pr. niveau fra "Output-struktur" i reglerne.
+
+Beder læreren om "det fulde sæt" eller "begge versioner", så lever alle dele.
 
 ## Trin
 
-1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/SKILL.md` og forstå reglerne.
-2. **Analysér teksten** stille: hovedemne, fagbegreber, afsnitsstruktur, teksttype.
+1. **Læs skillen** `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/SKILL.md`, og forstå reglerne.
+2. **Analysér teksten** stille: hovedemne, fagbegreber, afsnitsstruktur og teksttype.
 
-### Gate 1: Bekræft analyse (vent på svar)
+### Gate 1: Bekræft analyse (kun uden for hurtig-tilstand, VENT på svar)
 
-Læreren kender klassen og tekstens rolle i forløbet. En rettelse her er billigere end et helt sæt spørgsmål, der skal laves om.
+Bruges, når læreren beder om sparring om fokus, eller når teksten kan læses på flere måder, og et forkert fokus ville koste et helt sæt.
 
-Re-ground: "Vi er ved **Gate 1** — jeg har analyseret teksten. Her er hvad jeg fandt."
+Vis en kort analyse:
 
-Præsentér en kort analyse for læreren:
+- **Hovedemne:** [emnet]
+- **Teksttype:** [argumenterende, informerende eller analyserende]
+- **Centrale begreber:** [4 til 6 nøglebegreber fra teksten]
+- **Forventet Bloom-fordeling:** [fx "tung i Forstå og Anvende, fordi teksten er informerende"]
 
-- **Hovedemne:** [Emnet]
-- **Teksttype:** [Argumenterende / informerende / analyserende]
-- **Centrale begreber:** [4-6 nøglebegreber fra teksten]
-- **Tekstlængde:** [Kort / normal / lang] → forventet **[X-Y] spørgsmål**
-- **Forventet Bloom-fordeling:** [Fx "tung i Forstå/Anvende pga. informerende tekst"]
+Giv en anbefaling: "Jeg anbefaler, at vi fokuserer på [begreber] med vægt på [niveau], fordi [begrundelse]."
 
-Giv en anbefaling: "Jeg anbefaler at vi fokuserer på [X begreber] og laver ca. [Y] spørgsmål med vægt på [niveau] fordi [begrundelse]."
+Spørg: "Passer det med dit fokus?"
 
-Spørg: "Passer det med dit fokus? Er der begreber du vil prioritere — eller niveauer du vil have flere/færre af?"
+**VENT** på svar.
 
-**VENT** på svar. Justér fokus hvis læreren ønsker det.
+### Generér
 
-### Gate 2: Generér og præsentér
-
-3. **Generér Version 1** med spørgsmål på alle 6 niveauer. Læs `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/references/bloom-verber.md` for korrekte verber.
-4. **Generér Version 2** der følger tekstens kronologi med Bloom-niveau i parentes.
-5. **Kvalitetstjek** mod reglerne: ét spørgsmål ad gangen, ingen forbudte verber, besvarligt fra teksten. Læs `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/references/forbudte-formuleringer.md` ved tvivl.
-6. **Taxonomy Table** — læs `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/references/taxonomy-table-template.md` og udfyld med antal + kommentar.
-
-Præsentér begge versioner + taxonomy table. Afslut med:
-
-> "Vil du justere noget? Fx flytte spørgsmål mellem niveauer, ændre sværhedsgrad, eller tilføje/fjerne spørgsmål?"
+3. **Generér Version 1.** Læs `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/references/bloom-verber.md` for korrekte verber.
+4. **Kvalitetstjek** stille mod reglerne: ét spørgsmål ad gangen, ingen forbudte verber, besvarligt fra teksten. Læs `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/references/forbudte-formuleringer.md` ved tvivl. Ret det, der fejler, før du afleverer.
+5. **Kun på opfordring: Version 2,** der følger tekstens kronologi med Bloom-niveau i parentes.
+6. **Kun på opfordring: Taxonomy table.** Læs `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/references/taxonomy-table-template.md`, og udfyld med antal og kommentar.
 
 ---
 
 ## Completion Status
 
-- **DONE** — Begge versioner + taxonomy table leveret
-- **DONE_WITH_CONCERNS** — Leveret, men taksonomisk balance er skæv eller begreber mangler
-- **BLOCKED** — Teksten er for kort/uklar til at generere meningsfulde spørgsmål
-- **NEEDS_CONTEXT** — Mangler information om fag, niveau eller fokusområde
+- **DONE**: Sæt leveret i kort eller fuld udgave
+- **DONE_WITH_CONCERNS**: Leveret, men taksonomisk balance er skæv, eller begreber mangler
+- **BLOCKED**: Teksten er for kort eller uklar til meningsfulde spørgsmål
+- **NEEDS_CONTEXT**: Mangler teksten
