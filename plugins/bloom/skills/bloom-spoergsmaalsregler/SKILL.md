@@ -158,6 +158,7 @@ Passer ingen af dem, så brug reglerne nedenfor direkte.
 6. **Ingen ja/nej-spørgsmål** uden krav om begrundelse.
 7. **Elevnært sprog.** Klart, entydigt, uden unødigt akademisk kompleksitet.
 8. **Ingen tankestreger** (—) i spørgsmålene eller i det, du skriver til læreren. Brug komma, kolon, punktum eller parentes.
+9. **Kun det, klassen har mødt.** Brug kun teorier, begreber og modeller fra teksten, fra `forloeb.md` eller fra det, læreren har sagt, klassen har haft. En klasse har ikke nødvendigvis haft de teoretikere, der plejer at høre til emnet. Trækker du alligevel noget andet ind, så mærk spørgsmålet "forudsætter [teori eller begreb]", så læreren kan fjerne det.
 
 ---
 
@@ -293,6 +294,8 @@ Kør dette tjek stille efter hver generering, og ret det, der fejler, før du af
 | Verber matcher Bloom-niveau? | ✓/⚠ | |
 | Afprøvet på teksten, jf. "Afprøvning på teksten"? | ✓/⚠ | |
 | Fagbegreber integreret? | ✓/⚠ | |
+| Kun teorier og begreber, klassen har mødt, eller mærket? | ✓/⚠ | |
+| Cases har oplysningerne i spørgsmålet, og aktuelle forhold er mærket? | ✓/⚠ | |
 | Alle 6 Bloom-niveauer dækket? | ✓/⚠ | |
 | Variation i videnstyper? | ✓/⚠ | |
 | Differentiering (hvis valgt)? | ✓/⚠ | |
@@ -336,7 +339,8 @@ Kan en elev, der ikke har læst, svare rimeligt ud fra almen viden eller ud fra 
 | Spørgsmål | Afprøvning |
 |-----------|------------|
 | Lektie og lektietjek | Alle tre tests på alle spørgsmål. Eleven sidder alene uden en lærer at spørge. |
-| Klassearbejde, Huske til Anvende | Facit-test og elevtest. |
+| Klassearbejde, Huske og Forstå | Facit-test og elevtest. |
+| Klassearbejde, Anvende | Svaret står ikke i teksten, for eleven skal bruge stoffet på noget nyt. Skriv et modelsvar, der bruger tekstens begreb på casen, og kør elevtesten. Tjek, at eleven har oplysningerne om casen, jf. "Cases og aktuelle forhold". |
 | Klassearbejde, Analysere til Skabe | Der er ikke ét facit. Tjek, at teksten giver stof nok til et svar, at eleven kan se, hvad et godt svar indeholder, og at et tomt svar ikke slipper igennem. |
 | Lærerens egne spørgsmål (vurdering) | Som ovenfor efter konteksten. |
 
@@ -344,8 +348,26 @@ Kan en elev, der ikke har læst, svare rimeligt ud fra almen viden eller ud fra 
 
 - Kør den stille, og ret det, der falder. Vis ikke testen.
 - Skriv kun det, du ikke kunne afgøre, i én linje, fx "Spørgsmål 1 regner civilsamfundet med under nedskæringsstrategien. Regner du det ikke med, er tallet fire."
-- Facit med teksthenvisning har du fra facit-testen. Giv det, når læreren beder om facit eller modelsvar.
+- Facit med teksthenvisning har du fra facit-testen. Giv det, når læreren beder om facit eller modelsvar. Skriv under hvert facit det forkerte eller halve svar, elevtesten viste, at en middelmådig elev sandsynligvis giver ("Typisk svar: ..."). Det er det, læreren møder i opsamlingen.
 - Beder læreren selv om en test ("test spørgsmålene", "tænk som en elev"), så vis den som tabel med spørgsmål, elevens sandsynlige svar og dom. Skriv bagefter, hvor det går galt, og giv det reviderede sæt. Antallet af domme i tabellen skal passe med det, du skriver om den.
+
+---
+
+## Tid: arbejdsregler
+
+Læreren skal kunne se, hvor meget et sæt fylder, uden selv at regne. Tallene her er arbejdsregler og ikke afprøvet i klassen, så skriv altid "ca.".
+
+| Hvad | Regn med |
+|------|----------|
+| Læsning af fagtekst | ca. 150 ord i minuttet. Tæl ordene i teksten. |
+| Huske og Forstå, alene | ca. 2 minutter pr. spørgsmål |
+| Anvende og Analysere, i par eller grupper | ca. 5 til 8 minutter pr. spørgsmål |
+| Evaluere, med diskussion og opsamling | ca. 10 til 15 minutter pr. spørgsmål |
+| Skabe | Afhænger af produktet. Anslå ikke uden at kende det. |
+
+- Kan du ikke tælle ordene, fx fordi du kun har et resumé, så anslå ikke læsetid. Skriv kun tiden til spørgsmålene.
+- Har læreren sagt, hvor lang tid der er, så tilpas antallet af spørgsmål til tiden og ikke omvendt.
+- Bliver lektien længere end ca. 30 minutter i alt, så sig det i samme linje.
 
 ---
 
@@ -361,6 +383,13 @@ Integrér fagbegreber fra teksten i spørgsmålene. Spørgsmålene skal træne e
 
 ### Dansk kontekst
 Relater til danske eksempler hvor relevant: danske partier, kommunalpolitik, aktuelle cases, danske valgdata osv.
+
+### Cases og aktuelle forhold
+Et spørgsmål, der bruger stoffet på en case, kan kun besvares, hvis eleven kender casen. Og det, du ved om partiers politik, valgresultater og tal, stammer fra din træning og kan være forældet.
+
+- Brug helst cases fra teksten eller fra læreren.
+- Finder du selv på en case, så skriv de oplysninger, eleven skal bruge, ind i spørgsmålet: "Et parti foreslår at ... Hvordan ...?" Så afhænger svaret ikke af, hvad eleven tilfældigvis ved.
+- Bygger spørgsmålet på et aktuelt forhold, du ikke har fået fra teksten eller læreren, så mærk det "tjek aktualitet" over for læreren.
 
 ### Differentiering
 - Huske/Forstå = tilgængeligt for alle der har læst
@@ -389,7 +418,7 @@ Relater til danske eksempler hvor relevant: danske partier, kommunalpolitik, akt
 
 **FORSTÅ:** Hvordan hænger liberalismens syn på individet sammen med dens økonomiske politik?
 
-**ANVENDE:** Brug tekstens beskrivelse af liberalisme til at vurdere om Venstres skattepolitik er liberal.
+**ANVENDE:** Et parti foreslår at sænke topskatten og indføre brugerbetaling hos lægen. Hvordan kan tekstens beskrivelse af liberalisme forklare, at forslaget er liberalt?
 
 **ANALYSERE:** Hvilke forskelle er der mellem den økonomiske og den sociale liberalisme som teksten beskriver?
 

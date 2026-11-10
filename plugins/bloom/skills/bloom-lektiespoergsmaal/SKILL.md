@@ -18,7 +18,7 @@ Spørgsmålene:
 
 - ligger på **Huske/Forstå**
 - dækker tekstens vigtigste indhold
-- kan besvares på 5 til 7 minutter samlet
+- kan besvares på 5 til 7 minutter samlet, når der er 3. Beder læreren om flere, så regn med ca. 2 minutter pr. spørgsmål
 - har Bloom-niveau og videnstype angivet
 
 ## Trin
@@ -35,7 +35,7 @@ Beder læreren bagefter om færre spørgsmål, en omformulering eller en sammenl
 
 Der er ingen gate, og du spørger ikke, om det skal være hurtigt eller grundigt. Tre spørgsmål er hurtigere at rette bagefter end at godkende på forhånd.
 
-- Én linje øverst: "Fokus: [X, Y og Z]."
+- Én linje øverst: "Fokus: [X, Y og Z]. Lektien: ca. [N] min. læsning og [M] min. til spørgsmålene." Regn tiden efter "Tid: arbejdsregler" i reglerne. Kan du ikke tælle ordene i teksten, så skriv kun tiden til spørgsmålene.
 - Spørgsmålene.
 - Kun hvis afprøvningen efterlod en tvivl, du ikke kunne afgøre: én linje om den, fx et antal, der afhænger af, hvordan teksten læses.
 - Én linje til sidst: "Sig til, hvis fokus skal flyttes, eller du vil have flere eller facit til lektietjekket."
@@ -44,7 +44,7 @@ Beder læreren om sparring om, hvad lektietjekket skal teste, så vis de 3 til 5
 
 ## Eksempel på output
 
-Fokus: de fire friheder, tekniske handelshindringer og arbejdskraftens frie bevægelighed.
+Fokus: de fire friheder, tekniske handelshindringer og arbejdskraftens frie bevægelighed. Lektien: ca. 12 min. læsning og 6 min. til spørgsmålene.
 
 **1. Hvad er de fire friheder i EU's indre marked?**
 *(Huske, faktuel viden)*

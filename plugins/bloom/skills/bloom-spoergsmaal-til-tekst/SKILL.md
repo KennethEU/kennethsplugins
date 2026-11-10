@@ -20,7 +20,7 @@ Lav et sæt arbejdsspørgsmål til en fagtekst efter Blooms reviderede taksonomi
 
 1. Én linje øverst med fokus og antagelser, fx "Fokus: X, Y og Z. Antaget: klassearbejde i samfundsfag A."
 2. **Version 1: Taksonomisk progression.** 10 til 14 spørgsmål på de niveauer, teksten bærer, med niveauet som overskrift, og 1 til 2 brede hovedspørgsmål til sidst.
-3. Balancen i én linje, fx "Tungest i Forstå og Analysere. Teksten bærer ikke Skabe."
+3. Tid og balance i én linje, fx "Ca. 60 min. i par for hele sættet. Kan springes over: 4 og 9. Tungest i Forstå og Analysere. Teksten bærer ikke Skabe." Regn tiden efter "Tid: arbejdsregler" i reglerne, og vælg de spørgsmål, der kan undværes uden at bryde progressionen.
 4. Kun hvis afprøvningen på teksten efterlod en tvivl, du ikke kunne afgøre: én linje om den.
 5. Én afsluttende linje: "Sig til, hvis du vil have den tekstnære version afsnit for afsnit, taxonomy table, facit, flere spørgsmål på et niveau eller basis og udvidet."
 
@@ -58,7 +58,7 @@ Spørg: "Passer det med dit fokus?"
 
 3. **Generér Version 1.** Læs `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/references/bloom-verber.md` for korrekte verber.
 4. **Kvalitetstjek** stille mod reglerne: ét spørgsmål ad gangen, ingen forbudte verber, besvarligt fra teksten. Læs `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/references/forbudte-formuleringer.md` ved tvivl. Ret det, der fejler, før du afleverer.
-5. **Afprøv spørgsmålene på teksten** stille, jf. "Afprøvning på teksten" i reglerne: facit-test og elevtest på Huske til Anvende, og på de høje niveauer et tjek af, at teksten giver stof nok, og at et tomt svar ikke slipper igennem. Er sættet til lektie, får alle spørgsmål også ikke-læst-testen. Ret det, der falder. Afprøv igen, når læreren beder om ændringer.
+5. **Afprøv spørgsmålene på teksten** stille, jf. "Afprøvning på teksten" i reglerne: facit-test og elevtest på Huske og Forstå, modelsvar og tjek af casens oplysninger på Anvende, og på de høje niveauer et tjek af, at teksten giver stof nok, og at et tomt svar ikke slipper igennem. Er sættet til lektie, får alle spørgsmål også ikke-læst-testen. Ret det, der falder. Afprøv igen, når læreren beder om ændringer.
 6. **Kun på opfordring: Version 2,** der følger tekstens kronologi med Bloom-niveau i parentes.
 7. **Kun på opfordring: Taxonomy table.** Læs `${CLAUDE_SKILL_DIR}/../bloom-spoergsmaalsregler/references/taxonomy-table-template.md`, og udfyld med antal og kommentar.
 

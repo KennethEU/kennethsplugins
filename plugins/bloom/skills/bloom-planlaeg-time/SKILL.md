@@ -70,7 +70,7 @@ Vis den tilpassede struktur som tabel med én linjes anbefaling, og spørg: "Pas
 3. **Arbejde:** spørgsmål på Anvende og Analysere til par eller grupper, skrevet færdigt.
 4. **Afslutning:** ét åbent spørgsmål på Evaluere/Skabe, og det, eleverne skriver til sidst.
 5. **Kvalitetstjek** stille: Bygger faserne på hinanden, følger spørgsmålene reglerne, og summer tiderne?
-6. **Afprøv spørgsmålene på teksten** stille, jf. "Afprøvning på teksten" i reglerne. Lektietjekket får alle tre tests, så det viser, hvem der har læst. Arbejdsspørgsmålene får facit-test og elevtest, og du tjekker, at en middelmådig elev kan nå dem på den afsatte tid. Har du kun et emne og ingen tekst, så sig i én linje, at spørgsmålene ikke er afprøvet på teksten.
+6. **Afprøv spørgsmålene på teksten** stille, jf. "Afprøvning på teksten" i reglerne. Lektietjekket får alle tre tests, så det viser, hvem der har læst. Arbejdsspørgsmålene afprøves efter tabellen "Hvor meget der afprøves": på Anvende skriver du et modelsvar og tjekker, at eleven har oplysningerne om casen. Tjek også mod "Tid: arbejdsregler", at en middelmådig elev kan nå spørgsmålene på den afsatte tid. Har du kun et emne og ingen tekst, så sig i én linje, at spørgsmålene ikke er afprøvet på teksten.
 
 ## Sådan afleverer du
 

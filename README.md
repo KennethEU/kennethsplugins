@@ -118,6 +118,12 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### bloom 1.5.0 (november 2026)
+- **Anvende-spørgsmål** afprøves nu med modelsvar i stedet for facit i teksten. Nyt afsnit "Cases og aktuelle forhold": casens oplysninger står i spørgsmålet, og aktuelle forhold, der ikke kommer fra teksten eller læreren, mærkes "tjek aktualitet".
+- **Tid:** nyt afsnit "Tid: arbejdsregler". Lektiespørgsmål får en linje med læsetid og svartid, og et sæt arbejdsspørgsmål får anslået tid og de spørgsmål, der kan springes over. Tallene er arbejdsregler, ikke afprøvet i klassen.
+- **Kun det, klassen har mødt:** ny regel 9. Teorier og begreber uden for teksten og forløbet mærkes "forudsætter ...".
+- **Facit** har nu elevens typiske forkerte eller halve svar under hvert punkt.
+
 ### bloom 1.4.0, blooket 1.3.0, cl-oevelser 1.5.1, klasseledelse 1.13.1 og udretterdagsorden 1.1.1 (november 2026)
 - **Afprøvning før aflevering:** skillene prøver nu selv det af, eleverne skal svare på, i stedet for kun at tjekke formuleringen. Baggrunden er et sæt lektiespørgsmål, hvor tre af fire først faldt, da læreren selv bad om en elevtest.
 - `bloom`: nyt afsnit "Afprøvning på teksten" i `bloom-spoergsmaalsregler` med facit-test (skriv svaret, og find stedet i teksten), elevtest (svar som en middelmådig elev: stopper eleven for tidligt, kan svaret skrives af, slipper et tomt svar igennem, kan stedet findes) og ikke-læst-test til lektie. Alle fem skills kører den stille, også når spørgsmål omformuleres eller vælges ud, og skriver kun det, der ikke kunne afgøres. Facit kan fås på opfordring. `bloom-vurder-spoergsmaal` afprøver nu også lærerens egne spørgsmål på teksten.
