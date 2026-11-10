@@ -1,6 +1,6 @@
 # Øvelsesbank
 
-29 øvelser: 15 fra Kenneths egen samling og 14 fra søgning. I de 15 er trinene Kenneths egne beskrivelser, let redigeret. SPIL-vurdering, skærpelser, tider i "ca." og fagidéer er arbejdsforslag, som skal justeres i praksis.
+30 øvelser: 15 fra Kenneths egen samling og 15 fra søgning. I de 15 er trinene Kenneths egne beskrivelser, let redigeret. SPIL-vurdering, skærpelser, tider i "ca." og fagidéer er arbejdsforslag, som skal justeres i praksis.
 
 **SPIL-vurdering:** Stærk = sikret af reglerne. Middel = sker ofte, men er ikke sikret. Svag = reglerne sikrer det ikke.
 
@@ -43,6 +43,7 @@
 | [Interview i tre trin](#interview-i-tre-trin) | Dialog, egne erfaringer | Teams á 4 | 10-15 min | Nej | Ingen |
 | [Én på besøg](#én-på-besøg) | Midt i gruppearbejde | Teams á 4 | 5-10 min | Ja | L middel |
 | [Dobbeltcirkler](#dobbeltcirkler) | Repetition, mundtlighed | Skiftende par | 10-15 min | Ja | Ingen |
+| [Tavlegrupper](#tavlegrupper) | Anvendelse, problemløsning, repetition | Tilfældige grupper á 3 | 20-40 min | Ja | I middel |
 
 ---
 
@@ -654,6 +655,28 @@ Engelsk: Inside-Outside Circle. **Grundlag:** almen viden, en dansk vejledning f
 - Mediefag: mundtlig analyse af et billede, der vises på skærmen.
 - Erhvervsøkonomi: forklar et nøgletal, som kammeraten har på et kort.
 
+### Tavlegrupper
+
+Efter Peter Liljedahls *Building Thinking Classrooms* ("Det tænkende klasserum"), de tre første praksisser. **Grundlag:** kilde 10 og 11. Grundlaget er Liljedahls egne observationer og måler mest engagement, ikke læring. **Materialer:** whiteboards, tavler eller whiteboardfolie på væggen, én tusch pr. gruppe og et spil kort til at danne grupper. **Lokale:** plads ved væggene.
+
+1. Eleverne trækker et kort og finder de to med samme tal. Grupperne dannes på ny hver gang, så alle kan se, at de er tilfældige.
+2. Læreren giver opgaven mundtligt, mens eleverne står samlet. Første delopgave skal kunne løses med det, eleverne allerede kan.
+3. Grupperne arbejder stående ved hver sin lodrette tavle. Der er én tusch, og den går videre til den næste efter hver delopgave, fx hvert femte minut. Den, der skriver, må kun skrive det, de to andre siger.
+4. Går en gruppe i stå, må den kigge på nabotavlerne. Læreren hjælper én gruppe ad gangen med et modspørgsmål eller en ledetråd frem for et svar, og giver en sværere opgave til de grupper, der er færdige.
+5. Afslut med opsamling ud fra tavlerne: læreren vælger to til tre tavler, der viser forskellige løsninger eller en typisk fejl, og samler pointen eksplicit op.
+6. Eleverne skriver noter til sig selv bagefter, fx med et billede af en tavle og deres egen forklaring.
+
+**Noter:** skrives efter opsamlingen, ikke under arbejdet.
+
+**SPIL:** S stærk (alle arbejder på én gang), P middel (tuschen sikrer, at alle skriver, men ikke at alle tænker), I middel (de to uden tusch kan læne sig tilbage), L middel.
+
+**Skærpelse:** brug reglen om, at den med tuschen kun skriver det, de andre siger, så alle tre skal tale. Læreren kan når som helst bede en tilfældig i gruppen forklare tavlen. Brug øvelsen til anvendelse, problemløsning eller repetition, ikke til helt nyt stof, medmindre opgaven kan løses uden ny viden. Ellers bliver det opdagelse uden hjælp.
+
+**Fagidéer:**
+- Samfundsfag: placér tre cases på velfærdsmodellerne, eller forklar en graf over ledighed med to teorier.
+- Mediefag: lav et storyboard til en reklame ud fra en målgruppe og argumentér for valgene.
+- Erhvervsøkonomi: regn en case igennem og find fejlen i en udleveret, forkert beregning.
+
 ---
 
 ## Kilder til de nye øvelser
@@ -667,3 +690,5 @@ Engelsk: Inside-Outside Circle. **Grundlag:** almen viden, en dansk vejledning f
 7. University of Wisconsin: [Structured Academic Controversy](https://irisnrc.wisc.edu/wp-content/uploads/sites/1577/2021/11/Structured-Academic-Controversy_-TDPV-.pdf), efter Johnson og Johnson, *Creative Controversy* (1995)
 8. Stenlev og Kagan: *Cooperative Learning* (Malling Beck, 2006), som rummer flere strukturer end dem her
 9. Clayton State University: [Jigsaw](https://clayton.edu/celt/docs/jigsaw.pdf)
+10. Peter Liljedahl: *Building Thinking Classrooms in Mathematics* (Corwin, 2020), gengivet efter Gymnasieforskning nr. 34 og Larsen og Midtiby, "Matematikundervisning på universitetet", *Dansk Universitetspædagogisk Tidsskrift* 37 (2025)
+11. emu.dk, stx filosofi: "Det tænkende klasserum i filosofi", Marie Antonsen, Vesthimmerlands Gymnasium, i samarbejde med CFU (2024). Teksten er sendt af Kenneth, adressen er ikke tjekket

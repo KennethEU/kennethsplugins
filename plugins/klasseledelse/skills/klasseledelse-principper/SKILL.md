@@ -183,6 +183,7 @@ Det hele er arbejdsregler og praksisråd, ikke forskning.
 Det er praksisråd, ikke forskning.
 
 - **Gruppefaser:** spørg, om nogen kan gemme sig. Brug hellere turregler, hvor alle på skift bidrager, end roller som "den, der skriver".
+- **Synligt gruppearbejde:** grupper på tre ved lodrette tavler med én tusch på skift gør tænkningen synlig for læreren, så fasen kan blive A frem for G (Det tænkende klasserum, se `cl-find-oevelse`, "Tavlegrupper"). Brug det til anvendelse og repetition. Ved nyt stof kræver det forudsætninger og eksplicit opsamling.
 - **Fordeling:** betyder sammensætningen noget, så lav grupperne på forhånd, og læg dem i klassens fælles system, fx Lectio. Ellers lad eleverne tælle af på dagen, så fraværet er regnet med.
 - **Tjek hver række:** prøv gruppereglen på hvert elevtal i spændet. Ingen må ende alene ved et bord, og reglen for fravær skal virke ved det elevtal, den gælder for.
 - **Puslespil og lignende:** skriv, hvad der sker, hvis en gruppe mangler en ekspert.

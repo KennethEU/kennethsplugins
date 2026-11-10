@@ -124,6 +124,16 @@ Gennemgået november 2026. De fire tekster er læst i fuld længde, men de studi
 - Motivation vokser med oplevet fremgang, så tidlige succeser og små trin hjælper.
 **Moderat**, da det er en sammenfatning. [Deans for Impact](https://www.deansforimpact.org/tools-and-resources/the-science-of-learning)
 
+### Det tænkende klasserum (Liljedahl)
+
+Gennemgået november 2026 ud fra Gymnasieforskning nr. 34, Larsen og Midtiby (*Dansk Universitetspædagogisk Tidsskrift* 37, 2025), artikler fra Alinea, Folkeskolen og emu.dk og en kritisk gennemgang af Liljedahls studier. Bogen og studierne er ikke læst her.
+
+- **Hvad det er:** 14 praksisser, der skal få elever til at tænke selv frem for at efterligne læreren. De tre første er tænkeopgaver, synligt tilfældige grupper på tre og arbejde stående ved lodrette tavler. Læreren taler højst ca. fem minutter, før opgaven kommer, hjælper én gruppe ad gangen med modspørgsmål, og eleverne skriver noter efter arbejdet.
+- **Grundlaget:** Liljedahls egne studier er små, bygger på observationer og lærernes egne udsagn og måler mest engagement, fx hvor hurtigt grupper går i gang. Der er ikke fundet lodtrukne forsøg om læring. Kritikeren Michael Pershan kalder evidensen svag, men ikke fusk. **Praksis.** [Pershan](https://pershmail.substack.com/p/the-evidence-for-building-thinking)
+- **Kritik:** at metoden kaster nybegyndere ud i problemer før forklaringen, hvilket strider mod forskningen om vejledning (se Kirschner, Sweller og Clark ovenfor). Kritikken står mest i blogs. **Omdiskuteret.**
+- **Danske erfaringer:** tre gymnasielærere fra Egaa fandt metoden brugbar, også i andre fag end matematik, men svær, når eleverne skal forstå noget grundlæggende (Gymnasieforskning nr. 34). På SDU var ingeniørstuderende positive over for de tre første praksisser og blev mere aktive og bedre til at forklare matematik, men nogle satte sig ned, og noterne blev tynde. Læring blev ikke målt (Larsen og Midtiby 2025). TænkMat i Holbæk er et udviklingsprojekt uden effektmåling. **Praksis.**
+- **Konsekvens:** brug grebene, der gør gruppearbejde synligt og fordeler ordet, til anvendelse, problemløsning og repetition. Ved helt nyt stof skal første delopgave kunne løses uden ny viden, og opsamlingen skal være eksplicit.
+
 ### Styring og aktivitet fra 15 år og op
 
 Gennemgået november 2026 ud fra resuméer og omtaler. Fuldteksterne er ikke læst. Der er ikke fundet danske effektmålinger fra gymnasiet.
