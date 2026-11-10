@@ -101,7 +101,7 @@ Hvert spørgsmål-svar-par er en tabel med to rækker:
 
 **Header på dokumentet:**
 - Titel: "LÆRERVEJLEDNING: [Aktivitetsnavn]"
-- Undertitel: "Spørgsmål og modelbesvarelser — KUN TIL LÆREREN"
+- Undertitel: "Spørgsmål og modelbesvarelser (kun til læreren)"
 - Fag, niveau, forløb
 
 **Alternativt layout: Debriefing-flow**

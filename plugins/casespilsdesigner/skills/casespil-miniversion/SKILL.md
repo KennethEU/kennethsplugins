@@ -22,7 +22,7 @@ Producér ikke Word-dokumenter før Gate 3. Når læreren har godkendt designet 
 
 1. Læs CLAUDE.md for lærerens fag og hold, hvis den findes.
 2. Scan projektmappen for eksisterende casespilsmaterialer (rollekort, lærerguider).
-3. Læs `casespil-designprincipper`, så de 10 principper overholdes i miniversionen.
+3. Læs `casespil-designprincipper`, så miniversionen bygger på de samme greb og designvalg.
 
 Spørg IKKE om det originale casespil, hvis materialet allerede findes i mappen.
 
@@ -71,7 +71,7 @@ Ethvert casespil har ÉN central spænding. Eksempler: Fattigdomskommission: "Er
 - Er der mange begreber i det store spil, så følg begrænsningsreglen i `casespil-projektregler` og skær modeller væk, som eleverne ikke kan påvirke i en kort øvelse.
 
 ### Mini-rollekort
-Navn og titel, stemmer, MÅL (1 sætning), 2 argumenter, 1 dilemma. Ingen faseguide, værdier eller udvidet baggrund. Højst en halv A4-side, læsbart på 2 minutter. Kun normalversion, medmindre læreren beder om andet.
+Navn og titel, stemmer, MÅL (1 sætning), 2 argumenter, 1 dilemma. Ingen faseguide, værdier eller udvidet baggrund. Højst en halv A4-side, læsbart på 2 minutter. Det er den eneste undtagelse fra reglen om dobbeltsidede rollekort (projektregel 8). Kun normalversion, medmindre læreren beder om andet.
 
 ### Selvkørende protokol (tre faser, relativ vægt)
 1. Læs og forbered (ca. en femtedel): læs kortet, formulér ét argument.

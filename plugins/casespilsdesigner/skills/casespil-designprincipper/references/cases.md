@@ -32,6 +32,7 @@ Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert 
 **Konflikt:** Vækst vs. velfærd vs. miljø; centralisering vs. decentralisering
 **Fagbegreber:** Nulsumspil, politiske ideologier, magtbalance, interesseorganisationer
 **Variation:** Tilføj krisescenarie (pandemi) halvvejs → omprioritering
+**Stemmer:** Velfærd når flertal (10 af 18) sammen med Erhverv eller Kultur alene. Skal ingen to roller kunne vinde alene, så giv Velfærd 4 stemmer (flertal 9 af 16)
 
 ### S2: Klimaforhandling (COP)
 **Format:** A (forhandling) | **Knaphed:** Globalt CO₂-budget (500 Gt)
@@ -58,7 +59,7 @@ Kompakt reference med roller, knaphed, stemmematematik og fagbegreber for hvert 
 **Roller:** Integrations-tilhængere, restriktions-tilhængere, praktikere (socialrådgivere), flygtninge/migranter, arbejdsgivere
 **Beslutning:** Sprogkrav, boligplacering, budget til integrationsforløb
 **Fagbegreber:** Multikulturalisme, integration vs. assimilation, diskrimination, social kapital
-**⚠️ Sensitivitet:** Kræver stærk psykologisk sikkerhed, fokus på politikker ikke personer
+**⚠️ Følsomt emne:** hold fokus på politikker, ikke personer, og giv mulighed for en observatørrolle
 
 ### S6: EU-lovgivning (Landbrugsstøtte / AI-regulering)
 **Format:** A+G (forhandling + parlamentarisk) | **Knaphed:** 60 mia. EUR budget

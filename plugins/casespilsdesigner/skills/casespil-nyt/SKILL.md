@@ -187,10 +187,10 @@ Spørg: **"Skal jeg gå i gang med at producere materialerne?"**
 Når læreren siger ja, følg pipelinen:
 
 ```
-rollekort → lærerguide → materiale → (digitale tillæg) → sprogtjek → konsistenstjek → levér
+spilfil → rollekort → lærerguide → cheatsheet → (digitale tillæg) → sprogtjek → konsistenstjek → levér
 ```
 
-Samle først alle tal og regler i ét sæt (fælles kilde, se `casespil-projektregler`), så papir og digitale dele bygges ud fra det samme.
+Opret først spilfilen `produktion/spil.cjs` efter `references/spilfil.md` i `casespil-projektregler`, og læg alle tal, regler, roller og tekster dér. Papir og digitale dele bygges kun ud fra den, og generatorerne skriver ingen spiltekst selv.
 
 1. Hvis en docx-skill findes (fx `/mnt/skills/public/docx/SKILL.md`), så læs den
 2. Brug `casespil-rollekort`-skillen til at generere rollekort som Word-dokumenter

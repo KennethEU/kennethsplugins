@@ -14,13 +14,13 @@ allowed-tools:
 
 Denne skill sikrer at alle obligatoriske sektioner kommer med i lærerguiden. Brug `casespil-rollekort`-skillen for selve docx-produktionen.
 
-**Guiden er også en datakilde.** Lærerguiden vises i lærerassistenten (`casespil-digitale-tillaeg`) som sektioner med titel og korte afsnit. Hold derfor sektionstitlerne faste (de 12 herunder), skriv ét afsnit pr. tanke, giv indhold, der står i en tabel, også en tekstversion, og skriv fasenavne og numre præcis som i casespillets datasæt og i rådgiverne.
+**Guiden er også en datakilde.** Lærerguiden vises i lærerassistenten (`casespil-digitale-tillaeg`) som sektioner med titel og korte afsnit. Hold derfor sektionstitlerne faste (de 11 herunder), skriv ét afsnit pr. tanke, giv indhold, der står i en tabel, også en tekstversion, og skriv fasenavne og numre præcis som i casespillets datasæt og i rådgiverne.
 
 ## Fase 0: Saml kontekst (automatisk — FØR alt andet)
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
 2. Scan projektmappen for eksisterende rollekort og casespilsdesign — lærerguiden SKAL matche rollekortene
-3. Læs `casespil-designprincipper`-skillen for at sikre debriefing og facilitering følger de 10 principper
+3. Læs `casespil-designprincipper`-skillen for at sikre, at debriefing og facilitering følger spillets designvalg
 4. Identificér faget og fagets fagbegreber — de skal bruges i debriefing-sektionen
 
 Skriv lærerguiden efter, at rollekortene er færdige. Ellers passer faseovergange, tal og krydsreferencer ikke, og guiden skal skrives om.
@@ -50,25 +50,25 @@ Tabel med: Rolle | Organisation | Stemmer | Særlig beføjelse
 ### 4. Forberedelse (lærer)
 Tjekliste med:
 - [ ] Print med sideintervaller (fra `sideintervaller.json`, bygget sammen med pakken): fx "Intro og bilag: side 1 til 4 (enkeltsidet), rollekort: side 5 til 10 (dobbeltsidet), beslutningsskema: side 11". Dobbeltsidet print af hele elevpakken parrer kun rollekortene rigtigt, hvis printeren får intervallerne at vide eller rollekortene starter på en ulige side
-- [ ] Åbn lærerassistenten med dit personlige adgangslink fra din skolemail (et 1-klik link, gyldigt i 7 dage, indtil datoen i mailen). Er det udløbet, bestiller du et nyt på siden med samme mailadresse. Hent materialerne som ZIP inde i cockpittet. Videresend ikke linket, og læg ikke materialerne på en fælles side, eleverne kan se
+- [ ] Kun hvis spillet har en lærerassistent: åbn den med dit personlige adgangslink fra din skolemail (et 1-klik link, gyldigt i 7 dage, indtil datoen i mailen). Er det udløbet, bestiller du et nyt på siden med samme mailadresse. Hent materialerne som ZIP inde i cockpittet. Videresend ikke linket, og læg ikke materialerne på en fælles side, eleverne kan se
 - [ ] Print kun denne ene lærerpakke til eget brug: `Laererpakke_[Spil]_Samlet.docx` (lærerguide og cheatsheet i ét hæfte)
 - [ ] Print elevintroduktion (1 pr. elev)
 - [ ] Print rollekort (de versioner, der er lavet). Tæl dem ud fra gruppeplanen: ét kort pr. elev på rollen plus ét til hvert bord, hvor rollen er slået sammen med en anden
-- [ ] Vælg elevpakke og skriv tallene: `Elevpakke_[Spil]_Uden_AI.docx` (alt på papir, ingen koder eller AI, til skærmfrie lektioner) eller `Elevpakke_[Spil]_Med_AI.docx` (samme indhold med rådgiverkoden på rollekortene, til elever der sparrer med AI på mobilen). Print kun den ene, og bland dem ikke. Rollekortene er dobbeltsidede (forside og bagside), så print dem tosidet. Angiv, hvad der ikke må ligge hos eleverne (fx fortrolige bilag og lærersæt)
+- [ ] Vælg elevpakke og skriv tallene. Har spillet ingen AI-rådgiver, findes kun pakken Uden AI, og punktet nævner kun den. Ellers vælges mellem `Elevpakke_[Spil]_Uden_AI.docx` (alt på papir, ingen koder eller AI, til skærmfrie lektioner) og `Elevpakke_[Spil]_Med_AI.docx` (samme indhold med rådgiverkoden på rollekortene, til elever der sparrer med AI på mobilen). Print kun den ene, og bland dem ikke. Rollekortene er dobbeltsidede (forside og bagside), så print dem tosidet. Angiv, hvad der ikke må ligge hos eleverne (fx fortrolige bilag og lærersæt)
 - [ ] Stil lokalet op
 - [ ] Test evt. digitalt værktøj
 - [ ] Elevintroduktion uddeles FØR rollekort
 
 ### 5. Tidsplan (som udgangspunkt uden minuttal)
-"Du styrer selv tempoet — skemaet viser rækkefølge og relativ vægtning."
+"Du styrer selv tempoet. Skemaet viser rækkefølge og relativ vægtning."
 
 | Fase | Aktivitet | Lærers rolle |
 |------|-----------|-------------|
 | Intro | Præsentér scenarie | Facilitator |
 | Fase 1 | Forberedelse | Cirkulér |
-| Fase 2 — R1 | Åbningsstatements | Tidstager |
-| Fase 2 — R2 | Fri forhandling | Observér |
-| Fase 2 — R3 | Forslag + afstemning | Hold styr |
+| Fase 2, runde 1 | Åbningsstatements | Tidstager |
+| Fase 2, runde 2 | Fri forhandling | Observér |
+| Fase 2, runde 3 | Forslag + afstemning | Hold styr |
 | Fase 3 | Debriefing (RAS) | Facilitator |
 | Afslutning | Exit-ticket | Uddel |
 
@@ -121,7 +121,7 @@ Et inject må ikke ændre reglerne, åbne et hul eller ændre pakkens beregning.
 - Magt, alliancer, argumentation
 - Skriv nøgleord på tavlen
 
-**Overgangssætning:** "OK — nu har vi analyseret hvad der skete. Men hvad med den virkelige verden?"
+**Overgangssætning:** "OK. Nu har vi analyseret, hvad der skete. Men hvad med den virkelige verden?"
 
 **S = Sammenfatning** (medium, formål: transfer til virkelighed)
 - Teori-kobling: "Hvordan relaterer dette til [begreb]?"
@@ -132,8 +132,8 @@ Et inject må ikke ændre reglerne, åbne et hul eller ændre pakkens beregning.
 | Problem | Tegn | Løsning |
 |---------|------|---------|
 | Elever forstår ikke reglerne | Spørger konstant | Bedre intro, visuel guide |
-| Én gruppe dominerer | Andre er passive | Justér stemmevægte |
-| Deadlock | Ingen kan blive enige | Kompromisrolle, sænk flertal |
+| Én gruppe dominerer | Andre er passive | Giv ordet til de passive roller, og spørg, hvem der mangler for et flertal. Ændr ikke stemmevægte under spillet |
+| Deadlock | Ingen kan blive enige | Aktivér kompromisrollen, hvis spillet har en, og mind om, hvad der sker uden flertal. Ændr ikke flertalskravet under spillet |
 | For personligt | Elev virker ked | Stop, adressér, genopbyg |
 | Skæve elevtal | Nogle borde har færre elever end roller, eller en rolle har to elever | Følg fordelingsreglen i sektion 3: dublér de store roller, og ved små borde får eleverne én rolle hver efter prioritet, mens ubesatte roller deles af en nabo og har deres eget kort |
 
@@ -151,7 +151,7 @@ Variationerne hjælper læreren med at tilpasse casespillet til forskellige hold
 
 Afslut ALTID med én af:
 
-- **DONE** — Lærerguide genereret med alle 12 obligatoriske sektioner
+- **DONE** — Lærerguide genereret med alle 11 obligatoriske sektioner
 - **DONE_WITH_CONCERNS** — Guide leveret, men med mangler (fx: inject drama-kort mangler fordi scenariet er for kort, eller debriefing er generisk)
 - **BLOCKED** — Kan ikke generere guide (fx: rollekort er ikke færdige endnu, designprincipper-skill ikke tilgængelig)
 - **NEEDS_CONTEXT** — Mangler information (fx: "Hvor lang tid har du til casespillet?")

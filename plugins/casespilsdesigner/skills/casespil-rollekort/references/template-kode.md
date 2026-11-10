@@ -2,6 +2,8 @@
 
 Denne fil indeholder genbrugelig Node.js-kode til docx-generering af rollekort, lærerguider og elevintroduktioner.
 
+**Én spilfil:** koden her er layout. Roller, regler og tekster hentes fra spillets spilfil (`produktion/spil.cjs`, se `references/spilfil.md` i `casespil-projektregler`) og skrives ikke direkte i generatoren. Eksempelteksterne i koden viser kun, hvor teksten sættes ind.
+
 **Vigtigt:** Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den først. Den kan have nyere best practices.
 
 ## Indhold
@@ -31,7 +33,7 @@ const fs = require('fs');
 // ── Sideopsætning (DXA-enheder) ──
 const PAGE_W = 11906, PAGE_H = 16838; // A4
 
-// Kompakte margener (rollekort — 1 side pr. kort)
+// Kompakte margener (rollekort: 2 sider pr. kort, forside og bagside)
 const MH_ROLLE = 1008, MV_ROLLE = 640;
 // Standard margener (lærerguide)
 const MH_GUIDE = 1440, MV_GUIDE = 1008;

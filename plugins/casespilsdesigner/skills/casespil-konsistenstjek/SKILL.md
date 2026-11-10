@@ -16,9 +16,11 @@ allowed-tools:
 
 Kør dette tjek EFTER at alle materialer er genereret, MEN FØR levering til brugeren. Rapporten præsenteres som en samlet liste med ✅ (bestået) eller ❌ (fejl) for hvert punkt.
 
+**Designvalg er ikke fejl.** Grebene i `casespil-designprincipper` kan fravælges. Har designet bevidst fravalgt et greb, fx lige stemmer, ingen wildcard eller ingen kompromisrolle, så skriv ✅ med noten "bevidst valg" og ikke ❌.
+
 ## 0. Kør scriptet først
 
-Kør det deterministiske sprogtjek på alle leverede filer (.docx, .md, .html), før du læser noget selv. Det finder tankestreger, ASCII-erstatninger for æøå, delte sammensatte ord, ritualsætninger, `maks.`, `à`, `60 %` og minuttal:
+Kør det deterministiske sprogtjek på materialemappen, før du læser noget selv. Det læser .docx (også sidehoved og sidefod), .md og .html og tekststrengene i spilfilen og andre .cjs- og .js-filer. Det finder tankestreger, ASCII-erstatninger for æøå, delte sammensatte ord, ritualsætninger, `maks.`, `à`, `60 %` og minuttal:
 
 ```
 python3 "${CLAUDE_SKILL_DIR}/../casespil-sprogtjek/scripts/sprogtjek.py" <materialemappe>
@@ -40,7 +42,7 @@ For hvert rollekort, verificér:
 
 - [ ] Kan forslag X faktisk opnå nok stemmer til vedtagelse?
 - [ ] Er der mindst 2-3 mulige vindende koalitioner?
-- [ ] Kan ingen enkelt koalition af to roller opnå flertal alene?
+- [ ] Kan ingen enkelt koalition af to roller opnå flertal alene, eller er det et bevidst valg, som står i facit?
 - [ ] Kan en blokerende minoritet forhindre ALT? (bør undgås)
 - [ ] Stemmer det samlede stemmetal med det der står i elevintroduktionen?
 
@@ -70,8 +72,8 @@ For hvert rollekort, verificér:
 
 - [ ] Har ALLE roller mindst ét stærkt argument?
 - [ ] Har ALLE roller mindst ét ægte dilemma?
-- [ ] Er der mindst én rolle med kompromis/brobygger-position?
-- [ ] Er der mindst én rolle med uformel magt (wildcard/moralsk autoritet)?
+- [ ] Er der mindst én rolle med kompromis/brobygger-position, eller er den bevidst fravalgt?
+- [ ] Er der mindst én rolle med uformel magt (wildcard/moralsk autoritet), eller er den bevidst fravalgt?
 - [ ] Er ingen rolle "oplagt vinder" — alle har trade-offs?
 - [ ] Er hvert dilemma tjekket mod de andre rollers krav, ønsker og fortrolige notater, så det ikke lover en byttehandel, den anden rolle ikke kan give?
 - [ ] Ligner en rolles ønske eller notat en anden rolles krav, så ét tillæg eller én løsning bliver favoriseret?
@@ -81,12 +83,13 @@ For hvert rollekort, verificér:
 **Normalversionen er altid nok.** Mange casespil laves bevidst med kun én simpel rollekort-version, og nogle gange med en AI-rådgiver som støtte til de svage elever. Mangler støtte- og stærkversion, er det IKKE en fejl. Skriv i rapporten "✅ Kun normalversion (bevidst valg)". Tjek støtte- og stærkversion kun, hvis de findes.
 
 ### Normal-version (tjek altid):
-- [ ] Passer på 1 A4-side?
-- [ ] Har faseguide-tabel (eller faseguide på bagsiden)?
-- [ ] Har alle sektioner (header, mål, baggrund, holdning, værdier, argumenter, dilemmaer, tip)?
+- [ ] Fylder præcis 2 sider (forside og bagside), tjekket med sidetælling?
+- [ ] Har faseguide og notelinjer på bagsiden?
+- [ ] Har de sektioner, designet har valgt, med de faste overskrifter fra `casespil-rollekort` (fx MÅL, BAGGRUND, HOLDNING OG VÆRDIER, ARGUMENTER, DILEMMAER og FORTROLIGT NOTAT)?
+- [ ] Miniversion: mini-rollekortene fylder højst en halv A4-side og har ingen faseguide (undtagelsen i projektregel 8)?
 
 ### Støtte-version (kun hvis den findes):
-- [ ] Er mindst dobbelt så lang som normal (2 sider)?
+- [ ] Har samme forside og bagside som normalversionen plus støttedelene, om nødvendigt på en ekstra side?
 - [ ] Har "sig f.eks." til HVERT argument?
 - [ ] Har alliancetabel med konkrete sætninger?
 - [ ] Har ordliste med mindst 3 fagbegreber?
@@ -95,11 +98,11 @@ For hvert rollekort, verificér:
 - [ ] Har faseguide?
 
 ### Stærk-version (kun hvis den findes):
-- [ ] Passer på 1 A4-side (kompakt)?
+- [ ] Er kompakt: 2 sider, eller 1 side, hvis læreren har bedt om det?
 - [ ] Har stikord i stedet for fuldtekst-argumenter?
 - [ ] Har teori-tags (fx [NEO], [REAL])?
-- [ ] Har INGEN faseguide?
-- [ ] Har tom noteboks?
+- [ ] Har ingen "sig f.eks." og ingen alliancetabel?
+- [ ] Har notelinjer og fagbegreber på bagsiden?
 
 ### AI-rådgiver som støtte (kun hvis den findes):
 - [ ] Kender kun fælles casekort og elevens eget rollekort, ikke de andre rollers kort?
@@ -132,7 +135,7 @@ Kilder: `casespil-projektregler` (beregner-tjek) og `casespil-digitale-tillaeg` 
 - [ ] Ingen BCG- eller Ansoff-svar og ingen beskrivelser af rollernes holdninger på offentlige sider (casespilssiden viser roller kun med titel, stemmetal og særlig beføjelse)?
 - [ ] Roller, titler, stemmetal, beløb og regler på casespilssiden er sammenholdt med rollekort og bilag (intet opfundet), og reglerne om stemmer, veto, standardplan, særlige beslutninger og reserve er med?
 - [ ] Spilfaserne har samme navne og numre overalt, og rådgiver og webside viser kun spilfaserne?
-- [ ] Rollekoderne på kortene matcher hasherne i rådgiveren, og koderne på kort og i lærervinduet er ens?
+- [ ] Rollekoderne på kortene matcher hasherne i rådgiveren, og koderne på kort og i cockpittets kodetabel er ens?
 - [ ] Rådgiverens fejlbesked og casespilssidens tekst skriver kun "fra dit kort", hvis koden står på kortet?
 - [ ] Spilintroens scenetekster og voiceover er tjekket mod bilagene (ingen overdrivelser eller modsigelser; voiceover kan ikke rettes uden ny indtaling)?
 - [ ] Forsiden har ét menupunkt og en hero-knap til casespilssiden, intet link til rådgiveren og ingen popup, og gamle `#intro`-links sendes videre?

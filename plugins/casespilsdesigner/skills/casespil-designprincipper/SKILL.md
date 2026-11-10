@@ -218,7 +218,7 @@ RAS er udgangspunktet. Den kan kombineres med andre greb, fx sammenligning med e
 | A = Analyse | Koble oplevelse til fagbegreber | Lang | Kernen. "Hvorfor"-spørgsmål |
 | S = Sammenfatning | Overføre til virkelighed | Medium | Teori + eksamensrelevans |
 
-Eksplicit overgangssætning mellem A og S: "OK — nu har vi analyseret hvad der skete. Men hvad med den virkelige verden?"
+Eksplicit overgangssætning mellem A og S: "OK. Nu har vi analyseret, hvad der skete. Men hvad med den virkelige verden?"
 
 ## Reference-filer
 

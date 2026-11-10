@@ -16,7 +16,7 @@ Samlet fra to afprøvede spil: Fjord Outdoor (erhvervsøkonomi: AI-rådgiver, we
 - Hver rolle har en **egen 4-cifret adgangskode**. Gem kun en hash af koden (SHA-256) i siden, ikke koden selv.
 - **Koden står på rollekortet**, på forsiden i topbjælkens undertitel, fx `Fjord Outdoors bestyrelse | Leder mødet | Rådgiverkode: 2481`. Den står ikke under en overskrift eller i en ny sektion, fordi rådgiverens parser læser kortets faste overskrifter (afsnit 5).
 - **Ærlig begrænsning:** en 4-cifret kode har kun 10 000 muligheder. Hashen skjuler koden for den, der læser siden, men en målrettet elev kan afprøve dem alle. Vil man have en hård grænse, tælles forkerte forsøg på serveren (afsnit 3).
-- **Kodetjek:** koden på hvert kort, hashen i rådgiveren og koden i lærervinduet skal høre sammen. Lav et lille script, der hasher koderne fra kortene og sammenligner med hasherne i siden, hver gang kort eller rådgiver er ændret.
+- **Kodetjek:** koden på hvert kort, hashen i rådgiveren og koden i cockpittets kodetabel skal høre sammen. Lav et lille script, der hasher koderne fra kortene og sammenligner med hasherne i siden, hver gang kort eller rådgiver er ændret.
 - **Tekster om koden:** rådgiverens fejlbesked og casespilssidens tekst må kun skrive "fra dit kort", hvis koden faktisk står på kortet.
 - Rollekortets indhold kan gemmes krypteret pr. rolle og dekrypteres i browseren, når koden er indtastet. Det stopper nysgerrige blikke i kildekoden og i udviklerværktøjer, men **ikke en målrettet elev**. Sig det til læreren, og lad aldrig hemmeligheder ligge her, som ikke må kendes.
 - **Vælg kryptering efter, hvordan siden distribueres.** `crypto.subtle` (Web Crypto) virker kun på sikre adresser (https og localhost), ikke når siden åbnes som lokal fil.
@@ -25,7 +25,7 @@ Samlet fra to afprøvede spil: Fjord Outdoor (erhvervsøkonomi: AI-rådgiver, we
 - **Hvor stærk er en 4-cifret kode, egentlig?** Målt på Kommunalbudget: SHA-256 af alle 10 000 mulige koder tager under et sekund, og alle fem rollekoder kunne slås op med det samme, fordi hashen er opslagsnøglen. Derefter tager hver oplåsning ca. 50 ms (PBKDF2). En elev, der kan skrive en løkke i konsollen, kan altså læse alle rollekort, også dem med skjult information, på under et sekund. Kryptering med 4 cifre stopper nysgerrige klik, ikke en målrettet elev. Vælg ud fra, hvor følsom den skjulte information er:
   - Holder spillet til, at nogle elever kan snyde (de fleste klasser): behold 4 cifre, og sig det til læreren.
   - Skal den skjulte information tåle en målrettet elev: brug længere koder (fx 6 tegn fra et alfabet uden forvekslelige tegn, ca. en milliard muligheder), lad siden prøve koden mod hver lås i stedet for at gemme en hash som opslagsnøgle, og/eller lad proxyen levere rollekortet efter et kodetjek på serveren.
-- Lærervinduet viser **kun rollekoderne**. Ingen log, ingen nøgle, ingen faseføring.
+- Rådgiveren har intet lærervindue. Rollekoderne til læreren ligger kun i cockpittets krypterede bundt (projektregel 14).
 
 ## 3. Modelkald (AI-rådgiver)
 
@@ -49,7 +49,7 @@ Samlet fra to afprøvede spil: Fjord Outdoor (erhvervsøkonomi: AI-rådgiver, we
 
 ## 5. Rollekort og casekort i siden
 
-- Rollekortets **overskrifter er en grænseflade**: rådgiveren og kortvisningen læser dem. Fast sæt: MÅL, BAGGRUND, HOLDNING, VÆRDIER, ARGUMENTER, DILEMMAER, SKJULT INFORMATION, SÆRLIG BEFØJELSE, TIP, evt. projekt og løfte. Ændres de, skal parseren ændres.
+- Rollekortets **overskrifter er en grænseflade**: rådgiveren og kortvisningen læser dem. Det faste sæt står ét sted: under Normal i `casespil-rollekort` (nye kort bruger HOLDNING OG VÆRDIER, INITIATIVKRAV OG MULIGHEDER og FORTROLIGT NOTAT). Ældre kort kan have HOLDNING, VÆRDIER og SKJULT INFORMATION, og parseren skal kende præcis de overskrifter, kortene har. Ændres de, skal parseren ændres.
 - **Rådgiverens faser:** faselisten indeholder kun de spilfaser, hvor eleverne agerer og har brug for sparring (Fjord Outdoor: Forberedelse, Pitches, Korridorforhandlinger, Bestyrelsesmødet). Introduktion og debriefing er ikke rådgiverfaser. Navne og numre er de samme som på rollekort og i lærerguide.
 - **Én komponent til kortet**, brugt både som fane i informationspanelet på computer (over ca. 900 px) og som fane i den faste fanelinje på mobil (afsnit 16). Foldbare bokse og popup-modaler bruges ikke på mobil: de giver lange scroll og skjuler det, eleven leder efter. Casekortet i egen fane ved siden af rollekortet.
 - Design: ét kort uden ramme i ramme, ingen overflødige etiketter (fx "Bagsiden"), farver og skrift som resten af spillet.

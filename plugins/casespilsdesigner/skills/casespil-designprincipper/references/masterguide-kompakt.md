@@ -68,13 +68,15 @@ Før casespil — tegn figur på tavlen: Hvad SER/HØRER/TÆNKER/FØLER/SIGER/G�
 | Dilemmaer | 2. person | 3 stk. med krydsreferencer, evt. SKJULT info |
 | Beføjelse | — | Fx "Vetoret — én gang" |
 | Tip | 2. person imperativ | Strategisk råd |
-| Faseguide | — | Tabel: fase → handling (INGEN minuttal) |
+| Faseguide | — | Tabel: fase → handling (som udgangspunkt uden minuttal) |
+
+De gældende sektioner og faste overskrifter, fx FORTROLIGT NOTAT, står under Normal i `casespil-rollekort`. Tabellen her viser person-perspektivet.
 
 ### Støtte-version tilføjer (kun hvis ønsket):
 "Sig f.eks." til hvert argument, alliancetabel (Hvem?/Hvorfor?/Sig dette), ordliste (3-4 begreber), nødhjælpsboks (gul), forhandlingssætninger (grøn), udvidet faseguide
 
 ### Stærk-version fjerner (kun hvis ønsket):
-Fuldtekst → stikord, tilføjer teori-tags, fjerner faseguide, tilføjer tom noteboks
+Fuldtekst → stikord, tilføjer teori-tags, ingen "sig f.eks." og ingen alliancetabel. Bagsiden bruges til notelinjer og fagbegreber
 
 ---
 
@@ -116,7 +118,7 @@ Kør → indsaml → analysér → justér → kør igen. Typiske justeringer: b
 
 ## Tidsstyring
 
-Angiv ALDRIG faste minuttal. Angiv rækkefølge og relativ vægtning. Begrundelse: læreren kender sin klasse, faste minuttal skaber stress, klasser har forskellige tempi.
+Brug som udgangspunkt ikke faste minuttal. Angiv rækkefølge og relativ vægtning, fordi læreren kender sin klasse, og klasser har forskellige tempi. Faste tider kan vælges bevidst, fx i en kort, tidsstyret runde eller en miniversion (projektregel 3).
 
 ## Tryg ramme (uden ritualer)
 

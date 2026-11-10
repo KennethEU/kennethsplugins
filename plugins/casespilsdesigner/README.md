@@ -23,7 +23,7 @@ casespilsdesigner/
     ├── casespil-designprincipper/ ← Faglig rygrad: 10 principper + 8 formater
     ├── casespil-rollekort/        ← Docx-produktion: farver, margener, layout
     │   └── references/template-kode.md
-    ├── casespil-laererguide/      ← Lærerguide: 12 obligatoriske sektioner + RAS
+    ├── casespil-laererguide/      ← Lærerguide: 11 obligatoriske sektioner + RAS
     ├── casespil-cheatsheet/       ← Cheatsheets: spørgsmål + modelbesvarelser
     ├── casespil-sprogtjek/        ← Dansk retskrivning + QA-tjekliste
     │   └── scripts/sprogtjek.py

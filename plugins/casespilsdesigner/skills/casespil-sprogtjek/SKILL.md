@@ -120,7 +120,7 @@ Vælg én term og hold fast HELE vejen:
 
 ## Kør scriptet først
 
-`scripts/sprogtjek.py` finder de mekaniske fejl deterministisk (tankestreger, ae/oe/aa, delte sammensatte ord, ritualsætninger, `maks.`, `à`, `60 %`, minuttal, blandede fagtermer). Fund af minuttal og ritualsætninger er advarsler: de kan være et bevidst pædagogisk valg i spillet. Tankestreger er altid fejl. Det læser .docx, .md og .html uden ekstra pakker:
+`scripts/sprogtjek.py` finder de mekaniske fejl deterministisk (tankestreger, ae/oe/aa, delte sammensatte ord, bindestreg i ord som lærer-assistent, ritualsætninger, `maks.`, `à`, `60 %`, minuttal, blandede fagtermer). Fund af minuttal, ritualsætninger og bindestreger er advarsler: de kan være et bevidst valg i spillet. Tankestreger er altid fejl. Det læser .docx (også sidehoved og sidefod), .md og .html og tekststrengene i spilfilen og andre .cjs- og .js-filer, uden ekstra pakker. Filnavne i teksten og mapper med arkiv, backup eller node_modules i navnet springes over. Kør det på hele spilmappen, så spilfilen kommer med:
 
 ```
 python3 "${CLAUDE_SKILL_DIR}/scripts/sprogtjek.py" <fil-eller-mappe>

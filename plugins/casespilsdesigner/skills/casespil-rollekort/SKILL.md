@@ -1,6 +1,6 @@
 ---
 name: casespil-rollekort
-description: "Producerer to adskilte elevpakker (Uden AI og Med AI-rådgiver) med elevintroduktion, bilag, dobbeltsidede rollekort og beslutningsskema, og en samlet lærerpakke, til casespil (også kaldet rollespil) som printklare Word-dokumenter (.docx) med Node.js. Brug når læreren siger rollekort, elevintroduktion, \"til printeren\", print, word eller docx i forbindelse med casespil, rollespil eller simulation. Normalversionen er standard; støtte og stærk laves kun efter ønske. Brug ikke til lærerguider (casespil-laererguide), cheatsheets (casespil-cheatsheet) eller dokumenter uden for casespil og rollespil."
+description: "Producerer elevpakken (Uden AI, og Med AI-rådgiver når spillet har en rådgiver) med elevintroduktion, bilag, dobbeltsidede rollekort og beslutningsskema, og en samlet lærerpakke, til casespil (også kaldet rollespil) som printklare Word-dokumenter (.docx) med Node.js. Brug når læreren siger rollekort, elevintroduktion, \"til printeren\", print, word eller docx i forbindelse med casespil, rollespil eller simulation. Normalversionen er standard; støtte og stærk laves kun efter ønske. Brug ikke til lærerguider (casespil-laererguide), cheatsheets (casespil-cheatsheet) eller dokumenter uden for casespil og rollespil."
 allowed-tools:
   - Read
   - Glob
@@ -20,7 +20,7 @@ Denne skill styrer *hvordan* du genererer Word-dokumenter til casespil. Den fagl
 
 1. Læs CLAUDE.md for at forstå lærerens fag og hold
 2. Scan projektmappen for eksisterende casespilsmaterialer (indhold, roller, dilemmaer)
-3. Læs `casespil-designprincipper`-skillen — rollekortene SKAL overholde de 10 principper
+3. Læs `casespil-designprincipper`-skillen: rollekortene følger de designvalg, der er truffet for spillet. De ti greb er inspiration og ikke krav
 4. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning
 
 Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten først bagefter i scriptet, giver det dobbeltarbejde og tekstfejl i de genererede filer.
@@ -31,14 +31,15 @@ Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten fø
 
 ### Før du koder
 
-1. Læs `casespil-designprincipper`-skillen (den skal allerede være trigget) for at sikre at rollekortene overholder de 10 principper
+1. Læs `casespil-designprincipper`-skillen (den skal allerede være trigget) for at sikre, at rollekortene følger spillets designvalg
 2. Hvis `/mnt/skills/public/docx/SKILL.md` findes, så læs den for den nyeste docx-vejledning (den opdateres løbende)
 3. Hav rollekortenes indhold klar FØR du begynder at kode — skriv aldrig kode og indhold samtidig
+4. Læg indholdet i spilfilen (`produktion/spil.cjs`) efter `references/spilfil.md` i `casespil-projektregler`. Findes den ikke, så opret den først. Generatoren henter al spiltekst derfra
 
 ### Generering
 
 1. Installér pakken: `npm install docx` (v9.5.1+)
-2. Byg scriptet med konstanter og hjælpefunktioner fra `references/template-kode.md`
+2. Byg generatoren (`produktion/elev.cjs`) med konstanter og hjælpefunktioner fra `references/template-kode.md`. Den laver kun layout og henter roller, regler og tekster fra spilfilen
 3. Generér .docx-filen
 4. Validér: hvis docx-skillen findes, kør `python3 /mnt/skills/public/docx/scripts/office/validate.py output.docx`. Ellers åbn filen igen med `python-docx` eller konvertér den i trin 5, og stop ved fejl.
 5. Preview: Konvertér til PDF med `soffice --headless --convert-to pdf output.docx`, derefter `pdftoppm -jpeg -r 200` og se billederne
@@ -71,7 +72,7 @@ Hav rollekortenes indhold færdigt, før du begynder at kode. Rettes teksten fø
 ```
 A4: PAGE_W = 11906, PAGE_H = 16838
 
-Rollekort (kompakte margener, 1 side pr. kort):
+Rollekort (kompakte margener, 2 sider pr. kort: forside og bagside):
   MH = 1008  (top/bund)
   MV = 640   (venstre/højre)
 
@@ -92,7 +93,7 @@ Elevintroduktion (medium margener):
 
 ### Normal: dobbeltsidet A4 (forside og bagside)
 
-Et rollekort er altid 2 sider, trykt dobbeltsidet. Listerne nedenfor er standardskabelonen. Afsnit kan udelades eller byttes efter spillets designvalg (se Designvalg i `casespil-designprincipper`). Spillet foregår fysisk i klasselokalet med papir, dialog og forhandling, og bagsiden er arbejdsarket, eleven har foran sig under forhandlingen.
+Et rollekort er altid 2 sider, trykt dobbeltsidet. Eneste undtagelse er mini-rollekort i en miniversion (højst en halv A4-side, se `casespil-miniversion`). Listerne nedenfor er standardskabelonen. Afsnit kan udelades eller byttes efter spillets designvalg (se Designvalg i `casespil-designprincipper`). Spillet foregår fysisk i klasselokalet med papir, dialog og forhandling, og bagsiden er arbejdsarket, eleven har foran sig under forhandlingen.
 
 **Forside (Rolle og mandat):**
 - Topbanner med navn, titel, organisation og evt. beføjelse. I varianten Med AI står rådgiverkoden i bannerets undertitel (se Rådgiverkode)
@@ -147,17 +148,17 @@ Bland ALDRIG perspektiver inden for samme felt.
 - Hver rolle har en 4-cifret kode. Den trykkes **kun i elevpakken Med AI** på forsiden af rollekortet i bannerets undertitel, fx "Fjord Outdoors bestyrelse | Leder mødet | Rådgiverkode: 2481".
 - **Elevpakken Uden AI indeholder ingen koder og ingen henvisninger til AI, rådgiver eller app.** Den er til 100 % skærmfrie lektioner. Ordene "rådgiver" og "AI" står ikke i filen, og ingen 4-cifret kode står på kortene.
 - Koden står **ikke** under en overskrift og er ikke en ny sektion. Rådgiveren læser kortets faste overskrifter, så sektionerne ændres ikke (se `casespil-digitale-tillaeg`).
-- Koderne kommer fra rådgiverens kodeliste. Rollekortene laves ofte, før rådgiveren findes: tilføj koden, når rådgiveren er bygget, og generér varianten Med AI igen. Koden på kortet, i lærervinduet og (som hash) i rådgiveren skal være den samme.
+- Koderne kommer fra rådgiverens kodeliste. Rollekortene laves ofte, før rådgiveren findes: tilføj koden, når rådgiveren er bygget, og generér varianten Med AI igen. Koden på kortet, i cockpittets kodetabel og (som hash) i rådgiveren skal være den samme. Find aldrig på koder: uden en rådgiver laves varianten Med AI ikke.
 - Koden står kun på sin egen rolles kort, aldrig i elevintroduktion, bilag eller lærerpakke. Rådgiverens fejlbesked og webtekster må kun skrive "fra dit kort", hvis koden står der (altså i varianten Med AI).
 
 ---
 
 ## Filproduktion
 
-Producér altid disse tre Word-filer, og kun disse som standard (`[Spil]` er spillets navn):
+Producér disse Word-filer, og kun disse som standard (`[Spil]` er spillets navn). Har spillet ingen AI-rådgiver, laves fil 2 ikke, jf. projektregel 7:
 
 1. **`Elevpakke_[Spil]_Uden_AI.docx`:** alt samlet i én fil (elevintroduktion, bilag, rollekort og beslutningsskema), helt uden koder eller AI-henvisninger. Til 100 % skærmfrie lektioner.
-2. **`Elevpakke_[Spil]_Med_AI.docx`:** nøjagtig samme indhold, men med den 4-cifrede rådgiverkode trykt på rollekortene ("Rådgiverkode: XXXX") til lærere, der vil lade eleverne sparre med AI på mobilen.
+2. **`Elevpakke_[Spil]_Med_AI.docx` (kun når spillet har en AI-rådgiver):** nøjagtig samme indhold, men med den 4-cifrede rådgiverkode trykt på rollekortene ("Rådgiverkode: XXXX") til lærere, der vil lade eleverne sparre med AI på mobilen.
 3. **`Laererpakke_[Spil]_Samlet.docx`:** lærerguide og cheatsheet samlet i ét dokument, så læreren kun printer ét hæfte til eget brug.
 
 Regler for de to elevpakker:

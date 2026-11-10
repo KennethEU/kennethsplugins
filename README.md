@@ -118,6 +118,18 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### casespilsdesigner 2.16.0 (november 2026)
+Rettelser efter en gennemgang, hvor de ti skills blev læst mod hinanden. De fleste fejl var rester fra ældre versioner, som modsagde nyere regler.
+- **Konsistenstjekket passer nu til rollekortene:** normalkortet tjekkes for præcis 2 sider og de faste overskrifter, og støtte- og stærkversion følger `casespil-rollekort`. Greb, designet bevidst har fravalgt (fx wildcard eller kompromisrolle), tæller ikke som fejl.
+- **Rollekortets faste overskrifter står ét sted** (`casespil-rollekort`). `casespil-digitale-tillaeg` og `teknik.md` henviser dertil og nævner FORTROLIGT NOTAT i stedet for SKJULT INFORMATION.
+- **Papirspil uden digitale dele:** elevpakken Med AI laves kun, når spillet har en rådgiver, og lærerguidens tjekliste nævner kun lærerassistenten, hvis den findes.
+- **Miniversion** er nu en skrevet undtagelse fra reglen om dobbeltsidede rollekort.
+- **Lærerguide:** 11 sektioner (ikke 12), ingen råd om at ændre stemmevægte eller flertal under spillet, og ingen tankestreger i de sætninger, guiden foreskriver.
+- **Rådgiveren har intet lærervindue.** Rollekoderne står kun i cockpittets kodetabel, jf. projektregel 14.
+- **Spilfilen har fået sit trin:** `casespil-nyt` og `casespil-rollekort` opretter `produktion/spil.cjs`, før generatorerne skrives.
+- **`sprogtjek.py`** læser nu også spilfilen og andre .cjs- og .js-filer (kun tekststrenge), sidehoved og sidefod i Word, og advarer om bindestreg i ord som lærer-assistent. Filnavne giver ikke længere ASCII-fejl, ritualsætninger er advarsler, og mapper med arkiv, backup eller node_modules springes over. Test: `python3 plugins/casespilsdesigner/tests/test_sprogtjek.py`.
+- `masterguide-kompakt.md` og `cases.md`: "ALDRIG faste minuttal" og "psykologisk sikkerhed" er rettet, så de følger projektreglerne, og case S1 har en note om, at to roller kan nå flertal alene.
+
 ### klasseledelse 1.14.0 og cl-oevelser 1.6.0 (november 2026)
 - **Fakta, tal og aktuelle forhold:** nyt afsnit i `klasseledelse-principper` og `cl-principper`. Tal, citater, partiers politik og aktuelle sager, der ikke kommer fra læreren eller en læst tekst, mærkes og samles i én linje "Tjek". Opdigtede cases skal fremstå som opdigtede.
 - **Kun det, klassen har mødt:** teorier og teoretikere, skillen selv trækker ind, står i antagelseslinjen øverst, også i hurtig-tilstand. Kort og ark til print laves ikke med teoretikere, læreren ikke har bekræftet.
