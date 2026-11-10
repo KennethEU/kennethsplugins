@@ -672,6 +672,14 @@ Efter Peter Liljedahls *Building Thinking Classrooms* ("Det tænkende klasserum"
 
 **Skærpelse:** brug reglen om, at den med tuschen kun skriver det, de andre siger, så alle tre skal tale. Læreren kan når som helst bede en tilfældig i gruppen forklare tavlen. Brug øvelsen til anvendelse, problemløsning eller repetition, ikke til helt nyt stof, medmindre opgaven kan løses uden ny viden. Ellers bliver det opdagelse uden hjælp.
 
+**Varianter, der kan bruges i alle fag** (efter kilde 11):
+- **Citat eller kilde på tavlen:** hver gruppe får et kort citat, et uddrag, en figur eller en kilde, skriver den øverst og noterer sin tolkning og de vigtigste fagbegreber nedenunder. Opsamling i matrixgrupper, hvor én fra hver tavle forklarer sin gruppes tavle for de andre.
+- **Vandring med spørgsmål:** efter en kort individuel skrivning laver grupperne deres tavle. Så går de rundt og skriver ét undrende eller opklarende spørgsmål på hver af de andre tavler. Tilbage ved egen tavle besvarer de et eller to af spørgsmålene for hele holdet.
+- **Overblik til repetition:** grupperne sætter forløbets teoretikere, begreber, begivenheder eller metoder på en tidslinje eller et kort og viser sammenhængene. Læreren har sedler med navne og begreber, som en gruppe kan trække, hvis den går i stå.
+- **Model eller tankeeksperiment:** grupperne tegner og forklarer en model, et forløb eller et tankeeksperiment fra teksten med teksten i hånden. Bagefter skriver hver elev sin egen note.
+- **Tjek af noterne:** efter et par uger laves en lille selvtest, hvor eleverne kun må bruge deres egne noter, eller nye grupper, hvor én forklarer og de andre stiller opklarende spørgsmål. Det viser, om noterne virker.
+- **Lektie:** giv refleksionsspørgsmål eller bed eleverne finde et eksempel eller en case til næste gang, frem for opgaver, der skal afleveres.
+
 **Fagidéer:**
 - Samfundsfag: placér tre cases på velfærdsmodellerne, eller forklar en graf over ledighed med to teorier.
 - Mediefag: lav et storyboard til en reklame ud fra en målgruppe og argumentér for valgene.

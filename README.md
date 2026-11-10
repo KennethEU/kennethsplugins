@@ -106,6 +106,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### cl-oevelser 1.2.1 (november 2026)
+- Tavlegrupper har fået seks varianter, der kan bruges i alle fag: citat eller kilde på tavlen, vandring med spørgsmål, overblik til repetition, model eller tankeeksperiment, tjek af noterne og lektie som refleksionsspørgsmål.
+
 ### cl-oevelser 1.2.0 og klasseledelse 1.12.0 (november 2026)
 - Ny øvelse i kataloget, Tavlegrupper, efter Det tænkende klasserum (Liljedahl): tilfældige grupper på tre, lodrette tavler, én tusch på skift og opsamling ud fra tavlerne. Kataloget har nu 30 øvelser. `evidens.md` har et afsnit om metoden med kritikken og danske erfaringer, og principperne nævner synligt gruppearbejde.
 
