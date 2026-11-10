@@ -1,6 +1,6 @@
 # Øvelsesbank
 
-30 øvelser: 15 fra Kenneths egen samling og 15 fra søgning. I de 15 er trinene Kenneths egne beskrivelser, let redigeret. SPIL-vurdering, skærpelser, tider i "ca." og fagidéer er arbejdsforslag, som skal justeres i praksis.
+44 øvelser: 15 fra Kenneths egen samling og 29 fra søgning, også på tysk, spansk og japansk. I de 15 er trinene Kenneths egne beskrivelser, let redigeret. SPIL-vurdering, skærpelser, tider i "ca." og fagidéer er arbejdsforslag, som skal justeres i praksis.
 
 **SPIL-vurdering:** Stærk = sikret af reglerne. Middel = sker ofte, men er ikke sikret. Svag = reglerne sikrer det ikke.
 
@@ -44,6 +44,20 @@
 | [Én på besøg](#én-på-besøg) | Midt i gruppearbejde | Teams á 4 | 5-10 min | Ja | L middel |
 | [Dobbeltcirkler](#dobbeltcirkler) | Repetition, mundtlighed | Skiftende par | 10-15 min | Ja | Ingen |
 | [Tavlegrupper](#tavlegrupper) | Anvendelse, problemløsning, repetition | Tilfældige grupper á 3 | 20-40 min | Ja | I middel |
+| [Nummererede hoveder](#nummererede-hoveder) | Lektieopsamling, begreber | Teams á 4 | 10-15 min | Nej | Ingen |
+| [Afsløring](#afsløring) | Repetition, begreber, beregning | Teams á 4 | 10-20 min | Nej | Ingen |
+| [Taleperler](#taleperler) | Diskussion, hvor få dominerer | Teams á 4 | 10-20 min | Nej | Ingen |
+| [Gentag før du taler](#gentag-før-du-taler) | Debat, argumentation, lytning | Teams á 4 | 10-20 min | Nej | Ingen |
+| [Team, par, alene](#team-par-alene) | Ny færdighed med støtte, der trappes ned | Teams á 4, så par | 20-30 min | Nej | Ingen |
+| [Fordel pointene](#fordel-pointene) | Prioritering, beslutning | Teams á 4 | 10-15 min | Nej | Ingen |
+| [Find den falske](#find-den-falske) | Repetition, kildekritik | Teams á 4 | 10-15 min | Nej | Ingen |
+| [Giv én, få én](#giv-én-få-én) | Brainstorm, repetition | Skiftende par | 10-15 min | Ja | I middel |
+| [Dækkeserviet](#dækkeserviet) | Forforståelse, brainstorm, opsamling | Teams á 4 | 10-15 min | Nej | Ingen |
+| [Læretempo-duet](#læretempo-duet) | Tekstarbejde, repetition, stor spredning | Skiftende par | 20-40 min | Ja | Ingen |
+| [Blyanter i midten](#blyanter-i-midten) | Opgaver, der skal forstås før de løses | Teams á 4 | 10-20 min | Nej | Ingen |
+| [Tre minutters stop](#tre-minutters-stop) | Aktivering inde i en gennemgang | Teams á 4 | 3-5 min pr. stop | Nej | Ingen |
+| [Ekspertgrupper med før og efter](#ekspertgrupper-med-før-og-efter) | Tekstarbejde mod ét samlende spørgsmål | Teams á 3-4 plus ekspertgrupper | 50-70 min | Ja | Ingen |
+| [Havruta](#havruta) | Kritisk læsning, spørgsmål til tekst | Par | 15-25 min | Nej | Ingen |
 
 ---
 
@@ -303,6 +317,8 @@
 
 **Skærpelse:** hver elev har sin egen farve post-it og skal sætte mindst én kommentar pr. plakat. Så kan læreren se, hvem der er med. Bed om mindst ét fagligt spørgsmål ud over rosen.
 
+**Variant, Gallerivandring** (Gallery Walk, kilde 13): grupperne går rundt i deres team og diskuterer hver plakat, før de skriver deres kommentar. Uden snak kaldes den en museumsvandring. Passer også efter Tavlegrupper.
+
 **Fagidéer:**
 - Samfundsfag: plakater om hver sit politiske forslag, med post-its om argumenter.
 - Mediefag: plakater med idé til kampagne, med feedback på målgruppe og virkemidler.
@@ -397,6 +413,8 @@ Engelsk: Think-Pair-Share. **Grundlag:** kilde 1 og 2. **Materialer:** ét spør
 
 **SPIL:** S stærk (par), P middel, I middel, L middel.
 
+**Variant, 1-2-4** (spansk, kilde 16): eleverne tænker alene, så i par og til sidst i grupper på fire, før noget deles i plenum.
+
 **Skærpelse:** sig, hvem i parret der begynder, og giv begge lige lang tid, eller brug Par på tid. Vælg, hvem der deler i plenum, så det ikke kun er de frivillige.
 
 **Fagidéer:**
@@ -475,6 +493,8 @@ Engelsk: Jigsaw, efter Aronson. **Grundlag:** kilde 6 og 9. **Materialer:** en t
 
 **SPIL:** S stærk, P stærk (de andre kan kun få stoffet gennem dig), I stærk, L stærk.
 
+**Forbehold:** i fem lodtrukne forsøg med franske 6.-klasser gav ekspertgrupper ingen ekstra læring sammenlignet med almindelig undervisning (kilde 20), og andre studier svinger meget. Lad derfor altid hver elev svare alene til sidst, fx med varianten Ekspertgrupper med før og efter.
+
 **Skærpelse:** læg et stillads i ekspertgruppen, fx tre punkter, alle skal kunne forklare, så en svag ekspert ikke efterlader sit hold uden stof. Sørg for, at læreren hører ekspertgrupperne, før de går hjem.
 
 **Fagidéer:**
@@ -512,6 +532,8 @@ Engelsk: RallyCoach. **Grundlag:** kilde 3. **Materialer:** to opgavesæt af sam
 **SPIL:** S stærk (par), P stærk, I stærk, L stærk.
 
 **Skærpelse:** træneren må give hint, men ikke tage over. Giv de sidste opgaver et højere niveau, så stærke par har noget at strække sig efter.
+
+**Variant, Par tjekker par** (Pairs Check, kilde 13): efter to opgaver sammenligner parret med et andet par. Er de uenige, finder de fire sammen frem til løsningen.
 
 **Fagidéer:**
 - Samfundsfag: beregninger med procent og procentpoint, eller aflæsning af statistik.
@@ -685,13 +707,287 @@ Efter Peter Liljedahls *Building Thinking Classrooms* ("Det tænkende klasserum"
 - Mediefag: lav et storyboard til en reklame ud fra en målgruppe og argumentér for valgene.
 - Erhvervsøkonomi: regn en case igennem og find fejlen i en udleveret, forkert beregning.
 
+### Nummererede hoveder
+
+Engelsk: Numbered Heads Together. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** spørgsmål og en terning eller kort til at trække et nummer. **Lokale:** bordgrupper.
+
+1. Eleverne sidder i teams á 4 og har hver et nummer fra 1 til 4.
+2. Læreren stiller et spørgsmål. Alle skriver først deres eget svar.
+3. Teamet stikker hovederne sammen og sørger for, at alle kan forklare svaret.
+4. Læreren trækker et nummer. Eleven med det nummer i hvert team svarer, fx på et lille whiteboard, som alle holder op på samme tid.
+
+**Noter:** det rigtige svar skrives ind efter hver runde.
+
+**SPIL:** S stærk, P stærk (holdet lykkes kun, hvis alle kan svare), I stærk (alle kan blive trukket), L stærk.
+
+**Skærpelse:** træk nummeret først, når teamet er færdigt, så ingen kan regne med at slippe.
+
+**Variant, Holdpoint for fremgang** (STAD efter Robert Slavin, kilde 19): efter øvelsen tager alle en lille test alene. Teamet får point for, hvor meget hvert medlem har forbedret sig i forhold til sidst, ikke for det samlede resultat. Det har en af de bedste forskningsbaser for CL, især i matematik på ældre klassetrin.
+
+**Fagidéer:**
+- Samfundsfag: lektiespørgsmål til en tekst om partiernes vælgere.
+- Mediefag: genkend virkemidler i et klip.
+- Erhvervsøkonomi: forklar et nøgletal eller en regel i regnskabet.
+
+### Afsløring
+
+Engelsk: Showdown. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** en bunke kort med spørgsmål pr. team, og et lille whiteboard eller papir til hver. **Lokale:** bordgrupper.
+
+1. Én elev læser det øverste kort højt.
+2. Alle skriver deres svar alene og vender det om.
+3. Når alle er klar, siger oplæseren "afsløring", og alle viser svaret på samme tid.
+4. Er svarene ens, roser teamet. Er de forskellige, diskuterer de, til alle kan forklare det rigtige svar.
+5. Næste elev læser næste kort.
+
+**Noter:** de spørgsmål, teamet var uenigt om, skrives ned.
+
+**SPIL:** S stærk, P middel (teamet skal blive enigt), I stærk (alle viser deres eget svar), L stærk (oplæseren skifter).
+
+**Fagidéer:**
+- Samfundsfag: begreber eller beregninger med procent og procentpoint.
+- Mediefag: hvilket nyhedskriterium passer på overskriften?
+- Erhvervsøkonomi: små beregninger af dækningsbidrag.
+
+### Taleperler
+
+Engelsk: Talking Chips. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** to til tre brikker pr. elev, fx perler, mønter eller papirlapper. **Lokale:** bordgrupper.
+
+1. Teamet får et diskussionsspørgsmål.
+2. Hver gang en elev siger noget, lægger hun eller han en brik i midten.
+3. Har man brugt sine brikker, må man ikke sige mere, før alle har brugt deres.
+4. Når alle brikker er brugt, tager alle deres tilbage, og en ny runde begynder.
+
+**Noter:** teamet skriver den pointe ned, de er mest enige om, og den, de er mest uenige om.
+
+**SPIL:** S middel, P middel, I stærk, L stærk (reglen sikrer, at alle taler lige meget).
+
+**Skærpelse:** bed de stille elever starte. Brug den især, når få elever plejer at tage ordet.
+
+**Fagidéer:**
+- Samfundsfag: skal Danmark hæve pensionsalderen?
+- Mediefag: hvem har ansvaret for misinformation på sociale medier?
+- Erhvervsøkonomi: bør virksomheden flytte produktionen til udlandet?
+
+### Gentag før du taler
+
+Engelsk: Paraphrase Passport. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** et diskussionsspørgsmål. **Lokale:** bordgrupper.
+
+1. Teamet diskuterer et spørgsmål.
+2. Før man må sige sit eget, skal man gengive det, den forrige sagde, med egne ord.
+3. Den forrige siger, om gengivelsen er rigtig. Er den ikke, prøver man igen.
+4. Først derefter siger man sin egen pointe.
+
+**Noter:** hver elev skriver bagefter det modargument, hun eller han hørte bedst.
+
+**SPIL:** S middel, P middel, I stærk, L stærk.
+
+**Skærpelse:** brug den, når en diskussion bliver til, at alle bare siger deres egen mening. Kombinér gerne med Taleperler.
+
+**Fagidéer:**
+- Samfundsfag: diskussion af et politisk dilemma med modargumenter.
+- Mediefag: diskussion af, om en reklame er etisk i orden.
+- Erhvervsøkonomi: diskussion af en ledelsesbeslutning i en case.
+
+### Team, par, alene
+
+Engelsk: Team-Pair-Solo. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** tre opgaver af samme type, der bliver lidt sværere. **Lokale:** bordgrupper.
+
+1. Teamet løser første opgave sammen, med lærerens model ved hånden.
+2. Teamet deler sig i par, og hvert par løser anden opgave.
+3. Hver elev løser tredje opgave alene.
+4. Parret tjekker hinandens tredje opgave.
+
+**Noter:** den tredje opgave, rettet.
+
+**SPIL:** S stærk, P stærk, I stærk (sidste trin er alene), L middel i teamet.
+
+**Skærpelse:** brug en turregel i teamet, fx at alle skal foreslå ét trin. Passer til jeg viser, vi gør, I gør i `klasseledelse-principper`.
+
+**Fagidéer:**
+- Samfundsfag: anvend en analysemodel på tre cases.
+- Mediefag: analyse af tre reklamer efter samme model.
+- Erhvervsøkonomi: tre budgetter eller nøgletalsberegninger.
+
+### Fordel pointene
+
+Engelsk: Spend-A-Buck. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** en liste med forslag og ti point pr. elev, fx små sedler. **Lokale:** bordgrupper.
+
+1. Teamet får fire til seks forslag eller løsninger at vælge imellem.
+2. Hver elev fordeler sine ti point, men skal give mindst ét point til hvert forslag.
+3. Teamet tæller op. Forslaget med flest point vinder.
+4. Hver elev forklarer kort, hvorfor hun eller han gav flest point til sit forslag.
+
+**Noter:** teamets valg og den bedste begrundelse.
+
+**SPIL:** S stærk, P middel, I stærk (alle har lige mange point), L stærk.
+
+**Fagidéer:**
+- Samfundsfag: hvilken løsning på mangel på arbejdskraft er bedst?
+- Mediefag: hvilken idé til en kampagne passer bedst til målgruppen?
+- Erhvervsøkonomi: hvilken investering skal virksomheden vælge?
+
+### Find den falske
+
+Engelsk: Find-the-Fiction. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** papir. **Lokale:** bordgrupper.
+
+1. Hver elev skriver tre påstande om stoffet. To er sande, og én er falsk, men troværdig.
+2. Én elev læser sine tre påstande op.
+3. De andre skriver alene, hvilken de tror er falsk, og begrunder det på skift.
+4. Eleven afslører svaret og forklarer, hvorfor den falske er forkert.
+
+**Noter:** de falske påstande og den rigtige version.
+
+**SPIL:** S middel, P middel, I stærk, L stærk.
+
+**Fagidéer:**
+- Samfundsfag: påstande om statistik, fx ledighed eller valgdeltagelse. Træner også kildekritik.
+- Mediefag: påstande om et klip eller en mediehistorisk begivenhed.
+- Erhvervsøkonomi: påstande om et regnskab.
+
+### Giv én, få én
+
+Engelsk: Give One-Get One. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** et ark med to kolonner, "Giv" og "Få". **Lokale:** plads til at gå rundt.
+
+1. Hver elev skriver tre idéer eller pointer i kolonnen "Giv".
+2. Eleverne rejser sig og finder en makker.
+3. Hver giver én idé og får én, som skrives i "Få". Så findes en ny makker.
+4. Når kolonnen er fuld, sætter eleverne sig og læser deres ark.
+
+**Noter:** arket er noten.
+
+**SPIL:** S stærk (par), P middel, I middel (man kan give den samme idé hver gang), L stærk.
+
+**Skærpelse:** man må ikke give den samme idé to gange.
+
+**Fagidéer:**
+- Samfundsfag: årsager til ulighed eller argumenter for og imod EU.
+- Mediefag: idéer til en målgruppe.
+- Erhvervsøkonomi: konkurrenceparametre i en branche.
+
+### Dækkeserviet
+
+Tysk: Placemat. **Grundlag:** kilde 14, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** ét A3-ark pr. team, delt i et felt til hver elev rundt om et felt i midten. **Lokale:** bordgrupper.
+
+1. Teamet får et spørgsmål eller et begreb.
+2. Hver elev skriver alene i sit eget felt i et par minutter.
+3. Arket drejes, så alle læser de andres felter. Man må spørge, men ikke rette.
+4. Teamet bliver enigt om de vigtigste pointer og skriver dem i midten.
+
+**Noter:** midterfeltet, gerne fotograferet.
+
+**SPIL:** S stærk, P stærk (midten kræver alles bidrag), I stærk (eget felt), L stærk.
+
+**Fagidéer:**
+- Samfundsfag: hvad ved I om velfærdsstaten, før forløbet begynder?
+- Mediefag: kendetegn ved en genre.
+- Erhvervsøkonomi: hvad påvirker en virksomheds pris?
+
+### Læretempo-duet
+
+Tysk: Lerntempoduett, efter Diethelm Wahl, også kaldet Bushaltestelle. **Grundlag:** kilde 15, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** to dele stof, A og B, med spørgsmål til hver. **Lokale:** et "stoppested" i lokalet, fx en tavle.
+
+1. Hver elev arbejder alene med del A i sit eget tempo.
+2. Den, der bliver færdig, går til stoppestedet og venter på den næste, der bliver færdig.
+3. De to forklarer del A for hinanden og retter deres svar.
+4. Begge går tilbage og arbejder alene med del B, og samme mønster gentages.
+5. Afslut med en kort opsamling i plenum.
+
+**Noter:** de rettede svar på A og B.
+
+**SPIL:** S stærk (par), P middel, I stærk (alle arbejder først alene), L stærk.
+
+**Skærpelse:** hav en ekstra opgave klar til den sidste, der ikke får en makker, eller lad læreren være makker. God, når klassen arbejder i meget forskelligt tempo.
+
+**Fagidéer:**
+- Samfundsfag: del A om én ideologi, del B om en anden.
+- Mediefag: del A om billedanalyse, del B om lyd.
+- Erhvervsøkonomi: del A om dækningsbidrag, del B om break-even.
+
+### Blyanter i midten
+
+Spansk: Lápices al centro, efter Pere Pujolàs. **Grundlag:** kilde 16, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** én opgave pr. elev i teamet. **Lokale:** bordgrupper.
+
+1. Alle lægger blyanten i midten. Så længe den ligger der, må man kun tale og lytte.
+2. Én elev læser sin opgave højt, og teamet diskuterer, hvordan den skal løses, til alle kan forklare det.
+3. Læreren eller teamet trækker, hvem der forklarer løsningen.
+4. Alle tager blyanten og skriver løsningen alene.
+5. Næste elev læser sin opgave højt.
+
+**Noter:** hver elev har alle løsninger skrevet med egne ord.
+
+**SPIL:** S stærk, P stærk, I stærk (alle skriver selv og kan blive trukket), L stærk.
+
+**Fagidéer:**
+- Samfundsfag: beregninger og aflæsning af tabeller.
+- Mediefag: analysespørgsmål til et klip.
+- Erhvervsøkonomi: opgaver i budget og regnskab.
+
+### Tre minutters stop
+
+Spansk: Parada de tres minutos, efter Pere Pujolàs. **Grundlag:** kilde 16, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** ingen. **Lokale:** bordgrupper.
+
+1. Læreren stopper gennemgangen efter en bid.
+2. Teamet har tre minutter til at tale om det gennemgåede og blive enigt om op til tre spørgsmål eller uklarheder.
+3. Hvert team stiller ét spørgsmål på skift, og læreren svarer, eller lader et andet team svare.
+4. Gennemgangen fortsætter.
+
+**Noter:** eleverne skriver svaret på det spørgsmål, de selv stillede.
+
+**SPIL:** S stærk, P middel, I middel, L middel.
+
+**Skærpelse:** lad holdet trække, hvem der stiller spørgsmålet, så alle skal kunne forklare det. Passer som aktivering inde i en gennemgang efter `klasseledelse-principper`.
+
+**Fagidéer:**
+- Samfundsfag: efter en gennemgang af en model eller teori.
+- Mediefag: efter en gennemgang af et analyseredskab.
+- Erhvervsøkonomi: efter en gennemgang af en beregningsmetode.
+
+### Ekspertgrupper med før og efter
+
+Japansk: 知識構成型ジグソー法 (knowledge-constructive jigsaw), udviklet ved Tokyo Universitet (CoREF). **Grundlag:** kilde 17, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** ét samlende spørgsmål og tre korte tekster eller kilder, der hver giver en del af svaret. **Lokale:** plads til at flytte om.
+
+1. Hver elev skriver alene et kort svar på det samlende spørgsmål.
+2. Eleverne arbejder i ekspertgrupper med hver sin tekst og sikrer, at alle kan forklare den.
+3. Eleverne går i nye grupper med én fra hver ekspertgruppe og bruger alle tre dele til at svare på spørgsmålet.
+4. Grupperne fortæller kort, hvad de er kommet frem til, og læreren samler op.
+5. Hver elev skriver igen alene et svar på det samme spørgsmål og sammenligner med sit første svar.
+
+**Noter:** de to svar side om side viser, hvad eleven har lært.
+
+**SPIL:** S stærk, P stærk, I stærk (før og efter skrives alene), L stærk.
+
+**Skærpelse:** spørgsmålet skal kræve alle tre dele. Det individuelle svar til sidst er det, der skal bruges. Se også forbeholdet ved Ekspertgrupper. Forberedelsen af tekster er tung.
+
+**Fagidéer:**
+- Samfundsfag: hvorfor stiger uligheden? Med tre tekster om skat, uddannelse og arbejdsmarked.
+- Mediefag: hvorfor går en kampagne viralt? Med tekster om målgruppe, platform og virkemidler.
+- Erhvervsøkonomi: skal virksomheden udvide? Med regnskab, marked og konkurrenter.
+
+### Havruta
+
+Hebraisk for "makkerskab". Brugt i jødisk tekststudium og i dag udbredt i Sydkorea. **Grundlag:** kilde 18, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** en kort tekst eller et uddrag. **Lokale:** par.
+
+1. Begge læser teksten alene og skriver to til tre spørgsmål, der begynder med "hvorfor" eller "hvordan".
+2. Parret stiller på skift deres spørgsmål og diskuterer dem. Den ene skal argumentere, den anden skal udfordre.
+3. Parret vælger sit bedste spørgsmål og sit bedste svar.
+4. Læreren samler de bedste spørgsmål op og knytter dem til timens pointe.
+
+**Noter:** parrets bedste spørgsmål og svar.
+
+**SPIL:** S stærk (par), P middel, I stærk, L stærk.
+
+**Fagidéer:**
+- Samfundsfag: et uddrag af en politisk tale eller en kronik.
+- Mediefag: en avisartikel om en mediesag.
+- Erhvervsøkonomi: en virksomheds årsberetning eller en presseomtale.
+
 ---
 
 ## Kilder til de nye øvelser
 
 1. Harvard, Bok Center: [Think-Pair-Share](https://bokcenter.harvard.edu/think-pair-share)
 2. Drexel University: [Active Learning Strategies](https://drexel.edu/teaching-and-learning/resources/active-and-collaborative-learning/active-learning-strategies)
-3. Kagan Publishing: [Structures](https://www.kaganonline.com/download/BKCLR-structures.pdf), kun søgeresultat, selve filen kunne ikke læses
+3. Kagan Publishing: [Structures](https://www.kaganonline.com/download/BKCLR-structures.pdf), en oversigt over strukturernes navne og sider i Kagans bog, uden trin
 4. [Kagan-oversigt](https://blogs.ubc.ca/btravis/2015/02/26/cooperative-learning/), University of British Columbia
 5. eMINTS: [Quiz-Quiz Trade](https://sites.google.com/a/emints.org/cooperative-learning-strategies/quiz-quiz-trade)
 6. Carleton College, SERC: [Cooperative Learning Techniques](https://serc.carleton.edu/introgeo/cooperative/techniques.html)
@@ -700,3 +996,12 @@ Efter Peter Liljedahls *Building Thinking Classrooms* ("Det tænkende klasserum"
 9. Clayton State University: [Jigsaw](https://clayton.edu/celt/docs/jigsaw.pdf)
 10. Peter Liljedahl: *Building Thinking Classrooms in Mathematics* (Corwin, 2020), gengivet efter Gymnasieforskning nr. 34 og Larsen og Midtiby, "Matematikundervisning på universitetet", *Dansk Universitetspædagogisk Tidsskrift* 37 (2025)
 11. emu.dk, stx filosofi: "Det tænkende klasserum i filosofi", Marie Antonsen, Vesthimmerlands Gymnasium, i samarbejde med CFU (2024). Teksten er sendt af Kenneth, adressen er ikke tjekket
+12. Laura Candler: [Cooperative Learning Structures](https://lauracandler.com/cooperative-learning-structures/), trin til Numbered Heads Together
+13. Lærerbeskrivelser fundet i søgningen, fx [Pairs-Check](https://www.andrews.edu/~freed/oldpages/pdfs/d8-pairs.pdf), [Give One Get One](https://sites.google.com/egusd.net/egusdavid/collaboration/give-one-get-one) og [Kagan-oversigt](https://mason.gmu.edu/~lpetersn/pdp/kagan_instructions.pdf). Kagans egne trin står i hans bog, som ikke er læst
+14. Universität Bremen: [Kooperatives Lernen, ein Buch](https://www.uni-bremen.de/fileadmin/user_upload/sites/inklusive-paedagogik/Video_und_Audio/Kooperatives_Lernen_ein_Buch.pdf) og et [metodeplakat fra Bremen](https://habu.schule.bremen.de/sixcms/media.php/13/Methodenplakat.pdf), Placemat
+15. Landesakademie Baden-Württemberg: [Methodenblatt Lerntempoduett](https://www.lehrerfortbildung-bw.de/st_if/bs/if/unterrichtsgestaltung/methodenblaetter/lerntempoduett.pdf)
+16. Pere Pujolàs: [Estructuras cooperativas simples](https://www.orientacionandujar.es/wp-content/uploads/2014/07/ESTRUCTURAS-COOPERATIVAS-SIMPLES.pdf), efter *9 ideas clave: El aprendizaje cooperativo*
+17. Japanske rapporter om 知識構成型ジグソー法, fx [Mie Universitet](https://mie-u.repo.nii.ac.jp/record/3609/files/20C17678.pdf). Kun resuméer er læst
+18. Koreanske beskrivelser af 하브루타, fx [WikiDocs](https://wikidocs.net/310687). Kun resuméer er læst
+19. Slavins forskning i STAD, gengivet efter [Johns Hopkins](https://gazette.jhu.edu/2009/07/06/co-op-learning-tops-list-of-best-approaches-for-secondary-math) og [Wikipedia](https://en.wikipedia.org/wiki/Student_teams-achievement_divisions)
+20. Stanczak m.fl.: "Do Jigsaw Classrooms Improve Learning Outcomes? Five Experiments and an Internal Meta-Analysis", *Journal of Educational Psychology* 114(6), 2022. [HAL](https://hal.archives-ouvertes.fr/hal-03441734). Se også [en oversigt fra 2023](https://www.frontiersin.org/articles/10.3389/fpsyg.2023.1216437/full)

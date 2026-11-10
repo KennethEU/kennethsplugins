@@ -17,7 +17,7 @@ Find den rigtige øvelse til situationen, og gør den klar til brug.
 1. **Læs** `${CLAUDE_SKILL_DIR}/../cl-principper/SKILL.md` og `${CLAUDE_SKILL_DIR}/../cl-principper/references/oevelsesbank.md`.
 
 2. **Vælg spor:**
-   - **Læreren vil bare se muligheder**, fx "hvad har du?" eller "giv mig lidt inspiration": vis oversigten fra banken grupperet efter formål med én linje pr. øvelse. Stil ingen spørgsmål først. Slut med at spørge, hvad næste time handler om.
+   - **Læreren vil bare se muligheder**, fx "hvad har du?" eller "giv mig lidt inspiration": vis de 8 til 10 øvelser fra banken, der passer bedst til det, læreren nævner, grupperet efter formål med én linje pr. øvelse, og tilbyd resten. Banken er stor, så vis ikke det hele på én gang. Stil ingen spørgsmål først. Slut med at spørge, hvad næste time handler om.
    - **Læreren nævner en bestemt øvelse:** gå til Gate 1 og derefter direkte til beskrivelsen. Er øvelsen svag på SPIL, så sig det og skriv skærpelsen ind.
    - **Læreren har en situation:** følg hele forløbet nedenfor.
 

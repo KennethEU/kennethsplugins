@@ -106,6 +106,12 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### cl-oevelser 1.4.0 (november 2026)
+- Seks nye øvelser fra søgning på tysk, spansk, japansk og koreansk: Dækkeserviet, Læretempo-duet, Blyanter i midten, Tre minutters stop, Ekspertgrupper med før og efter og Havruta. Varianterne 1-2-4 og Holdpoint for fremgang (STAD). Ekspertgrupper har fået et forbehold, fordi lodtrukne forsøg ikke fandt ekstra læring. Kataloget har nu 44 øvelser, og `cl-find-oevelse` viser højst 8 til 10 ad gangen, når læreren vil se muligheder.
+
+### cl-oevelser 1.3.0 (november 2026)
+- Otte nye øvelser fra Kagans strukturer: Nummererede hoveder, Afsløring, Taleperler, Gentag før du taler, Team, par, alene, Fordel pointene, Find den falske og Giv én, få én. Træner og løser har fået varianten Par tjekker par, og Karrusel-feedback har fået Gallerivandring. Kataloget har nu 38 øvelser.
+
 ### cl-oevelser 1.2.1 (november 2026)
 - Tavlegrupper har fået seks varianter, der kan bruges i alle fag: citat eller kilde på tavlen, vandring med spørgsmål, overblik til repetition, model eller tankeeksperiment, tjek af noterne og lektie som refleksionsspørgsmål.
 
