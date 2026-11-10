@@ -127,6 +127,8 @@ Verificér derudover internt (vis ikke tjeklisten til læreren):
 - [ ] Pause er med, hvis totalTime > 25 min
 - [ ] Alle gruppetrin har doc-instruktion
 - [ ] Instruktionerne er handlingsorienterede og konkrete
+- [ ] Hvert trin er prøvet af som en middelmådig elev, der kun læser trinnets tekst på telefonen: eleven ved, hvad der skal gøres, med hvilket materiale, og hvornår trinnet er færdigt
+- [ ] Faglige spørgsmål i trinene kan du selv besvare ud fra materialet, og de kan nås på trinnets tid
 - [ ] Ingen fagord, der kræver forklaring for eleverne
 - [ ] Progressiv kompleksitet: lette trin først, sværere sidst
 - [ ] Roller defineres kun ét sted (rolletabellen) og gentages ikke i senere trin

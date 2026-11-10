@@ -72,6 +72,7 @@ Lav tjekket stille, og ret det, der ikke holder.
 - Er alle fire SPIL-principper dækket i selve trinene, eller står svagheden i en linje?
 - Passer elevtal, grupper og tid?
 - Er alle spørgsmål skrevet færdige, og trækker de på målet?
+- Har du prøvet spørgsmål og kort af? Skriv svaret selv, og svar så som en middelmådig elev på den tid, øvelsen giver. Kan du ikke skrive ét sikkert svar, eller er et tomt svar nok, så ret spørgsmålet.
 - Står der, hvordan eleverne får noter?
 - Har du skrevet, hvad der er ændret i forhold til bankens øvelse?
 

@@ -27,6 +27,9 @@ Spørgsmålene:
 2. **Find kernestoffet:** Hvad skal eleven mindst have forstået for at kunne følge timen? Vælg de tre vigtigste begreber eller pointer.
 3. **Formulér 3 spørgsmål** (eller det antal, læreren beder om) på Huske/Forstå med konkrete spørgeord.
 4. **Angiv metadata** (Bloom-niveau og videnstype) for hvert spørgsmål.
+5. **Afprøv spørgsmålene på teksten** stille, jf. "Afprøvning på teksten" i reglerne. Lektiespørgsmål får alle tre tests: facit-test, elevtest og ikke-læst-test. Eleven sidder alene med teksten, så et spørgsmål, der kun er rigtigt formuleret, er ikke nok. Ret det, der falder, før du afleverer.
+
+Beder læreren bagefter om færre spørgsmål, en omformulering eller en sammenlægning, så afprøv de nye spørgsmål igen, før du svarer.
 
 ## Sådan afleverer du
 
@@ -34,7 +37,8 @@ Der er ingen gate, og du spørger ikke, om det skal være hurtigt eller grundigt
 
 - Én linje øverst: "Fokus: [X, Y og Z]."
 - Spørgsmålene.
-- Én linje til sidst: "Sig til, hvis fokus skal flyttes, eller du vil have flere."
+- Kun hvis afprøvningen efterlod en tvivl, du ikke kunne afgøre: én linje om den, fx et antal, der afhænger af, hvordan teksten læses.
+- Én linje til sidst: "Sig til, hvis fokus skal flyttes, eller du vil have flere eller facit til lektietjekket."
 
 Beder læreren om sparring om, hvad lektietjekket skal teste, så vis de 3 til 5 vigtigste begreber med din anbefaling, og **VENT** på svar, før du skriver spørgsmålene.
 
@@ -55,6 +59,6 @@ Fokus: de fire friheder, tekniske handelshindringer og arbejdskraftens frie bev�
 
 ## Completion Status
 
-- **DONE**: Lektiespørgsmål leveret med metadata
-- **DONE_WITH_CONCERNS**: Leveret, men kernestoffet var svært at afgrænse
+- **DONE**: Lektiespørgsmål leveret med metadata og afprøvet på teksten
+- **DONE_WITH_CONCERNS**: Leveret, men kernestoffet var svært at afgrænse, eller et svar kunne ikke afgøres sikkert ud fra teksten
 - **NEEDS_CONTEXT**: Mangler teksten

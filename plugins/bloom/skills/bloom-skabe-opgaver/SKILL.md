@@ -42,6 +42,7 @@ Spørg: "Skal de bruges til gruppearbejde, individuelt projekt eller eksamensfor
 
 4. **Formulér spørgsmålene** i de valgte kategorier med dansk kontekst og videnstype angivet.
 5. **Kvalitetstjek** stille: Kræver hvert spørgsmål, at eleven skaber noget nyt? Ret dem, der kun er Evaluere.
+6. **Prøv hver opgave som en middelmådig elev,** der skal i gang alene: Ved eleven, hvad produktet er, og hvor stort det skal være? Giver teksten stof nok at bygge på? Kan opgaven løses uden at bruge teksten, så bind den til et begreb eller et eksempel derfra.
 
 ## Sådan afleverer du
 

@@ -9,7 +9,8 @@ Brug:
 spoergsmaal.json er en liste af objekter med text, answers (2-4), correct
 (fx "1" eller "1,3") og time (sekunder, valgfri, standard 20).
 Scriptet stopper med en tydelig fejl, hvis et spørgsmål bryder reglerne,
-og skriver en advarsel, hvis de korrekte svar ligger skævt fordelt.
+og skriver en advarsel, hvis de korrekte svar ligger skævt fordelt eller
+oftest er det længste svar.
 
 Output: Blooket-importklar CSV med semikolon-separator, UTF-8 BOM,
 Windows-linjeskift, 26 kolonner pr. række, og alle nødvendige headers.
@@ -27,7 +28,7 @@ def validate(questions):
         errors.append("Ingen spørgsmål.")
     if len(questions) > 100:
         errors.append(f"{len(questions)} spørgsmål, men Blookets skabelon har plads til 100.")
-    first_correct = []
+    first_correct, longest = [], []
     for i, q in enumerate(questions, 1):
         text = str(q.get("text", "")).strip()
         answers = [str(a).strip() for a in q.get("answers", [])]
@@ -52,6 +53,9 @@ def validate(questions):
             errors.append(f"Spørgsmål {i}: samme svarnummer angivet flere gange.")
         if nums:
             first_correct.append(nums[0])
+        if len(nums) == 1 and len(answers) >= 3 and 1 <= nums[0] <= len(answers):
+            others = [len(a) for n, a in enumerate(answers, 1) if n != nums[0]]
+            longest.append(len(answers[nums[0] - 1]) > max(others))
         t = q.get("time", 20)
         if not isinstance(t, int) or not 1 <= t <= 300:
             errors.append(f"Spørgsmål {i}: tid skal være et helt tal mellem 1 og 300 sekunder.")
@@ -59,6 +63,8 @@ def validate(questions):
         pos, n = Counter(first_correct).most_common(1)[0]
         if n / len(first_correct) > 0.5:
             warnings.append(f"Det korrekte svar står på plads {pos} i {n} af {len(first_correct)} spørgsmål. Bland placeringen.")
+    if len(longest) >= 8 and sum(longest) / len(longest) > 0.5:
+        warnings.append(f"Det korrekte svar er det længste i {sum(longest)} af {len(longest)} spørgsmål, så det kan gættes på længden. Gør svarene omtrent lige lange.")
     return errors, warnings
 
 

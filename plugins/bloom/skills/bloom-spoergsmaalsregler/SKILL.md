@@ -1,6 +1,6 @@
 ---
 name: bloom-spoergsmaalsregler
-description: "Regler og referencer til Bloom-skillene: Blooms reviderede taksonomi, forbudte formuleringer og verber, taxonomy table og kvalitetstjek af arbejdsspørgsmål til fagtekster i STX. Læses af bloom-spoergsmaal-til-tekst, bloom-lektiespoergsmaal, bloom-skabe-opgaver, bloom-vurder-spoergsmaal og bloom-planlaeg-time. Brug direkte, når læreren spørger, hvordan spørgsmål til en tekst bør formuleres, eller når ingen af de andre bloom-skills passer. Brug ikke til quizzer (pluginet blooket), mundtlige eksamensspørgsmål med bilag eller gruppearbejdsdagsordener (dagsorden-lav)."
+description: "Regler og referencer til Bloom-skillene: Blooms reviderede taksonomi, forbudte formuleringer og verber, taxonomy table, kvalitetstjek og afprøvning på teksten (facit-test og elevtest) af arbejdsspørgsmål til fagtekster i STX. Læses af bloom-spoergsmaal-til-tekst, bloom-lektiespoergsmaal, bloom-skabe-opgaver, bloom-vurder-spoergsmaal og bloom-planlaeg-time. Brug direkte, når læreren spørger, hvordan spørgsmål til en tekst bør formuleres, eller når ingen af de andre bloom-skills passer. Brug ikke til quizzer (pluginet blooket), mundtlige eksamensspørgsmål med bilag eller gruppearbejdsdagsordener (dagsorden-lav)."
 user-invocable: false
 allowed-tools:
   - Read
@@ -291,13 +291,61 @@ Kør dette tjek stille efter hver generering, og ret det, der fejler, før du af
 | Ingen forbudte ord? | ✓/⚠ | |
 | Ingen ja/nej uden begrundelse? | ✓/⚠ | |
 | Verber matcher Bloom-niveau? | ✓/⚠ | |
-| Besvarlige ud fra teksten? | ✓/⚠ | |
+| Afprøvet på teksten, jf. "Afprøvning på teksten"? | ✓/⚠ | |
 | Fagbegreber integreret? | ✓/⚠ | |
 | Alle 6 Bloom-niveauer dækket? | ✓/⚠ | |
 | Variation i videnstyper? | ✓/⚠ | |
 | Differentiering (hvis valgt)? | ✓/⚠ | |
 
 Hvis et spørgsmål fejler et tjek: omformuler det.
+
+---
+
+## Afprøvning på teksten (kør altid, også efter ændringer)
+
+Regeltjekket viser, om et spørgsmål er rigtigt formuleret. Det viser ikke, om en elev kan svare på det. Prøv derfor spørgsmålene af på teksten, før du afleverer.
+
+Kør afprøvningen igen, hver gang et spørgsmål bliver omformuleret, slået sammen med et andet eller valgt ud til et kortere sæt. Et nyt spørgsmål er ikke afprøvet, fordi det gamle var det.
+
+Har du ikke teksten, kan du ikke afprøve. Sig det i én linje.
+
+### 1. Facit-test
+
+Skriv stille svaret til hvert spørgsmål, og notér, hvor i teksten det står.
+
+- **Ét sikkert svar:** kan du ikke selv skrive det, er spørgsmålet ikke klar. Ret det, eller læg tvivlen frem for læreren.
+- **Antal:** spørger du efter flere ting ("hvilke måder", "hvilke grunde"), så tæl dem i teksten, og skriv tallet i spørgsmålet: "Hvilke fire måder ...". Så ved eleven, hvornår svaret er færdigt.
+- **Tekstens egne ord:** samlebetegnelsen i spørgsmålet skal passe på alle svarene, sådan som teksten selv omtaler dem. Kalder teksten noget en måde at "ændre fordelingen" på, er det ikke et svar på et spørgsmål om at "reducere udgifterne".
+- **Spredte svar:** står svaret i flere afsnit, uden at teksten siger, at de hører sammen, så del spørgsmålet, eller sig i spørgsmålet, hvor eleven skal lede.
+
+### 2. Elevtest
+
+Besvar hvert spørgsmål som en middelmådig elev: en, der læser teksten én gang, leder efter et sted, der ligner spørgsmålet, og skriver det første, der passer. Se efter fire ting:
+
+- **Stopper eleven for tidligt?** Det sker, når antallet mangler, eller når svaret fortsætter efter et afsnitsskift.
+- **Kan svaret skrives af?** Kan én sætning fra teksten kopieres som svar på et Forstå-spørgsmål, er det reelt Huske, og læreren kan ikke se, om eleven har forstået noget. Spørg til noget, der ikke står ordret, fx hvad tekstens eksempel viser.
+- **Slipper et tomt svar igennem?** Er "den ene skærer ned, den anden omprioriterer" et gyldigt svar, tester spørgsmålet ingenting. Sig i spørgsmålet, hvad forklaringen eller forskellen skal handle om.
+- **Kan eleven finde stedet?** Abstrakte ord, som teksten ikke bruger, sender eleven forgæves på jagt. Brug tekstens ord, eller giv en indgang: et afsnit, et eksempel eller en figur.
+
+### 3. Ikke-læst-test (kun lektie og lektietjek)
+
+Kan en elev, der ikke har læst, svare rimeligt ud fra almen viden eller ud fra ordene i spørgsmålet? Så viser lektietjekket ikke, hvem der har læst. Bind spørgsmålet til noget, kun teksten giver: dens opdeling, dens eksempel eller dens begrundelse. Ét begrebsspørgsmål i sættet må gerne kunne besvares uden teksten, men ikke flertallet.
+
+### Hvor meget der afprøves
+
+| Spørgsmål | Afprøvning |
+|-----------|------------|
+| Lektie og lektietjek | Alle tre tests på alle spørgsmål. Eleven sidder alene uden en lærer at spørge. |
+| Klassearbejde, Huske til Anvende | Facit-test og elevtest. |
+| Klassearbejde, Analysere til Skabe | Der er ikke ét facit. Tjek, at teksten giver stof nok til et svar, at eleven kan se, hvad et godt svar indeholder, og at et tomt svar ikke slipper igennem. |
+| Lærerens egne spørgsmål (vurdering) | Som ovenfor efter konteksten. |
+
+### Sådan afleverer du afprøvningen
+
+- Kør den stille, og ret det, der falder. Vis ikke testen.
+- Skriv kun det, du ikke kunne afgøre, i én linje, fx "Spørgsmål 1 regner civilsamfundet med under nedskæringsstrategien. Regner du det ikke med, er tallet fire."
+- Facit med teksthenvisning har du fra facit-testen. Giv det, når læreren beder om facit eller modelsvar.
+- Beder læreren selv om en test ("test spørgsmålene", "tænk som en elev"), så vis den som tabel med spørgsmål, elevens sandsynlige svar og dom. Skriv bagefter, hvor det går galt, og giv det reviderede sæt. Antallet af domme i tabellen skal passe med det, du skriver om den.
 
 ---
 
@@ -358,7 +406,7 @@ Relater til danske eksempler hvor relevant: danske partier, kommunalpolitik, akt
 - [ ] Følger Version 2 tekstens struktur?
 - [ ] Er spørgsmålene formuleret uden forbudte termer?
 - [ ] Bruges Bloom-specifikke verber?
-- [ ] Kan spørgsmålene besvares ud fra teksten?
+- [ ] Er spørgsmålene afprøvet på teksten med facit-test og elevtest?
 - [ ] Er der variation i videnstyper?
 - [ ] Er Taxonomy Table udfyldt med kommentar?
 - [ ] Er fagbegreber fra teksten integreret?

@@ -43,6 +43,15 @@ def test_warns_on_skewed_answers():
     assert r.returncode == 0 and "ADVARSEL" in r.stdout
 
 
+def test_warns_when_correct_answer_is_longest():
+    lang = [{"text": f"q{i}", "answers": ["kort", "kort", "det lange rigtige svar", "kort"][i % 4:] + ["kort", "kort", "det lange rigtige svar", "kort"][:i % 4],
+             "correct": str((2 - i) % 4 + 1)} for i in range(8)]
+    r, _ = run(lang)
+    assert r.returncode == 0 and "længste" in r.stdout, r.stdout
+    r, _ = run(good())
+    assert "længste" not in r.stdout, r.stdout
+
+
 if __name__ == "__main__":
     for name, fn in list(globals().items()):
         if name.startswith("test_"):

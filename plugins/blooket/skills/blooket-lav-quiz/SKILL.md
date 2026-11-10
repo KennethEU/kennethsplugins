@@ -49,8 +49,9 @@ Spørg: "Passer stilen? Skal spørgsmålene være mere/mindre detaljerede?"
 ### Generér og levér
 
 3. Formulér alle spørgsmål med 2-4 svarmuligheder. Randomisér placeringen af det korrekte svar. Bland viden-, forståelses- og anvendelsesspørgsmål.
-4. Skriv spørgsmålene som JSON og generér den importklare CSV-fil med `${CLAUDE_SKILL_DIR}/../blooket-quizformat/references/generate_csv.py` (se formatet i `blooket-quizformat`). Ret fejl og skæv placering, hvis scriptet melder dem.
-5. Gem filen og levér den til brugeren.
+4. Prøv quizzen af stille, jf. "Prøv quizzen af" i `blooket-quizformat`: svar på hvert spørgsmål uden at se facit, tjek, at kun ét svar kan forsvares, og at det rigtige ikke kan gættes. Ret det, der falder.
+5. Skriv spørgsmålene som JSON og generér den importklare CSV-fil med `${CLAUDE_SKILL_DIR}/../blooket-quizformat/references/generate_csv.py` (se formatet i `blooket-quizformat`). Ret fejl, skæv placering og skæv længde, hvis scriptet melder dem.
+6. Gem filen og levér den til brugeren. Skriv i én linje, hvis der er et facit, du ikke kunne afgøre ud fra materialet.
 
 Svar på dansk.
 
@@ -59,5 +60,5 @@ Svar på dansk.
 ## Completion Status
 
 - **DONE** — Blooket-quiz genereret som CSV-fil
-- **DONE_WITH_CONCERNS** — Genereret, men nogle spørgsmål har kun 2 svarmuligheder
+- **DONE_WITH_CONCERNS** — Genereret, men nogle spørgsmål har kun 2 svarmuligheder, eller et facit kunne ikke tjekkes mod materialet
 - **NEEDS_CONTEXT** — Mangler materiale eller emne at lave quiz fra

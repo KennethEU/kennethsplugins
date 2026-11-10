@@ -118,6 +118,12 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### bloom 1.4.0, blooket 1.3.0, cl-oevelser 1.5.1, klasseledelse 1.13.1 og udretterdagsorden 1.1.1 (november 2026)
+- **Afprøvning før aflevering:** skillene prøver nu selv det af, eleverne skal svare på, i stedet for kun at tjekke formuleringen. Baggrunden er et sæt lektiespørgsmål, hvor tre af fire først faldt, da læreren selv bad om en elevtest.
+- `bloom`: nyt afsnit "Afprøvning på teksten" i `bloom-spoergsmaalsregler` med facit-test (skriv svaret, og find stedet i teksten), elevtest (svar som en middelmådig elev: stopper eleven for tidligt, kan svaret skrives af, slipper et tomt svar igennem, kan stedet findes) og ikke-læst-test til lektie. Alle fem skills kører den stille, også når spørgsmål omformuleres eller vælges ud, og skriver kun det, der ikke kunne afgøres. Facit kan fås på opfordring. `bloom-vurder-spoergsmaal` afprøver nu også lærerens egne spørgsmål på teksten.
+- `blooket`: nyt trin "Prøv quizzen af" (svar uden facit, kun ét svar kan forsvares, kan ikke gættes, kan nås på tiden). `generate_csv.py` advarer, når det rigtige svar oftest er det længste.
+- `cl-find-oevelse`, `cl-forloeb`, `klasseledelse-planlaeg-lektion` og `dagsorden-lav` har fået afprøvningen som punkt i kvalitetstjekket.
+
 ### klasseledelse 1.13.0, bloom 1.3.0, cl-oevelser 1.5.0, dida 1.1.0, udretterdagsorden 1.1.0 og modulplanlaegger 0.2.0 (november 2026)
 - **Hurtig-tilstand og kort output** i alle skills til daglig planlægning, beskrevet i et fælles afsnit "Arbejdsgang" i principfilerne. Skillene spørger først, om det skal være hurtigt eller grundigt. Hurtigt springer spørgsmål og godkendelse over og afleverer en kort version. Resten kommer på opfordring.
 - `klasseledelse-planlaeg-lektion` afleverer mål, drejebog, køreplan og tre linjer til læreren. Instruktionsslides, deltagelseskort, fremmødetabel og planens vægt er flyttet til den grundige udgave.

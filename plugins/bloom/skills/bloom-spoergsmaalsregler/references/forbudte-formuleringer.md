@@ -87,7 +87,7 @@ Spørgsmålet påstår at være "analyserende" men kan besvares med ren genfindi
 ### Fejl 2: Ubesvarligt fra teksten
 Spørgsmålet kræver viden der ikke findes i teksten uden at dette er eksplicit angivet.
 
-**Test:** Kan du selv finde svaret i teksten? Hvis nej → omformuler eller markér eksplicit at det kræver ekstern viden.
+**Test:** Skriv svaret, og notér, hvor i teksten det står. Kan du ikke det → omformuler eller markér eksplicit at det kræver ekstern viden. Svar derefter som en middelmådig elev, jf. "Afprøvning på teksten" i reglerne.
 
 ### Fejl 3: For mange spørgsmål i ét
 Alt over ét fokuspunkt pr. spørgsmål er for mange.
@@ -118,7 +118,8 @@ Videnstype: [Faktuel/Konceptuel/Procedural/Metakognitiv]
 Tjek:
 ☐ Ét spørgsmål ad gangen?
 ☐ Ingen forbudt formulering?
-☐ Besvarligt fra teksten?
+☐ Besvarligt fra teksten? (facit skrevet, med sted i teksten)
+☐ Elevtest: ved eleven, hvornår svaret er færdigt, og kan det hverken skrives af eller klares med et tomt svar?
 ☐ Præcist verb der matcher Bloom-niveauet?
 ☐ Ingen ja/nej uden begrundelse?
 ☐ Fagbegreber integreret?

@@ -61,6 +61,7 @@ Lav tjekket stille, og ret det, der ikke holder.
 - Summer tiderne til modulets længde, også med overgange?
 - Er alle øvelser med svag SPIL skærpet?
 - Bygger øvelserne reelt på hinanden?
+- Har du prøvet spørgsmål og opgaver af? Skriv svaret selv, og svar så som en middelmådig elev på den tid, øvelsen giver. Kan du ikke skrive ét sikkert svar, eller er et tomt svar nok, så ret spørgsmålet.
 - Er der færre nye strukturer, end klassen kan nå at lære?
 
 ---

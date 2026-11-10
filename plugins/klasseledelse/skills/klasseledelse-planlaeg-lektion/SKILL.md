@@ -120,6 +120,7 @@ Lav tjekket stille, og ret planen, før du afleverer. Skriv kun det til læreren
 
 - Passer tiderne, og summer de til lektionens længde?
 - Er hvert spørgsmål skrevet færdigt?
+- Har du prøvet hvert spørgsmål til eleverne af? Skriv svaret selv, og svar så som en middelmådig elev på den afsatte tid. Alle skal kunne sige noget, og et tomt svar må ikke være nok.
 - Peger alle aktiviteter på målet, og træner de det, eleverne skal kunne?
 - Har de stærke elever noget at strække sig efter?
 - Har overgange egne minutter, og er der slack, når pause, hej og oprydning er trukket fra?

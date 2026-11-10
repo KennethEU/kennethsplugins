@@ -77,9 +77,20 @@ Hvert spørgsmål har 2-4 svarmuligheder (4 er standard). Følg disse regler:
 - Beregninger eller lange spørgsmål: 30-60 sekunder
 - Brugeren kan angive andet. Max 300 sekunder.
 
-### 3. Generér CSV-filen
+### 3. Prøv quizzen af
 
-Skriv spørgsmålene som en JSON-fil og kør scriptet på den. Scriptet tjekker reglerne (2 til 4 svar, korrekt svarnummer findes, tid højst 300 sekunder, ingen semikolon eller linjeskift i teksten), advarer, hvis det korrekte svar ligger skævt fordelt, og skriver den komplette Blooket-importfil.
+Scriptet i næste trin tjekker formatet, ikke indholdet. Prøv derfor spørgsmålene af stille, før du laver filen, og igen, når læreren beder om ændringer:
+
+- **Svar uden facit:** tag ét spørgsmål ad gangen, se bort fra det markerede svar, og svar selv ud fra materialet. Rammer du et andet svar end det markerede, er spørgsmålet eller facit forkert.
+- **Kun ét svar kan forsvares:** prøv at forsvare hvert forkert svar som en elev, der vil have sit point. Lykkes det, så skærp spørgsmålet, eller skift svaret ud. Er flere svar rigtige med vilje, skal de alle stå i `correct`.
+- **Kan ikke gættes:** svar som en elev, der ikke har læst. Det rigtige svar må ikke være det længste, det eneste med fagord fra spørgsmålet eller det eneste, der passer grammatisk til spørgsmålet. Et spørgsmål må heller ikke afsløre svaret på et andet.
+- **Kan nås på tiden:** en middelmådig elev skal kunne læse spørgsmål og svar på en telefon inden for tidsgrænsen. Ellers forkort teksten, eller giv mere tid.
+
+Ret det, der falder. Skriv kun det til læreren, du ikke kunne afgøre. Har du kun et emne og intet materiale, så sig i én linje, at facit bygger på din faglige viden og ikke er tjekket mod elevernes tekst.
+
+### 4. Generér CSV-filen
+
+Skriv spørgsmålene som en JSON-fil og kør scriptet på den. Scriptet tjekker reglerne (2 til 4 svar, korrekt svarnummer findes, tid højst 300 sekunder, ingen semikolon eller linjeskift i teksten), advarer, hvis det korrekte svar ligger skævt fordelt eller oftest er det længste, og skriver den komplette Blooket-importfil.
 
 **Format for spørgsmål** (filen `spoergsmaal.json`):
 
@@ -100,11 +111,11 @@ Skriv spørgsmålene som en JSON-fil og kør scriptet på den. Scriptet tjekker 
 python "${CLAUDE_SKILL_DIR}/references/generate_csv.py" spoergsmaal.json Blooket_Emne.csv
 ```
 
-Ved FEJL retter du spørgsmålene og kører igen. Ved ADVARSEL om skæv placering blander du svarene.
+Ved FEJL retter du spørgsmålene og kører igen. Ved ADVARSEL om skæv placering blander du svarene. Ved ADVARSEL om længde gør du svarene omtrent lige lange.
 
 Scriptet producerer en fil der matcher Blookets officielle template 1:1, inkl. headers, padding-kolonner, tomme rækker, BOM og Windows-linjeskift.
 
-### 4. Levér filen
+### 5. Levér filen
 
 Gem i den mappe, vi arbejder i (eller `/mnt/user-data/outputs/`, hvis den findes), med beskrivende navn: `Blooket_[Emne].csv`. Hvis værktøjet `present_files` findes, så brug det til at levere filen. Giv en kort opsummering (emner, antal spørgsmål).
 

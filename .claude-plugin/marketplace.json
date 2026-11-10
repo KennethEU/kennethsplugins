@@ -17,26 +17,26 @@
       "name": "bloom",
       "source": "./plugins/bloom",
       "description": "Arbejdsspørgsmål til fagtekster efter Blooms reviderede taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time.",
-      "version": "1.3.0"
+      "version": "1.4.0"
     },
     {
       "name": "blooket",
       "source": "./plugins/blooket",
       "description": "Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale.",
-      "version": "1.2.0"
+      "version": "1.3.0"
     },
     {
       "name": "klasseledelse",
       "source": "./plugins/klasseledelse",
       "description": "Planlægning og vurdering af lektioner og moduler, så alle elever deltager: deltagelseskort, konkrete omskrivninger og principper holdt op mod forskningen.",
-      "version": "1.13.0"
+      "version": "1.13.1"
     },
     {
       "name": "cl-oevelser",
       "displayName": "CL-øvelser",
       "source": "./plugins/cl-oevelser",
       "description": "Inspirationskatalog med CL-øvelser (Cooperative Learning): find og tilpas øvelser, udvikl nye og kombinér dem til forløb, holdt op mod SPIL-principperne.",
-      "version": "1.5.0"
+      "version": "1.5.1"
     },
     {
       "name": "dida",
@@ -49,7 +49,7 @@
       "displayName": "Udretterdagsorden",
       "source": "./plugins/udretterdagsorden",
       "description": "Udretterdagsordener til gruppearbejde: selvkørende trin-for-trin-protokoller med roller, individuel tænketid, pause og fælles produkt, til dida.dk eller Word, med idésparring om struktur.",
-      "version": "1.1.0"
+      "version": "1.1.1"
     },
     {
       "name": "modulplanlaegger",

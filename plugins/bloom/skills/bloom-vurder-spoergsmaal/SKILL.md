@@ -1,6 +1,6 @@
 ---
 name: bloom-vurder-spoergsmaal
-description: "Vurderer og forbedrer eksisterende arbejdsspørgsmål mod Bloom-kriterier: niveau, forbudte formuleringer, besvarlighed og balance. Brug når læreren siger \"vurdér mine spørgsmål\", \"er disse spørgsmål gode nok\", \"tjek spørgsmålene\", \"forbedr spørgsmålene\", eller indsætter spørgsmål, der skal kvalitetssikres. Brug ikke til at lave nye spørgsmål fra bunden (bloom-spoergsmaal-til-tekst) eller til at rette elevbesvarelser."
+description: "Vurderer og forbedrer eksisterende arbejdsspørgsmål mod Bloom-kriterier: niveau, forbudte formuleringer, besvarlighed og balance, og prøver dem af på teksten som en middelmådig elev. Brug når læreren siger \"vurdér mine spørgsmål\", \"er disse spørgsmål gode nok\", \"tjek spørgsmålene\", \"forbedr spørgsmålene\", eller indsætter spørgsmål, der skal kvalitetssikres. Brug ikke til at lave nye spørgsmål fra bunden (bloom-spoergsmaal-til-tekst) eller til at rette elevbesvarelser."
 argument-hint: "[spørgsmål der skal vurderes]"
 allowed-tools:
   - Read
@@ -29,7 +29,8 @@ Spørg: "Hvad vil du have fokus på: generel kvalitet, taksonomisk balance eller
 ### Vurdér
 
 2. **Vurdér hvert spørgsmål** stille med skemaet: Bloom-niveau, problemer og forbedret version.
-3. **Find mønstret:** Hvad fungerer, hvordan er fordelingen på niveauer, og hvilke fejl går igen?
+3. **Afprøv på teksten,** hvis du har den, jf. "Afprøvning på teksten" i reglerne: skriv facit, og svar som en middelmådig elev. Det er her, de fejl viser sig, som regeltjekket ikke fanger. Afprøv også dine forbedrede versioner, før du afleverer dem.
+4. **Find mønstret:** Hvad fungerer, hvordan er fordelingen på niveauer, og hvilke fejl går igen?
 
 ## Sådan afleverer du
 
@@ -47,6 +48,9 @@ Spørg: "Hvad vil du have fokus på: generel kvalitet, taksonomisk balance eller
 - "Og"-konstruktioner, der blander flere spørgsmål
 - Forbudte verber (analysér, diskutér, redegør)
 - Spørgsmål, der ikke kan besvares ud fra teksten
+- Spørgsmål efter flere ting uden antal, så eleven ikke ved, hvornår svaret er færdigt
+- Forstå-spørgsmål, hvor svaret kan skrives af fra én sætning
+- Spørgsmål, hvor et tomt svar er nok ("den ene er større end den anden")
 - Vage verber ("fortæl om", "beskriv")
 - Ja/nej uden krav om begrundelse
 - Forkert Bloom-niveau
