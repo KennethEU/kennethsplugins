@@ -39,7 +39,8 @@ Spørg: "Hvad vil du have fokus på: generel kvalitet, taksonomisk balance eller
 1. **Samlet vurdering** i to til tre sætninger: det, der virker, den vigtigste fejl, der går igen, og fordelingen på niveauer i én linje.
 2. **Forbedret sæt:** alle spørgsmål i den rækkefølge, læreren gav dem, med Bloom-niveau i parentes. Under hvert ændret spørgsmål én kort linje om, hvad der var galt. Spørgsmål, der holder, står uændret og mærkes "uændret".
 3. **Huller:** højst to forslag til nye spørgsmål, hvis et niveau mangler.
-4. Én linje til sidst: "Sig til, hvis du vil se skemaet spørgsmål for spørgsmål, eller hvis noget skal justeres."
+4. **Udfaldslinjen** fra afprøvningen af det forbedrede sæt, jf. "Afprøvningen efterlader et spor" i reglerne. Har du ikke teksten, så skriv "Ikke afprøvet på teksten".
+5. Én linje til sidst: "Sig til, hvis du vil se skemaet spørgsmål for spørgsmål, eller hvis noget skal justeres."
 
 **På opfordring:** skemaet spørgsmål for spørgsmål med niveau, problemer og begrundelse.
 

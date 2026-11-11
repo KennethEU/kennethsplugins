@@ -17,7 +17,7 @@
       "name": "bloom",
       "source": "./plugins/bloom",
       "description": "Arbejdsspørgsmål til fagtekster efter Blooms reviderede taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time.",
-      "version": "1.5.0"
+      "version": "1.6.0"
     },
     {
       "name": "blooket",

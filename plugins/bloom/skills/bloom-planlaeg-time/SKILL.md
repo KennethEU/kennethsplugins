@@ -70,7 +70,7 @@ Vis den tilpassede struktur som tabel med én linjes anbefaling, og spørg: "Pas
 3. **Arbejde:** spørgsmål på Anvende og Analysere til par eller grupper, skrevet færdigt.
 4. **Afslutning:** ét åbent spørgsmål på Evaluere/Skabe, og det, eleverne skriver til sidst.
 5. **Kvalitetstjek** stille: Bygger faserne på hinanden, følger spørgsmålene reglerne, og summer tiderne?
-6. **Afprøv spørgsmålene på teksten** stille, jf. "Afprøvning på teksten" i reglerne. Lektietjekket får alle tre tests, så det viser, hvem der har læst. Arbejdsspørgsmålene afprøves efter tabellen "Hvor meget der afprøves": på Anvende skriver du et modelsvar og tjekker, at eleven har oplysningerne om casen. Tjek også mod "Tid: arbejdsregler", at en middelmådig elev kan nå spørgsmålene på den afsatte tid. Har du kun et emne og ingen tekst, så sig i én linje, at spørgsmålene ikke er afprøvet på teksten.
+6. **Afprøv spørgsmålene på teksten,** jf. "Afprøvning på teksten" i reglerne. Lektietjekket får alle tre tests, så det viser, hvem der har læst. Arbejdsspørgsmålene afprøves efter tabellen "Hvor meget der afprøves": på Anvende skriver du et modelsvar og tjekker, at eleven har oplysningerne om casen. Tjek også mod "Tid: arbejdsregler", at en middelmådig elev kan nå spørgsmålene på den afsatte tid. Har du kun et emne og ingen tekst, så sig i én linje, at spørgsmålene ikke er afprøvet på teksten.
 
 ## Sådan afleverer du
 
@@ -78,7 +78,8 @@ Vis den tilpassede struktur som tabel med én linjes anbefaling, og spørg: "Pas
 
 - Én linje øverst med antagelserne, fx "Antaget: 90 min. med pause, de fleste har læst."
 - Tabellen med faser, tid og arbejdsform.
-- Spørgsmålene under hver fase med Bloom-niveau i parentes.
+- Spørgsmålene under hver fase med Bloom-niveau i parentes. Lektietjekkets spørgsmål har facit med sted i teksten under sig.
+- Udfaldslinjen fra afprøvningen, jf. "Afprøvningen efterlader et spor" i reglerne. Har du kun et emne og ingen tekst, så skriv "Ikke afprøvet på teksten".
 - Én linje: "Kan springes over: [et spørgsmål i arbejdsfasen]."
 - Én linje til sidst: "Sig til, hvis noget skal ændres, eller hvis du vil have planen som dida-plan til storskærmen eller en fuld drejebog."
 

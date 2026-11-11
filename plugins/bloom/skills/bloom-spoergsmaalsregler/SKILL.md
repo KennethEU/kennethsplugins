@@ -323,10 +323,10 @@ Skriv stille svaret til hvert spørgsmål, og notér, hvor i teksten det står.
 
 ### 2. Elevtest
 
-Besvar hvert spørgsmål som en middelmådig elev: en, der læser teksten én gang, leder efter et sted, der ligner spørgsmålet, og skriver det første, der passer. Se efter fire ting:
+Besvar hvert spørgsmål som en middelmådig elev: en, der læser teksten én gang, leder efter et sted, der ligner spørgsmålet, og skriver det første, der passer. Vær ikke mild. Du har selv skrevet spørgsmålet og vil gerne have, at det holder, så led efter det korteste svar, eleven kan slippe af sted med. Se efter fire ting:
 
 - **Stopper eleven for tidligt?** Det sker, når antallet mangler, eller når svaret fortsætter efter et afsnitsskift.
-- **Kan svaret skrives af?** Kan én sætning fra teksten kopieres som svar på et Forstå-spørgsmål, er det reelt Huske, og læreren kan ikke se, om eleven har forstået noget. Spørg til noget, der ikke står ordret, fx hvad tekstens eksempel viser.
+- **Kan svaret skrives af?** Kan én sætning fra teksten kopieres som svar på et Forstå-spørgsmål, er det reelt Huske, og læreren kan ikke se, om eleven har forstået noget. Spørg til noget, der ikke står ordret, fx hvad tekstens eksempel viser, eller ret mærkatet til Huske.
 - **Slipper et tomt svar igennem?** Er "den ene skærer ned, den anden omprioriterer" et gyldigt svar, tester spørgsmålet ingenting. Sig i spørgsmålet, hvad forklaringen eller forskellen skal handle om.
 - **Kan eleven finde stedet?** Abstrakte ord, som teksten ikke bruger, sender eleven forgæves på jagt. Brug tekstens ord, eller giv en indgang: et afsnit, et eksempel eller en figur.
 
@@ -344,11 +344,15 @@ Kan en elev, der ikke har læst, svare rimeligt ud fra almen viden eller ud fra 
 | Klassearbejde, Analysere til Skabe | Der er ikke ét facit. Tjek, at teksten giver stof nok til et svar, at eleven kan se, hvad et godt svar indeholder, og at et tomt svar ikke slipper igennem. |
 | Lærerens egne spørgsmål (vurdering) | Som ovenfor efter konteksten. |
 
-### Sådan afleverer du afprøvningen
+### Afprøvningen efterlader et spor
 
-- Kør den stille, og ret det, der falder. Vis ikke testen.
-- Skriv kun det, du ikke kunne afgøre, i én linje, fx "Spørgsmål 1 regner civilsamfundet med under nedskæringsstrategien. Regner du det ikke med, er tallet fire."
-- Facit med teksthenvisning har du fra facit-testen. Giv det, når læreren beder om facit eller modelsvar. Skriv under hvert facit det forkerte eller halve svar, elevtesten viste, at en middelmådig elev sandsynligvis giver ("Typisk svar: ..."). Det er det, læreren møder i opsamlingen.
+En afprøvning, der kun sker stille, bliver for mild. I brug slap spørgsmål igennem, som reglerne ovenfor burde have fanget, og de faldt først, da læreren bad om at se testen. Afprøvningen er derfor ikke et stille kvalitetstjek. Den efterlader altid et kort spor i svaret. Sporet er et arbejdsprodukt (facit og udfald), ikke en forklaring af, hvordan du tænkte.
+
+- **Hav tre ting for hvert spørgsmål, før du skriver udfaldet:** facit med sted i teksten, det svar en middelmådig elev sandsynligvis giver, og ved lektie det svar en elev giver uden at have læst. Er elevens svar tommere end facit, kan det skrives af fra én sætning, eller rammer eleven uden at have læst, så holder spørgsmålet ikke.
+- **Lektie og lektietjek:** skriv facit under hvert spørgsmål med sted i teksten, fx "Svar: hvor meget der skal produceres, og hvad det skal koste (side 3)". Brug tekstens ord. Kan du ikke skrive linjen, er spørgsmålet ikke klar og afleveres ikke. Holder spørgsmålet kun, hvis læreren kræver et bestemt fagord, så skriv det i samme linje: "Kræv ordet produktionsmidler."
+- **Udfaldslinjen:** slut med én linje om, hvad afprøvningen gav for hvert spørgsmål, fx "Afprøvet som middelmådig elev: 1 og 2 holder, 3 rettet (antal tilføjet)." Skriv "rettet" med årsagen, når afprøvningen ændrede et spørgsmål, og "usikkert" med årsagen, når du ikke kunne afgøre det, fx et antal, der afhænger af, hvordan teksten læses.
+- **Større sæt til klassearbejde:** kun udfaldslinjen, fx "Afprøvet: 11 holder, 3 rettet (4: antal tilføjet, 7 og 9: kunne skrives af)". Facit kommer på opfordring.
+- **Typiske svar på opfordring:** beder læreren om elevernes typiske svar eller om modelsvar, så skriv under hvert facit det forkerte eller halve svar, elevtesten viste ("Typisk svar: ..."). Det er det, læreren møder i opsamlingen.
 - Beder læreren selv om en test ("test spørgsmålene", "tænk som en elev"), så vis den som tabel med spørgsmål, elevens sandsynlige svar og dom. Skriv bagefter, hvor det går galt, og giv det reviderede sæt. Antallet af domme i tabellen skal passe med det, du skriver om den.
 
 ---

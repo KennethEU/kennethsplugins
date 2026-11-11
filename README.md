@@ -118,6 +118,12 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### bloom 1.6.0 (november 2026)
+- **Afprøvningen er ikke længere stille.** Første brug viste, at den stille afprøvning var for mild: et lektiespørgsmål, der kunne skrives af og besvares uden at have læst, slap igennem og faldt først, da læreren bad om at se testen. Nu efterlader afprøvningen et spor i svaret.
+- Lektiespørgsmål har facit med sted i teksten under hvert spørgsmål ("Svar: ... (side 3)"). Kan facit ikke skrives, afleveres spørgsmålet ikke.
+- Alle sæt slutter med en udfaldslinje, fx "Afprøvet som middelmådig elev: 1 og 2 holder, 3 rettet (antal tilføjet)". Større sæt til klassearbejde får kun linjen, og facit kommer på opfordring.
+- Elevtesten siger nu ligeud, at skillen ikke må være mild ved sine egne spørgsmål, og et spørgsmål, hvor svaret kan skrives af, mærkes Huske.
+
 ### casespilsdesigner 2.16.0 (november 2026)
 Rettelser efter en gennemgang, hvor de ti skills blev læst mod hinanden. De fleste fejl var rester fra ældre versioner, som modsagde nyere regler.
 - **Konsistenstjekket passer nu til rollekortene:** normalkortet tjekkes for præcis 2 sider og de faste overskrifter, og støtte- og stærkversion følger `casespil-rollekort`. Greb, designet bevidst har fravalgt (fx wildcard eller kompromisrolle), tæller ikke som fejl.
