@@ -38,7 +38,7 @@ Ved B og C ligger detaljerne for de senere moduler ikke fast. Sig det, og fastho
 - **Indgang A:** vis rammen i få linjer og modulrækken i samme svar (Gate 1, 2 og 3 samlet), og spørg én gang, om noget skal ændres.
 - **Indgang B:** vis den korte ramme, skitsen og modul 1 i samme svar.
 - **Indgang C:** findes `forloeb.md`, og har læreren allerede skrevet, hvordan sidste modul gik, så spring spørgsmålet over.
-- Skriv antagelserne i én linje øverst. Hent læreplanen, hvis det kan gøres hurtigt. Ellers skriv "Læreplan: ikke tjekket".
+- Skriv antagelserne i én linje øverst. Hent læreplanen, hvis det kan gøres hurtigt (først i Outline, se `references/laereplaner.md`). Ellers skriv "Læreplan: ikke tjekket".
 - Gate 4 bliver til én linje, der foreslår den skill, der passer bedst til det første modul.
 - Gate 5: findes forløbsmappen allerede, så gem uden at spørge, og sig, hvor filerne ligger. Ellers spørg, hvor forløbene skal ligge.
 
@@ -52,7 +52,7 @@ Spørg kun om det, læreren ikke allerede har sagt:
 
 1. **Fag, niveau og klasse:** fx samfundsfag A, 2.g. Studieretning, hvis den betyder noget.
 2. **Emne og omfang:** antal moduler, modullængde og omtrentlig placering i skoleåret.
-3. **Mål og læreplan:** hvilke faglige mål og kernestofområder skal forløbet dække? Tilbyd at hente den nyeste læreplan og vejledning for fag og niveau fra uvm.dk efter `${CLAUDE_SKILL_DIR}/references/laereplaner.md`. Ligger de allerede i `_laereplaner/` i forløbsmappen, så tjek blot, om der er kommet en nyere version. Brug aldrig regler fra referencefilerne i `didaktik-principper` som gældende.
+3. **Mål og læreplan:** hvilke faglige mål og kernestofområder skal forløbet dække? Slå læreplan og vejledning op i vidensbasen i Outline, hvis connectoren er tilsluttet. Ellers tilbyd at hente den nyeste version fra uvm.dk. Begge dele står i `${CLAUDE_SKILL_DIR}/references/laereplaner.md`. Ligger de allerede i `_laereplaner/` i forløbsmappen, så tjek blot, om der er kommet en nyere version. Brug aldrig regler fra referencefilerne i `didaktik-principper` som gældende.
 4. **Forudsætninger:** hvad har klassen haft før, og hvordan er klassen? Brug spørgsmålene i `references/elevforudsaetninger.md`, men stil højst tre.
 5. **Afslutning og evaluering:** skal forløbet ende i et produkt, en prøve, en aflevering eller en mundtlig præsentation?
 6. **Samspil og materialer:** er der et andet fag med, og er der en lærebog eller materialer, der skal bruges?

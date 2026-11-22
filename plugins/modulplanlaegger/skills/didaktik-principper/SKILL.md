@@ -46,7 +46,7 @@ Læs kun den fil, et planlægningstrin har brug for:
 
 ## Faste regler
 
-1. **Regler er daterede.** Alt om bekendtgørelser, læreplaner, spørgeord og prøveformer i filerne er fra 2010 til 2012. Citér det aldrig som gældende. Hent den gældende læreplan og vejledning fra uvm.dk efter `didaktik-planlaeg-forloeb/references/laereplaner.md`, eller bed læreren om dem.
+1. **Regler er daterede.** Alt om bekendtgørelser, læreplaner, spørgeord og prøveformer i filerne er fra 2010 til 2012. Citér det aldrig som gældende. Hent den gældende læreplan og vejledning fra vidensbasen i Outline eller fra uvm.dk efter `didaktik-planlaeg-forloeb/references/laereplaner.md`, eller bed læreren om dem.
 2. **Evidensmærker.** Find ikke på tal, forfattere eller studier. Brug de samme fire mærker som `klasseledelse-principper`:
    - **Stærk:** metaanalyser eller gentagne eksperimenter, der rækker til målgruppen eller tæt på.
    - **Moderat:** reel forskning, men anden aldersgruppe, få studier eller uden årsagsbevis.

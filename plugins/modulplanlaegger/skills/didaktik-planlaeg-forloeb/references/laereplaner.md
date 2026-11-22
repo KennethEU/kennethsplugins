@@ -2,17 +2,29 @@
 
 Læreplaner og vejledninger ligger som PDF'er hos Børne- og Undervisningsministeriet. Links og filnavne skifter, når der kommer nye versioner. Hent derfor altid oversigtssiden først, og gem aldrig PDF-links i skillen.
 
+## Først: vidensbasen i Outline
+
+Er Outline-connectoren (dok.mgai.dk) tilsluttet, så slå op dér, før du henter noget fra uvm.dk:
+
+1. Søg efter "Læreplan og vejledning" med `list_documents`, eller gå til faggruppens collection (fx Samfundsfag eller Erhvervsøkonomi) → Materialer → Læreplan og vejledning.
+2. Find siderne for fag og niveau, fx "Læreplan: Samfundsfag A, stx (august 2017)" og "Vejledning: Samfundsfag A, stx (juli 2024)". Hver side har teksten, kilde-URL, hentedato og den originale PDF som bilag.
+3. Hent kun de afsnit, du skal bruge (se "Hvad der skal bruges"). Teksten er lavet om fra PDF. Er en tabel eller et citat uklart, så tjek PDF'en på siden.
+4. Er hentedatoen mere end et år gammel, eller nævner læreren en ny læreplan, så tjek oversigtssiden på uvm.dk (nedenfor) for en nyere version. Er der en nyere, så brug den og sig til læreren, at siden i Outline skal opdateres. Ret ikke selv i siderne.
+5. Skriv kilden i planen som "Outline: <sidens titel>, hentet <dato>".
+
+Ligger fag og niveau ikke i Outline, eller er connectoren der ikke, så hent fra uvm.dk som beskrevet nedenfor.
+
 ## Oversigtssider
 
 | Uddannelse | Side |
 |------------|------|
 | stx | https://uvm.dk/uddannelse-til-unge/gymnasiale-uddannelser/fag-og-laereplaner/stx-laereplaner/ |
-| hhx (bl.a. erhvervsøkonomi) | https://uvm.dk/uddannelse-til-unge/gymnasiale-uddannelser/fag-og-laereplaner/hhx-laereplaner/ |
+| hhx | https://uvm.dk/uddannelse-til-unge/gymnasiale-uddannelser/fag-og-laereplaner/hhx-laereplaner/ |
 | hf | https://uvm.dk/uddannelse-til-unge/gymnasiale-uddannelser/fag-og-laereplaner/hf-laereplaner/ |
 | htx | https://uvm.dk/uddannelse-til-unge/gymnasiale-uddannelser/fag-og-laereplaner/htx-laereplaner/ |
-| Valgfag | https://uvm.dk/uddannelse-til-unge/gymnasiale-uddannelser/fag-og-laereplaner/valgfag-laereplaner/ |
+| Valgfag (bl.a. erhvervsøkonomi C på stx) | https://uvm.dk/uddannelse-til-unge/gymnasiale-uddannelser/fag-og-laereplaner/valgfag-laereplaner/ |
 
-Er erhvervsøkonomi ikke et stx-fag, så slå op på hhx-siden og sig det. Kan en side ikke findes, så søg på uvm.dk efter "læreplaner til stx", og fortæl læreren, at adressen er ændret.
+Erhvervsøkonomi C på stx ligger under Valgfag. Erhvervsøkonomi på hhx ligger på hhx-siden. Kan en side ikke findes, så søg på uvm.dk efter "læreplaner til stx", og fortæl læreren, at adressen er ændret.
 
 Hver fagblok på siden har et afsnit pr. niveau med links, hvis tekst består af "Læreplan til" eller "Vejledning til", fag, niveau, uddannelse og årstal, fx Samfundsfag B, stx 2017 og ofte et link til emu.dk med temaer og vejledningsmaterialer.
 
@@ -57,5 +69,5 @@ Linket "Find temaer og vejledningsmaterialer" fører til emu.dk med eksempler og
 
 ## Regler
 
-- Brug kun læreplan og vejledning, du har hentet i denne samtale, eller som læreren har givet, som grundlag for gældende krav. Referencefilerne i `didaktik-principper` er fra 2010 til 2012 og må ikke bruges som regler.
+- Brug kun læreplan og vejledning fra vidensbasen i Outline, som du har hentet i denne samtale, eller som læreren har givet, som grundlag for gældende krav. Referencefilerne i `didaktik-principper` er fra 2010 til 2012 og må ikke bruges som regler.
 - Kan noget ikke hentes, så sig det, og marker kravene i planen som "ikke tjekket mod gældende læreplan".
