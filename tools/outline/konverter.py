@@ -29,6 +29,9 @@ SPROG = {".py": "python", ".js": "javascript", ".json": "json", ".txt": "text",
          ".csv": "csv", ".sh": "bash"}
 MAPPER = ("references", "scripts", "resources", "examples", "assets")
 STI_I_KODE = re.compile(r"`\"?((?:\$\{CLAUDE_SKILL_DIR\}/)?(?:\.\./)?[A-Za-z0-9_./-]+?)\"?`")
+# Filstier inde i kodeblokke, fx "${CLAUDE_SKILL_DIR}/references/generate_csv.py" eller ../dida/scripts/x.js
+STI_I_BLOK = re.compile(r"((?:\$\{CLAUDE_SKILL_DIR\}/)?(?:\.\./)*(?:[A-Za-z0-9_-]+/)*"
+                        r"(?:references|scripts|resources|examples|assets)/[A-Za-z0-9_./-]*[A-Za-z0-9_-]\.[A-Za-z0-9]+)")
 REPO = "KennethEU/kennethsplugins"
 RET_IKKE = ("*Vedligeholdes af Kenneth i plugin-repoet. Ret ikke her, for siden overskrives ved næste "
             "udgivelse. Skriv forslag som en kommentar.*")
@@ -107,21 +110,46 @@ def stier_til_links(tekst, skill, sider, plugin_af, dybde):
     op = "../" * dybde
     plugin = plugin_af[skill]
 
-    def erstat(m):
-        hit = find_maal(m.group(1), skill, sider)
+    def lav_link(sti_i_tekst):
+        hit = find_maal(sti_i_tekst, skill, sider)
         if not hit:
-            return m.group(0)
+            return None
         maal, navn = hit
         sti = op if plugin_af[maal] == plugin else op + f"../{plugin_af[maal]}/"
         if navn is None:
             return f"[{maal}]({sti}{maal}.md)"
         return f"[{navn[:-3]}]({sti}{maal}/{navn})"
 
-    ud, i_blok = [], False
+    def erstat(m):
+        return lav_link(m.group(1)) or m.group(0)
+
+    def link_til(sti_i_tekst):
+        # Kun filer (undersider), ikke hele skills.
+        hit = find_maal(sti_i_tekst, skill, sider)
+        return lav_link(sti_i_tekst) if hit and hit[1] is not None else None
+
+    # Kodeblokke røres ikke. Nævner en blok filer fra skill'en, får den en linje med links bagefter.
+    ud, i_blok, i_blok_filer = [], False, []
     for linje in tekst.split("\n"):
         if linje.lstrip().startswith("```"):
             i_blok = not i_blok
-        ud.append(linje if i_blok else STI_I_KODE.sub(erstat, linje))
+            ud.append(linje)
+            if not i_blok and i_blok_filer:
+                indryk = linje[:len(linje) - len(linje.lstrip())]
+                ud.append("")
+                ud.append(indryk + ("Filen" if len(i_blok_filer) == 1 else "Filerne")
+                          + " i kommandoen: " + ", ".join(i_blok_filer)
+                          + ". Kopier koden fra siden til en fil med samme navn.")
+                i_blok_filer = []
+            continue
+        if i_blok:
+            for sti in STI_I_BLOK.findall(linje):
+                link = link_til(sti)
+                if link and link not in i_blok_filer:
+                    i_blok_filer.append(link)
+            ud.append(linje)
+        else:
+            ud.append(STI_I_KODE.sub(erstat, linje))
     return "\n".join(ud)
 
 
