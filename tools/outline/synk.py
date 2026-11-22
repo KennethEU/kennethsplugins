@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Opdaterer Kenneths plugins under Fælles → Skills i Outline (dok.mgai.dk) ud fra plugins/ i dette repo.
+"""Opdaterer Kenneths plugins under Fælles skills → Skills i Outline (dok.mgai.dk) ud fra plugins/ i dette repo.
 
 Scriptet styrer KUN siderne Skills/<plugin> for de plugins, der står i konverter.py (I_OUTLINE og KUN_PLUGIN),
-og alt under dem. Siden "Skills" selv, "Om vidensbasen" og kollegernes skills røres aldrig.
+og alt under dem. Siden "Skills" selv og kollegernes egne sider røres aldrig.
 
 Siderne rettes på stedet (samme side-id), så links, kommentarer og historik bevares.
 Uden --udfoer vises kun, hvad der ville ske (prøvekørsel).
@@ -35,7 +35,7 @@ sys.path.insert(0, str(Path(__file__).resolve().parent))
 from konverter import I_OUTLINE, KUN_PLUGIN, byg_sider  # noqa: E402
 
 URL = os.environ.get("OUTLINE_URL", "https://dok.mgai.dk")
-COLLECTION = os.environ.get("OUTLINE_COLLECTION", "Fælles")
+COLLECTION = os.environ.get("OUTLINE_COLLECTION", "Fælles skills")
 STYREDE = set(I_OUTLINE) | set(KUN_PLUGIN)
 REPO_ROD = Path(__file__).resolve().parents[2]
 TILSTAND = Path(__file__).resolve().parent / ".synk-tilstand.json"

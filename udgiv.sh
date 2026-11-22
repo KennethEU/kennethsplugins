@@ -1,5 +1,5 @@
 #!/bin/bash
-# Udgiver plugins to steder: GitHub (plugins) og Outline (dok.mgai.dk, Fælles → Skills).
+# Udgiver plugins to steder: GitHub (plugins) og Outline (dok.mgai.dk, Fælles skills → Skills).
 #
 #   ./udgiv.sh "besked"        tjek, commit, push og opdater Outline
 #   ./udgiv.sh --kun-outline   opdater kun Outline (fx når GitHub allerede er opdateret)

@@ -19,7 +19,7 @@ Mangler den, så løs opgaven uden og skriv én linje til sidst: "Outline er ikk
 2. **Vælg i denne rækkefølge,** når flere passer:
    1. Lærerens egen private collection.
    2. Lærerens faggruppe (fx Samfundsfag, Erhvervsøkonomi).
-   3. Fælles.
+   3. Fælles skills (faggruppens fælles skills; hver lærer har sin egen side under Skills).
    4. Andre collections med en side "Skills".
 
    Vælg ud fra beskrivelsen. Den siger både, hvornår skill'en bruges, og hvornår den ikke gør. Passer ingen, så løs opgaven uden og sig det i én linje.
