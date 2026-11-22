@@ -39,9 +39,9 @@ Prøvegrundlaget er læreplanens faglige mål og kernestof. En tilflytter kan no
 
 - [ ] Alle forløb i skoleåret er med, i rækkefølge.
 - [ ] Hvert forløb har resumé med problemstillinger.
-- [ ] Faglige mål og kernestof er læreplanens ordrette tekst og kun det, der er gennemført.
-- [ ] Alt kernestof i læreplanen er dækket af mindst ét forløb, eller det er planlagt senere (dækningstjek).
-- [ ] Materiale er delt i kernestof og supplerende stof med omfang. Ingen "?" tilbage i sidekolonnen.
+- [ ] Faglige mål og kernestof er læreplanens ordrette tekst og kun det, der er gennemført. Planlagte dele, der ikke blev til noget, er taget ud.
+- [ ] Alt kernestof i læreplanen er dækket af mindst ét forløb, eller det er planlagt senere ("Mangler i læreplanen" på holdsiden).
+- [ ] Materiale er delt i kernestof og supplerende stof med omfang. Læreren har udfyldt sidetallene.
 - [ ] Samlet omfang passer med læreplanens omfang (afsnit 2.4), set over hele faget.
 - [ ] Læreplanens særlige krav er opfyldt, fx materiale på engelsk, projekter og skriftligt arbejde.
 - [ ] Arbejdsformer er beskrevet pr. forløb.

@@ -1,73 +1,86 @@
 # Formater
 
-Tre formater: afsnittet på forløbssiden, dækningstabellen på holdsiden og den færdige tekst. Felterne følger UVM's skabelon.
+Tre formater: forløbsteksten på forløbssiden (som i Lectio), oversigten på holdsiden og UVM's skabelon, hvis skolen ikke bruger Lectio.
 
-## 1. Afsnittet på forløbssiden
+## 1. Forløbsteksten på forløbssiden
 
-Lægges under modultabellen, fx lige over "Fælles filer i mappen". Rækker i tabeller starter med ordet "Modul", ikke med et tal. Så forveksles de ikke med modultabellen.
+Lægges under modultabellen, fx lige over "Fælles filer i mappen". Felterne er Lectios felter for et forløb. Alt over boksen "Til læreren" skal kunne kopieres ind i Lectio og læses af eleverne.
 
 ```markdown
 ## Til undervisningsbeskrivelsen
 
-*Udkast af Claude <dato> ud fra siden her (hold <hold>). Tjek og ret. Opdatér, når et modul er afholdt. Kun afholdte moduler tæller som dækket. Læreplanen: [<titel>](<link>).*
+*Tekst til forløbet i Lectio, felt for felt. Skrevet af Claude <dato> ud fra forløbssiden og modulsiderne. Tjek og ret. Noter til læreren står i boksen nederst og kommer ikke i Lectio. Krav: [Undervisningsbeskrivelse: vejledning og skabelon](<link>).*
 
-**Titel:** <forløbets titel>
+**Forløb:** <titel>
 
-**Indhold og fokus:** <2 til 4 sætninger: problemstilling, hvad eleverne har arbejdet med. "Planlagt:" for det, der mangler.>
+**Periode:** <datoer eller "ikke angivet">. **Estimat:** <antal> moduler á <min> min (<timer> timer).
 
-**Faglige mål (læreplan 2.1, ordret):**
+**Forløbsbeskrivelse**
 
-* "<ordret mål>": afholdt i modul <x–y>, planlagt i modul <z>
+<Problemstillingen som spørgsmål. 2 til 3 sætninger til eleven: hvad du lærer, og hvad forløbet ender med.>
 
-**Kernestof (læreplan 2.2, ordret):**
+Emner og begreber:
 
-* <Disciplin>: "<ordret punkt>": afholdt i modul <x>
-* Tjek: <noget, der måske hører til et punkt, med grund>
+* <emne: begreber og teorier>
 
-**Materiale** (samlet fra modulsiderne <dato>. Sider: læreren udfylder):
+Materiale:
 
-| Modul | Kernestof: <bogens titel> | Supplerende stof | Sider |
-|-------|---------------------------|------------------|-------|
-| Modul 1 (afholdt) | <afsnit> | <artikler, tal, cases, video> | ? |
+* Kernestof: <bog>, <afsnit>
+* Supplerende stof: <artikler, tal, cases, video>
 
-* Engelsk materiale: <hvad, eller "ikke registreret">  (kun hvis læreplanen kræver det)
-* Tid: <antal> afholdte moduler á <min> min, i alt <timer> timer undervisningstid (planlagte moduler tælles ikke med). Fordybelsestid: <timer eller "ikke opgjort">.
-* Tilladt at tilgå via internettet: <materiale, eller "intet markeret">
+**Faglige mål**
 
-**Arbejdsformer:** <de væsentligste, med modul: klasseundervisning, gruppearbejde, oplæg, skriftligt arbejde, projekt, it, udadvendte aktiviteter. "Planlagt:" for resten.>
+Kernestof:
+
+* <Disciplin>: <ordret punkt fra læreplanen 2.2>
+
+Mål:
+
+* <ordret mål fra læreplanen 2.1>
+
+**Særlige fokuspunkter** (det skal du kunne)
+
+* <verbum + indhold, bygget på modulernes mål>
+
+**Arbejdsformer**
+
+<De væsentligste arbejdsformer i hele sætninger.>
+
+**Skriftligt arbejde**
+
+<Titel og frist pr. aflevering, eller "Ingen afleveringer registreret i forløbet.">
+
+> **Til læreren (kommer ikke i Lectio)**
+>
+> * Afholdt: modul <x-y>. Planlagt: modul <z> (<hvad>). Tag det ud, der ikke bliver til noget, før den endelige beskrivelse.
+> * <Tjek: noget, der måske hører til et kernestofpunkt, med grund>
+> * Sider mangler. <Engelsk materiale, fordybelsestid, internet til prøven, hvis det er relevant.>
 ```
 
-## 2. Dækningstabellen på holdsiden
+## 2. Oversigten på holdsiden
 
 ```markdown
-## Dækning af læreplanen
+## Undervisningsbeskrivelse: forløbene
 
-*Udkast af Claude <dato>, samlet fra forløbssiderne. "Afholdt" tæller som dækket. "Planlagt" er ikke dækket endnu.*
+*Oversigt over holdets forløb (UVM's punkt 1). Teksten til Lectio står på hver forløbsside under "Til undervisningsbeskrivelsen". Opdateret af Claude <dato>.*
 
-*<Forløb, der ikke er kortlagt, fx fordi de kun ligger i Lectio.>*
+1. [<Forløb>](<link>): modul <x-y> afholdt, modul <z> planlagt
+2. <Forløb, der kun ligger i Lectio> (ligger kun i Lectio)
 
-**Faglige mål (læreplan 2.1)**
+## Mangler i læreplanen
 
-| Mål | <Forløb 1> | <Forløb 2> |
-|-----|------------|------------|
-| <målets første ord …> | afholdt (modul 2–4) | – |
+*Kernestof og mål, som intet afholdt modul dækker endnu. <Forløb, der ikke er tjekket.>*
 
-**Kernestof (læreplan 2.2)**
-
-| Kernestof | <Forløb 1> | <Forløb 2> |
-|-----------|------------|------------|
-| <Disciplin: punktets første ord …> | planlagt (7) | – |
-
-**Mangler:** <kernestof og mål uden afholdt modul, og tværgående krav som omfang, engelsk materiale og projekter.>
+* **Kernestof:** <punkter>
+* **Mål:** <punkter, kort>
+* **Andet:** <omfang i sider, engelsk materiale, projekter og andre tværgående krav fra læreplanen>
 ```
 
-Brug "–" for ikke dækket, "afholdt (modul)" og "planlagt (modul)". Alle mål og alle kernestofpunkter fra læreplanen skal være rækker, også dem uden dækning.
+Deler to hold siden, så lav en oversigt pr. hold.
 
-## 3. Teksten til Lectio eller UVM's skabelon
+## 3. UVM's skabelon
 
-Én blok pr. forløb, kun gennemført undervisning, uden "Planlagt:" og uden Claudes noter. Felterne er dem fra UVM's skabelon. Læreren kopierer selv teksten ind i Lectio, hvor felterne passer, eller i skabelonen.
-
-Forsiden og oversigten laves én gang for hele beskrivelsen:
+Bruges kun, hvis skolen ikke bruger Lectio. Forsiden laves én gang:
 
 ```text
 Termin: <fx maj-juni 2027> (skoleår <2026/27>)
@@ -79,31 +92,6 @@ Hold: <holdbetegnelse>
 
 Oversigt over gennemførte forløb:
 Forløb 1: <titel>
-Forløb 2: <titel>
 ```
 
-Derefter én blok pr. forløb:
-
-```text
-<Forløb nr.>: <titel>
-
-Forløbets indhold og fokus:
-<resumé med centrale problemstillinger>
-
-Faglige mål:
-- <ordret mål>
-
-Kernestof:
-- <Disciplin>: <ordret punkt>
-
-Anvendt materiale:
-Kernestof:
-- <bog>, <afsnit> (<sider> sider)
-Supplerende stof:
-- <materiale> (<omfang>)
-[TILLADT AT TILGÅ VIA INTERNETTET: <materiale>, kun hvis læreren har besluttet det]
-Omfang i alt: <summen af siderne ovenfor>. Undervisningstid: <timer> timer (kun afholdte moduler). Fordybelsestid: <timer> timer.
-
-Arbejdsformer:
-<de væsentligste arbejdsformer>
-```
+Derefter én blok pr. forløb med felterne Forløbets indhold og fokus, Faglige mål, Kernestof, Anvendt materiale (kernestof og supplerende stof med omfang, undervisningstid og fordybelsestid) og Arbejdsformer. Indholdet er det samme som i afsnit 1.

@@ -63,7 +63,7 @@
       "displayName": "Modulplanlægger",
       "source": "./plugins/modulplanlaegger",
       "description": "Planlægning af forløb og modulrækker ud fra didaktisk viden: mål, progression, arbejdsformer, evaluering og fagdidaktik, med videresendelse til de andre plugins.",
-      "version": "0.3.0"
+      "version": "0.3.1"
     }
   ]
 }

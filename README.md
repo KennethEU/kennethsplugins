@@ -44,7 +44,7 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 | `/udretterdagsorden:dagsorden-lav` | Udretterdagsorden til gruppearbejde ud fra emne, fag og tid, til dida.dk eller Word |
 | `/udretterdagsorden:dagsorden-ide` | Foreslår 2 til 3 strukturer for gruppearbejdet og laver derefter dagsordenen |
 | `/modulplanlaegger:didaktik-planlaeg-forloeb` | Planlægger et forløb eller en modulrække og sender modulerne videre til de andre skills |
-| `/modulplanlaegger:undervisningsbeskrivelse` | Holder undervisningsbeskrivelsen ajour efter hvert modul, tjekker dækningen af læreplanen og samler den færdige beskrivelse efter UVM's krav |
+| `/modulplanlaegger:undervisningsbeskrivelse` | Skriver teksten til hvert forløb i Lectios felter, så eleverne kan læse den, og holder holdets oversigt og manglende kernestof ajour efter UVM's krav |
 
 `casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket), `klasseledelse-principper` (klasseledelse), `cl-principper` (CL), `dagsorden-principper` (udretterdagsorden) og `didaktik-principper` (modulplanlægger) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
 
@@ -173,6 +173,9 @@ Rettelser efter en gennemgang, hvor de ti skills blev læst mod hinanden. De fle
 - **Tid:** nyt afsnit "Tid: arbejdsregler". Lektiespørgsmål får en linje med læsetid og svartid, og et sæt arbejdsspørgsmål får anslået tid og de spørgsmål, der kan springes over. Tallene er arbejdsregler, ikke afprøvet i klassen.
 - **Kun det, klassen har mødt:** ny regel 9. Teorier og begreber uden for teksten og forløbet mærkes "forudsætter ...".
 - **Facit** har nu elevens typiske forkerte eller halve svar under hvert punkt.
+
+### modulplanlaegger 0.3.1 (november 2026)
+- `undervisningsbeskrivelse` er bygget om, så forløbet er enheden som i Lectio: forløbsbeskrivelse med emner og materiale, faglige mål delt i kernestof og mål, særlige fokuspunkter som "det skal du kunne", arbejdsformer og skriftligt arbejde. Noter til læreren står i en boks for sig. Holdsiden har kun oversigten over forløb og det, der mangler af læreplanen. Dækningstabellerne er fjernet.
 
 ### modulplanlaegger 0.3.0 (november 2026)
 - Ny skill `undervisningsbeskrivelse` med tre opgaver: opdatér afsnittet "Til undervisningsbeskrivelsen" på forløbssiden efter hvert modul, dækningstjek af læreplanens faglige mål og kernestof for et hold, og saml den færdige beskrivelse til Lectio eller UVM's skabelon med tjekliste.
