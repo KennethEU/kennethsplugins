@@ -4,6 +4,7 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 
 | Plugin | Hvad det gør | Skills |
 |--------|--------------|--------|
+| [`vidensbase`](plugins/vidensbase) | Finder og bruger skills fra faggruppens vidensbase i Outline (dok.mgai.dk), før en pædagogisk opgave løses. Kræver Outline-connectoren | 1 |
 | [`casespilsdesigner`](plugins/casespilsdesigner/README.md) | Design af casespil (også kaldet rollespil) og simuleringer: rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring | 10 |
 | [`bloom`](plugins/bloom) | Arbejdsspørgsmål til fagtekster efter Blooms taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time | 6 |
 | [`blooket`](plugins/blooket) | Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale | 2 |
@@ -64,6 +65,7 @@ Reglerne står i afsnittet "Arbejdsgang" i hvert plugins principfil. `python3 tj
 **Claude Code:**
 ```
 claude plugin marketplace add KennethEU/kennethsplugins
+claude plugin install vidensbase@kennethsplugins
 claude plugin install casespilsdesigner@kennethsplugins
 claude plugin install bloom@kennethsplugins
 claude plugin install blooket@kennethsplugins
@@ -85,14 +87,35 @@ bash ~/.gemini/repos/kennethsplugins/update_plugins.sh
 ```
 Scriptet kører `git pull`, laver en genvej `plugin.json` i hver plugin-mappe (Antigravity leder efter den dér og ikke i `.claude-plugin/`) og en genvej fra `~/.gemini/config/plugins/<navn>` til hvert plugin. Fordi det er genveje, slår rettelser i et eksisterende plugin igennem uden at køre scriptet igen.
 
+## Udgivelse: skills ligger to steder
+
+Denne mappe er den eneste kilde. Herfra udgives skillene to steder:
+
+| Hvor | Form | Hvem bruger det |
+|------|------|-----------------|
+| GitHub (`KennethEU/kennethsplugins`) | Plugins med filstier (`references/x.md`, `${CLAUDE_SKILL_DIR}`) | Claude, Codex og Antigravity, når man abonnerer på pluginet |
+| Outline (`dok.mgai.dk`, collectionen "Kenneths plugins") | Sider, hvor stierne er lavet om til Outline-links | Faggruppen via `vidensbase`-pluginet og Outline-connectoren |
+
+**Regler**
+
+- Ret kun her. Ret aldrig direkte i Outline-kopien: den overskrives ved næste udgivelse.
+- Kør `./udgiv.sh "besked"` efter hver ændring. Det tjekker plugins, committer, pusher og opdaterer Outline. Outline-delen viser først, hvad der ændres, og spørger.
+- `casespilsdesigner` og `vidensbase` er kun plugins. Casespil får en kort side i Outline, der henviser hertil. Listen står øverst i `tools/outline/konverter.py` (`I_OUTLINE` og `KUN_PLUGIN`).
+- Brug ikke både et plugin og Outline-versionen af det samme. Så kan de starte hinanden.
+- Siderne i Outline rettes på stedet (samme side-id), så links og kommentarer bevares. Sider, der ikke længere findes her, slettes (de kan gendannes fra Outlines papirkurv).
+- Outline kræver en personlig API-nøgle i Macens nøglering (tjeneste `outline-mgai`). Se toppen af `tools/outline/synk.py`.
+
 ## Struktur
 
 ```
 kennethsplugins/
 ├── .claude-plugin/marketplace.json     ← kataloget over plugins
+├── udgiv.sh                            ← udgiver til GitHub og Outline
+├── tools/outline/                      ← konvertering og synk til Outline
 ├── update_plugins.sh                   ← opdaterer og kobler plugins til Antigravity
 ├── tjek_arbejdsgang.py                 ← tjekker, at "Arbejdsgang" er ens i principfilerne
 └── plugins/
+    ├── vidensbase/                     ← finder skills i Outline
     ├── casespilsdesigner/              ← hvert plugin har sin egen mappe
     │   ├── .claude-plugin/plugin.json
     │   └── skills/...

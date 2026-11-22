@@ -8,6 +8,13 @@
   },
   "plugins": [
     {
+      "name": "vidensbase",
+      "displayName": "Vidensbase (Outline)",
+      "source": "./plugins/vidensbase",
+      "description": "Finder og bruger skills fra faggruppens fælles vidensbase i Outline (dok.mgai.dk) før pædagogiske, administrative og planlægningsmæssige opgaver.",
+      "version": "0.1.0"
+    },
+    {
       "name": "casespilsdesigner",
       "source": "./plugins/casespilsdesigner",
       "description": "Design af casespil (også kaldet rollespil) og simuleringer til dansk gymnasieundervisning (STX): rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring.",

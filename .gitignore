@@ -1,1 +1,5 @@
 .DS_Store
+
+# Lokal tilstand for synk til Outline
+tools/outline/.synk-tilstand.json
+__pycache__/
