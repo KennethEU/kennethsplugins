@@ -94,7 +94,7 @@ Denne mappe er den eneste kilde. Herfra udgives skillene to steder:
 | Hvor | Form | Hvem bruger det |
 |------|------|-----------------|
 | GitHub (`KennethEU/kennethsplugins`) | Plugins med filstier (`references/x.md`, `${CLAUDE_SKILL_DIR}`) | Claude, Codex og Antigravity, når man abonnerer på pluginet |
-| Outline (`dok.mgai.dk`, collectionen "Kenneths plugins") | Sider, hvor stierne er lavet om til Outline-links | Faggruppen via `vidensbase`-pluginet og Outline-connectoren |
+| Outline (`dok.mgai.dk`, Fælles → Skills) | Sider, hvor stierne er lavet om til Outline-links | Faggruppen via `vidensbase`-pluginet og Outline-connectoren |
 
 **Regler**
 
@@ -103,6 +103,7 @@ Denne mappe er den eneste kilde. Herfra udgives skillene to steder:
 - Efter et push: åbn claude.ai → Plugins → Tilføj → Administrer markedspladser, og klik "Søg efter opdateringer" ved kennethsplugins. Den automatiske synkronisering hentede ikke ændringer i november 2026 (sad fast på en commit fra 10/11).
 - `casespilsdesigner` og `vidensbase` er kun plugins. Casespil får en kort side i Outline, der henviser hertil. Listen står øverst i `tools/outline/konverter.py` (`I_OUTLINE` og `KUN_PLUGIN`).
 - Brug ikke både et plugin og Outline-versionen af det samme. Så kan de starte hinanden.
+- Scriptet ejer kun siderne `Skills/<plugin>` for plugins i listen og alt under dem. Siden "Skills", "Om vidensbasen" og kollegernes egne skills i Fælles røres aldrig.
 - Siderne i Outline rettes på stedet (samme side-id), så links og kommentarer bevares. Sider, der ikke længere findes her, slettes (de kan gendannes fra Outlines papirkurv).
 - Outline kræver en personlig API-nøgle i Macens nøglering (tjeneste `outline-mgai`). Se toppen af `tools/outline/synk.py`.
 

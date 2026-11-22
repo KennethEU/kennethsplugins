@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Opdaterer collectionen "Kenneths plugins" i Outline (dok.mgai.dk) ud fra plugins/ i dette repo.
+"""Opdaterer Kenneths plugins under Fælles → Skills i Outline (dok.mgai.dk) ud fra plugins/ i dette repo.
+
+Scriptet styrer KUN siderne Skills/<plugin> for de plugins, der står i konverter.py (I_OUTLINE og KUN_PLUGIN),
+og alt under dem. Siden "Skills" selv, "Om vidensbasen" og kollegernes skills røres aldrig.
 
 Siderne rettes på stedet (samme side-id), så links, kommentarer og historik bevares.
 Uden --udfoer vises kun, hvad der ville ske (prøvekørsel).
@@ -29,10 +32,11 @@ import urllib.request
 from pathlib import Path
 
 sys.path.insert(0, str(Path(__file__).resolve().parent))
-from konverter import byg_sider  # noqa: E402
+from konverter import I_OUTLINE, KUN_PLUGIN, byg_sider  # noqa: E402
 
 URL = os.environ.get("OUTLINE_URL", "https://dok.mgai.dk")
-COLLECTION = os.environ.get("OUTLINE_COLLECTION", "Kenneths plugins")
+COLLECTION = os.environ.get("OUTLINE_COLLECTION", "Fælles")
+STYREDE = set(I_OUTLINE) | set(KUN_PLUGIN)
 REPO_ROD = Path(__file__).resolve().parents[2]
 TILSTAND = Path(__file__).resolve().parent / ".synk-tilstand.json"
 LINK = re.compile(r"\]\(([^)\s]+?\.md)\)")
@@ -100,6 +104,11 @@ def som_noegle(sti):
     return tuple(sti[:-3].split("/"))
 
 
+def styret(noegle):
+    """Er siden en af dem, scriptet ejer? (Skills/<plugin> og alt under)"""
+    return len(noegle) >= 2 and noegle[0] == "Skills" and noegle[1] in STYREDE
+
+
 def links_til_outline(sti, tekst, ids):
     """Gør relative .md-links til /doc/<id>. Returnerer (tekst, liste over links uden mål)."""
     mappe = posixpath.dirname(sti)
@@ -121,7 +130,7 @@ def links_til_outline(sti, tekst, ids):
 
 def main(argv):
     udfoer, slet, alle = "--udfoer" in argv, "--slet" in argv, "--alle" in argv
-    sider = byg_sider(REPO_ROD / "plugins")
+    sider = {s: t for s, t in byg_sider(REPO_ROD / "plugins").items() if styret(som_noegle(s))}
     print(f"{len(sider)} sider bygget fra {REPO_ROD / 'plugins'}")
 
     ol = Outline(api_noegle())
@@ -129,13 +138,16 @@ def main(argv):
     findes = ol.traeet(cid)
     print(f'Outline: "{COLLECTION}" har {len(findes)} sider')
 
+    if ("Skills",) not in findes:
+        sys.exit(f'Fandt ingen side "Skills" øverst i "{COLLECTION}".')
+
     tilstand = json.loads(TILSTAND.read_text()) if TILSTAND.exists() else {}
     if tilstand.get("collection") != cid:
         tilstand = {"collection": cid, "sider": {}}
 
     oenskes = {som_noegle(s): s for s in sider}
     nye = sorted((n for n in oenskes if n not in findes), key=len)
-    ekstra = [n for n in findes if n not in oenskes]
+    ekstra = [n for n in findes if styret(n) and n not in oenskes]
     # Slet kun de øverste ekstra sider; undersider slettes med dem
     ekstra_top = [n for n in ekstra if n[:-1] not in ekstra]
 

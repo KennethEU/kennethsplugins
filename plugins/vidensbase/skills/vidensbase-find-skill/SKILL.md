@@ -20,7 +20,7 @@ Mangler den, så løs opgaven uden og skriv én linje til sidst: "Outline er ikk
    1. Lærerens egen private collection.
    2. Lærerens faggruppe (fx Samfundsfag, Erhvervsøkonomi).
    3. Fælles.
-   4. Andre collections med skills, fx "Kenneths plugins".
+   4. Andre collections med en side "Skills".
 
    Vælg ud fra beskrivelsen. Den siger både, hvornår skill'en bruges, og hvornår den ikke gør. Passer ingen, så løs opgaven uden og sig det i én linje.
 3. **Læs hele skill-siden** med `fetch`. Følg dens trin, regler, godkendelsespunkter og skabeloner præcist.

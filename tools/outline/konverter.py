@@ -30,6 +30,8 @@ SPROG = {".py": "python", ".js": "javascript", ".json": "json", ".txt": "text",
 MAPPER = ("references", "scripts", "resources", "examples", "assets")
 STI_I_KODE = re.compile(r"`\"?((?:\$\{CLAUDE_SKILL_DIR\}/)?(?:\.\./)?[A-Za-z0-9_./-]+?)\"?`")
 REPO = "KennethEU/kennethsplugins"
+RET_IKKE = ("*Vedligeholdes af Kenneth i plugin-repoet. Ret ikke her, for siden overskrives ved næste "
+            "udgivelse. Skriv forslag som en kommentar.*")
 
 
 def frontmatter(tekst):
@@ -167,7 +169,7 @@ def byg_sider(plugins_dir):
         beskrivelse = meta.get("description", "")
         oversigt.append(f"| [{plugin}](Skills/{plugin}.md) | {len(skills)} | {beskrivelse} |")
 
-        side = [beskrivelse, "", f"Version {meta.get('version', '?')}.", "", "**Skills:**", ""]
+        side = [beskrivelse, "", f"Version {meta.get('version', '?')}. {RET_IKKE}", "", "**Skills:**", ""]
         for s in skills:
             fm, _ = frontmatter((s / "SKILL.md").read_text(encoding="utf-8"))
             side.append(f"- [{s.name}]({plugin}/{s.name}.md): {fm.get('description', '')}")
@@ -175,7 +177,7 @@ def byg_sider(plugins_dir):
 
         for s in skills:
             fm, krop = frontmatter((s / "SKILL.md").read_text(encoding="utf-8"))
-            hoved = [f"> **Skill:** `{s.name}` fra pluginet {plugin}.", ">",
+            hoved = [f"> **Skill:** `{s.name}` fra pluginet {plugin}. {RET_IKKE}", ">",
                      f"> **Beskrivelse:** {fm.get('description', '')}", "", ""]
             krop = omskriv_links(uden_h1(krop), s.name, navne)
             krop = stier_til_links(krop, s.name, sider_idx, plugin_af, 0)
