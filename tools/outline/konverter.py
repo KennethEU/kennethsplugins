@@ -128,6 +128,17 @@ def stier_til_links(tekst, skill, sider, plugin_af, dybde):
         hit = find_maal(sti_i_tekst, skill, sider)
         return lav_link(sti_i_tekst) if hit and hit[1] is not None else None
 
+    def erstat_kode(m):
+        """`sti` bliver et link. En kommando i `kode` med filstier beholdes og får links i parentes bagefter."""
+        if STI_I_KODE.fullmatch(m.group(0)):
+            return STI_I_KODE.sub(erstat, m.group(0))
+        links = []
+        for sti in STI_I_BLOK.findall(m.group(0)):
+            link = link_til(sti)
+            if link and link not in links:
+                links.append(link)
+        return m.group(0) + (" (" + ", ".join(links) + ")" if links else "")
+
     # Kodeblokke røres ikke. Nævner en blok filer fra skill'en, får den en linje med links bagefter.
     ud, i_blok, i_blok_filer = [], False, []
     for linje in tekst.split("\n"):
@@ -149,7 +160,7 @@ def stier_til_links(tekst, skill, sider, plugin_af, dybde):
                     i_blok_filer.append(link)
             ud.append(linje)
         else:
-            ud.append(STI_I_KODE.sub(erstat, linje))
+            ud.append(re.sub(r"`[^`\n]+`", erstat_kode, linje))
     return "\n".join(ud)
 
 
