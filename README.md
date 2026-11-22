@@ -100,6 +100,7 @@ Denne mappe er den eneste kilde. Herfra udgives skillene to steder:
 
 - Ret kun her. Ret aldrig direkte i Outline-kopien: den overskrives ved næste udgivelse.
 - Kør `./udgiv.sh "besked"` efter hver ændring. Det tjekker plugins, committer, pusher og opdaterer Outline. Outline-delen viser først, hvad der ændres, og spørger.
+- Efter et push: åbn claude.ai → Plugins → Tilføj → Administrer markedspladser, og klik "Søg efter opdateringer" ved kennethsplugins. Den automatiske synkronisering hentede ikke ændringer i november 2026 (sad fast på en commit fra 10/11).
 - `casespilsdesigner` og `vidensbase` er kun plugins. Casespil får en kort side i Outline, der henviser hertil. Listen står øverst i `tools/outline/konverter.py` (`I_OUTLINE` og `KUN_PLUGIN`).
 - Brug ikke både et plugin og Outline-versionen af det samme. Så kan de starte hinanden.
 - Siderne i Outline rettes på stedet (samme side-id), så links og kommentarer bevares. Sider, der ikke længere findes her, slettes (de kan gendannes fra Outlines papirkurv).
