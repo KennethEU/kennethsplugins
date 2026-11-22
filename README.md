@@ -12,7 +12,7 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 | [`cl-oevelser`](plugins/cl-oevelser) | Inspirationskatalog med CL-øvelser: find og tilpas, udvikl nye og kombinér til forløb, holdt op mod SPIL-principperne | 4 |
 | [`dida`](plugins/dida) | Lektionsplan som JSON-fil til storskærmsvisning på dida.dk/plan | 1 |
 | [`udretterdagsorden`](plugins/udretterdagsorden) | Udretterdagsordener til gruppearbejde: selvkørende protokol med roller, individuel tænketid, pause og fælles produkt, til dida.dk eller Word, med idésparring om struktur | 3 |
-| [`modulplanlaegger`](plugins/modulplanlaegger) | Forløb og modulrækker ud fra didaktisk viden: mål, progression, evaluering og fagdidaktik, med videresendelse til de andre plugins | 2 |
+| [`modulplanlaegger`](plugins/modulplanlaegger) | Forløb og modulrækker ud fra didaktisk viden: mål, progression, evaluering og fagdidaktik, med videresendelse til de andre plugins. Undervisningsbeskrivelser og dækning af læreplanen | 3 |
 
 ## Kommandoer
 
@@ -44,6 +44,7 @@ Hver skill hedder gruppen først og så det, den gør (`casespil-`, `bloom-`, `b
 | `/udretterdagsorden:dagsorden-lav` | Udretterdagsorden til gruppearbejde ud fra emne, fag og tid, til dida.dk eller Word |
 | `/udretterdagsorden:dagsorden-ide` | Foreslår 2 til 3 strukturer for gruppearbejdet og laver derefter dagsordenen |
 | `/modulplanlaegger:didaktik-planlaeg-forloeb` | Planlægger et forløb eller en modulrække og sender modulerne videre til de andre skills |
+| `/modulplanlaegger:undervisningsbeskrivelse` | Holder undervisningsbeskrivelsen ajour efter hvert modul, tjekker dækningen af læreplanen og samler den færdige beskrivelse efter UVM's krav |
 
 `casespil-designprincipper` og `casespil-projektregler` (casespil), `bloom-spoergsmaalsregler` (Bloom), `blooket-quizformat` (Blooket), `klasseledelse-principper` (klasseledelse), `cl-principper` (CL), `dagsorden-principper` (udretterdagsorden) og `didaktik-principper` (modulplanlægger) er baggrundsviden, som de andre skills læser. De kan også udløses direkte, men står ikke i kommandomenuen.
 
@@ -172,6 +173,11 @@ Rettelser efter en gennemgang, hvor de ti skills blev læst mod hinanden. De fle
 - **Tid:** nyt afsnit "Tid: arbejdsregler". Lektiespørgsmål får en linje med læsetid og svartid, og et sæt arbejdsspørgsmål får anslået tid og de spørgsmål, der kan springes over. Tallene er arbejdsregler, ikke afprøvet i klassen.
 - **Kun det, klassen har mødt:** ny regel 9. Teorier og begreber uden for teksten og forløbet mærkes "forudsætter ...".
 - **Facit** har nu elevens typiske forkerte eller halve svar under hvert punkt.
+
+### modulplanlaegger 0.3.0 (november 2026)
+- Ny skill `undervisningsbeskrivelse` med tre opgaver: opdatér afsnittet "Til undervisningsbeskrivelsen" på forløbssiden efter hvert modul, dækningstjek af læreplanens faglige mål og kernestof for et hold, og saml den færdige beskrivelse til Lectio eller UVM's skabelon med tjekliste.
+- Krav fra UVM's vejledning (februar 2026) i `references/krav.md`. Kun gennemført undervisning tæller, mål og kernestof citeres ordret fra læreplanen, og forlagenes e-bøger åbnes aldrig for at finde sidetal.
+- `didaktik-planlaeg-forloeb` henviser til den nye skill.
 
 ### bloom 1.4.0, blooket 1.3.0, cl-oevelser 1.5.1, klasseledelse 1.13.1 og udretterdagsorden 1.1.1 (november 2026)
 - **Afprøvning før aflevering:** skillene prøver nu selv det af, eleverne skal svare på, i stedet for kun at tjekke formuleringen. Baggrunden er et sæt lektiespørgsmål, hvor tre af fire først faldt, da læreren selv bad om en elevtest.
