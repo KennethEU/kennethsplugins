@@ -144,6 +144,10 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.14.3 (november 2026)
+
+- Effekten af klasseledelsesprogrammer er rettet til g = 0,23, som er hovedeffekten i opdateringen af metaanalysen (Korpershoek m.fl. 2026).
+
 ### bloom 1.6.1, blooket 1.3.1, cl-oevelser 1.6.2, dida 1.1.2, klasseledelse 1.14.2, modulplanlaegger 0.4.1 og udretterdagsorden 1.2.1 (november 2026)
 
 Resten af gennemgangen af skills i vidensbasen.

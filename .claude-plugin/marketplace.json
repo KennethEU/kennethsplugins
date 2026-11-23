@@ -36,7 +36,7 @@
       "name": "klasseledelse",
       "source": "./plugins/klasseledelse",
       "description": "Planlægning og vurdering af lektioner og moduler, så alle elever deltager: deltagelseskort, konkrete omskrivninger og principper holdt op mod forskningen.",
-      "version": "1.14.2"
+      "version": "1.14.3"
     },
     {
       "name": "cl-oevelser",

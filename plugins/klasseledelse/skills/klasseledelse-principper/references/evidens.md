@@ -166,7 +166,7 @@ Gennemgået november 2026 ud fra resuméer og omtaler. Fuldteksterne er ikke læ
 - Spilleregler og rutiner bør etableres tidligt, men alene har de kun en lille effekt på adfærden. Eleverne efterspørger, at lærerne håndterer dem ens. **Moderat.** [EVA 2019, s. 8](https://uvm.dk/media/45ppq5sy/191030-vidensnotat-klasseledelse-i-gym.pdf)
 - Autonomistøttende undervisning, hvor begrundelser er ét element, kan læres og giver en række gevinster. **Stærk** som samlet tilgang, **moderat** for begrundelser alene. [Reeve og Cheon 2021](https://selfdeterminationtheory.org/wp-content/uploads/2021/05/2021_ReeveCheon_AutonomySupportive.pdf)
 - Medansvar, fx valg af produkt eller arbejdsmetode, har positiv betydning. Det trækker imod en meget stram linje og bør tænkes ind. **Moderat.** [EVA 2019, s. 11](https://uvm.dk/media/45ppq5sy/191030-vidensnotat-klasseledelse-i-gym.pdf)
-- Klasseledelsesprogrammer har en lille gennemsnitlig effekt (g = 0,22), og smalle indsatser ser ud til at virke bedre end brede. Grundlaget er grundskolen, så det kan ikke overføres direkte. **Moderat.** [Korpershoek m.fl. 2026, opdatering af metaanalysen fra 2016](https://research.rug.nl/en/publications/an-update-of-the-meta-analysis-of-the-effects-of-classroom-manage/)
+- Klasseledelsesprogrammer har en lille gennemsnitlig effekt (g = 0,23), og smalle indsatser ser ud til at virke bedre end brede. Grundlaget er grundskolen, så det kan ikke overføres direkte. **Moderat.** [Korpershoek m.fl. 2026, opdatering af metaanalysen fra 2016](https://research.rug.nl/en/publications/an-update-of-the-meta-analysis-of-the-effects-of-classroom-manage/)
 
 ### Tid, grupper og noter
 
