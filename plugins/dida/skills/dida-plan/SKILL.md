@@ -51,6 +51,7 @@ Spørg: "Passer trinene?"
 - **`instruction` er skrevet til eleverne,** med "du" eller "I", i korte linjer. Det er opgaven, færdigformuleret, så de kan gå i gang uden at spørge.
 - **`teacherNote` er til læreren:** replikker, hvad man skal gå efter, og hvad der kan skæres. Alt, hvad klassen ikke skal se, hører til her.
 - **`doneWhen`** er noget, eleverne selv kan se, fx "Kædearket er udfyldt".
+- **Sprog til eleverne:** skriv "gruppe" og "grupper", aldrig "team", og brug ingen tankestreger.
 - **Ingen klokkeslæt** som "26-37". Kun varighed.
 - **Tiderne** er hele minutter og summer til modulets længde. Passer de ikke, så sig det i Gate 1.
 

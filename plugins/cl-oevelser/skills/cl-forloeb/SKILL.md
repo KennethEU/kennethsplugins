@@ -34,7 +34,7 @@ Vælg efter disse regler:
 
 - **Rød tråd:** hver øvelse skal bruge noget fra den forrige. Ellers er det blot flere aktiviteter i træk.
 - **Progression:** fra at hente stof frem, til at bruge det, til at vurdere eller producere.
-- **Variation:** veksl mellem stille og bevægelse, og mellem par og teams.
+- **Variation:** veksl mellem stille og bevægelse, og mellem par og grupper.
 - **Få strukturer:** en ny struktur tager tid at lære. Brug højst to nye pr. modul, og gentag hellere en, klassen kender.
 - **Lærerens plads:** læg korte gennemgange ind, hvor eleverne har brug for dem. Forløbet er ikke bedre, fordi det kun består af CL.
 
@@ -62,7 +62,7 @@ Lav tjekket stille, og ret det, der ikke holder.
 - Virker grupperne og hver øvelse, også når fire elever mangler?
 - Bruger forløbet kun teorier og teoretikere, klassen har mødt, eller står de i antagelseslinjen?
 - Er tal, aktuelle forhold og usikre svar samlet i linjen "Tjek"?
-- Ved de par eller teams, der er færdige først, hvad de skal?
+- Ved de par eller grupper, der er færdige først, hvad de skal?
 - Er alle øvelser med svag SPIL skærpet?
 - Bygger øvelserne reelt på hinanden?
 - Har du prøvet spørgsmål og opgaver af? Skriv svaret selv, og svar så som en middelmådig elev på den tid, øvelsen giver. Kan du ikke skrive ét sikkert svar, eller er et tomt svar nok, så ret spørgsmålet.

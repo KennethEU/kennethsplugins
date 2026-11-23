@@ -17,7 +17,7 @@ Find den rigtige øvelse til situationen, og gør den klar til brug.
 
 1. **Læs** `${CLAUDE_SKILL_DIR}/../cl-principper/SKILL.md` og `${CLAUDE_SKILL_DIR}/../cl-principper/references/oevelsesbank.md`.
 
-**Skal kendes:** emne og formål, eller navnet på en øvelse og emnet. Følg "Arbejdsgang" i principperne: i hurtig-tilstand springer du Gate 1 og 2 over, vælger selv den øvelse, der passer bedst, og nævner ét alternativ i den afsluttende linje. Kender du ikke elevtallet, så skriv en grupperegel, der virker for 18 til 28 elever, fx "teams á 4, og går det ikke op, så ét eller to teams á 3". Tid og lokale antager du ud fra banken, og du skriver antagelsen øverst.
+**Skal kendes:** emne og formål, eller navnet på en øvelse og emnet. Følg "Arbejdsgang" i principperne: i hurtig-tilstand springer du Gate 1 og 2 over, vælger selv den øvelse, der passer bedst, og nævner ét alternativ i den afsluttende linje. Kender du ikke elevtallet, så skriv en grupperegel, der virker for 18 til 28 elever, fx "grupper à 4, og går det ikke op, så én eller to grupper à 3". Tid og lokale antager du ud fra banken, og du skriver antagelsen øverst.
 
 2. **Vælg spor:**
    - **Læreren vil bare se muligheder**, fx "hvad har du?" eller "giv mig lidt inspiration": vis de 8 til 10 øvelser fra banken, der passer bedst til det, læreren nævner, grupperet efter formål med én linje pr. øvelse, og tilbyd resten. Banken er stor, så vis ikke det hele på én gang. Stil ingen spørgsmål først. Slut med at spørge, hvad næste time handler om.
@@ -73,7 +73,7 @@ Lav tjekket stille, og ret det, der ikke holder.
 - Passer elevtal, grupper og tid, også når fire elever mangler?
 - Bruger kort og spørgsmål kun teorier og teoretikere, klassen har mødt, eller står de i antagelseslinjen?
 - Er tal, aktuelle forhold og usikre svar samlet i linjen "Tjek"?
-- Ved de par eller teams, der er færdige først, hvad de skal?
+- Ved de par eller grupper, der er færdige først, hvad de skal?
 - Er alle spørgsmål skrevet færdige, og trækker de på målet?
 - Har du prøvet spørgsmål og kort af? Skriv svaret selv, og svar så som en middelmådig elev på den tid, øvelsen giver. Kan du ikke skrive ét sikkert svar, eller er et tomt svar nok, så ret spørgsmålet.
 - Står der, hvordan eleverne får noter?

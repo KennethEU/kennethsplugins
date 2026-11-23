@@ -36,7 +36,7 @@ Læs lærerens input, og udtræk følgende:
 **Valgfrit (brug standardværdi, hvis ikke angivet):**
 | Parameter | Standardværdi | Eksempler |
 |---|---|---|
-| Klasse | Spørg kun, hvis relevant | "1muse", "2a", "3x" |
+| Klasse | Spørg kun, hvis relevant | "1a", "2b", "3x" |
 | Gruppestørrelse | 3 | "4 elever", "par" |
 | Gruppenavne | Ingen (nummererede) | "Liberalismen, Konservatismen, ..." |
 | Differentiering | Nej | "hver gruppe har sin ideologi", "alle samme" |
@@ -93,7 +93,7 @@ Byg dagsordenen efter disse retningslinjer:
 - Brug `note` til vigtige præciseringer. Skriv *uden* "OBS:"-præfiks.
 - Brug `docInstruction` til separate pas-på-doc-instruktioner (vises i Word/markdown, flettes ind i dida.dk).
 - Materialereferencer skal være elevvendte: "Jeres lektie (afsnit X: Titel)", ikke bogkoder som "Columbus 4.5".
-- Brug lærerens navn, hvis du kender det: "deler med gruppen og Kenneth", ikke "deler med gruppen og læreren".
+- Brug lærerens navn, hvis du kender det: "deler med gruppen og [lærerens navn]", ikke "deler med gruppen og læreren". Kender du ikke navnet, så skriv "jeres lærer".
 - Roller bruges kun til procesinstruktioner (hvem styrer, hvem skriver), aldrig til at fordele fagligt indhold. Brug en neutral punktliste til faglig fordeling ("Fordel disse emner mellem jer").
 - Brug `**fed tekst**` til at fremhæve nøgleord i instruktioner (virker i dida.dk og markdown).
 

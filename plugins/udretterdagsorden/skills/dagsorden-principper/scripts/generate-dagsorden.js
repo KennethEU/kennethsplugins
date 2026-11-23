@@ -124,6 +124,7 @@ function normalize(data) {
     klasse: data.klasse || '',
     total_tid: data.totalTime || data.totalTid || data.total_tid,
     roller: data.roles || data.roller,
+    groupLabels: data.groupLabels || [],
     trin: (data.steps || data.trin || []).map((t, i) => {
       // Flet docInstruction ind i instruction hvis det er nyt format
       let hvordan = t.hvordan || t.instruction || t.instruktion || '';
@@ -139,6 +140,7 @@ function normalize(data) {
         obs: t.note || t.obs || null,
         docInstruktion: t.hvordan ? (t.docInstruction || t.docInstruktion || null) : null,
         tid: t.duration || t.tid,
+        gruppeInstr: t.groupInstructions || null,
       };
     }),
   };
@@ -155,6 +157,12 @@ const font = (text, opts = {}) => new TextRun({
   color: opts.color || DESIGN.table.content.textColor,
   bold: opts.bold || false,
 });
+
+// Tekst med **fed** bliver til flere runs, så stjernerne ikke står i Word.
+const richRuns = (text, opts = {}) => (text || "").split(/(\*\*[^*]+\*\*)/).filter(s => s).map(s =>
+  s.startsWith("**") && s.endsWith("**") && s.length > 4
+    ? font(s.slice(2, -2), { ...opts, bold: true })
+    : font(s, opts));
 
 const border = { style: BorderStyle.SINGLE, size: 1, color: DESIGN.table.borderColor };
 const borders = { top: border, bottom: border, left: border, right: border };
@@ -221,8 +229,10 @@ function buildDocument(data) {
     children: [
       font("Fag: ", { size: D.meta.size, color: D.meta.color, bold: D.meta.labelBold }),
       font(`${data.fag}   `, { size: D.meta.size, color: D.meta.color }),
-      font("Klasse: ", { size: D.meta.size, color: D.meta.color, bold: D.meta.labelBold }),
-      font(`${data.klasse}   `, { size: D.meta.size, color: D.meta.color }),
+      ...(data.klasse ? [
+        font("Klasse: ", { size: D.meta.size, color: D.meta.color, bold: D.meta.labelBold }),
+        font(`${data.klasse}   `, { size: D.meta.size, color: D.meta.color }),
+      ] : []),
       font("Total tid: ", { size: D.meta.size, color: D.meta.color, bold: D.meta.labelBold }),
       font(`${data.total_tid} min`, { size: D.meta.size, color: D.meta.color }),
     ],
@@ -303,7 +313,7 @@ function buildDocument(data) {
         const isFirstInBlock = li === 0 && bi > 0;
         hvordanRuns.push({
           spacing: isFirstInBlock ? 100 : 0,
-          runs: [font(lines[li], { size: T.content.textSize, color: T.content.textColor })],
+          runs: richRuns(lines[li], { size: T.content.textSize, color: T.content.textColor }),
         });
       }
     }
@@ -314,7 +324,7 @@ function buildDocument(data) {
         spacing: 100,
         runs: [
           font("OBS: ", { size: T.content.textSize, color: T.obs.labelColor, bold: T.obs.labelBold }),
-          font(trin.obs, { size: T.content.textSize, color: T.obs.textColor }),
+          ...richRuns(trin.obs, { size: T.content.textSize, color: T.obs.textColor }),
         ],
       });
     }
@@ -323,7 +333,23 @@ function buildDocument(data) {
     if (trin.docInstruktion) {
       hvordanRuns.push({
         spacing: 100,
-        runs: [font(trin.docInstruktion, { size: T.content.textSize, color: T.content.textColor })],
+        runs: richRuns(trin.docInstruktion, { size: T.content.textSize, color: T.content.textColor }),
+      });
+    }
+
+    // Gruppeinstruktioner (differentieret dagsorden): én linje pr. gruppe
+    if (trin.gruppeInstr && typeof trin.gruppeInstr === "object") {
+      const noegler = Object.keys(trin.gruppeInstr).sort((a, b) => Number(a) - Number(b));
+      noegler.forEach((k, ki) => {
+        const label = data.groupLabels[Number(k) - 1];
+        const navn = label ? `Gruppe ${k} (${label}): ` : `Gruppe ${k}: `;
+        hvordanRuns.push({
+          spacing: ki === 0 ? 100 : 40,
+          runs: [
+            font(navn, { size: T.content.textSize, color: T.content.textColor, bold: true }),
+            ...richRuns(trin.gruppeInstr[k], { size: T.content.textSize, color: T.content.textColor }),
+          ],
+        });
       });
     }
 

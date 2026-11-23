@@ -22,7 +22,7 @@ Denne skill ejer niveauet **forløb og modulrække**: valg af didaktisk tilgang,
 - Én lektion med drejebog: `klasseledelse-planlaeg-lektion` og `klasseledelse-principper`.
 - Spørgsmål til en tekst og taksonomi: `bloom-spoergsmaalsregler` og de andre bloom-skills.
 - Konkrete samarbejdsøvelser: `cl-oevelser`.
-- Casespil og rollespil: `casespilsdesigner`.
+- Casespil og rollespil: pluginet `casespilsdesigner` (findes kun som plugin, ikke i vidensbasen).
 - Plan på storskærm: `dida-plan`.
 
 ## Referencefiler
@@ -96,7 +96,7 @@ I begge tilstande gælder reglerne om indhold: find ikke på indhold fra tekster
 
 ### Forløbsmappen
 
-Forløbet gemmes som filer efter `didaktik-planlaeg-forloeb/references/forloebsmappe.md`. De andre undervisningsplugins læser `forloeb.md`, når den findes, og gemmer deres materialer i forløbets mappe med modulnummeret først i filnavnet. Kun `didaktik-planlaeg-forloeb` retter i `forloeb.md`.
+Forløbet gemmes i vidensbasen eller i en mappe efter `didaktik-planlaeg-forloeb/references/forloebsmappe.md`. De andre undervisningsskills læser forløbssiden eller `forloeb.md`, når den findes, og gemmer deres materialer ved forløbet: under modulsiden eller i mappen med modulnummeret først i filnavnet. Kun `didaktik-planlaeg-forloeb` retter i selve forløbet.
 
 ### Når en anden skill sender videre
 

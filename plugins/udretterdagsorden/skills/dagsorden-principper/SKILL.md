@@ -154,7 +154,8 @@ Hvert trin bør kun have **ét klart formål**. Bland ikke overblik og analyse i
 5. **Undgå fagord, der skal forklares.** Dagsordenen skal være selvkørende.
 6. **Brug OBS:** til vigtige præciseringer og særlige instruktioner.
 7. **Materialereferencer skal være elevvendte.** Skriv "Jeres lektie (afsnit 4.5: Levevilkår)", ikke "Columbus 4.5" eller andre interne bogkoder. Eleverne kender ikke forlagsbetegnelser.
-8. **Brug lærerens navn** i stedet for "læreren", hvis du kender det fra samtalen eller en CLAUDE.md. Skriv "deler med gruppen og Kenneth", ikke "deler med gruppen og læreren". Det er mere personligt og klart. Kender du ikke navnet, så spørg én gang, eller skriv "jeres lærer".
+8. **Brug lærerens navn** i stedet for "læreren", hvis du kender det fra samtalen eller lærerens egne indstillinger. Skriv "deler med gruppen og [lærerens navn]", ikke "deler med gruppen og læreren". Det er mere personligt og klart. Kender du ikke navnet, så spørg én gang, eller skriv "jeres lærer".
+9. **Skriv "grupper", ikke "teams",** og brug ingen tankestreger. Pas på bøjningen: "gruppen er enig", "jeres gruppes svar".
 
 ---
 
@@ -256,7 +257,7 @@ Dagsordenen er til gruppearbejdet på elevernes egne skærme. En lektionsplan ti
       "heading": "Rollevalg",
       "type": "normal",
       "duration": 3,
-      "instruction": "1) Fordel roller efter kriterierne ovenfor.\n2) Pas-på-doc opretter et Google Doc og deler med gruppen og Kenneth.",
+      "instruction": "1) Fordel roller efter kriterierne ovenfor.\n2) Pas-på-doc opretter et Google Doc og deler med gruppen og jeres lærer.",
       "note": null,
       "docInstruction": null,
       "requiresAnswer": false,
@@ -358,15 +359,15 @@ Kør altid valideringsscriptet, før du leverer JSON. Det fanger tidsfejl og str
 python3 "${CLAUDE_SKILL_DIR}/scripts/validate-dagsorden.py" dagsorden.json
 ```
 
-Exit 0 = OK, exit 2 = fejl (med besked om, hvad der skal rettes). Kriterierne:
-1. `totalTime` == sum af alle `steps[].duration`
-2. Trin 1 er altid rollevalg (2 til 4 min)
-3. Pause er med, hvis totalTime > 25
-4. Alle trin med gruppeproduktion har `docInstruction` eller nævner pas-på-doc i `instruction`
-5. Der er mindst én individuel fase (tavs læsning/notering) før første gruppefase
-6. `note`-felter indeholder ikke "OBS:"-præfiks (det tilføjes automatisk)
-7. `groupCount` matcher længden af `groupLabels` (hvis begge er angivet)
-8. `groupInstructions`-nøgler er strenge ("1", "2") og matcher `groupCount`
+Exit 0 = OK, exit 2 = fejl (med besked om, hvad der skal rettes). Advarsler (⚠️) stopper ikke, men se på dem. Kriterierne:
+1. `totalTime` == sum af alle `steps[].duration` (fejl)
+2. Trin 1 er altid rollevalg, højst 4 min (fejl over 4 min, advarsel hvis overskriften ikke nævner roller)
+3. Pause er med, hvis totalTime > 25 (fejl)
+4. Alle fælles trin med gruppeproduktion har `docInstruction` eller nævner pas-på-doc i `instruction` (advarsel; individuelle trin tælles ikke)
+5. Der er mindst én individuel fase (tavs læsning/notering) før første gruppefase (advarsel)
+6. `note`-felter indeholder ikke "OBS:"-præfiks, det tilføjes automatisk (advarsel)
+7. `groupCount` matcher længden af `groupLabels`, hvis begge er angivet (fejl)
+8. `groupInstructions`-nøgler er strenge ("1", "2") inden for `groupCount` (fejl), og alle grupper har en instruktion (advarsel)
 
 ---
 

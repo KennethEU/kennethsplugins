@@ -15,7 +15,7 @@ Kilde: SPIL-principperne er gengivet med egne ord efter Jette Stenlev og Spencer
 
 | Princip | Hvad det betyder | Kontrolspørgsmål |
 |---------|------------------|------------------|
-| **S**amtidig interaktion | Alle par eller teams arbejder på samme tid, ikke én samtale ad gangen | Hvor stor en andel af eleverne er aktive lige nu? I teams af fire er det ca. 25 %, i par ca. 50 %. |
+| **S**amtidig interaktion | Alle par eller grupper arbejder på samme tid, ikke én samtale ad gangen | Hvor stor en andel af eleverne er aktive lige nu? I grupper af fire er det ca. 25 %, i par ca. 50 %. |
 | **P**ositiv indbyrdes afhængighed | Eleverne har fordel af, at de andre klarer sig godt, og kan ikke løse opgaven alene | Hjælper de andres succes mig? Har jeg brug for de andre, og har de brug for mig? |
 | **I**ndividuel ansvarlighed | Hver elev skal jævnligt vise sin egen forståelse for andre | Kræves der individuel faglig optræden for andre, eller kan man gemme sig? |
 | **L**ige deltagelse | Reglerne får eleverne til at skiftes, så alle bidrager nogenlunde lige meget | Bidrager alle lige meget? Hvad i reglerne sikrer det? |
@@ -77,18 +77,18 @@ En klasse har ikke nødvendigvis haft de teorier og teoretikere, der plejer at h
 
 Det er praksisråd, ikke forskning. Der mangler næsten altid nogen på dagen, så en øvelse, der kun virker på det oplyste elevtal, virker ikke.
 
-- **Regel på et spænd:** skriv gruppereglen, så den virker fra ca. fire færre end det oplyste elevtal og op til det fulde tal, fx "teams á 4, og går det ikke op, så ét eller to teams á 3". Prøv den selv af på hvert tal i spændet. Ingen må ende alene.
+- **Regel på et spænd:** skriv gruppereglen, så den virker fra ca. fire færre end det oplyste elevtal og op til det fulde tal, fx "grupper à 4, og går det ikke op, så én eller to grupper à 3". Prøv den selv af på hvert tal i spændet. Ingen må ende alene.
 - **Dan grupperne på dagen** ved at tælle af, medmindre sammensætningen betyder noget.
 - **Par:** skriv, hvad der sker ved ulige elevtal: en trio, eller læreren er med.
 - **Kort, der hører sammen:** print til det fulde elevtal, og skriv, hvad læreren tager ud, når der mangler elever. Tag hele par eller hele sæt ud, så ingen står med et kort uden makker.
-- **Faste dele,** fx ekspertgrupper og puslespil: skriv, hvad der sker, når et team mangler en ekspert. To teams kan slås sammen, eller teamet får ekspertens ark.
+- **Faste dele,** fx ekspertgrupper og puslespil: skriv, hvad der sker, når en gruppe mangler en ekspert. To grupper kan slås sammen, eller gruppen får ekspertens ark.
 - **Forberedelse hjemme:** øvelsen må ikke falde, fordi én elev med en bestemt del er væk.
 
 Saml det i linjen "Mangler der elever" i beskrivelsen.
 
 ## Dem, der er færdige først
 
-Par og teams bliver ikke færdige samtidig. Skriv ind i trinnet, hvad de hurtige gør, så de ikke venter: et ekstra kort, et sværere spørgsmål, eller at de skriver deres svar ind i noterne. Det skal bygge videre på opgaven og ikke være en ny aktivitet.
+Par og grupper bliver ikke færdige samtidig. Skriv ind i trinnet, hvad de hurtige gør, så de ikke venter: et ekstra kort, et sværere spørgsmål, eller at de skriver deres svar ind i noterne. Det skal bygge videre på opgaven og ikke være en ny aktivitet.
 
 ## Kvalitetskrav
 
@@ -136,7 +136,7 @@ SPIL-tjek pr. princip, variationer og tips hører til den fulde beskrivelse.
 ### Oversigt
 - **Formål:** [hvad opnår eleverne?]
 - **Tid:** [samlet tid]
-- **Gruppestørrelse:** [fordeling for netop denne klasse, fx 28 elever = 7 teams á 4]
+- **Gruppestørrelse:** [fordeling for netop denne klasse, fx 28 elever = 7 grupper à 4]
 - **Materialer:** [hvad skal forberedes?]
 - **Lokale:** [krav til opstilling]
 
@@ -242,3 +242,4 @@ Kommer opgaven fra en anden skill, eller ligger der en plan i samtalen, som lær
 - Find ikke på indhold i en tekst, du ikke har læst. Bed om teksten eller et kort resumé.
 - Sig tydeligt, hvad der kommer fra banken, og hvad du selv har lavet. Omtal ikke egne idéer som etablerede Kagan-strukturer.
 - Skriv uden tankestreger.
+- Skriv "gruppe" og "grupper" om eleverne, aldrig "team". Pas på bøjningen: "gruppen er enig", "jeres gruppes svar".

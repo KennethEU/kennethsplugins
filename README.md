@@ -144,6 +144,16 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### udretterdagsorden 1.2.0, modulplanlaegger 0.4.0, cl-oevelser 1.6.1, dida 1.1.1 og klasseledelse 1.14.1 (november 2026)
+
+Rettelser efter gennemgangen af skills i vidensbasen, så de virker for kolleger og ikke kun for Kenneth.
+
+- udretterdagsorden: validatoren tjekker nu grupper (`groupCount`, `groupLabels`, `groupInstructions`), og individuelle trin giver ikke længere advarsel om pas-på-doc. Word-udgaven viser gruppeinstruktioner og **fed** og springer en tom klasse over. "Kenneth" er fjernet fra eksemplerne. Referenceeksemplet følger nu skillens egne regler. Kriterielisten siger, hvad der er fejl, og hvad der er advarsler. Ny sprogregel om grupper.
+- modulplanlaegger: forløbet gemmes i vidensbasen, når connectoren er tilsluttet, ellers i en mappe. Skills findes som plugin eller som side i vidensbasen. powerpoint-stil er fjernet, og casespil er markeret som kun plugin.
+- cl-oevelser: "team" er skiftet til "gruppe" i alle skills og i øvelsesbanken, "á" til "à". Ny sprogregel.
+- dida: sprogregel om grupper og ingen tankestreger.
+- klasseledelse: henvisningen til casespil-konsistenstjek siger, at den ligger i pluginet casespilsdesigner.
+
 ### bloom 1.6.0 (november 2026)
 - **Afprøvningen er ikke længere stille.** Første brug viste, at den stille afprøvning var for mild: et lektiespørgsmål, der kunne skrives af og besvares uden at have læst, slap igennem og faldt først, da læreren bad om at se testen. Nu efterlader afprøvningen et spor i svaret.
 - Lektiespørgsmål har facit med sted i teksten under hvert spørgsmål ("Svar: ... (side 3)"). Kan facit ikke skrives, afleveres spørgsmålet ikke.

@@ -295,7 +295,7 @@ Gennemgået november 2026. Gengivet med egne ord efter 15 PDF-filer fra tidsskri
 - Hold fokus på hvad der kommer *ind* i processen (landenes interesser og krav) frem for kun på resultatet (J. Andersen om EU).
 - Giv alle roller meningsfulde faglige opgaver og tilfældige, unikke roller (Europe at Work, J. Andersen).
 - Forenkl: færre lande og aktører, opfundne lande, så eleverne ikke hænger fast i nationale perspektiver.
-- Brug `casespilsdesigner` til at designe konkrete rollespil og digitale tillæg.
+- Brug pluginet `casespilsdesigner` (kun som plugin, ikke i vidensbasen) til at designe konkrete rollespil og digitale tillæg.
 
 **Hvad det betyder for planen**
 

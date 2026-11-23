@@ -1,6 +1,6 @@
 ---
 name: klasseledelse-vurder-plan
-description: "Vurderer en eksisterende lektions- eller modulplan i gymnasiet med deltagelseskort og foreslår konkrete omskrivninger, så alle elever kommer med. Brug når læreren siger \"vurdér min lektionsplan\", \"kig på min plan\", \"hvordan får jeg alle med i den her time\", \"mine elever er passive i det her modul\", \"er min time for lærerstyret\", eller indsætter en timeplan, der skal forbedres. Brug ikke til at lave en plan fra bunden (klasseledelse-planlaeg-lektion), til at vurdere arbejdsspørgsmål (bloom-vurder-spoergsmaal), til casespil (casespil-konsistenstjek) eller til observation af en bestemt lærer."
+description: "Vurderer en eksisterende lektions- eller modulplan i gymnasiet med deltagelseskort og foreslår konkrete omskrivninger, så alle elever kommer med. Brug når læreren siger \"vurdér min lektionsplan\", \"kig på min plan\", \"hvordan får jeg alle med i den her time\", \"mine elever er passive i det her modul\", \"er min time for lærerstyret\", eller indsætter en timeplan, der skal forbedres. Brug ikke til at lave en plan fra bunden (klasseledelse-planlaeg-lektion), til at vurdere arbejdsspørgsmål (bloom-vurder-spoergsmaal), til casespil (casespil-konsistenstjek i pluginet casespilsdesigner) eller til observation af en bestemt lærer."
 argument-hint: "[lektionsplan eller modulplan]"
 allowed-tools:
   - Read

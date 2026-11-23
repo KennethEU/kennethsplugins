@@ -31,6 +31,7 @@ def normalize(data):
             "obs": t.get("note") or t.get("obs", ""),
             "docInstruktion": doc_instr if t.get("hvordan") else "",
             "tid": t.get("duration") or t.get("tid", 0),
+            "gruppe_instr": t.get("groupInstructions"),
         })
     return {
         "emne": data.get("title") or data.get("topic") or data.get("titel") or data.get("emne", ""),
@@ -39,6 +40,8 @@ def normalize(data):
         "total_tid": data.get("totalTime") or data.get("totalTid") or data.get("total_tid", 0),
         "roller": roles,
         "trin": normalized_steps,
+        "group_count": data.get("groupCount") or 0,
+        "group_labels": data.get("groupLabels"),
     }
 
 
@@ -75,7 +78,7 @@ def validate(raw_data):
         return errors, warnings
 
     # Trin 1 skal være rollevalg
-    if trin[0].get("hvad", "").lower().find("roller") == -1:
+    if "rolle" not in trin[0].get("hvad", "").lower():
         warnings.append("Trin 1 er normalt rollevalg — overvej om det mangler")
 
     if trin[0].get("tid", 0) > 4:
@@ -132,8 +135,8 @@ def validate(raw_data):
 
     # ── Pas-på-doc nævnt ──
     for t in trin:
-        if t.get("type") == "pause":
-            continue
+        if t.get("type") in ("pause", "individuel"):
+            continue  # Individuelle trin har ingen fælles produktion
         if t.get("nr", 0) == 1:
             continue  # Rollevalg
 
@@ -163,6 +166,32 @@ def validate(raw_data):
     for t in trin:
         if t.get("type") not in ("normal", "pause", "individuel"):
             errors.append(f"Trin {t.get('nr', '?')}: ukendt type '{t.get('type', 'MANGLER')}'")
+
+    # ── Grupper (kriterie 7 og 8) ──
+    gc = data["group_count"]
+    labels = data["group_labels"]
+    if not isinstance(gc, int) or gc < 0:
+        errors.append(f"groupCount skal være et helt tal, 0 eller mere (fandt {gc!r})")
+        gc = 0
+    if labels is not None and gc and len(labels) != gc:
+        errors.append(f"groupCount er {gc}, men groupLabels har {len(labels)} navne")
+    gyldige = {str(i) for i in range(1, gc + 1)}
+    for t in trin:
+        gi = t.get("gruppe_instr")
+        if not gi:
+            continue
+        if not gc:
+            errors.append(f"Trin {t.get('nr', '?')}: har groupInstructions, men groupCount er 0")
+            continue
+        if not isinstance(gi, dict):
+            errors.append(f"Trin {t.get('nr', '?')}: groupInstructions skal være et objekt som {{\"1\": \"...\"}}")
+            continue
+        noegler = set(gi.keys())
+        if noegler - gyldige:
+            errors.append(f"Trin {t.get('nr', '?')}: groupInstructions har ukendte grupper {sorted(noegler - gyldige)} "
+                          f"(gyldige: \"1\" til \"{gc}\")")
+        if gyldige - noegler:
+            warnings.append(f"Trin {t.get('nr', '?')}: groupInstructions mangler gruppe {sorted(gyldige - noegler)}")
 
     # ── OBS prefix ──
     for t in trin:

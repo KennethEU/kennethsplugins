@@ -1,6 +1,6 @@
 ---
 name: didaktik-planlaeg-forloeb
-description: "Modulplanlægger: planlægger forløb i gymnasiet ud fra didaktisk viden, med tre indgange: hele modulrækken på én gang, kom i gang med et nyt forløb (kort ramme og skitse, kun første modul i detaljer) eller næste modul i et forløb, læreren er i gang med. Afklarer fag, niveau, mål og gældende læreplan, foreslår ramme, progression og evaluering, sender modulerne videre til de andre skills (drejebog, spørgsmål, CL, casespil, slides, quiz, dida-plan) og gemmer forløbet som filer i en forløbsmappe på computeren. Brug når læreren siger \"planlæg et forløb\", \"modulrække\", \"modulplan\", \"nyt forløb om\", \"jeg starter et forløb om\", \"første modul i et nyt forløb\", \"næste modul i forløbet\", \"modul 3 i mit forløb\" eller vil have didaktisk sparring på et forløb. Brug ikke til et enkeltstående modul uden et forløb (klasseledelse-planlaeg-lektion), til en time bygget på spørgsmål til en fagtekst (bloom-planlaeg-time), til et forløb af CL-øvelser alene (cl-forloeb), til undervisningsbeskrivelser og dækning af læreplanen (undervisningsbeskrivelse) eller til casespil."
+description: "Modulplanlægger: planlægger forløb i gymnasiet ud fra didaktisk viden, med tre indgange: hele modulrækken på én gang, kom i gang med et nyt forløb (kort ramme og skitse, kun første modul i detaljer) eller næste modul i et forløb, læreren er i gang med. Afklarer fag, niveau, mål og gældende læreplan, foreslår ramme, progression og evaluering, sender modulerne videre til de andre skills (drejebog, spørgsmål, CL, casespil, slides, quiz, dida-plan) og gemmer forløbet i vidensbasen eller i en mappe på computeren. Brug når læreren siger \"planlæg et forløb\", \"modulrække\", \"modulplan\", \"nyt forløb om\", \"jeg starter et forløb om\", \"første modul i et nyt forløb\", \"næste modul i forløbet\", \"modul 3 i mit forløb\" eller vil have didaktisk sparring på et forløb. Brug ikke til et enkeltstående modul uden et forløb (klasseledelse-planlaeg-lektion), til en time bygget på spørgsmål til en fagtekst (bloom-planlaeg-time), til et forløb af CL-øvelser alene (cl-forloeb), til undervisningsbeskrivelser og dækning af læreplanen (undervisningsbeskrivelse) eller til casespil."
 argument-hint: "[fag, niveau, emne og antal moduler]"
 allowed-tools:
   - Read
@@ -37,10 +37,10 @@ Ved B og C ligger detaljerne for de senere moduler ikke fast. Sig det, og fastho
 
 - **Indgang A:** vis rammen i få linjer og modulrækken i samme svar (Gate 1, 2 og 3 samlet), og spørg én gang, om noget skal ændres.
 - **Indgang B:** vis den korte ramme, skitsen og modul 1 i samme svar.
-- **Indgang C:** findes `forloeb.md`, og har læreren allerede skrevet, hvordan sidste modul gik, så spring spørgsmålet over.
+- **Indgang C:** findes forløbet (forløbssiden eller `forloeb.md`), og har læreren allerede skrevet, hvordan sidste modul gik, så spring spørgsmålet over.
 - Skriv antagelserne i én linje øverst. Hent læreplanen, hvis det kan gøres hurtigt (først i Outline, se `references/laereplaner.md`). Ellers skriv "Læreplan: ikke tjekket".
 - Gate 4 bliver til én linje, der foreslår den skill, der passer bedst til det første modul.
-- Gate 5: findes forløbsmappen allerede, så gem uden at spørge, og sig, hvor filerne ligger. Ellers spørg, hvor forløbene skal ligge.
+- Gate 5: ligger forløbet allerede et sted, så gem uden at spørge, og sig, hvor det ligger. Ellers spørg, hvor forløbene skal ligge.
 
 ### Gate 1: Afklar rammer (VENT på svar)
 
@@ -52,12 +52,12 @@ Spørg kun om det, læreren ikke allerede har sagt:
 
 1. **Fag, niveau og klasse:** fx samfundsfag A, 2.g. Studieretning, hvis den betyder noget.
 2. **Emne og omfang:** antal moduler, modullængde og omtrentlig placering i skoleåret.
-3. **Mål og læreplan:** hvilke faglige mål og kernestofområder skal forløbet dække? Slå læreplan og vejledning op i vidensbasen i Outline, hvis connectoren er tilsluttet. Ellers tilbyd at hente den nyeste version fra uvm.dk. Begge dele står i `${CLAUDE_SKILL_DIR}/references/laereplaner.md`. Ligger de allerede i `_laereplaner/` i forløbsmappen, så tjek blot, om der er kommet en nyere version. Brug aldrig regler fra referencefilerne i `didaktik-principper` som gældende.
+3. **Mål og læreplan:** hvilke faglige mål og kernestofområder skal forløbet dække? Slå læreplan og vejledning op i vidensbasen i Outline, hvis connectoren er tilsluttet. Ellers tilbyd at hente den nyeste version fra uvm.dk. Begge dele står i `${CLAUDE_SKILL_DIR}/references/laereplaner.md`. Ligger de allerede i `_laereplaner/` i en forløbsmappe, så tjek blot, om der er kommet en nyere version. Brug aldrig regler fra referencefilerne i `didaktik-principper` som gældende.
 4. **Forudsætninger:** hvad har klassen haft før, og hvordan er klassen? Brug spørgsmålene i `references/elevforudsaetninger.md`, men stil højst tre.
 5. **Afslutning og evaluering:** skal forløbet ende i et produkt, en prøve, en aflevering eller en mundtlig præsentation?
 6. **Samspil og materialer:** er der et andet fag med, og er der en lærebog eller materialer, der skal bruges?
 
-**Forløbsmappen:** planlægningen ligger som filer i en mappe på computeren. Læs `${CLAUDE_SKILL_DIR}/references/forloebsmappe.md`. Spørg, hvor forløbene skal ligge, hvis det ikke er klart. Søg efter tidligere forløb for samme klasse (`**/forloeb.md`), og brug dem til at se, hvad klassen har haft, og hvilke mål der allerede er dækket. Bed læreren bekræfte det, du finder.
+**Hvor forløbet gemmes:** i vidensbasen, hvis connectoren er tilsluttet, ellers i en mappe på computeren, hvis du har filadgang. Læs `${CLAUDE_SKILL_DIR}/references/forloebsmappe.md`. Spørg, hvor forløbene skal ligge, hvis det ikke er klart. Søg efter tidligere forløb for samme klasse (i vidensbasen med `list_documents`, i en mappe med `**/forloeb.md`), og brug dem til at se, hvad klassen har haft, og hvilke mål der allerede er dækket. Bed læreren bekræfte det, du finder.
 
 Resten antager du og skriver tydeligt i Gate 2, så læreren kan rette det.
 
@@ -128,35 +128,35 @@ Foreslå konkret, pr. modul, hvilken skill der passer. Foreslå kun dem, modulet
 | Arbejdsspørgsmål eller lektiespørgsmål til en tekst | `bloom-spoergsmaal-til-tekst`, `bloom-lektiespoergsmaal` |
 | En CL-øvelse eller et modul med CL | `cl-find-oevelse`, `cl-forloeb` |
 | Gruppearbejde, der skal køre selv | `dagsorden-lav` |
-| Casespil eller rollespil | `casespil-nyt` eller `casespil-miniversion` |
-| Slides | `powerpoint-stil` |
+| Casespil eller rollespil | `casespil-nyt` eller `casespil-miniversion` (kun i pluginet casespilsdesigner, ikke i vidensbasen) |
+| Slides | lærerens egen slide-skill, hvis der er en. Ellers en disposition til slides |
 | Quiz til repetition | `blooket-lav-quiz` |
 | Køreplan på storskærm | `dida-plan` |
 
 Spørg: "Hvilket modul og hvilken skill vil du starte med?"
 
-**VENT** på valg. Kald derefter skillen med Skill-værktøjet, og giv den modulets tema, mål, arbejdsform, tid, klasse og forudsætninger fra modulrækken, så læreren ikke skal svare på det igen. Tag ét modul ad gangen, og vend tilbage til rækken bagefter. Er en skill ikke tilgængelig, så sig, at den hører til et plugin, der ikke ser ud til at være installeret, og fortsæt uden.
+**VENT** på valg. Brug derefter skillen: kald den med Skill-værktøjet, hvis den er installeret, eller find dens side i vidensbasen (Skills → plugin → skill), og følg den. Giv den modulets tema, mål, arbejdsform, tid, klasse og forudsætninger fra modulrækken, så læreren ikke skal svare på det igen. Tag ét modul ad gangen, og vend tilbage til rækken bagefter. Findes skillen ingen af stederne, så sig det, og fortsæt uden.
 
 ### Gate 5: Gem forløbet (VENT på ja)
 
-Tilbyd at gemme forløbet i forløbsmappen, og nævn mappens sti. Skriv ikke filer uden et ja.
+Tilbyd at gemme forløbet, og sig hvor: i vidensbasen (hvilken samling og side) eller i en mappe (stien). Skriv intet uden et ja.
 
-- Opret forløbets undermappe og `forloeb.md` efter skabelonen i `references/forloebsmappe.md`, med rammen og modulrækken.
-- Opret en fil for hvert modul, der er planlagt i detaljer, fx `modul-01-<tema>.md`.
-- Laver en anden skill materialer til et modul, så gemmer den dem selv i forløbsmappen med modulnummeret først i filnavnet, når `forloeb.md` findes. Gem derfor forløbet, før du sender et modul videre, hvis læreren har sagt ja til at gemme.
-- **Ved indgang B:** sæt status til "foreløbig ramme", skriv de senere moduler som skitse i rækken, og opret kun filen for modul 1. Sig til læreren, at næste modul kan planlægges med "planlæg næste modul i [forløbets titel]".
-- Sig bagefter, hvilke filer der er oprettet, og hvor de ligger.
+- Opret forløbssiden (eller forløbets undermappe og `forloeb.md`) efter skabelonen i `references/forloebsmappe.md`, med rammen og modulrækken.
+- Opret en modulside eller modulfil for hvert modul, der er planlagt i detaljer, fx "Modul 01: <tema>" eller `modul-01-<tema>.md`.
+- Laver en anden skill materialer til et modul, så gemmer den dem selv ved forløbet (under modulsiden, eller i mappen med modulnummeret først i filnavnet). Gem derfor forløbet, før du sender et modul videre, hvis læreren har sagt ja til at gemme.
+- **Ved indgang B:** sæt status til "foreløbig ramme", skriv de senere moduler som skitse i rækken, og opret kun siden eller filen for modul 1. Sig til læreren, at næste modul kan planlægges med "planlæg næste modul i [forløbets titel]".
+- Sig bagefter, hvilke sider eller filer der er oprettet, og hvor de ligger.
 
 ## Fortsæt et forløb (indgang C)
 
 Re-ground: "Vi fortsætter et forløb, du er i gang med."
 
-1. **Find forløbet.** Søg efter `forloeb.md` i forløbsmappen, og læs den. Er der flere forløb, der kan passe, så spørg, hvilket. Findes der ingen fil, så bed læreren om en kort beskrivelse af rammen og de moduler, der er afholdt, og tilbyd at oprette `forloeb.md` ud fra den. Find ikke på tidligere moduler.
+1. **Find forløbet.** Søg efter forløbssiden i vidensbasen eller `forloeb.md` i mappen, og læs den. Er der flere forløb, der kan passe, så spørg, hvilket. Findes forløbet ingen steder, så bed læreren om en kort beskrivelse af rammen og de moduler, der er afholdt, og tilbyd at gemme forløbet ud fra den. Find ikke på tidligere moduler.
 2. **Spørg kort (VENT på svar):** Hvordan gik sidste modul? Nåede klassen det planlagte? Var der noget, eleverne ikke forstod? Brug svaret som formativ evaluering, jf. `references/evaluering.md`.
-3. **Justér skitsen.** Ret de kommende moduler, hvis klassen er foran eller bagud, og sig, hvad du har ændret, og hvorfor. Er forløbet planlagt med indgang B, så gør rammen færdig nu, fx med læreplan, vejledning og evaluering, hvis det mangler. Står der "ikke tjekket" ved læreplanen i `forloeb.md`, så tilbyd at hente den.
+3. **Justér skitsen.** Ret de kommende moduler, hvis klassen er foran eller bagud, og sig, hvad du har ændret, og hvorfor. Er forløbet planlagt med indgang B, så gør rammen færdig nu, fx med læreplan, vejledning og evaluering, hvis det mangler. Står der "ikke tjekket" ved læreplanen i forløbet, så tilbyd at hente den.
 4. **Planlæg næste modul i detaljer** efter reglerne i Gate 3, og vis det som én række i samme tabel. Tjek, at det bygger på sidste modul og peger mod slutkompetencen.
 
-**VENT** på OK. Fortsæt derefter med Gate 4 for modulet og Gate 5. Ved gem følges "Når forløbet fortsættes" i `references/forloebsmappe.md`: log, status, rettelser i rækken og en ny modulfil.
+**VENT** på OK. Fortsæt derefter med Gate 4 for modulet og Gate 5. Ved gem følges "Når forløbet fortsættes" i `references/forloebsmappe.md`: log, status, rettelser i rækken og en ny modulside eller modulfil.
 
 ## Når læreren beder om ændringer
 

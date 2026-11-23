@@ -32,7 +32,7 @@ Giv øvelsen et arbejdsnavn og vis den i 4 til 6 korte trin. Under trinene:
 | Princip | Hvilken regel sikrer det? |
 |---------|---------------------------|
 
-Skriv reglen, ikke hensigten. "Alle deltager" er ikke en regel. "Hver elev siger sit svar i en runde, før teamet diskuterer" er en regel. Omskriver du en aktivitet, så sig først, hvilke principper den manglede.
+Skriv reglen, ikke hensigten. "Alle deltager" er ikke en regel. "Hver elev siger sit svar i en runde, før gruppen diskuterer" er en regel. Omskriver du en aktivitet, så sig først, hvilke principper den manglede.
 
 Spørg: "Rammer den, eller skal noget ændres?"
 

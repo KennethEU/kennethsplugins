@@ -2,20 +2,20 @@
   "title": "Politisk kommunikation: priming, framing og diskurs",
   "topic": "Politisk kommunikation: priming, framing og diskurs",
   "subject": "Samfundsfag",
-  "klasse": "1muse",
+  "klasse": "1a",
   "totalTime": 80,
   "roles": [
     {
       "navn": "Pas-på-tur",
-      "beskrivelse": "Den der senest var i udlandet – ordstyrer, sikrer alle præsenterer på tur"
+      "beskrivelse": "Den, der senest var i udlandet. Ordstyrer: sikrer, at alle præsenterer på tur"
     },
     {
       "navn": "Pas-på-tid",
-      "beskrivelse": "Den der tidligst stod op i dag – tidsstyrer, giver besked ved halvtid og udløb"
+      "beskrivelse": "Den, der tidligst stod op i dag. Tidsstyrer: giver besked ved halvtid og udløb"
     },
     {
       "navn": "Pas-på-doc",
-      "beskrivelse": "Den der har kortest fornavn – referent, skriver stikord i det fælles dokument"
+      "beskrivelse": "Den, der har kortest fornavn. Referent: skriver stikord i det fælles dokument"
     }
   ],
   "steps": [
@@ -33,7 +33,7 @@
       "heading": "Individuel forberedelse: arbejdsspørgsmål",
       "type": "individuel",
       "duration": 10,
-      "instruction": "I fordeler arbejdsspørgsmålene:\nPas-på-tur: spørgsmål 1 + 2\nPas-på-tid: spørgsmål 3 + 4\nPas-på-doc: spørgsmål 5\n\nBrug teksten fra 7.4 og skriv svar i stikord på papir eller i jeres eget dokument. Arbejd i tavshed.",
+      "instruction": "Fordel arbejdsspørgsmålene mellem jer, så alle har mindst ét:\n• spørgsmål 1 og 2\n• spørgsmål 3 og 4\n• spørgsmål 5\n\nBrug jeres lektie om politisk kommunikation (afsnit 7.4), og skriv svar i stikord på papir eller i jeres eget dokument. Arbejd i tavshed.",
       "note": "I skal kunne forklare jeres svar mundtligt bagefter.",
       "docInstruction": null,
       "requiresAnswer": false,
@@ -43,9 +43,9 @@
       "heading": "Præsentation på tur: arbejdsspørgsmål",
       "type": "normal",
       "duration": 12,
-      "instruction": "I præsenterer jeres svar på tur i rækkefølgen 1–5.\nDe andre lytter og stiller opklarende spørgsmål.",
+      "instruction": "I præsenterer jeres svar på tur i rækkefølgen 1 til 5.\nDe andre lytter og stiller opklarende spørgsmål.",
       "note": "Hvert svar skal give mening for én, der ikke har læst teksten.",
-      "docInstruction": "Pas-på-doc skriver alle svar i stikord i det fælles doc under overskriften \u201CArb.spørgsmål\u201D.",
+      "docInstruction": "Pas-på-doc skriver alle svar i stikord i det fælles doc under overskriften “Arb.spørgsmål”.",
       "requiresAnswer": false,
       "groupInstructions": null
     },
@@ -63,7 +63,7 @@
       "heading": "Case: fordeling + individuel analyse",
       "type": "individuel",
       "duration": 15,
-      "instruction": "Åbn Lilleskole-PDF'en. Læs s. 1–6 i tavshed. Fordel herefter case-delene:\n\nPas-på-tur → BILLEDE: Tag screenshot af forsidebilledet. Sæt det ind i doc. Skriv kort analyse: stemning, hvorfor dette billede, sammenhæng med navnet.\n\nPas-på-tid → PRIMING: Find sætninger hvor S forsøger at skabe en følelse af, at noget er galt. Sæt dem ind i doc under overskriften \u201CPriming\u201D. Skriv en kort analyse: hvilken følelse skal modtageren sidde med?\n\nPas-på-doc → FRAMING: Find sætninger hvor S beskriver deres forslag. Sæt dem ind i doc under overskriften \u201CFraming\u201D. Skriv en kort analyse: hvad kendetegner diskursen?",
+      "instruction": "Åbn Lilleskole-PDF'en. Læs s. 1 til 6 i tavshed. Fordel herefter de tre case-dele mellem jer, én til hver:\n\nBILLEDE: Tag screenshot af forsidebilledet. Sæt det ind i doc. Skriv kort analyse: stemning, hvorfor dette billede, sammenhæng med navnet.\n\nPRIMING: Find sætninger, hvor S forsøger at skabe en følelse af, at noget er galt. Sæt dem ind i doc under overskriften “Priming”. Skriv en kort analyse: hvilken følelse skal modtageren sidde med?\n\nFRAMING: Find sætninger, hvor S beskriver deres forslag. Sæt dem ind i doc under overskriften “Framing”. Skriv en kort analyse: hvad kendetegner diskursen?",
       "note": "Alle skriver direkte i det fælles doc i denne fase.",
       "docInstruction": null,
       "requiresAnswer": false,
@@ -95,7 +95,7 @@
       "duration": 7,
       "instruction": "Læs hele dokumentet igennem i fællesskab. Tjek:\n1) Er der svar på alle 5 arbejdsspørgsmål?\n2) Er billede, priming og framing-afsnittene komplette?\n3) Giver det mening for én, der ikke kender casen?\nRet det, der mangler.",
       "note": null,
-      "docInstruction": null,
+      "docInstruction": "Pas-på-doc retter i det fælles doc, mens I gennemgår det.",
       "requiresAnswer": false,
       "groupInstructions": null
     }

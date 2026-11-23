@@ -10,13 +10,13 @@
 |--------|--------|--------|---------|-----------|--------------|
 | [Svar-bazar](#svar-bazar) | Lektieopsamling | Skiftende par | 15-20 min | Ja | Ingen |
 | [Mix og match](#mix-og-match) | Lektieopsamling, færdighedstræning | Skiftende par | 10-20 min | Ja | Ingen |
-| [Møde på midten](#møde-på-midten) | Lektieopsamling | Teams á 4 | 15-20 min | Nej | Ingen |
-| [Samtidig skrivetur](#samtidig-skrivetur) | Lektieopsamling | Teams á 4-5 | 15-20 min | Nej | Ingen |
-| [Vælg fra viften](#vælg-fra-viften) | Lektieopsamling | Teams á 4-5 | 20-25 min | Nej | Ingen |
-| [Tre til te](#tre-til-te) | Gruppearbejde og opsamling | Teams á 5 | 15-30 min | Ja | L middel |
-| [En for alle](#en-for-alle) | Lektieopsamling, færdighedstræning | Teams á 4 | 5-15 min | Lidt | L middel |
-| [Bunker](#bunker) | Lektieopsamling | Teams á 4-5 | 20-25 min | Nej | I middel |
-| [Har bolden](#har-bolden) | Lektieopsamling | Teams á 5-6 | 10-20 min | Lidt | L svag |
+| [Møde på midten](#møde-på-midten) | Lektieopsamling | Grupper à 4 | 15-20 min | Nej | Ingen |
+| [Samtidig skrivetur](#samtidig-skrivetur) | Lektieopsamling | Grupper à 4-5 | 15-20 min | Nej | Ingen |
+| [Vælg fra viften](#vælg-fra-viften) | Lektieopsamling | Grupper à 4-5 | 20-25 min | Nej | Ingen |
+| [Tre til te](#tre-til-te) | Gruppearbejde og opsamling | Grupper à 5 | 15-30 min | Ja | L middel |
+| [En for alle](#en-for-alle) | Lektieopsamling, færdighedstræning | Grupper à 4 | 5-15 min | Lidt | L middel |
+| [Bunker](#bunker) | Lektieopsamling | Grupper à 4-5 | 20-25 min | Nej | I middel |
+| [Har bolden](#har-bolden) | Lektieopsamling | Grupper à 5-6 | 10-20 min | Lidt | L svag |
 | [Kuvertleg](#kuvertleg) | Lektieopsamling, opsamling | Grupper | 30-45 min | Nej | I og L svag |
 | [Karrusel-feedback](#karrusel-feedback) | Gruppearbejde og opsamling | Grupper | 15-25 min plus gruppearbejde | Ja | I svag |
 | [Besøg en vismand](#besøg-en-vismand) | Gruppearbejde og opsamling | Grupper | 20-25 min plus gruppearbejde | Ja | I og L svag |
@@ -31,32 +31,32 @@
 |--------|--------|--------|---------|-----------|--------------|
 | [Tænk-par-del](#tænk-par-del) | Start, aktivering i gennemgang | Par | 3-5 min | Nej | L middel |
 | [Par på tid](#par-på-tid) | Start, aktivering, mundtlighed | Par | 3-5 min | Nej | Ingen |
-| [Ordet rundt](#ordet-rundt) | Brainstorm, aktivering | Teams á 4 | 3-5 min | Nej | Ingen |
+| [Ordet rundt](#ordet-rundt) | Brainstorm, aktivering | Grupper à 4 | 3-5 min | Nej | Ingen |
 | [Quiz og byt](#quiz-og-byt) | Repetition, begreber | Skiftende par | 10-15 min | Ja | Ingen |
-| [Ekspertgrupper](#ekspertgrupper) | Tekstarbejde, nyt stof | Teams á 4 plus ekspertgrupper | 40-60 min | Ja | Ingen |
+| [Ekspertgrupper](#ekspertgrupper) | Tekstarbejde, nyt stof | Grupper à 4 plus ekspertgrupper | 40-60 min | Ja | Ingen |
 | [Notepar](#notepar) | Noter efter gennemgang | Par | 5-10 min | Nej | Ingen |
 | [Træner og løser](#træner-og-løser) | Beregning, færdighedstræning | Par | 15-25 min | Nej | Ingen |
 | [Spørgsmål og modelsvar](#spørgsmål-og-modelsvar) | Skriftlighed, eksamenstræning | Par | 30-40 min | Nej | Ingen |
-| [Struktureret kontrovers](#struktureret-kontrovers) | Holdning, argumentation | Teams á 4 | 40-60 min | Nej | Ingen |
+| [Struktureret kontrovers](#struktureret-kontrovers) | Holdning, argumentation | Grupper à 4 | 40-60 min | Nej | Ingen |
 | [Hjørner](#hjørner) | Holdning, begreber | Par i hjørner | 10-15 min | Ja | P svag |
 | [Værdilinje](#værdilinje) | Holdning, argumentation | Par | 10-15 min | Ja | P svag |
-| [Interview i tre trin](#interview-i-tre-trin) | Dialog, egne erfaringer | Teams á 4 | 10-15 min | Nej | Ingen |
-| [Én på besøg](#én-på-besøg) | Midt i gruppearbejde | Teams á 4 | 5-10 min | Ja | L middel |
+| [Interview i tre trin](#interview-i-tre-trin) | Dialog, egne erfaringer | Grupper à 4 | 10-15 min | Nej | Ingen |
+| [Én på besøg](#én-på-besøg) | Midt i gruppearbejde | Grupper à 4 | 5-10 min | Ja | L middel |
 | [Dobbeltcirkler](#dobbeltcirkler) | Repetition, mundtlighed | Skiftende par | 10-15 min | Ja | Ingen |
-| [Tavlegrupper](#tavlegrupper) | Anvendelse, problemløsning, repetition | Tilfældige grupper á 3 | 20-40 min | Ja | I middel |
-| [Nummererede hoveder](#nummererede-hoveder) | Lektieopsamling, begreber | Teams á 4 | 10-15 min | Nej | Ingen |
-| [Afsløring](#afsløring) | Repetition, begreber, beregning | Teams á 4 | 10-20 min | Nej | Ingen |
-| [Taleperler](#taleperler) | Diskussion, hvor få dominerer | Teams á 4 | 10-20 min | Nej | Ingen |
-| [Gentag før du taler](#gentag-før-du-taler) | Debat, argumentation, lytning | Teams á 4 | 10-20 min | Nej | Ingen |
-| [Team, par, alene](#team-par-alene) | Ny færdighed med støtte, der trappes ned | Teams á 4, så par | 20-30 min | Nej | Ingen |
-| [Fordel pointene](#fordel-pointene) | Prioritering, beslutning | Teams á 4 | 10-15 min | Nej | Ingen |
-| [Find den falske](#find-den-falske) | Repetition, kildekritik | Teams á 4 | 10-15 min | Nej | Ingen |
+| [Tavlegrupper](#tavlegrupper) | Anvendelse, problemløsning, repetition | Tilfældige grupper à 3 | 20-40 min | Ja | I middel |
+| [Nummererede hoveder](#nummererede-hoveder) | Lektieopsamling, begreber | Grupper à 4 | 10-15 min | Nej | Ingen |
+| [Afsløring](#afsløring) | Repetition, begreber, beregning | Grupper à 4 | 10-20 min | Nej | Ingen |
+| [Taleperler](#taleperler) | Diskussion, hvor få dominerer | Grupper à 4 | 10-20 min | Nej | Ingen |
+| [Gentag før du taler](#gentag-før-du-taler) | Debat, argumentation, lytning | Grupper à 4 | 10-20 min | Nej | Ingen |
+| [Gruppe, par, alene](#gruppe-par-alene) | Ny færdighed med støtte, der trappes ned | Grupper à 4, så par | 20-30 min | Nej | Ingen |
+| [Fordel pointene](#fordel-pointene) | Prioritering, beslutning | Grupper à 4 | 10-15 min | Nej | Ingen |
+| [Find den falske](#find-den-falske) | Repetition, kildekritik | Grupper à 4 | 10-15 min | Nej | Ingen |
 | [Giv én, få én](#giv-én-få-én) | Brainstorm, repetition | Skiftende par | 10-15 min | Ja | I middel |
-| [Dækkeserviet](#dækkeserviet) | Forforståelse, brainstorm, opsamling | Teams á 4 | 10-15 min | Nej | Ingen |
+| [Dækkeserviet](#dækkeserviet) | Forforståelse, brainstorm, opsamling | Grupper à 4 | 10-15 min | Nej | Ingen |
 | [Læretempo-duet](#læretempo-duet) | Tekstarbejde, repetition, stor spredning | Skiftende par | 20-40 min | Ja | Ingen |
-| [Blyanter i midten](#blyanter-i-midten) | Opgaver, der skal forstås før de løses | Teams á 4 | 10-20 min | Nej | Ingen |
-| [Tre minutters stop](#tre-minutters-stop) | Aktivering inde i en gennemgang | Teams á 4 | 3-5 min pr. stop | Nej | Ingen |
-| [Ekspertgrupper med før og efter](#ekspertgrupper-med-før-og-efter) | Tekstarbejde mod ét samlende spørgsmål | Teams á 3-4 plus ekspertgrupper | 50-70 min | Ja | Ingen |
+| [Blyanter i midten](#blyanter-i-midten) | Opgaver, der skal forstås før de løses | Grupper à 4 | 10-20 min | Nej | Ingen |
+| [Tre minutters stop](#tre-minutters-stop) | Aktivering inde i en gennemgang | Grupper à 4 | 3-5 min pr. stop | Nej | Ingen |
+| [Ekspertgrupper med før og efter](#ekspertgrupper-med-før-og-efter) | Tekstarbejde mod ét samlende spørgsmål | Grupper à 3-4 plus ekspertgrupper | 50-70 min | Ja | Ingen |
 | [Havruta](#havruta) | Kritisk læsning, spørgsmål til tekst | Par | 15-25 min | Nej | Ingen |
 
 ---
@@ -109,12 +109,12 @@
 
 ### Møde på midten
 
-**Materialer:** A3 pr. team med et midterfelt og et felt til hver elev. **Lokale:** bordgrupper.
+**Materialer:** A3 pr. gruppe med et midterfelt og et felt til hver elev. **Lokale:** bordgrupper.
 
 1. Læreren stiller en opgave eller et spørgsmål.
 2. Alle skriver i deres eget felt så mange svar, de kan inden for tiden.
-3. Teamet tager en runde, hvor hver elev fortæller, hvad vedkommende har skrevet.
-4. Teamet diskuterer svaret. Er alle enige om, at det er godt, skrives det i midten.
+3. Gruppen tager en runde, hvor hver elev fortæller, hvad vedkommende har skrevet.
+4. Gruppen diskuterer svaret. Er alle enige om, at det er godt, skrives det i midten.
 5. Der fortsættes, til alle har præsenteret.
 6. I plenum hører klassen, hvad nogle af grupperne har skrevet i midten.
 
@@ -129,9 +129,9 @@
 
 ### Samtidig skrivetur
 
-**Materialer:** ét A4-ark med et spørgsmål pr. elev, lige så mange spørgsmål som elever i teamet. **Lokale:** bordgrupper.
+**Materialer:** ét A4-ark med et spørgsmål pr. elev, lige så mange spørgsmål som elever i gruppen. **Lokale:** bordgrupper.
 
-1. Eleverne sidder i teams på 4-5, så antallet passer med spørgsmålene.
+1. Eleverne sidder i grupper på 4-5, så antallet passer med spørgsmålene.
 2. Hver elev får et ark med et spørgsmål og to minutter til at svare.
 3. Læreren siger "send videre", og arket går til venstre.
 4. Eleven læser, hvad den forrige har skrevet, og supplerer i ca. to minutter.
@@ -173,7 +173,7 @@
 
 **Materialer:** spørgsmål. **Lokale:** bordgrupper.
 
-1. Eleverne i teamet giver sig selv numre fra 1 til 4.
+1. Eleverne i gruppen giver sig selv numre fra 1 til 4.
 2. Læreren stiller et spørgsmål og giver tænketid.
 3. Eleverne diskuterer og sikrer sig, at alle kender svaret.
 4. Læreren siger et nummer. Alle med nummeret rejser sig, og læreren udpeger én, der svarer eller løser opgaven.
@@ -181,9 +181,9 @@
 
 **Noter:** den elev, der har svaret, skriver i fælles dokument.
 
-**SPIL:** S middel (stærk i teamet, ikke i svarrunden), P stærk, I stærk, L middel.
+**SPIL:** S middel (stærk i gruppen, ikke i svarrunden), P stærk, I stærk, L middel.
 
-**Skærpelse:** lad teamet tage en runde, hvor hver siger sit svar, før de diskuterer. Lad alle med nummeret skrive svaret på en lille tavle eller et ark, så alle viser noget, ikke kun den udpegede.
+**Skærpelse:** lad gruppen tage en runde, hvor hver siger sit svar, før de diskuterer. Lad alle med nummeret skrive svaret på en lille tavle eller et ark, så alle viser noget, ikke kun den udpegede.
 
 **Fagidéer:**
 - Samfundsfag: hurtige spørgsmål til statistik, fx at aflæse og forklare en figur.
@@ -244,7 +244,7 @@
 
 **SPIL:** S svag i bingoen, P svag (man vinder alene), I middel, L stærk. Først trin 4 ligner CL.
 
-**Skærpelse:** læg vægten på trin 4, og giv hvert gruppemedlem ansvar for sine egne ord med runde, før noget skrives. Lad teams spille mod hinanden, hvis konkurrencen skal blive. Bingoen viser kun, at ordene er genkendt, ikke at de er forstået.
+**Skærpelse:** læg vægten på trin 4, og giv hvert gruppemedlem ansvar for sine egne ord med runde, før noget skrives. Lad grupper spille mod hinanden, hvis konkurrencen skal blive. Bingoen viser kun, at ordene er genkendt, ikke at de er forstået.
 
 **Fagidéer:**
 - Samfundsfag: centrale ord i en tekst om globalisering.
@@ -317,7 +317,7 @@
 
 **Skærpelse:** hver elev har sin egen farve post-it og skal sætte mindst én kommentar pr. plakat. Så kan læreren se, hvem der er med. Bed om mindst ét fagligt spørgsmål ud over rosen.
 
-**Variant, Gallerivandring** (Gallery Walk, kilde 13): grupperne går rundt i deres team og diskuterer hver plakat, før de skriver deres kommentar. Uden snak kaldes den en museumsvandring. Passer også efter Tavlegrupper.
+**Variant, Gallerivandring** (Gallery Walk, kilde 13): grupperne går rundt sammen og diskuterer hver plakat, før de skriver deres kommentar. Uden snak kaldes den en museumsvandring. Passer også efter Tavlegrupper.
 
 **Fagidéer:**
 - Samfundsfag: plakater om hver sit politiske forslag, med post-its om argumenter.
@@ -445,13 +445,13 @@ Engelsk: Timed Pair Share. **Grundlag:** kilde 3 og 4. **Materialer:** stopur. *
 Engelsk: RoundRobin. **Grundlag:** navnet i kilde 3 og 8, trinene almen viden. **Materialer:** ingen. **Lokale:** bordgrupper.
 
 1. Læreren stiller et spørgsmål med mange mulige svar.
-2. Eleverne i teamet siger på skift ét svar, med uret, til tiden er gået.
+2. Eleverne i gruppen siger på skift ét svar, med uret, til tiden er gået.
 3. Man må sige "videre" én gang, men runden kommer tilbage.
-4. Hvert team giver det bedste svar videre til klassen.
+4. Hver gruppe giver det bedste svar videre til klassen.
 
 **Noter:** en ny skriver ved hver runde, eller alle skriver svarene ned.
 
-**SPIL:** S stærk (teams, ca. 25 %), P middel, I stærk, L stærk.
+**SPIL:** S stærk (grupper, ca. 25 %), P middel, I stærk, L stærk.
 
 **Fagidéer:**
 - Samfundsfag: eksempler på socialiseringsinstanser.
@@ -562,15 +562,15 @@ Engelsk: Dyadic Essays. **Grundlag:** kilde 6. **Materialer:** tekst, papir. **L
 
 ### Struktureret kontrovers
 
-Engelsk: Structured Academic Controversy, efter Johnson og Johnson. **Grundlag:** kilde 7. **Materialer:** "bør"-spørgsmål og baggrundstekst til begge sider. **Lokale:** teams á 4. **Tid:** ca. 40-60 min.
+Engelsk: Structured Academic Controversy, efter Johnson og Johnson. **Grundlag:** kilde 7. **Materialer:** "bør"-spørgsmål og baggrundstekst til begge sider. **Lokale:** grupper à 4. **Tid:** ca. 40-60 min.
 
-1. To par i et team får hver sin side af et spørgsmål og forbereder argumenterne.
+1. To par i en gruppe får hver sin side af et spørgsmål og forbereder argumenterne.
 2. Første par fremlægger, andet par lytter og stiller afklarende spørgsmål, til de har forstået det. Så byttes der.
 3. Parrene bytter side og argumenterer for det modsatte, gerne med nye argumenter.
 4. Holdet lægger siderne fra sig og forsøger at finde en fælles holdning, eller at beskrive præcist, hvor de er uenige.
 5. Læreren samler op med klassen.
 
-**Noter:** teamet skriver sin fælles konklusion og de bedste argumenter på begge sider.
+**Noter:** gruppen skriver sin fælles konklusion og de bedste argumenter på begge sider.
 
 **SPIL:** S stærk, P stærk, I stærk, L stærk.
 
@@ -627,11 +627,11 @@ Engelsk: Value Line. **Grundlag:** almen viden, kan ikke bekræftes i søgningen
 
 Engelsk: Three-Step Interview. **Grundlag:** kilde 6. **Materialer:** spørgsmål. **Lokale:** bordgrupper.
 
-1. To par i et team. A interviewer B, mens C interviewer D.
+1. To par i en gruppe. A interviewer B, mens C interviewer D.
 2. Rollerne byttes.
-3. Teamet tager en runde, hvor hver elev fortæller, hvad makkeren sagde.
+3. Gruppen tager en runde, hvor hver elev fortæller, hvad makkeren sagde.
 
-**Noter:** alle skriver det, de vil fremlægge, og teamet samler det vigtigste.
+**Noter:** alle skriver det, de vil fremlægge, og gruppen samler det vigtigste.
 
 **SPIL:** S stærk, P middel, I stærk, L stærk.
 
@@ -644,9 +644,9 @@ Engelsk: Three-Step Interview. **Grundlag:** kilde 6. **Materialer:** spørgsmå
 
 Engelsk: Three-Stay, One-Stray. **Grundlag:** kilde 6. **Materialer:** ingen. **Lokale:** bordgrupper.
 
-1. Teamet arbejder med en opgave, til det når et beslutningspunkt.
-2. Læreren udpeger ét nummer. Den elev går til et andet team, mens de tre andre bliver.
-3. Gæsten fortæller om sit teams idé og spørger, hvad teamet selv har fundet på.
+1. Gruppen arbejder med en opgave, til det når et beslutningspunkt.
+2. Læreren udpeger ét nummer. Den elev går til en anden gruppe, mens de tre andre bliver.
+3. Gæsten fortæller om sin gruppes idé og spørger, hvad gruppen selv har fundet på.
 4. Gæsten går hjem og fortæller det videre. Skift nummer til næste besøg.
 
 **Noter:** hjemmeholdet skriver, hvad det ændrer på grund af besøget.
@@ -711,18 +711,18 @@ Efter Peter Liljedahls *Building Thinking Classrooms* ("Det tænkende klasserum"
 
 Engelsk: Numbered Heads Together. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** spørgsmål og en terning eller kort til at trække et nummer. **Lokale:** bordgrupper.
 
-1. Eleverne sidder i teams á 4 og har hver et nummer fra 1 til 4.
+1. Eleverne sidder i grupper à 4 og har hver et nummer fra 1 til 4.
 2. Læreren stiller et spørgsmål. Alle skriver først deres eget svar.
-3. Teamet stikker hovederne sammen og sørger for, at alle kan forklare svaret.
-4. Læreren trækker et nummer. Eleven med det nummer i hvert team svarer, fx på et lille whiteboard, som alle holder op på samme tid.
+3. Gruppen stikker hovederne sammen og sørger for, at alle kan forklare svaret.
+4. Læreren trækker et nummer. Eleven med det nummer i hver gruppe svarer, fx på et lille whiteboard, som alle holder op på samme tid.
 
 **Noter:** det rigtige svar skrives ind efter hver runde.
 
 **SPIL:** S stærk, P stærk (holdet lykkes kun, hvis alle kan svare), I stærk (alle kan blive trukket), L stærk.
 
-**Skærpelse:** træk nummeret først, når teamet er færdigt, så ingen kan regne med at slippe.
+**Skærpelse:** træk nummeret først, når gruppen er færdig, så ingen kan regne med at slippe.
 
-**Variant, Holdpoint for fremgang** (STAD efter Robert Slavin, kilde 19): efter øvelsen tager alle en lille test alene. Teamet får point for, hvor meget hvert medlem har forbedret sig i forhold til sidst, ikke for det samlede resultat. Det har en af de bedste forskningsbaser for CL, især i matematik på ældre klassetrin.
+**Variant, Holdpoint for fremgang** (STAD efter Robert Slavin, kilde 19): efter øvelsen tager alle en lille test alene. Gruppen får point for, hvor meget hvert medlem har forbedret sig i forhold til sidst, ikke for det samlede resultat. Det har en af de bedste forskningsbaser for CL, især i matematik på ældre klassetrin.
 
 **Fagidéer:**
 - Samfundsfag: lektiespørgsmål til en tekst om partiernes vælgere.
@@ -731,17 +731,17 @@ Engelsk: Numbered Heads Together. **Grundlag:** navnet i kilde 3, trinene efter 
 
 ### Afsløring
 
-Engelsk: Showdown. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** en bunke kort med spørgsmål pr. team, og et lille whiteboard eller papir til hver. **Lokale:** bordgrupper.
+Engelsk: Showdown. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** en bunke kort med spørgsmål pr. gruppe, og et lille whiteboard eller papir til hver. **Lokale:** bordgrupper.
 
 1. Én elev læser det øverste kort højt.
 2. Alle skriver deres svar alene og vender det om.
 3. Når alle er klar, siger oplæseren "afsløring", og alle viser svaret på samme tid.
-4. Er svarene ens, roser teamet. Er de forskellige, diskuterer de, til alle kan forklare det rigtige svar.
+4. Er svarene ens, roser gruppen. Er de forskellige, diskuterer de, til alle kan forklare det rigtige svar.
 5. Næste elev læser næste kort.
 
-**Noter:** de spørgsmål, teamet var uenigt om, skrives ned.
+**Noter:** de spørgsmål, gruppen var uenig om, skrives ned.
 
-**SPIL:** S stærk, P middel (teamet skal blive enigt), I stærk (alle viser deres eget svar), L stærk (oplæseren skifter).
+**SPIL:** S stærk, P middel (gruppen skal blive enig), I stærk (alle viser deres eget svar), L stærk (oplæseren skifter).
 
 **Fagidéer:**
 - Samfundsfag: begreber eller beregninger med procent og procentpoint.
@@ -752,12 +752,12 @@ Engelsk: Showdown. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivel
 
 Engelsk: Talking Chips. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** to til tre brikker pr. elev, fx perler, mønter eller papirlapper. **Lokale:** bordgrupper.
 
-1. Teamet får et diskussionsspørgsmål.
+1. Gruppen får et diskussionsspørgsmål.
 2. Hver gang en elev siger noget, lægger hun eller han en brik i midten.
 3. Har man brugt sine brikker, må man ikke sige mere, før alle har brugt deres.
 4. Når alle brikker er brugt, tager alle deres tilbage, og en ny runde begynder.
 
-**Noter:** teamet skriver den pointe ned, de er mest enige om, og den, de er mest uenige om.
+**Noter:** gruppen skriver den pointe ned, de er mest enige om, og den, de er mest uenige om.
 
 **SPIL:** S middel, P middel, I stærk, L stærk (reglen sikrer, at alle taler lige meget).
 
@@ -772,7 +772,7 @@ Engelsk: Talking Chips. **Grundlag:** navnet i kilde 3, trinene efter lærerbesk
 
 Engelsk: Paraphrase Passport. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** et diskussionsspørgsmål. **Lokale:** bordgrupper.
 
-1. Teamet diskuterer et spørgsmål.
+1. Gruppen diskuterer et spørgsmål.
 2. Før man må sige sit eget, skal man gengive det, den forrige sagde, med egne ord.
 3. Den forrige siger, om gengivelsen er rigtig. Er den ikke, prøver man igen.
 4. Først derefter siger man sin egen pointe.
@@ -788,20 +788,20 @@ Engelsk: Paraphrase Passport. **Grundlag:** navnet i kilde 3, trinene efter lær
 - Mediefag: diskussion af, om en reklame er etisk i orden.
 - Erhvervsøkonomi: diskussion af en ledelsesbeslutning i en case.
 
-### Team, par, alene
+### Gruppe, par, alene
 
 Engelsk: Team-Pair-Solo. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** tre opgaver af samme type, der bliver lidt sværere. **Lokale:** bordgrupper.
 
-1. Teamet løser første opgave sammen, med lærerens model ved hånden.
-2. Teamet deler sig i par, og hvert par løser anden opgave.
+1. Gruppen løser første opgave sammen, med lærerens model ved hånden.
+2. Gruppen deler sig i par, og hvert par løser anden opgave.
 3. Hver elev løser tredje opgave alene.
 4. Parret tjekker hinandens tredje opgave.
 
 **Noter:** den tredje opgave, rettet.
 
-**SPIL:** S stærk, P stærk, I stærk (sidste trin er alene), L middel i teamet.
+**SPIL:** S stærk, P stærk, I stærk (sidste trin er alene), L middel i gruppen.
 
-**Skærpelse:** brug en turregel i teamet, fx at alle skal foreslå ét trin. Passer til jeg viser, vi gør, I gør i `klasseledelse-principper`.
+**Skærpelse:** brug en turregel i gruppen, fx at alle skal foreslå ét trin. Passer til jeg viser, vi gør, I gør i `klasseledelse-principper`.
 
 **Fagidéer:**
 - Samfundsfag: anvend en analysemodel på tre cases.
@@ -812,12 +812,12 @@ Engelsk: Team-Pair-Solo. **Grundlag:** navnet i kilde 3, trinene efter lærerbes
 
 Engelsk: Spend-A-Buck. **Grundlag:** navnet i kilde 3, trinene efter lærerbeskrivelser fundet i søgningen (kilde 12 og 13) og almen viden. **Materialer:** en liste med forslag og ti point pr. elev, fx små sedler. **Lokale:** bordgrupper.
 
-1. Teamet får fire til seks forslag eller løsninger at vælge imellem.
+1. Gruppen får fire til seks forslag eller løsninger at vælge imellem.
 2. Hver elev fordeler sine ti point, men skal give mindst ét point til hvert forslag.
-3. Teamet tæller op. Forslaget med flest point vinder.
+3. Gruppen tæller op. Forslaget med flest point vinder.
 4. Hver elev forklarer kort, hvorfor hun eller han gav flest point til sit forslag.
 
-**Noter:** teamets valg og den bedste begrundelse.
+**Noter:** gruppens valg og den bedste begrundelse.
 
 **SPIL:** S stærk, P middel, I stærk (alle har lige mange point), L stærk.
 
@@ -866,12 +866,12 @@ Engelsk: Give One-Get One. **Grundlag:** navnet i kilde 3, trinene efter lærerb
 
 ### Dækkeserviet
 
-Tysk: Placemat. **Grundlag:** kilde 14, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** ét A3-ark pr. team, delt i et felt til hver elev rundt om et felt i midten. **Lokale:** bordgrupper.
+Tysk: Placemat. **Grundlag:** kilde 14, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** ét A3-ark pr. gruppe, delt i et felt til hver elev rundt om et felt i midten. **Lokale:** bordgrupper.
 
-1. Teamet får et spørgsmål eller et begreb.
+1. Gruppen får et spørgsmål eller et begreb.
 2. Hver elev skriver alene i sit eget felt i et par minutter.
 3. Arket drejes, så alle læser de andres felter. Man må spørge, men ikke rette.
-4. Teamet bliver enigt om de vigtigste pointer og skriver dem i midten.
+4. Gruppen bliver enig om de vigtigste pointer og skriver dem i midten.
 
 **Noter:** midterfeltet, gerne fotograferet.
 
@@ -905,11 +905,11 @@ Tysk: Lerntempoduett, efter Diethelm Wahl, også kaldet Bushaltestelle. **Grundl
 
 ### Blyanter i midten
 
-Spansk: Lápices al centro, efter Pere Pujolàs. **Grundlag:** kilde 16, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** én opgave pr. elev i teamet. **Lokale:** bordgrupper.
+Spansk: Lápices al centro, efter Pere Pujolàs. **Grundlag:** kilde 16, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** én opgave pr. elev i gruppen. **Lokale:** bordgrupper.
 
 1. Alle lægger blyanten i midten. Så længe den ligger der, må man kun tale og lytte.
-2. Én elev læser sin opgave højt, og teamet diskuterer, hvordan den skal løses, til alle kan forklare det.
-3. Læreren eller teamet trækker, hvem der forklarer løsningen.
+2. Én elev læser sin opgave højt, og gruppen diskuterer, hvordan den skal løses, til alle kan forklare det.
+3. Læreren eller gruppen trækker, hvem der forklarer løsningen.
 4. Alle tager blyanten og skriver løsningen alene.
 5. Næste elev læser sin opgave højt.
 
@@ -927,8 +927,8 @@ Spansk: Lápices al centro, efter Pere Pujolàs. **Grundlag:** kilde 16, trinene
 Spansk: Parada de tres minutos, efter Pere Pujolàs. **Grundlag:** kilde 16, trinene er gengivet efter lærervejledninger og almen viden. **Materialer:** ingen. **Lokale:** bordgrupper.
 
 1. Læreren stopper gennemgangen efter en bid.
-2. Teamet har tre minutter til at tale om det gennemgåede og blive enigt om op til tre spørgsmål eller uklarheder.
-3. Hvert team stiller ét spørgsmål på skift, og læreren svarer, eller lader et andet team svare.
+2. Gruppen har tre minutter til at tale om det gennemgåede og blive enig om op til tre spørgsmål eller uklarheder.
+3. Hver gruppe stiller ét spørgsmål på skift, og læreren svarer, eller lader en anden gruppe svare.
 4. Gennemgangen fortsætter.
 
 **Noter:** eleverne skriver svaret på det spørgsmål, de selv stillede.
