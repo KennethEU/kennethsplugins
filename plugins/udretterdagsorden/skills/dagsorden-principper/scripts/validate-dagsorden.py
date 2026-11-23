@@ -83,6 +83,8 @@ def validate(raw_data):
 
     if trin[0].get("tid", 0) > 4:
         errors.append(f"Rollevalg bruger {trin[0]['tid']} min — max 4 min")
+    elif trin[0].get("tid", 0) < 2:
+        errors.append(f"Rollevalg bruger {trin[0].get('tid', 0)} min, men skal have mindst 2 min")
 
     # ── Tidsvalidering ──
     total_declared = data["total_tid"]

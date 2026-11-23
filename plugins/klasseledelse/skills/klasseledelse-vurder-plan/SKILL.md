@@ -6,6 +6,7 @@ allowed-tools:
   - Read
   - Glob
   - Skill
+  - Write
 ---
 
 # Vurdér lektionsplan
@@ -76,7 +77,7 @@ Spørg kun om det, der mangler:
 
 ### Sådan afleverer du
 
-Som standard afleverer du den korte version, så den også kan læses på mobil: punkt 1, 2 og 3 og en enkelt linje for punkt 4 og for eventuelle bevidste valg. Slut med at tilbyde hele gennemgangen, princip for princip.
+Som standard afleverer du den korte version, så den også kan læses på mobil: punkt 1, 2 og 3 og en enkelt linje for punkt 4 og for eventuelle bevidste valg. Slut med én linje: spørgsmålet fra Gate 2, og at hele gennemgangen princip for princip kan fås på opfordring.
 
 **1. Samlet vurdering.** To til tre sætninger: det vigtigste, der virker, og det vigtigste problem.
 
@@ -91,7 +92,7 @@ Under tabellen: længste strækning med L og E, første A, hvordan timen slutter
 
 - **Nu:** hvad planen gør, med henvisning til tid eller fase.
 - **Ændring:** præcis hvad der skal gøres, med færdig formulering af replikken, spørgsmålet eller opgaven.
-- **Hvorfor:** én sætning. Sæt evidensmærke, hvis du henviser til forskning.
+- **Hvorfor:** én sætning. Evidensmærker følger reglen under "Mærker" i `${CLAUDE_SKILL_DIR}/../klasseledelse-principper/references/evidens.md`.
 - **Pris:** hvad det koster i tid eller kræver af klassen, og hvad der kan fjernes i stedet.
 
 **4. Fem-succeser-tjekket.** Hvor mange gange kan den mest generte elev deltage trygt?
@@ -102,7 +103,7 @@ Under tabellen: længste strækning med L og E, første A, hvordan timen slutter
 
 ### Gate 2: Omskriv planen (VENT på svar)
 
-Spørg: "Hvilke af de tre ændringer skal med i den forbedrede plan? Jeg skriver kun dem, du vælger, ind, og resten af din plan står uændret."
+Spørgsmålet står i den afsluttende linje: "Hvilke af de tre ændringer skal med i den forbedrede plan? Jeg skriver kun dem, du vælger, ind, og resten af din plan står uændret. Vil du have hele gennemgangen princip for princip, så sig til."
 
 **VENT** på svar. Skriv derefter planen om med de valgte ændringer og intet andet, i samme drejebogsformat som `klasseledelse-planlaeg-lektion`. Vil læreren have mere end de tre med, så følg "Når læreren beder om ændringer" i principperne, og sig det:
 

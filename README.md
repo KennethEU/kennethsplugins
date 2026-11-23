@@ -144,6 +144,18 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### bloom 1.6.1, blooket 1.3.1, cl-oevelser 1.6.2, dida 1.1.2, klasseledelse 1.14.2, modulplanlaegger 0.4.1 og udretterdagsorden 1.2.1 (november 2026)
+
+Resten af gennemgangen af skills i vidensbasen.
+
+- bloom: tjeklisten skelner mellem standardsættet (10 til 14 spørgsmål) og det fulde sæt. 1 til 2 brede hovedspørgsmål alle steder. Eksempler, der brød reglerne, er rettet. "Mode 3/4" er erstattet med skillnavne.
+- blooket: ingen tankestreger. Gates springes over, når læreren har givet det nødvendige eller beder om det hurtigt. Ny vejledning i at rette en eksisterende CSV. Scriptet afviser `"` i tekst (med test).
+- cl-oevelser: kolonnen "SPIL-svaghed" passer nu med vurderingen af hver øvelse.
+- dida: `tjek_plan.py` fanger tidsrum som "26-37" og lader "3-5 min" og sidetal være.
+- klasseledelse: "tretten greb" er væk, én regel for evidensmærker, vurder-plan kan gemme, forældet linje om Kamil 2008 fjernet, kildehenvisning rettet.
+- modulplanlaegger: e-bogsreglen gælder også ved planlægning. Læreplaner henvises til `laereplaner.md`, ikke emu.dk, og kan hentes uden shell. Undervisningsbeskrivelsen antager ikke Kenneths sidestruktur. Lokale stier og "Kenneths" som norm er fjernet.
+- udretterdagsorden: rollevalg skal vare mindst 2 min. Skemaet er markeret som uddrag. OBS skrives ikke selv. Word i sandkassen er beskrevet. Individuel ansvarlighed er defineret som i cl-principper.
+
 ### udretterdagsorden 1.2.0, modulplanlaegger 0.4.0, cl-oevelser 1.6.1, dida 1.1.1 og klasseledelse 1.14.1 (november 2026)
 
 Rettelser efter gennemgangen af skills i vidensbasen, så de virker for kolleger og ikke kun for Kenneth.

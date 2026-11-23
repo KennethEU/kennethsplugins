@@ -1,6 +1,6 @@
 # Kilder og dækning
 
-Gennemgået november 2026 af Claude. Mapperne er Google Drev, `Mit drev/AAU/Didaktik` (21 filer) og `Mit drev/Pædagogikum` (144 filer). Scannede PDF'er er læst med tekstgenkendelse (OCR).
+Gennemgået november 2026 af Claude. Kilderne er to mapper med KM's materiale fra AAU-modulet i didaktik (21 filer) og pædagogikum (144 filer). Scannede PDF'er er læst med tekstgenkendelse (OCR).
 
 Brug denne fil til at se, hvor en påstand kommer fra, og hvad der ikke er læst. Bøgerne er ophavsretligt beskyttede. Referencefilerne gengiver kun pointer med egne ord.
 
@@ -78,5 +78,5 @@ Artiklerne fra tidsskriftet POLIS (15 PDF'er, heraf 5 hele numre) er gennemgået
 ## Huller
 
 - **Erhvervsøkonomi** har intet materiale i mapperne. Der er derfor ingen fagfil.
-- **Gældende regler:** alt om bekendtgørelser, læreplaner, spørgeord og prøveformer er fra 2010 til 2012 og skal tjekkes mod emu.dk.
+- **Gældende regler:** alt om bekendtgørelser, læreplaner, spørgeord og prøveformer er fra 2010 til 2012 og skal tjekkes mod gældende læreplan og vejledning efter `didaktik-planlaeg-forloeb/references/laereplaner.md` (vidensbasen eller uvm.dk). Emu.dk er kun inspiration.
 - **Nyere forskning** om fx feedback, hentning fra hukommelsen og kognitiv belastning findes ikke i mapperne. Noget af det står i `klasseledelse-principper/references/evidens.md`, herunder Direct Instruction og vejledt instruktion.

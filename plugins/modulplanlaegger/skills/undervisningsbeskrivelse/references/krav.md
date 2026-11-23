@@ -1,6 +1,6 @@
 # Krav til undervisningsbeskrivelser
 
-Kilde: Styrelsen for Undervisning og Kvalitet, "Vejledning til studieplan og undervisningsbeskrivelser på de gymnasiale uddannelser" (september 2022, opdateret september 2025 og februar 2026), afsnit 1.1 til 1.3. Vejledningen bygger på § 18 i bekendtgørelse om de gymnasiale uddannelser og § 33 i den almene prøvebekendtgørelse.
+Kilde: Styrelsen for Undervisning og Kvalitet, "Vejledning til studieplan og undervisningsbeskrivelser på de gymnasiale uddannelser" (september 2022, opdateret september 2025 og februar 2026, udgivet marts 2026), afsnit 1.1 til 1.3. Vejledningen bygger på § 18 i bekendtgørelse om de gymnasiale uddannelser og § 33 i den almene prøvebekendtgørelse.
 
 - **I Outline:** Fælles → Regler og vejledninger (UVM) → "Undervisningsbeskrivelse: vejledning og skabelon (UVM, marts 2026)" (titlen kan have en nyere dato). Siden har afsnit 1.1 til 1.3 ordret og PDF og skabelon som bilag. Citér derfra, ikke herfra.
 - **På uvm.dk:** søg efter "Skabelon til undervisningsbeskrivelser" (under Prøver og eksamen → Eksaminations- og bedømmelsesgrundlag og undervisningsbeskrivelser). Gem aldrig PDF-links i skillen. De skifter.

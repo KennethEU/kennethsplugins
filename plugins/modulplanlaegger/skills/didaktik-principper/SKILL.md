@@ -1,6 +1,6 @@
 ---
 name: didaktik-principper
-description: "Baggrundsviden om didaktik til planlægning af forløb og modulrækker i gymnasiet: planlægningsmodeller, læring og motivation, arbejdsformer og vejledning, progression, evaluering, dannelse og fagligt samspil, elevforudsætninger, fagdidaktik for samfundsfag og mediefag og typiske praksisgreb og faldgruber. Læses af didaktik-planlaeg-forloeb. Brug direkte, når læreren spørger, hvad didaktikken siger om fx progression, induktiv eller deduktiv start, stilladsering, formativ evaluering eller fagligt samspil. Brug ikke til én lektion (klasseledelse-planlaeg-lektion), til spørgsmål til en tekst (bloom), til en enkelt CL-øvelse (cl-oevelser) eller til casespil."
+description: "Baggrundsviden om didaktik til planlægning af forløb og modulrækker i gymnasiet: planlægningsmodeller, læring og motivation, arbejdsformer og vejledning, progression, evaluering, dannelse og fagligt samspil, elevforudsætninger, fagdidaktik for samfundsfag og mediefag og typiske praksisgreb og faldgruber. Læses af didaktik-planlaeg-forloeb. Brug direkte, når læreren spørger, hvad didaktikken siger om fx progression, induktiv eller deduktiv start, stilladsering, formativ evaluering eller fagligt samspil. Brug ikke til én lektion (klasseledelse-planlaeg-lektion), til spørgsmål til en tekst (bloom-spoergsmaal-til-tekst), til en enkelt CL-øvelse (cl-find-oevelse) eller til casespil."
 user-invocable: false
 allowed-tools:
   - Read
@@ -21,7 +21,7 @@ Denne skill ejer niveauet **forløb og modulrække**: valg af didaktisk tilgang,
 
 - Én lektion med drejebog: `klasseledelse-planlaeg-lektion` og `klasseledelse-principper`.
 - Spørgsmål til en tekst og taksonomi: `bloom-spoergsmaalsregler` og de andre bloom-skills.
-- Konkrete samarbejdsøvelser: `cl-oevelser`.
+- Konkrete samarbejdsøvelser: `cl-find-oevelse`.
 - Casespil og rollespil: pluginet `casespilsdesigner` (findes kun som plugin, ikke i vidensbasen).
 - Plan på storskærm: `dida-plan`.
 
@@ -46,7 +46,7 @@ Læs kun den fil, et planlægningstrin har brug for:
 
 ## Faste regler
 
-1. **Regler er daterede.** Alt om bekendtgørelser, læreplaner, spørgeord og prøveformer i filerne er fra 2010 til 2012. Citér det aldrig som gældende. Hent den gældende læreplan og vejledning fra vidensbasen i Outline eller fra uvm.dk efter `didaktik-planlaeg-forloeb/references/laereplaner.md`, eller bed læreren om dem.
+1. **Regler er daterede.** Alt om bekendtgørelser, læreplaner, spørgeord og prøveformer i filerne er fra 2010 til 2012 (POLIS-filen: 2020 til 2025). Citér det aldrig som gældende. Hent den gældende læreplan og vejledning fra vidensbasen i Outline eller fra uvm.dk efter `didaktik-planlaeg-forloeb/references/laereplaner.md`, eller bed læreren om dem.
 2. **Evidensmærker.** Find ikke på tal, forfattere eller studier. Brug de samme fire mærker som `klasseledelse-principper`:
    - **Stærk:** metaanalyser eller gentagne eksperimenter, der rækker til målgruppen eller tæt på.
    - **Moderat:** reel forskning, men anden aldersgruppe, få studier eller uden årsagsbevis.

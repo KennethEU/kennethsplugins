@@ -1,6 +1,6 @@
 ---
 name: dagsorden-lav
-description: "Laver en udretterdagsorden til gruppearbejde: en selvkørende trin-for-trin-protokol med de tre roller (pas-på-tur, pas-på-tid, pas-på-doc), individuel tænketid, pause og fælles produkt, leveret som JSON til dida.dk (elevernes telefoner) eller som Word-dokument. Brug når læreren siger \"lav en dagsorden\", \"udretterdagsorden\", \"gruppedagsorden\", \"struktureret gruppearbejde\", \"gruppearbejde om [emne]\", \"dagsorden med roller og faser\", eller angiver emne, fag og tid og vil have en færdig dagsorden. Brug ikke til at vælge mellem strukturer, når læreren er i tvivl (dagsorden-ide), til en hel lektion med drejebog (klasseledelse-planlaeg-lektion), til en lektionsplan på storskærm (dida-plan), til en enkelt CL-øvelse (cl-find-oevelse), til spørgsmål til en fagtekst (bloom) eller til casespil."
+description: "Laver en udretterdagsorden til gruppearbejde: en selvkørende trin-for-trin-protokol med de tre roller (pas-på-tur, pas-på-tid, pas-på-doc), individuel tænketid, pause og fælles produkt, leveret som JSON til dida.dk (elevernes telefoner) eller som Word-dokument. Brug når læreren siger \"lav en dagsorden\", \"udretterdagsorden\", \"gruppedagsorden\", \"struktureret gruppearbejde\", \"gruppearbejde om [emne]\", \"dagsorden med roller og faser\", eller angiver emne, fag og tid og vil have en færdig dagsorden. Brug ikke til at vælge mellem strukturer, når læreren er i tvivl (dagsorden-ide), til en hel lektion med drejebog (klasseledelse-planlaeg-lektion), til en lektionsplan på storskærm (dida-plan), til en enkelt CL-øvelse (cl-find-oevelse), til spørgsmål til en fagtekst (bloom-spoergsmaal-til-tekst) eller til casespil."
 argument-hint: "[emne, fag, tid]"
 allowed-tools:
   - Read
@@ -91,7 +91,7 @@ Byg dagsordenen efter disse retningslinjer:
 - Angiv pas-på-docs opgave eksplicit i hvert trin med gruppeproduktion.
 - Brug nummererede delopgaver 1), 2), 3), når der er flere handlinger.
 - Brug `note` til vigtige præciseringer. Skriv *uden* "OBS:"-præfiks.
-- Brug `docInstruction` til separate pas-på-doc-instruktioner (vises i Word/markdown, flettes ind i dida.dk).
+- Brug `docInstruction` til separate pas-på-doc-instruktioner (vises i Word/markdown, flettes ind i dida.dk). Skriv dem som en hel sætning, der selv nævner rollen, fx "Pas-på-doc skriver gruppens pointer i stikord.", og uden præfiks som "Pas-på-doc:".
 - Materialereferencer skal være elevvendte: "Jeres lektie (afsnit X: Titel)", ikke bogkoder som "Columbus 4.5".
 - Brug lærerens navn, hvis du kender det: "deler med gruppen og [lærerens navn]", ikke "deler med gruppen og læreren". Kender du ikke navnet, så skriv "jeres lærer".
 - Roller bruges kun til procesinstruktioner (hvem styrer, hvem skriver), aldrig til at fordele fagligt indhold. Brug en neutral punktliste til faglig fordeling ("Fordel disse emner mellem jer").
@@ -227,7 +227,8 @@ Præsentér JSON i en kodeblok klar til kopiering:
 ````
 
 **Regler for dida.dk-JSON:**
-- `docInstruction` flettes ind i `instruction` med en blank linje og præfikset "Pas-på-doc: ", fordi dida.dk ikke har et separat docInstruction-felt.
+- Valider den kanoniske JSON (trin 4), før du fjerner felter til dida.dk. Uden `totalTime` fejler valideringen, så kør ikke scriptet på dida.dk-udgaven.
+- `docInstruction` flettes ind i `instruction` med en blank linje og uden præfiks, fordi dida.dk ikke har et separat docInstruction-felt. Sætningen nævner allerede pas-på-doc, så skriv ikke "Pas-på-doc: " foran.
 - `klasse` udelades (bruges ikke af dida.dk).
 - `totalTime` udelades (beregnes automatisk af dida.dk fra trinenes duration).
 - Alle felter følger det kanoniske JSON-format fra vidensbasen (se trin 2).
@@ -242,6 +243,7 @@ node "${CLAUDE_SKILL_DIR}/../dagsorden-principper/scripts/generate-dagsorden.js"
   --output <output-fil>.docx
 ```
    Fejler det med "Cannot find module 'docx'", så kør `npm install` i mappen `${CLAUDE_SKILL_DIR}/../dagsorden-principper/scripts`, og prøv igen.
+   Har du ikke skillens mappe, fx når skillen læses fra vidensbasen: gem scriptet og package.json i samme mappe, og kør `npm install docx` dér. Er der intet netværk, så lav Word med en docx-skill ud fra JSON'en, eller lever JSON og markdown.
 3. Sig, hvor Word-dokumentet ligger.
 
 ### C) Begge

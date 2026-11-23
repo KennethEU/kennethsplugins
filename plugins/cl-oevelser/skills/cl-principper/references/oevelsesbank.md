@@ -6,22 +6,24 @@
 
 ## Oversigt
 
+Kolonnen "SPIL-svaghed" viser de principper, der er vurderet middel eller svag i øvelsens SPIL-linje.
+
 | Øvelse | Formål | Gruppe | Ca. tid | Bevægelse | SPIL-svaghed |
 |--------|--------|--------|---------|-----------|--------------|
 | [Svar-bazar](#svar-bazar) | Lektieopsamling | Skiftende par | 15-20 min | Ja | Ingen |
 | [Mix og match](#mix-og-match) | Lektieopsamling, færdighedstræning | Skiftende par | 10-20 min | Ja | Ingen |
 | [Møde på midten](#møde-på-midten) | Lektieopsamling | Grupper à 4 | 15-20 min | Nej | Ingen |
-| [Samtidig skrivetur](#samtidig-skrivetur) | Lektieopsamling | Grupper à 4-5 | 15-20 min | Nej | Ingen |
-| [Vælg fra viften](#vælg-fra-viften) | Lektieopsamling | Grupper à 4-5 | 20-25 min | Nej | Ingen |
+| [Samtidig skrivetur](#samtidig-skrivetur) | Lektieopsamling | Grupper à 4-5 | 15-20 min | Nej | P middel |
+| [Vælg fra viften](#vælg-fra-viften) | Lektieopsamling | Grupper à 4-5 | 20-25 min | Nej | P middel |
 | [Tre til te](#tre-til-te) | Gruppearbejde og opsamling | Grupper à 5 | 15-30 min | Ja | L middel |
-| [En for alle](#en-for-alle) | Lektieopsamling, færdighedstræning | Grupper à 4 | 5-15 min | Lidt | L middel |
-| [Bunker](#bunker) | Lektieopsamling | Grupper à 4-5 | 20-25 min | Nej | I middel |
-| [Har bolden](#har-bolden) | Lektieopsamling | Grupper à 5-6 | 10-20 min | Lidt | L svag |
-| [Kuvertleg](#kuvertleg) | Lektieopsamling, opsamling | Grupper | 30-45 min | Nej | I og L svag |
-| [Karrusel-feedback](#karrusel-feedback) | Gruppearbejde og opsamling | Grupper | 15-25 min plus gruppearbejde | Ja | I svag |
-| [Besøg en vismand](#besøg-en-vismand) | Gruppearbejde og opsamling | Grupper | 20-25 min plus gruppearbejde | Ja | I og L svag |
-| [Café-session](#café-session) | Gruppearbejde og opsamling | Grupper plus caféejere | 45-60 min | Ja | I og L svag |
-| [Bingopladen](#bingopladen) | Lektieopsamling | Hele klassen, så grupper | 15-25 min | Nej | S og P svag |
+| [En for alle](#en-for-alle) | Lektieopsamling, færdighedstræning | Grupper à 4 | 5-15 min | Lidt | S og L middel |
+| [Bunker](#bunker) | Lektieopsamling | Grupper à 4-5 | 20-25 min | Nej | P, I og L middel |
+| [Har bolden](#har-bolden) | Lektieopsamling | Grupper à 5-6 | 10-20 min | Lidt | S, P og I middel; L svag |
+| [Kuvertleg](#kuvertleg) | Lektieopsamling, opsamling | Grupper | 30-45 min | Nej | S middel; I og L svag |
+| [Karrusel-feedback](#karrusel-feedback) | Gruppearbejde og opsamling | Grupper | 15-25 min plus gruppearbejde | Ja | S, P og L middel; I svag |
+| [Besøg en vismand](#besøg-en-vismand) | Gruppearbejde og opsamling | Grupper | 20-25 min plus gruppearbejde | Ja | S og P middel; I og L svag |
+| [Café-session](#café-session) | Gruppearbejde og opsamling | Grupper plus caféejere | 45-60 min | Ja | S og P middel; I og L svag |
+| [Bingopladen](#bingopladen) | Lektieopsamling | Hele klassen, så grupper | 15-25 min | Nej | I middel; S og P svag |
 | [Fishbowl](#fishbowl) | Gruppearbejde og opsamling | Hele klassen | 20-30 min | Lidt | S, P, I og L svag |
 
 
@@ -29,35 +31,35 @@
 
 | Øvelse | Formål | Gruppe | Ca. tid | Bevægelse | SPIL-svaghed |
 |--------|--------|--------|---------|-----------|--------------|
-| [Tænk-par-del](#tænk-par-del) | Start, aktivering i gennemgang | Par | 3-5 min | Nej | L middel |
-| [Par på tid](#par-på-tid) | Start, aktivering, mundtlighed | Par | 3-5 min | Nej | Ingen |
-| [Ordet rundt](#ordet-rundt) | Brainstorm, aktivering | Grupper à 4 | 3-5 min | Nej | Ingen |
+| [Tænk-par-del](#tænk-par-del) | Start, aktivering i gennemgang | Par | 3-5 min | Nej | P, I og L middel |
+| [Par på tid](#par-på-tid) | Start, aktivering, mundtlighed | Par | 3-5 min | Nej | P middel |
+| [Ordet rundt](#ordet-rundt) | Brainstorm, aktivering | Grupper à 4 | 3-5 min | Nej | P middel |
 | [Quiz og byt](#quiz-og-byt) | Repetition, begreber | Skiftende par | 10-15 min | Ja | Ingen |
 | [Ekspertgrupper](#ekspertgrupper) | Tekstarbejde, nyt stof | Grupper à 4 plus ekspertgrupper | 40-60 min | Ja | Ingen |
 | [Notepar](#notepar) | Noter efter gennemgang | Par | 5-10 min | Nej | Ingen |
 | [Træner og løser](#træner-og-løser) | Beregning, færdighedstræning | Par | 15-25 min | Nej | Ingen |
-| [Spørgsmål og modelsvar](#spørgsmål-og-modelsvar) | Skriftlighed, eksamenstræning | Par | 30-40 min | Nej | Ingen |
+| [Spørgsmål og modelsvar](#spørgsmål-og-modelsvar) | Skriftlighed, eksamenstræning | Par | 30-40 min | Nej | P middel |
 | [Struktureret kontrovers](#struktureret-kontrovers) | Holdning, argumentation | Grupper à 4 | 40-60 min | Nej | Ingen |
 | [Hjørner](#hjørner) | Holdning, begreber | Par i hjørner | 10-15 min | Ja | P svag |
 | [Værdilinje](#værdilinje) | Holdning, argumentation | Par | 10-15 min | Ja | P svag |
-| [Interview i tre trin](#interview-i-tre-trin) | Dialog, egne erfaringer | Grupper à 4 | 10-15 min | Nej | Ingen |
+| [Interview i tre trin](#interview-i-tre-trin) | Dialog, egne erfaringer | Grupper à 4 | 10-15 min | Nej | P middel |
 | [Én på besøg](#én-på-besøg) | Midt i gruppearbejde | Grupper à 4 | 5-10 min | Ja | L middel |
-| [Dobbeltcirkler](#dobbeltcirkler) | Repetition, mundtlighed | Skiftende par | 10-15 min | Ja | Ingen |
-| [Tavlegrupper](#tavlegrupper) | Anvendelse, problemløsning, repetition | Tilfældige grupper à 3 | 20-40 min | Ja | I middel |
+| [Dobbeltcirkler](#dobbeltcirkler) | Repetition, mundtlighed | Skiftende par | 10-15 min | Ja | P middel |
+| [Tavlegrupper](#tavlegrupper) | Anvendelse, problemløsning, repetition | Tilfældige grupper à 3 | 20-40 min | Ja | P, I og L middel |
 | [Nummererede hoveder](#nummererede-hoveder) | Lektieopsamling, begreber | Grupper à 4 | 10-15 min | Nej | Ingen |
-| [Afsløring](#afsløring) | Repetition, begreber, beregning | Grupper à 4 | 10-20 min | Nej | Ingen |
-| [Taleperler](#taleperler) | Diskussion, hvor få dominerer | Grupper à 4 | 10-20 min | Nej | Ingen |
-| [Gentag før du taler](#gentag-før-du-taler) | Debat, argumentation, lytning | Grupper à 4 | 10-20 min | Nej | Ingen |
-| [Gruppe, par, alene](#gruppe-par-alene) | Ny færdighed med støtte, der trappes ned | Grupper à 4, så par | 20-30 min | Nej | Ingen |
-| [Fordel pointene](#fordel-pointene) | Prioritering, beslutning | Grupper à 4 | 10-15 min | Nej | Ingen |
-| [Find den falske](#find-den-falske) | Repetition, kildekritik | Grupper à 4 | 10-15 min | Nej | Ingen |
-| [Giv én, få én](#giv-én-få-én) | Brainstorm, repetition | Skiftende par | 10-15 min | Ja | I middel |
+| [Afsløring](#afsløring) | Repetition, begreber, beregning | Grupper à 4 | 10-20 min | Nej | P middel |
+| [Taleperler](#taleperler) | Diskussion, hvor få dominerer | Grupper à 4 | 10-20 min | Nej | S og P middel |
+| [Gentag før du taler](#gentag-før-du-taler) | Debat, argumentation, lytning | Grupper à 4 | 10-20 min | Nej | S og P middel |
+| [Gruppe, par, alene](#gruppe-par-alene) | Ny færdighed med støtte, der trappes ned | Grupper à 4, så par | 20-30 min | Nej | L middel |
+| [Fordel pointene](#fordel-pointene) | Prioritering, beslutning | Grupper à 4 | 10-15 min | Nej | P middel |
+| [Find den falske](#find-den-falske) | Repetition, kildekritik | Grupper à 4 | 10-15 min | Nej | S og P middel |
+| [Giv én, få én](#giv-én-få-én) | Brainstorm, repetition | Skiftende par | 10-15 min | Ja | P og I middel |
 | [Dækkeserviet](#dækkeserviet) | Forforståelse, brainstorm, opsamling | Grupper à 4 | 10-15 min | Nej | Ingen |
-| [Læretempo-duet](#læretempo-duet) | Tekstarbejde, repetition, stor spredning | Skiftende par | 20-40 min | Ja | Ingen |
+| [Læretempo-duet](#læretempo-duet) | Tekstarbejde, repetition, stor spredning | Skiftende par | 20-40 min | Ja | P middel |
 | [Blyanter i midten](#blyanter-i-midten) | Opgaver, der skal forstås før de løses | Grupper à 4 | 10-20 min | Nej | Ingen |
-| [Tre minutters stop](#tre-minutters-stop) | Aktivering inde i en gennemgang | Grupper à 4 | 3-5 min pr. stop | Nej | Ingen |
+| [Tre minutters stop](#tre-minutters-stop) | Aktivering inde i en gennemgang | Grupper à 4 | 3-5 min pr. stop | Nej | S, P, I og L middel |
 | [Ekspertgrupper med før og efter](#ekspertgrupper-med-før-og-efter) | Tekstarbejde mod ét samlende spørgsmål | Grupper à 3-4 plus ekspertgrupper | 50-70 min | Ja | Ingen |
-| [Havruta](#havruta) | Kritisk læsning, spørgsmål til tekst | Par | 15-25 min | Nej | Ingen |
+| [Havruta](#havruta) | Kritisk læsning, spørgsmål til tekst | Par | 15-25 min | Nej | P middel |
 
 ---
 
@@ -933,7 +935,7 @@ Spansk: Parada de tres minutos, efter Pere Pujolàs. **Grundlag:** kilde 16, tri
 
 **Noter:** eleverne skriver svaret på det spørgsmål, de selv stillede.
 
-**SPIL:** S stærk, P middel, I middel, L middel.
+**SPIL:** S middel (stærk i de tre minutter, men i trin 3 taler én gruppe ad gangen), P middel, I middel, L middel.
 
 **Skærpelse:** lad holdet trække, hvem der stiller spørgsmålet, så alle skal kunne forklare det. Passer som aktivering inde i en gennemgang efter `klasseledelse-principper`.
 

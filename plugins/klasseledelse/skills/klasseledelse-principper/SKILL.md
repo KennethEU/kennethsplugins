@@ -1,6 +1,6 @@
 ---
 name: klasseledelse-principper
-description: "Baggrundsviden om klasseledelse i gymnasiet: ti principper for deltagelse, tretten konkrete greb, oversættelse til 16-19-årige, deltagelseskort og evidensmærker. Læses af klasseledelse-planlaeg-lektion og klasseledelse-vurder-plan. Brug direkte, når læreren spørger, hvad forskningen siger om fx cold calling, skærme, faste pladser, slides eller aktivering i gymnasiet. Brug ikke til at lave eller vurdere en konkret plan (de to andre skills), til arbejdsspørgsmål (bloom) eller til casespil."
+description: "Baggrundsviden om klasseledelse i gymnasiet: ti principper for deltagelse, konkrete greb, oversættelse til 16-19-årige, deltagelseskort og evidensmærker. Læses af klasseledelse-planlaeg-lektion og klasseledelse-vurder-plan. Brug direkte, når læreren spørger, hvad forskningen siger om fx cold calling, skærme, faste pladser, slides eller aktivering i gymnasiet. Brug ikke til at lave eller vurdere en konkret plan (de to andre skills), til arbejdsspørgsmål (bloom) eller til casespil."
 user-invocable: false
 allowed-tools:
   - Read
@@ -30,7 +30,7 @@ Deltagelse er en forudsætning for alt andet. Elever, der ikke er mentalt med, f
 | 9 | Frisk tempo uden afsporing | Er der plan for at gå videre og vende tilbage? |
 | 10 | Fortælleelementer | Har stoffet personer, konflikt eller spænding, der bærer pointen? |
 
-## De tretten greb
+## De konkrete greb
 
 Brug dem som en værktøjskasse. En god plan bruger nogle få, gennemført godt.
 
@@ -49,7 +49,7 @@ Brug dem som en værktøjskasse. En god plan bruger nogle få, gennemført godt.
 
 Bogen bygger på efterskole og folkeskole. Tilpas altid sådan her:
 
-- **Rammen:** teamet bør så vidt muligt være enige om pladser, skærme og forberedelse, for eleverne oplever forskelle som uforudsigelige.
+- **Rammen:** lærerne i klassen bør så vidt muligt være enige om pladser, skærme og forberedelse, for eleverne oplever forskelle som uforudsigelige.
 - **Skærme:** eleverne har ofte brug for computeren. Standarden er at skifte tydeligt mellem faser med skærm og uden, og at sige hvorfor. Begrund med distraktion og opmærksomhed, ikke med påstanden om, at håndskrift i sig selv er bedre.
 - **Tonen:** ældre elever tåler ikke at blive behandlet som børn. Call-response, energipauser og håndsoprækning skal være korte, have en funktion og kunne vælges fra. Fx kan call-response blive til, at hele klassen siger et fagbegreb højt, før det skrives ned.
 - **Bedømmelse:** læreren er også bedømmer. Sig tydeligt, hvornår noget er øverum, især ved cold calling.
@@ -183,7 +183,7 @@ Det hele er arbejdsregler og praksisråd, ikke forskning.
 Det er praksisråd, ikke forskning.
 
 - **Gruppefaser:** spørg, om nogen kan gemme sig. Brug hellere turregler, hvor alle på skift bidrager, end roller som "den, der skriver".
-- **Synligt gruppearbejde:** grupper på tre ved lodrette tavler med én tusch på skift gør tænkningen synlig for læreren, så fasen kan blive A frem for G (Det tænkende klasserum, se `cl-find-oevelse`, "Tavlegrupper"). Brug det til anvendelse og repetition. Ved nyt stof kræver det forudsætninger og eksplicit opsamling.
+- **Synligt gruppearbejde:** grupper på tre ved lodrette tavler med én tusch på skift gør tænkningen synlig for læreren, så fasen kan blive A frem for G (Det tænkende klasserum, "Tavlegrupper" via `cl-find-oevelse` (øvelsesbanken)). Brug det til anvendelse og repetition. Ved nyt stof kræver det forudsætninger og eksplicit opsamling.
 - **Fordeling:** betyder sammensætningen noget, så lav grupperne på forhånd, og læg dem i klassens fælles system, fx Lectio. Ellers lad eleverne tælle af på dagen, så fraværet er regnet med.
 - **Tjek hver række:** prøv gruppereglen på hvert elevtal i spændet. Ingen må ende alene ved et bord, og reglen for fravær skal virke ved det elevtal, den gælder for.
 - **Puslespil og lignende:** skriv, hvad der sker, hvis en gruppe mangler en ekspert.

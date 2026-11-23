@@ -4,7 +4,7 @@ Gennemgået november 2026. Gengivet med egne ord efter Kenneths noter til *Gymna
 
 ## Kerneidé
 
-Ingen teori forklarer al læring. Brug teorierne som briller, der hver især peger på noget, planen skal tage højde for. Kenneths eget udgangspunkt er sociokulturelt (Vygotsky): læring sker mellem mennesker og med støtte, og eleverne skal arbejde lige over det, de kan alene.
+Ingen teori forklarer al læring. Brug teorierne som briller, der hver især peger på noget, planen skal tage højde for. Erfaringerne fra KM's pædagogikum tager udgangspunkt i det sociokulturelle (Vygotsky): læring sker mellem mennesker og med støtte, og eleverne skal arbejde lige over det, de kan alene.
 
 ## Hvad hver tradition betyder for planen
 
@@ -20,7 +20,7 @@ Ingen teori forklarer al læring. Brug teorierne som briller, der hver især peg
 
 ## Stilladsering og kognitiv mesterlære
 
-Kenneths foretrukne model fra pædagogikum. Fasemodellen (Collins m.fl.) bruges sådan:
+Model, der har virket godt i KM's pædagogikum. Fasemodellen (Collins m.fl.) bruges sådan:
 
 1. **Modellering:** læreren løser en opgave og tænker højt, så de skjulte faglige overvejelser bliver synlige.
 2. **Coaching:** eleverne løser opgaven, og læreren giver hints og feedback.
@@ -29,7 +29,7 @@ Kenneths foretrukne model fra pædagogikum. Fasemodellen (Collins m.fl.) bruges 
 5. **Refleksion:** eleverne sammenligner deres løsning med andres og med lærerens.
 6. **Udforskning:** eleverne løser lignende opgaver selv.
 
-Regler fra Kenneths erfaring:
+Erfaringsregler fra praksis (KM), ikke forskning:
 
 - Stilladset skal være så højt, at eleverne lige akkurat kan løse opgaven. Et stillads, der skal rumme alt, bliver selv en kilde til frustration.
 - Ét nyt element ad gangen. Et oplæg med mange tankeprocesser på én gang overvælder.

@@ -10,7 +10,7 @@ Mediefag veksler mellem **analyse** (filmsprog, genre, fakta og fiktion, dokumen
 
 ## Synopsis og produktionsvejledning
 
-Kenneths model fra pædagogikum, cirka 3 lektioner:
+En model fra pædagogikum (KM), cirka 3 lektioner:
 
 1. **Motiverende oplæg:** opsummer teorien, og vis, hvordan den kan bruges i egen produktion.
 2. **Brainstorm i grupper:** læreren er kreativ sparringspartner og stiller faglige spørgsmål, fx "Er der en konflikt i jeres historie?".
@@ -23,7 +23,7 @@ Kenneths model fra pædagogikum, cirka 3 lektioner:
 - **Stop videoen** for at tale om virkemidler, når der er lagt op til analyse fra start. Ikke ved første visning af en film.
 - **Små produktioner som repetition:** fx en dokumentar på halvandet minut i en bestemt dokumentarform, efterfulgt af analyse af hinandens film.
 - **Kritik af hinandens pilotprojekter:** eleverne ser både fejl og succeser hos andre.
-- **Konkurrence om fagbegreber,** fx drenge mod piger i et fælles dokument.
+- **Konkurrence om fagbegreber,** fx to halvdele af klassen i et fælles dokument.
 - **Afslut et forløb med et eksamenscitat,** så eleverne kender eksamensformen.
 
 ## Spørgsmål til planen

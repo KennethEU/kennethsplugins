@@ -79,7 +79,7 @@ Disse principper (Johnson & Johnson, Kagan, Gillies) skal gennemsyre alle dagsor
 Eleverne lykkes kun, hvis gruppen lykkes. Sikres via rollefordeling, fælles produkt og delt ansvar.
 
 ### 2. Individuel ansvarlighed
-Hvert medlem har en unik funktion, som ikke kan overtages af andre. Uden dette opstår social loafing (passageradfærd).
+Hver elev skal jævnligt vise sin egen forståelse for de andre, så ingen kan gemme sig. Uden dette opstår social loafing (passageradfærd).
 
 ### 3. Individuel tænketid inden deling
 Tavs, individuel refleksion (læsning, egne noter) skal komme *før* fælles diskussion. Det giver mere differentierede bidrag og aktiverer de stille elever.
@@ -152,7 +152,7 @@ Hvert trin bør kun have **ét klart formål**. Bland ikke overblik og analyse i
 3. **Angiv rækkefølge med numre** 1), 2), 3), når der er flere delopgaver.
 4. **Angiv pas-på-docs opgave** eksplicit i alle trin, hvor der skal skrives.
 5. **Undgå fagord, der skal forklares.** Dagsordenen skal være selvkørende.
-6. **Brug OBS:** til vigtige præciseringer og særlige instruktioner.
+6. **Brug feltet `note` til vigtige præciseringer.** Skriv ikke "OBS:" selv; det tilføjes automatisk.
 7. **Materialereferencer skal være elevvendte.** Skriv "Jeres lektie (afsnit 4.5: Levevilkår)", ikke "Columbus 4.5" eller andre interne bogkoder. Eleverne kender ikke forlagsbetegnelser.
 8. **Brug lærerens navn** i stedet for "læreren", hvis du kender det fra samtalen eller lærerens egne indstillinger. Skriv "deler med gruppen og [lærerens navn]", ikke "deler med gruppen og læreren". Det er mere personligt og klart. Kender du ikke navnet, så spørg én gang, eller skriv "jeres lærer".
 9. **Skriv "grupper", ikke "teams",** og brug ingen tankestreger. Pas på bøjningen: "gruppen er enig", "jeres gruppes svar".
@@ -225,7 +225,9 @@ Alle dagsordener produceres som JSON i ét format. Samme JSON bruges til **tre o
 
 Dagsordenen er til gruppearbejdet på elevernes egne skærme. En lektionsplan til storskærmen laves med `dida-plan` i pluginet `dida`.
 
-### Komplet JSON-skema
+### JSON-skema (uddrag)
+
+Eksemplet herunder er et uddrag, der viser felterne. Det er ikke en færdig dagsorden og består ikke valideringen (trinene summer ikke til `totalTime`, og pausen mangler). Et fuldt eksempel, der består, ligger i `resources/eksempel-polkom-matrix.json`.
 
 ```json
 {
@@ -361,7 +363,7 @@ python3 "${CLAUDE_SKILL_DIR}/scripts/validate-dagsorden.py" dagsorden.json
 
 Exit 0 = OK, exit 2 = fejl (med besked om, hvad der skal rettes). Advarsler (⚠️) stopper ikke, men se på dem. Kriterierne:
 1. `totalTime` == sum af alle `steps[].duration` (fejl)
-2. Trin 1 er altid rollevalg, højst 4 min (fejl over 4 min, advarsel hvis overskriften ikke nævner roller)
+2. Trin 1 er altid rollevalg, 2 til 4 min (fejl under 2 og over 4 min, advarsel hvis overskriften ikke nævner roller)
 3. Pause er med, hvis totalTime > 25 (fejl)
 4. Alle fælles trin med gruppeproduktion har `docInstruction` eller nævner pas-på-doc i `instruction` (advarsel; individuelle trin tælles ikke)
 5. Der er mindst én individuel fase (tavs læsning/notering) før første gruppefase (advarsel)
@@ -382,6 +384,8 @@ node "${CLAUDE_SKILL_DIR}/scripts/generate-dagsorden.js" \
 ```
 
 Scriptet kræver npm-pakken `docx`. Fejler det med "Cannot find module 'docx'", så kør `npm install` i mappen `${CLAUDE_SKILL_DIR}/scripts` (der ligger en `package.json`), og prøv igen. Node leder efter pakker ved siden af scriptet, ikke i arbejdsmappen.
+
+Har du ikke skillens mappe, fx når skillen læses fra vidensbasen: gem scriptet og package.json i samme mappe, og kør `npm install docx` dér. Er der intet netværk, så lav Word med en docx-skill ud fra JSON'en, eller lever JSON og markdown.
 
 Scriptet accepterer det kanoniske JSON-format og mapper automatisk:
 - `heading` til `hvad`-kolonnen

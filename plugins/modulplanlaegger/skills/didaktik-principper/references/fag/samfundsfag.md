@@ -2,7 +2,7 @@
 
 Gennemgået november 2026. Gengivet med egne ord efter Torben Spanget Christensen: "Samfundsfag" i *Gymnasiepædagogik* (2006), Knudsen og Henriksen (red.): *Samfundsfagsdidaktik* (2009), via Kenneths eksamensopgave fra AAU (2010), og hans refleksioner fra pædagogikum (2012).
 
-**Advarsel om regler:** Alt, der henviser til bekendtgørelser, læreplaner, vejledninger, niveaukrav, spørgeord og prøveformer, er fra 2010 til 2012. Det skal tjekkes mod gældende læreplan og vejledning på emu.dk, før det bruges. Citér det aldrig som gældende regel.
+**Advarsel om regler:** Alt, der henviser til bekendtgørelser, læreplaner, vejledninger, niveaukrav, spørgeord og prøveformer, er fra 2010 til 2012. Det skal tjekkes mod gældende læreplan og vejledning, før det bruges. Find dem i vidensbasen eller på uvm.dk efter `didaktik-planlaeg-forloeb/references/laereplaner.md`. Emu.dk er kun inspiration. Citér det aldrig som gældende regel.
 
 ## Fagets formål
 
@@ -42,7 +42,7 @@ Et godt forløb bruger alle tre. Elevdeltagelse er ikke kun motivation, den er e
 - Uden metode bliver faget et "snakkefag" med holdninger fra hverdagen.
 - Metode må ikke nedprioriteres på de laveste niveauer.
 
-**Progression i metode** (Kenneths forslag):
+**Progression i metode** (forslag fra praksis, KM):
 
 1. Aflæse og forstå tabeller og diagrammer.
 2. Opstille egne tabeller og vurdere, hvordan tal er fremkommet.
@@ -55,7 +55,7 @@ Start nye emner induktivt: hvad tror eleverne, at årsagen er? Lad dem formulere
 
 ## Arbejdsformer, der passer til faget
 
-Fra Kenneths noter og praksis: debat, paneldebat, rollespil og casespil, elevoplæg, SWOT, synopsis, hurtigskrivning, logbog, gruppearbejde med produktkrav, spørgeskemaer og interviews, data fra fx Danmarks Statistik, gæsteforelæsning og ekskursion. Rollespil og casespil virker særligt godt til forhandling og aktørers interesser. Brug `casespilsdesigner` til at designe dem.
+Praksiserfaring fra faggruppen: debat, paneldebat, rollespil og casespil, elevoplæg, SWOT, synopsis, hurtigskrivning, logbog, gruppearbejde med produktkrav, spørgeskemaer og interviews, data fra fx Danmarks Statistik, gæsteforelæsning og ekskursion. Rollespil og casespil virker særligt godt til forhandling og aktørers interesser. Brug `casespilsdesigner` til at designe dem.
 
 ## Fagligt samspil
 
@@ -83,4 +83,4 @@ Det er et dateret eksempel på strukturen: induktiv start, teori, metode, autent
 | Bruger forløbet både fag, aktualitet og elevernes erfaringer? | Tilføj en aktuel case eller en hverdagsindgang |
 | Er der en metodisk dimension? | Læg data eller en lille undersøgelse ind |
 | Får eleverne kvalificeret egne standpunkter fagligt? | Tilføj en debat eller diskussion med krav om faglig begrundelse |
-| Er der tjekket mod den gældende læreplan? | Slå op på emu.dk, eller bed læreren bekræfte |
+| Er der tjekket mod den gældende læreplan? | Slå op efter `didaktik-planlaeg-forloeb/references/laereplaner.md`, eller bed læreren bekræfte |

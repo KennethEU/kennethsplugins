@@ -9,7 +9,7 @@ Brug denne fil som tjekliste ved generering og vurdering af spørgsmål.
 - FORBUDTE VERBER OG UDTRYK
 - FORBUDTE KONSTRUKTIONER
 - TYPISKE FEJL VED SPØRGSMÅLSFORMULERING
-- VURDERINGSSKEMA (til Mode 4)
+- VURDERINGSSKEMA (til bloom-vurder-spoergsmaal)
 - GODKENDTE SPØRGSMÅLSSTARTERE
 
 ## FORBUDTE VERBER OG UDTRYK
@@ -20,7 +20,7 @@ Disse akademiske direktiver må ALDRIG bruges i spørgsmålsformuleringer:
 |---------|---------|---------------|
 | **Analysér** | Upræcist: fortæller ikke eleven hvad de skal gøre | "Hvilke forskelle er der mellem...", "Hvordan hænger...sammen" |
 | **Diskutér** | For åbent: giver ingen retning | "Er det holdbart at...? Begrund", "Hvilke argumenter taler for og imod..." |
-| **Redegør for** | Akademisk og vagt | "Forklar med egne ord...", "Beskriv hvordan..." |
+| **Redegør for** | Akademisk og vagt | "Forklar med egne ord...", "Forklar hvordan..." |
 | **Reflektér over** | Uspecifikt | "Hvad ville du selv vælge, og hvorfor?", "Hvilken betydning har...for..." |
 | **Perspektivér** | STX-eksamensterm, ikke et handlingsverb | "Hvordan kan [teori X] bruges til at forstå [fænomen Y]?" |
 | **Vurdér** (som eneste verb) | For vagt uden kriterier | "Er [påstand] holdbar? Begrund dit svar med..." |
@@ -106,7 +106,7 @@ Alle spørgsmål ligger på Huske/Forstå-niveau.
 
 ---
 
-## VURDERINGSSKEMA (til Mode 4)
+## VURDERINGSSKEMA (til bloom-vurder-spoergsmaal)
 
 Når du vurderer eksisterende spørgsmål, brug dette skema for hvert spørgsmål:
 

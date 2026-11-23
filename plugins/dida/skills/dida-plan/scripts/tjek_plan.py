@@ -6,7 +6,14 @@ import sys
 
 FORMS = {"alene", "par", "gruppe", "klassen"}
 FIELDS = {"heading", "duration", "type", "workForm", "screen", "instruction", "doneWhen", "note", "teacherNote"}
-CLOCK = re.compile(r"\b\d{1,2}\s*-\s*\d{1,2}\s*min|\bkl\.\s*\d", re.I)
+# Klokkeslæt eller tidsrum i modulet, fx "26-37" eller "kl. 10". "3-5 min" er en varighed og er OK.
+# Sidetal, kapitler og gruppestørrelser ("s. 45-52", "kap. 3-4", "à 3-4") tæller ikke.
+CLOCK = re.compile(
+    r"(?<![\w.\-])(?<!s\. )(?<!side )(?<!sider )(?<!kap\. )(?<!à )"
+    r"\d{1,2}\s*[-\u2013]\s*\d{1,2}(?!\d)(?!\s*min)"
+    r"|\bkl\.\s*\d",
+    re.I,
+)
 
 
 def filled(value):

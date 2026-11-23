@@ -79,7 +79,7 @@ Meyer opstiller ti kendetegn. Rækkefølgen er ikke en rangorden. **Praksis**, b
 9. **Transparente præstationsforventninger:** krav, der passer til elevernes niveau, og hyppig feedback om fremskridt.
 10. **Stimulerende læringsmiljø:** orden, funktionel indretning og brugbare værktøjer.
 
-Kenneths litteraturliste fra pædagogikum vurderer **klar strukturering** som særligt brugbar i gymnasiet.
+Litteraturen fra pædagogikum (KM) vurderer **klar strukturering** som særligt brugbar i gymnasiet.
 
 ## Det enkelte modul
 

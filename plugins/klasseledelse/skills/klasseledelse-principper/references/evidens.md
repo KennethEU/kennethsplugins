@@ -9,7 +9,7 @@ Gennemgået november 2026. Brug kun påstande fra denne fil, når du begrunder e
 - **Praksis:** bogens eller læreres erfaring. Kan være god, men er ikke dokumenteret her.
 - **Omdiskuteret:** forskningen trækker i forskellige retninger, eller bogens påstand er ikke understøttet.
 
-Sæt ét mærke på et råd, når læreren spørger, hvorfor, eller når rådet koster noget, fx faste pladser eller skærmfri faser.
+Regel for alle skills: i den grundige version må mærkerne bruges, hvor du henviser til forskning. I kort version sæt kun ét mærke ved råd, der koster noget, fx faste pladser eller skærmfri faser, eller når læreren spørger hvorfor.
 
 ## Hovedbegrænsning
 
@@ -45,7 +45,7 @@ Meget af forskningen er fra grundskolen eller universitetet. Gymnasiet ligger im
 - Effekten kan vende, når eleverne allerede kan stoffet, hvor styringen bliver overflødig. **Stærk** som princip. [Kalyuga, oversigt over expertise reversal](https://my.chartered.college/?p=5912)
 - Konsekvens: vis modellen ved nye genrer, og aftrap den, når klassen kan genren. Især i 3.g og op mod eksamen.
 
-### Instruktion før eller efter problemløsning (princip 7 og "konstruktivt bøvl")
+### Instruktion før eller efter problemløsning (skærpelse 4 og "konstruktivt bøvl")
 
 - Bogen placerer bøvlet sidst i et forløb. En metaanalyse fandt derimod en moderat fordel ved at lade elever forsøge sig med et problem før instruktionen (g = 0,36), større når forsøget er designet efter Productive Failure-principperne. Fordelen gælder mere for ældre elever, og det meste er fra matematik og naturfag. Forfatterne er også fortalere for metoden. **Omdiskuteret.** [Sinha og Kapur 2021](https://www.x-mol.com/paper/1406031499744456704), [omtale](https://phys.org/news/2021-09-productively-wiser.html)
 - Konsekvens: begge rækkefølger er legitime i gymnasiet. Problem først kræver, at forsøget er overkommeligt, at alle kan komme i gang, og at der følger tydelig instruktion bagefter.
@@ -79,7 +79,6 @@ Gennemgået november 2026 ud fra bogens kapitel 1 (forlagets gratis prøvekapite
 - **Dele skal kobles til helheden.** Færdigheder, der kun øves hver for sig, overføres ikke ("splinter skills"). Brug delene samlet allerede i samme forløb.
 - **Organisér viden.** Skemaer, modeller og oversigter, der viser, hvordan begreberne hænger sammen, gør det lettere at hente stoffet frem igen.
 - **Modulets start (kapitel 2).** Fang opmærksomheden med det samme signal hver gang, og gentag det, når eleverne har kigget væk. Sig målet. Lad eleverne høre eller selv finde, hvorfor, hvor og hvornår de skal bruge det, fx ved at fortælle det til sidemanden. Tjek forudsætningerne hos alle med en lille opgave. Et tjek er ikke at spørge "kan I huske det?" eller at lade én elev løse en opgave ved tavlen, og det er ikke en ny gennemgang. Lektien kan bruges som tjek.
-- **Spor at følge:** en rapport om læsning hos unge (Kamil m.fl. 2008, IES) gav den stærkeste evidens til eksplicit undervisning i ordforråd og i læsestrategier. Rapporten er ikke læst her.
 
 ### Den eksplicitte lektion og planlagt øvelse (HLP 16)
 
@@ -167,7 +166,7 @@ Gennemgået november 2026 ud fra resuméer og omtaler. Fuldteksterne er ikke læ
 - Spilleregler og rutiner bør etableres tidligt, men alene har de kun en lille effekt på adfærden. Eleverne efterspørger, at lærerne håndterer dem ens. **Moderat.** [EVA 2019, s. 8](https://uvm.dk/media/45ppq5sy/191030-vidensnotat-klasseledelse-i-gym.pdf)
 - Autonomistøttende undervisning, hvor begrundelser er ét element, kan læres og giver en række gevinster. **Stærk** som samlet tilgang, **moderat** for begrundelser alene. [Reeve og Cheon 2021](https://selfdeterminationtheory.org/wp-content/uploads/2021/05/2021_ReeveCheon_AutonomySupportive.pdf)
 - Medansvar, fx valg af produkt eller arbejdsmetode, har positiv betydning. Det trækker imod en meget stram linje og bør tænkes ind. **Moderat.** [EVA 2019, s. 11](https://uvm.dk/media/45ppq5sy/191030-vidensnotat-klasseledelse-i-gym.pdf)
-- Klasseledelsesprogrammer har en lille gennemsnitlig effekt (g = 0,22), og smalle indsatser ser ud til at virke bedre end brede. Grundlaget er grundskolen, så det kan ikke overføres direkte. **Moderat.** [Korpershoek m.fl., opdatering](https://research.rug.nl/en/publications/an-update-of-the-meta-analysis-of-the-effects-of-classroom-manage/)
+- Klasseledelsesprogrammer har en lille gennemsnitlig effekt (g = 0,22), og smalle indsatser ser ud til at virke bedre end brede. Grundlaget er grundskolen, så det kan ikke overføres direkte. **Moderat.** [Korpershoek m.fl. 2026, opdatering af metaanalysen fra 2016](https://research.rug.nl/en/publications/an-update-of-the-meta-analysis-of-the-effects-of-classroom-manage/)
 
 ### Tid, grupper og noter
 

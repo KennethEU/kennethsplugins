@@ -20,7 +20,7 @@ Du er en erfaren dansk gymnasielærer med speciale i didaktisk design. Du laver 
 
 ## Fase 0: Saml kontekst (automatisk, FØR alt andet)
 
-1. Læs CLAUDE.md for at forstå lærerens fag, hold og arbejdsgange
+1. Læs CLAUDE.md, hvis den findes, for at forstå lærerens fag, hold og arbejdsgange
 2. Identificér faget ud fra teksten eller brugerens besked
 3. Hvis læreren har lagt faglige mål, forløbsbeskrivelser eller lignende i projektmappen, så læs dem og brug dem til at tilpasse spørgsmålene
 4. Læs reference-filerne efter behov: `references/bloom-verber.md`, `references/forbudte-formuleringer.md` og `references/taxonomy-table-template.md` (i denne skills mappe)
@@ -182,7 +182,7 @@ Eleven arbejder i timen, evt. i grupper, med lærer tilgængelig. Spørgsmålene
 - **Samarbejdskrævende:** Spørgsmål der har gavn af at blive drøftet med andre
 
 ### Eksamen
-Spørgsmål der træner STX-eksamensformaterne:
+Spørgsmål der træner STX-eksamensformaterne. Eksemplet er fra samfundsfag (mundtlig prøveform B). Tilpas til fagets egen prøveform:
 - **Spg 2 (undersøgelse):** Konceptuel viden + Analysere/Forstå. Eleven skal bruge faglige begreber til at opdele og forstå materiale.
 - **Spg 3 (diskussion/vurdering):** Evaluere/Skabe + konceptuel/procedural viden. Eleven skal tage stilling, vurdere og perspektivere.
 - **Typisk niveau 3-6:** Fokus på de høje kognitive niveauer
@@ -208,10 +208,10 @@ Når differentiering er valgt, genereres to parallelle versioner af spørgsmåls
 
 ### Basis-spørgsmål
 Designet til elever der har brug for mere støtte:
-- **Mere guidede:** Anviser hvad eleven skal kigge efter ("Kig på figur 4.2 og beskriv...")
+- **Mere guidede:** Anviser hvad eleven skal kigge efter ("Kig på figur 4.2. Hvad viser den om ...?")
 - **Tydeligere fokus:** Snævrere spørgsmål med klarere retning
 - **Lavere Bloom-niveauer:** Eller stilladserede udgaver af højere niveauer
-- **Hjælpende formuleringer:** "Teksten nævner tre faktorer. Hvilke er de, og hvad betyder de?"
+- **Hjælpende formuleringer:** "Teksten nævner tre faktorer. Hvilke er de?" og som næste spørgsmål "Hvad betyder den første faktor for ...?"
 - **Teksthenvisninger:** Angiv hvor i teksten svaret kan findes
 
 ### Udvidet-spørgsmål
@@ -254,7 +254,7 @@ Begrundede vurderinger baseret på kriterier.
 **6. SKABE (1-3 spørgsmål)**
 Produktion af noget nyt: design, plan, hypotese, produkt.
 
-**BREDE HOVEDSPØRGSMÅL (2-3 stk)**
+**BREDE HOVEDSPØRGSMÅL (1 til 2 stk)**
 Integrerer flere niveauer. Kan bruges som afsluttende refleksion eller mundtlig eksamensforberedelse.
 
 ### VERSION 2: TEKSTNÆR STRUKTUR
@@ -296,7 +296,7 @@ Kør dette tjek stille efter hver generering, og ret det, der fejler, før du af
 | Fagbegreber integreret? | ✓/⚠ | |
 | Kun teorier og begreber, klassen har mødt, eller mærket? | ✓/⚠ | |
 | Cases har oplysningerne i spørgsmålet, og aktuelle forhold er mærket? | ✓/⚠ | |
-| Alle 6 Bloom-niveauer dækket? | ✓/⚠ | |
+| Alle 6 Bloom-niveauer dækket, eller er det sagt, hvilke niveauer teksten ikke bærer? | ✓/⚠ | |
 | Variation i videnstyper? | ✓/⚠ | |
 | Differentiering (hvis valgt)? | ✓/⚠ | |
 
@@ -378,6 +378,7 @@ Læreren skal kunne se, hvor meget et sæt fylder, uden selv at regne. Tallene h
 ## STX-specifikke hensyn
 
 ### Eksamensformat
+Eksempel fra samfundsfag (mundtlig prøveform B). Tilpas til fagets egen prøveform:
 - **Spørgsmål 2 (undersøgelse):** Primært Forstå + Analysere med konceptuel viden
 - **Spørgsmål 3 (diskussion):** Primært Evaluere + Skabe med konceptuel/procedural viden
 - Brug "undersøgelse" (ikke "analyse") som fagterm for elevens arbejde med data/figurer
@@ -404,9 +405,9 @@ Et spørgsmål, der bruger stoffet på en case, kan kun besvares, hvis eleven ke
 
 ## Håndtering af forskellige teksttyper
 
-**Kort tekst (1-2 sider):** Reducér antal spørgsmål. Minimum 12 totalt. Konceptuel viden dominerer typisk.
+**Kort tekst (1-2 sider):** Standardsættet holder sig i den lave ende (ca. 10 spørgsmål). Det fulde sæt får færre spørgsmål pr. niveau, dog minimum 12 i Version 1. Konceptuel viden dominerer typisk.
 
-**Lang tekst (5+ sider):** Fuldt sæt med 20-25 spørgsmål. Sørg for at Version 2 dækker alle afsnit.
+**Lang tekst (5+ sider):** Standardsættet holder sig i den høje ende (ca. 14 spørgsmål). Det fulde sæt får 20-25 spørgsmål i Version 1. Sørg for at Version 2 dækker alle afsnit.
 
 **Teoretisk tekst (ideologier, modeller):** Tung på konceptuel viden. Procedural/metakognitiv naturligt sparsom. Notér dette i kommentaren.
 
@@ -434,16 +435,22 @@ Et spørgsmål, der bruger stoffet på en case, kan kun besvares, hvis eleven ke
 
 ## Tjekliste før aflevering
 
-- [ ] Er alle 6 Bloom-niveauer repræsenteret i Version 1?
-- [ ] Er der 2-3 brede hovedspørgsmål?
-- [ ] Følger Version 2 tekstens struktur?
+Altid (standardsættet og det fulde sæt):
+
+- [ ] Er alle 6 Bloom-niveauer dækket i Version 1, eller er det sagt, hvilke niveauer teksten ikke bærer?
+- [ ] Er der 1 til 2 brede hovedspørgsmål?
 - [ ] Er spørgsmålene formuleret uden forbudte termer?
 - [ ] Bruges Bloom-specifikke verber?
 - [ ] Er spørgsmålene afprøvet på teksten med facit-test og elevtest?
 - [ ] Er der variation i videnstyper?
-- [ ] Er Taxonomy Table udfyldt med kommentar?
 - [ ] Er fagbegreber fra teksten integreret?
-- [ ] Er minimum 15-25 spørgsmål totalt (afhængig af tekstlængde)?
+- [ ] Standardsættet: 10 til 14 spørgsmål i Version 1 plus de brede hovedspørgsmål?
+
+Kun ved det fulde sæt (når læreren har bedt om det):
+
+- [ ] Er Version 1 på 15-25 spørgsmål (minimum 12 ved kort tekst), jf. "Håndtering af forskellige teksttyper"?
+- [ ] Følger Version 2 tekstens struktur?
+- [ ] Er Taxonomy Table udfyldt med kommentar?
 
 ---
 

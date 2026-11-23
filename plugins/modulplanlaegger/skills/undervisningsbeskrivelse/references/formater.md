@@ -4,7 +4,7 @@ Tre formater: forløbsteksten på forløbssiden (som i Lectio), oversigten på h
 
 ## 1. Forløbsteksten på forløbssiden
 
-Lægges under modultabellen, fx lige over "Fælles filer i mappen". Felterne er Lectios felter for et forløb. Alt over boksen "Til læreren" skal kunne kopieres ind i Lectio og læses af eleverne.
+Har forløbssiden en modultabel, så læg afsnittet under den. Ellers sidst på siden. Felterne er Lectios felter for et forløb. Alt over boksen "Til læreren" skal kunne kopieres ind i Lectio og læses af eleverne.
 
 ```markdown
 ## Til undervisningsbeskrivelsen

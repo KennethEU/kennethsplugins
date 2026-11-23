@@ -120,7 +120,7 @@ Opdele materiale i dele og forstå sammenhænge.
 ### Gode eksempler
 - "Hvilke elementer i teksten afslører forfatterens politiske ståsted?"
 - "Hvad er de mest afgørende forskelle mellem de tre regelsystemer teksten beskriver?"
-- "Identificer argumentationsstrukturen: Hvad er påstande, og hvad er begrundelser?"
+- "Hvilke begrundelser giver forfatteren for sin hovedpåstand?"
 
 ### Forskel fra Forstå
 Forstå = "forklar hvad det betyder". Analysere = "bryd det op og vis hvordan delene hænger sammen."
@@ -180,11 +180,10 @@ Sammensætte elementer til noget nyt og kohærent.
 - "Konstruer en teori der kan forklare den observerede tendens."
 - "Skriv et kort scenarie (5-8 linjer) for en filmscene der bruger suspense."
 
-### Kategorier til dedikerede skabe-sæt (Mode 3)
+### Kategorier til dedikerede skabe-sæt (bloom-skabe-opgaver)
 Når du laver et rent skabe-sæt, organisér i disse kategorier:
 1. **Design/Konstruktion**: byg noget nyt (model, system, kampagne)
 2. **Planlægning**: lav en strategi eller handlingsplan
 3. **Generering**: udvikl hypoteser eller alternativer
 4. **Produktion**: skriv, tegn, komponer et konkret produkt
 5. **Integration**: kombinér elementer fra forskellige dele af teksten
-6. **Metakognitiv**: reflektér over egen analyseproces (sparsomt)

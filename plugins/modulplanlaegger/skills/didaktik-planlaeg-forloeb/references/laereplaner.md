@@ -31,7 +31,7 @@ Hver fagblok på siden har et afsnit pr. niveau med links, hvis tekst består af
 ## Fremgangsmåde
 
 1. **Hent oversigtssiden** med WebFetch, og bed om de præcise link-tekster og fulde adresser for fag og niveau. Linkene er relative, så sæt `https://uvm.dk` foran.
-2. **Vælg den nyeste version.** Årstallet står i link-teksten og ofte som datokode først i filnavnet, fx `240827` for 27. august 2024. Står der flere versioner, så tag den nyeste, og spørg, hvis det er uklart, hvilken der gælder for klassen, fx ved en ny læreplan fra et bestemt skoleår. En læreplan kan være ældre end vejledningen. Det er normalt.
+2. **Vælg den nyeste version.** Årstallet står i link-teksten. Filnavnet kan også begynde med en datokode, fx `240827` for 27. august 2024. Står der flere versioner, så tag den nyeste, og spørg, hvis det er uklart, hvilken der gælder for klassen, fx ved en ny læreplan fra et bestemt skoleår. En læreplan kan være ældre end vejledningen. Det er normalt.
 3. **Tjek cachen.** Ligger samme fil allerede i `_laereplaner/` i forløbsmappens rod, så brug den. Ellers hent den.
 4. **Hent PDF'en** med `curl -sL -o "<forløbsrod>/_laereplaner/<fag>-<niveau>-<laereplan|vejledning>-<år>.pdf" "<adresse>"`. Spørg først, hvis mappen ikke findes.
 5. **Udtræk teksten** med den første metode, der virker. Gem teksten ved siden af PDF'en som `.txt`:
@@ -40,6 +40,7 @@ Hver fagblok på siden har et afsnit pr. niveau med links, hvis tekst består af
    3. `pdf2txt.py fil.pdf > fil.txt` (pdfminer, fx i `/opt/homebrew/bin`).
    4. `python3 -c` med `pypdf`, hvis modulet findes.
    5. Virker intet, så bed læreren indsætte de relevante afsnit. WebFetch kan ikke læse disse PDF'er pålideligt.
+   Har du ingen shell (fx i claude.ai), så spring trin 4 og 5 over. Prøv at læse PDF'en med webværktøjet. Er teksten ufuldstændig, så bed læreren indsætte de relevante afsnit eller lægge læreplanen i vidensbasen.
 6. **Notér kilden** i `_laereplaner/kilder.md`: titel, version, adresse og hentedato. Skriv kilde og dato i `forloeb.md` under "Læreplan".
 
 ## Hvad der skal bruges
@@ -69,5 +70,5 @@ Linket "Find temaer og vejledningsmaterialer" fører til emu.dk med eksempler og
 
 ## Regler
 
-- Brug kun læreplan og vejledning fra vidensbasen i Outline, som du har hentet i denne samtale, eller som læreren har givet, som grundlag for gældende krav. Referencefilerne i `didaktik-principper` er fra 2010 til 2012 og må ikke bruges som regler.
+- Brug kun læreplan og vejledning fra vidensbasen i Outline, som du har hentet i denne samtale, eller som læreren har givet, som grundlag for gældende krav. Referencefilerne i `didaktik-principper` er fra 2010 til 2012 (POLIS-filen: 2020 til 2025) og må ikke bruges som regler.
 - Kan noget ikke hentes, så sig det, og marker kravene i planen som "ikke tjekket mod gældende læreplan".

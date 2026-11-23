@@ -32,6 +32,8 @@ def test_rejects_bad_input():
     for bad in ([{"text": "x", "answers": ["a"], "correct": "1"}],
                 [{"text": "x", "answers": ["a", "b"], "correct": "3"}],
                 [{"text": "a;b", "answers": ["a", "b"], "correct": "1"}],
+                [{"text": 'Hvad er "x"?', "answers": ["a", "b"], "correct": "1"}],
+                [{"text": "x", "answers": ['"a"', "b"], "correct": "1"}],
                 [{"text": "x", "answers": ["a", "b"], "correct": "1", "time": 500}]):
         r, _ = run(bad)
         assert r.returncode == 1 and "FEJL" in r.stdout, bad

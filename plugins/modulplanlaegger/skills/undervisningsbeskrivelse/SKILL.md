@@ -21,13 +21,13 @@ Læs `references/krav.md` første gang i en samtale. Formaterne står i `referen
 1. **Forløbet er enheden.** Én tekst pr. forløb med Lectios felter: forløbsbeskrivelse, faglige mål, særlige fokuspunkter, arbejdsformer og skriftligt arbejde. Holdsiden har kun oversigten over forløbene og det, der mangler.
 2. **Skrevet til eleverne.** Forløbsbeskrivelsen og de særlige fokuspunkter skal kunne læses af en elev. Fokuspunkterne er "det skal du kunne", skrevet ud fra modulernes mål. Ingen interne noter i Lectio-teksten. De står i boksen "Til læreren".
 3. **Afholdt og planlagt.** Lectio-teksten beskriver hele forløbet, også det planlagte. Boksen "Til læreren" siger præcist, hvilke moduler og hvilke mål der kun er planlagt. Før den endelige beskrivelse tages det ud, der ikke blev til noget (C). Et mål eller et kernestofpunkt tæller som dækket, når mindst ét afholdt modul har arbejdet med det.
-4. **Læreplanens ordrette tekst.** Faglige mål og kernestof under "Faglige mål" citeres ordret fra læreplanen (2.1 og 2.2), adskilt i "Kernestof" og "Mål". Find læreplanen først i Outline, se `${CLAUDE_SKILL_DIR}/../didaktik-planlaeg-forloeb/references/laereplaner.md`. Tjek hvert citat mod læreplanens tekst. Står der en anden ordlyd i det gamle forløb i Lectio, så skriv læreplanens.
+4. **Læreplanens ordrette tekst.** Faglige mål og kernestof under "Faglige mål" citeres ordret fra læreplanen (2.1 og 2.2 eller tilsvarende afsnit i fagets læreplan), adskilt i "Kernestof" og "Mål". Find læreplanen først i Outline, se `${CLAUDE_SKILL_DIR}/../didaktik-planlaeg-forloeb/references/laereplaner.md`. Tjek hvert citat mod læreplanens tekst. Står der en anden ordlyd i det gamle forløb i Lectio, så skriv læreplanens.
 5. **Kun ministeriets kilder om krav og form:** uvm.dk og retsinformation.dk. Kravene står i `references/krav.md`.
 6. **Ingen e-bøger.** Åbn aldrig forlagenes sider eller iBog-links (fx Systime, Columbus, Plenum, Gyldendal, Praxis) for at finde sidetal eller indhold. Heller ikke én side. Skriv i boksen, at sider mangler, og lad læreren udfylde dem. Spørg først, med præcis adresse, hvis læreren selv beder dig åbne en side.
 7. **Gæt ikke.** Står det ikke i forløbet, så skriv "ikke angivet" eller et "Tjek:"-punkt i boksen. Forløb, der kun ligger i Lectio eller i hovedet, kortlægges ikke. Skriv, at de mangler.
 8. **Ét hold ad gangen.** Deler to klasser en side, så hold dem adskilt. De har hver sin undervisningsbeskrivelse.
 9. **Ingen elevnavne.**
-10. **Ret kun afsnittet.** I Outline: brug `update_document` med `editMode: "patch"`, så resten af siden ikke røres. Afsnittet ligger under modultabellen, aldrig over den.
+10. **Ret kun afsnittet.** I Outline: brug `update_document` med `editMode: "patch"`, så resten af siden ikke røres. Har forløbssiden en modultabel, så læg afsnittet under den. Ellers sidst på siden.
 
 ## Vælg opgave
 
@@ -41,7 +41,7 @@ Vælg ud fra lærerens besked. Spørg kun, hvis det er uklart.
 
 ### Find forløbet
 
-- **Outline:** forløbssiden ligger typisk under lærerens private collection → hold → forløb, med en modultabel og en underside pr. modul. Holdsiden er siden over forløbene.
+- **Outline:** `didaktik-planlaeg-forloeb` gemmer forløbssiden med en modulrække og en underside pr. modul ("Modul 01: <tema>"), som standard i lærerens private samling, evt. under en side for holdet. Se `${CLAUDE_SKILL_DIR}/../didaktik-planlaeg-forloeb/references/forloebsmappe.md`. Holdsiden er siden over forløbene, hvis der er en.
 - **Mappe på computeren:** `forloeb.md` i forløbsmappen. Henviser den til Outline, så brug Outline.
 - Læs forløbssiden. Læs modulsiderne, når du skal bruge emner, materiale, mål eller status, der ikke står på forløbssiden. Er der mange moduler (over ca. 15), så sig hvor mange sider du læser, før du går i gang.
 

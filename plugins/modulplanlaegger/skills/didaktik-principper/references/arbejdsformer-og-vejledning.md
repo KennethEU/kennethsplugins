@@ -1,6 +1,6 @@
 # Arbejdsformer, læringsrum og vejledning
 
-Gennemgået november 2026. Gengivet med egne ord efter Jakobsen og Kjærgaard, Raae og Krogh i *Gymnasiepædagogik* (2006), Steen Becks læringsrum (*Gyldendals Studiebog*), workshop 6 i pædagogikum (2012) og Kenneths egne noter. Konkrete CL-øvelser hører til `cl-oevelser`, og lektionsdrejebøger til `klasseledelse`.
+Gennemgået november 2026. Gengivet med egne ord efter Jakobsen og Kjærgaard, Raae og Krogh i *Gymnasiepædagogik* (2006), Steen Becks læringsrum (*Gyldendals Studiebog*), workshop 6 i pædagogikum (2012) og egne noter (KM). Konkrete CL-øvelser hører til `cl-find-oevelse`, og lektionsdrejebøger til `klasseledelse`.
 
 ## Kerneidé
 

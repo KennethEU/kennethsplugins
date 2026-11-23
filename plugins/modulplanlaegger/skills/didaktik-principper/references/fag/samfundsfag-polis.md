@@ -1,8 +1,8 @@
 # Fagdidaktik: samfundsfag, nyere kilder fra POLIS
 
-Gennemgået november 2026. Gengivet med egne ord efter 15 PDF-filer fra tidsskriftet POLIS, tidsskrift for samfundsfagsdidaktik (Forlaget Columbus, nr. 1 fra 2020 til nr. 10 fra 2025), som Kenneth har hentet i Downloads/Polis. Kildeliste og dækningstabel står til sidst. Filen supplerer `samfundsfag.md`, som bygger på ældre kilder (2006 til 2012). Den erstatter den ikke.
+Gennemgået november 2026. Gengivet med egne ord efter 15 PDF-filer fra tidsskriftet POLIS, tidsskrift for samfundsfagsdidaktik (Forlaget Columbus, nr. 1 fra 2020 til nr. 10 fra 2025). Kildeliste og dækningstabel står til sidst. Filen supplerer `samfundsfag.md`, som bygger på ældre kilder (2006 til 2012). Den erstatter den ikke.
 
-**Advarsel om regler:** Alt om læreplaner, eksamensopgaver, forsøgsopgaver, digitale hjælpemidler og AI-forbud er hentet fra artikler skrevet i 2020 til 2025. Det skal tjekkes mod gældende læreplan, vejledning og eksamensregler på emu.dk og uvm.dk, før det bruges. Citér det aldrig som gældende regel.
+**Advarsel om regler:** Alt om læreplaner, eksamensopgaver, forsøgsopgaver, digitale hjælpemidler og AI-forbud er hentet fra artikler skrevet i 2020 til 2025. Det skal tjekkes mod gældende læreplan, vejledning og eksamensregler, før det bruges. Find dem i vidensbasen eller på uvm.dk efter `didaktik-planlaeg-forloeb/references/laereplaner.md`. Emu.dk er kun inspiration. Citér det aldrig som gældende regel.
 
 **Sådan skal evidensmærkerne læses her:** Næsten intet i POLIS er effektforskning. De fleste artikler er forfatterens argument, lærerpraksis eller små kvalitative studier. Mærkerne følger definitionerne i `SKILL.md`. Filen bruger ikke Stærk, fordi ingen af artiklerne har metaanalyser eller gentagne eksperimenter. Teksten skelner mellem tre slags udsagn: **fund** (data fra et studie), **argument** (forfatterens eller interviewpersoners synspunkt) og **forslag** (et greb til praksis, uden dokumenteret effekt).
 
@@ -184,7 +184,7 @@ Gennemgået november 2026. Gengivet med egne ord efter 15 PDF-filer fra tidsskri
 
 ## 6. Skriftlighed og eksamen
 
-*Alt i dette tema er særligt regelafhængigt. Tjek emu.dk for gældende opgavetyper, forsøgsopgaver og digitale hjælpemidler.*
+*Alt i dette tema er særligt regelafhængigt. Tjek gældende opgavetyper, forsøgsopgaver og digitale hjælpemidler efter `didaktik-planlaeg-forloeb/references/laereplaner.md`.*
 
 **Kernepointer**
 
@@ -214,7 +214,7 @@ Gennemgået november 2026. Gengivet med egne ord efter 15 PDF-filer fra tidsskri
 | Skriver eleverne i hvert forløb, ikke kun til afleveringer? | Tilføj tænkeskrivning og fælles tekster |
 | Får eleverne feedback på sætningsniveau? | Tilføj kriteriebaseret peer-feedback |
 | Er der taget stilling til AI i skriftlige opgaver? | Se tema 10 |
-| Er opgavetyperne tjekket mod gældende eksamensvejledning? | Slå op på emu.dk |
+| Er opgavetyperne tjekket mod gældende eksamensvejledning? | Slå op efter `didaktik-planlaeg-forloeb/references/laereplaner.md` |
 
 ## 7. Læsning, elevforudsætninger og køn
 
@@ -314,7 +314,7 @@ Gennemgået november 2026. Gengivet med egne ord efter 15 PDF-filer fra tidsskri
 
 ## 10. AI og digitale kompetencer
 
-*Regelafhængigt. Forbud, hjælpemidler og eksamensregler om AI ændrer sig hurtigt. Tjek emu.dk og uvm.dk.*
+*Regelafhængigt. Forbud, hjælpemidler og eksamensregler om AI ændrer sig hurtigt. Tjek reglerne i vidensbasen eller på uvm.dk efter `didaktik-planlaeg-forloeb/references/laereplaner.md`.*
 
 **Kernepointer**
 
@@ -343,7 +343,7 @@ Gennemgået november 2026. Gengivet med egne ord efter 15 PDF-filer fra tidsskri
 | Er AI-brug i forløbet defineret (forbudt, tilladt, kræves)? | Skriv reglen i opgaven |
 | Er der en aktivitet, hvor eleverne lærer at bruge AI kritisk? | Tilføj et eksempel, fx vignetten |
 | Er der opfølgning på skriftlige produkter, så læringen kan vurderes? | Tilføj mundtlig drøftelse eller procesnoter |
-| Er reglerne tjekket mod gældende vejledning? | Slå op på emu.dk |
+| Er reglerne tjekket mod gældende vejledning? | Slå op efter `didaktik-planlaeg-forloeb/references/laereplaner.md` |
 
 ## 11. Inspiration fra tysk fagdidaktik
 

@@ -86,7 +86,7 @@ Spørg: "Passer trinene?"
 - **`screen`:** `oppe` eller `nede`.
 - Udelad felter, du ikke har indhold til. Filen er ren tekst uden HTML.
 
-Formatet læses af `public/plan/plan.js` på dida.dk. Find ikke på nye felter, for siden viser dem ikke.
+Find ikke på nye felter, for dida.dk viser dem ikke. Har du dida.dk-koden, kan du se, hvordan formatet læses, i `public/plan/plan.js`. Ellers gælder felterne ovenfor.
 
 ---
 

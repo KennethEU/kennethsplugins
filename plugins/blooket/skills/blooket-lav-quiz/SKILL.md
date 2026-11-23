@@ -20,6 +20,12 @@ Lav en Blooket-quiz. Følg formatet i skillen `blooket-quizformat`, fordi Blooke
 1. Hvis brugeren har uploadet materiale (billeder, PDF, tekst, slides), læs det og identificér de centrale begreber, fakta og sammenhænge.
 2. Hvis brugeren kun har angivet et emne, brug din faglige viden til at formulere spørgsmål.
 
+### Hurtigt: spring gates over
+
+Skriver læreren "bare lav den", "hurtigt" eller lignende, eller har læreren allerede givet emne eller materiale, antal spørgsmål og sværhedsgrad, så spring Gate 1 og Gate 2 over. Lav quizzen med det samme. Skriv dine antagelser i én linje øverst, fx "Antaget: 12 spørgsmål, medium, om segmentering og branding." Mangler kun antal eller sværhedsgrad, så antag 10-15 spørgsmål og medium.
+
+Ellers følg de to gates.
+
 ### Gate 1: Bekræft begreber (vent på svar)
 
 Re-ground: "Jeg har læst materialet og fundet de centrale begreber. Her er hvad jeg vil teste i quizzen."
@@ -32,13 +38,13 @@ Præsentér de identificerede begreber:
 
 Spørg: "Er det de rigtige begreber at teste? Skal sværhedsgraden op eller ned?"
 
-Giv en anbefaling: "Jeg anbefaler [X] spørgsmål på [niveau] fordi [begrundelse — fx passer til pensum og Blooket-formatet]."
+Giv en anbefaling: "Jeg anbefaler [X] spørgsmål på [niveau] fordi [begrundelse, fx passer til pensum og Blooket-formatet]."
 
 **VENT** på svar.
 
 ### Gate 2: Preview (vent på svar)
 
-Re-ground: "Vi er ved **Gate 2** — her er et par eksempelspørgsmål så du kan vurdere stil og sværhedsgrad."
+Re-ground: "Vi er ved **Gate 2**. Her er et par eksempelspørgsmål så du kan vurdere stil og sværhedsgrad."
 
 Vis **3-4 eksempelspørgsmål** med svarmuligheder, så læreren kan vurdere format og sværhedsgrad.
 
@@ -59,6 +65,6 @@ Svar på dansk.
 
 ## Completion Status
 
-- **DONE** — Blooket-quiz genereret som CSV-fil
-- **DONE_WITH_CONCERNS** — Genereret, men nogle spørgsmål har kun 2 svarmuligheder, eller et facit kunne ikke tjekkes mod materialet
-- **NEEDS_CONTEXT** — Mangler materiale eller emne at lave quiz fra
+- **DONE:** Blooket-quiz genereret som CSV-fil
+- **DONE_WITH_CONCERNS:** Genereret, men nogle spørgsmål har kun 2 svarmuligheder, eller et facit kunne ikke tjekkes mod materialet
+- **NEEDS_CONTEXT:** Mangler materiale eller emne at lave quiz fra

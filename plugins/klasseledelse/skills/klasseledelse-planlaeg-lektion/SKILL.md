@@ -1,6 +1,6 @@
 ---
 name: klasseledelse-planlaeg-lektion
-description: "Planlægger en lektion eller et modul i gymnasiet, så alle elever løbende deltager: hook, aktivering, gennemgang, repetition og afslutning, med drejebog, lærerens replikker, køreplan til eleverne og printklare elevark efter ønske. Brug når læreren siger \"få alle med\", \"aktivere eleverne\", \"planlæg gennemgang af\", \"eleverne er passive\", \"klasseledelse\", \"planlæg et modul om\" eller \"planlæg en time om\" et emne uden en bestemt fagtekst. Brug ikke til en time bygget på spørgsmål til en fagtekst med Bloom-progression (bloom-planlaeg-time), til at vurdere en færdig plan (klasseledelse-vurder-plan), til at finde en enkelt CL-øvelse (cl-find-oevelse) eller til casespil."
+description: "Planlægger en lektion eller et modul i gymnasiet, så alle elever løbende deltager: hook, aktivering, gennemgang, repetition og afslutning, med drejebog, lærerens replikker, køreplan til eleverne og printklare elevark efter ønske. Brug når læreren siger \"få alle med\", \"aktivere eleverne\", \"planlæg gennemgang af\", \"eleverne er passive\", \"klasseledelse\", \"planlæg et modul om\" eller \"planlæg en time om\" et emne uden en bestemt fagtekst. Brug ikke til en time bygget på spørgsmål til en fagtekst med Bloom-progression (bloom-planlaeg-time), til at vurdere en færdig plan (klasseledelse-vurder-plan), til at finde en enkelt CL-øvelse (cl-find-oevelse), til næste modul i et forløb (didaktik-planlaeg-forloeb) eller til casespil."
 argument-hint: "[emne, klasse og tid]"
 allowed-tools:
   - Read
@@ -98,7 +98,7 @@ Det er den, læreren får, medmindre læreren beder om den grundige udgave:
 5. **Kun ved problemer:** én linje, hvis aktivitetsbudgettet er overskredet, tiden er stram, eller en genert elev har færre end fem trygge deltagelser. Én linje "Tjek: ...", hvis drejebogen har tal, aktuelle forhold eller definitioner, der er mærket "(tjek)", jf. "Fakta, tal og aktuelle forhold" i principperne.
 6. **Én afsluttende linje:** "Sig til, hvis noget skal ændres, eller hvis du vil have forventede svar til spørgsmålene, instruktionsslides, deltagelseskort, fremmødetabel med printliste, elevark til print eller planen som dida-plan til storskærmen." Mangler planen en aktivitet, eller har den en gruppefase på 20 minutter eller mere, hvor eleverne arbejder selv, så nævn `cl-find-oevelse` eller `dagsorden-lav` i samme linje.
 
-Skriv ikke begrundelser, evidensmærker eller optællinger i den korte version, medmindre læreren spørger hvorfor.
+Skriv ikke begrundelser eller optællinger i den korte version, medmindre læreren spørger hvorfor. Evidensmærker følger reglen under "Mærker" i `${CLAUDE_SKILL_DIR}/../klasseledelse-principper/references/evidens.md`.
 
 #### Grundig udgave (på opfordring)
 

@@ -71,7 +71,7 @@ Progression fremmes, når eleverne:
 3. reflekterer over deres egen læreproces,
 4. arbejder i deres nærmeste udviklingszone.
 
-## Kenneths erfaringer
+## Erfaringer fra praksis (KM)
 
 - Spring ikke over for mange taksonomiske niveauer i ét kort forløb. Et koncentreret skriveforløb fra "argumentér" til "diskutér" blev en for stor mundfuld.
 - Træn spørgeord og skriftlighed løbende i de almindelige forløb i stedet for i ét isoleret forløb. Start med højt stillads, og tag det ned over tid.

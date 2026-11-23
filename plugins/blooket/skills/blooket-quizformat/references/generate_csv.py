@@ -4,7 +4,7 @@ Blooket CSV Generator
 Genererer en CSV-fil i Blookets officielle importformat.
 
 Brug:
-    python generate_csv.py spoergsmaal.json [output.csv]
+    python3 generate_csv.py spoergsmaal.json [output.csv]
 
 spoergsmaal.json er en liste af objekter med text, answers (2-4), correct
 (fx "1" eller "1,3") og time (sekunder, valgfri, standard 20).
@@ -41,6 +41,10 @@ def validate(questions):
         for field in [text] + answers:
             if ";" in field or "\n" in field:
                 errors.append(f"Spørgsmål {i}: semikolon og linjeskift i tekst ødelægger CSV-formatet.")
+                break
+        for field in [text] + answers:
+            if '"' in field:
+                errors.append(f"Spørgsmål {i}: dobbelte anførselstegn (\") ødelægger CSV-formatet. Brug enkelte anførselstegn ‘ ’ eller ingen.")
                 break
         try:
             nums = [int(x) for x in str(q.get("correct", "1")).split(",")]

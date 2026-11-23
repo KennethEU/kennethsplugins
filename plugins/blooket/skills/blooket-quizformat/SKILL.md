@@ -15,7 +15,7 @@ Generér quizspørgsmål fra undervisningsmateriale og levér dem som CSV-fil kl
 
 ## Fase 0: Saml kontekst (før alt andet)
 
-1. Læs CLAUDE.md for at forstå lærerens fag og hold
+1. Læs CLAUDE.md, hvis den findes, for at forstå lærerens fag og hold
 2. Hvis et emne er nævnt, tjek om der findes relevante materialer i projektmappen (Glob for PDF, tekst, slides)
 3. Hvis brugeren nævner et modul eller forløb og har lagt beskrivelsen i projektmappen, så læs den
 
@@ -38,7 +38,7 @@ Når du skal afklare noget, brug dette mønster:
 > Jeg kan se du har en tekst om segmentering og en om branding.
 > Skal quizzen dække begge, eller fokusere på én?
 >
-> ANBEFALING: Vælg A — begge emner. 15 spørgsmål giver plads
+> ANBEFALING: Vælg A, begge emner. 15 spørgsmål giver plads
 > til at blande, og det fungerer som repetition af hele modulet.
 >
 > A) Begge emner (15 spørgsmål, blandet)
@@ -62,14 +62,14 @@ Hvis brugeren ikke angiver et antal, lav 10-15 spørgsmål.
 Hvert spørgsmål har 2-4 svarmuligheder (4 er standard). Følg disse regler:
 
 **Spørgsmålskvalitet:**
-- Bland taksonomiske niveauer: viden (hvad er X?), forståelse (hvad betyder X?), anvendelse (beregn/vurdér)
-- Forkerte svar skal være plausible — ikke åbenlyst forkerte
-- Hold teksten kort — Blooket viser det på små kort
+- Bland taksonomiske niveauer: viden (hvad er X?), forståelse (hvad betyder X?), anvendelse (beregn eller brug på en case)
+- Forkerte svar skal være plausible, ikke åbenlyst forkerte
+- Hold teksten kort. Blooket viser det på små kort
 - Undgå "alle ovenstående" og "ingen af ovenstående"
 - Undgå negationer ("Hvad er IKKE...") medmindre det giver pædagogisk mening
 
 **Korrekte svar:**
-- Randomisér placeringen — det korrekte svar skal fordeles jævnt over position 1-4
+- Randomisér placeringen. Det korrekte svar skal fordeles jævnt over position 1-4
 - Hvis et spørgsmål har flere korrekte svar, angiv dem kommasepareret (fx "1,3")
 
 **Tidsbegrænsning:**
@@ -90,7 +90,7 @@ Ret det, der falder. Skriv kun det til læreren, du ikke kunne afgøre. Har du k
 
 ### 4. Generér CSV-filen
 
-Skriv spørgsmålene som en JSON-fil og kør scriptet på den. Scriptet tjekker reglerne (2 til 4 svar, korrekt svarnummer findes, tid højst 300 sekunder, ingen semikolon eller linjeskift i teksten), advarer, hvis det korrekte svar ligger skævt fordelt eller oftest er det længste, og skriver den komplette Blooket-importfil.
+Skriv spørgsmålene som en JSON-fil og kør scriptet på den. Scriptet tjekker reglerne (2 til 4 svar, korrekt svarnummer findes, tid højst 300 sekunder, ingen semikolon, linjeskift eller dobbelte anførselstegn i teksten), advarer, hvis det korrekte svar ligger skævt fordelt eller oftest er det længste, og skriver den komplette Blooket-importfil.
 
 **Format for spørgsmål** (filen `spoergsmaal.json`):
 
@@ -108,12 +108,21 @@ Skriv spørgsmålene som en JSON-fil og kør scriptet på den. Scriptet tjekker 
 `answers` har 2 til 4 svar, `correct` er svarnumre (flere adskilles med komma), og `time` er sekunder (valgfri). Kør scriptet sådan:
 
 ```bash
-python "${CLAUDE_SKILL_DIR}/references/generate_csv.py" spoergsmaal.json Blooket_Emne.csv
+python3 "${CLAUDE_SKILL_DIR}/references/generate_csv.py" spoergsmaal.json Blooket_Emne.csv
 ```
 
-Ved FEJL retter du spørgsmålene og kører igen. Ved ADVARSEL om skæv placering blander du svarene. Ved ADVARSEL om længde gør du svarene omtrent lige lange.
+Ved FEJL retter du spørgsmålene og kører igen. Skriv aldrig dobbelte anførselstegn (") i spørgsmål eller svar. Brug enkelte anførselstegn ‘ ’ eller ingen. Ved ADVARSEL om skæv placering blander du svarene. Ved ADVARSEL om længde gør du svarene omtrent lige lange.
 
 Scriptet producerer en fil der matcher Blookets officielle template 1:1, inkl. headers, padding-kolonner, tomme rækker, BOM og Windows-linjeskift.
+
+### Ret en eksisterende Blooket-CSV
+
+1. Læs filen som semikolonsepareret tekst. Række 1 og 2 er overskrifter. Spørgsmålene står fra række 3 og frem.
+2. Hver spørgsmålsrække har kolonnerne: nummer, spørgsmål, svar 1, svar 2, svar 3, svar 4, tid og korrekt svar. Resten er tomme padding-kolonner. Tjek rækkefølgen mod kolonneoverskrifterne i række 2, som scriptet også skriver.
+3. Stop ved den første række uden spørgsmålstekst.
+4. Lav rækkerne om til JSON-formatet ovenfor. Tomme svar 3 og 4 udelades.
+5. Ret, tilføj eller slet spørgsmål, og prøv dem af som i trin 3.
+6. Kør scriptet igen, og levér den nye fil. Overskriv ikke lærerens fil uden at sige det.
 
 ### 5. Levér filen
 
@@ -133,7 +142,7 @@ Gem i den mappe, vi arbejder i (eller `/mnt/user-data/outputs/`, hvis den findes
 
 Afslut med én af:
 
-- **DONE** — Quiz genereret, CSV-fil leveret og importklar
-- **DONE_WITH_CONCERNS** — Quiz leveret, men med forbehold (fx: kun viden-spørgsmål pga. materiale, eller færre end 10 spørgsmål)
-- **BLOCKED** — Kan ikke generere quiz (fx: intet materiale at arbejde ud fra)
-- **NEEDS_CONTEXT** — Mangler information (fx: "Hvilket emne/materiale skal quizzen bygge på?")
+- **DONE:** Quiz genereret, CSV-fil leveret og importklar
+- **DONE_WITH_CONCERNS:** Quiz leveret, men med forbehold (fx: kun viden-spørgsmål pga. materiale, eller færre end 10 spørgsmål)
+- **BLOCKED:** Kan ikke generere quiz (fx: intet materiale at arbejde ud fra)
+- **NEEDS_CONTEXT:** Mangler information (fx: "Hvilket emne/materiale skal quizzen bygge på?")
