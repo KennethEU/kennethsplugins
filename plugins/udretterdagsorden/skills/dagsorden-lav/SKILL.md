@@ -81,6 +81,7 @@ Byg dagsordenen efter disse retningslinjer:
 ### Struktur
 1. **Start altid med rollevalg** (2 til 4 min). Vælg tre *forskellige*, sjove, objektive kriterier.
 2. **Individuel fase før gruppefase.** Eleverne skal tænke selv, inden de deler.
+   **AI-tjek:** kan AI løse et trin ud fra instruktionen alene, så eleven ikke selv skal tænke? Så lad den individuelle fase foregå uden skærm, fx på papir med lukket låg, og byg trinnet på noget, AI ikke kender, fx gruppens egne noter eller timens diskussion. Er AI tilladt eller krævet, så lad gruppen vurdere AI's svar i stedet for at kopiere det, fx ved at sammenligne to svar eller finde det, der mangler. Skriv AI-reglen (forbudt, tilladt, krævet) i elevernes instruktion. Hele tjekket findes i `didaktik-principper/references/ai-og-friktion.md` i modulplanlæggeren. Evidens: **Praksis**.
 3. **Progressiv kompleksitet.** Start med overblik/orientering, bevæg dig mod analyse/vurdering.
 4. **Pause** (5 min), hvis den samlede tid er over 25 min.
 5. **Afslut med produkt og/eller plenumforberedelse.**
@@ -130,6 +131,7 @@ Verificér derudover internt (vis ikke tjeklisten til læreren):
 - [ ] Hvert trin er prøvet af som en middelmådig elev, der kun læser trinnets tekst på telefonen: eleven ved, hvad der skal gøres, med hvilket materiale, og hvornår trinnet er færdigt
 - [ ] Faglige spørgsmål i trinene kan du selv besvare ud fra materialet, og de kan nås på trinnets tid
 - [ ] Ingen fagord, der kræver forklaring for eleverne
+- [ ] Trin, som AI kan løse ud fra instruktionen alene, har en individuel fase uden skærm, og AI-reglen står i instruktionen
 - [ ] Progressiv kompleksitet: lette trin først, sværere sidst
 - [ ] Roller defineres kun ét sted (rolletabellen) og gentages ikke i senere trin
 - [ ] Faglig fordeling bruger neutral punktliste, ikke rollenavne

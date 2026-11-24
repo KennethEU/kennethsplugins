@@ -79,6 +79,7 @@ Hold planen inden for aktivitetsbudgettet, og skriv opgaverne præcist, jf. "Enk
 14. **Grupper:** bruger planen grupper, så lav tabellen over fremmøde nedenfor.
 15. **Sidste modul i forløbet:** lad genkaldelse og afslutning dække hele forløbet, så eleverne kobler dagens tekst til det, de har arbejdet med før.
 16. **Genkaldelse i stedet for spørgsmål:** dækker en genkaldelse, fx et tomt skema, de samme arbejdsspørgsmål på Huske/Forstå, så foreslå at erstatte dem, og sig det tydeligt. Eleverne skal bagefter tjekke deres svar mod teksten.
+17. **AI og computeren åben:** kan AI løse en aktivitet eller lektien ud fra opgaveteksten alene, så eleven ikke selv skal tænke? Så byg ét greb ind i fasen: en tænkepause på papir med lukket låg før gruppedelen, en mundtlig runde, en holdning skrevet før og efter, eller at eleverne vurderer to eller tre AI-svar, læreren har lavet på forhånd. Skriv AI-reglen (forbudt, tilladt, krævet) i opgaven. Er modulet del af et forløb, så findes hele tjekket i `didaktik-principper/references/ai-og-friktion.md` i modulplanlæggeren. Skriv intet om det til læreren, hvis alt består. Evidens: **Praksis**.
 
 ### Sådan afleverer du
 
@@ -128,6 +129,7 @@ Lav tjekket stille, og ret planen, før du afleverer. Skriv kun det til læreren
 - Har de stærke elever noget at strække sig efter?
 - Har overgange egne minutter, og er der slack, når pause, hej og oprydning er trukket fra?
 - Står skærm oppe eller nede ved hver fase?
+- Har hver aktivitet med computeren åben et punkt, hvor eleven viser sin egen tænkning uden skærm, og står AI-reglen i opgaven?
 - Passer køreplanen, instruktionsslides og drejebogen sammen?
 - Holder gruppereglen og fraværsreglen på alle elevtal i spændet?
 - Er opgaverne skrevet færdigt, og er planen stadig så enkel, at læreren kan huske den?

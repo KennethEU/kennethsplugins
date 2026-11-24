@@ -144,6 +144,13 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### klasseledelse 1.16.0 og udretterdagsorden 1.3.0 (november 2026)
+
+AI-tjek i planlægningen af lektioner og dagsordener.
+
+- klasseledelse: planlaeg-lektion har fået trin 17 "AI og computeren åben" og et punkt i kvalitetstjekket. Kan AI løse en aktivitet eller lektien for eleven, bygger planen ét greb ind i fasen og skriver AI-reglen i opgaven. Hele tjekket henvises til `didaktik-principper/references/ai-og-friktion.md` i modulplanlæggeren.
+- udretterdagsorden: dagsorden-lav tjekker nu, om AI kan løse et trin ud fra instruktionen alene. Så foregår den individuelle fase uden skærm, gruppen vurderer AI's svar i stedet for at kopiere det, og AI-reglen står i elevernes instruktion. Nyt punkt i kvalitetstjekket.
+
 ### bloom 1.7.0, klasseledelse 1.15.0 og modulplanlaegger 0.5.0 (november 2026)
 
 AI og friktion i opgaver og aktiviteter.

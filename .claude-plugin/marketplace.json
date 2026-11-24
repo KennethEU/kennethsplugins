@@ -36,7 +36,7 @@
       "name": "klasseledelse",
       "source": "./plugins/klasseledelse",
       "description": "Planlægning og vurdering af lektioner og moduler, så alle elever deltager: deltagelseskort, konkrete omskrivninger og principper holdt op mod forskningen.",
-      "version": "1.15.0"
+      "version": "1.16.0"
     },
     {
       "name": "cl-oevelser",
@@ -56,7 +56,7 @@
       "displayName": "Udretterdagsorden",
       "source": "./plugins/udretterdagsorden",
       "description": "Udretterdagsordener til gruppearbejde: selvkørende trin-for-trin-protokoller med roller, individuel tænketid, pause og fælles produkt, til dida.dk eller Word, med idésparring om struktur.",
-      "version": "1.2.1"
+      "version": "1.3.0"
     },
     {
       "name": "modulplanlaegger",
