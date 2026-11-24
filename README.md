@@ -144,6 +144,10 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### vidensbase 0.1.3 (november 2026)
+
+- Pluginet hedder nu "Vidensbase" på claude.ai i stedet for "Vidensbase (Outline)".
+
 ### klasseledelse 1.14.3 (november 2026)
 
 - Effekten af klasseledelsesprogrammer er rettet til g = 0,23, som er hovedeffekten i opdateringen af metaanalysen (Korpershoek m.fl. 2026).
