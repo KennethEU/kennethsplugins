@@ -144,6 +144,15 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 
 ## Changelog
 
+### bloom 1.7.0, klasseledelse 1.15.0 og modulplanlaegger 0.5.0 (november 2026)
+
+AI og friktion i opgaver og aktiviteter.
+
+- modulplanlaegger: ny referencefil `didaktik-principper/references/ai-og-friktion.md` med produktiv og uproduktiv friktion, et tjek af aktiviteter med computeren åben, holdningsspørgsmål, som AI ikke kan skrive for eleven, og Dalsgaards otte greb til refleksiv friktion (2025). Planlægningen af forløb kører tjekket i Gate 3 og i kvalitetstjekket. Den samlede tjekliste har fået et punkt om AI.
+- modulplanlaegger: ny indgang D, "Vurdér en skitse". Læreren giver sin egen skitse til et forløb eller et modul, og Claude vurderer den mod den samlede tjekliste, praksisgrebene og AI-tjekket og svarer kun med det, der ikke holder. Beskrivelsen er strammet.
+- klasseledelse: vurder-plan tjekker nu aktiviteter med computeren åben og foreslår ét greb, når AI kan løse aktiviteten for eleven.
+- bloom: nyt afsnit "Når AI kan svare for eleven" i spørgsmålsreglerne. Lektier holdes afgrænsede, holdningsspørgsmål bindes til timen, og når AI er tilladt, vurderer eleverne AI-svar, læreren har lavet på forhånd.
+
 ### vidensbase 0.1.3 (november 2026)
 
 - Pluginet hedder nu "Vidensbase" på claude.ai i stedet for "Vidensbase (Outline)".

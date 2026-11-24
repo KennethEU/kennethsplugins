@@ -74,6 +74,7 @@ Spørg kun om det, der mangler:
 8. **Tjek spørgsmålene.** Er arbejdsspørgsmålene mest på Huske/Forstå, så tilbyd at sende dem til `bloom-vurder-spoergsmaal`. Nævn det ikke bare som en svaghed. Se "Videresendelse til andre skills".
 9. **Tjek lektien.** Bygger planen på, at eleverne har læst, så følg afsnittet "Elever, der ikke har læst" i principperne.
 10. **Tjek aktiviteterne.** Mangler planen en aktivitet, fx en anderledes lektieopsamling eller en diskussionsform, så tilbyd `cl-find-oevelse`. Skal hele modulet bygges op om CL, så tilbyd `cl-forloeb`. Har planen en gruppefase på 20 minutter eller mere uden klar struktur for, hvem der gør hvad, så tilbyd `dagsorden-lav`. Se "Videresendelse til andre skills".
+11. **Tjek aktiviteter med computeren åben.** Kan AI løse en aktivitet ud fra opgaveteksten alene, så eleven ikke selv skal tænke? Så nævn det, og foreslå ét greb: en tænkepause på papir med lukket låg før gruppedelen, en mundtlig runde, en holdning skrevet før og efter, eller at eleverne vurderer to eller tre AI-svar, læreren har lavet på forhånd. Står AI-reglen (forbudt, tilladt, krævet) ikke i opgaven, så foreslå den. Er planen del af et forløb, så findes hele tjekket i `didaktik-principper/references/ai-og-friktion.md` i modulplanlæggeren. Evidens: **Praksis**.
 
 ### Sådan afleverer du
 

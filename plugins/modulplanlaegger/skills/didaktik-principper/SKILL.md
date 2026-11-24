@@ -41,6 +41,7 @@ Læs kun den fil, et planlægningstrin har brug for:
 | `references/fag/samfundsfag.md` | Samfundsfag |
 | `references/fag/samfundsfag-polis.md` | Samfundsfag, nyere forskning fra POLIS: kritisk tænkning, kontroversielle emner, deliberation, gruppearbejde, analyse, skriftlighed, læremidler, rollespil, AI, observationsstudier, innovation og medborgerskab |
 | `references/fag/mediefag.md` | Mediefag |
+| `references/ai-og-friktion.md` | Aktiviteter med computeren åben, lektier og skriftligt arbejde: kan AI løse det, holdningsspørgsmål, som AI ikke kan skrive for eleven, og otte greb, når AI er tilladt (Dalsgaard 2025) |
 | `references/praksisgreb.md` | Typiske faldgruber og greb, der har virket |
 | `references/kilder.md` | Kilder, dækning og huller |
 
@@ -118,3 +119,4 @@ Kommer opgaven fra en anden skill, eller ligger der en plan i samtalen, som lær
 | Kan indholdet begrundes ud over læreplanen? | dannelse-og-faglighed |
 | Kender planen klassens forudsætninger? | elevforudsaetninger |
 | Er der tjekket mod den gældende læreplan? | fag-filen |
+| Har aktiviteter med computeren åben et punkt, hvor eleven viser sin egen tænkning uden skærm, og står AI-reglen i opgaven? | ai-og-friktion |

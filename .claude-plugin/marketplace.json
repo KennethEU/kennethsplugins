@@ -24,7 +24,7 @@
       "name": "bloom",
       "source": "./plugins/bloom",
       "description": "Arbejdsspørgsmål til fagtekster efter Blooms reviderede taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time.",
-      "version": "1.6.1"
+      "version": "1.7.0"
     },
     {
       "name": "blooket",
@@ -36,7 +36,7 @@
       "name": "klasseledelse",
       "source": "./plugins/klasseledelse",
       "description": "Planlægning og vurdering af lektioner og moduler, så alle elever deltager: deltagelseskort, konkrete omskrivninger og principper holdt op mod forskningen.",
-      "version": "1.14.3"
+      "version": "1.15.0"
     },
     {
       "name": "cl-oevelser",
@@ -63,7 +63,7 @@
       "displayName": "Modulplanlægger",
       "source": "./plugins/modulplanlaegger",
       "description": "Planlægning af forløb og modulrækker ud fra didaktisk viden: mål, progression, arbejdsformer, evaluering og fagdidaktik, med videresendelse til de andre plugins.",
-      "version": "0.4.1"
+      "version": "0.5.0"
     }
   ]
 }

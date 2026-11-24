@@ -188,6 +188,21 @@ Spørgsmål der træner STX-eksamensformaterne. Eksemplet er fra samfundsfag (mu
 - **Typisk niveau 3-6:** Fokus på de høje kognitive niveauer
 - **Formatspecifikke:** Spørgsmålene skal ligne de typer eleven møder til eksamen
 
+### Når AI kan svare for eleven
+
+Lektier og opgaver med computeren åben kan AI besvare. Det gælder også holdningsspørgsmål: AI skriver gerne "Jeg mener, at ..." med tre gode argumenter. Ingen spørgsmål er AI-sikre, når eleven arbejder alene. Derfor:
+
+- **Lektier:** hold dig til afgrænsede spørgsmål til teksten. Læg vurdering og holdning i timen, hvor svaret kan ses og høres.
+- **Holdnings- og vurderingsspørgsmål i timen:** bind holdningen til noget, AI ikke kender, og lad eleven stå ved den. Fx:
+  - **Før og efter:** "Skriv din holdning på papir nu." Senere: "Hvad fik dig til at ændre den, eller hvorfor holdt du fast?"
+  - **Timens argumenter:** "Hvilket argument fra en i klassen i dag var sværest at svare på, og hvad svarer du nu?"
+  - **Placering:** eleven stiller sig på en linje fra enig til uenig og begrunder pladsen med ét fagbegreb fra teksten.
+  - **Lokal sag:** holdningen skal bruge klassens egne tal, skolen eller kommunen.
+  - **Mundtligt forsvar:** eleven forsvarer holdningen i et minut, eller en makker er djævlens advokat.
+- **Når AI er tilladt i opgaven:** lad eleven vurdere AI's svar i stedet for at skrive sit eget fra bunden. Læreren laver to eller tre AI-svar på forhånd. Spørgsmålene kan så være: Hvilket svar er bedst, og hvorfor? Hvor er svaret usikkert eller forkert, set ud fra teksten? Hvilke aktører eller synspunkter mangler? Det er niveauerne Analysere og Evaluere. Grebene kommer fra Dalsgaard (2025), "refleksiv friktion".
+
+Det er praksisråd, ikke afprøvet forskning. Markér spørgsmålet "til timen" eller "mundtligt", når det kun virker sådan.
+
 ---
 
 ## Fagbegreber

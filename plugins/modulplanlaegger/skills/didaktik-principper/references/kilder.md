@@ -75,6 +75,10 @@ Disse vurderinger bygger på Claudes almene kendskab til forskningen, ikke på m
 
 Artiklerne fra tidsskriftet POLIS (15 PDF'er, heraf 5 hele numre) er gennemgået særskilt. Kilder og dækning står i `fag/samfundsfag-polis.md`.
 
+## AI og friktion
+
+Dalsgaard (2025) og artiklerne fra Viden.ai er læst i november 2026. Kilder og dækning står i `ai-og-friktion.md`.
+
 ## Huller
 
 - **Erhvervsøkonomi** har intet materiale i mapperne. Der er derfor ingen fagfil.

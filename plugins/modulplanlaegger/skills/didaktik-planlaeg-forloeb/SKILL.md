@@ -1,6 +1,6 @@
 ---
 name: didaktik-planlaeg-forloeb
-description: "Modulplanlægger: planlægger forløb i gymnasiet ud fra didaktisk viden, med tre indgange: hele modulrækken, kom i gang med et nyt forløb (ramme, skitse og første modul) eller næste modul i et igangværende forløb. Afklarer fag, niveau, mål og læreplan, foreslår ramme, progression og evaluering, sender modulerne videre til andre skills (drejebog, spørgsmål, CL, quiz, dida-plan) og gemmer forløbet i vidensbasen eller i en mappe. Brug når læreren siger \"planlæg et forløb\", \"modulrække\", \"modulplan\", \"nyt forløb om\", \"jeg starter et forløb om\", \"første modul i et nyt forløb\", \"næste modul i forløbet\", \"modul 3 i mit forløb\" eller vil have didaktisk sparring på et forløb. Brug ikke til et enkeltstående modul uden et forløb (klasseledelse-planlaeg-lektion), til en time bygget på spørgsmål til en fagtekst (bloom-planlaeg-time), til et forløb af CL-øvelser alene (cl-forloeb), til undervisningsbeskrivelser og dækning af læreplanen (undervisningsbeskrivelse) eller til casespil."
+description: "Modulplanlægger: planlægger forløb i gymnasiet ud fra didaktisk viden, med fire indgange: hele modulrækken, kom i gang med et nyt forløb, næste modul i et igangværende forløb eller vurdering af lærerens egen skitse. Afklarer mål og læreplan, foreslår ramme, progression og evaluering, tjekker aktiviteter med computeren åben for AI, sender modulerne videre til andre skills og gemmer forløbet i vidensbasen eller i en mappe. Brug når læreren siger \"planlæg et forløb\", \"modulrække\", \"modulplan\", \"nyt forløb om\", \"næste modul i forløbet\", \"modul 3 i mit forløb\", \"kig på min skitse\", \"vurdér mit forløb\" eller vil have didaktisk sparring på et forløb. Brug ikke til et enkeltstående modul uden et forløb (klasseledelse-planlaeg-lektion), til at vurdere en lektion for deltagelse (klasseledelse-vurder-plan), til en time om en fagtekst (bloom-planlaeg-time), til et forløb af CL-øvelser (cl-forloeb), til undervisningsbeskrivelser (undervisningsbeskrivelse) eller til casespil."
 argument-hint: "[fag, niveau, emne og antal moduler]"
 allowed-tools:
   - Read
@@ -23,13 +23,14 @@ Lav et forløb, der kan begrundes didaktisk, har en tydelig progression og kan s
 ## Trin
 
 1. **Læs** `${CLAUDE_SKILL_DIR}/../didaktik-principper/SKILL.md`. Læs referencefilerne derfra, når et trin har brug for dem. Læs ikke alle på én gang. Stier som `references/planlaegning.md` nedenfor ligger i `didaktik-principper`. Denne skills egne filer skrives `${CLAUDE_SKILL_DIR}/references/...`.
-2. **Vælg indgang.** Der er tre. Vælg ud fra lærerens besked, og spørg kun, hvis det er uklart: "Vil du planlægge hele forløbet nu, eller bare komme i gang med første modul?"
+2. **Vælg indgang.** Der er fire. Vælg ud fra lærerens besked, og spørg kun, hvis det er uklart: "Vil du planlægge hele forløbet nu, eller bare komme i gang med første modul?"
 
 | Indgang | Når læreren | Vej gennem trinene |
 |---------|-------------|--------------------|
 | **A. Helt forløb** | vil have hele modulrækken nu | Gate 1, 2, 3, 4 og 5 |
 | **B. Kom i gang** | starter et nyt forløb, men kun kan nå første modul, fx "jeg starter på EU i morgen" | Gate 1 kort, Gate 2 kort med skitse, Gate 4 for modul 1, Gate 5 |
 | **C. Næste modul** | er i gang med et forløb og vil planlægge næste modul, fx "modul 3 i mit ulighedsforløb" | "Fortsæt et forløb" nedenfor |
+| **D. Vurdér en skitse** | har selv en skitse til et forløb eller et modul og vil have den vurderet, fx "kig på min skitse" eller "tjek min modulplan" | "Vurdér en skitse" nedenfor |
 
 Ved B og C ligger detaljerne for de senere moduler ikke fast. Sig det, og fasthold rammen, så modulerne stadig hænger sammen.
 
@@ -38,6 +39,7 @@ Ved B og C ligger detaljerne for de senere moduler ikke fast. Sig det, og fastho
 - **Indgang A:** vis rammen i få linjer og modulrækken i samme svar (Gate 1, 2 og 3 samlet), og spørg én gang, om noget skal ændres.
 - **Indgang B:** vis den korte ramme, skitsen og modul 1 i samme svar.
 - **Indgang C:** findes forløbet (forløbssiden eller `forloeb.md`), og har læreren allerede skrevet, hvordan sidste modul gik, så spring spørgsmålet over.
+- **Indgang D:** står fag, niveau og mål i skitsen, så spring spørgsmålene over, og vurdér med det samme.
 - Skriv antagelserne i én linje øverst. Hent læreplanen, hvis det kan gøres hurtigt (først i Outline, se `references/laereplaner.md`). Ellers skriv "Læreplan: ikke tjekket".
 - Gate 4 bliver til én linje, der foreslår den skill, der passer bedst til det første modul.
 - Gate 5: ligger forløbet allerede et sted, så gem uden at spørge, og sig, hvor det ligger. Ellers spørg, hvor forløbene skal ligge.
@@ -109,6 +111,7 @@ Under tabellen:
 - **Progression:** hvad bliver sværere eller mere selvstændigt fra modul til modul?
 - **Tjekliste:** gå den samlede tjekliste i `didaktik-principper/SKILL.md` igennem, og skriv kun de punkter, der ikke er opfyldt, med et forslag til rettelse.
 - **Praksisgreb:** tjek rækken mod faldgruberne i `references/praksisgreb.md`, og nævn kun dem, der rammer.
+- **AI-tjek:** har et modul aktiviteter med computeren åben, lektier eller skriftligt arbejde, så gå tjekket i `references/ai-og-friktion.md` igennem. Kan AI løse en aktivitet for eleven, så skriv aktiviteten med ét konkret greb, fx en tænkepause på papir, en mundtlig runde eller et af de otte greb. Skriv intet, hvis alt består.
 - **Evidens:** sæt et mærke, når læreren spørger hvorfor, eller når et valg koster noget.
 
 Spørg: "Passer modulrækken, eller skal noget flyttes, slås sammen eller ændres?"
@@ -158,6 +161,19 @@ Re-ground: "Vi fortsætter et forløb, du er i gang med."
 
 **VENT** på OK. Fortsæt derefter med Gate 4 for modulet og Gate 5. Ved gem følges "Når forløbet fortsættes" i `references/forloebsmappe.md`: log, status, rettelser i rækken og en ny modulside eller modulfil.
 
+## Vurdér en skitse (indgang D)
+
+Re-ground: "Du har en skitse. Jeg vurderer den ud fra didaktikken og retter intet, før du siger til."
+
+1. **Find skitsen.** Læreren indsætter den, peger på en fil eller på en side i vidensbasen. Læs den. Mangler der en skitse, så bed om den og stop.
+2. **Spørg kun om det, der mangler (VENT på svar).** Højst tre spørgsmål: fag og niveau, hvad eleverne skal kunne bagefter, og om noget er et bevidst valg, der ikke skal ændres. Står det i skitsen, så spring over.
+3. **Læs principperne,** som Gate 2 og 3 gør: planlægning, progression, arbejdsformer, evaluering og fagfilen. Har skitsen aktiviteter med computeren åben, lektier eller skriftligt arbejde, så læs også `references/ai-og-friktion.md`.
+4. **Vurdér.** Gå den samlede tjekliste i `didaktik-principper/SKILL.md`, faldgruberne i `references/praksisgreb.md` og tjekket i `references/ai-og-friktion.md` igennem. Er skitsen et helt forløb, så se også på progressionen og på, om evalueringen kan ændre resten. Er den ét modul, så se på målet, styringen og om aktiviteterne træner målet.
+5. **Aflever kort.** Start med én til to sætninger om, hvad der holder. Skriv derefter kun de punkter, der ikke holder, højst fem og det vigtigste først. For hvert punkt: hvad skitsen gør nu, en konkret ændring og hvorfor (med evidensmærke, når valget koster noget). Skel mellem problem og bevidst valg.
+6. **Tilbyd næste skridt:** "Skal jeg rette skitsen, eller vil du gemme den som forløb?" **VENT** på svar. Retter du, så følg reglerne i Gate 3 og vis resultatet i samme tabel. Gem efter Gate 5.
+
+Skal en enkelt lektion vurderes for, om alle elever er med, så tilbyd `klasseledelse-vurder-plan`.
+
 ## Når læreren beder om ændringer
 
 Ret kun det, læreren beder om. Tjek bagefter, at progressionen og sammenhængen mellem mål, aktiviteter og evaluering stadig holder, og sig det, hvis ændringen bryder den.
@@ -171,6 +187,7 @@ Ret kun det, læreren beder om. Tjek bagefter, at progressionen og sammenhængen
 - Peger evalueringen på forløbets mål?
 - Er alle henvisninger til læreplan og regler enten fra læreren, fra den gældende læreplan eller markeret som noget, der skal tjekkes?
 - Er der intet, der bygger på læringsstile?
+- Har aktiviteter med computeren åben et punkt, hvor eleven viser sin egen tænkning uden skærm, og står AI-reglen i opgaven?
 
 ---
 

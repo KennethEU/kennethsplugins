@@ -330,6 +330,7 @@ Gennemgået november 2026. Gengivet med egne ord efter 15 PDF-filer fra tidsskri
 - **Lad eleverne skrive egne vignetter** om deres brug af digitale redskaber og AI. Det afdækker forskelle i personlige læringsmiljøer.
 - **Relevanskriterium:** drøft med eleverne, hvornår AI er nyttig, og hvornår den fratager dem det, de skal lære.
 - **Sokratisk AI-rådgiver** i rollespil er foreslået af J. Andersen (POLIS 8), men ikke afprøvet i artiklen.
+- **Tjek af aktiviteter, holdningsspørgsmål og otte greb, når AI er tilladt,** står i `../ai-og-friktion.md`. Den gælder alle fag.
 
 **Hvad det betyder for planen**
 
