@@ -4,7 +4,7 @@ Plugins til dansk gymnasieundervisning (STX), samlet i én marketplace.
 
 | Plugin | Hvad det gør | Skills |
 |--------|--------------|--------|
-| [`vidensbase`](plugins/vidensbase) | Finder og bruger skills fra faggruppens vidensbase i Outline (dok.mgai.dk), før en pædagogisk opgave løses. Kræver Outline-connectoren | 1 |
+| [`vidensbase`](plugins/vidensbase) | Finder og bruger skills fra faggruppens vidensbase i Outline (dok.mgai.dk), før en pædagogisk opgave løses, og skriver fejl, ris og ros til opfølgning på "Feedback på mgai". Kræver Outline-connectoren | 2 |
 | [`casespilsdesigner`](plugins/casespilsdesigner/README.md) | Design af casespil (også kaldet rollespil) og simuleringer: rollekort, lærerguider, miniversioner, digitale værktøjer og kvalitetssikring | 10 |
 | [`bloom`](plugins/bloom) | Arbejdsspørgsmål til fagtekster efter Blooms taksonomi: fuldt sæt, lektiespørgsmål, skabe-spørgsmål, vurdering af spørgsmål og tre-faset time | 6 |
 | [`blooket`](plugins/blooket) | Blooket-quizzer som importklar CSV-fil ud fra undervisningsmateriale | 2 |
@@ -143,6 +143,12 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 - `udretterdagsorden` tjekker dagsordenen med `validate-dagsorden.py` og laver Word-udgaven med `generate-dagsorden.js`, som kræver npm-pakken `docx` (kør `npm install` i `plugins/udretterdagsorden/skills/dagsorden-principper/scripts`).
 
 ## Changelog
+
+### vidensbase 0.2.0 (november 2026)
+
+Fælles feedback på mgai.
+
+- Ny skill `vidensbase-feedback`. Når læreren støder på en fejl eller har ris, ros eller en idé til noget på mgai, spørger Claude "Skal jeg skrive det ind til opfølgning?". Ved ja skrives en note som underside til "Feedback på mgai" i Fælles i mgai dok, med Claudes bud på årsagen, hvad der er prøvet, og et forslag til løsning.
 
 ### klasseledelse 1.16.0 og udretterdagsorden 1.3.0 (november 2026)
 
