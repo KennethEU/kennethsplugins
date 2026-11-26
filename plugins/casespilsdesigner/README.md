@@ -35,7 +35,7 @@ casespilsdesigner/
         └── references/prompt-skabelon.md
 ```
 
-I `evals/` ligger automatiske triggertests (`claude plugin eval plugins/casespilsdesigner`) og en plan for de tests, der skal køres i Cowork. Se `evals/README.md`.
+Triggertestene ligger i repoets `tools/evals/casespilsdesigner/` (uden for pluginet) og køres med `tools/evals/koer.sh casespilsdesigner`. Se README dér.
 
 ## Pipeline
 

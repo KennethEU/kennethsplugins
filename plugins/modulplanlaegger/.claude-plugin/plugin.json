@@ -2,7 +2,7 @@
   "name": "modulplanlaegger",
   "displayName": "Modulplanlægger",
   "description": "Planlægning af forløb og modulrækker i dansk gymnasieundervisning ud fra didaktisk viden: mål, progression, arbejdsformer, evaluering og fagdidaktik, med videresendelse til de andre skills og forløb gemt i vidensbasen eller i en mappe på computeren. Holder også undervisningsbeskrivelsen og dækningen af læreplanen ajour efter UVM's krav.",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "author": {
     "name": "Kenneth / Marselisborg Gymnasium"
   }

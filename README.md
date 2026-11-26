@@ -115,6 +115,7 @@ kennethsplugins/
 ├── .claude-plugin/marketplace.json     ← kataloget over plugins
 ├── udgiv.sh                            ← udgiver til GitHub og Outline
 ├── tools/outline/                      ← konvertering og synk til Outline
+├── tools/evals/                        ← triggertests pr. plugin (koer.sh kører dem)
 ├── update_plugins.sh                   ← opdaterer og kobler plugins til Antigravity
 ├── tjek_arbejdsgang.py                 ← tjekker, at "Arbejdsgang" er ens i principfilerne
 └── plugins/
@@ -133,7 +134,7 @@ kennethsplugins/
 
 ## Tests
 
-Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige skill vælges (`claude plugin eval plugins/<navn>`). Kør `claude plugin validate . --strict` efter hver ændring.
+Triggertests, der tjekker, at den rigtige skill vælges, ligger i `tools/evals/<plugin>/`, uden for pluginsene, så lærerne ikke ser dem. Kør dem med `tools/evals/koer.sh <plugin>` (kopierer testene ind midlertidigt og kører `claude plugin eval`). Kør `claude plugin validate . --strict` efter hver ændring.
 
 ## Bemærkninger
 
@@ -143,6 +144,9 @@ Hvert plugin har en `evals/`-mappe med triggertests, der tjekker, at den rigtige
 - `udretterdagsorden` tjekker dagsordenen med `validate-dagsorden.py` og laver Word-udgaven med `generate-dagsorden.js`, som kræver npm-pakken `docx` (kør `npm install` i `plugins/udretterdagsorden/skills/dagsorden-principper/scripts`).
 
 ## Changelog
+
+### blooket 1.3.2, bloom 1.7.1, casespilsdesigner 2.16.1, cl-oevelser 1.6.3, dida 1.1.3, klasseledelse 1.16.1, modulplanlaegger 0.5.1, udretterdagsorden 1.3.1, vidensbase 0.2.1 (november 2026)
+- Triggertestene (`evals/`) er flyttet ud af pluginsene til `tools/evals/<plugin>/`, så de ikke følger med til lærerne. Nyt script `tools/evals/koer.sh` kører dem. Ingen ændring i skillene.
 
 ### vidensbase 0.2.0 (november 2026)
 

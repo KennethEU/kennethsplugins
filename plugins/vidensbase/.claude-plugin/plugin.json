@@ -2,7 +2,7 @@
   "name": "vidensbase",
   "displayName": "Vidensbase",
   "description": "Finder og bruger skills fra faggruppens fælles vidensbase i Outline (dok.mgai.dk) før pædagogiske, administrative og planlægningsmæssige opgaver.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "author": {
     "name": "Kenneth / Marselisborg Gymnasium"
   }

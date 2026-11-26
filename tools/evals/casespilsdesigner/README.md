@@ -11,10 +11,10 @@
 Kør fra repositoryets rod:
 
 ```
-claude plugin eval plugins/casespilsdesigner --ablation none -j 6
+tools/evals/koer.sh casespilsdesigner --ablation none -j 6
 ```
 
-Koster ca. 5 $ for hele suiten. Rapporten ligger i `evals/results/` (ignoreres af git). Kør den igen efter hver ændring af en `description`.
+Koster ca. 5 $ for hele suiten. Rapporten ligger i `tools/evals/casespilsdesigner/results/` (ignoreres af git). Kør den igen efter hver ændring af en `description`.
 
 Sidst kørt oktober 2026: alle 27 består. Før beskrivelserne blev gjort skarpere, udløste rodede formuleringer om faseskift ikke lærerguiden.
 
